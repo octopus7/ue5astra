@@ -26,6 +26,8 @@
     "source_angle_50": true,
     "camp_landscape_height": true,
     "puddle_graph": true,
+    "five_native_reflective_puddles": true,
+    "puddle_front_layer_reflections": true,
     "SM_MossRock_01_smooth_import": true,
     "SM_MossRock_02_smooth_import": true,
     "SM_MossRock_03_smooth_import": true,
@@ -93,6 +95,6 @@
     }
   },
   "camp_collision_height_cm": 520.3050537109375,
-  "actor_count": 2083,
+  "actor_count": 2085,
   "validation": "Independent full editor reload of saved main map"
 }

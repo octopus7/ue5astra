@@ -69,9 +69,9 @@ for name,pos,intensity,radius in [('CampfireGlow',[3300,60,580],25,450),('CampLa
     c.set_editor_property('intensity_units',unreal.LightUnits.LUMENS)
     c.set_intensity(intensity);c.set_light_color(unreal.LinearColor(1,.48,.15,1))
     c.set_editor_property('attenuation_radius',radius);c.set_editor_property('source_radius',20);c.set_cast_shadows(False)
-import import_shoreline_site,puddle_cloud_trick
+import import_shoreline_site,puddle_sky_reflection
 shore=import_shoreline_site.apply_site(save=True)
-puddle=puddle_cloud_trick.validate_created_material()
+puddle=puddle_sky_reflection.apply_puddles(save=True)['material']
 if not puddle['passed']:raise RuntimeError('Puddle graph validation failed')
 if not unreal.EditorLevelLibrary.save_current_level():raise RuntimeError('Cannot save woodland expansion')
 measured=[]

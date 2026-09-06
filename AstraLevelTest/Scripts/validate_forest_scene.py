@@ -33,8 +33,11 @@ checks['source_angle_50']=all(abs(a.light_component.get_editor_property('light_s
 land=next(a for a in actors if isinstance(a,unreal.Landscape))
 camp_z=unreal.AstraSceneLibrary.landscape_height_at(land,unreal.Vector(3800,-400,0))
 checks['camp_landscape_height']=abs(camp_z-520)<2
-import puddle_cloud_trick
-checks['puddle_graph']=puddle_cloud_trick.validate_created_material()['passed']
+import puddle_sky_reflection
+checks['puddle_graph']=puddle_sky_reflection.validate_created_material()['passed']
+puddle_actors=[a for a in actors if isinstance(a,unreal.StaticMeshActor) and a.static_mesh_component.static_mesh and a.static_mesh_component.static_mesh.get_name()=='SM_Puddle']
+checks['five_native_reflective_puddles']=len(puddle_actors)==5 and all(a.static_mesh_component.get_material(0).get_path_name().startswith(puddle_sky_reflection.DEFAULT_ASSET+'.') for a in puddle_actors)
+checks['puddle_front_layer_reflections']=all(a.get_editor_property('settings').get_editor_property('lumen_front_layer_translucency_reflections') for a in actors if isinstance(a,unreal.PostProcessVolume))
 rock_meta=json.loads((ROOT/'ArtSource/Layout/forest_smooth_rocks.json').read_text(encoding='utf-8'))
 for item in rock_meta['assets']:
     mesh=unreal.EditorAssetLibrary.load_asset('/Game/Astra/Meshes/'+item['original_asset_id'])
@@ -51,9 +54,9 @@ if foliage_file.exists():
     checks['foliage_saved_instance_counts']=actual==expected
 water_file=ROOT/'ArtSource/Previews/UE_WaterValidation.json'
 water=json.loads(water_file.read_text(encoding='utf-8'))
-puddle=unreal.EditorAssetLibrary.load_asset('/Game/Astra/Materials/M_PuddleReflection')
-water.update({'puddle_sky_texture_input':True,'puddle_emissive_input':True,'puddle_shading_model':str(puddle.get_editor_property('shading_model')),
-              'puddle_reflectance':'dedicated local cloud illusion with bounded drift/ripple and soft coverage',
+puddle=unreal.EditorAssetLibrary.load_asset(puddle_sky_reflection.DEFAULT_ASSET)
+water.update({'puddle_sky_texture_input':False,'puddle_emissive_input':False,'puddle_shading_model':str(puddle.get_editor_property('shading_model')),
+              'puddle_reflectance':'native sky/environment reflection with thin translucent dielectric Fresnel F0=0.02 and soft coverage',
               'sky_texture':'T_AnimeSkyPanorama','main_map_shoreline_instances':len(shore)})
 water_file.write_text(json.dumps(water,indent=2),encoding='utf-8')
 report={'passed':all(checks.values()),'checks':checks,'mesh_bounds':mesh_bounds,'camp_collision_height_cm':camp_z,'actor_count':len(actors),'validation':'Independent full editor reload of saved main map'}

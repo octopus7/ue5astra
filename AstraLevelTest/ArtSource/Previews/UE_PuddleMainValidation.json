@@ -1,43 +1,56 @@
 {
-  "asset": "/Game/Astra/Materials/M_PuddleReflection.M_PuddleReflection",
-  "checks": {
-    "translucent": true,
-    "unlit": true,
-    "no_ssr": true,
-    "depth_test_enabled": true,
-    "colour_output_connected": true,
-    "coverage_output_connected": true,
-    "vertex_red_upstream_of_alpha": true,
-    "depth_fade_upstream_of_alpha": true,
-    "seven_cm_default": true,
-    "cloud_texture_upstream_of_colour": true,
-    "local_mapping_upstream_of_colour": true
+  "map": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland",
+  "saved": true,
+  "puddle_count": 5,
+  "actors": {
+    "Puddle_0002": [
+      "/Game/Astra/Materials/Shoreline/M_PuddleSkyReflection.M_PuddleSkyReflection"
+    ],
+    "Puddle_0003": [
+      "/Game/Astra/Materials/Shoreline/M_PuddleSkyReflection.M_PuddleSkyReflection"
+    ],
+    "Puddle_0004": [
+      "/Game/Astra/Materials/Shoreline/M_PuddleSkyReflection.M_PuddleSkyReflection"
+    ],
+    "Puddle_0005": [
+      "/Game/Astra/Materials/Shoreline/M_PuddleSkyReflection.M_PuddleSkyReflection"
+    ],
+    "Puddle_0006": [
+      "/Game/Astra/Materials/Shoreline/M_PuddleSkyReflection.M_PuddleSkyReflection"
+    ]
   },
-  "passed": true,
-  "scalar_parameters": [
-    "CloudAmount",
-    "CloudDriftSpeed",
-    "CloudDriftUVAmplitude",
-    "CloudRotationDegrees",
-    "CloudSoftness",
-    "CloudThreshold",
-    "CloudUVScale",
-    "EdgeDepthFadeCm",
-    "EdgeFadePower",
-    "PuddleLocalRadiusCm",
-    "RippleSpeed",
-    "RippleUVAmplitude",
-    "RippleWorldScaleCm",
-    "SurfaceBrightness",
-    "SurfaceOpacity"
-  ],
-  "vector_parameters": [
-    "CloudTint",
-    "CloudUVOffset",
-    "WaterTint"
-  ],
-  "textures": [
-    "/Game/Astra/Textures/T_AnimeSkyReflection.T_AnimeSkyReflection"
-  ],
-  "validation_scope": "Read-only graph contract. Shader compile logs and actual orthographic GPU preview must be checked separately."
+  "material": {
+    "asset": "/Game/Astra/Materials/Shoreline/M_PuddleSkyReflection.M_PuddleSkyReflection",
+    "checks": {
+      "thin_translucent": true,
+      "surface_forward_shading": true,
+      "front_layer_allowed": true,
+      "native_reflections_enabled": true,
+      "zero_opaque_top_layer": true,
+      "water_f0_002": true,
+      "no_emissive_output": true,
+      "no_texture_samples": true
+    },
+    "passed": true,
+    "scalar_defaults": {
+      "WaveNormalStrength": 0.017999999225139618,
+      "WaterF0": 0.019999999552965164,
+      "SurfaceRoughness": 0.04500000178813934,
+      "WaveSpeed": 0.11999999731779099,
+      "EdgeDepthFadeCm": 4.0
+    },
+    "validation_scope": "Actual material contract only; inspect native compile logs plus top-down/grazing GPU captures."
+  },
+  "environment": {
+    "post_process_volumes": [
+      "WoodlandGrade"
+    ],
+    "sky_lights": [
+      "SoftSkyFill"
+    ],
+    "front_layer_enabled": true,
+    "sky_recapture_requested": false,
+    "project_config_changed": false
+  },
+  "original_materials_snapshot": "D:\\github\\ue5astra\\AstraLevelTest\\Saved\\Shoreline\\puddle_material_originals_e70f19135e59.json"
 }

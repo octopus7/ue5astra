@@ -41,7 +41,7 @@ Unreal Engine 5.7.4 프로젝트. 약 100m 숲을 탐색하는 직립 보행 삼
 2. 숲 확장 원본은 `build_forest_cliffs.py`, `build_forest_tent.py`, `build_forest_signs.py`, `build_forest_cooking.py`로 각각 생성한다. 이어 `place_forest_expansion.py`를 Blender에서 실행해 절벽·야영지와 진입로 높이를 전체 배치에 합친다. 바위는 `build_smooth_forest_rocks.py`와 `apply_smooth_rocks_blender.py` 순서로 적용한다.
 3. UE 5.7용 `AstraLevelTestEditor` 빌드.
 4. **전체 언리얼 에디터**에서 `Scripts/import_unreal_scene.py` 실행. `-ExecutePythonScript=...`로도 실행할 수 있다. Content Browser를 사용하므로 UI 없는 Python commandlet로 텍스처 가져오기를 실행하지 않는다.
-5. `Scripts/import_forest_expansion.py`로 숲 확장·해안 모듈·파노라마 하늘을 적용한다. 이 스크립트는 기존 Landscape와 맵을 보존하면서 갱신한다. 이후 `import_smooth_rocks.py`, `apply_forest_foliage.py` 순서로 바위와 작은 식물을 적용하고 `/Game/Astra/Maps/L_AstraWoodland`를 열어 Play한다.
+5. `Scripts/import_forest_expansion.py`로 숲 확장·해안 모듈·파노라마 하늘을 적용한다. 이 스크립트는 기존 Landscape와 맵을 보존하면서 갱신한다. 이후 `import_smooth_rocks.py`, `apply_forest_foliage.py`, `apply_native_puddles.py` 순서로 바위·작은 식물·실제 반사 웅덩이를 적용하고 `/Game/Astra/Maps/L_AstraWoodland`를 열어 Play한다.
 
 레벨 생성 스크립트는 생성된 맵을 다시 작성한다. 수동 편집을 유지하려면 다른 이름으로 복사한 맵을 사용한다. 블렌더에서 수정한 배치를 전달할 때에는 동일한 JSON 구조를 유지한다.
 
@@ -75,11 +75,19 @@ Directional Light Source Angle은 사용자 지정값인 50도이며 Exponential
 
 ## 하늘
 
-`T_AnimeSkyPanorama.png`는 별도 생성한 2:1 하늘 전용 파노라마다. `M_CloudSky`는 월드 방향을 경도·위도 UV로 변환하고 이음새와 극점을 부드럽게 합성한다. 호수·개울은 구름 반사 없이 유지하며, 작은 물웅덩이는 전용 구름 그림과 잔잔한 움직임을 이용한 착시 재질을 사용한다.
+`T_AnimeSkyPanorama.png`는 별도 생성한 2:1 하늘 전용 파노라마다. `M_CloudSky`는 월드 방향을 경도·위도 UV로 변환하고 이음새와 극점을 부드럽게 합성한다. 호수·개울은 구름 반사 없이 유지한다.
+
+작은 웅덩이 5개는 `M_PuddleSkyReflection`의 Thin Translucent 재질로 실제 하늘과 주변 환경을 반사한다. 물의 기본 반사율 F0는 0.02이며 엔진의 프레넬로 낮은 시점에서 반사가 강해진다. 수면에 하늘 텍스처나 발광 이미지를 직접 연결하지 않는다. 버텍스 마스크와 DepthFade는 투과와 반사의 경계를 함께 부드럽게 한다. 이전 생성 구름 이미지와 착시 재질은 작업 기록으로 보존한다.
+
+고정 탑다운 시점에서는 바닥 투과가 우세해 반사가 은은하고, 낮은 시점에서는 아래처럼 나무·바위·하늘이 선명해진다. 아래 이미지는 반사 확인용 카메라이며 플레이 카메라는 고정 탑다운이다.
+
+![메인 맵의 실제 하늘과 주변 나무를 반사하는 웅덩이](ArtSource/Previews/UE_PuddleSkyLow.png)
 
 ## 부드러운 바위와 Foliage
 
 기존 숲 바위 5종은 각 1,920삼각형의 부드러운 노멀로 바꿨다. 삼각면마다 갈라진 색을 제거하고 ImageGen으로 생성한 `T_AnimeForestRockPaint.png`의 회청색 돌·푸른 균열·세이지 이끼를 적용했다. 기존 바위 155개의 위치·회전·크기와 UE 자산 참조는 유지한다.
+
+해안 키트의 수중 돌·자갈 4종도 smooth normals로 바꿨다. 형상·UV·재질 슬롯을 유지하며 FBX를 다시 가져와 노멀 일치를 확인했다.
 
 작은 풀·고사리·꽃·버섯·갈대는 **실제 Unreal Foliage**로 묶었다. 기존 1,198개를 전환하고 숲 안쪽에 778개를 보강해 총 1,976개다. 길 가장자리 70cm, 공터, 집 앞, 야영지 동선과 급경사는 추가 배치에서 제외한다. 원래 개별 식물은 `PreservedBeforeFoliage`에 숨겨 보관한다.
 

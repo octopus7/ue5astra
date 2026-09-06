@@ -2,7 +2,7 @@
 import json,hashlib,struct
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-views=['Sky','SkySeam','SkyZenith','Camp','Cliffs','Sign','Foliage','Rocks','Puddle','Shoreline','Overview','Gameplay','Bridge','House','Lake']
+views=['Sky','SkySeam','SkyZenith','Camp','Cliffs','Sign','Foliage','Rocks','Puddle','PuddleSkyTop','PuddleSkyLow','Shoreline','Overview','Gameplay','Bridge','House','Lake']
 results=[]
 for view in views:
     path=ROOT/'ArtSource/Previews'/('UE_'+view+'.png')

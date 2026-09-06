@@ -22,6 +22,8 @@ for name in ['SM_LakeSurface','SM_StreamSurface','SM_Puddle']:
     asset.set_material(0,mats['M_PuddleReflection' if name=='SM_Puddle' else 'M_Water'])
     if not builder.EAL.save_loaded_asset(asset):raise RuntimeError('Unable to save mesh: '+name)
 builder.setup_cloud_sky(mats)
+import puddle_sky_reflection
+puddle_sky_reflection.apply_puddles(save=False)
 nonblocking={o['name'] for o in builder.DATA['objects'] if o['collision'] in ['none','trunk']}
 for a in builder.ES.get_all_level_actors():
     if a.get_actor_label() in nonblocking and isinstance(a,unreal.StaticMeshActor):
@@ -37,11 +39,11 @@ result={'water_blend_mode':str(mats['M_Water'].get_editor_property('blend_mode')
         'lake_shading_model':str(mats['M_Water'].get_editor_property('shading_model')),
         'lake_cloud_reflections':False,'lake_and_creek_single_surface':True,
         'water_edge_mask':'Blender vertex color red, smoothstep, multiplied by DepthFade',
-        'puddle_sky_texture_input':True,'puddle_emissive_input':True,
+        'puddle_sky_texture_input':False,'puddle_emissive_input':False,
         'sky':'CloudSkyDome / M_CloudSky','skylight_real_time_capture':True,
         'high_quality_translucency_reflections':True,'exponential_height_fog_density':.001,
         'puddle_shading_model':str(mats['M_PuddleReflection'].get_editor_property('shading_model')),
-        'puddle_reflectance':'art-directed cloud illusion with local mapping, bounded ripple/drift and soft edge fade',
+        'puddle_reflectance':'native sky/environment reflection with dielectric Fresnel F0=0.02 and soft coverage',
         'underwater_terrain':'light sand instead of forest grass'}
 out=ROOT/'ArtSource'/'Previews'/'UE_WaterValidation.json'
 out.write_text(json.dumps(result,indent=2),encoding='utf-8')

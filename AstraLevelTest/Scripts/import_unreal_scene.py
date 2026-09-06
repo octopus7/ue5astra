@@ -108,7 +108,7 @@ def build_materials():
 def build_water_materials():
     import sys
     sys.path.insert(0,str(ROOT/'Scripts'))
-    from puddle_cloud_trick import build_puddle_material
+    from puddle_sky_reflection import build_puddle_material
     mats={'M_Water':build_lake_material(),'M_PuddleReflection':build_puddle_material()}
     # A separate sky dome remains independent of the lake/creek material.
     mats['M_CloudSky']=build_cloud_sky_material()
@@ -287,6 +287,8 @@ def build_level(mats,meshes):
     for n,v in {'override_auto_exposure_method':True,'auto_exposure_method':unreal.AutoExposureMethod.AEM_MANUAL,'override_auto_exposure_bias':True,'auto_exposure_bias':0.0,'override_motion_blur_amount':True,'motion_blur_amount':0.0,'override_vignette_intensity':True,'vignette_intensity':.12,'override_bloom_intensity':True,'bloom_intensity':.12}.items():settings.set_editor_property(n,v)
     pp.set_editor_property('settings',settings)
     setup_cloud_sky(mats)
+    from puddle_sky_reflection import configure_reflection_environment
+    configure_reflection_environment()
     start=spawn(unreal.PlayerStart,DATA['spawn_cm'],unreal.Rotator(yaw=155),'PlayerStart_Clearing','Gameplay')
     world.get_world_settings().set_editor_property('default_game_mode',unreal.AstraGameMode)
     for name,look,width in [('Overview',[0,0,0],15500),('Gameplay',[-600,-1000,100],3000),('Lake',[1300,2000,70],3700),('Cabin',[2400,-2300,150],2400),('Puddle',[-2000,-1600,60],1300)]:
