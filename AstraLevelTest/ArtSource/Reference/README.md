@@ -8,3 +8,7 @@ Generated with the built-in image generation tool; these are target references, 
 Implementation workflow: build mesh assets and arrange the scene in Blender; export FBX assets, JSON object transforms, and the terrain height data; reconstruct the terrain as a native Unreal Landscape and apply the extracted arrangement. Configure water, lighting, collision, WASD movement, and a fixed camera in Unreal Engine 5.7.
 
 Large readable shapes and restrained painted textures take precedence over close-up detail. The two reference images establish direction; the final interactive level will have its own real-time rendering.
+
+Individual modeling references are saved as `Ref_Oak`, `Ref_Fir`, `Ref_MossRock`, `Ref_Lotus`, `Ref_Reeds`, `Ref_BridgeIntact`, `Ref_BridgeBroken`, `Ref_CabinRuin`, and `Ref_CalicoCat` PNG files. The generation prompt set is recorded in `GENERATION_PROMPTS.md`.
+
+Generated production textures are saved in `../Textures/T_ForestFloor.png` and `../Textures/T_AnimeSkyReflection.png`. The latter supplies the intentionally stylized reflected sky for the small puddles.
