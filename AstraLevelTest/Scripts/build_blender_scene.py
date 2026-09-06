@@ -2,11 +2,13 @@
 Run with Blender 4.5+: blender -b --factory-startup --python this_file.py
 All distances in this source scene are metres. Blender XY -> Unreal X,-Y.
 """
-import bpy, math, random, json, struct
+import bpy, math, random, json, struct, sys
 from pathlib import Path
 from mathutils import Vector
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'Scripts'))
+from water_geometry import water_geometry,add_edge_mask
 ART = ROOT / 'ArtSource'
 for folder in ['Meshes','Layout','Blender','Previews']:
     (ART / folder).mkdir(parents=True, exist_ok=True)
@@ -289,27 +291,16 @@ def place(asset,x,y,z=None,scale=1,yaw=0,tilt=(0,0),group='Forest'):
     placed.append(o);return o
 
 # Water meshes are unique assets but their transforms still come from this Blender scene.
-N=80
-verts=[(0,0,0)]+[(math.cos(i*math.tau/N)*15.1*1.10,math.sin(i*math.tau/N)*12.4*1.10,0) for i in range(N)]
-water=mesh('LakeSurface',verts,[(0,1+i,1+(i+1)%N) for i in range(N)],'M_Water')
+verts,faces,weights=water_geometry('SM_LakeSurface')
+water=mesh('LakeSurface',verts,faces,'M_Water');add_edge_mask(water.data,weights)
 LIB['SM_LakeSurface']=join_asset('SM_LakeSurface',[water])
 place('SM_LakeSurface',19,20.7,.10,group='Water')
-verts=[];faces=[]
-for i in range(161):
-    x=-51+i*64/160;w=2.75+.24*math.sin(x/4.3);y=stream(x)
-    verts.extend([(x,-(y-w),.10),(x,-(y+w),.10)])
-    if i:faces.append((2*i-2,2*i,2*i+1,2*i-1))
-river=mesh('StreamSurface',verts,faces,'M_Water')
+verts,faces,weights=water_geometry('SM_StreamSurface')
+river=mesh('StreamSurface',verts,faces,'M_Water');add_edge_mask(river.data,weights)
 LIB['SM_StreamSurface']=join_asset('SM_StreamSurface',[river])
 place('SM_StreamSurface',0,0,0,group='Water')
-n=32;verts=[(0,0,0)]+[(math.cos(i*math.tau/n)*(1+.1*math.sin(i*1.7)),math.sin(i*math.tau/n)*(1+.08*math.cos(i*2.1)),0) for i in range(n)]
-puddle=mesh('Puddle',verts,[(0,1+i,1+(i+1)%n) for i in range(n)],'M_Water')
-# Explicit UVs for the painted sky reflection.
-uv=puddle.data.uv_layers.new(name='SkyReflectionUV')
-for poly in puddle.data.polygons:
-    for li in poly.loop_indices:
-        v=puddle.data.vertices[puddle.data.loops[li].vertex_index].co
-        uv.data[li].uv=(v.x*.43+.5,v.y*.43+.5)
+verts,faces,weights=water_geometry('SM_Puddle')
+puddle=mesh('Puddle',verts,faces,'M_Water');add_edge_mask(puddle.data,weights)
 LIB['SM_Puddle']=join_asset('SM_Puddle',[puddle])
 for px,py,rx,ry in PUDDLES:place('SM_Puddle',px,py,base_height(px,py)-.045,scale=(rx,ry,1),group='Water/Puddles')
 
