@@ -1,0 +1,44 @@
+{
+  "texture_id": "T_AnimeForestRockPaint",
+  "source": "ArtSource/Textures/T_AnimeForestRockPaint.png",
+  "prompt": "ArtSource/Reference/FOREST_SMOOTH_ROCK_TEXTURE_PROMPT.md",
+  "generation": "built-in imagegen",
+  "material": "M_ForestRockPaint",
+  "semantic": "base_color_albedo",
+  "native_resolution_px": [1254, 1254],
+  "requested_resolution_px": [2048, 2048],
+  "native_original_preserved": true,
+  "color_space": "sRGB",
+  "alpha_required": false,
+  "address_x": "wrap",
+  "address_y": "wrap",
+  "nominal_metres_per_tile": 3.0,
+  "suggested_metres_per_tile_range": [2.5, 3.5],
+  "material_parameters": {
+    "roughness": 0.88,
+    "metallic": 0.0,
+    "specular": 0.20,
+    "emissive_strength": 0.0,
+    "normal_source": "smooth mesh vertex normals"
+  },
+  "inspection": {
+    "generated_original_viewed": true,
+    "saved_png_viewed": true,
+    "square": true,
+    "style": "hand-painted anime forest rock with light neutral gray-blue mineral masses, cool blue fissures and restrained sage moss",
+    "no_polygon_triangle_pattern": true,
+    "no_masonry_grid": true,
+    "no_text": true,
+    "opposite_edge_mean_absolute_rgb_difference_255": {
+      "left_right": 7.28575225943647,
+      "top_bottom": 8.395002658160553
+    },
+    "pixel_perfect_periodic": false
+  },
+  "integration_notes": [
+    "Use native albedo RGB only. The image contains no roughness, metallic, AO or tangent normal channels.",
+    "Use soft smooth mesh normals and avoid a faceted normal map.",
+    "Use moderate world/UV scale and rotate instances. Blended triplanar projection can conceal exposed wrap seams on large modules.",
+    "The original is non-power-of-two; use the engine texture power-of-two resampling option if mip generation for the target requires it."
+  ]
+}

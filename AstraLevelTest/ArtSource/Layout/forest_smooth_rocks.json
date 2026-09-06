@@ -1,0 +1,450 @@
+{
+  "source": "ArtSource/Blender/ForestSmoothRocks.blend",
+  "original_source": "ArtSource/Blender/AstraWoodland.blend",
+  "rebuild_baseline": "Preserved SOURCE_CAGE_SM_MossRock_01..05 objects inside ForestSmoothRocks.blend; fallback to main source only on first build",
+  "script": "Scripts/build_smooth_forest_rocks.py",
+  "units": "metres",
+  "unreal_conversion": "(Blender X, -Blender Y, Blender Z) * 100; existing actor transform stays unchanged",
+  "replacement_map": {
+    "SM_MossRock_01": "SM_SmoothForestRock_01",
+    "SM_MossRock_02": "SM_SmoothForestRock_02",
+    "SM_MossRock_03": "SM_SmoothForestRock_03",
+    "SM_MossRock_04": "SM_SmoothForestRock_04",
+    "SM_MossRock_05": "SM_SmoothForestRock_05"
+  },
+  "material_properties": {
+    "M_ForestRockPaint": {
+      "base_color_texture": "ArtSource/Textures/T_AnimeForestRockPaint.png",
+      "base_color_formula": "sRGB-decoded TextureSample(UV0).rgb",
+      "texture_srgb": true,
+      "roughness": 0.88,
+      "metallic": 0,
+      "specular": 0.2,
+      "uv_channel": 0,
+      "normal_texture": null,
+      "emissive": 0,
+      "random_facet_colors": false
+    }
+  },
+  "texture_present_at_build": true,
+  "assets": [
+    {
+      "original_asset_id": "SM_MossRock_01",
+      "asset_id": "SM_SmoothForestRock_01",
+      "new_asset_id": "SM_SmoothForestRock_01",
+      "file": "ArtSource/Meshes/SM_SmoothForestRock_01.fbx",
+      "collision": "complex",
+      "original_ue_path": "/Game/Astra/Meshes/SM_MossRock_01",
+      "unreal_asset_path": "/Game/Astra/Meshes/SM_MossRock_01",
+      "unreal_import_target_asset_id": "SM_MossRock_01",
+      "independent_source_asset_id": "SM_SmoothForestRock_01",
+      "origin": "Original local origin preserved; lower bound intentionally about +0.08 m",
+      "blender_location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "blender_rotation_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "blender_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bounds_min_m": [
+        -1.3755327463150024,
+        -1.1505417823791504,
+        0.08115974068641663
+      ],
+      "bounds_max_m": [
+        1.3861116170883179,
+        1.119643211364746,
+        1.5620307922363281
+      ],
+      "original_bounds_min_m": [
+        -1.3755327463150024,
+        -1.1505417823791504,
+        0.08115974068641663
+      ],
+      "original_bounds_max_m": [
+        1.3861116170883179,
+        1.119643211364746,
+        1.5620307922363281
+      ],
+      "dimensions_m": [
+        2.7616443634033203,
+        2.2701849937438965,
+        1.4808710515499115
+      ],
+      "vertices": 962,
+      "triangles": 1920,
+      "material_slots": [
+        "M_ForestRockPaint"
+      ],
+      "uv_channel": 0,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "validation": {
+        "finite_vertices": true,
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "signed_volume_m3": 5.279833589862948,
+        "all_faces_smooth": true,
+        "random_face_materials_removed": true,
+        "vertex_color_attributes": 0,
+        "bounds_error_m": 0.0,
+        "origin_transform_preserved": true,
+        "finite_uv": true,
+        "minimum_uv_face_area": 0.000113274141355868,
+        "uv_layout": "Angle-based unwrap, two islands split at equator; continuous top surface"
+      }
+    },
+    {
+      "original_asset_id": "SM_MossRock_02",
+      "asset_id": "SM_SmoothForestRock_02",
+      "new_asset_id": "SM_SmoothForestRock_02",
+      "file": "ArtSource/Meshes/SM_SmoothForestRock_02.fbx",
+      "collision": "complex",
+      "original_ue_path": "/Game/Astra/Meshes/SM_MossRock_02",
+      "unreal_asset_path": "/Game/Astra/Meshes/SM_MossRock_02",
+      "unreal_import_target_asset_id": "SM_MossRock_02",
+      "independent_source_asset_id": "SM_SmoothForestRock_02",
+      "origin": "Original local origin preserved; lower bound intentionally about +0.08 m",
+      "blender_location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "blender_rotation_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "blender_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bounds_min_m": [
+        -1.4525303840637207,
+        -1.2299089431762695,
+        0.08296525478363037
+      ],
+      "bounds_max_m": [
+        1.4617878198623657,
+        1.2050243616104126,
+        1.590937852859497
+      ],
+      "original_bounds_min_m": [
+        -1.4525303840637207,
+        -1.2299089431762695,
+        0.08296525478363037
+      ],
+      "original_bounds_max_m": [
+        1.4617878198623657,
+        1.2050243616104126,
+        1.590937852859497
+      ],
+      "dimensions_m": [
+        2.9143182039260864,
+        2.434933304786682,
+        1.5079725980758667
+      ],
+      "vertices": 962,
+      "triangles": 1920,
+      "material_slots": [
+        "M_ForestRockPaint"
+      ],
+      "uv_channel": 0,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "validation": {
+        "finite_vertices": true,
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "signed_volume_m3": 5.84021835733715,
+        "all_faces_smooth": true,
+        "random_face_materials_removed": true,
+        "vertex_color_attributes": 0,
+        "bounds_error_m": 0.0,
+        "origin_transform_preserved": true,
+        "finite_uv": true,
+        "minimum_uv_face_area": 0.00012367056858142433,
+        "uv_layout": "Angle-based unwrap, two islands split at equator; continuous top surface"
+      }
+    },
+    {
+      "original_asset_id": "SM_MossRock_03",
+      "asset_id": "SM_SmoothForestRock_03",
+      "new_asset_id": "SM_SmoothForestRock_03",
+      "file": "ArtSource/Meshes/SM_SmoothForestRock_03.fbx",
+      "collision": "complex",
+      "original_ue_path": "/Game/Astra/Meshes/SM_MossRock_03",
+      "unreal_asset_path": "/Game/Astra/Meshes/SM_MossRock_03",
+      "unreal_import_target_asset_id": "SM_MossRock_03",
+      "independent_source_asset_id": "SM_SmoothForestRock_03",
+      "origin": "Original local origin preserved; lower bound intentionally about +0.08 m",
+      "blender_location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "blender_rotation_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "blender_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bounds_min_m": [
+        -1.5107712745666504,
+        -1.2167363166809082,
+        0.08119183778762817
+      ],
+      "bounds_max_m": [
+        1.6497342586517334,
+        1.1659343242645264,
+        1.6758193969726562
+      ],
+      "original_bounds_min_m": [
+        -1.5107712745666504,
+        -1.2167363166809082,
+        0.08119183778762817
+      ],
+      "original_bounds_max_m": [
+        1.6497342586517334,
+        1.1659343242645264,
+        1.6758193969726562
+      ],
+      "dimensions_m": [
+        3.160505533218384,
+        2.3826706409454346,
+        1.594627559185028
+      ],
+      "vertices": 962,
+      "triangles": 1920,
+      "material_slots": [
+        "M_ForestRockPaint"
+      ],
+      "uv_channel": 0,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "validation": {
+        "finite_vertices": true,
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "signed_volume_m3": 6.3863940065357445,
+        "all_faces_smooth": true,
+        "random_face_materials_removed": true,
+        "vertex_color_attributes": 0,
+        "bounds_error_m": 0.0,
+        "origin_transform_preserved": true,
+        "finite_uv": true,
+        "minimum_uv_face_area": 0.00010073748118050174,
+        "uv_layout": "Angle-based unwrap, two islands split at equator; continuous top surface"
+      }
+    },
+    {
+      "original_asset_id": "SM_MossRock_04",
+      "asset_id": "SM_SmoothForestRock_04",
+      "new_asset_id": "SM_SmoothForestRock_04",
+      "file": "ArtSource/Meshes/SM_SmoothForestRock_04.fbx",
+      "collision": "complex",
+      "original_ue_path": "/Game/Astra/Meshes/SM_MossRock_04",
+      "unreal_asset_path": "/Game/Astra/Meshes/SM_MossRock_04",
+      "unreal_import_target_asset_id": "SM_MossRock_04",
+      "independent_source_asset_id": "SM_SmoothForestRock_04",
+      "origin": "Original local origin preserved; lower bound intentionally about +0.08 m",
+      "blender_location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "blender_rotation_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "blender_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bounds_min_m": [
+        -1.6817978620529175,
+        -1.0973939895629883,
+        0.08427318930625916
+      ],
+      "bounds_max_m": [
+        1.5401089191436768,
+        1.0552330017089844,
+        1.5747661590576172
+      ],
+      "original_bounds_min_m": [
+        -1.6817978620529175,
+        -1.0973939895629883,
+        0.08427318930625916
+      ],
+      "original_bounds_max_m": [
+        1.5401089191436768,
+        1.0552330017089844,
+        1.5747661590576172
+      ],
+      "dimensions_m": [
+        3.2219067811965942,
+        2.1526269912719727,
+        1.490492969751358
+      ],
+      "vertices": 962,
+      "triangles": 1920,
+      "material_slots": [
+        "M_ForestRockPaint"
+      ],
+      "uv_channel": 0,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "validation": {
+        "finite_vertices": true,
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "signed_volume_m3": 5.716314929253646,
+        "all_faces_smooth": true,
+        "random_face_materials_removed": true,
+        "vertex_color_attributes": 0,
+        "bounds_error_m": 0.0,
+        "origin_transform_preserved": true,
+        "finite_uv": true,
+        "minimum_uv_face_area": 0.0001066300174104029,
+        "uv_layout": "Angle-based unwrap, two islands split at equator; continuous top surface"
+      }
+    },
+    {
+      "original_asset_id": "SM_MossRock_05",
+      "asset_id": "SM_SmoothForestRock_05",
+      "new_asset_id": "SM_SmoothForestRock_05",
+      "file": "ArtSource/Meshes/SM_SmoothForestRock_05.fbx",
+      "collision": "complex",
+      "original_ue_path": "/Game/Astra/Meshes/SM_MossRock_05",
+      "unreal_asset_path": "/Game/Astra/Meshes/SM_MossRock_05",
+      "unreal_import_target_asset_id": "SM_MossRock_05",
+      "independent_source_asset_id": "SM_SmoothForestRock_05",
+      "origin": "Original local origin preserved; lower bound intentionally about +0.08 m",
+      "blender_location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "blender_rotation_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "blender_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bounds_min_m": [
+        -1.8022981882095337,
+        -1.1701749563217163,
+        0.08061474561691284
+      ],
+      "bounds_max_m": [
+        1.6541986465454102,
+        1.087907075881958,
+        1.6147451400756836
+      ],
+      "original_bounds_min_m": [
+        -1.8022981882095337,
+        -1.1701749563217163,
+        0.08061474561691284
+      ],
+      "original_bounds_max_m": [
+        1.6541986465454102,
+        1.087907075881958,
+        1.6147451400756836
+      ],
+      "dimensions_m": [
+        3.456496834754944,
+        2.2580820322036743,
+        1.5341303944587708
+      ],
+      "vertices": 962,
+      "triangles": 1920,
+      "material_slots": [
+        "M_ForestRockPaint"
+      ],
+      "uv_channel": 0,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "validation": {
+        "finite_vertices": true,
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "signed_volume_m3": 6.699814591292519,
+        "all_faces_smooth": true,
+        "random_face_materials_removed": true,
+        "vertex_color_attributes": 0,
+        "bounds_error_m": 0.0,
+        "origin_transform_preserved": true,
+        "finite_uv": true,
+        "minimum_uv_face_area": 0.00010548072900418148,
+        "uv_layout": "Angle-based unwrap, two islands split at equator; continuous top surface"
+      }
+    }
+  ],
+  "fbx_roundtrip_validation": [
+    {
+      "asset_id": "SM_SmoothForestRock_01",
+      "bounds_error_m": 0.0,
+      "material_slots": 1,
+      "smooth_faces": 960,
+      "custom_normals_imported": true,
+      "uv_loops": 3840,
+      "finite_uv": true,
+      "welded_non_manifold_edges": 0
+    },
+    {
+      "asset_id": "SM_SmoothForestRock_02",
+      "bounds_error_m": 0.0,
+      "material_slots": 1,
+      "smooth_faces": 960,
+      "custom_normals_imported": true,
+      "uv_loops": 3840,
+      "finite_uv": true,
+      "welded_non_manifold_edges": 0
+    },
+    {
+      "asset_id": "SM_SmoothForestRock_03",
+      "bounds_error_m": 0.0,
+      "material_slots": 1,
+      "smooth_faces": 960,
+      "custom_normals_imported": true,
+      "uv_loops": 3840,
+      "finite_uv": true,
+      "welded_non_manifold_edges": 0
+    },
+    {
+      "asset_id": "SM_SmoothForestRock_04",
+      "bounds_error_m": 0.0,
+      "material_slots": 1,
+      "smooth_faces": 960,
+      "custom_normals_imported": true,
+      "uv_loops": 3840,
+      "finite_uv": true,
+      "welded_non_manifold_edges": 0
+    },
+    {
+      "asset_id": "SM_SmoothForestRock_05",
+      "bounds_error_m": 0.0,
+      "material_slots": 1,
+      "smooth_faces": 960,
+      "custom_normals_imported": true,
+      "uv_loops": 3840,
+      "finite_uv": true,
+      "welded_non_manifold_edges": 0
+    }
+  ],
+  "placement_notes": "Reimport each new FBX into its original SM_MossRock UE asset path so existing actors and references are preserved. In Blender replace mesh data while retaining original asset IDs and transforms. Original bounds and local pivot offsets are retained."
+}
