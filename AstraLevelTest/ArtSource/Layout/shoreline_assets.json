@@ -1,0 +1,358 @@
+{
+  "version": 1,
+  "kit": "AstraShoreline",
+  "units": "metres",
+  "ue_units": "centimetres",
+  "axis_mapping": "UE=(Blender.X,-Blender.Y,Blender.Z)",
+  "local_axes": "Shore runs X; land +Y; lake -Y; bank/shelf waterline Z=0; stones pivot at bottom.",
+  "reference": "Reference/Ref_PinkRoofLakesideHouse.png",
+  "palette_srgb_hex": {
+    "M_ShoreSand": "C6B88D",
+    "M_ShoreSandLight": "D2C59A",
+    "M_ShoreSandDark": "B4A681",
+    "M_ShoreEarth": "A68B60",
+    "M_ShoreEarthLight": "B69A6A",
+    "M_ShoreEarthDark": "8E7755",
+    "M_ShoreGrass": "A0AC64",
+    "M_ShoreGrassLight": "AFB96D",
+    "M_SubmergedStone": "AAA99A",
+    "M_SubmergedStoneLight": "BFBEAE",
+    "M_SubmergedStoneDark": "94998E",
+    "M_ShoreMoss": "8E9F6C"
+  },
+  "assets": {
+    "SM_ShallowShelf_01": {
+      "file": "Meshes/Shoreline/SM_ShallowShelf_01.fbx",
+      "collision": "none",
+      "materials": [
+        "M_ShoreSand",
+        "M_ShoreSandLight",
+        "M_ShoreSandDark"
+      ],
+      "dimensions_m": [
+        6.0,
+        4.444999992847443,
+        1.5749999806284904
+      ],
+      "bounds_min_m": [
+        -3.0,
+        -4.0,
+        -1.5199999809265137
+      ],
+      "bounds_max_m": [
+        3.0,
+        0.4449999928474426,
+        0.054999999701976776
+      ],
+      "triangles": 180,
+      "metadata": {
+        "shore_kind": "shallow_shelf",
+        "nominal_length_m": 6.0,
+        "nominal_wet_width_m": 4.0,
+        "land_underlap_m": 0.4,
+        "waterline_z_m": 0.0,
+        "collision": "none",
+        "top_triangle_count": 96,
+        "generation_seed": 58014,
+        "description_ko": "완만하게 깊어지는 밝은 모래 수중 선반. 해안 중앙이 원점이며 +Y는 육지, -Y는 호수. 기존 지형 위 배치용.",
+        "asset_id": "SM_ShallowShelf_01"
+      },
+      "sha256": "866a28a31413a555e5a118e7255bf2a60cb3537e489325dc7ebba0ba51d75f6b"
+    },
+    "SM_ShallowShelf_Cove_01": {
+      "file": "Meshes/Shoreline/SM_ShallowShelf_Cove_01.fbx",
+      "collision": "none",
+      "materials": [
+        "M_ShoreSand",
+        "M_ShoreSandLight",
+        "M_ShoreSandDark"
+      ],
+      "dimensions_m": [
+        6.0,
+        4.9000000059604645,
+        1.5749999806284904
+      ],
+      "bounds_min_m": [
+        -3.0,
+        -4.5,
+        -1.5199999809265137
+      ],
+      "bounds_max_m": [
+        3.0,
+        0.4000000059604645,
+        0.054999999701976776
+      ],
+      "triangles": 180,
+      "metadata": {
+        "shore_kind": "shallow_shelf",
+        "nominal_length_m": 6.0,
+        "nominal_wet_width_m": 4.5,
+        "land_underlap_m": 0.4,
+        "waterline_z_m": 0.0,
+        "collision": "none",
+        "top_triangle_count": 96,
+        "generation_seed": 58015,
+        "description_ko": "중앙으로 완만하게 들어간 작은 만의 밝은 모래 수중 선반. 해안 중앙이 원점이며 +Y는 육지, -Y는 호수. 기존 지형 위 배치용.",
+        "asset_id": "SM_ShallowShelf_Cove_01"
+      },
+      "sha256": "f92bc50e1fc56379c7bf365ce01cd991cee26ff587e42bd2c53c6373d0aa34f2"
+    },
+    "SM_ShoreBank_Straight_01": {
+      "file": "Meshes/Shoreline/SM_ShoreBank_Straight_01.fbx",
+      "collision": "none",
+      "materials": [
+        "M_ShoreGrass",
+        "M_ShoreGrassLight",
+        "M_ShoreEarth",
+        "M_ShoreEarthLight"
+      ],
+      "dimensions_m": [
+        4.0,
+        1.9459521770477295,
+        1.1450000405311584
+      ],
+      "bounds_min_m": [
+        -2.0,
+        -0.7010276317596436,
+        -0.7200000286102295
+      ],
+      "bounds_max_m": [
+        2.0,
+        1.244924545288086,
+        0.42500001192092896
+      ],
+      "triangles": 158,
+      "metadata": {
+        "asset_id": "SM_ShoreBank_Straight_01",
+        "shore_kind": "low_bank",
+        "nominal_length_m": 4.0,
+        "waterline_z_m": 0.0,
+        "collision": "none",
+        "description_ko": "넓고 완만한 굴곡의 풀 상단과 낮은 흙 절개면이 있는 직선형 호숫가. 양끝과 뒤쪽은 지형에 묻어 연결한다.",
+        "placement_note_ko": "육지는 로컬 +Y, 호수는 -Y. 물높이는 Z=0. 밑면은 Z=-0.72m까지 매립한다. 반복 타일 규격이 아니므로 양끝과 뒤쪽을 지형 안에 묻거나 겹친다."
+      },
+      "sha256": "d434802e0984e5e580ec82bc624a43a50f314bc4f566fa47ce8fe343b01e1098"
+    },
+    "SM_ShoreBank_Curve_01": {
+      "file": "Meshes/Shoreline/SM_ShoreBank_Curve_01.fbx",
+      "collision": "none",
+      "materials": [
+        "M_ShoreGrass",
+        "M_ShoreGrassLight",
+        "M_ShoreEarth",
+        "M_ShoreEarthLight"
+      ],
+      "dimensions_m": [
+        4.0,
+        2.0482229590415955,
+        1.1450000405311584
+      ],
+      "bounds_min_m": [
+        -2.0,
+        -0.8032984137535095,
+        -0.7200000286102295
+      ],
+      "bounds_max_m": [
+        2.0,
+        1.244924545288086,
+        0.42500001192092896
+      ],
+      "triangles": 158,
+      "metadata": {
+        "asset_id": "SM_ShoreBank_Curve_01",
+        "shore_kind": "low_bank",
+        "nominal_length_m": 4.0,
+        "waterline_z_m": 0.0,
+        "collision": "none",
+        "description_ko": "호수가 육지 안으로 살짝 들어오는 오목한 해안형. 낮은 풀턱 아래 흙면과 잠긴 받침이 이어지며 양끝은 매립 또는 겹침 배치한다.",
+        "placement_note_ko": "육지는 로컬 +Y, 호수는 -Y. 물높이는 Z=0. 밑면은 Z=-0.72m까지 매립한다. 반복 타일 규격이 아니므로 양끝과 뒤쪽을 지형 안에 묻거나 겹친다."
+      },
+      "sha256": "7b2275aad7297fc36944c8a4ca27c120428a9149d60758cd906adfc0a3936b8f"
+    },
+    "SM_ShoreBank_Low_01": {
+      "file": "Meshes/Shoreline/SM_ShoreBank_Low_01.fbx",
+      "collision": "none",
+      "materials": [
+        "M_ShoreGrass",
+        "M_ShoreGrassLight",
+        "M_ShoreEarth",
+        "M_ShoreEarthLight"
+      ],
+      "dimensions_m": [
+        4.0,
+        1.884544014930725,
+        0.955344945192337
+      ],
+      "bounds_min_m": [
+        -2.0,
+        -0.6396194696426392,
+        -0.7200000286102295
+      ],
+      "bounds_max_m": [
+        2.0,
+        1.244924545288086,
+        0.23534491658210754
+      ],
+      "triangles": 158,
+      "metadata": {
+        "asset_id": "SM_ShoreBank_Low_01",
+        "shore_kind": "low_bank",
+        "nominal_length_m": 4.0,
+        "waterline_z_m": 0.0,
+        "collision": "none",
+        "description_ko": "흙턱이 낮아지고 물가 쪽으로 부드럽게 닳은 침식형 해안. 얕은 모래 선반으로 전환할 구간에 겹쳐 배치한다.",
+        "placement_note_ko": "육지는 로컬 +Y, 호수는 -Y. 물높이는 Z=0. 밑면은 Z=-0.72m까지 매립한다. 반복 타일 규격이 아니므로 양끝과 뒤쪽을 지형 안에 묻거나 겹친다."
+      },
+      "sha256": "ded6a5567778cae3e34b77ff6189ffb34fbfab88d13e9f7978c69aff7b19f53c"
+    },
+    "SM_SubmergedRock_Round_01": {
+      "file": "Meshes/Shoreline/SM_SubmergedRock_Round_01.fbx",
+      "collision": "none",
+      "materials": [
+        "M_SubmergedStone",
+        "M_SubmergedStoneLight",
+        "M_SubmergedStoneDark"
+      ],
+      "dimensions_m": [
+        1.0,
+        0.800000011920929,
+        0.44999998807907104
+      ],
+      "bounds_min_m": [
+        -0.5,
+        -0.4000000059604645,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.5,
+        0.4000000059604645,
+        0.44999998807907104
+      ],
+      "triangles": 82,
+      "metadata": {
+        "asset_id": "SM_SubmergedRock_Round_01",
+        "shore_kind": "submerged_rock",
+        "collision": "none",
+        "description_ko": "얕은 호수 바닥용 둥근 회베이지 돌. 넓은 윗면과 낮은 옆면으로 수중 실루엣을 구분한다.",
+        "pivot_note": "bottom_contact",
+        "units": "metres",
+        "generation_seed": 7401
+      },
+      "sha256": "970702ca7e56a6b30e1f10ca896bd6771c5e230e6ae393b09552c7676d3d3b83"
+    },
+    "SM_SubmergedRock_Flat_01": {
+      "file": "Meshes/Shoreline/SM_SubmergedRock_Flat_01.fbx",
+      "collision": "none",
+      "materials": [
+        "M_SubmergedStone",
+        "M_SubmergedStoneLight",
+        "M_SubmergedStoneDark"
+      ],
+      "dimensions_m": [
+        1.25,
+        0.800000011920929,
+        0.25
+      ],
+      "bounds_min_m": [
+        -0.625,
+        -0.4000000059604645,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.625,
+        0.4000000059604645,
+        0.25
+      ],
+      "triangles": 82,
+      "metadata": {
+        "asset_id": "SM_SubmergedRock_Flat_01",
+        "shore_kind": "submerged_rock",
+        "collision": "none",
+        "description_ko": "모래 선반에 놓는 납작하고 넓은 수중돌. 불규칙한 둥근 모서리와 큰 상단 면을 가진다.",
+        "pivot_note": "bottom_contact",
+        "units": "metres",
+        "generation_seed": 7402
+      },
+      "sha256": "1bb883c43f7fce88e74c148e9bd8e97919f4ba75f05cc0a4ca75470e9e374719"
+    },
+    "SM_SubmergedRock_Small_01": {
+      "file": "Meshes/Shoreline/SM_SubmergedRock_Small_01.fbx",
+      "collision": "none",
+      "materials": [
+        "M_SubmergedStone",
+        "M_SubmergedStoneLight",
+        "M_SubmergedStoneDark"
+      ],
+      "dimensions_m": [
+        0.6000000238418579,
+        0.44999998807907104,
+        0.2800000011920929
+      ],
+      "bounds_min_m": [
+        -0.30000001192092896,
+        -0.22499999403953552,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.30000001192092896,
+        0.22499999403953552,
+        0.2800000011920929
+      ],
+      "triangles": 68,
+      "metadata": {
+        "asset_id": "SM_SubmergedRock_Small_01",
+        "shore_kind": "submerged_rock",
+        "collision": "none",
+        "description_ko": "큰 돌 사이에 배치하는 작은 수중돌. 중성 석재색을 유지하며 물의 청록색은 수면에서 표현한다.",
+        "pivot_note": "bottom_contact",
+        "units": "metres",
+        "generation_seed": 7403
+      },
+      "sha256": "906ca6702599a91cb3d6fad5d796ec4e0d5d27c29d19d78d417af4c91b8b9012"
+    },
+    "SM_SubmergedPebbles_01": {
+      "file": "Meshes/Shoreline/SM_SubmergedPebbles_01.fbx",
+      "collision": "none",
+      "materials": [
+        "M_SubmergedStone",
+        "M_SubmergedStoneLight",
+        "M_SubmergedStoneDark"
+      ],
+      "dimensions_m": [
+        1.600000023841858,
+        1.100000023841858,
+        0.3199999928474426
+      ],
+      "bounds_min_m": [
+        -0.800000011920929,
+        -0.550000011920929,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.800000011920929,
+        0.550000011920929,
+        0.3199999928474426
+      ],
+      "triangles": 408,
+      "metadata": {
+        "asset_id": "SM_SubmergedPebbles_01",
+        "shore_kind": "pebble_cluster",
+        "collision": "none",
+        "description_ko": "모래 바닥에 드문드문 놓인 작은 수중돌 여섯 개. 각 돌은 닫힌 메시이며 모래판이나 물 색은 포함하지 않는다.",
+        "pivot_note": "bottom_contact",
+        "units": "metres",
+        "generation_seed": 7420,
+        "component_count": 6
+      },
+      "sha256": "35067bb1ac9ffd38d3893a1f4385374836e0d2566dd8d44e2be7cb32987a815c"
+    }
+  },
+  "shoredata": {
+    "R": "bank/shelf: clamp(-local_z / 1.5, 0, 1)",
+    "G": "bank/shelf: clamp(-local_y / 4, 0, 1)",
+    "B": "reserved 0",
+    "A": "1",
+    "note": "Stone RGB is zero. These are local hints, not world water depth or foam masks."
+  },
+  "integration_status": "Source meshes exported; not imported into Unreal or placed in the live map."
+}

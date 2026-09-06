@@ -1,0 +1,261 @@
+{
+  "blender": "4.5.12 LTS",
+  "passed": true,
+  "assets": {
+    "SM_ShallowShelf_01": {
+      "vertices": 92,
+      "triangles": 180,
+      "polygons": 180,
+      "material_slots": 3,
+      "bounds_min_m": [
+        -3.0,
+        -4.0,
+        -1.5199999809265137
+      ],
+      "bounds_max_m": [
+        3.0,
+        0.4449999928474426,
+        0.054999999701976776
+      ],
+      "dimensions_m": [
+        6.0,
+        4.444999992847443,
+        1.5749999806284904
+      ],
+      "non_manifold_edges": 0,
+      "zero_area_faces": 0,
+      "degenerate_uv_triangles": 0,
+      "signed_volume_m3": 31.22891012293591,
+      "uv_layer": "UVMap",
+      "vertex_color": "ShoreData",
+      "errors": []
+    },
+    "SM_ShallowShelf_Cove_01": {
+      "vertices": 92,
+      "triangles": 180,
+      "polygons": 180,
+      "material_slots": 3,
+      "bounds_min_m": [
+        -3.0,
+        -4.5,
+        -1.5199999809265137
+      ],
+      "bounds_max_m": [
+        3.0,
+        0.4000000059604645,
+        0.054999999701976776
+      ],
+      "dimensions_m": [
+        6.0,
+        4.9000000059604645,
+        1.5749999806284904
+      ],
+      "non_manifold_edges": 0,
+      "zero_area_faces": 0,
+      "degenerate_uv_triangles": 0,
+      "signed_volume_m3": 30.676379523798236,
+      "uv_layer": "UVMap",
+      "vertex_color": "ShoreData",
+      "errors": []
+    },
+    "SM_ShoreBank_Straight_01": {
+      "vertices": 81,
+      "triangles": 158,
+      "polygons": 158,
+      "material_slots": 4,
+      "bounds_min_m": [
+        -2.0,
+        -0.7010276317596436,
+        -0.7200000286102295
+      ],
+      "bounds_max_m": [
+        2.0,
+        1.244924545288086,
+        0.42500001192092896
+      ],
+      "dimensions_m": [
+        4.0,
+        1.9459521770477295,
+        1.1450000405311584
+      ],
+      "non_manifold_edges": 0,
+      "zero_area_faces": 0,
+      "degenerate_uv_triangles": 0,
+      "signed_volume_m3": 6.4154295010023406,
+      "uv_layer": "UVMap",
+      "vertex_color": "ShoreData",
+      "errors": []
+    },
+    "SM_ShoreBank_Curve_01": {
+      "vertices": 81,
+      "triangles": 158,
+      "polygons": 158,
+      "material_slots": 4,
+      "bounds_min_m": [
+        -2.0,
+        -0.8032984137535095,
+        -0.7200000286102295
+      ],
+      "bounds_max_m": [
+        2.0,
+        1.244924545288086,
+        0.42500001192092896
+      ],
+      "dimensions_m": [
+        4.0,
+        2.0482229590415955,
+        1.1450000405311584
+      ],
+      "non_manifold_edges": 0,
+      "zero_area_faces": 0,
+      "degenerate_uv_triangles": 0,
+      "signed_volume_m3": 6.787751574651754,
+      "uv_layer": "UVMap",
+      "vertex_color": "ShoreData",
+      "errors": []
+    },
+    "SM_ShoreBank_Low_01": {
+      "vertices": 81,
+      "triangles": 158,
+      "polygons": 158,
+      "material_slots": 4,
+      "bounds_min_m": [
+        -2.0,
+        -0.6396194696426392,
+        -0.7200000286102295
+      ],
+      "bounds_max_m": [
+        2.0,
+        1.244924545288086,
+        0.23534491658210754
+      ],
+      "dimensions_m": [
+        4.0,
+        1.884544014930725,
+        0.955344945192337
+      ],
+      "non_manifold_edges": 0,
+      "zero_area_faces": 0,
+      "degenerate_uv_triangles": 0,
+      "signed_volume_m3": 5.77762773301547,
+      "uv_layer": "UVMap",
+      "vertex_color": "ShoreData",
+      "errors": []
+    },
+    "SM_SubmergedRock_Round_01": {
+      "vertices": 43,
+      "triangles": 82,
+      "polygons": 82,
+      "material_slots": 3,
+      "bounds_min_m": [
+        -0.5,
+        -0.4000000059604645,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.5,
+        0.4000000059604645,
+        0.44999998807907104
+      ],
+      "dimensions_m": [
+        1.0,
+        0.800000011920929,
+        0.44999998807907104
+      ],
+      "non_manifold_edges": 0,
+      "zero_area_faces": 0,
+      "degenerate_uv_triangles": 0,
+      "signed_volume_m3": 0.17359242067019182,
+      "uv_layer": "UVMap",
+      "vertex_color": "ShoreData",
+      "errors": []
+    },
+    "SM_SubmergedRock_Flat_01": {
+      "vertices": 43,
+      "triangles": 82,
+      "polygons": 82,
+      "material_slots": 3,
+      "bounds_min_m": [
+        -0.625,
+        -0.4000000059604645,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.625,
+        0.4000000059604645,
+        0.25
+      ],
+      "dimensions_m": [
+        1.25,
+        0.800000011920929,
+        0.25
+      ],
+      "non_manifold_edges": 0,
+      "zero_area_faces": 0,
+      "degenerate_uv_triangles": 0,
+      "signed_volume_m3": 0.1309484811140325,
+      "uv_layer": "UVMap",
+      "vertex_color": "ShoreData",
+      "errors": []
+    },
+    "SM_SubmergedRock_Small_01": {
+      "vertices": 36,
+      "triangles": 68,
+      "polygons": 68,
+      "material_slots": 3,
+      "bounds_min_m": [
+        -0.30000001192092896,
+        -0.22499999403953552,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.30000001192092896,
+        0.22499999403953552,
+        0.2800000011920929
+      ],
+      "dimensions_m": [
+        0.6000000238418579,
+        0.44999998807907104,
+        0.2800000011920929
+      ],
+      "non_manifold_edges": 0,
+      "zero_area_faces": 0,
+      "degenerate_uv_triangles": 0,
+      "signed_volume_m3": 0.03603509047081285,
+      "uv_layer": "UVMap",
+      "vertex_color": "ShoreData",
+      "errors": []
+    },
+    "SM_SubmergedPebbles_01": {
+      "vertices": 216,
+      "triangles": 408,
+      "polygons": 408,
+      "material_slots": 3,
+      "bounds_min_m": [
+        -0.800000011920929,
+        -0.550000011920929,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.800000011920929,
+        0.550000011920929,
+        0.3199999928474426
+      ],
+      "dimensions_m": [
+        1.600000023841858,
+        1.100000023841858,
+        0.3199999928474426
+      ],
+      "non_manifold_edges": 0,
+      "zero_area_faces": 0,
+      "degenerate_uv_triangles": 0,
+      "signed_volume_m3": 0.11126646606174527,
+      "uv_layer": "UVMap",
+      "vertex_color": "ShoreData",
+      "errors": []
+    }
+  },
+  "asset_count": 9,
+  "total_triangles": 1474,
+  "scope": "Blender mesh topology, UVs, transforms, FBX export. Unreal import not executed."
+}

@@ -1,0 +1,145 @@
+{
+  "passed": true,
+  "blender": "4.5.12 LTS",
+  "scope": "Fresh Blender FBX reimport: scale, axes, pivot bounds, triangles, material slots, UVs, colors, topology. Unreal import not executed.",
+  "assets": {
+    "SM_ShallowShelf_01": {
+      "passed": true,
+      "max_bounds_error_m": 4.76837158203125e-07,
+      "triangles": 180,
+      "materials": [
+        "M_ShoreSand",
+        "M_ShoreSandLight",
+        "M_ShoreSandDark"
+      ],
+      "vertex_color": "ShoreData",
+      "vertex_color_domain": "CORNER",
+      "max_vertex_color_error": 6.556707887601549e-08,
+      "uv_layer": "UVMap",
+      "non_manifold_edges_after_seam_weld": 0
+    },
+    "SM_ShallowShelf_Cove_01": {
+      "passed": true,
+      "max_bounds_error_m": 4.76837158203125e-07,
+      "triangles": 180,
+      "materials": [
+        "M_ShoreSand",
+        "M_ShoreSandLight",
+        "M_ShoreSandDark"
+      ],
+      "vertex_color": "ShoreData",
+      "vertex_color_domain": "CORNER",
+      "max_vertex_color_error": 6.705522537231445e-08,
+      "uv_layer": "UVMap",
+      "non_manifold_edges_after_seam_weld": 0
+    },
+    "SM_ShoreBank_Straight_01": {
+      "passed": true,
+      "max_bounds_error_m": 1.1920928955078125e-07,
+      "triangles": 158,
+      "materials": [
+        "M_ShoreGrass",
+        "M_ShoreGrassLight",
+        "M_ShoreEarth",
+        "M_ShoreEarthLight"
+      ],
+      "vertex_color": "ShoreData",
+      "vertex_color_domain": "CORNER",
+      "max_vertex_color_error": 4.470348358154297e-08,
+      "uv_layer": "UVMap",
+      "non_manifold_edges_after_seam_weld": 0
+    },
+    "SM_ShoreBank_Curve_01": {
+      "passed": true,
+      "max_bounds_error_m": 1.7881393432617188e-07,
+      "triangles": 158,
+      "materials": [
+        "M_ShoreGrass",
+        "M_ShoreGrassLight",
+        "M_ShoreEarth",
+        "M_ShoreEarthLight"
+      ],
+      "vertex_color": "ShoreData",
+      "vertex_color_domain": "CORNER",
+      "max_vertex_color_error": 4.470348358154297e-08,
+      "uv_layer": "UVMap",
+      "non_manifold_edges_after_seam_weld": 0
+    },
+    "SM_ShoreBank_Low_01": {
+      "passed": true,
+      "max_bounds_error_m": 1.1920928955078125e-07,
+      "triangles": 158,
+      "materials": [
+        "M_ShoreGrass",
+        "M_ShoreGrassLight",
+        "M_ShoreEarth",
+        "M_ShoreEarthLight"
+      ],
+      "vertex_color": "ShoreData",
+      "vertex_color_domain": "CORNER",
+      "max_vertex_color_error": 4.470348358154297e-08,
+      "uv_layer": "UVMap",
+      "non_manifold_edges_after_seam_weld": 0
+    },
+    "SM_SubmergedRock_Round_01": {
+      "passed": true,
+      "max_bounds_error_m": 0.0,
+      "triangles": 82,
+      "materials": [
+        "M_SubmergedStone",
+        "M_SubmergedStoneLight",
+        "M_SubmergedStoneDark"
+      ],
+      "vertex_color": "ShoreData",
+      "vertex_color_domain": "CORNER",
+      "max_vertex_color_error": 0.0,
+      "uv_layer": "UVMap",
+      "non_manifold_edges_after_seam_weld": 0
+    },
+    "SM_SubmergedRock_Flat_01": {
+      "passed": true,
+      "max_bounds_error_m": 0.0,
+      "triangles": 82,
+      "materials": [
+        "M_SubmergedStone",
+        "M_SubmergedStoneLight",
+        "M_SubmergedStoneDark"
+      ],
+      "vertex_color": "ShoreData",
+      "vertex_color_domain": "CORNER",
+      "max_vertex_color_error": 0.0,
+      "uv_layer": "UVMap",
+      "non_manifold_edges_after_seam_weld": 0
+    },
+    "SM_SubmergedRock_Small_01": {
+      "passed": true,
+      "max_bounds_error_m": 0.0,
+      "triangles": 68,
+      "materials": [
+        "M_SubmergedStone",
+        "M_SubmergedStoneLight",
+        "M_SubmergedStoneDark"
+      ],
+      "vertex_color": "ShoreData",
+      "vertex_color_domain": "CORNER",
+      "max_vertex_color_error": 0.0,
+      "uv_layer": "UVMap",
+      "non_manifold_edges_after_seam_weld": 0
+    },
+    "SM_SubmergedPebbles_01": {
+      "passed": true,
+      "max_bounds_error_m": 5.960464477539063e-08,
+      "triangles": 408,
+      "materials": [
+        "M_SubmergedStone",
+        "M_SubmergedStoneLight",
+        "M_SubmergedStoneDark"
+      ],
+      "vertex_color": "ShoreData",
+      "vertex_color_domain": "CORNER",
+      "max_vertex_color_error": 0.0,
+      "uv_layer": "UVMap",
+      "non_manifold_edges_after_seam_weld": 0
+    }
+  }
+}

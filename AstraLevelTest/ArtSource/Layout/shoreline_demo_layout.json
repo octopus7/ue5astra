@@ -1,0 +1,411 @@
+{
+  "version": 1,
+  "scope": "Isolated dry study only; not game-map placement.",
+  "units": "metres",
+  "axis_mapping": "UE=(Blender.X,-Blender.Y,Blender.Z)",
+  "objects": [
+    {
+      "name": "Study_SM_ShallowShelf_01",
+      "asset": "SM_ShallowShelf_01",
+      "group": "ShorelineStudy",
+      "collision": "none",
+      "blender_location_m": [
+        -3.0,
+        0.0,
+        0.0
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        -300.0,
+        -0.0,
+        0.0
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Study_SM_ShallowShelf_Cove_01",
+      "asset": "SM_ShallowShelf_Cove_01",
+      "group": "ShorelineStudy",
+      "collision": "none",
+      "blender_location_m": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        300.0,
+        -0.0,
+        0.0
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Study_SM_ShoreBank_Straight_01",
+      "asset": "SM_ShoreBank_Straight_01",
+      "group": "ShorelineStudy",
+      "collision": "none",
+      "blender_location_m": [
+        -3.9000000953674316,
+        0.10000000149011612,
+        0.0
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        -390.00000953674316,
+        -10.000000149011612,
+        0.0
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Study_SM_ShoreBank_Curve_01",
+      "asset": "SM_ShoreBank_Curve_01",
+      "group": "ShorelineStudy",
+      "collision": "none",
+      "blender_location_m": [
+        0.0,
+        0.10000000149011612,
+        0.0
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        0.0,
+        -10.000000149011612,
+        0.0
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Study_SM_ShoreBank_Straight_01.001",
+      "asset": "SM_ShoreBank_Straight_01",
+      "group": "ShorelineStudy",
+      "collision": "none",
+      "blender_location_m": [
+        3.9000000953674316,
+        0.10000000149011612,
+        0.0
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        390.00000953674316,
+        -10.000000149011612,
+        0.0
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Study_Stone_00",
+      "asset": "SM_SubmergedRock_Round_01",
+      "group": "ShorelineStudy",
+      "collision": "none",
+      "blender_location_m": [
+        -4.400000095367432,
+        -0.800000011920929,
+        -0.1806732714176178
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.41887903213500977
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "ue_location_cm": [
+        -440.00000953674316,
+        80.0000011920929,
+        -18.06732714176178
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -24.000000667860846,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Study_Stone_01",
+      "asset": "SM_SubmergedRock_Flat_01",
+      "group": "ShorelineStudy",
+      "collision": "none",
+      "blender_location_m": [
+        -3.5999999046325684,
+        -1.4500000476837158,
+        -0.26707878708839417
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.3141592741012573
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        -359.99999046325684,
+        145.00000476837158,
+        -26.707878708839417
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 18.000000500895634,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Study_Stone_02",
+      "asset": "SM_SubmergedPebbles_01",
+      "group": "ShorelineStudy",
+      "collision": "none",
+      "blender_location_m": [
+        -1.7999999523162842,
+        -2.200000047683716,
+        -0.42796579003334045
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.19198621809482574
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        -179.99999523162842,
+        220.00000476837158,
+        -42.796579003334045
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -11.000000021511672,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Study_Stone_03",
+      "asset": "SM_SubmergedRock_Small_01",
+      "group": "ShorelineStudy",
+      "collision": "none",
+      "blender_location_m": [
+        -0.5,
+        -0.6499999761581421,
+        -0.1632799208164215
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        1.0821040868759155
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        -50.0,
+        64.99999761581421,
+        -16.32799208164215
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -61.99999717184774,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Study_Stone_04",
+      "asset": "SM_SubmergedRock_Flat_01",
+      "group": "ShorelineStudy",
+      "collision": "none",
+      "blender_location_m": [
+        1.7999999523162842,
+        -1.600000023841858,
+        -0.2782954275608063
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.5585053563117981
+      ],
+      "scale": [
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "ue_location_cm": [
+        179.99999523162842,
+        160.0000023841858,
+        -27.829542756080627
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -31.999999752116263,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Study_Stone_05",
+      "asset": "SM_SubmergedRock_Round_01",
+      "group": "ShorelineStudy",
+      "collision": "none",
+      "blender_location_m": [
+        3.799999952316284,
+        -1.0,
+        -0.18005219101905823
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.24434609711170197
+      ],
+      "scale": [
+        0.6499999761581421,
+        0.6499999761581421,
+        0.6499999761581421
+      ],
+      "ue_location_cm": [
+        379.9999952316284,
+        100.0,
+        -18.005219101905823
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 14.000000104994276,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Study_Stone_06",
+      "asset": "SM_SubmergedPebbles_01",
+      "group": "ShorelineStudy",
+      "collision": "none",
+      "blender_location_m": [
+        4.400000095367432,
+        -2.700000047683716,
+        -0.5193971991539001
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.593411922454834
+      ],
+      "scale": [
+        0.8500000238418579,
+        0.8500000238418579,
+        0.8500000238418579
+      ],
+      "ue_location_cm": [
+        440.00000953674316,
+        270.0000047683716,
+        -51.939719915390015
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -33.99999866940647,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Study_Stone_07",
+      "asset": "SM_SubmergedRock_Small_01",
+      "group": "ShorelineStudy",
+      "collision": "none",
+      "blender_location_m": [
+        2.9000000953674316,
+        -2.700000047683716,
+        -0.5275136828422546
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        1.1693706512451172
+      ],
+      "scale": [
+        0.8500000238418579,
+        0.8500000238418579,
+        0.8500000238418579
+      ],
+      "ue_location_cm": [
+        290.00000953674316,
+        270.0000047683716,
+        -52.751368284225464
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -67.00000300280972,
+        "roll": 0.0
+      }
+    }
+  ]
+}

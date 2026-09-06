@@ -55,3 +55,7 @@ Directional Light Source Angle은 사용자 지정값인 50도이며 Exponential
 게임 실행 인자 `-AstraSmokeTest`는 WASD 입력 이벤트를 순서대로 주입하고, 이동 방향·접지·카메라 회전 고정을 검사한다. `-AstraReview=Overview` 등의 검토 인자는 엔진 렌더를 저장하고 해당 검토 실행을 종료한다. 일반 플레이에는 이 동작이 없다.
 
 `Scripts/render_reviews.ps1`로 Gameplay, Overview, Lake, Cabin, Puddle 렌더를 저장한다. `-AstraBridgeTest -AstraReview=Bridge`는 정상 다리 횡단을 검사한다. 실제 결과는 [VALIDATION.md](VALIDATION.md)에 기록했다.
+
+## 독립 호숫가 메시 키트
+
+얕은 모래 바닥 2종, 낮은 흙 턱 3종, 수중 돌·자갈 4종을 별도 Blender 원본과 FBX로 준비했다. [메시 목록·Blender 검토 렌더·배치 기준](ArtSource/Meshes/Shoreline/README.md)에서 확인할 수 있다. 실제 게임 맵 배치와 수면 재질 통합은 아직 하지 않았다.
