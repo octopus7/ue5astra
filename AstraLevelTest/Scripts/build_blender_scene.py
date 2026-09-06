@@ -202,7 +202,7 @@ for broken in [False,True]:
         for i in range(7):
             p.append(cube('FallenPlank',(R.uniform(-1.4,1.4),R.uniform(-1.2,1.2),R.uniform(-.65,-.15)),(R.uniform(.7,1.8),.23,.12),'M_WoodDark',(R.uniform(-.2,.2),R.uniform(-.4,.4),R.uniform(-1.2,1.2))))
     else:
-        for sign in [-1,1]:p.append(cube('Ramp',(0,sign*3.83,-.09),(2.08,.7,.14),'M_Wood',(-sign*.18,0,0)))
+        for sign in [-1,1]:p.append(cube('Ramp',(0,sign*4.48,-.30),(2.08,2.05,.14),'M_Wood',(-sign*.30,0,0)))
     name='SM_BridgeBroken' if broken else 'SM_BridgeIntact';LIB[name]=join_asset(name,p,'complex')
 
 p=[]
