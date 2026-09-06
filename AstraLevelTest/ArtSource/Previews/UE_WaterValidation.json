@@ -14,5 +14,10 @@
   "puddle_reflectance": "native sky/environment reflection with thin translucent dielectric Fresnel F0=0.02 and soft coverage",
   "underwater_terrain": "light sand instead of forest grass",
   "sky_texture": "T_AnimeSkyPanorama",
-  "main_map_shoreline_instances": 16
+  "main_map_shoreline_instances": 16,
+  "lake_stream_material": "/Game/Astra/Materials/Shoreline/M_WaterFoam",
+  "shoreline_contact_foam": true,
+  "shore_aligned_ripples": true,
+  "smooth_shallow_bed": true,
+  "wet_shore_materials": true
 }

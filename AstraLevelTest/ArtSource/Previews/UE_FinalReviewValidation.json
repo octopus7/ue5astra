@@ -5,7 +5,8 @@
     "UE_BridgeValidation.json": true,
     "UE_CampMovementValidation.json": true,
     "UE_ForestReloadValidation.json": true,
-    "Blender_ExportValidation.json": true
+    "Blender_ExportValidation.json": true,
+    "UE_ShorelinePolishMainValidation.json": true
   },
   "renders": [
     {
@@ -74,7 +75,7 @@
         1600,
         1000
       ],
-      "sha256": "5194b53e6a10d9e58ba634fabbb60da4beb89e4d6546ad359503ae3a75f389c2",
+      "sha256": "9dbc66fab8c6cbe38b5db0f372874d97e6ca33133bdcddfd27350522188a086e",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -124,7 +125,7 @@
         1600,
         1000
       ],
-      "sha256": "5eb98aa8fa1fd6f134912adf37af9cae288e4d0e23eca532b3e76ddbb4ebdfe9",
+      "sha256": "2c0639544f2f754acbcae7b59fbd04bffdfda520906e336c64e41e9c7a339804",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -134,7 +135,7 @@
         1600,
         1000
       ],
-      "sha256": "33c6020c5e3129c8738c0eb11712f534f3272c8d8828f538da082f547af1acb8",
+      "sha256": "85844e29f3fc938b4e7cbff1f2ac4a41310669bb540adcc2e36dbde9fd15c5a1",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -144,7 +145,7 @@
         1600,
         1000
       ],
-      "sha256": "308a82ee23aa69a625cfaaa2753af3bb976c75a5e26af3579b254cc1f3a261f0",
+      "sha256": "21f6b5898f3d91835b0fe6d57c3e1fa09bf62ddae0d42d856f660004da57f879",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -154,7 +155,7 @@
         1600,
         1000
       ],
-      "sha256": "25ded215da3b172a4d5c505afac114e3ef65787b61ade96eae0d8bdd057fc41d",
+      "sha256": "675d3938e403072ed3e96d1d3c5191a32e27fe019d531084b5feedbd6fb2cb81",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -164,7 +165,7 @@
         1600,
         1000
       ],
-      "sha256": "09ae2d1fee1d0f4a8a3d109be6a1b99b7f4bfc261f231147f3f12fcaed56f67c",
+      "sha256": "e0aac0d96c9bcf673c6abb7e62cbec88147dae0051d75cafacceb387d6420c3d",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -174,7 +175,7 @@
         1600,
         1000
       ],
-      "sha256": "c4c5af7c91819c9d21643166ded4c15add87604085d1a843cde2249a6e82b4b5",
+      "sha256": "d2efcaabf87a69933c5fd8b146f6d7b453ce0d9aa685288a183af61da6c615e4",
       "shader_errors": [],
       "engine_exited": true
     }

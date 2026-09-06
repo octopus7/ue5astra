@@ -10,7 +10,7 @@ for view in views:
     errors=[line for line in log.splitlines() if any(token in line for token in ['Failed to compile Material','LogShaderCompilers: Error','LogMaterial: Error','missing bUsedWith'])]
     raw=path.read_bytes();size=struct.unpack('>II',raw[16:24])
     results.append({'view':view,'size_px':size,'sha256':hashlib.sha256(raw).hexdigest(),'shader_errors':errors,'engine_exited':'LogExit: Exiting.' in log})
-checks={name:json.loads((ROOT/'ArtSource/Previews'/name).read_text(encoding='utf-8-sig'))['passed'] for name in ['UE_MovementValidation.json','UE_BridgeValidation.json','UE_CampMovementValidation.json','UE_ForestReloadValidation.json','Blender_ExportValidation.json']}
+checks={name:json.loads((ROOT/'ArtSource/Previews'/name).read_text(encoding='utf-8-sig'))['passed'] for name in ['UE_MovementValidation.json','UE_BridgeValidation.json','UE_CampMovementValidation.json','UE_ForestReloadValidation.json','Blender_ExportValidation.json','UE_ShorelinePolishMainValidation.json']}
 report={'passed':all(checks.values()) and all(not r['shader_errors'] and r['engine_exited'] and min(r['size_px'])>800 for r in results),'checks':checks,'renders':results}
 (ROOT/'ArtSource/Previews/UE_FinalReviewValidation.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps({'passed':report['passed'],'views':len(results),'checks':checks},indent=2))

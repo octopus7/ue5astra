@@ -26,7 +26,7 @@
 - 실제 반사는 기존 **물웅덩이 5개**에만 적용한다. 기본 새 재질은 `/Game/Astra/Materials/Shoreline/M_PuddleSkyReflection`이며 원본 `M_PuddleReflection`은 보존한다.
 - 검증은 `L_AstraShorelinePolishModuleReview`와 `L_AstraPuddleSkyModuleReview`라는 별도 맵에서 수행한다. 이 검토를 위해 원본 `L_AstraWoodland`, 원본 Landscape·물·바위 재질을 덮어쓰지 않는다. 아래 적용 함수를 원본 맵에서 명시적으로 실행하면 그 맵의 배치와 슬롯 오버라이드를 저장한다.
 
-원본 담당 작업에서는 실제 하늘 반사 웅덩이와 수중 돌 4개 메시의 부드러운 노멀을 먼저 적용했다고 확인했다. **해안 1~7번 전체는 현재 별도 검토 맵의 결과이며, 원본에는 커밋 전달 후 통합할 범위**다. 이 구분을 유지하고 원본에도 모두 적용됐다고 해석하지 않는다.
+원본 `L_AstraWoodland`에도 **해안 1~7번과 실제 반사 웅덩이 5개를 적용·저장했다**. `apply_shoreline_finish.py`가 기존 캠프 18개 변환·Foliage 1,976개·Landscape 액터를 전후 비교해 유지됨을 확인한다. 메인 맵 실측은 `UE_ShorelinePolishMainValidation.json`, 독립 재로드는 `UE_ForestReloadValidation.json`, 최종 메인 화면은 `UE_Shoreline.png`와 `UE_House.png`에 보관한다. 아래 별도 모듈 검증 결과와 구분한다.
 
 수중 돌의 `M_SubmergedStone`, `Light`, `Dark` 슬롯은 유지하되 세 재질의 기준색을 하나로 통일했다. 동일한 월드 좌표에서 ±1.2%의 연속 색 변화와 젖은 띠를 사용해, 부드러운 노멀 위에 삼각면별 색이 다시 드러나는 현상을 줄인다. 이 마지막 색 통일도 해안 재질 재생성으로 전달한다.
 

@@ -1,0 +1,1679 @@
+{
+  "map": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland",
+  "saved": true,
+  "site": {
+    "status": "success",
+    "map": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland",
+    "saved": false,
+    "original_states_directory": "D:\\github\\ue5astra\\AstraLevelTest\\Saved\\Shoreline\\original_actor_states_e70f19135e59",
+    "imported_mesh_count": 13,
+    "meshes": {
+      "SM_ShallowShelf_01": {
+        "asset_path": "/Game/Astra/Meshes/Shoreline/SM_ShallowShelf_01.SM_ShallowShelf_01",
+        "dimensions_m": [
+          6.0000003051757815,
+          4.445000419616699,
+          1.575
+        ],
+        "material_slots": [
+          "M_ShoreSand",
+          "M_ShoreSandLight",
+          "M_ShoreSandDark"
+        ]
+      },
+      "SM_ShallowShelf_Cove_01": {
+        "asset_path": "/Game/Astra/Meshes/Shoreline/SM_ShallowShelf_Cove_01.SM_ShallowShelf_Cove_01",
+        "dimensions_m": [
+          6.0000003051757815,
+          4.900000305175781,
+          1.575
+        ],
+        "material_slots": [
+          "M_ShoreSand",
+          "M_ShoreSandLight",
+          "M_ShoreSandDark"
+        ]
+      },
+      "SM_ShoreBank_Straight_01": {
+        "asset_path": "/Game/Astra/Meshes/Shoreline/SM_ShoreBank_Straight_01.SM_ShoreBank_Straight_01",
+        "dimensions_m": [
+          4.000000152587891,
+          1.9459522247314454,
+          1.145
+        ],
+        "material_slots": [
+          "M_ShoreGrass",
+          "M_ShoreGrassLight",
+          "M_ShoreEarth",
+          "M_ShoreEarthLight"
+        ]
+      },
+      "SM_ShoreBank_Curve_01": {
+        "asset_path": "/Game/Astra/Meshes/Shoreline/SM_ShoreBank_Curve_01.SM_ShoreBank_Curve_01",
+        "dimensions_m": [
+          4.000000152587891,
+          2.0482230377197266,
+          1.145
+        ],
+        "material_slots": [
+          "M_ShoreGrass",
+          "M_ShoreGrassLight",
+          "M_ShoreEarth",
+          "M_ShoreEarthLight"
+        ]
+      },
+      "SM_ShoreBank_Low_01": {
+        "asset_path": "/Game/Astra/Meshes/Shoreline/SM_ShoreBank_Low_01.SM_ShoreBank_Low_01",
+        "dimensions_m": [
+          4.000000152587891,
+          1.8845438385009765,
+          0.9553449249267578
+        ],
+        "material_slots": [
+          "M_ShoreGrass",
+          "M_ShoreGrassLight",
+          "M_ShoreEarth",
+          "M_ShoreEarthLight"
+        ]
+      },
+      "SM_SubmergedRock_Round_01": {
+        "asset_path": "/Game/Astra/Meshes/Shoreline/SM_SubmergedRock_Round_01.SM_SubmergedRock_Round_01",
+        "dimensions_m": [
+          1.0,
+          0.8,
+          0.45
+        ],
+        "material_slots": [
+          "M_SubmergedStone",
+          "M_SubmergedStoneLight",
+          "M_SubmergedStoneDark"
+        ]
+      },
+      "SM_SubmergedRock_Flat_01": {
+        "asset_path": "/Game/Astra/Meshes/Shoreline/SM_SubmergedRock_Flat_01.SM_SubmergedRock_Flat_01",
+        "dimensions_m": [
+          1.25,
+          0.8,
+          0.25
+        ],
+        "material_slots": [
+          "M_SubmergedStone",
+          "M_SubmergedStoneLight",
+          "M_SubmergedStoneDark"
+        ]
+      },
+      "SM_SubmergedRock_Small_01": {
+        "asset_path": "/Game/Astra/Meshes/Shoreline/SM_SubmergedRock_Small_01.SM_SubmergedRock_Small_01",
+        "dimensions_m": [
+          0.6000000190734863,
+          0.45,
+          0.28
+        ],
+        "material_slots": [
+          "M_SubmergedStone",
+          "M_SubmergedStoneLight",
+          "M_SubmergedStoneDark"
+        ]
+      },
+      "SM_SubmergedPebbles_01": {
+        "asset_path": "/Game/Astra/Meshes/Shoreline/SM_SubmergedPebbles_01.SM_SubmergedPebbles_01",
+        "dimensions_m": [
+          1.6,
+          1.0999999237060547,
+          0.32
+        ],
+        "material_slots": [
+          "M_SubmergedStone",
+          "M_SubmergedStoneLight",
+          "M_SubmergedStoneDark"
+        ]
+      },
+      "SM_ShorelineSite_CurvedBed": {
+        "asset_path": "/Game/Astra/Meshes/ShorelineSite/SM_ShorelineSite_CurvedBed.SM_ShorelineSite_CurvedBed",
+        "dimensions_m": [
+          14.3,
+          7.737883148193359,
+          2.5448447036743165
+        ],
+        "material_slots": [
+          "M_ShoreSand",
+          "M_ShoreSandLight",
+          "M_ShoreSandDark"
+        ]
+      },
+      "SM_ShorelineSite_BankWest": {
+        "asset_path": "/Game/Astra/Meshes/ShorelineSite/SM_ShorelineSite_BankWest.SM_ShorelineSite_BankWest",
+        "dimensions_m": [
+          4.000000457763672,
+          2.5870891571044923,
+          1.233950080871582
+        ],
+        "material_slots": [
+          "M_ShoreGrass",
+          "M_ShoreGrassLight",
+          "M_ShoreEarth",
+          "M_ShoreEarthLight"
+        ]
+      },
+      "SM_ShorelineSite_BankLow": {
+        "asset_path": "/Game/Astra/Meshes/ShorelineSite/SM_ShorelineSite_BankLow.SM_ShorelineSite_BankLow",
+        "dimensions_m": [
+          3.999999237060547,
+          2.1658246612548826,
+          0.9720258331298828
+        ],
+        "material_slots": [
+          "M_ShoreGrass",
+          "M_ShoreGrassLight",
+          "M_ShoreEarth",
+          "M_ShoreEarthLight"
+        ]
+      },
+      "SM_ShorelineSite_BankEast": {
+        "asset_path": "/Game/Astra/Meshes/ShorelineSite/SM_ShorelineSite_BankEast.SM_ShorelineSite_BankEast",
+        "dimensions_m": [
+          3.9999998474121092,
+          2.350017852783203,
+          1.1741174697875976
+        ],
+        "material_slots": [
+          "M_ShoreGrass",
+          "M_ShoreGrassLight",
+          "M_ShoreEarth",
+          "M_ShoreEarthLight"
+        ]
+      }
+    },
+    "placed_actor_count": 16,
+    "actors": [
+      {
+        "name": "AST_Shoreline_CurvedBed",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_2042",
+        "ue_location_cm": [
+          1800.0,
+          3400.0,
+          10.000000149011612
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        },
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "hidden_in_game": false,
+        "hidden_in_editor": false,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/ShorelineSite/SM_ShorelineSite_CurvedBed.SM_ShorelineSite_CurvedBed",
+            "visible": true,
+            "hidden_in_game": false,
+            "collision_profile_name": "NoCollision",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "AST_Shoreline_BankWest",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_2043",
+        "ue_location_cm": [
+          1800.0,
+          3400.0,
+          10.000000149011612
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        },
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "hidden_in_game": false,
+        "hidden_in_editor": false,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/ShorelineSite/SM_ShorelineSite_BankWest.SM_ShorelineSite_BankWest",
+            "visible": true,
+            "hidden_in_game": false,
+            "collision_profile_name": "NoCollision",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "AST_Shoreline_BankLow",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_2044",
+        "ue_location_cm": [
+          1800.0,
+          3400.0,
+          10.000000149011612
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        },
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "hidden_in_game": false,
+        "hidden_in_editor": false,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/ShorelineSite/SM_ShorelineSite_BankLow.SM_ShorelineSite_BankLow",
+            "visible": true,
+            "hidden_in_game": false,
+            "collision_profile_name": "NoCollision",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "AST_Shoreline_BankEast",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_2045",
+        "ue_location_cm": [
+          1800.0,
+          3400.0,
+          10.000000149011612
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        },
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "hidden_in_game": false,
+        "hidden_in_editor": false,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/ShorelineSite/SM_ShorelineSite_BankEast.SM_ShorelineSite_BankEast",
+            "visible": true,
+            "hidden_in_game": false,
+            "collision_profile_name": "NoCollision",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "AST_Shoreline_Stone_01",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_2046",
+        "ue_location_cm": [
+          1280.0000190734863,
+          3177.8810501098633,
+          -14.241033792495728
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -25.000000000000007,
+          "roll": 0.0
+        },
+        "scale": [
+          0.75,
+          0.75,
+          0.75
+        ],
+        "hidden_in_game": false,
+        "hidden_in_editor": false,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/Shoreline/SM_SubmergedRock_Flat_01.SM_SubmergedRock_Flat_01",
+            "visible": true,
+            "hidden_in_game": false,
+            "collision_profile_name": "NoCollision",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "AST_Shoreline_Stone_02",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_2047",
+        "ue_location_cm": [
+          1330.0000190734863,
+          3266.1380767822266,
+          1.1792365461587906
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -12.0,
+          "roll": 0.0
+        },
+        "scale": [
+          0.5699999928474426,
+          0.5699999928474426,
+          0.5699999928474426
+        ],
+        "hidden_in_game": false,
+        "hidden_in_editor": false,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/Shoreline/SM_SubmergedRock_Round_01.SM_SubmergedRock_Round_01",
+            "visible": true,
+            "hidden_in_game": false,
+            "collision_profile_name": "NoCollision",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "AST_Shoreline_Stone_03",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_2048",
+        "ue_location_cm": [
+          1460.0000381469727,
+          3069.859504699707,
+          -39.791542291641235
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -47.00000000000001,
+          "roll": 0.0
+        },
+        "scale": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929
+        ],
+        "hidden_in_game": false,
+        "hidden_in_editor": false,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/Shoreline/SM_SubmergedPebbles_01.SM_SubmergedPebbles_01",
+            "visible": true,
+            "hidden_in_game": false,
+            "collision_profile_name": "NoCollision",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "AST_Shoreline_Stone_04",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_2049",
+        "ue_location_cm": [
+          1539.9999618530273,
+          3291.0858154296875,
+          -2.4810846894979477
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 25.000000000000014,
+          "roll": 0.0
+        },
+        "scale": [
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071
+        ],
+        "hidden_in_game": false,
+        "hidden_in_editor": false,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/Shoreline/SM_SubmergedRock_Small_01.SM_SubmergedRock_Small_01",
+            "visible": true,
+            "hidden_in_game": false,
+            "collision_profile_name": "NoCollision",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "AST_Shoreline_Stone_05",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_2050",
+        "ue_location_cm": [
+          1639.9999618530273,
+          3266.1888122558594,
+          -16.722971200942993
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 18.000000000000007,
+          "roll": 0.0
+        },
+        "scale": [
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421
+        ],
+        "hidden_in_game": false,
+        "hidden_in_editor": false,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/Shoreline/SM_SubmergedRock_Flat_01.SM_SubmergedRock_Flat_01",
+            "visible": true,
+            "hidden_in_game": false,
+            "collision_profile_name": "NoCollision",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "AST_Shoreline_Stone_06",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_2051",
+        "ue_location_cm": [
+          1714.9999618530273,
+          3177.943229675293,
+          -79.49066758155823
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -30.999998092651374,
+          "roll": 0.0
+        },
+        "scale": [
+          0.7799999713897705,
+          0.7799999713897705,
+          0.7799999713897705
+        ],
+        "hidden_in_game": false,
+        "hidden_in_editor": false,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/Shoreline/SM_SubmergedPebbles_01.SM_SubmergedPebbles_01",
+            "visible": true,
+            "hidden_in_game": false,
+            "collision_profile_name": "NoCollision",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "AST_Shoreline_Stone_07",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_2052",
+        "ue_location_cm": [
+          1810.0000381469727,
+          3323.2791900634766,
+          -11.757998913526535
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -64.0,
+          "roll": 0.0
+        },
+        "scale": [
+          0.75,
+          0.75,
+          0.75
+        ],
+        "hidden_in_game": false,
+        "hidden_in_editor": false,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/Shoreline/SM_SubmergedRock_Small_01.SM_SubmergedRock_Small_01",
+            "visible": true,
+            "hidden_in_game": false,
+            "collision_profile_name": "NoCollision",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "AST_Shoreline_Stone_08",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_2053",
+        "ue_location_cm": [
+          1925.0,
+          3352.718734741211,
+          -0.1739080878905952
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 28.00000000000002,
+          "roll": 0.0
+        },
+        "scale": [
+          0.6100000143051147,
+          0.6100000143051147,
+          0.6100000143051147
+        ],
+        "hidden_in_game": false,
+        "hidden_in_editor": false,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/Shoreline/SM_SubmergedRock_Round_01.SM_SubmergedRock_Round_01",
+            "visible": true,
+            "hidden_in_game": false,
+            "collision_profile_name": "NoCollision",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "AST_Shoreline_Stone_09",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_2054",
+        "ue_location_cm": [
+          2010.0000381469727,
+          3196.55704498291,
+          -21.113258600234985
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -29.000000000000014,
+          "roll": 0.0
+        },
+        "scale": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929
+        ],
+        "hidden_in_game": false,
+        "hidden_in_editor": false,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/Shoreline/SM_SubmergedRock_Flat_01.SM_SubmergedRock_Flat_01",
+            "visible": true,
+            "hidden_in_game": false,
+            "collision_profile_name": "NoCollision",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "AST_Shoreline_Stone_10",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_2055",
+        "ue_location_cm": [
+          2164.9999618530273,
+          3042.365837097168,
+          -42.13185906410217
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 14.999999999999998,
+          "roll": 0.0
+        },
+        "scale": [
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071
+        ],
+        "hidden_in_game": false,
+        "hidden_in_editor": false,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/Shoreline/SM_SubmergedPebbles_01.SM_SubmergedPebbles_01",
+            "visible": true,
+            "hidden_in_game": false,
+            "collision_profile_name": "NoCollision",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "AST_Shoreline_Stone_11",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_2056",
+        "ue_location_cm": [
+          2210.0000381469727,
+          3229.8770904541016,
+          -4.0905531495809555
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -80.0,
+          "roll": 0.0
+        },
+        "scale": [
+          0.6700000166893005,
+          0.6700000166893005,
+          0.6700000166893005
+        ],
+        "hidden_in_game": false,
+        "hidden_in_editor": false,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/Shoreline/SM_SubmergedRock_Small_01.SM_SubmergedRock_Small_01",
+            "visible": true,
+            "hidden_in_game": false,
+            "collision_profile_name": "NoCollision",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "AST_Shoreline_Stone_12",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_2057",
+        "ue_location_cm": [
+          2279.9999237060547,
+          3162.981605529785,
+          -19.830185174942017
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -18.0,
+          "roll": 0.0
+        },
+        "scale": [
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104
+        ],
+        "hidden_in_game": false,
+        "hidden_in_editor": false,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/Shoreline/SM_SubmergedRock_Round_01.SM_SubmergedRock_Round_01",
+            "visible": true,
+            "hidden_in_game": false,
+            "collision_profile_name": "NoCollision",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      }
+    ],
+    "visual_actor_collision_policy_verified": true,
+    "all_shoreline_actor_count": 16,
+    "all_shoreline_actor_labels": [
+      "AST_Shoreline_BankEast",
+      "AST_Shoreline_BankLow",
+      "AST_Shoreline_BankWest",
+      "AST_Shoreline_CurvedBed",
+      "AST_Shoreline_Stone_01",
+      "AST_Shoreline_Stone_02",
+      "AST_Shoreline_Stone_03",
+      "AST_Shoreline_Stone_04",
+      "AST_Shoreline_Stone_05",
+      "AST_Shoreline_Stone_06",
+      "AST_Shoreline_Stone_07",
+      "AST_Shoreline_Stone_08",
+      "AST_Shoreline_Stone_09",
+      "AST_Shoreline_Stone_10",
+      "AST_Shoreline_Stone_11",
+      "AST_Shoreline_Stone_12"
+    ],
+    "hidden_source_actor_count": 5,
+    "hidden_source_actors": [
+      {
+        "name": "MossRock_01_0185",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_351",
+        "ue_location_cm": [
+          2267.1594619750977,
+          3395.901870727539,
+          1.3729492202401161
+        ],
+        "ue_rotation_deg": {
+          "pitch": -0.3669273257255552,
+          "yaw": 12.631734848022468,
+          "roll": -7.366565704345702
+        },
+        "scale": [
+          0.8736084699630737,
+          0.8736084699630737,
+          0.8736084699630737
+        ],
+        "hidden_in_game": true,
+        "hidden_in_editor": true,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/SM_MossRock_01.SM_MossRock_01",
+            "visible": false,
+            "hidden_in_game": true,
+            "collision_profile_name": "BlockAll",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "MossRock_02_0187",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_353",
+        "ue_location_cm": [
+          1776.6952514648438,
+          3426.197052001953,
+          3.733969107270241
+        ],
+        "ue_rotation_deg": {
+          "pitch": 7.201995849609374,
+          "yaw": 54.091312408447266,
+          "roll": 5.55247402191162
+        },
+        "scale": [
+          0.6713888645172119,
+          0.6713888645172119,
+          0.6713888645172119
+        ],
+        "hidden_in_game": true,
+        "hidden_in_editor": true,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/SM_MossRock_02.SM_MossRock_02",
+            "visible": false,
+            "hidden_in_game": true,
+            "collision_profile_name": "BlockAll",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "MossRock_03_0188",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_354",
+        "ue_location_cm": [
+          1532.8404426574707,
+          3395.901870727539,
+          -1.4493334107100964
+        ],
+        "ue_rotation_deg": {
+          "pitch": -7.193662166595458,
+          "yaw": 79.06834411621088,
+          "roll": 4.988737106323242
+        },
+        "scale": [
+          0.853756308555603,
+          0.853756308555603,
+          0.853756308555603
+        ],
+        "hidden_in_game": true,
+        "hidden_in_editor": true,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/SM_MossRock_03.SM_MossRock_03",
+            "visible": false,
+            "hidden_in_game": true,
+            "collision_profile_name": "BlockAll",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "MossRock_03_0189",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_355",
+        "ue_location_cm": [
+          1297.187328338623,
+          3335.988235473633,
+          -12.435311824083328
+        ],
+        "ue_rotation_deg": {
+          "pitch": 9.421946525573734,
+          "yaw": -133.04542541503906,
+          "roll": -1.4140160083770745
+        },
+        "scale": [
+          0.9283868670463562,
+          0.9283868670463562,
+          0.9283868670463562
+        ],
+        "hidden_in_game": true,
+        "hidden_in_editor": true,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/SM_MossRock_03.SM_MossRock_03",
+            "visible": false,
+            "hidden_in_game": true,
+            "collision_profile_name": "BlockAll",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      },
+      {
+        "name": "MossRock_04_0186",
+        "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.StaticMeshActor_352",
+        "ue_location_cm": [
+          2023.3047485351562,
+          3426.197052001953,
+          3.6305982619524
+        ],
+        "ue_rotation_deg": {
+          "pitch": -8.48374652862549,
+          "yaw": 85.15515899658205,
+          "roll": -6.7359070777893075
+        },
+        "scale": [
+          0.8867077827453613,
+          0.8867077827453613,
+          0.8867077827453613
+        ],
+        "hidden_in_game": true,
+        "hidden_in_editor": true,
+        "collision_enabled": false,
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "mesh": "/Game/Astra/Meshes/SM_MossRock_04.SM_MossRock_04",
+            "visible": false,
+            "hidden_in_game": true,
+            "collision_profile_name": "BlockAll",
+            "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+          }
+        ]
+      }
+    ],
+    "review_camera": {
+      "name": "Camera_Shoreline",
+      "object_path": "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.CameraActor_12",
+      "ue_location_cm": [
+        299.2179102764014,
+        3609.9998474121094,
+        2314.7298596223504
+      ],
+      "ue_rotation_deg": {
+        "pitch": -57.99999999999998,
+        "yaw": 0.0,
+        "roll": 0.0
+      },
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hidden_in_game": false,
+      "hidden_in_editor": false,
+      "collision_enabled": true,
+      "components": [
+        {
+          "name": "CameraProxyMeshComponent_0",
+          "mesh": "/Engine/EditorMeshes/MatineeCam_SM.MatineeCam_SM",
+          "visible": true,
+          "hidden_in_game": true,
+          "collision_profile_name": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    "review_camera_ortho_width_cm": 2350.0
+  },
+  "ground_materials": {
+    "M_ShoreSand": {
+      "asset_path": "/Game/Astra/Materials/Shoreline/M_ShoreSand.M_ShoreSand",
+      "opaque": true,
+      "default_lit": true,
+      "family": "continuous_sand",
+      "scalar_defaults": {
+        "BroadContrast": 0.014000000432133675,
+        "DepthBlend": 0.8600000143051147,
+        "DepthFadeEndCm": 110.0,
+        "DepthFadeStartCm": 15.0,
+        "GrainContrast": 0.004000000189989805,
+        "WaterLevelCm": 10.0
+      }
+    },
+    "M_ShoreSandLight": {
+      "asset_path": "/Game/Astra/Materials/Shoreline/M_ShoreSandLight.M_ShoreSandLight",
+      "opaque": true,
+      "default_lit": true,
+      "family": "continuous_sand",
+      "scalar_defaults": {
+        "BroadContrast": 0.014000000432133675,
+        "DepthBlend": 0.8600000143051147,
+        "DepthFadeEndCm": 110.0,
+        "DepthFadeStartCm": 15.0,
+        "GrainContrast": 0.004000000189989805,
+        "WaterLevelCm": 10.0
+      }
+    },
+    "M_ShoreSandDark": {
+      "asset_path": "/Game/Astra/Materials/Shoreline/M_ShoreSandDark.M_ShoreSandDark",
+      "opaque": true,
+      "default_lit": true,
+      "family": "continuous_sand",
+      "scalar_defaults": {
+        "BroadContrast": 0.014000000432133675,
+        "DepthBlend": 0.8600000143051147,
+        "DepthFadeEndCm": 110.0,
+        "DepthFadeStartCm": 15.0,
+        "GrainContrast": 0.004000000189989805,
+        "WaterLevelCm": 10.0
+      }
+    },
+    "M_ShoreEarth": {
+      "asset_path": "/Game/Astra/Materials/Shoreline/M_ShoreEarth.M_ShoreEarth",
+      "opaque": true,
+      "default_lit": true,
+      "family": "wet_earth_or_stone",
+      "scalar_defaults": {
+        "WaterLevelCm": 10.0,
+        "WetBandHeightCm": 15.0,
+        "WetDarkening": 0.23999999463558197,
+        "WetRoughness": 0.5899999737739563
+      }
+    },
+    "M_ShoreEarthLight": {
+      "asset_path": "/Game/Astra/Materials/Shoreline/M_ShoreEarthLight.M_ShoreEarthLight",
+      "opaque": true,
+      "default_lit": true,
+      "family": "wet_earth_or_stone",
+      "scalar_defaults": {
+        "WaterLevelCm": 10.0,
+        "WetBandHeightCm": 15.0,
+        "WetDarkening": 0.23999999463558197,
+        "WetRoughness": 0.5899999737739563
+      }
+    },
+    "M_ShoreEarthDark": {
+      "asset_path": "/Game/Astra/Materials/Shoreline/M_ShoreEarthDark.M_ShoreEarthDark",
+      "opaque": true,
+      "default_lit": true,
+      "family": "wet_earth_or_stone",
+      "scalar_defaults": {
+        "WaterLevelCm": 10.0,
+        "WetBandHeightCm": 15.0,
+        "WetDarkening": 0.23999999463558197,
+        "WetRoughness": 0.5899999737739563
+      }
+    },
+    "M_ShoreGrass": {
+      "asset_path": "/Game/Astra/Materials/Shoreline/M_ShoreGrass.M_ShoreGrass",
+      "opaque": true,
+      "default_lit": true,
+      "family": "grass_or_moss",
+      "scalar_defaults": {}
+    },
+    "M_ShoreGrassLight": {
+      "asset_path": "/Game/Astra/Materials/Shoreline/M_ShoreGrassLight.M_ShoreGrassLight",
+      "opaque": true,
+      "default_lit": true,
+      "family": "grass_or_moss",
+      "scalar_defaults": {}
+    },
+    "M_SubmergedStone": {
+      "asset_path": "/Game/Astra/Materials/Shoreline/M_SubmergedStone.M_SubmergedStone",
+      "opaque": true,
+      "default_lit": true,
+      "family": "wet_earth_or_stone",
+      "scalar_defaults": {
+        "WaterLevelCm": 10.0,
+        "WetBandHeightCm": 15.0,
+        "WetDarkening": 0.23999999463558197,
+        "WetRoughness": 0.5899999737739563
+      }
+    },
+    "M_SubmergedStoneLight": {
+      "asset_path": "/Game/Astra/Materials/Shoreline/M_SubmergedStoneLight.M_SubmergedStoneLight",
+      "opaque": true,
+      "default_lit": true,
+      "family": "wet_earth_or_stone",
+      "scalar_defaults": {
+        "WaterLevelCm": 10.0,
+        "WetBandHeightCm": 15.0,
+        "WetDarkening": 0.23999999463558197,
+        "WetRoughness": 0.5899999737739563
+      }
+    },
+    "M_SubmergedStoneDark": {
+      "asset_path": "/Game/Astra/Materials/Shoreline/M_SubmergedStoneDark.M_SubmergedStoneDark",
+      "opaque": true,
+      "default_lit": true,
+      "family": "wet_earth_or_stone",
+      "scalar_defaults": {
+        "WaterLevelCm": 10.0,
+        "WetBandHeightCm": 15.0,
+        "WetDarkening": 0.23999999463558197,
+        "WetRoughness": 0.5899999737739563
+      }
+    },
+    "M_ShoreMoss": {
+      "asset_path": "/Game/Astra/Materials/Shoreline/M_ShoreMoss.M_ShoreMoss",
+      "opaque": true,
+      "default_lit": true,
+      "family": "grass_or_moss",
+      "scalar_defaults": {}
+    }
+  },
+  "authored_bed_normals_preserved": true,
+  "water_actors": [
+    {
+      "actor": "LakeSurface_0000",
+      "mesh": "/Game/Astra/Meshes/SM_LakeSurface.SM_LakeSurface",
+      "material": "/Game/Astra/Materials/Shoreline/M_WaterFoam.M_WaterFoam",
+      "hidden_in_game": false
+    },
+    {
+      "actor": "StreamSurface_0001",
+      "mesh": "/Game/Astra/Meshes/SM_StreamSurface.SM_StreamSurface",
+      "material": "/Game/Astra/Materials/Shoreline/M_WaterFoam.M_WaterFoam",
+      "hidden_in_game": true
+    }
+  ],
+  "wet_shore_rocks": [
+    {
+      "actor": "MossRock_04_0176",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_02_0177",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_01_0178",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_04_0179",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_03_0180",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_04_0181",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_01_0182",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_05_0183",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_05_0184",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_01_0185",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_04_0186",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_02_0187",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_03_0188",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_03_0189",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_02_0190",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_03_0191",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_04_0192",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_02_0193",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_02_0194",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_03_0195",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_05_0196",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_05_0197",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_03_0198",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_01_0199",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_02_0200",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_02_0201",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_02_0202",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_05_0203",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_02_0204",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_03_0205",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_04_0206",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_05_0207",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_01_0208",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_01_0209",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_05_0210",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_04_0211",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_01_0212",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_03_0213",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    },
+    {
+      "actor": "MossRock_01_0214",
+      "materials": [
+        "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+        "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+        "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+      ]
+    }
+  ],
+  "water_material_checks": {
+    "asset": "/Game/Astra/Materials/Shoreline/M_WaterFoam.M_WaterFoam",
+    "passed": true,
+    "checks": {
+      "unlit": true,
+      "translucent": true,
+      "no_ssr": true,
+      "no_textures_or_clouds": true,
+      "vertex_colour_in_alpha": true,
+      "depth_fade_in_alpha": true,
+      "scene_depth_in_colour": true,
+      "pixel_depth_in_colour": true,
+      "time_in_foam": true,
+      "foam_controls": true,
+      "shoreward_phase": true,
+      "no_inverse_depth_gradient": true,
+      "no_local_slope_distance_scaling": true,
+      "authored_contour_control": true,
+      "alpha_capped_at_075": true,
+      "foam_edge_coverage_control": true,
+      "matched_colour_alpha_weights": true,
+      "camera_vector_in_alpha_and_colour": true,
+      "pixel_normal_in_alpha_and_colour": true,
+      "fresnel_controls": true,
+      "fresnel_preserves_reference": true
+    },
+    "scalar_parameters": [
+      "AuthoredShoreContourEnabled",
+      "AuthoredShoreOffsetCm",
+      "ContactFoamOffsetCm",
+      "ContactFoamStrength",
+      "ContactFoamWidthCm",
+      "DepthVerticalScale",
+      "EdgeDepthFadeCm",
+      "FallbackDepthJumpCm",
+      "FallbackDistancePerDepth",
+      "FoamBreakAmount",
+      "FoamBreakScaleMeters",
+      "FoamDepthLimitCm",
+      "FoamEdgeCoverageEndR",
+      "FresnelExponent",
+      "FresnelF0",
+      "FresnelOpacityBoost",
+      "FresnelReferenceNdotV",
+      "FresnelWaterColourBoost",
+      "ShoreWaveRangeCm",
+      "ShoreWaveSpacingCm",
+      "ShoreWaveSpeedCmPerSecond",
+      "ShoreWaveStrength",
+      "ShoreWaveWidthCm",
+      "WaterDeepDepthCm",
+      "WaterDeepOpacity",
+      "WaterMiddleDepthCm",
+      "WaterMiddleOpacity",
+      "WaterShallowOpacity"
+    ],
+    "validation_scope": "Read-only graph contract; compile logs, shoreline stability and fixed-camera GPU appearance require root integration testing."
+  },
+  "native_puddles": {
+    "asset": "/Game/Astra/Materials/Shoreline/M_PuddleSkyReflection.M_PuddleSkyReflection",
+    "checks": {
+      "thin_translucent": true,
+      "surface_forward_shading": true,
+      "front_layer_allowed": true,
+      "native_reflections_enabled": true,
+      "zero_opaque_top_layer": true,
+      "water_f0_002": true,
+      "no_emissive_output": true,
+      "no_texture_samples": true
+    },
+    "passed": true,
+    "scalar_defaults": {
+      "WaveNormalStrength": 0.017999999225139618,
+      "WaterF0": 0.019999999552965164,
+      "SurfaceRoughness": 0.04500000178813934,
+      "WaveSpeed": 0.11999999731779099,
+      "EdgeDepthFadeCm": 4.0
+    },
+    "validation_scope": "Actual material contract only; inspect native compile logs plus top-down/grazing GPU captures."
+  },
+  "forest_and_foliage_preserved": true,
+  "protected_state": {
+    "forest_placements": {
+      "ForestExpansion_CliffA": [
+        2929.9999237060547,
+        -800.0,
+        -279.50000762939453,
+        0.0,
+        -3.0000000000000004,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ForestExpansion_CliffB": [
+        2945.0000762939453,
+        -309.99999046325684,
+        -260.50000190734863,
+        0.0,
+        2.000000000000001,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ForestExpansion_CliffC": [
+        2935.0000381469727,
+        185.0000023841858,
+        -285.50000190734863,
+        0.0,
+        -4.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ForestExpansion_CliffSide": [
+        3020.0000762939453,
+        469.9999809265137,
+        -128.72999906539917,
+        0.0,
+        68.0,
+        0.0,
+        0.7799999713897705,
+        0.7799999713897705,
+        0.7799999713897705
+      ],
+      "ForestExpansion_Tent": [
+        3800.0,
+        -400.0,
+        520.3125,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ForestExpansion_Bedroll": [
+        3679.9999237060547,
+        -320.0000047683716,
+        520.3125,
+        0.0,
+        0.0,
+        0.0,
+        0.7799999713897705,
+        0.7799999713897705,
+        0.7799999713897705
+      ],
+      "ForestExpansion_Satchel": [
+        3679.9999237060547,
+        -580.0000190734863,
+        520.3125,
+        0.0,
+        0.0,
+        0.0,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "ForestExpansion_Fire": [
+        3300.0,
+        60.00000238418579,
+        520.3125,
+        0.0,
+        0.0,
+        0.0,
+        0.8500000238418579,
+        0.8500000238418579,
+        0.8500000238418579
+      ],
+      "ForestExpansion_CookFire": [
+        3600.0,
+        309.99999046325684,
+        520.3125,
+        0.0,
+        0.0,
+        0.0,
+        0.4399999976158142,
+        0.4399999976158142,
+        0.4399999976158142
+      ],
+      "ForestExpansion_Tripod": [
+        3600.0,
+        309.99999046325684,
+        519.8064804077148,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ForestExpansion_Kitchen": [
+        3750.0,
+        125.0,
+        520.3125,
+        0.0,
+        -12.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ForestExpansion_LanternTent": [
+        3579.9999237060547,
+        -540.0000095367432,
+        518.8125133514404,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ForestExpansion_Woodpile": [
+        3900.0,
+        120.00000476837158,
+        520.3125,
+        0.0,
+        12.000000000000004,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ForestExpansion_Stool0": [
+        3129.9999237060547,
+        20.000000298023224,
+        520.3125,
+        0.0,
+        -14.999999999999996,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ForestExpansion_Stool1": [
+        3300.0,
+        234.99999046325684,
+        520.3125,
+        0.0,
+        10.000000000000002,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ForestExpansion_Stool2": [
+        3429.9999237060547,
+        -80.0000011920929,
+        520.3125,
+        0.0,
+        89.99999999999999,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ForestExpansion_SignCamp": [
+        2929.9999237060547,
+        -1700.0,
+        100.048828125,
+        0.0,
+        -12.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ForestExpansion_SignClearing": [
+        -209.99999046325684,
+        -1300.0,
+        66.69921875,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "foliage": {
+      "SM_Grass": 1176,
+      "SM_Fern": 374,
+      "SM_Flowers": 268,
+      "SM_Mushrooms": 68,
+      "SM_Reeds": 90
+    },
+    "landscape": [
+      "/Game/Astra/Maps/L_AstraWoodland.L_AstraWoodland:PersistentLevel.Landscape_0"
+    ]
+  },
+  "passed": true
+}

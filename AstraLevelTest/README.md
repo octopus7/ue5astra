@@ -41,7 +41,7 @@ Unreal Engine 5.7.4 프로젝트. 약 100m 숲을 탐색하는 직립 보행 삼
 2. 숲 확장 원본은 `build_forest_cliffs.py`, `build_forest_tent.py`, `build_forest_signs.py`, `build_forest_cooking.py`로 각각 생성한다. 이어 `place_forest_expansion.py`를 Blender에서 실행해 절벽·야영지와 진입로 높이를 전체 배치에 합친다. 바위는 `build_smooth_forest_rocks.py`와 `apply_smooth_rocks_blender.py` 순서로 적용한다.
 3. UE 5.7용 `AstraLevelTestEditor` 빌드.
 4. **전체 언리얼 에디터**에서 `Scripts/import_unreal_scene.py` 실행. `-ExecutePythonScript=...`로도 실행할 수 있다. Content Browser를 사용하므로 UI 없는 Python commandlet로 텍스처 가져오기를 실행하지 않는다.
-5. `Scripts/import_forest_expansion.py`로 숲 확장·해안 모듈·파노라마 하늘을 적용한다. 이 스크립트는 기존 Landscape와 맵을 보존하면서 갱신한다. 이후 `import_smooth_rocks.py`, `apply_forest_foliage.py`, `apply_native_puddles.py` 순서로 바위·작은 식물·실제 반사 웅덩이를 적용하고 `/Game/Astra/Maps/L_AstraWoodland`를 열어 Play한다.
+5. `Scripts/import_forest_expansion.py`로 숲 확장·해안 모듈·파노라마 하늘을 적용한다. 이 스크립트는 기존 Landscape와 맵을 보존하면서 갱신한다. 이후 `import_smooth_rocks.py`, `apply_forest_foliage.py`, `apply_shoreline_finish.py`, `apply_native_puddles.py` 순서로 바위·작은 식물·해안 마감·실제 반사 웅덩이를 적용하고 `/Game/Astra/Maps/L_AstraWoodland`를 열어 Play한다.
 
 최신 해안 개선과 물웅덩이를 포함하려면 원본 집·지형·물·하늘 갱신이 모두 끝난 다음, 의도한 맵의 UE Python에서 `apply_shoreline_polish.apply_polish(save=True)`를 실행하고 이어서 `puddle_sky_reflection.apply_puddles(save=True)`를 실행한다. 이 두 호출을 **생성 파이프라인의 마지막**에 둔다. 이후 원본 맵·재질·액터를 다시 생성하면 같은 순서를 다시 적용한다. [전체 실행 예제와 검증 범위](Docs/ShorelineIntegration.md)를 참고한다.
 

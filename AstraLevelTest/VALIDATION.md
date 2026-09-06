@@ -19,6 +19,7 @@
 - 집 앞 해안 16개 액터를 실제 메인 맵에 통합했다. 웅덩이 5개에는 스카이·주변 환경을 반사하는 Thin Translucent 재질을 적용했다. F0 0.02의 네이티브 프레넬, Lumen front-layer reflection, 부드러운 경계와 거의 투명한 바닥 투과를 사용한다. 수면에 이미지 샘플이나 Emissive 출력은 연결하지 않는다.
 - 숲 바위 5종을 각 1,920삼각형의 smooth normals와 단일 생성 텍스처 재질로 교체했다. FBX custom normals를 가져왔으며 155개 기존 배치의 변환·자산 참조를 유지했다.
 - 수중 바위·자갈 4종은 형상·UV·재질 슬롯을 유지하면서 smooth normals로 바꿨다. 독립 FBX 재가져오기에서 노멀 최대 오차 0.030도 이내를 확인했다.
+- 해안 1~7번 마감을 메인 맵에 적용했다. 실제 접촉선 57점을 따라 흰 포말·잔물결을 만들고 모래 바닥의 부드러운 노멀·외곽 색 연결·해안 형태 변화를 반영했다. 해안 바위 39개에는 현재 회청색 생성 텍스처를 보존한 젖은 재질을 덧씌웠고, 수중 돌 3개 재질의 기준색을 통일해 면별 색 차이도 제거했다.
 - 네이티브 InstancedFoliageActor 1개와 FoliageType 5개로 작은 식물 1,976개를 배치했다. 기존 1,198개 전환 + 추가 778개이며 추가분은 숲 내부 763개, 숲 가장자리 15개다. 추가 식물은 길·공터·집터·캠프 동선과 급경사를 피한다.
 
 ## 실행 검증
@@ -36,10 +37,13 @@
 | 부드러운 바위 가져오기 | 5종 각 1,920삼각형, 원본 바운드·155개 배치 변환 유지, custom normals 가져오기 |
 | Foliage 변환·추가 | 5개 타입, 1,976개 인스턴스 실측, 원본 1,198개 식물 보관 |
 | 저장된 메인 맵 다시 열기 | 숲 소품·바위·Foliage 수와 NoCollision·스카이 sRGB 색상 설정 재검증 통과 |
+| 해안 마감 메인 맵 통합 | 포말 그래프 21개 검사 통과, 캠프 18개 변환·Foliage 1,976개·Landscape 유지 |
 
 기계 판독 결과: [WASD와 카메라](ArtSource/Previews/UE_MovementValidation.json), [다리 횡단](ArtSource/Previews/UE_BridgeValidation.json), [블렌더 배치 추출](ArtSource/Previews/Blender_ExportValidation.json).
 
 숲 확장 검증: [야영지 오르막](ArtSource/Previews/UE_CampMovementValidation.json), [저장 후 다시 열기](ArtSource/Previews/UE_ForestReloadValidation.json), [부드러운 바위](ArtSource/Previews/UE_SmoothRocksValidation.json), [실제 Foliage 수](ArtSource/Previews/UE_FoliageValidation.json). Foliage 재질은 인스턴스 메시용 셰이더 사용 플래그를 명시적으로 저장한다.
+
+해안 마감의 [메인 맵 적용 실측](ArtSource/Previews/UE_ShorelinePolishMainValidation.json)과 [독립 모듈의 13초·18초 실제 물결 이동 검증](ArtSource/Previews/UE_ShorelinePolishValidation.json)을 구분해 저장한다. 정확한 접촉선은 집 앞 해안 구간에 작성했으며 다른 물가는 얕은 수심 기준을 사용한다. 수심 표현은 고정 58도 게임 카메라에 맞췄다.
 
 [최종 렌더 기록](ArtSource/Previews/UE_FinalReviewValidation.json)은 실제 UE 화면 17장의 PNG 해시·해상도, 게임 렌더 로그의 재질 컴파일/인스턴싱 사용 오류 여부, 이동 및 저장 후 검증 결과를 함께 보관한다. 생성 참고 이미지는 여기에 포함하지 않는다. 웅덩이는 메인 맵의 탑다운·낮은 시점 두 방향으로 촬영한다.
 

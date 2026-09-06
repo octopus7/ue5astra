@@ -38,6 +38,14 @@ checks['puddle_graph']=puddle_sky_reflection.validate_created_material()['passed
 puddle_actors=[a for a in actors if isinstance(a,unreal.StaticMeshActor) and a.static_mesh_component.static_mesh and a.static_mesh_component.static_mesh.get_name()=='SM_Puddle']
 checks['five_native_reflective_puddles']=len(puddle_actors)==5 and all(a.static_mesh_component.get_material(0).get_path_name().startswith(puddle_sky_reflection.DEFAULT_ASSET+'.') for a in puddle_actors)
 checks['puddle_front_layer_reflections']=all(a.get_editor_property('settings').get_editor_property('lumen_front_layer_translucency_reflections') for a in actors if isinstance(a,unreal.PostProcessVolume))
+polish_asset='/Game/Astra/Materials/Shoreline/M_WaterFoam'
+if unreal.EditorAssetLibrary.does_asset_exist(polish_asset):
+    import shoreline_foam
+    checks['shoreline_finished_water_graph']=shoreline_foam.validate_created_material()['passed']
+    water_actors=[a for a in actors if isinstance(a,unreal.StaticMeshActor) and a.static_mesh_component.static_mesh and a.static_mesh_component.static_mesh.get_name() in ['SM_LakeSurface','SM_StreamSurface']]
+    checks['lake_stream_finished_material']=bool(water_actors) and all(a.static_mesh_component.get_material(0).get_path_name().startswith(polish_asset+'.') for a in water_actors)
+    bed=unreal.EditorAssetLibrary.load_asset('/Game/Astra/Meshes/ShorelineSite/SM_ShorelineSite_CurvedBed')
+    checks['shoreline_authored_bed_normals']=not unreal.get_editor_subsystem(unreal.StaticMeshEditorSubsystem).get_lod_build_settings(bed,0).get_editor_property('recompute_normals')
 rock_meta=json.loads((ROOT/'ArtSource/Layout/forest_smooth_rocks.json').read_text(encoding='utf-8'))
 for item in rock_meta['assets']:
     mesh=unreal.EditorAssetLibrary.load_asset('/Game/Astra/Meshes/'+item['original_asset_id'])
@@ -58,6 +66,8 @@ puddle=unreal.EditorAssetLibrary.load_asset(puddle_sky_reflection.DEFAULT_ASSET)
 water.update({'puddle_sky_texture_input':False,'puddle_emissive_input':False,'puddle_shading_model':str(puddle.get_editor_property('shading_model')),
               'puddle_reflectance':'native sky/environment reflection with thin translucent dielectric Fresnel F0=0.02 and soft coverage',
               'sky_texture':'T_AnimeSkyPanorama','main_map_shoreline_instances':len(shore)})
+if unreal.EditorAssetLibrary.does_asset_exist(polish_asset):
+    water.update({'lake_stream_material':polish_asset,'shoreline_contact_foam':True,'shore_aligned_ripples':True,'smooth_shallow_bed':True,'wet_shore_materials':True})
 water_file.write_text(json.dumps(water,indent=2),encoding='utf-8')
 report={'passed':all(checks.values()),'checks':checks,'mesh_bounds':mesh_bounds,'camp_collision_height_cm':camp_z,'actor_count':len(actors),'validation':'Independent full editor reload of saved main map'}
 (ROOT/'ArtSource/Previews/UE_ForestReloadValidation.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
