@@ -74,4 +74,6 @@ public:
     UFUNCTION(BlueprintCallable, Category="Astra|Terrain") static float TerrainHeight(float X, float Y);
     UFUNCTION(BlueprintCallable, Category="Astra|Terrain") static float StreamCenter(float X);
     UFUNCTION(BlueprintCallable, Category="Astra|Editor") static AActor* CreateTerrain(UMaterialInterface* Material);
+    UFUNCTION(BlueprintCallable, Category="Astra|Editor") static bool UpdateTerrainHeights(AActor* Terrain);
+    UFUNCTION(BlueprintCallable, Category="Astra|Terrain") static float LandscapeHeightAt(AActor* Terrain, FVector Location);
 };

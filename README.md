@@ -10,6 +10,8 @@ UE 5.7.4에서 실행하는 약 100×100m 숲 탐색 프로젝트. 박스 형태
 | --- | --- |
 | ![나무다리를 건넌 삼색 고양이](AstraLevelTest/ArtSource/Previews/UE_Bridge.png) | ![연꽃과 수초가 있는 호수](AstraLevelTest/ArtSource/Previews/UE_Lake.png) |
 
+![호수 오른쪽의 핑크 지붕 집과 앞마당 우물](AstraLevelTest/ArtSource/Previews/UE_House.png)
+
 - [프로젝트 안내와 실행 방법](AstraLevelTest/README.md)
 - [사용자 작업 지시](AstraLevelTest/WORK_INSTRUCTIONS.md)
 - [검증 결과](AstraLevelTest/VALIDATION.md)

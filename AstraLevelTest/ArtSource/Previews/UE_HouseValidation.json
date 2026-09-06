@@ -1,0 +1,74 @@
+{
+  "house_instances": [
+    {
+      "name": "PinkRoofHouse_Lakeside",
+      "asset": "SM_PinkRoofHouse",
+      "group": "Structures/PinkHouse",
+      "collision": "complex",
+      "blender_location_m": [
+        19.0,
+        -40.5,
+        0.984375
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        1900.0,
+        4050.0,
+        98.4375
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "FrontWell_Lakeside",
+      "asset": "SM_FrontWell",
+      "group": "Structures/FrontWell",
+      "collision": "complex",
+      "blender_location_m": [
+        12.5,
+        -41.29999923706055,
+        0.984375
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        1250.0,
+        4129.999923706055,
+        98.4375
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -0.0,
+        "roll": 0.0
+      }
+    }
+  ],
+  "preserved_hidden_instances": 22,
+  "backup_map": "D:\\github\\ue5astra\\AstraLevelTest\\ArtSource\\Backups\\BeforePinkHouse_20260907_022956\\L_AstraWoodland.umap",
+  "terrain_update": "in-place, existing actor preserved",
+  "updated_instances": 8,
+  "native_landscape": true,
+  "actors": 2038,
+  "house_camera": "Camera_House",
+  "door_faces": "-X / toward game camera"
+}

@@ -1,7 +1,5 @@
 {
-  "objects": 1807,
-  "max_position_delta_cm": 0.0,
-  "metadata_mismatches": 0,
-  "heightmap_byte_identical": true,
-  "layout_byte_identical": true
+  "objects": 1787,
+  "layout_unchanged": true,
+  "height_unchanged": true
 }

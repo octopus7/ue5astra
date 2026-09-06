@@ -16,7 +16,7 @@ def disc(n,rx,ry,inner,puddle=False):
     return verts,faces,weights
 
 def water_geometry(asset):
-    if asset=='SM_LakeSurface':return disc(96,15.1*1.10,12.4*1.10,.89)
+    if asset=='SM_LakeSurface':return connected_water()
     if asset=='SM_Puddle':return disc(64,1,1,.70,True)
     if asset!='SM_StreamSurface':raise ValueError(asset)
     verts=[];faces=[];weights=[]
@@ -28,6 +28,29 @@ def water_geometry(asset):
             verts.append((x,-(y+offset),.10));weights.append(alpha*end_fade)
         if i:
             for j in range(3):faces.append((4*i-4+j,4*i+j,4*i+j+1,4*i-3+j))
+    return verts,faces,weights
+
+def connected_water():
+    """One level surface for the lake and creek, avoiding translucent overlap."""
+    verts=[];faces=[];weights=[];indices={}
+    step=.4
+    def coverage(ix,iy):
+        x=-51.2+ix*step;y=-28+iy*step
+        lake=(math.hypot((x-19)/16.61,(y-20.7)/13.64)-1)*14
+        stream=max(abs(y-(.6*x+8.5+1.9*math.sin(x/6.8)))-(2.75+.24*math.sin(x/4.3)),x-13)
+        return max(0,min(1,-min(lake,stream)/.8))
+    def vertex(ix,iy):
+        key=(ix,iy)
+        if key not in indices:
+            indices[key]=len(verts)
+            x=-51.2+ix*step;y=-28+iy*step
+            verts.append((x-19,-(y-20.7),0));weights.append(coverage(ix,iy))
+        return indices[key]
+    for ix in range(220):
+        for iy in range(160):
+            corners=[(ix,iy),(ix+1,iy),(ix+1,iy+1),(ix,iy+1)]
+            if max(coverage(*c) for c in corners)<=0:continue
+            faces.append(tuple(vertex(*c) for c in reversed(corners)))
     return verts,faces,weights
 
 def add_edge_mask(mesh,weights):

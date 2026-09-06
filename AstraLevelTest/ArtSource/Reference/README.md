@@ -11,4 +11,6 @@ Large readable shapes and restrained painted textures take precedence over close
 
 Individual modeling references are saved as `Ref_Oak`, `Ref_Fir`, `Ref_MossRock`, `Ref_Lotus`, `Ref_Reeds`, `Ref_BridgeIntact`, `Ref_BridgeBroken`, `Ref_CabinRuin`, and `Ref_CalicoCat` PNG files. The generation prompt set is recorded in `GENERATION_PROMPTS.md`.
 
-Generated production textures are saved in `../Textures/T_ForestFloor.png` and `../Textures/T_AnimeSkyReflection.png`. The latter supplies the intentionally stylized reflected sky for the small puddles.
+Generated production textures are saved in `../Textures/T_ForestFloor.png` and `../Textures/T_AnimeSkyReflection.png`. The cloud image is used on the actual sky dome. The latest direction excludes sky/cloud reflections from the lake and creek and permits a dedicated reflection illusion for the small puddles.
+
+`Ref_PinkRoofLakesideHouse.png` is the separate modeling reference for a pink-roof house on the right/eastern side of the lake, with its front door facing the game camera and a well in the front yard. The sheet includes front, side, and top views. Its prompt is saved in `PINK_HOUSE_PROMPT.md`. The Blender models have been imported and placed in Unreal; `../Previews/UE_House.png` shows the actual engine result.

@@ -6,6 +6,6 @@ public class AstraLevelTest : ModuleRules
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
         PublicDependencyModuleNames.AddRange(new [] {"Core", "CoreUObject", "Engine", "InputCore", "Landscape"});
         if (Target.bBuildEditor)
-            PrivateDependencyModuleNames.AddRange(new [] {"UnrealEd", "LandscapeEditor"});
+            PrivateDependencyModuleNames.AddRange(new [] {"UnrealEd", "LandscapeEditor", "Foliage"});
     }
 }

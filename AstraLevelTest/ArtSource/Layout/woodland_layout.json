@@ -544,8 +544,8 @@
         "M_Water"
       ],
       "dimensions_m": [
-        33.220001220703125,
-        27.280000686645508,
+        87.19999694824219,
+        61.60000228881836,
         0.0
       ]
     },
@@ -666,7 +666,7 @@
     {
       "name": "StreamSurface_0001",
       "asset": "SM_StreamSurface",
-      "group": "Water",
+      "group": "PreviewOnly",
       "collision": "none",
       "blender_location_m": [
         0.0,

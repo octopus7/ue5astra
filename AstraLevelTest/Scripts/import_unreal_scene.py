@@ -39,7 +39,9 @@ def newmat(name):
     else:m=AT.create_asset(name,'/Game/Astra/Materials',unreal.Material,unreal.MaterialFactoryNew())
     return m
 def finish(mat):
-    ML.recompile_material(mat);EAL.save_loaded_asset(mat);return mat
+    ML.recompile_material(mat)
+    if not EAL.save_loaded_asset(mat):raise RuntimeError('Unable to save material: '+mat.get_name())
+    return mat
 def import_texture(name):
     path='/Game/Astra/Textures/'+name
     if EAL.does_asset_exist(path):
@@ -66,7 +68,7 @@ def build_materials():
         connect(const(m,.86),unreal.MaterialProperty.MP_ROUGHNESS);connect(const(m,.15),unreal.MaterialProperty.MP_SPECULAR)
         if any(s in name for s in ['Grass','Reed','Lily','Lotus']):m.set_editor_property('two_sided',True)
         mats[name]=finish(m)
-    groundtex=import_texture('T_ForestFloor');skytex=import_texture('T_AnimeSkyReflection')
+    groundtex=import_texture('T_ForestFloor')
     m=newmat('M_Landscape');wp=expression(m,unreal.MaterialExpressionWorldPosition)
     uv=custom(m,'return Pos.xy/480.0;',{'Pos':wp},unreal.CustomMaterialOutputType.CMOT_FLOAT2)
     tex=expression(m,unreal.MaterialExpressionTextureSample);tex.texture=groundtex
@@ -79,29 +81,113 @@ def build_materials():
     code+='d += .22*sin(p.x*2.7+sin(p.y*2.1))+.12*cos(p.y*4.3); float alpha=1-smoothstep(-.15,.45,d); float shore=(1-smoothstep(0.0,50.0,abs(Pos.z-10)))*.55; alpha=max(alpha,shore);\n'
     rgb=linear('B79B66')
     code+=f'float3 dirt=float3({rgb[0]},{rgb[1]},{rgb[2]})*(.83+.25*saturate(dot(Ground,float3(.3,.59,.11))*4));\n'
-    code+='float3 grass=Ground*float3(.70,.91,.67)*(.95+.05*sin(p.x*.73)*cos(p.y*.81)); return lerp(grass,dirt,alpha);'
+    code+='float3 grass=Ground*float3(.70,.91,.67)*(.95+.05*sin(p.x*.73)*cos(p.y*.81)); float3 land=lerp(grass,dirt,alpha); float submerged=1-smoothstep(-25,15,Pos.z); float3 sand=float3(.31,.39,.28)*(.94+.06*sin(p.x*.55)*cos(p.y*.61)); return lerp(land,sand,submerged);'
     connect(custom(m,code,{'Pos':wp,'Ground':tex}),unreal.MaterialProperty.MP_BASE_COLOR)
     connect(const(m,.95),unreal.MaterialProperty.MP_ROUGHNESS);connect(const(m,.08),unreal.MaterialProperty.MP_SPECULAR)
     mats['M_Landscape']=finish(m)
-    for name,puddle in [('M_Water',False),('M_PuddleReflection',True)]:
-        m=newmat(name);m.set_editor_property('two_sided',True)
-        wp=expression(m,unreal.MaterialExpressionWorldPosition);time=expression(m,unreal.MaterialExpressionTime)
-        if puddle:
-            uv=expression(m,unreal.MaterialExpressionTextureCoordinate)
-            uvm=custom(m,'return UV+float2(sin(T*.65+UV.y*24),cos(T*.5+UV.x*21))*.006;',{'UV':uv,'T':time},unreal.CustomMaterialOutputType.CMOT_FLOAT2)
-            tex=expression(m,unreal.MaterialExpressionTextureSample);tex.texture=skytex;ML.connect_material_expressions(uvm,'',tex,'UVs')
-            c=custom(m,'float edge=smoothstep(.24,.52,length(UV-.5)); return lerp(Sky*.72,float3(.08,.15,.12),.15+edge*.58);',{'Sky':tex,'UV':uv})
-            connect(c,unreal.MaterialProperty.MP_BASE_COLOR)
-            emit=custom(m,'return Sky*.12*(1-smoothstep(.24,.54,length(UV-.5)));',{'Sky':tex,'UV':uv});connect(emit,unreal.MaterialProperty.MP_EMISSIVE_COLOR)
-        else:
-            c=custom(m,'float2 p=Pos.xy*.01; float lake=length(float2((p.x-19)/15.1,(p.y-20.7)/12.4)); float shallow=smoothstep(.72,1.08,lake); float wave=pow(saturate(sin(p.x*7+sin(p.y*4)*2-T*.9)*sin(p.y*5+cos(p.x*3)-T*.7)*.5+.5),18)*.016; float mottles=.5+.5*sin(p.x*1.7+sin(p.y*2.2))*cos(p.y*2.5); return lerp(float3(.045,.13,.105),float3(.14,.25,.19),shallow*.7+mottles*.18)+wave;',{'Pos':wp,'T':time})
-            connect(c,unreal.MaterialProperty.MP_BASE_COLOR)
-        normal=custom(m,'return normalize(float3(.03*sin(Pos.x*.035+T*.8),.03*cos(Pos.y*.033-T*.6),1));',{'Pos':wp,'T':time})
-        connect(normal,unreal.MaterialProperty.MP_NORMAL)
-        connect(const(m,.27 if puddle else .22),unreal.MaterialProperty.MP_ROUGHNESS)
-        connect(const(m,.65),unreal.MaterialProperty.MP_SPECULAR)
-        mats[name]=finish(m)
+    mats.update(build_water_materials())
     return mats
+
+def build_water_materials():
+    mats={'M_Water':build_lake_material()}
+    for name,puddle in [('M_PuddleReflection',True)]:
+        m=newmat(name)
+        m.set_editor_property('blend_mode',unreal.BlendMode.BLEND_TRANSLUCENT)
+        m.set_editor_property('shading_model',unreal.MaterialShadingModel.MSM_DEFAULT_LIT)
+        m.set_editor_property('two_sided',True)
+        m.set_editor_property('tangent_space_normal',False)
+        m.set_editor_property('translucency_lighting_mode',unreal.TranslucencyLightingMode.TLM_SURFACE_PER_PIXEL_LIGHTING)
+        m.set_editor_property('translucency_pass',unreal.MaterialTranslucencyPass.MTP_BEFORE_DOF)
+        m.set_editor_property('screen_space_reflections',True)
+        wp=expression(m,unreal.MaterialExpressionWorldPosition)
+        time=expression(m,unreal.MaterialExpressionTime)
+        edge=expression(m,unreal.MaterialExpressionVertexColor)
+        depth=expression(m,unreal.MaterialExpressionDepthFade)
+        depth.set_editor_property('fade_distance_default',7.0 if puddle else 65.0)
+        mask=custom(m,'return smoothstep(0,1,Edge.r)*Depth;',{'Edge':edge,'Depth':depth},unreal.CustomMaterialOutputType.CMOT_FLOAT1)
+        opacity=custom(m,'return Mask*'+('.92;' if puddle else '.88;'),{'Mask':mask},unreal.CustomMaterialOutputType.CMOT_FLOAT1)
+        connect(opacity,unreal.MaterialProperty.MP_OPACITY)
+        if puddle:c=color(m,(.40,.77,1.0))
+        else:
+            sd=expression(m,unreal.MaterialExpressionSceneDepth);pd=expression(m,unreal.MaterialExpressionPixelDepth)
+            c=custom(m,'float d=saturate((Scene-Pixel)/210.0); return lerp(float3(.24,.65,.65),float3(.055,.36,.52),d);',{'Scene':sd,'Pixel':pd})
+        connect(custom(m,'return Colour*Mask;',{'Colour':c,'Mask':mask}),unreal.MaterialProperty.MP_BASE_COLOR)
+        normal_code='float2 p=Pos.xy*.01; float nx=.13*sin(p.x*.72+p.y*.18+T*.15); float ny=.11*cos(p.y*.65-p.x*.15-T*.12); return normalize(float3(nx,ny,1));' if puddle else 'float2 p=Pos.xy*.01; return normalize(float3(.045*sin(p.x*.5+p.y*.12+T*.2),.035*cos(p.y*.42-p.x*.1-T*.17),1));'
+        normal=custom(m,normal_code,{'Pos':wp,'T':time})
+        connect(normal,unreal.MaterialProperty.MP_NORMAL)
+        roughness=custom(m,'return lerp(.035,'+('.012' if puddle else '.028')+',Mask);',{'Mask':mask},unreal.CustomMaterialOutputType.CMOT_FLOAT1)
+        connect(roughness,unreal.MaterialProperty.MP_ROUGHNESS)
+        specular=custom(m,'return Mask;',{'Mask':mask},unreal.CustomMaterialOutputType.CMOT_FLOAT1)
+        connect(specular,unreal.MaterialProperty.MP_SPECULAR)
+        # Strong stylized environment reflectance keeps the fixed top-down view readable.
+        connect(const(m,1.0 if puddle else .72),unreal.MaterialProperty.MP_METALLIC)
+        mats[name]=finish(m)
+    # Clouds live in the sky; neither water material has a texture or emissive input.
+    skytex=import_texture('T_AnimeSkyReflection')
+    m=newmat('M_CloudSky');m.set_editor_property('shading_model',unreal.MaterialShadingModel.MSM_UNLIT)
+    m.set_editor_property('two_sided',True);m.set_editor_property('is_sky',True)
+    wp=expression(m,unreal.MaterialExpressionWorldPosition)
+    uv=custom(m,'float3 d=normalize(Pos); return d.xy*1.6+float2(.55,.55);',{'Pos':wp},unreal.CustomMaterialOutputType.CMOT_FLOAT2)
+    tex=expression(m,unreal.MaterialExpressionTextureSample);tex.texture=skytex
+    ML.connect_material_expressions(uv,'',tex,'UVs')
+    connect(custom(m,'return Sky*1.5;',{'Sky':tex}),unreal.MaterialProperty.MP_EMISSIVE_COLOR)
+    mats['M_CloudSky']=finish(m)
+    return mats
+
+
+def build_lake_material():
+    """Clear art-directed lake/creek with no sky or cloud reflection."""
+    m=newmat('M_Water')
+    m.set_editor_property('blend_mode',unreal.BlendMode.BLEND_TRANSLUCENT)
+    m.set_editor_property('shading_model',unreal.MaterialShadingModel.MSM_UNLIT)
+    m.set_editor_property('two_sided',True)
+    m.set_editor_property('screen_space_reflections',False)
+    edge=expression(m,unreal.MaterialExpressionVertexColor)
+    fade=expression(m,unreal.MaterialExpressionDepthFade);fade.set_editor_property('fade_distance_default',25.0)
+    sd=expression(m,unreal.MaterialExpressionSceneDepth);pd=expression(m,unreal.MaterialExpressionPixelDepth)
+    wp=expression(m,unreal.MaterialExpressionWorldPosition);time=expression(m,unreal.MaterialExpressionTime)
+    mask=custom(m,'return smoothstep(0,1,Edge.r)*Fade;',{'Edge':edge,'Fade':fade},unreal.CustomMaterialOutputType.CMOT_FLOAT1)
+    opacity=custom(m,'return Mask*lerp(.48,.80,saturate((Scene-Pixel)/125));',{'Mask':mask,'Scene':sd,'Pixel':pd},unreal.CustomMaterialOutputType.CMOT_FLOAT1)
+    connect(opacity,unreal.MaterialProperty.MP_OPACITY)
+    code='float d=saturate((Scene-Pixel)/125); float2 p=Pos.xy*.01; float3 c=lerp(float3(.10,.39,.38),float3(.026,.30,.40),d); float2 cell=floor(p/float2(5.5,3.7)); float2 h=frac(sin(float2(dot(cell,float2(127.1,311.7)),dot(cell,float2(269.5,183.3))))*43758.5453); float2 q=(frac(p/float2(5.5,3.7))-(.2+.6*h))*float2(5.5,3.7); float glint=(1-smoothstep(.025,.07,abs(q.x+.03*sin(T*.3+h.x*6))))*(1-smoothstep(.10,.34,abs(q.y)))*pow(.5+.5*sin(T*.5+h.y*6),2); return c+float3(.10,.14,.14)*glint;'
+    connect(custom(m,code,{'Scene':sd,'Pixel':pd,'Pos':wp,'T':time}),unreal.MaterialProperty.MP_EMISSIVE_COLOR)
+    return finish(m)
+
+
+def setup_cloud_sky(mats):
+    actors=ES.get_all_level_actors()
+    dome=next((a for a in actors if a.get_actor_label()=='CloudSkyDome'),None)
+    if dome is None:dome=spawn(unreal.StaticMeshActor,[0,0,0],label='CloudSkyDome',folder='Lighting')
+    dome.set_actor_enable_collision(False)
+    c=dome.static_mesh_component;c.set_static_mesh(EAL.load_asset('/Engine/BasicShapes/Sphere'))
+    c.set_material(0,mats['M_CloudSky']);dome.set_actor_scale3d(unreal.Vector(10000,10000,10000))
+    c.set_collision_profile_name('NoCollision');c.set_collision_enabled(unreal.CollisionEnabled.NO_COLLISION);c.set_cast_shadow(False)
+    c.set_editor_property('affect_distance_field_lighting',False)
+    c.set_editor_property('visible_in_ray_tracing',False)
+    c.set_editor_property('visible_in_real_time_sky_captures',True)
+    fog=next((a for a in actors if isinstance(a,unreal.ExponentialHeightFog)),None)
+    if fog is None:fog=spawn(unreal.ExponentialHeightFog,[0,0,0],label='WoodlandHeightFog',folder='Lighting')
+    fc=fog.component
+    fc.set_fog_density(.001)
+    fc.set_fog_height_falloff(.25)
+    fc.set_start_distance(3200.0)
+    fc.set_fog_max_opacity(.06)
+    fc.set_fog_inscattering_color(unreal.LinearColor(.36,.46,.44,1))
+    for a in actors:
+        if isinstance(a,unreal.DirectionalLight):
+            a.light_component.set_editor_property('specular_scale',0.0)
+        if isinstance(a,unreal.SkyLight):
+            c=a.light_component;c.set_editor_property('real_time_capture',True)
+            c.set_editor_property('cubemap_resolution',512);c.set_editor_property('sky_distance_threshold',100000.0)
+        if isinstance(a,unreal.PostProcessVolume):
+            s=a.get_editor_property('settings')
+            s.set_editor_property('override_lumen_front_layer_translucency_reflections',True)
+            s.set_editor_property('lumen_front_layer_translucency_reflections',True)
+            s.set_editor_property('override_lumen_reflection_quality',True)
+            s.set_editor_property('lumen_reflection_quality',2.0)
+            a.set_editor_property('settings',s)
+    return dome
+
 
 def import_meshes(mats):
     meshes={};bounds={}
@@ -117,6 +203,7 @@ def import_meshes(mats):
             options.static_mesh_import_data.combine_meshes=True
             options.static_mesh_import_data.generate_lightmap_u_vs=False
             options.static_mesh_import_data.auto_generate_collision=False
+            options.static_mesh_import_data.vertex_color_import_option=unreal.VertexColorImportOption.REPLACE
             options.static_mesh_import_data.convert_scene=True
             options.static_mesh_import_data.convert_scene_unit=True
             task.options=options;AT.import_asset_tasks([task]);asset=EAL.load_asset(path)
@@ -159,6 +246,7 @@ def build_level(mats,meshes):
         c.set_mobility(unreal.ComponentMobility.STATIC)
         coll=o['collision']
         c.set_collision_enabled(unreal.CollisionEnabled.QUERY_AND_PHYSICS if coll in ['solid','complex'] else unreal.CollisionEnabled.NO_COLLISION)
+        if coll not in ['solid','complex']:c.set_collision_profile_name('NoCollision')
         if o['group'].startswith('Water'):c.set_cast_shadow(False)
         if coll=='trunk':
             # Canopies remain walk-under; a trunk-sized blocker stops the player.
@@ -187,6 +275,7 @@ def build_level(mats,meshes):
     settings.set_editor_property('auto_exposure_apply_physical_camera_exposure',False)
     for n,v in {'override_auto_exposure_method':True,'auto_exposure_method':unreal.AutoExposureMethod.AEM_MANUAL,'override_auto_exposure_bias':True,'auto_exposure_bias':0.0,'override_motion_blur_amount':True,'motion_blur_amount':0.0,'override_vignette_intensity':True,'vignette_intensity':.12,'override_bloom_intensity':True,'bloom_intensity':.12}.items():settings.set_editor_property(n,v)
     pp.set_editor_property('settings',settings)
+    setup_cloud_sky(mats)
     start=spawn(unreal.PlayerStart,DATA['spawn_cm'],unreal.Rotator(yaw=155),'PlayerStart_Clearing','Gameplay')
     world.get_world_settings().set_editor_property('default_game_mode',unreal.AstraGameMode)
     for name,look,width in [('Overview',[0,0,0],15500),('Gameplay',[-600,-1000,100],3000),('Lake',[1300,2000,70],3700),('Cabin',[2400,-2300,150],2400),('Puddle',[-2000,-1600,60],1300)]:

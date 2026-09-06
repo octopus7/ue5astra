@@ -28,4 +28,10 @@ for asset in ['SM_LakeSurface','SM_StreamSurface','SM_Puddle']:
     obj.select_set(False);obj.hide_set(True)
     print(f'{asset}: {len(verts)} vertices; edge mask {min(weights)} to {max(weights)}')
 (ART/'Layout'/'woodland_layout.json').write_text(json.dumps(metadata,indent=2),encoding='utf-8')
+for record in metadata['objects']:
+    if record['asset']=='SM_StreamSurface':
+        record['group']='PreviewOnly'
+        o=bpy.data.objects.get(record['name'])
+        if o:o['group']='PreviewOnly';o.hide_render=True;o.hide_set(True)
+(ART/'Layout'/'woodland_layout.json').write_text(json.dumps(metadata,indent=2),encoding='utf-8')
 bpy.ops.wm.save_as_mainfile(filepath=str(ART/'Blender'/'AstraWoodland.blend'))

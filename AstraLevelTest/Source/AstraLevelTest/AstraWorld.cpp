@@ -18,6 +18,8 @@
 #include "Engine/GameViewportClient.h"
 #if WITH_EDITOR
 #include "Editor.h"
+#include "LandscapeEdit.h"
+#include "LandscapeEditLayer.h"
 #endif
 
 UStaticMeshComponent* AAstraCat::Box(const TCHAR* Name, FVector Position, FVector Dimensions, const TCHAR* MaterialName, USceneComponent* Parent)
@@ -300,4 +302,42 @@ AActor* UAstraSceneLibrary::CreateTerrain(UMaterialInterface* Material)
 #else
     return nullptr;
 #endif
+}
+
+bool UAstraSceneLibrary::UpdateTerrainHeights(AActor* Terrain)
+{
+#if WITH_EDITOR
+    ALandscape* Landscape = Cast<ALandscape>(Terrain);
+    if (!Landscape || !Landscape->GetLandscapeInfo()) return false;
+    TArray<uint8> Raw;
+    if (!FFileHelper::LoadFileToArray(Raw, *(FPaths::ProjectDir() / TEXT("ArtSource/Layout/landscape_height.r16"))) || Raw.Num() != 127 * 127 * 2)
+        return false;
+    int32 MinX, MinY, MaxX, MaxY;
+    if (!Landscape->GetLandscapeInfo()->GetLandscapeExtent(MinX, MinY, MaxX, MaxY) || MinX != 0 || MinY != 0 || MaxX != 126 || MaxY != 126)
+        return false;
+    TArray<uint16> Heights;
+    Heights.SetNumUninitialized(127 * 127);
+    FMemory::Memcpy(Heights.GetData(), Raw.GetData(), Raw.Num());
+    Landscape->Modify();
+    const ULandscapeEditLayerBase* BaseLayer = Landscape->GetEditLayerConst(0);
+    if (!BaseLayer) return false;
+    FLandscapeEditDataInterface Edit(Landscape->GetLandscapeInfo(), BaseLayer->GetGuid());
+    // Update the existing terrain and collision; preserve its actor and components.
+    Edit.SetHeightData(0, 0, 126, 126, Heights.GetData(), 127, true);
+    Edit.Flush();
+    Landscape->RequestLayersContentUpdate(ELandscapeLayerUpdateMode::Update_Heightmap_All);
+    Landscape->ForceUpdateLayersContent();
+    Landscape->PostEditChange();
+    Landscape->MarkPackageDirty();
+    return true;
+#else
+    return false;
+#endif
+}
+
+float UAstraSceneLibrary::LandscapeHeightAt(AActor* Terrain, FVector Location)
+{
+    ALandscape* Landscape = Cast<ALandscape>(Terrain);
+    if (!Landscape) return -99999.f;
+    return Landscape->GetHeightAtLocation(Location).Get(-99999.f);
 }

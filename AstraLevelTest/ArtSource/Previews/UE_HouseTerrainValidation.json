@@ -1,0 +1,14 @@
+{
+  "before_height_cm": {
+    "house": 98.43170928955078,
+    "well": 98.43170928955078,
+    "steps": 98.43170928955078
+  },
+  "after_height_cm": {
+    "house": 98.43170928955078,
+    "well": 98.43170928955078,
+    "steps": 98.43170928955078
+  },
+  "expected_cm": 98.4375,
+  "existing_landscape_preserved": true
+}

@@ -1,0 +1,16 @@
+{
+  "water_blend_mode": "<BlendMode.BLEND_TRANSLUCENT: 2>",
+  "lake_shading_model": "<MaterialShadingModel.MSM_UNLIT: 0>",
+  "lake_cloud_reflections": false,
+  "lake_and_creek_single_surface": true,
+  "water_edge_mask": "Blender vertex color red, smoothstep, multiplied by DepthFade",
+  "puddle_sky_texture_input": false,
+  "puddle_emissive_input": false,
+  "sky": "CloudSkyDome / M_CloudSky",
+  "skylight_real_time_capture": true,
+  "high_quality_translucency_reflections": true,
+  "exponential_height_fog_density": 0.001,
+  "puddle_shading_model": "<MaterialShadingModel.MSM_DEFAULT_LIT: 1>",
+  "puddle_reflectance": "stylized metallic 1.0; replacement trick module in separate task",
+  "underwater_terrain": "light sand instead of forest grass"
+}
