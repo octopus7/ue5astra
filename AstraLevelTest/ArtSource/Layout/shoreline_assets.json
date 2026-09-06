@@ -236,9 +236,10 @@
         "description_ko": "얕은 호수 바닥용 둥근 회베이지 돌. 넓은 윗면과 낮은 옆면으로 수중 실루엣을 구분한다.",
         "pivot_note": "bottom_contact",
         "units": "metres",
-        "generation_seed": 7401
+        "generation_seed": 7401,
+        "normal_shading": "smooth; geometry/UV/material slots unchanged"
       },
-      "sha256": "970702ca7e56a6b30e1f10ca896bd6771c5e230e6ae393b09552c7676d3d3b83"
+      "sha256": "721d4c0d163e014a0d168a9cb2261720e3e2807f368c02839418acf2b1691391"
     },
     "SM_SubmergedRock_Flat_01": {
       "file": "Meshes/Shoreline/SM_SubmergedRock_Flat_01.fbx",
@@ -271,9 +272,10 @@
         "description_ko": "모래 선반에 놓는 납작하고 넓은 수중돌. 불규칙한 둥근 모서리와 큰 상단 면을 가진다.",
         "pivot_note": "bottom_contact",
         "units": "metres",
-        "generation_seed": 7402
+        "generation_seed": 7402,
+        "normal_shading": "smooth; geometry/UV/material slots unchanged"
       },
-      "sha256": "1bb883c43f7fce88e74c148e9bd8e97919f4ba75f05cc0a4ca75470e9e374719"
+      "sha256": "ad7bb250a52292187265a483fde682af3a8b33eb20c595ad7835b741bcc8c4f1"
     },
     "SM_SubmergedRock_Small_01": {
       "file": "Meshes/Shoreline/SM_SubmergedRock_Small_01.fbx",
@@ -306,9 +308,10 @@
         "description_ko": "큰 돌 사이에 배치하는 작은 수중돌. 중성 석재색을 유지하며 물의 청록색은 수면에서 표현한다.",
         "pivot_note": "bottom_contact",
         "units": "metres",
-        "generation_seed": 7403
+        "generation_seed": 7403,
+        "normal_shading": "smooth; geometry/UV/material slots unchanged"
       },
-      "sha256": "906ca6702599a91cb3d6fad5d796ec4e0d5d27c29d19d78d417af4c91b8b9012"
+      "sha256": "5882f39a0b93cfd5b0d275b76fe1bf39544efd790222182fe791154edd673516"
     },
     "SM_SubmergedPebbles_01": {
       "file": "Meshes/Shoreline/SM_SubmergedPebbles_01.fbx",
@@ -342,9 +345,10 @@
         "pivot_note": "bottom_contact",
         "units": "metres",
         "generation_seed": 7420,
-        "component_count": 6
+        "component_count": 6,
+        "normal_shading": "smooth; geometry/UV/material slots unchanged"
       },
-      "sha256": "35067bb1ac9ffd38d3893a1f4385374836e0d2566dd8d44e2be7cb32987a815c"
+      "sha256": "d08811aebce9eb4891801ebfeea828881829a2277c4316b9511df2d20637918d"
     }
   },
   "shoredata": {

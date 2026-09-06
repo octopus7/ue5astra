@@ -143,7 +143,7 @@ def _make_object(
     rng = random.Random(seed + 1024)
     light_direction = Vector((-0.35, -0.48, 0.80)).normalized()
     for face in mesh.polygons:
-        face.use_smooth = False
+        face.use_smooth = True
         # Restrained neutral facets keep rocks legible below the water without
         # baking teal colour, caustics, moss blankets or directional shadows.
         if face.normal.z < -0.12:

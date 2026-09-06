@@ -168,7 +168,9 @@
       "signed_volume_m3": 0.17359242067019182,
       "uv_layer": "UVMap",
       "vertex_color": "ShoreData",
-      "errors": []
+      "errors": [],
+      "smooth_shaded_polygons": 82,
+      "geometry_uv_colour_slots_preserved": true
     },
     "SM_SubmergedRock_Flat_01": {
       "vertices": 43,
@@ -196,7 +198,9 @@
       "signed_volume_m3": 0.1309484811140325,
       "uv_layer": "UVMap",
       "vertex_color": "ShoreData",
-      "errors": []
+      "errors": [],
+      "smooth_shaded_polygons": 82,
+      "geometry_uv_colour_slots_preserved": true
     },
     "SM_SubmergedRock_Small_01": {
       "vertices": 36,
@@ -224,7 +228,9 @@
       "signed_volume_m3": 0.03603509047081285,
       "uv_layer": "UVMap",
       "vertex_color": "ShoreData",
-      "errors": []
+      "errors": [],
+      "smooth_shaded_polygons": 68,
+      "geometry_uv_colour_slots_preserved": true
     },
     "SM_SubmergedPebbles_01": {
       "vertices": 216,
@@ -252,7 +258,9 @@
       "signed_volume_m3": 0.11126646606174527,
       "uv_layer": "UVMap",
       "vertex_color": "ShoreData",
-      "errors": []
+      "errors": [],
+      "smooth_shaded_polygons": 408,
+      "geometry_uv_colour_slots_preserved": true
     }
   },
   "asset_count": 9,

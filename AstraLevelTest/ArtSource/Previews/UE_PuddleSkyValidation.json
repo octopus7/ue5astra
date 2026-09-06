@@ -1,0 +1,89 @@
+{
+  "renders": [
+    {
+      "camera": "PuddleSkyLow",
+      "file": "ArtSource/Previews/UE_PuddleSkyLow.png",
+      "native_render_errors": [
+        null
+      ],
+      "log": "Saved/Shoreline/PuddleSkyLowVerifiedRender.log",
+      "last_write_utc": "2026-09-06T19:00:58.3717888Z",
+      "exit_code": 0,
+      "sha256": "956316A07B24F34C298BA46F64F4C35A6110767E574B2C55E8CD036A1FD565FD"
+    },
+    {
+      "camera": "PuddleSkyTop",
+      "file": "ArtSource/Previews/UE_PuddleSkyTop.png",
+      "native_render_errors": [
+        null
+      ],
+      "log": "Saved/Shoreline/PuddleSkyTopVerifiedRender.log",
+      "last_write_utc": "2026-09-06T19:01:27.0957924Z",
+      "exit_code": 0,
+      "sha256": "84DE6720FD1F5A670F9B842EE7C2F5BC2FCDBC68A63EF89CA18AA83FD9570835"
+    }
+  ],
+  "visual_review": {
+    "top_down": "Ground remains visible; reflection attenuates strongly at this angle",
+    "grazing": "Sky and tree/rock environment reflections visible with ground transmission toward viewer"
+  },
+  "passed": true,
+  "import_log_note": "Incremental graph rebuild emitted transient missing-input/ThinTranslucent warnings. Final saved material checked separately in both clean game-render logs.",
+  "apply_result": {
+    "map": "/Game/Astra/Maps/L_AstraPuddleSkyModuleReview.L_AstraPuddleSkyModuleReview",
+    "saved": false,
+    "puddle_count": 5,
+    "actors": {
+      "Puddle_0002": [
+        "/Game/Astra/Materials/Shoreline/M_PuddleSkyReflection.M_PuddleSkyReflection"
+      ],
+      "Puddle_0003": [
+        "/Game/Astra/Materials/Shoreline/M_PuddleSkyReflection.M_PuddleSkyReflection"
+      ],
+      "Puddle_0004": [
+        "/Game/Astra/Materials/Shoreline/M_PuddleSkyReflection.M_PuddleSkyReflection"
+      ],
+      "Puddle_0005": [
+        "/Game/Astra/Materials/Shoreline/M_PuddleSkyReflection.M_PuddleSkyReflection"
+      ],
+      "Puddle_0006": [
+        "/Game/Astra/Materials/Shoreline/M_PuddleSkyReflection.M_PuddleSkyReflection"
+      ]
+    },
+    "material": {
+      "asset": "/Game/Astra/Materials/Shoreline/M_PuddleSkyReflection.M_PuddleSkyReflection",
+      "checks": {
+        "thin_translucent": true,
+        "surface_forward_shading": true,
+        "front_layer_allowed": true,
+        "native_reflections_enabled": true,
+        "zero_opaque_top_layer": true,
+        "water_f0_002": true,
+        "no_emissive_output": true,
+        "no_texture_samples": true
+      },
+      "passed": true,
+      "scalar_defaults": {
+        "WaveNormalStrength": 0.017999999225139618,
+        "WaterF0": 0.019999999552965164,
+        "SurfaceRoughness": 0.04500000178813934,
+        "WaveSpeed": 0.11999999731779099,
+        "EdgeDepthFadeCm": 4.0
+      },
+      "validation_scope": "Actual material contract only; inspect native compile logs plus top-down/grazing GPU captures."
+    },
+    "environment": {
+      "post_process_volumes": [
+        "WoodlandGrade"
+      ],
+      "sky_lights": [
+        "SoftSkyFill"
+      ],
+      "front_layer_enabled": true,
+      "sky_recapture_requested": false,
+      "project_config_changed": false
+    },
+    "original_materials_snapshot": "C:\\Users\\blendue\\.codex\\worktrees\\74b9\\ue5astra\\AstraLevelTest\\Saved\\Shoreline\\puddle_material_originals_643301d6f06f.json"
+  },
+  "scope": "UE 5.7.4 native Thin Translucent reflection; actual game renders at grazing and top-down angles"
+}
