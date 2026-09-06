@@ -1,0 +1,213 @@
+{
+  "source": "ArtSource/Blender/ForestSigns.blend",
+  "script": "Scripts/build_forest_signs.py",
+  "reference": "ArtSource/Reference/Ref_ForestSignpost.png",
+  "units": "metres",
+  "unreal_conversion": "(Blender X, -Blender Y, Blender Z) * 100; yaw negated",
+  "palette_srgb_hex": {
+    "M_Wood": "A77C45",
+    "M_WoodLight": "BF975B",
+    "M_WoodDark": "715232",
+    "M_ForestWoodShade": "687582",
+    "M_ForestWoodEnd": "D1AD75",
+    "M_ForestSignSage": "A5B08A",
+    "M_ForestSignCream": "E8D8AC",
+    "M_ForestSignPink": "D8939E",
+    "M_ForestSignBlue": "639EAE",
+    "M_ForestSignGreen": "527E68",
+    "M_ForestSignRope": "C9AE77"
+  },
+  "material_properties": {
+    "M_Wood": {
+      "roughness": 0.88,
+      "metallic": 0.0
+    },
+    "M_WoodLight": {
+      "roughness": 0.88,
+      "metallic": 0.0
+    },
+    "M_WoodDark": {
+      "roughness": 0.88,
+      "metallic": 0.0
+    },
+    "M_ForestWoodShade": {
+      "roughness": 0.88,
+      "metallic": 0.0
+    },
+    "M_ForestWoodEnd": {
+      "roughness": 0.88,
+      "metallic": 0.0
+    },
+    "M_ForestSignSage": {
+      "roughness": 0.88,
+      "metallic": 0.0
+    },
+    "M_ForestSignCream": {
+      "roughness": 0.88,
+      "metallic": 0.0
+    },
+    "M_ForestSignPink": {
+      "roughness": 0.88,
+      "metallic": 0.0
+    },
+    "M_ForestSignBlue": {
+      "roughness": 0.88,
+      "metallic": 0.0
+    },
+    "M_ForestSignGreen": {
+      "roughness": 0.88,
+      "metallic": 0.0
+    },
+    "M_ForestSignRope": {
+      "roughness": 0.88,
+      "metallic": 0.0
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "SM_ForestSignpost",
+      "file": "ArtSource/Meshes/SM_ForestSignpost.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        0.45066,
+        1.28,
+        2.4
+      ],
+      "bounds_min_m": [
+        -0.308,
+        -0.64,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.14266,
+        0.64,
+        2.4
+      ],
+      "vertices": 976,
+      "triangles": 1676,
+      "material_slots": [
+        "M_Wood",
+        "M_WoodLight",
+        "M_WoodDark",
+        "M_ForestWoodShade",
+        "M_ForestWoodEnd",
+        "M_ForestSignCream",
+        "M_ForestSignPink",
+        "M_ForestSignBlue",
+        "M_ForestSignGreen",
+        "M_ForestSignSage"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0,
+        "fbx_roundtrip": {
+          "bounds_max_error_m": 0.0,
+          "origin_zero": true,
+          "material_slots_match": true,
+          "non_manifold_edges": 0
+        }
+      }
+    },
+    {
+      "asset_id": "SM_CampLogStool",
+      "file": "ArtSource/Meshes/SM_CampLogStool.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        0.655451,
+        0.658799,
+        0.55
+      ],
+      "bounds_min_m": [
+        -0.335451,
+        -0.3261,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.32,
+        0.332699,
+        0.55
+      ],
+      "vertices": 276,
+      "triangles": 536,
+      "material_slots": [
+        "M_Wood",
+        "M_WoodLight",
+        "M_WoodDark",
+        "M_ForestWoodShade",
+        "M_ForestWoodEnd"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0,
+        "fbx_roundtrip": {
+          "bounds_max_error_m": 0.0,
+          "origin_zero": true,
+          "material_slots_match": true,
+          "non_manifold_edges": 0
+        }
+      }
+    },
+    {
+      "asset_id": "SM_CampWoodpile",
+      "file": "ArtSource/Meshes/SM_CampWoodpile.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        0.837243,
+        1.324663,
+        0.65
+      ],
+      "bounds_min_m": [
+        -0.418621,
+        -0.661798,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.418621,
+        0.662865,
+        0.65
+      ],
+      "vertices": 1632,
+      "triangles": 3056,
+      "material_slots": [
+        "M_WoodDark",
+        "M_ForestWoodEnd",
+        "M_WoodLight",
+        "M_Wood",
+        "M_ForestSignRope"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0,
+        "fbx_roundtrip": {
+          "bounds_max_error_m": 0.0,
+          "origin_zero": true,
+          "material_slots_match": true,
+          "non_manifold_edges": 0
+        }
+      }
+    }
+  ],
+  "placement_notes": "Sign readable front local -X faces the fixed camera at UE yaw 0. Place at path forks, leaving 1.5 m clear walking space. Stool and pile are separate ground-zero assets; rotate freely near tent and campfire. The log pile long axis is Y.",
+  "sign": {
+    "height_m": 2.4,
+    "arrow_centre_spacing_m": 0.55,
+    "pictograms_top_to_bottom": [
+      "lake ripples",
+      "tent",
+      "cottage"
+    ],
+    "contains_text": false
+  }
+}

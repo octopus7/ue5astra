@@ -1,0 +1,244 @@
+{
+  "source": "ArtSource/Blender/ForestCooking.blend",
+  "script": "Scripts/build_forest_cooking.py",
+  "reference": "ArtSource/Reference/Ref_ForestCooking.png",
+  "units": "metres",
+  "unreal_conversion": "(X,-Y,Z)*100",
+  "palette_srgb_hex": {
+    "M_CampWood": "A77C45",
+    "M_CampWoodLight": "C99B60",
+    "M_CampCharcoal": "403F43",
+    "M_CampStoneBlue": "65758A",
+    "M_CampStoneLight": "8B979F",
+    "M_CampIron": "354A57",
+    "M_CampEnamel": "397E84",
+    "M_CampEnamelLight": "76A4A3",
+    "M_CampOchre": "C78040",
+    "M_CampRope": "CEB589",
+    "M_CampFlame": "FFAE21",
+    "M_CampFlameCore": "FFE486",
+    "M_CampLanternGlow": "FFC765",
+    "M_CampSoup": "945D31"
+  },
+  "material_properties": {
+    "M_CampWood": {
+      "roughness": 0.88,
+      "metallic": 0,
+      "emissive_strength": 0
+    },
+    "M_CampWoodLight": {
+      "roughness": 0.88,
+      "metallic": 0,
+      "emissive_strength": 0
+    },
+    "M_CampCharcoal": {
+      "roughness": 0.88,
+      "metallic": 0,
+      "emissive_strength": 0
+    },
+    "M_CampStoneBlue": {
+      "roughness": 0.88,
+      "metallic": 0,
+      "emissive_strength": 0
+    },
+    "M_CampStoneLight": {
+      "roughness": 0.88,
+      "metallic": 0,
+      "emissive_strength": 0
+    },
+    "M_CampIron": {
+      "roughness": 0.42,
+      "metallic": 0.3,
+      "emissive_strength": 0
+    },
+    "M_CampEnamel": {
+      "roughness": 0.42,
+      "metallic": 0.3,
+      "emissive_strength": 0
+    },
+    "M_CampEnamelLight": {
+      "roughness": 0.42,
+      "metallic": 0.3,
+      "emissive_strength": 0
+    },
+    "M_CampOchre": {
+      "roughness": 0.88,
+      "metallic": 0,
+      "emissive_strength": 0
+    },
+    "M_CampRope": {
+      "roughness": 0.88,
+      "metallic": 0,
+      "emissive_strength": 0
+    },
+    "M_CampFlame": {
+      "roughness": 0.88,
+      "metallic": 0,
+      "emissive_strength": 1.4
+    },
+    "M_CampFlameCore": {
+      "roughness": 0.88,
+      "metallic": 0,
+      "emissive_strength": 1.4
+    },
+    "M_CampLanternGlow": {
+      "roughness": 0.88,
+      "metallic": 0,
+      "emissive_strength": 1.4
+    },
+    "M_CampSoup": {
+      "roughness": 0.88,
+      "metallic": 0,
+      "emissive_strength": 0
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "SM_Campfire",
+      "file": "ArtSource/Meshes/SM_Campfire.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        1.877642,
+        1.802408,
+        1.06
+      ],
+      "bounds_min_m": [
+        -0.924036,
+        -0.901204,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.953606,
+        0.901204,
+        1.06
+      ],
+      "vertices": 348,
+      "triangles": 608,
+      "material_slots": [
+        "M_CampCharcoal",
+        "M_CampStoneLight",
+        "M_CampStoneBlue",
+        "M_CampWoodLight",
+        "M_CampFlame",
+        "M_CampFlameCore"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0
+      }
+    },
+    {
+      "asset_id": "SM_CampCookingTripod",
+      "file": "ArtSource/Meshes/SM_CampCookingTripod.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        1.605812,
+        1.405032,
+        1.75988
+      ],
+      "bounds_min_m": [
+        -0.802906,
+        -0.486012,
+        0.00506
+      ],
+      "bounds_max_m": [
+        0.802906,
+        0.91902,
+        1.76494
+      ],
+      "vertices": 300,
+      "triangles": 528,
+      "material_slots": [
+        "M_CampWood",
+        "M_CampRope",
+        "M_CampIron",
+        "M_CampEnamel"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0
+      }
+    },
+    {
+      "asset_id": "SM_CampCookingStation",
+      "file": "ArtSource/Meshes/SM_CampCookingStation.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        1.44,
+        0.815,
+        1.360741
+      ],
+      "bounds_min_m": [
+        -0.72,
+        -0.4075,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.72,
+        0.4075,
+        1.360741
+      ],
+      "vertices": 594,
+      "triangles": 1004,
+      "material_slots": [
+        "M_CampWood",
+        "M_CampWoodLight",
+        "M_CampIron",
+        "M_CampEnamel",
+        "M_CampEnamelLight",
+        "M_CampOchre"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0
+      }
+    },
+    {
+      "asset_id": "SM_CampLantern",
+      "file": "ArtSource/Meshes/SM_CampLantern.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        0.399444,
+        0.42,
+        0.785
+      ],
+      "bounds_min_m": [
+        -0.199722,
+        -0.21,
+        0.015
+      ],
+      "bounds_max_m": [
+        0.199722,
+        0.21,
+        0.8
+      ],
+      "vertices": 120,
+      "triangles": 200,
+      "material_slots": [
+        "M_CampIron",
+        "M_CampLanternGlow",
+        "M_CampWoodLight"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0
+      }
+    }
+  ]
+}

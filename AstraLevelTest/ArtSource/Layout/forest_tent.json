@@ -1,0 +1,236 @@
+{
+  "source": "ArtSource/Blender/ForestTent.blend",
+  "script": "Scripts/build_forest_tent.py",
+  "reference": "ArtSource/Reference/Ref_ForestTent.png",
+  "units": "metres",
+  "unreal_conversion": "(Blender X, -Blender Y, Blender Z) * 100; yaw negated",
+  "palette_srgb_hex": {
+    "M_TentCanvas": "E4D5AC",
+    "M_TentCanvasLight": "EEE0BC",
+    "M_TentCanvasFold": "CBBD98",
+    "M_TentSage": "929B75",
+    "M_TentSageLight": "A5AB85",
+    "M_TentOchre": "B48B48",
+    "M_TentWood": "806342",
+    "M_TentWoodDark": "5E4D3C",
+    "M_TentRope": "C1AA7D",
+    "M_TentInside": "4F6777",
+    "M_CampLeather": "84613E",
+    "M_CampLeatherLight": "A27A4D",
+    "M_CampBuckle": "B4AA83",
+    "M_CampRollDark": "657758"
+  },
+  "material_properties": {
+    "M_TentCanvas": {
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_TentCanvasLight": {
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_TentCanvasFold": {
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_TentSage": {
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_TentSageLight": {
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_TentOchre": {
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_TentWood": {
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_TentWoodDark": {
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_TentRope": {
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_TentInside": {
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_CampLeather": {
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_CampLeatherLight": {
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_CampBuckle": {
+      "roughness": 0.48,
+      "metallic": 0.25
+    },
+    "M_CampRollDark": {
+      "roughness": 0.84,
+      "metallic": 0.0
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "SM_ForestTent",
+      "file": "ArtSource/Meshes/SM_ForestTent.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        4.546,
+        4.246463,
+        2.556046
+      ],
+      "bounds_min_m": [
+        -2.273,
+        -2.123231,
+        0.0
+      ],
+      "bounds_max_m": [
+        2.273,
+        2.123231,
+        2.556046
+      ],
+      "vertices": 886,
+      "triangles": 1656,
+      "material_slots": [
+        "M_TentCanvas",
+        "M_TentInside",
+        "M_TentSage",
+        "M_TentOchre",
+        "M_TentCanvasLight",
+        "M_TentCanvasFold",
+        "M_TentRope",
+        "M_TentWood",
+        "M_TentWoodDark"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0,
+        "uv_layers": 1,
+        "finite_uvs": true,
+        "fbx_roundtrip_bounds_m": [
+          4.546,
+          4.246463,
+          2.556046
+        ],
+        "fbx_roundtrip_uvs": true,
+        "fbx_roundtrip_material_slots": true
+      }
+    },
+    {
+      "asset_id": "SM_CampBedroll",
+      "file": "ArtSource/Meshes/SM_CampBedroll.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        0.696,
+        1.117301,
+        0.819275
+      ],
+      "bounds_min_m": [
+        -0.348,
+        -0.558651,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.348,
+        0.558651,
+        0.819275
+      ],
+      "vertices": 836,
+      "triangles": 1640,
+      "material_slots": [
+        "M_TentSage",
+        "M_CampRollDark",
+        "M_CampLeather",
+        "M_CampBuckle",
+        "M_CampLeatherLight"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0,
+        "uv_layers": 1,
+        "finite_uvs": true,
+        "fbx_roundtrip_bounds_m": [
+          0.696,
+          1.117301,
+          0.819275
+        ],
+        "fbx_roundtrip_uvs": true,
+        "fbx_roundtrip_material_slots": true
+      }
+    },
+    {
+      "asset_id": "SM_CampSatchel",
+      "file": "ArtSource/Meshes/SM_CampSatchel.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        0.6105,
+        0.77,
+        0.977
+      ],
+      "bounds_min_m": [
+        -0.354,
+        -0.385,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.2565,
+        0.385,
+        0.977
+      ],
+      "vertices": 340,
+      "triangles": 608,
+      "material_slots": [
+        "M_TentSage",
+        "M_TentCanvas",
+        "M_TentCanvasLight",
+        "M_TentOchre",
+        "M_CampLeather",
+        "M_CampBuckle",
+        "M_CampLeatherLight"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0,
+        "uv_layers": 1,
+        "finite_uvs": true,
+        "fbx_roundtrip_bounds_m": [
+          0.6105,
+          0.77,
+          0.977
+        ],
+        "fbx_roundtrip_uvs": true,
+        "fbx_roundtrip_material_slots": true
+      }
+    }
+  ],
+  "placement_notes": "Front local -X faces the fixed camera. Tent body 3.5 x 3.0 m; keep 0.6 m outside full guy-rope footprint clear and preserve 1.6 m central front approach. Place fire at least 3 m from the canvas. Bedroll and satchel separate; use 1 m and 0.7 m side clearances.",
+  "entry": {
+    "front_axis": "-X",
+    "decorative_opening": true,
+    "minimum_ground_width_m": 1.78,
+    "groundsheet_top_m": 0.06,
+    "note": "Exterior gameplay prop; interior access not required."
+  },
+  "topology": "Cloth grids have a 0.035 m enclosed thickness; ropes/poles/accessories are closed solids. No fine surface texture."
+}

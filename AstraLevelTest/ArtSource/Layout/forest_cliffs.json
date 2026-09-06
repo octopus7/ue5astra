@@ -1,0 +1,272 @@
+{
+  "source": "ArtSource/Blender/ForestCliffs.blend",
+  "script": "Scripts/build_forest_cliffs.py",
+  "reference": "ArtSource/Reference/Ref_ForestCliffs.png",
+  "units": "metres",
+  "unreal_conversion": "(Blender X, -Blender Y, Blender Z) * 100; yaw negated",
+  "palette_srgb_hex": {
+    "M_ForestCliffStone": "ADB8BF",
+    "M_ForestCliffCool": "94AAD0",
+    "M_ForestCliffWarm": "C5C5AC",
+    "M_ForestCliffMoss": "A3B477"
+  },
+  "material_properties": {
+    "M_ForestCliffStone": {
+      "tint_linear": [
+        1.12,
+        1.15,
+        1.19
+      ],
+      "roughness": 0.88,
+      "metallic": 0.0,
+      "palette_srgb_hex": "ADB8BF",
+      "base_color_texture": "ArtSource/Textures/T_ForestCliffPaint.png",
+      "base_color_formula": "sRGB-decoded TextureSample(UV0).rgb * tint_linear",
+      "texture_srgb": true,
+      "sampler_address": "wrap",
+      "uv_channel": 0,
+      "normal_texture": null,
+      "emissive": 0,
+      "specular": 0.25
+    },
+    "M_ForestCliffCool": {
+      "tint_linear": [
+        0.97,
+        1.1,
+        1.37
+      ],
+      "roughness": 0.88,
+      "metallic": 0.0,
+      "palette_srgb_hex": "94AAD0",
+      "base_color_texture": "ArtSource/Textures/T_ForestCliffPaint.png",
+      "base_color_formula": "sRGB-decoded TextureSample(UV0).rgb * tint_linear",
+      "texture_srgb": true,
+      "sampler_address": "wrap",
+      "uv_channel": 0,
+      "normal_texture": null,
+      "emissive": 0,
+      "specular": 0.25
+    },
+    "M_ForestCliffWarm": {
+      "tint_linear": [
+        1.28,
+        1.21,
+        1.05
+      ],
+      "roughness": 0.88,
+      "metallic": 0.0,
+      "palette_srgb_hex": "C5C5AC",
+      "base_color_texture": "ArtSource/Textures/T_ForestCliffPaint.png",
+      "base_color_formula": "sRGB-decoded TextureSample(UV0).rgb * tint_linear",
+      "texture_srgb": true,
+      "sampler_address": "wrap",
+      "uv_channel": 0,
+      "normal_texture": null,
+      "emissive": 0,
+      "specular": 0.25
+    },
+    "M_ForestCliffMoss": {
+      "tint_linear": [
+        0.97,
+        1.12,
+        0.53
+      ],
+      "roughness": 0.93,
+      "metallic": 0.0,
+      "palette_srgb_hex": "A3B477",
+      "base_color_texture": "ArtSource/Textures/T_ForestCliffPaint.png",
+      "base_color_formula": "sRGB-decoded TextureSample(UV0).rgb * tint_linear",
+      "texture_srgb": true,
+      "sampler_address": "wrap",
+      "uv_channel": 0,
+      "normal_texture": null,
+      "emissive": 0,
+      "specular": 0.25
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "SM_ForestCliff_A",
+      "file": "ArtSource/Meshes/SM_ForestCliff_A.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        2.875912,
+        5.4131,
+        8.035
+      ],
+      "bounds_min_m": [
+        -1.524985,
+        -2.6961,
+        0.0
+      ],
+      "bounds_max_m": [
+        1.350927,
+        2.717,
+        8.035
+      ],
+      "vertices": 529,
+      "triangles": 1054,
+      "material_slots": [
+        "M_ForestCliffStone",
+        "M_ForestCliffCool",
+        "M_ForestCliffWarm",
+        "M_ForestCliffMoss"
+      ],
+      "recommended_overlap_m": 0.55,
+      "continuous_buryable_lower_height_m": 4.5,
+      "silhouette": "Broad regular horizontal strata",
+      "uv": {
+        "channel": 0,
+        "name": "UVMap",
+        "metres_per_tile": 2.0,
+        "projection": "Dominant local normal: X faces YZ, Y faces XZ, Z faces XY. Baked UV0; no UE axis conversion required."
+      },
+      "validation": {
+        "finite_vertices": true,
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "closed_bottom": true,
+        "closed_top": true
+      }
+    },
+    {
+      "asset_id": "SM_ForestCliff_B",
+      "file": "ArtSource/Meshes/SM_ForestCliff_B.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        3.087073,
+        5.768883,
+        8.035
+      ],
+      "bounds_min_m": [
+        -1.608981,
+        -2.6961,
+        0.0
+      ],
+      "bounds_max_m": [
+        1.478092,
+        3.072783,
+        8.035
+      ],
+      "vertices": 529,
+      "triangles": 1054,
+      "material_slots": [
+        "M_ForestCliffStone",
+        "M_ForestCliffCool",
+        "M_ForestCliffWarm",
+        "M_ForestCliffMoss"
+      ],
+      "recommended_overlap_m": 0.55,
+      "continuous_buryable_lower_height_m": 4.5,
+      "silhouette": "Upper half leans 0.5 m toward local +Y; alternating wide and narrow strata",
+      "uv": {
+        "channel": 0,
+        "name": "UVMap",
+        "metres_per_tile": 2.0,
+        "projection": "Dominant local normal: X faces YZ, Y faces XZ, Z faces XY. Baked UV0; no UE axis conversion required."
+      },
+      "validation": {
+        "finite_vertices": true,
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "closed_bottom": true,
+        "closed_top": true
+      }
+    },
+    {
+      "asset_id": "SM_ForestCliff_C",
+      "file": "ArtSource/Meshes/SM_ForestCliff_C.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        3.712562,
+        5.453072,
+        8.035
+      ],
+      "bounds_min_m": [
+        -2.340735,
+        -2.725917,
+        0.0
+      ],
+      "bounds_max_m": [
+        1.371827,
+        2.727155,
+        8.035
+      ],
+      "vertices": 225,
+      "triangles": 446,
+      "material_slots": [
+        "M_ForestCliffStone",
+        "M_ForestCliffCool",
+        "M_ForestCliffWarm",
+        "M_ForestCliffMoss"
+      ],
+      "recommended_overlap_m": 0.55,
+      "continuous_buryable_lower_height_m": 4.5,
+      "silhouette": "Large front -X corner shoulder and wide ledge at 6.2 m; fewer broader strata",
+      "uv": {
+        "channel": 0,
+        "name": "UVMap",
+        "metres_per_tile": 2.0,
+        "projection": "Dominant local normal: X faces YZ, Y faces XZ, Z faces XY. Baked UV0; no UE axis conversion required."
+      },
+      "validation": {
+        "finite_vertices": true,
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "closed_bottom": true,
+        "closed_top": true
+      }
+    }
+  ],
+  "fbx_roundtrip_validation": [
+    {
+      "asset_id": "SM_ForestCliff_A",
+      "dimensions_error_m": 4.2790222165578484e-07,
+      "uv_loops": 2112,
+      "uv_bounds_min_u_min_v_max_u_max_v": [
+        -1.1913000345230103,
+        -1.3351500034332275,
+        1.2487750053405762,
+        4.011994361877441
+      ],
+      "finite_uv": true,
+      "welded_non_manifold_edges": 0,
+      "material_slots": 4
+    },
+    {
+      "asset_id": "SM_ForestCliff_B",
+      "dimensions_error_m": 2.485351560110871e-07,
+      "uv_loops": 2112,
+      "uv_bounds_min_u_min_v_max_u_max_v": [
+        -1.1913000345230103,
+        -1.3351500034332275,
+        1.4308663606643677,
+        4.016587734222412
+      ],
+      "finite_uv": true,
+      "welded_non_manifold_edges": 0,
+      "material_slots": 4
+    },
+    {
+      "asset_id": "SM_ForestCliff_C",
+      "dimensions_error_m": 4.057617184471951e-07,
+      "uv_loops": 896,
+      "uv_bounds_min_u_min_v_max_u_max_v": [
+        -1.2912083864212036,
+        -1.3389999866485596,
+        1.197177529335022,
+        4.011994361877441
+      ],
+      "finite_uv": true,
+      "welded_non_manifold_edges": 0,
+      "material_slots": 4
+    }
+  ],
+  "placement_notes": "Stand vertically, assemble along local Y with 0.55 m overlap. Front -X. Bury origin 0\u20134.5 m below visible ground to expose 3.5\u20138 m. All sides and bottom remain closed. Match upper terrain to the cap or bury cap slightly into hillside. C is a projecting corner; yaw +/-15\u201345 degrees to wrap a hill. The lower half is fully continuous solid stone, with no detached shelves or floating details."
+}

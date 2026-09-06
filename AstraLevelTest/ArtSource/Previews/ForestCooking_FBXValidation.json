@@ -1,0 +1,182 @@
+{
+  "source": "ArtSource/Blender/ForestCooking.blend",
+  "metadata": "ArtSource/Layout/forest_cooking.json",
+  "method": "Independent Blender FBX reimport; no source files changed",
+  "assets": [
+    {
+      "asset_id": "SM_Campfire",
+      "fbx_sha256": "e76001eaa32f24ac1c0dc6febf9d388d9c16c558eef75c8d9134dd20d172474c",
+      "finite_vertices": true,
+      "bounds_min_m": [
+        -0.9240360856056213,
+        -0.9012040495872498,
+        7.450580596923828e-09
+      ],
+      "bounds_max_m": [
+        0.9536062479019165,
+        0.9012040495872498,
+        1.059999942779541
+      ],
+      "dimensions_m": [
+        1.8776423335075378,
+        1.8024080991744995,
+        1.0599999353289604
+      ],
+      "bounds_metadata_max_error_m": 2.479019165502194e-07,
+      "dimensions_metadata_max_error_m": 3.335075378085861e-07,
+      "dimensions_source_max_error_m": 0.0,
+      "material_slots": [
+        "M_CampCharcoal",
+        "M_CampStoneLight",
+        "M_CampStoneBlue",
+        "M_CampWoodLight",
+        "M_CampFlame",
+        "M_CampFlameCore"
+      ],
+      "material_slots_match_metadata": true,
+      "material_slots_match_source": true,
+      "degenerate_faces": 0,
+      "non_manifold_edges": 0,
+      "object_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ground_clearance_m": 7.450580596923828e-09,
+      "vertices": 348,
+      "triangles": 608,
+      "passed": true
+    },
+    {
+      "asset_id": "SM_CampCookingTripod",
+      "fbx_sha256": "9a01e71ca42fbf1cee319649eb756792de5b6c8ae91f900fefb58a58de55041f",
+      "finite_vertices": true,
+      "bounds_min_m": [
+        -0.8029061555862427,
+        -0.4860117435455322,
+        0.00505983829498291
+      ],
+      "bounds_max_m": [
+        0.8029062747955322,
+        0.919020414352417,
+        1.7649401426315308
+      ],
+      "dimensions_m": [
+        1.605812430381775,
+        1.4050321578979492,
+        1.7598803043365479
+      ],
+      "bounds_metadata_max_error_m": 4.143524170441282e-07,
+      "dimensions_metadata_max_error_m": 4.3038177488519125e-07,
+      "dimensions_source_max_error_m": 0.0,
+      "material_slots": [
+        "M_CampWood",
+        "M_CampRope",
+        "M_CampIron",
+        "M_CampEnamel"
+      ],
+      "material_slots_match_metadata": true,
+      "material_slots_match_source": true,
+      "degenerate_faces": 0,
+      "non_manifold_edges": 0,
+      "object_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ground_clearance_m": 0.00505983829498291,
+      "vertices": 300,
+      "triangles": 528,
+      "passed": true
+    },
+    {
+      "asset_id": "SM_CampCookingStation",
+      "fbx_sha256": "d6a044dfb15dfefdfbf33574c045b79a42f3b31c7547c421b16257b4fd300deb",
+      "finite_vertices": true,
+      "bounds_min_m": [
+        -0.7200000286102295,
+        -0.4075000584125519,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.7200000882148743,
+        0.4075000584125519,
+        1.360741376876831
+      ],
+      "dimensions_m": [
+        1.4400001168251038,
+        0.8150001168251038,
+        1.360741376876831
+      ],
+      "bounds_metadata_max_error_m": 3.7687683107634484e-07,
+      "dimensions_metadata_max_error_m": 3.7687683107634484e-07,
+      "dimensions_source_max_error_m": 0.0,
+      "material_slots": [
+        "M_CampWood",
+        "M_CampWoodLight",
+        "M_CampIron",
+        "M_CampEnamel",
+        "M_CampEnamelLight",
+        "M_CampOchre"
+      ],
+      "material_slots_match_metadata": true,
+      "material_slots_match_source": true,
+      "degenerate_faces": 0,
+      "non_manifold_edges": 0,
+      "object_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ground_clearance_m": 0.0,
+      "vertices": 594,
+      "triangles": 1004,
+      "passed": true
+    },
+    {
+      "asset_id": "SM_CampLantern",
+      "fbx_sha256": "a3206e24da64df0956577c62115bd9b55f79f34af7809780259b4def20814589",
+      "finite_vertices": true,
+      "bounds_min_m": [
+        -0.19972188770771027,
+        -0.20999999344348907,
+        0.015000000596046448
+      ],
+      "bounds_max_m": [
+        0.19972188770771027,
+        0.20999999344348907,
+        0.800000011920929
+      ],
+      "dimensions_m": [
+        0.39944377541542053,
+        0.41999998688697815,
+        0.7850000113248825
+      ],
+      "bounds_metadata_max_error_m": 1.1229228974451999e-07,
+      "dimensions_metadata_max_error_m": 2.2458457948903998e-07,
+      "dimensions_source_max_error_m": 0.0,
+      "material_slots": [
+        "M_CampIron",
+        "M_CampLanternGlow",
+        "M_CampWoodLight"
+      ],
+      "material_slots_match_metadata": true,
+      "material_slots_match_source": true,
+      "degenerate_faces": 0,
+      "non_manifold_edges": 0,
+      "object_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ground_clearance_m": 0.015000000596046448,
+      "vertices": 120,
+      "triangles": 200,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "notes": [
+    "Tripod lowest vertex is 0.00506 m above origin; lantern lowest vertex is 0.015 m above origin. Metadata matches the exported geometry. If exact ground contact is desired, place at terrain height minus these offsets."
+  ]
+}
