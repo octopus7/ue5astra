@@ -8,6 +8,8 @@
 #include "UObject/ConstructorHelpers.h"
 #include "Landscape.h"
 #include "LandscapeInfo.h"
+#include "Misc/FileHelper.h"
+#include "Misc/Paths.h"
 #if WITH_EDITOR
 #include "Editor.h"
 #endif
@@ -15,7 +17,7 @@
 UStaticMeshComponent* AAstraCat::Box(const TCHAR* Name, FVector Position, FVector Dimensions, const TCHAR* MaterialName, USceneComponent* Parent)
 {
     UStaticMeshComponent* Part = CreateDefaultSubobject<UStaticMeshComponent>(Name);
-    Part->SetupAttachment(Parent ? Parent : CatRoot);
+    Part->SetupAttachment(Parent ? Parent : CatRoot.Get());
     Part->SetRelativeLocation(Position);
     Part->SetRelativeScale3D(Dimensions / 100.f);
     static ConstructorHelpers::FObjectFinder<UStaticMesh> Cube(TEXT("/Engine/BasicShapes/Cube.Cube"));
@@ -181,9 +183,16 @@ AActor* UAstraSceneLibrary::CreateTerrain(UMaterialInterface* Material)
     ALandscape* L = World->SpawnActor<ALandscape>(ALandscape::StaticClass(),FVector(-5040,-5040,0),FRotator::ZeroRotator,Params);
     L->SetActorScale3D(FVector(80,80,100));
     L->LandscapeMaterial = Material;
+    // Use the exact unsigned 16-bit height field exported from the Blender layout.
+    TArray<uint8> Raw;
+    const FString HeightFile = FPaths::ProjectDir() / TEXT("ArtSource/Layout/landscape_height.r16");
+    if (!FFileHelper::LoadFileToArray(Raw,*HeightFile) || Raw.Num()!=127*127*2)
+    {
+        UE_LOG(LogTemp,Error,TEXT("Missing or invalid Blender heightmap: %s"),*HeightFile);
+        L->Destroy(); return nullptr;
+    }
     TArray<uint16> Heights; Heights.SetNum(127*127);
-    for(int32 Y=0;Y<127;++Y) for(int32 X=0;X<127;++X)
-        Heights[Y*127+X]=static_cast<uint16>(FMath::Clamp(FMath::RoundToInt(32768.f+TerrainHeight(X*80.f-5040.f,Y*80.f-5040.f)*1.28f),0,65535));
+    FMemory::Memcpy(Heights.GetData(),Raw.GetData(),Raw.Num());
     TMap<FGuid,TArray<uint16>> HeightLayers; HeightLayers.Add(FGuid(),MoveTemp(Heights));
     TMap<FGuid,TArray<FLandscapeImportLayerInfo>> MaterialLayers; MaterialLayers.Add(FGuid(),{});
     L->Import(FGuid::NewGuid(),0,0,126,126,1,63,HeightLayers,TEXT(""),MaterialLayers,ELandscapeImportAlphamapType::Additive,TArrayView<const FLandscapeLayer>());
