@@ -41,6 +41,21 @@ public:
     AAstraController();
     virtual void BeginPlay() override;
     virtual void PlayerTick(float DeltaTime) override;
+private:
+    void TickValidation(float DeltaTime);
+    bool bSmokeTest = false;
+    bool bBridgeTest = false;
+    bool bBridgeMidpointSupported = false;
+    bool bReviewSelected = false;
+    bool bCaptured = false;
+    bool bTestPressed = false;
+    bool bTestsPassed = true;
+    int32 TestStage = 0;
+    float ValidationTime = 0;
+    FVector TestStart;
+    FRotator TestCameraRotation;
+    FString ReviewCamera;
+    TArray<FString> TestResults;
 };
 
 UCLASS()

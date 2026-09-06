@@ -10,6 +10,12 @@
 #include "LandscapeInfo.h"
 #include "Misc/FileHelper.h"
 #include "Misc/Paths.h"
+#include "Misc/CommandLine.h"
+#include "Misc/Parse.h"
+#include "InputKeyEventArgs.h"
+#include "Camera/CameraActor.h"
+#include "EngineUtils.h"
+#include "Engine/GameViewportClient.h"
 #if WITH_EDITOR
 #include "Editor.h"
 #endif
@@ -118,7 +124,7 @@ void AAstraCat::Tick(float Dt)
     Tail->SetRelativeRotation(FRotator(0,FMath::Sin(GetWorld()->GetTimeSeconds()*2.f)*12,0));
     CatRoot->SetRelativeLocation(FVector(0,0,-88 + FMath::Abs(FMath::Sin(Gait))*FMath::Min(Speed/100.f,3.f)));
     const FVector P = GetActorLocation();
-    if (P.Z > 65 && GetCharacterMovement()->IsMovingOnGround()) SafeLocation = P;
+    if (P.Z > 65 && FMath::Abs(P.X)<4980 && FMath::Abs(P.Y)<4980 && GetCharacterMovement()->IsMovingOnGround()) SafeLocation = P;
     if (P.Z < -180 || FMath::Abs(P.X)>4980 || FMath::Abs(P.Y)>4980)
     {
         SetActorLocation(SafeLocation); GetCharacterMovement()->StopMovementImmediately();
@@ -135,16 +141,106 @@ void AAstraController::BeginPlay()
 {
     Super::BeginPlay();
     SetInputMode(FInputModeGameOnly());
+    bSmokeTest = FParse::Param(FCommandLine::Get(),TEXT("AstraSmokeTest"));
+    bBridgeTest = FParse::Param(FCommandLine::Get(),TEXT("AstraBridgeTest"));
+    FParse::Value(FCommandLine::Get(),TEXT("AstraReview="),ReviewCamera);
 }
 void AAstraController::PlayerTick(float Dt)
 {
     Super::PlayerTick(Dt);
+    if (bSmokeTest || bBridgeTest || !ReviewCamera.IsEmpty()) TickValidation(Dt);
     if (APawn* P = GetPawn())
     {
         FVector Direction((IsInputKeyDown(EKeys::W)?1.f:0.f)-(IsInputKeyDown(EKeys::S)?1.f:0.f),
                           (IsInputKeyDown(EKeys::D)?1.f:0.f)-(IsInputKeyDown(EKeys::A)?1.f:0.f),0);
         if (!Direction.IsNearlyZero()) P->AddMovementInput(Direction.GetSafeNormal());
     }
+}
+
+void AAstraController::TickValidation(float Dt)
+{
+    ValidationTime += Dt;
+    AAstraCat* Cat = Cast<AAstraCat>(GetPawn());
+    if (!Cat) return;
+    if (!bReviewSelected && ValidationTime>1)
+    {
+        bReviewSelected=true;
+        TestCameraRotation=Cat->TopDownCamera->GetComponentRotation();
+        if (!ReviewCamera.IsEmpty() && ReviewCamera!=TEXT("Gameplay"))
+            for(TActorIterator<ACameraActor> It(GetWorld());It;++It)
+                if(It->GetName().Contains(ReviewCamera)
+#if WITH_EDITOR
+                    || It->GetActorLabel()==TEXT("Camera_")+ReviewCamera
+#endif
+                ) { SetViewTarget(*It); break; }
+    }
+    if(bSmokeTest && TestStage<4)
+    {
+        const FKey Keys[]={EKeys::W,EKeys::A,EKeys::S,EKeys::D};
+        const FVector Expected[]={FVector(1,0,0),FVector(0,-1,0),FVector(-1,0,0),FVector(0,1,0)};
+        const float StartTime=3.f+TestStage*2.f;
+        if(!bTestPressed && ValidationTime>=StartTime)
+        {
+            TestStart=Cat->GetActorLocation();
+            InputKey(FInputKeyEventArgs::CreateSimulated(Keys[TestStage],IE_Pressed,1.f));
+            bTestPressed=true;
+        }
+        if(bTestPressed && ValidationTime>=StartTime+1.15f)
+        {
+            InputKey(FInputKeyEventArgs::CreateSimulated(Keys[TestStage],IE_Released,0.f));
+            const FVector Delta=Cat->GetActorLocation()-TestStart;
+            const bool Correct=FVector::DotProduct(Delta,Expected[TestStage])>150.f;
+            const bool FixedCamera=Cat->TopDownCamera->GetComponentRotation().Equals(TestCameraRotation,.05f);
+            const bool Grounded=Cat->GetCharacterMovement()->IsMovingOnGround();
+            const bool Pass=Correct && FixedCamera && Grounded;
+            bTestsPassed &= Pass;
+            TestResults.Add(FString::Printf(TEXT("{\"key\":\"%s\",\"pass\":%s,\"dx\":%.2f,\"dy\":%.2f,\"dz\":%.2f,\"fixed_camera\":%s,\"grounded\":%s}"),
+                *Keys[TestStage].ToString(),Pass?TEXT("true"):TEXT("false"),Delta.X,Delta.Y,Delta.Z,FixedCamera?TEXT("true"):TEXT("false"),Grounded?TEXT("true"):TEXT("false")));
+            UE_LOG(LogTemp,Display,TEXT("ASTRA INPUT %s: %s delta=%s camera_fixed=%d"),*Keys[TestStage].ToString(),Pass?TEXT("PASS"):TEXT("FAIL"),*Delta.ToString(),FixedCamera);
+            ++TestStage;bTestPressed=false;
+        }
+    }
+    if(bBridgeTest)
+    {
+        if(TestStage==0 && ValidationTime>1)
+        {
+            Cat->SetActorLocation(FVector(-700,UAstraSceneLibrary::StreamCenter(-700)-480,250));
+            Cat->GetCharacterMovement()->StopMovementImmediately();
+            TestStage=1;
+        }
+        if(TestStage==1 && ValidationTime>2)
+        {
+            TestStart=Cat->GetActorLocation();
+            InputKey(FInputKeyEventArgs::CreateSimulated(EKeys::D,IE_Pressed,1.f));
+            TestStage=2;
+        }
+        if(TestStage==2 && FMath::Abs(Cat->GetActorLocation().Y-UAstraSceneLibrary::StreamCenter(-700))<80)
+            bBridgeMidpointSupported |= Cat->GetActorLocation().Z>120 && Cat->GetCharacterMovement()->IsMovingOnGround();
+        if(TestStage==2 && ValidationTime>5.7)
+        {
+            InputKey(FInputKeyEventArgs::CreateSimulated(EKeys::D,IE_Released,0.f));
+            const FVector Delta=Cat->GetActorLocation()-TestStart;
+            bTestsPassed=Delta.Y>950 && bBridgeMidpointSupported && Cat->GetCharacterMovement()->IsMovingOnGround();
+            const FString Result=FString::Printf(TEXT("{\"passed\":%s,\"travel_cm\":%.2f,\"supported_above_stream\":%s,\"final_z\":%.2f}"),bTestsPassed?TEXT("true"):TEXT("false"),Delta.Y,bBridgeMidpointSupported?TEXT("true"):TEXT("false"),Cat->GetActorLocation().Z);
+            FFileHelper::SaveStringToFile(Result,*(FPaths::ProjectDir()/TEXT("ArtSource/Previews/UE_BridgeValidation.json")));
+            UE_LOG(LogTemp,Display,TEXT("ASTRA BRIDGE %s"),*Result);
+            TestStage=3;
+        }
+    }
+    if(!bCaptured && ValidationTime>13)
+    {
+        bCaptured=true;
+        const FString Name=ReviewCamera.IsEmpty()?TEXT("Gameplay"):ReviewCamera;
+        const FString ImagePath=FPaths::ConvertRelativePathToFull(FPaths::ProjectDir()/TEXT("ArtSource/Previews")/(TEXT("UE_")+Name+TEXT(".png")));
+        FScreenshotRequest::RequestScreenshot(ImagePath,false,false);
+        if(bSmokeTest)
+        {
+            const FString Json=FString::Printf(TEXT("{\"passed\":%s,\"checks\":[%s],\"camera_pitch\":%.2f,\"camera_yaw\":%.2f,\"ortho_width\":%.2f}"),
+                bTestsPassed && TestStage==4?TEXT("true"):TEXT("false"),*FString::Join(TestResults,TEXT(",")),TestCameraRotation.Pitch,TestCameraRotation.Yaw,Cat->TopDownCamera->OrthoWidth);
+            FFileHelper::SaveStringToFile(Json,*(FPaths::ProjectDir()/TEXT("ArtSource/Previews/UE_MovementValidation.json")));
+        }
+    }
+    if(bCaptured && ValidationTime>16) FPlatformMisc::RequestExitWithStatus(false,bTestsPassed?0:1);
 }
 AAstraGameMode::AAstraGameMode()
 {
