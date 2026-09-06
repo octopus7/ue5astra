@@ -420,3 +420,8 @@ assets_col.hide_render=True
 bpy.ops.wm.save_as_mainfile(filepath=str(ART/'Blender'/'AstraWoodland.blend'))
 bpy.ops.render.render(write_still=True)
 print(json.dumps({'assets':len(LIB),'layout_objects':len(records),'trees':len(tree_positions),'height_samples':len(height_u16),'blend':str(ART/'Blender'/'AstraWoodland.blend')}))
+
+# Reproduce the later cottage/well addition whenever its independent assets exist.
+if (ART/'Layout'/'pink_house_assets.json').exists() and (ART/'Blender'/'PinkHouseAssets.blend').exists():
+    import runpy
+    runpy.run_path(str(ROOT/'Scripts'/'place_pink_house_blender.py'),run_name='__main__')
