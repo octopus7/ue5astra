@@ -210,6 +210,18 @@ def main():
             report = puddle_review()
             report['shoreline_saved_state'] = verify_saved_shoreline()
         elif kind == 'Shoreline': report = shoreline_review()
+        elif kind == 'Polish':
+            path = copy_review_map('ShorelinePolish')
+            for actor in ES.get_all_level_actors():
+                if actor.get_actor_label() == 'Camera_ShorelinePolish':
+                    actor.set_actor_label('Camera_Shoreline')
+            refresh = '-AstraPolishWaterOnly' not in unreal.SystemLibrary.get_command_line()
+            result = importlib.import_module('apply_shoreline_polish').apply_polish(save=False, refresh_site=refresh)
+            for actor in ES.get_all_level_actors():
+                if actor.get_actor_label() == 'Camera_Shoreline':
+                    actor.set_actor_label('Camera_ShorelinePolish')
+            if not unreal.EditorLevelLibrary.save_current_level(): raise RuntimeError('Polish review save failed')
+            report = {'map': path, 'polish': result, 'review_camera': 'ShorelinePolish'}
         else: raise ValueError('Unknown review mode: ' + kind)
         report['passed'] = True
         (OUT/(kind+'_ModuleReview.json')).write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')

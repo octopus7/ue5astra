@@ -53,6 +53,7 @@ private:
     bool bTestsPassed = true;
     int32 TestStage = 0;
     float ValidationTime = 0;
+    float ReviewCaptureTime = 13.f;
     FVector TestStart;
     FRotator TestCameraRotation;
     FString ReviewCamera;

@@ -91,6 +91,25 @@
 - 밀도를 무조건 올리지 않고 장소별로 적절하게 조절한다. 숲과 숲 가장자리는 군락을 보강하고 길·공터·집 앞·야영 동선은 비운다.
 - 변환 전의 개별 식물 액터는 숨겨 보관하고, 새 Foliage 배치 데이터와 설정도 저장한다.
 
+## 승인된 호숫가 개선 1~7과 최신 통합 순서
+
+1. 얇고 불규칙한 흰 접촉 포말.
+2. 물가 쪽으로 천천히 오는 1~2개 잔물결 띠.
+3. 얕은 민트색에서 깊은 청록색으로 이어지는 수심색.
+4. 모래 바닥의 큰 삼각면 인상 완화.
+5. 깊은 바닥의 외곽 경계 숨김.
+6. 해안 폭·돌출·작은 만의 변화.
+7. 물이 닿는 흙·돌의 짙은 젖은 띠.
+
+- 범용·현장 메시 총 13개, 현장 해안 액터 16개, 기존 해안 바위 39개의 젖은 재질 오버라이드, 기존 물웅덩이 5개를 대상으로 구현·검증한다.
+- 수중 돌은 부드러운 노멀을 유지하고 `M_SubmergedStone/Light/Dark`의 기준색도 하나로 통일한다. 슬롯·UV를 유지하면서 연속적인 월드 좌표 색 변화로 삼각면별 색 차이를 없앤다.
+- 검증은 별도 `L_AstraShorelinePolishModuleReview`와 `L_AstraPuddleSkyModuleReview` 맵에서 수행하고 원본 맵·공유 물/바위 재질 자산은 보존한다.
+- 원본 담당 작업에서 실제 반사 웅덩이와 수중 돌 4개 메시의 부드러운 노멀 적용을 확인했다. 해안 1~7번 전체는 별도 검토 결과를 커밋으로 전달한 뒤 원본에 통합할 범위다.
+- 원본 생성 파이프라인과 지형·물·하늘 갱신을 모두 마친 뒤, 의도한 맵에서 `apply_shoreline_polish.apply_polish(save=True)` 다음 `puddle_sky_reflection.apply_puddles(save=True)`를 **마지막에 실행**한다. 이후 원본을 재생성하거나 재질·액터를 갱신했으면 같은 순서를 다시 적용한다.
+- 이전 `puddle_cloud_trick.py`를 최종 적용 순서에 섞지 않는다. 실제 반사의 낮은 각도와 탑다운 결과는 각각 `UE_PuddleSkyLow.png`, `UE_PuddleSkyTop.png`로 확인한다.
+- 실제 정적 UE 렌더에서 접촉 포말과 1~2개 잔물결 띠를 확인했다. 저장된 맵을 다시 열어 16개 액터의 `NoCollision`, 39개 젖은 바위, 포말 그래프 검사 21개, 바닥·돌 5개 메시의 노멀 보존을 확인했다.
+- `render_shoreline_motion.ps1`과 `verify_shoreline_polish.py`로 실제 게임 시간 13초/18초를 목표로 한 두 렌더와 저장 상태를 검토한다. `-AstraReviewCaptureSeconds=N`과 실제 월드 시간 로그를 사용한다. 최종 통과 여부는 `ArtSource/Previews/UE_ShorelinePolishValidation.json`, `ArtSource/Previews/UE_PuddleSkyValidation.json`에 기록한다.
+
 ## 현재 확인된 도구 제약
 
 - 컴퓨터 사용 플러그인의 언리얼 창 캡처가 `SetIsBorderRequired (0x80004002)`로 실패했다.

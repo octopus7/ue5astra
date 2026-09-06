@@ -1,33 +1,33 @@
 {
   "passed": true,
   "blender": "4.5.12 LTS",
-  "scope": "Fresh Blender FBX import; compare exact saved review geometry, dimensions, pivot/axes/units, triangle topology, material slots, loop UVs, ShoreData, welded manifold topology and positive signed volume. UE validation is separate.",
+  "scope": "Fresh Blender FBX import; compare exact saved review geometry, dimensions, pivot/axes/units, triangle topology, material slots, loop UVs, ShoreData, authored loop normals and smooth-face counts, welded manifold topology and positive signed volume. UE validation is separate.",
   "reference_blend": "Blender/AstraLakeshoreReview.blend",
   "source_files_unchanged": true,
   "assets": {
     "SM_ShorelineSite_CurvedBed": {
       "passed": true,
       "file": "Meshes/ShorelineSite/SM_ShorelineSite_CurvedBed.fbx",
-      "fbx_sha256": "85f4051ebf40dbbda09b6568d2510701e0e2ede15ba235c5e8ac8c314f86d1ce",
+      "fbx_sha256": "ab80faf0d5a50a4b950ff5e689bbcb63326fbb48965cd342a88762011bdaff5f",
       "dimensions_m": [
         14.299999713897705,
-        7.274289548397064,
-        2.5078380405902863
+        7.7378830909729,
+        2.544844776391983
       ],
-      "max_dimensions_error_m": 5.364418029785156e-07,
+      "max_dimensions_error_m": 4.76837158203125e-07,
       "bounds_min_m": [
         -7.000000476837158,
-        -0.984825074672699,
+        -1.0352592468261719,
         -2.0999999046325684
       ],
       "bounds_max_m": [
         7.299999237060547,
-        6.289464473724365,
-        0.4078381359577179
+        6.7026238441467285,
+        0.4448448717594147
       ],
       "max_bounds_error_m": 4.76837158203125e-07,
       "max_vertex_position_error_m": 8.596304119739507e-07,
-      "triangles": 582,
+      "triangles": 1616,
       "materials": [
         "M_ShoreSand",
         "M_ShoreSandLight",
@@ -40,29 +40,39 @@
       "vertex_color_domain": "CORNER",
       "vertex_color_type": "FLOAT_COLOR",
       "max_vertex_color_error": 0.0,
+      "blue_channel_range": [
+        0.0,
+        1.0
+      ],
+      "blue_intermediate_corner_count": 2525,
+      "blue_distinct_values_6dp": 369,
+      "source_smooth_face_count": 1280,
+      "imported_smooth_face_count": 1280,
+      "max_loop_normal_angle_error_deg": 0.030960358877175968,
+      "imported_has_custom_normals": true,
       "non_manifold_edges_after_seam_weld": 0,
       "zero_area_faces": 0,
-      "signed_volume_m3": 130.58636141616347,
-      "volume_error_m3": 6.300727477537293e-07
+      "signed_volume_m3": 123.70650334815826,
+      "volume_error_m3": 3.9605737356396276e-08
     },
     "SM_ShorelineSite_BankWest": {
       "passed": true,
       "file": "Meshes/ShorelineSite/SM_ShorelineSite_BankWest.fbx",
-      "fbx_sha256": "826694fa4edb19c96e2cbf34071eb121c189056cfe1b134f5b38483bafa6296e",
+      "fbx_sha256": "b79c6f6c57f7c56f6678680ca33ac1ae6a7f87ef62908b3cd273de45f0265172",
       "dimensions_m": [
         4.0,
-        2.765475869178772,
-        1.1450000703334808
+        2.5870891213417053,
+        1.2339500486850739
       ],
-      "max_dimensions_error_m": 3.5762786865234375e-07,
+      "max_dimensions_error_m": 4.172325134277344e-07,
       "bounds_min_m": [
         -6.300000190734863,
-        -1.0808908939361572,
-        -0.7200000286102295
+        -0.8972741961479187,
+        -0.8089500069618225
       ],
       "bounds_max_m": [
         -2.3000001907348633,
-        1.6845849752426147,
+        1.6898149251937866,
         0.42500004172325134
       ],
       "max_bounds_error_m": 5.960464477539062e-07,
@@ -81,29 +91,39 @@
       "vertex_color_domain": "CORNER",
       "vertex_color_type": "FLOAT_COLOR",
       "max_vertex_color_error": 0.0,
+      "blue_channel_range": [
+        0.0,
+        0.0
+      ],
+      "blue_intermediate_corner_count": 0,
+      "blue_distinct_values_6dp": 1,
+      "source_smooth_face_count": 0,
+      "imported_smooth_face_count": 0,
+      "max_loop_normal_angle_error_deg": 0.027792617369199083,
+      "imported_has_custom_normals": true,
       "non_manifold_edges_after_seam_weld": 0,
       "zero_area_faces": 0,
-      "signed_volume_m3": 6.425208660770421,
-      "volume_error_m3": 1.1725094672954128e-08
+      "signed_volume_m3": 6.366945421923809,
+      "volume_error_m3": 2.503348373039671e-08
     },
     "SM_ShorelineSite_BankLow": {
       "passed": true,
       "file": "Meshes/ShorelineSite/SM_ShorelineSite_BankLow.fbx",
-      "fbx_sha256": "c735343f6679cfb2393b5de033faf50422f92e9ae872430ba1254a54a6cda7dd",
+      "fbx_sha256": "009ca0be18b664db5fb40606eafa57ac7c599d29642c8c12f002a739afb40777",
       "dimensions_m": [
         3.999999165534973,
-        2.007415533065796,
-        0.955344945192337
+        2.1658246517181396,
+        0.9720258414745331
       ],
       "max_dimensions_error_m": 2.384185791015625e-07,
       "bounds_min_m": [
         -2.4499998092651367,
-        -1.3228874206542969,
-        -0.7200000286102295
+        -1.2641220092773438,
+        -0.7366809248924255
       ],
       "bounds_max_m": [
         1.5499993562698364,
-        0.684528112411499,
+        0.9017026424407959,
         0.23534491658210754
       ],
       "max_bounds_error_m": 2.384185791015625e-07,
@@ -122,32 +142,42 @@
       "vertex_color_domain": "CORNER",
       "vertex_color_type": "FLOAT_COLOR",
       "max_vertex_color_error": 0.0,
+      "blue_channel_range": [
+        0.0,
+        0.0
+      ],
+      "blue_intermediate_corner_count": 0,
+      "blue_distinct_values_6dp": 1,
+      "source_smooth_face_count": 0,
+      "imported_smooth_face_count": 0,
+      "max_loop_normal_angle_error_deg": 0.02852322826698544,
+      "imported_has_custom_normals": true,
       "non_manifold_edges_after_seam_weld": 0,
       "zero_area_faces": 0,
-      "signed_volume_m3": 5.6365517442586945,
-      "volume_error_m3": 6.563664811665149e-08
+      "signed_volume_m3": 5.541413506328474,
+      "volume_error_m3": 3.193654052324746e-08
     },
     "SM_ShorelineSite_BankEast": {
       "passed": true,
       "file": "Meshes/ShorelineSite/SM_ShorelineSite_BankEast.fbx",
-      "fbx_sha256": "357a463727c2e40cecf9e6ed217de2d2da6aa161640464975005f2f07e797c22",
+      "fbx_sha256": "614d0983f275081d235aba32d90a6cdc7a0dc61096deebea23c625121fde1ac9",
       "dimensions_m": [
-        4.0,
-        2.2199138402938843,
-        1.1450000703334808
+        4.0000001192092896,
+        2.350017786026001,
+        1.1741174757480621
       ],
-      "max_dimensions_error_m": 3.5762786865234375e-07,
+      "max_dimensions_error_m": 2.384185791015625e-07,
       "bounds_min_m": [
-        1.3999996185302734,
-        -1.2328413724899292,
-        -0.7200000286102295
+        1.3999994993209839,
+        -1.0214956998825073,
+        -0.7491174340248108
       ],
       "bounds_max_m": [
         5.399999618530273,
-        0.9870724678039551,
+        1.3285220861434937,
         0.42500004172325134
       ],
-      "max_bounds_error_m": 4.76837158203125e-07,
+      "max_bounds_error_m": 3.5762786865234375e-07,
       "max_vertex_position_error_m": 4.76837158203125e-07,
       "triangles": 158,
       "materials": [
@@ -163,10 +193,20 @@
       "vertex_color_domain": "CORNER",
       "vertex_color_type": "FLOAT_COLOR",
       "max_vertex_color_error": 0.0,
+      "blue_channel_range": [
+        0.0,
+        0.0
+      ],
+      "blue_intermediate_corner_count": 0,
+      "blue_distinct_values_6dp": 1,
+      "source_smooth_face_count": 0,
+      "imported_smooth_face_count": 0,
+      "max_loop_normal_angle_error_deg": 0.02991869587731947,
+      "imported_has_custom_normals": true,
       "non_manifold_edges_after_seam_weld": 0,
       "zero_area_faces": 0,
-      "signed_volume_m3": 6.147369078083543,
-      "volume_error_m3": 1.7016146713899616e-08
+      "signed_volume_m3": 5.98454466069888,
+      "volume_error_m3": 2.6643435013795624e-08
     }
   }
 }

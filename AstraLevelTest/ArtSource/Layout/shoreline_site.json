@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "Scripts/place_shoreline_blender.py",
-  "description": "집 앞 약12m 호숫가의 지형을 유지한 곡면 모래 선반, 낮은 흙턱과 수중돌 배치. 기존 큰 돌벽을 해당 구간에서만 숨김.",
+  "description": "집 앞 약12m의 높이맵을 보존하면서 두 돌출부와 중앙 만으로 폭이 변하는 부드러운 모래 선반, 낮은 흙턱과 수중돌 배치. 기존 큰 돌벽은 해당 구간에서만 숨김.",
   "units": "metres",
   "axis_mapping": "UE=(Blender.X,-Blender.Y,Blender.Z)",
   "palette_srgb_hex": {
@@ -29,15 +29,16 @@
       "collision": "none",
       "dimensions_m": [
         14.299999237060547,
-        7.274290084838867,
-        2.5078380405902863
+        7.737882614135742,
+        2.544844776391983
       ],
       "validation": {
-        "triangles": 582,
-        "vertices": 293,
+        "triangles": 1616,
+        "vertices": 810,
         "non_manifold_edges": 0,
         "degenerate_uv_triangles": 0,
-        "signed_volume_m3": 130.58636078609072
+        "signed_volume_m3": 123.70650330855253,
+        "smooth_shaded_polygons": 1280
       }
     },
     "SM_ShorelineSite_BankWest": {
@@ -51,15 +52,16 @@
       "collision": "none",
       "dimensions_m": [
         4.0,
-        2.7654762268066406,
-        1.1450000703334808
+        2.5870895385742188,
+        1.2339500486850739
       ],
       "validation": {
         "triangles": 158,
         "vertices": 81,
         "non_manifold_edges": 0,
         "degenerate_uv_triangles": 0,
-        "signed_volume_m3": 6.425208672495516
+        "signed_volume_m3": 6.366945446957293,
+        "smooth_shaded_polygons": 0
       }
     },
     "SM_ShorelineSite_BankLow": {
@@ -73,15 +75,16 @@
       "collision": "none",
       "dimensions_m": [
         3.9999990463256836,
-        2.007415771484375,
-        0.955344945192337
+        2.1658248901367188,
+        0.9720258414745331
       ],
       "validation": {
         "triangles": 158,
         "vertices": 81,
         "non_manifold_edges": 0,
         "degenerate_uv_triangles": 0,
-        "signed_volume_m3": 5.636551678622046
+        "signed_volume_m3": 5.541413474391933,
+        "smooth_shaded_polygons": 0
       }
     },
     "SM_ShorelineSite_BankEast": {
@@ -95,15 +98,16 @@
       "collision": "none",
       "dimensions_m": [
         4.0,
-        2.2199134826660156,
-        1.1450000703334808
+        2.350017547607422,
+        1.1741174757480621
       ],
       "validation": {
         "triangles": 158,
         "vertices": 81,
         "non_manifold_edges": 0,
         "degenerate_uv_triangles": 0,
-        "signed_volume_m3": 6.147369095099689
+        "signed_volume_m3": 5.984544687342315,
+        "smooth_shaded_polygons": 0
       }
     },
     "SM_SubmergedRock_Flat_01": {
@@ -137,9 +141,10 @@
         "description_ko": "모래 선반에 놓는 납작하고 넓은 수중돌. 불규칙한 둥근 모서리와 큰 상단 면을 가진다.",
         "pivot_note": "bottom_contact",
         "units": "metres",
-        "generation_seed": 7402
+        "generation_seed": 7402,
+        "normal_shading": "smooth; geometry/UV/material slots unchanged"
       },
-      "sha256": "1bb883c43f7fce88e74c148e9bd8e97919f4ba75f05cc0a4ca75470e9e374719"
+      "sha256": "ad7bb250a52292187265a483fde682af3a8b33eb20c595ad7835b741bcc8c4f1"
     },
     "SM_SubmergedRock_Round_01": {
       "file": "Meshes/Shoreline/SM_SubmergedRock_Round_01.fbx",
@@ -172,9 +177,10 @@
         "description_ko": "얕은 호수 바닥용 둥근 회베이지 돌. 넓은 윗면과 낮은 옆면으로 수중 실루엣을 구분한다.",
         "pivot_note": "bottom_contact",
         "units": "metres",
-        "generation_seed": 7401
+        "generation_seed": 7401,
+        "normal_shading": "smooth; geometry/UV/material slots unchanged"
       },
-      "sha256": "970702ca7e56a6b30e1f10ca896bd6771c5e230e6ae393b09552c7676d3d3b83"
+      "sha256": "721d4c0d163e014a0d168a9cb2261720e3e2807f368c02839418acf2b1691391"
     },
     "SM_SubmergedPebbles_01": {
       "file": "Meshes/Shoreline/SM_SubmergedPebbles_01.fbx",
@@ -208,9 +214,10 @@
         "pivot_note": "bottom_contact",
         "units": "metres",
         "generation_seed": 7420,
-        "component_count": 6
+        "component_count": 6,
+        "normal_shading": "smooth; geometry/UV/material slots unchanged"
       },
-      "sha256": "35067bb1ac9ffd38d3893a1f4385374836e0d2566dd8d44e2be7cb32987a815c"
+      "sha256": "d08811aebce9eb4891801ebfeea828881829a2277c4316b9511df2d20637918d"
     },
     "SM_SubmergedRock_Small_01": {
       "file": "Meshes/Shoreline/SM_SubmergedRock_Small_01.fbx",
@@ -243,9 +250,10 @@
         "description_ko": "큰 돌 사이에 배치하는 작은 수중돌. 중성 석재색을 유지하며 물의 청록색은 수면에서 표현한다.",
         "pivot_note": "bottom_contact",
         "units": "metres",
-        "generation_seed": 7403
+        "generation_seed": 7403,
+        "normal_shading": "smooth; geometry/UV/material slots unchanged"
       },
-      "sha256": "906ca6702599a91cb3d6fad5d796ec4e0d5d27c29d19d78d417af4c91b8b9012"
+      "sha256": "5882f39a0b93cfd5b0d275b76fe1bf39544efd790222182fe791154edd673516"
     }
   },
   "objects": [
@@ -380,8 +388,8 @@
       "collision": "none",
       "blender_location_m": [
         12.800000190734863,
-        -32.13066482543945,
-        -0.22401148080825806
+        -31.778810501098633,
+        -0.14241033792495728
       ],
       "blender_rotation_euler_rad": [
         0.0,
@@ -395,8 +403,8 @@
       ],
       "ue_location_cm": [
         1280.0000190734863,
-        3213.0664825439453,
-        -22.401148080825806
+        3177.8810501098633,
+        -14.241033792495728
       ],
       "ue_rotation_deg": {
         "pitch": -0.0,
@@ -411,8 +419,8 @@
       "collision": "none",
       "blender_location_m": [
         13.300000190734863,
-        -33.09592056274414,
-        -0.04852348193526268
+        -32.661380767822266,
+        0.011792365461587906
       ],
       "blender_rotation_euler_rad": [
         0.0,
@@ -426,8 +434,8 @@
       ],
       "ue_location_cm": [
         1330.0000190734863,
-        3309.592056274414,
-        -4.852348193526268
+        3266.1380767822266,
+        1.1792365461587906
       ],
       "ue_rotation_deg": {
         "pitch": -0.0,
@@ -442,8 +450,8 @@
       "collision": "none",
       "blender_location_m": [
         14.600000381469727,
-        -31.472360610961914,
-        -0.3832250237464905
+        -30.69859504699707,
+        -0.39791542291641235
       ],
       "blender_rotation_euler_rad": [
         0.0,
@@ -457,8 +465,8 @@
       ],
       "ue_location_cm": [
         1460.0000381469727,
-        3147.2360610961914,
-        -38.32250237464905
+        3069.859504699707,
+        -39.791542291641235
       ],
       "ue_rotation_deg": {
         "pitch": -0.0,
@@ -473,8 +481,8 @@
       "collision": "none",
       "blender_location_m": [
         15.399999618530273,
-        -33.1947021484375,
-        -0.107273630797863
+        -32.910858154296875,
+        -0.024810846894979477
       ],
       "blender_rotation_euler_rad": [
         0.0,
@@ -488,8 +496,8 @@
       ],
       "ue_location_cm": [
         1539.9999618530273,
-        3319.47021484375,
-        -10.7273630797863
+        3291.0858154296875,
+        -2.4810846894979477
       ],
       "ue_rotation_deg": {
         "pitch": -0.0,
@@ -504,8 +512,8 @@
       "collision": "none",
       "blender_location_m": [
         16.399999618530273,
-        -32.526424407958984,
-        -0.24766308069229126
+        -32.661888122558594,
+        -0.16722971200942993
       ],
       "blender_rotation_euler_rad": [
         0.0,
@@ -519,8 +527,8 @@
       ],
       "ue_location_cm": [
         1639.9999618530273,
-        3252.6424407958984,
-        -24.766308069229126
+        3266.1888122558594,
+        -16.722971200942993
       ],
       "ue_rotation_deg": {
         "pitch": -0.0,
@@ -535,8 +543,8 @@
       "collision": "none",
       "blender_location_m": [
         17.149999618530273,
-        -31.0175838470459,
-        -0.5695424675941467
+        -31.77943229675293,
+        -0.7949066758155823
       ],
       "blender_rotation_euler_rad": [
         0.0,
@@ -550,8 +558,8 @@
       ],
       "ue_location_cm": [
         1714.9999618530273,
-        3101.75838470459,
-        -56.95424675941467
+        3177.943229675293,
+        -79.49066758155823
       ],
       "ue_rotation_deg": {
         "pitch": -0.0,
@@ -566,8 +574,8 @@
       "collision": "none",
       "blender_location_m": [
         18.100000381469727,
-        -32.89861297607422,
-        -0.2142687439918518
+        -33.232791900634766,
+        -0.11757998913526535
       ],
       "blender_rotation_euler_rad": [
         0.0,
@@ -581,8 +589,8 @@
       ],
       "ue_location_cm": [
         1810.0000381469727,
-        3289.861297607422,
-        -21.42687439918518
+        3323.2791900634766,
+        -11.757998913526535
       ],
       "ue_rotation_deg": {
         "pitch": -0.0,
@@ -597,8 +605,8 @@
       "collision": "none",
       "blender_location_m": [
         19.25,
-        -33.637184143066406,
-        -0.06550460308790207
+        -33.52718734741211,
+        -0.001739080878905952
       ],
       "blender_rotation_euler_rad": [
         0.0,
@@ -612,8 +620,8 @@
       ],
       "ue_location_cm": [
         1925.0,
-        3363.7184143066406,
-        -6.550460308790207
+        3352.718734741211,
+        -0.1739080878905952
       ],
       "ue_rotation_deg": {
         "pitch": -0.0,
@@ -628,8 +636,8 @@
       "collision": "none",
       "blender_location_m": [
         20.100000381469727,
-        -32.46030044555664,
-        -0.260104238986969
+        -31.9655704498291,
+        -0.21113258600234985
       ],
       "blender_rotation_euler_rad": [
         0.0,
@@ -643,8 +651,8 @@
       ],
       "ue_location_cm": [
         2010.0000381469727,
-        3246.030044555664,
-        -26.0104238986969
+        3196.55704498291,
+        -21.113258600234985
       ],
       "ue_rotation_deg": {
         "pitch": -0.0,
@@ -659,8 +667,8 @@
       "collision": "none",
       "blender_location_m": [
         21.649999618530273,
-        -31.43517303466797,
-        -0.4274826645851135
+        -30.42365837097168,
+        -0.42131859064102173
       ],
       "blender_rotation_euler_rad": [
         0.0,
@@ -674,8 +682,8 @@
       ],
       "ue_location_cm": [
         2164.9999618530273,
-        3143.517303466797,
-        -42.74826645851135
+        3042.365837097168,
+        -42.13185906410217
       ],
       "ue_rotation_deg": {
         "pitch": -0.0,
@@ -690,8 +698,8 @@
       "collision": "none",
       "blender_location_m": [
         22.100000381469727,
-        -32.997039794921875,
-        -0.15098625421524048
+        -32.298770904541016,
+        -0.040905531495809555
       ],
       "blender_rotation_euler_rad": [
         0.0,
@@ -705,8 +713,8 @@
       ],
       "ue_location_cm": [
         2210.0000381469727,
-        3299.7039794921875,
-        -15.098625421524048
+        3229.8770904541016,
+        -4.0905531495809555
       ],
       "ue_rotation_deg": {
         "pitch": -0.0,
@@ -721,8 +729,8 @@
       "collision": "none",
       "blender_location_m": [
         22.799999237060547,
-        -32.161033630371094,
-        -0.28121477365493774
+        -31.62981605529785,
+        -0.19830185174942017
       ],
       "blender_rotation_euler_rad": [
         0.0,
@@ -736,8 +744,8 @@
       ],
       "ue_location_cm": [
         2279.9999237060547,
-        3216.1033630371094,
-        -28.121477365493774
+        3162.981605529785,
+        -19.830185174942017
       ],
       "ue_rotation_deg": {
         "pitch": -0.0,
@@ -764,7 +772,94 @@
     "yaw_deg": 0
   },
   "water_level_cm": 10,
+  "shoredata": {
+    "attribute": "ShoreData",
+    "type": "FLOAT_COLOR",
+    "source_domain": "POINT",
+    "R": "clamp((water_level_z - world_z) / 1.5, 0, 1)",
+    "G": "clamp(distance_to_site_shore_m / 4.0, 0, 1)",
+    "B": "SM_ShorelineSite_CurvedBed only: 1 - end_weight * land_weight * far_weight. Continuous baseline-floor colour blend: interior 0, fully terrain-following outer ring/skirts/bottom 1. Banks and shared rocks keep B=0.",
+    "A": "1",
+    "bed_blue_intermediate_vertices": 421
+  },
   "shoreline_contour_ue_m": [
+    [
+      11,
+      32.949403973565495,
+      0.1
+    ],
+    [
+      12,
+      33.205282415270965,
+      0.1
+    ],
+    [
+      13,
+      33.152954158491966,
+      0.1
+    ],
+    [
+      14,
+      33.18962778436927,
+      0.1
+    ],
+    [
+      15,
+      33.488639010308766,
+      0.1
+    ],
+    [
+      16,
+      33.842758390645805,
+      0.1
+    ],
+    [
+      17,
+      34.03289927728596,
+      0.1
+    ],
+    [
+      18,
+      34.08665325189492,
+      0.1
+    ],
+    [
+      19,
+      34.00684451494741,
+      0.1
+    ],
+    [
+      20,
+      33.744189649190716,
+      0.1
+    ],
+    [
+      21,
+      33.43741164973257,
+      0.1
+    ],
+    [
+      22,
+      33.361061076152545,
+      0.1
+    ],
+    [
+      23,
+      33.45850481847439,
+      0.1
+    ],
+    [
+      24,
+      33.492905111000624,
+      0.1
+    ],
+    [
+      25,
+      33.26539419081382,
+      0.1
+    ]
+  ],
+  "baseline_shoreline_contour_ue_m": [
     [
       11,
       32.949403973565495,
@@ -841,11 +936,73 @@
       0.1
     ]
   ],
+  "shallow_width_samples_m": [
+    [
+      11,
+      3.1491865122106537
+    ],
+    [
+      12,
+      3.4462491940100066
+    ],
+    [
+      13,
+      3.9596432176983547
+    ],
+    [
+      14,
+      4.249269726589273
+    ],
+    [
+      15,
+      3.94466254275666
+    ],
+    [
+      16,
+      3.319743743223349
+    ],
+    [
+      17,
+      2.712391672066415
+    ],
+    [
+      18,
+      2.4694409380969233
+    ],
+    [
+      19,
+      2.889545193278756
+    ],
+    [
+      20,
+      3.670394744781917
+    ],
+    [
+      21,
+      4.355755384749905
+    ],
+    [
+      22,
+      4.3641939654898945
+    ],
+    [
+      23,
+      3.759073529724447
+    ],
+    [
+      24,
+      3.2563140668687036
+    ],
+    [
+      25,
+      3.0823802266994282
+    ]
+  ],
   "validation": {
     "source_sha256": {
-      "C:\\Users\\blendue\\.codex\\worktrees\\74b9\\ue5astra\\AstraLevelTest\\ArtSource\\Blender\\AstraWoodland.blend": "8e123ab8d030cccc28a09f79313e454565e058dd3b778aa1e6a6694d0d7d921f",
+      "C:\\Users\\blendue\\.codex\\worktrees\\74b9\\ue5astra\\AstraLevelTest\\ArtSource\\Blender\\AstraWoodland.blend": "6cd99c7b6461246c8bddde6498a7728adf7dcfd0bae7427229ea5a9b50887f16",
       "C:\\Users\\blendue\\.codex\\worktrees\\74b9\\ue5astra\\AstraLevelTest\\ArtSource\\Layout\\landscape_height.r16": "69c91e3628507d10ae922e2bbe100d57d22ee00c92bee8ce4d59d3d445e314b0",
-      "C:\\Users\\blendue\\.codex\\worktrees\\74b9\\ue5astra\\AstraLevelTest\\ArtSource\\Layout\\woodland_layout.json": "33336df3aeab4520defcf004380d8b6c11f633808b372ac137b1f43d6668d4d2"
+      "C:\\Users\\blendue\\.codex\\worktrees\\74b9\\ue5astra\\AstraLevelTest\\ArtSource\\Layout\\woodland_layout.json": "5806ecf94f7d033f4a8966a9af782dc4d78e3ebac09709f9fcc13daee8a5d9d8"
     },
     "boundary_buried_m": 0.1,
     "source_terrain_unchanged": true,
@@ -855,5 +1012,506 @@
       "LakeSurface_0000"
     ],
     "review_png_is_dry_geometry": true
+  },
+  "foam_shoreline_contour_ue_m": [
+    [
+      11.0,
+      32.937562943,
+      0.1
+    ],
+    [
+      11.25,
+      33.01804924,
+      0.1
+    ],
+    [
+      11.5,
+      33.064905167,
+      0.1
+    ],
+    [
+      11.75,
+      33.149812698,
+      0.1
+    ],
+    [
+      12.0,
+      32.982118607,
+      0.1
+    ],
+    [
+      12.25,
+      32.980733871,
+      0.1
+    ],
+    [
+      12.5,
+      32.967065811,
+      0.1
+    ],
+    [
+      12.75,
+      32.96210289,
+      0.1
+    ],
+    [
+      13.0,
+      32.962995529,
+      0.1
+    ],
+    [
+      13.25,
+      32.968488693,
+      0.1
+    ],
+    [
+      13.5,
+      32.977045059,
+      0.1
+    ],
+    [
+      13.75,
+      32.993932724,
+      0.1
+    ],
+    [
+      14.0,
+      33.030042648,
+      0.1
+    ],
+    [
+      14.25,
+      33.061616898,
+      0.1
+    ],
+    [
+      14.5,
+      33.085229874,
+      0.1
+    ],
+    [
+      14.75,
+      33.109766006,
+      0.1
+    ],
+    [
+      15.0,
+      33.209329605,
+      0.1
+    ],
+    [
+      15.25,
+      33.308568954,
+      0.1
+    ],
+    [
+      15.5,
+      33.619787216,
+      0.1
+    ],
+    [
+      15.75,
+      33.869882584,
+      0.1
+    ],
+    [
+      16.0,
+      33.674806595,
+      0.1
+    ],
+    [
+      16.25,
+      33.630441666,
+      0.1
+    ],
+    [
+      16.5,
+      33.596242905,
+      0.1
+    ],
+    [
+      16.75,
+      33.644422531,
+      0.1
+    ],
+    [
+      17.0,
+      33.702749252,
+      0.1
+    ],
+    [
+      17.25,
+      33.758562088,
+      0.1
+    ],
+    [
+      17.5,
+      33.809827805,
+      0.1
+    ],
+    [
+      17.75,
+      33.845159531,
+      0.1
+    ],
+    [
+      18.0,
+      33.871538162,
+      0.1
+    ],
+    [
+      18.25,
+      33.888147354,
+      0.1
+    ],
+    [
+      18.5,
+      33.901353836,
+      0.1
+    ],
+    [
+      18.75,
+      33.906064987,
+      0.1
+    ],
+    [
+      19.0,
+      33.907327652,
+      0.1
+    ],
+    [
+      19.25,
+      33.973192215,
+      0.1
+    ],
+    [
+      19.5,
+      34.006959915,
+      0.1
+    ],
+    [
+      19.75,
+      33.691026688,
+      0.1
+    ],
+    [
+      20.0,
+      33.579816818,
+      0.1
+    ],
+    [
+      20.25,
+      33.510339737,
+      0.1
+    ],
+    [
+      20.5,
+      33.464166641,
+      0.1
+    ],
+    [
+      20.75,
+      33.423494339,
+      0.1
+    ],
+    [
+      21.0,
+      33.353082657,
+      0.1
+    ],
+    [
+      21.25,
+      33.263475418,
+      0.1
+    ],
+    [
+      21.5,
+      33.217702866,
+      0.1
+    ],
+    [
+      21.75,
+      33.237680435,
+      0.1
+    ],
+    [
+      22.0,
+      33.234575272,
+      0.1
+    ],
+    [
+      22.25,
+      33.196317673,
+      0.1
+    ],
+    [
+      22.5,
+      33.183229446,
+      0.1
+    ],
+    [
+      22.75,
+      33.264745712,
+      0.1
+    ],
+    [
+      23.0,
+      33.322332382,
+      0.1
+    ],
+    [
+      23.25,
+      33.640695572,
+      0.1
+    ],
+    [
+      23.5,
+      33.654039383,
+      0.1
+    ],
+    [
+      23.75,
+      33.582712173,
+      0.1
+    ],
+    [
+      24.0,
+      33.525968552,
+      0.1
+    ],
+    [
+      24.25,
+      33.469999313,
+      0.1
+    ],
+    [
+      24.5,
+      33.414030075,
+      0.1
+    ],
+    [
+      24.75,
+      33.342580795,
+      0.1
+    ],
+    [
+      25.0,
+      33.274839401,
+      0.1
+    ]
+  ],
+  "foam_shoreline_contour_source": {
+    "method": "First waterward-to-landward crossing of actual composite mesh top at world Z=0.10 m, vertical raycasts plus bisection.",
+    "spacing_m": 0.25,
+    "sample_count": 57,
+    "included_objects": [
+      "Landscape_Source_100m",
+      "AST_Shoreline_CurvedBed",
+      "AST_Shoreline_BankWest",
+      "AST_Shoreline_BankLow",
+      "AST_Shoreline_BankEast"
+    ],
+    "excluded": "Isolated rocks, plants, lilies and water surface; only Landscape + bed + banks.",
+    "water_level_m": 0.1,
+    "max_intersection_height_error_m": 1.1442601680761166e-05,
+    "source_blend_sha256": "bf47d4fb40042eeeeabaa0e4afefca2f1f4b2f2da5c944bf38684b4c9b848c22",
+    "planned_contour_preserved": true,
+    "wave_depth_diagnostic_ue_m": [
+      {
+        "x_m": 11.0,
+        "actual_y_m": 32.937562943,
+        "planned_to_actual_waterward_cm": 1.18,
+        "wave_45cm": {
+          "vertical_depth_cm": 22.08,
+          "view_depth_proxy_cm": 25.87
+        },
+        "wave_138cm": {
+          "vertical_depth_cm": 74.31,
+          "view_depth_proxy_cm": 83.89
+        }
+      },
+      {
+        "x_m": 12.0,
+        "actual_y_m": 32.982118607,
+        "planned_to_actual_waterward_cm": 22.32,
+        "wave_45cm": {
+          "vertical_depth_cm": 28.48,
+          "view_depth_proxy_cm": 24.69
+        },
+        "wave_138cm": {
+          "vertical_depth_cm": 62.08,
+          "view_depth_proxy_cm": 47.44
+        }
+      },
+      {
+        "x_m": 13.0,
+        "actual_y_m": 32.962995529,
+        "planned_to_actual_waterward_cm": 19.0,
+        "wave_45cm": {
+          "vertical_depth_cm": 7.05,
+          "view_depth_proxy_cm": 6.7
+        },
+        "wave_138cm": {
+          "vertical_depth_cm": 21.08,
+          "view_depth_proxy_cm": 19.8
+        }
+      },
+      {
+        "x_m": 14.0,
+        "actual_y_m": 33.030042648,
+        "planned_to_actual_waterward_cm": 15.96,
+        "wave_45cm": {
+          "vertical_depth_cm": 6.14,
+          "view_depth_proxy_cm": 6.22
+        },
+        "wave_138cm": {
+          "vertical_depth_cm": 18.11,
+          "view_depth_proxy_cm": 18.5
+        }
+      },
+      {
+        "x_m": 15.0,
+        "actual_y_m": 33.209329605,
+        "planned_to_actual_waterward_cm": 27.93,
+        "wave_45cm": {
+          "vertical_depth_cm": 8.55,
+          "view_depth_proxy_cm": 8.9
+        },
+        "wave_138cm": {
+          "vertical_depth_cm": 24.94,
+          "view_depth_proxy_cm": 27.48
+        }
+      },
+      {
+        "x_m": 16.0,
+        "actual_y_m": 33.674806595,
+        "planned_to_actual_waterward_cm": 16.8,
+        "wave_45cm": {
+          "vertical_depth_cm": 8.87,
+          "view_depth_proxy_cm": 9.31
+        },
+        "wave_138cm": {
+          "vertical_depth_cm": 28.9,
+          "view_depth_proxy_cm": 32.65
+        }
+      },
+      {
+        "x_m": 17.0,
+        "actual_y_m": 33.702749252,
+        "planned_to_actual_waterward_cm": 33.02,
+        "wave_45cm": {
+          "vertical_depth_cm": 14.69,
+          "view_depth_proxy_cm": 15.21
+        },
+        "wave_138cm": {
+          "vertical_depth_cm": 47.52,
+          "view_depth_proxy_cm": 54.15
+        }
+      },
+      {
+        "x_m": 18.0,
+        "actual_y_m": 33.871538162,
+        "planned_to_actual_waterward_cm": 21.51,
+        "wave_45cm": {
+          "vertical_depth_cm": 13.33,
+          "view_depth_proxy_cm": 13.3
+        },
+        "wave_138cm": {
+          "vertical_depth_cm": 47.47,
+          "view_depth_proxy_cm": 45.69
+        }
+      },
+      {
+        "x_m": 19.0,
+        "actual_y_m": 33.907327652,
+        "planned_to_actual_waterward_cm": 9.95,
+        "wave_45cm": {
+          "vertical_depth_cm": 8.73,
+          "view_depth_proxy_cm": 8.46
+        },
+        "wave_138cm": {
+          "vertical_depth_cm": 32.28,
+          "view_depth_proxy_cm": 29.5
+        }
+      },
+      {
+        "x_m": 20.0,
+        "actual_y_m": 33.579816818,
+        "planned_to_actual_waterward_cm": 16.44,
+        "wave_45cm": {
+          "vertical_depth_cm": 7.82,
+          "view_depth_proxy_cm": 7.5
+        },
+        "wave_138cm": {
+          "vertical_depth_cm": 25.64,
+          "view_depth_proxy_cm": 23.24
+        }
+      },
+      {
+        "x_m": 21.0,
+        "actual_y_m": 33.353082657,
+        "planned_to_actual_waterward_cm": 8.43,
+        "wave_45cm": {
+          "vertical_depth_cm": 5.76,
+          "view_depth_proxy_cm": 5.71
+        },
+        "wave_138cm": {
+          "vertical_depth_cm": 18.04,
+          "view_depth_proxy_cm": 17.49
+        }
+      },
+      {
+        "x_m": 22.0,
+        "actual_y_m": 33.234575272,
+        "planned_to_actual_waterward_cm": 12.65,
+        "wave_45cm": {
+          "vertical_depth_cm": 5.71,
+          "view_depth_proxy_cm": 5.72
+        },
+        "wave_138cm": {
+          "vertical_depth_cm": 17.08,
+          "view_depth_proxy_cm": 17.3
+        }
+      },
+      {
+        "x_m": 23.0,
+        "actual_y_m": 33.322332382,
+        "planned_to_actual_waterward_cm": 13.62,
+        "wave_45cm": {
+          "vertical_depth_cm": 8.47,
+          "view_depth_proxy_cm": 9.13
+        },
+        "wave_138cm": {
+          "vertical_depth_cm": 26.25,
+          "view_depth_proxy_cm": 32.32
+        }
+      },
+      {
+        "x_m": 24.0,
+        "actual_y_m": 33.525968552,
+        "planned_to_actual_waterward_cm": -3.31,
+        "wave_45cm": {
+          "vertical_depth_cm": 22.42,
+          "view_depth_proxy_cm": 23.55
+        },
+        "wave_138cm": {
+          "vertical_depth_cm": 59.37,
+          "view_depth_proxy_cm": 74.58
+        }
+      },
+      {
+        "x_m": 25.0,
+        "actual_y_m": 33.274839401,
+        "planned_to_actual_waterward_cm": -0.94,
+        "wave_45cm": {
+          "vertical_depth_cm": 26.92,
+          "view_depth_proxy_cm": 23.61
+        },
+        "wave_138cm": {
+          "vertical_depth_cm": 87.85,
+          "view_depth_proxy_cm": 76.78
+        }
+      }
+    ]
   }
 }

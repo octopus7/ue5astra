@@ -99,41 +99,11 @@ def _read_manifests(require_site=False):
     return project, art, site, palette, specs
 
 
-def _linear(hex_rgb):
-    values = [int(hex_rgb[index:index + 2], 16) / 255.0 for index in (0, 2, 4)]
-    return [v / 12.92 if v <= 0.04045 else ((v + 0.055) / 1.055) ** 2.4 for v in values]
-
-
 def _materials(palette):
-    library = unreal.EditorAssetLibrary
-    editing = unreal.MaterialEditingLibrary
-    asset_tools = unreal.AssetToolsHelpers.get_asset_tools()
-    result = {}
-    for name, color in palette.items():
-        path = MATERIAL_DEST + "/" + name
-        material = library.load_asset(path) if library.does_asset_exist(path) else None
-        if material is None:
-            material = asset_tools.create_asset(name, MATERIAL_DEST, unreal.Material, unreal.MaterialFactoryNew())
-        if not isinstance(material, unreal.Material):
-            raise TypeError("Expected a Material: " + path)
-        editing.delete_all_material_expressions(material)
-        material.set_editor_property("blend_mode", unreal.BlendMode.BLEND_OPAQUE)
-        material.set_editor_property("shading_model", unreal.MaterialShadingModel.MSM_DEFAULT_LIT)
-        material.set_editor_property("two_sided", False)
-        node = editing.create_material_expression(material, unreal.MaterialExpressionConstant3Vector, -400, 0)
-        node.set_editor_property("constant", unreal.LinearColor(*_linear(color), 1.0))
-        editing.connect_material_property(node, "", unreal.MaterialProperty.MP_BASE_COLOR)
-        for index, (value, prop) in enumerate(((0.88, unreal.MaterialProperty.MP_ROUGHNESS),
-                                             (0.12, unreal.MaterialProperty.MP_SPECULAR),
-                                             (0.0, unreal.MaterialProperty.MP_METALLIC))):
-            node = editing.create_material_expression(material, unreal.MaterialExpressionConstant, -400, 150 + index * 100)
-            node.set_editor_property("r", value)
-            editing.connect_material_property(node, "", prop)
-        editing.recompile_material(material)
-        library.set_metadata_tag(material, "AstraShorelineSRGB", color)
-        library.save_loaded_asset(material)
-        result[name] = material
-    return result
+    # The surface module owns the sand/wet-bank finish; placement and import
+    # remain independent so both can be developed without editing one file.
+    from shoreline_surface_materials import build_materials
+    return build_materials(palette)
 
 
 def _measure_mesh(mesh, spec):

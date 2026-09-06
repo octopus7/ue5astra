@@ -147,6 +147,11 @@ void AAstraController::BeginPlay()
     bBridgeTest = FParse::Param(FCommandLine::Get(),TEXT("AstraBridgeTest"));
     bCampTest = FParse::Param(FCommandLine::Get(),TEXT("AstraCampTest"));
     FParse::Value(FCommandLine::Get(),TEXT("AstraReview="),ReviewCamera);
+    if (!ReviewCamera.IsEmpty())
+    {
+        FParse::Value(FCommandLine::Get(),TEXT("AstraReviewCaptureSeconds="),ReviewCaptureTime);
+        ReviewCaptureTime = FMath::Clamp(ReviewCaptureTime,13.f,120.f);
+    }
 }
 void AAstraController::PlayerTick(float Dt)
 {
@@ -253,12 +258,13 @@ void AAstraController::TickValidation(float Dt)
             UE_LOG(LogTemp,Display,TEXT("ASTRA CAMP %s"),*Result);TestStage=3;
         }
     }
-    if(!bCaptured && ValidationTime>13)
+    if(!bCaptured && ValidationTime>ReviewCaptureTime)
     {
         bCaptured=true;
         const FString Name=ReviewCamera.IsEmpty()?TEXT("Gameplay"):ReviewCamera;
         const FString ImagePath=FPaths::ConvertRelativePathToFull(FPaths::ProjectDir()/TEXT("ArtSource/Previews")/(TEXT("UE_")+Name+TEXT(".png")));
         FScreenshotRequest::RequestScreenshot(ImagePath,false,false);
+        UE_LOG(LogTemp,Display,TEXT("ASTRA REVIEW capture %s at world %.3fs, validation %.3fs"),*Name,GetWorld()->GetTimeSeconds(),ValidationTime);
         if(bSmokeTest)
         {
             const FString Json=FString::Printf(TEXT("{\"passed\":%s,\"checks\":[%s],\"camera_pitch\":%.2f,\"camera_yaw\":%.2f,\"ortho_width\":%.2f}"),
@@ -266,7 +272,7 @@ void AAstraController::TickValidation(float Dt)
             FFileHelper::SaveStringToFile(Json,*(FPaths::ProjectDir()/TEXT("ArtSource/Previews/UE_MovementValidation.json")));
         }
     }
-    if(bCaptured && ValidationTime>16) FPlatformMisc::RequestExitWithStatus(false,bTestsPassed?0:1);
+    if(bCaptured && ValidationTime>ReviewCaptureTime+3.f) FPlatformMisc::RequestExitWithStatus(false,bTestsPassed?0:1);
 }
 AAstraGameMode::AAstraGameMode()
 {

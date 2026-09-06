@@ -7,6 +7,7 @@ The baseline woodland, house placement and Landscape remain unchanged.
 import bpy
 import bmesh
 import hashlib
+import importlib.util
 import json
 import math
 import random
@@ -64,14 +65,38 @@ def shore_y(x):
     return (lo+hi)*0.5
 
 
-def profile(distance):
-    knots = ((-0.85, 0.45), (0, 0.075), (0.65, -0.07),
-             (1.5, -0.21), (2.5, -0.39), (3.4, -0.62),
-             (4.3, -0.98), (5.2, -1.45))
-    for (a, za), (b, zb) in zip(knots, knots[1:]):
-        if distance <= b:
-            return za+(zb-za)*(distance-a)/(b-a)
-    return knots[-1][1]
+def shore_shift(x):
+    """Two broad spits project slightly lakeward; the middle stays recessed.
+
+    Raising an overlay on the water side adds shoreline rhythm without cutting
+    the immutable Landscape or taking any space from the cottage path.
+    """
+    ends = smooth(11.4,13.0,x)*(1-smooth(22.9,24.7,x))
+    spits = (.47*math.exp(-((x-14.1)/1.65)**2)
+             + .64*math.exp(-((x-21.4)/1.9)**2))
+    return -ends*spits
+
+
+def site_shore_y(x):
+    return shore_y(x)+shore_shift(x)
+
+
+def wet_width(x):
+    """Shallow visibility varies over whole coves, not fine edge noise."""
+    return (3.05 + 1.20*math.exp(-((x-14.0)/1.9)**2)
+            + 1.42*math.exp(-((x-21.5)/1.8)**2)
+            - .63*math.exp(-((x-17.9)/1.5)**2))
+
+
+def far_width(x):
+    return wet_width(x)+1.45+.16*math.sin(x*.91+.7)
+
+
+def profile(distance, width):
+    # An analytic C1 profile avoids a hard kink between the flat shallows and
+    # the deeper skirt. The actual terrain blend handles the final immersion.
+    t = max(0.0, distance)/width
+    return WATER-.026-.155*t-.79*t*t
 
 
 def mesh_attributes(mesh):
@@ -89,7 +114,7 @@ def mesh_attributes(mesh):
         attr = mesh.color_attributes.new(name='ShoreData', type='FLOAT_COLOR', domain='POINT')
     for v, colour in zip(mesh.vertices, attr.data):
         wx, wy, wz = ORIGIN+v.co
-        distance = shore_y(wx)+wy
+        distance = site_shore_y(wx)+wy
         colour.color = (saturate((WATER-wz)/1.5), saturate(distance/4.0), 0, 1)
 
 
@@ -111,7 +136,8 @@ def validate(obj):
     assert volume > 0, (obj.name, volume)
     return {'triangles': len(mesh.loop_triangles), 'vertices': len(mesh.vertices),
             'non_manifold_edges': bad_edges, 'degenerate_uv_triangles': bad_uv,
-            'signed_volume_m3': volume}
+            'signed_volume_m3': volume,
+            'smooth_shaded_polygons':sum(face.use_smooth for face in mesh.polygons)}
 
 
 def create_mesh(name, vertices, faces, mats, indices):
@@ -138,31 +164,44 @@ def create_mesh(name, vertices, faces, mats, indices):
 def build_bed():
     # The outer ring lies below the actual terrain.  It is curved in plan and
     # tapers down at both ends; no rectangular cliff/skirt can emerge in water.
-    xs = [11.0+i*0.65 for i in range(23)]
-    offsets = (0.85, 0.35, 0, -0.55, -1.15, -1.85, -2.65, -3.5, -4.4, -5.2)
+    xs = [11.0+i*(14.3/40) for i in range(41)]
+    # Positive rows are inland metres. Negative rows are fractions of the
+    # varying full underwater extent; resolution supports smooth bends only.
+    offsets = (0.95,0.60,0.25,0.0,-.055,-.12,-.20,-.29,-.39,
+               -.49,-.59,-.69,-.78,-.86,-.925,-.97,-1.0)
     vertices, faces, indices = [], [], []
     cols, rows = len(xs), len(offsets)
     top_world = []
+    boundary_blend = []
     for row, base_d in enumerate(offsets):
         for col, base_x in enumerate(xs):
-            x, d = base_x, base_d
+            x = base_x
             if 0 < row < rows-1 and 0 < col < cols-1:
-                x += RNG.uniform(-0.14, 0.14)
-                d += RNG.uniform(-0.06, 0.06) if row != 2 else 0
-            # The lakeward edge follows the shore, with a broad lobe in width.
-            water_weight = saturate(-d/5.2)
-            d -= (0.28*math.sin((x-11)*0.60)+0.13*math.sin(x*1.17))*water_weight
-            y = shore_y(x)+d
+                x += RNG.uniform(-0.068,0.068)
+            width = wet_width(x)
+            extent = far_width(x)
+            d = base_d if base_d >= 0 else base_d*extent
+            if 3 < row < rows-1 and 0 < col < cols-1:
+                d += RNG.uniform(-.021,.021)
+            y = site_shore_y(x)+d
             ground = terrain(x, y)
-            goal = profile(-d)+0.018*math.sin(x*1.03+d*0.65)*saturate(-d)
-            end_weight = smooth(11.0, 12.65, x)*(1-smooth(23.1, 25.3, x))
-            land_weight = 1-smooth(0.08, 0.85, d)
-            far_weight = 1-smooth(3.75, 5.15, -d)
+            goal = profile(-d,width)
+            goal += .011*math.sin(x*.64+d*.52)*smooth(.15,1.0,-d)
+            if d > 0:
+                # Support the small raised bank lobes, then disappear inland.
+                goal = max(goal+.24*smooth(0,.7,d),ground-.035)
+            end_weight = smooth(11.0,13.0,x)*(1-smooth(22.8,25.3,x))
+            land_weight = 1-smooth(0.10,0.95,d)
+            # A 2 m-scale irregular immersion band replaces the previous lip.
+            blend_start = width*.63+.11*math.sin(x*.73)
+            far_weight = 1-smooth(blend_start,extent,-d)
             weight = end_weight*land_weight*far_weight
-            z = (ground-0.085)*(1-weight)+goal*weight
+            z = (ground-0.10)*(1-weight)+goal*weight
             if row in (0, rows-1) or col in (0, cols-1):
                 z = ground-0.10
+                weight = 0.0
             top_world.append((x, y, z))
+            boundary_blend.append(saturate(1.0-weight))
             vertices.append(tuple(Vector((x, -y, z))-ORIGIN))
     for row in range(rows-1):
         for col in range(cols-1):
@@ -173,7 +212,7 @@ def build_bed():
                 faces.append(face)
                 x = sum(top_world[i][0] for i in face)/3
                 y = sum(top_world[i][1] for i in face)/3
-                depth = shore_y(x)-y
+                depth = site_shore_y(x)-y
                 tone = 0.5+0.18*math.sin(x*0.64-depth*0.4)+0.16*math.cos(depth*0.8+x*0.3)
                 indices.append(1 if tone>0.67 else 2 if tone<0.31 else 0)
     top_triangles = len(faces)
@@ -185,8 +224,10 @@ def build_bed():
     for index in boundary:
         x, y, _ = vertices[index]
         vertices.append((x, y, -2.10))
+        boundary_blend.append(1.0)
     bottom_centre = len(vertices)
     vertices.append((0, 2, -2.10))
+    boundary_blend.append(1.0)
     for ring, a in enumerate(boundary):
         nxt=(ring+1)%len(boundary)
         b=boundary[nxt]
@@ -195,9 +236,23 @@ def build_bed():
         indices.extend((2,2,2))
     obj = create_mesh('SM_ShorelineSite_CurvedBed', vertices, faces,
                       [mats[n] for n in ('M_ShoreSand','M_ShoreSandLight','M_ShoreSandDark')], indices)
+    for polygon in obj.data.polygons:
+        polygon.use_smooth = polygon.index < top_triangles
+    # B was reserved in the generic kit. This site bed now supplies the exact
+    # continuous blend back to the pre-existing lake floor: 0=sand, 1=floor.
+    # R/G/A and all authored geometry/UV/normals remain unchanged.
+    shore_data = obj.data.color_attributes['ShoreData']
+    for colour, blend in zip(shore_data.data,boundary_blend):
+        rgba = list(colour.color)
+        rgba[2] = blend
+        colour.color = rgba
     obj['top_triangle_count'] = top_triangles
     obj['source_kit'] = 'SM_ShallowShelf_01 / SM_ShallowShelf_Cove_01 profile'
-    obj['description_ko'] = '실제 높이맵의 해안선을 따라 휜 밝은 수중 선반. 외곽과 양끝은 기존 지형 아래에 매립.'
+    obj['description_ko'] = '두 개의 넓은 돌출부와 중앙의 좁은 만으로 폭이 달라지는 부드러운 수중 선반. 외곽과 양끝은 기존 지형 아래로 완만하게 매립.'
+    obj['wet_width_range_m'] = [min(wet_width(x) for x in xs),max(wet_width(x) for x in xs)]
+    obj['shore_projection_range_m'] = [min(shore_shift(x) for x in xs),max(shore_shift(x) for x in xs)]
+    obj['shoredata_blue_meaning'] = '1 - end_weight * land_weight * far_weight; 0=sand interior, 1=baseline floor/closure boundary.'
+    obj['shoredata_blue_intermediate_vertices'] = sum(0.0<b<1.0 for b in boundary_blend)
     # Confirm the complete closure boundary is below unchanged terrain.
     gaps = [top_world[i][2]-terrain(top_world[i][0],top_world[i][1]) for i in boundary]
     assert max(gaps)<-0.09
@@ -213,7 +268,8 @@ def build_bank(source_id, centre, label):
     for vertex in mesh.vertices:
         sx, sy, sz = vertex.co
         x = centre-sx
-        y = shore_y(x)+sy-0.055
+        # Both small bank spits and the smooth bed share the same contour.
+        y = site_shore_y(x)+sy-0.055
         ground = terrain(x,y)
         z = WATER+sz
         # Ends of the full stretch submerge into the existing Landscape.
@@ -319,7 +375,10 @@ stone_specs=[
  ('SM_SubmergedRock_Small_01',22.1,-.93,80,.67),
  ('SM_SubmergedRock_Round_01',22.8,-1.65,18,.45)]
 for index,(asset,x,offset,yaw,scale) in enumerate(stone_specs):
-    y=shore_y(x)+offset
+    # Keep the existing twelve names and visual groups inside the newly
+    # varying shallow footprint rather than leaving a cluster on its deep lip.
+    offset *= min(1.15,wet_width(x)/3.55)
+    y=site_shore_y(x)+offset
     inverse=bed.matrix_world.inverted()
     hit, point, _, _=bed.ray_cast(inverse@Vector((x,-y,4)),Vector((0,0,-1)))
     assert hit, ('No bed beneath stone',index,x,y)
@@ -371,7 +430,7 @@ bpy.context.preferences.filepaths.save_version=0
 
 manifest={
  'version':1,'source':'Scripts/place_shoreline_blender.py',
- 'description':'집 앞 약12m 호숫가의 지형을 유지한 곡면 모래 선반, 낮은 흙턱과 수중돌 배치. 기존 큰 돌벽을 해당 구간에서만 숨김.',
+ 'description':'집 앞 약12m의 높이맵을 보존하면서 두 돌출부와 중앙 만으로 폭이 변하는 부드러운 모래 선반, 낮은 흙턱과 수중돌 배치. 기존 큰 돌벽은 해당 구간에서만 숨김.',
  'units':'metres','axis_mapping':'UE=(Blender.X,-Blender.Y,Blender.Z)',
  'palette_srgb_hex':KIT_META['palette_srgb_hex'],
  'assets':asset_manifest,'objects':[record(o) for o in instances],
@@ -379,7 +438,15 @@ manifest={
  'review_camera':{'look_ue_cm':[look.x*100,-look.y*100,look.z*100],
                   'width_cm':2350,'pitch_deg':-58,'yaw_deg':0},
  'water_level_cm':10,
- 'shoreline_contour_ue_m':[[x,shore_y(x),WATER] for x in range(11,26)],
+ 'shoredata':{'attribute':'ShoreData','type':'FLOAT_COLOR','source_domain':'POINT',
+              'R':'clamp((water_level_z - world_z) / 1.5, 0, 1)',
+              'G':'clamp(distance_to_site_shore_m / 4.0, 0, 1)',
+              'B':'SM_ShorelineSite_CurvedBed only: 1 - end_weight * land_weight * far_weight. Continuous baseline-floor colour blend: interior 0, fully terrain-following outer ring/skirts/bottom 1. Banks and shared rocks keep B=0.',
+              'A':'1',
+              'bed_blue_intermediate_vertices':assets[0]['shoredata_blue_intermediate_vertices']},
+ 'shoreline_contour_ue_m':[[x,site_shore_y(x),WATER] for x in range(11,26)],
+ 'baseline_shoreline_contour_ue_m':[[x,shore_y(x),WATER] for x in range(11,26)],
+ 'shallow_width_samples_m':[[x,wet_width(x)] for x in range(11,26)],
  'validation':{'source_sha256':SOURCE_HASHES,'boundary_buried_m':0.1,
                'source_terrain_unchanged':True,'instances':len(instances),
                'house_retained':bpy.data.objects.get('PinkRoofHouse_Lakeside') is not None,
@@ -387,6 +454,13 @@ manifest={
                'review_png_is_dry_geometry':True}}
 SITE_JSON.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 bpy.ops.wm.save_as_mainfile(filepath=str(SITE_BLEND))
+# Foam follows the actual composite water intersection, not the design datum.
+# Re-extract after every geometry build so the manifest never loses this field.
+contact_spec=importlib.util.spec_from_file_location('extract_shoreline_contact',
+    ROOT/'Scripts'/'extract_shoreline_contact.py')
+contact_module=importlib.util.module_from_spec(contact_spec)
+contact_spec.loader.exec_module(contact_module)
+contact_module.update_manifest(SITE_JSON,SITE_BLEND)
 bpy.ops.render.render(write_still=True)
 for path in PROTECTED:
     assert hashlib.sha256(path.read_bytes()).hexdigest()==SOURCE_HASHES[str(path)], str(path)

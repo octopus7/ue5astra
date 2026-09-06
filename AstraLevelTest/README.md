@@ -43,6 +43,8 @@ Unreal Engine 5.7.4 프로젝트. 약 100m 숲을 탐색하는 직립 보행 삼
 4. **전체 언리얼 에디터**에서 `Scripts/import_unreal_scene.py` 실행. `-ExecutePythonScript=...`로도 실행할 수 있다. Content Browser를 사용하므로 UI 없는 Python commandlet로 텍스처 가져오기를 실행하지 않는다.
 5. `Scripts/import_forest_expansion.py`로 숲 확장·해안 모듈·파노라마 하늘을 적용한다. 이 스크립트는 기존 Landscape와 맵을 보존하면서 갱신한다. 이후 `import_smooth_rocks.py`, `apply_forest_foliage.py`, `apply_native_puddles.py` 순서로 바위·작은 식물·실제 반사 웅덩이를 적용하고 `/Game/Astra/Maps/L_AstraWoodland`를 열어 Play한다.
 
+최신 해안 개선과 물웅덩이를 포함하려면 원본 집·지형·물·하늘 갱신이 모두 끝난 다음, 의도한 맵의 UE Python에서 `apply_shoreline_polish.apply_polish(save=True)`를 실행하고 이어서 `puddle_sky_reflection.apply_puddles(save=True)`를 실행한다. 이 두 호출을 **생성 파이프라인의 마지막**에 둔다. 이후 원본 맵·재질·액터를 다시 생성하면 같은 순서를 다시 적용한다. [전체 실행 예제와 검증 범위](Docs/ShorelineIntegration.md)를 참고한다.
+
 레벨 생성 스크립트는 생성된 맵을 다시 작성한다. 수동 편집을 유지하려면 다른 이름으로 복사한 맵을 사용한다. 블렌더에서 수정한 배치를 전달할 때에는 동일한 JSON 구조를 유지한다.
 
 블렌더 원본을 열고 직접 위치·회전·크기를 변경한 뒤에는 `Scripts/export_blender_layout.py`를 실행한다. 이 스크립트는 현재 배치를 그대로 추출하며 다시 흩뿌리지 않는다. 지형은 XY 격자를 유지하고 Z 높이만 수정하면 Landscape 높이맵으로 추출된다.
@@ -64,6 +66,8 @@ Directional Light Source Angle은 사용자 지정값인 50도이며 Exponential
 ## 독립 호숫가 메시 키트
 
 얕은 모래 바닥 2종, 낮은 흙 턱 3종, 수중 돌·자갈 4종과 현장용 메시 4종을 제공한다. 집 앞 해안 12m 구간에 바닥·낮은 턱·수중 돌 16개를 적용했다. [메시 목록](ArtSource/Meshes/Shoreline/README.md)과 [통합 방법](Docs/ShorelineIntegration.md)을 참고한다.
+
+해안 마감은 얇은 흰 접촉선, 물가로 다가오는 1~2개 잔물결, 수심별 민트·청록색, 부드러운 모래 바닥과 외곽 연결, 돌출부·작은 만, 젖은 흙·돌을 포함한다. 수중 돌 재질 3종의 기준색과 연속 무늬를 통일해 삼각형별 색 차이도 없앴다. 메인 맵에 적용할 때에는 `apply_shoreline_finish.py`를 사용하며, 기존 숲 배치·Landscape·Foliage 인스턴스가 유지되는지 함께 검사한다.
 
 ## 절벽과 야영지
 
