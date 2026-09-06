@@ -2,6 +2,14 @@
 
 Unreal Engine 5.7.4 프로젝트. 약 100m 숲을 탐색하는 직립 보행 삼색 고양이 게임.
 
+실제 언리얼 실행 화면. 숲과 공터를 중심으로 호수, 개울, 나무다리와 목조 폐허가 이어진다.
+
+![숲·공터·호수·다리·목조 폐허의 전체 배치](ArtSource/Previews/UE_Overview.png)
+
+| 삼색 고양이와 나무다리 | 호수의 연꽃과 수초 |
+| --- | --- |
+| ![나무다리를 건넌 삼색 고양이](ArtSource/Previews/UE_Bridge.png) | ![연꽃과 수초가 있는 호수](ArtSource/Previews/UE_Lake.png) |
+
 ## 조작
 
 - WASD: 화면 기준 상하좌우 이동
