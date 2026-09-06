@@ -1,0 +1,16 @@
+AstraLevelTest/Binaries/
+AstraLevelTest/Intermediate/
+AstraLevelTest/DerivedDataCache/
+AstraLevelTest/Saved/
+AstraLevelTest/.vs/
+*.sln
+*.VC.db
+*.VC.opendb
+*.suo
+*.user
+*.blend1
+*.blend2
+**/__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
