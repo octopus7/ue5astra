@@ -1,0 +1,185 @@
+{
+  "source": "ArtSource/Blender/PinkHouseAssets.blend",
+  "script": "Scripts/build_pink_house_assets.py",
+  "reference": "ArtSource/Reference/Ref_PinkRoofLakesideHouse.png",
+  "units": "metres",
+  "unreal_conversion": "(Blender X, -Blender Y, Blender Z) * 100; yaw negated",
+  "palette_srgb_hex": {
+    "M_Wood": "A77C45",
+    "M_WoodLight": "BF975B",
+    "M_WoodDark": "715232",
+    "M_Stone": "838780",
+    "M_StoneLight": "A0A293",
+    "M_Moss": "788747",
+    "M_CottageCream": "E8D8AC",
+    "M_CottageCreamLight": "F3E6C5",
+    "M_CottagePink": "E891AE",
+    "M_CottagePinkLight": "F2ABC1",
+    "M_CottagePinkDark": "C87996",
+    "M_CottageGlass": "689FA9",
+    "M_CottageDoor": "815532",
+    "M_CottageRope": "C9AE77",
+    "M_WellWater": "315C63"
+  },
+  "material_properties": {
+    "M_Wood": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_WoodLight": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_WoodDark": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_Stone": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_StoneLight": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_Moss": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_CottageCream": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_CottageCreamLight": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_CottagePink": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_CottagePinkLight": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_CottagePinkDark": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_CottageGlass": {
+      "roughness": 0.22,
+      "metallic": 0.2
+    },
+    "M_CottageDoor": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_CottageRope": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_WellWater": {
+      "roughness": 0.22,
+      "metallic": 0.2
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "SM_PinkRoofHouse",
+      "file": "ArtSource/Meshes/SM_PinkRoofHouse.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        6.566307,
+        6.19,
+        5.465
+      ],
+      "bounds_min_m": [
+        -4.005,
+        -3.095,
+        0.0
+      ],
+      "bounds_max_m": [
+        2.561306,
+        3.095,
+        5.465
+      ],
+      "vertices": 1624,
+      "triangles": 2444,
+      "material_slots": [
+        "M_Stone",
+        "M_CottageCream",
+        "M_StoneLight",
+        "M_Wood",
+        "M_WoodDark",
+        "M_CottageGlass",
+        "M_WoodLight",
+        "M_CottagePinkLight",
+        "M_CottageCreamLight",
+        "M_CottageDoor",
+        "M_CottagePinkDark",
+        "M_CottagePink"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0
+      }
+    },
+    {
+      "asset_id": "SM_FrontWell",
+      "file": "ArtSource/Meshes/SM_FrontWell.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        2.07985,
+        2.71,
+        2.57
+      ],
+      "bounds_min_m": [
+        -1.039925,
+        -1.47,
+        0.0
+      ],
+      "bounds_max_m": [
+        1.039925,
+        1.24,
+        2.57
+      ],
+      "vertices": 1008,
+      "triangles": 1704,
+      "material_slots": [
+        "M_Stone",
+        "M_WellWater",
+        "M_Wood",
+        "M_WoodLight",
+        "M_CottageRope",
+        "M_WoodDark",
+        "M_Moss",
+        "M_StoneLight"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0
+      }
+    }
+  ],
+  "placement_notes": "House front local -X faces the fixed camera. Well remains separate; place in front yard, offset from the central approach.",
+  "door": {
+    "type": "closed decorative door; no interior gameplay",
+    "width_m": 1.36,
+    "height_m": 2.2,
+    "threshold_height_m": 0.59
+  },
+  "entry": {
+    "stair_riser_m": 0.14,
+    "step_width_m": 1.76,
+    "porch_top_m": 0.59,
+    "maximum_final_riser_m": 0.17
+  }
+}
