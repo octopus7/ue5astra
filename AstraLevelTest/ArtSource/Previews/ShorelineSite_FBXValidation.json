@@ -1,0 +1,172 @@
+{
+  "passed": true,
+  "blender": "4.5.12 LTS",
+  "scope": "Fresh Blender FBX import; compare exact saved review geometry, dimensions, pivot/axes/units, triangle topology, material slots, loop UVs, ShoreData, welded manifold topology and positive signed volume. UE validation is separate.",
+  "reference_blend": "Blender/AstraLakeshoreReview.blend",
+  "source_files_unchanged": true,
+  "assets": {
+    "SM_ShorelineSite_CurvedBed": {
+      "passed": true,
+      "file": "Meshes/ShorelineSite/SM_ShorelineSite_CurvedBed.fbx",
+      "fbx_sha256": "85f4051ebf40dbbda09b6568d2510701e0e2ede15ba235c5e8ac8c314f86d1ce",
+      "dimensions_m": [
+        14.299999713897705,
+        7.274289548397064,
+        2.5078380405902863
+      ],
+      "max_dimensions_error_m": 5.364418029785156e-07,
+      "bounds_min_m": [
+        -7.000000476837158,
+        -0.984825074672699,
+        -2.0999999046325684
+      ],
+      "bounds_max_m": [
+        7.299999237060547,
+        6.289464473724365,
+        0.4078381359577179
+      ],
+      "max_bounds_error_m": 4.76837158203125e-07,
+      "max_vertex_position_error_m": 8.596304119739507e-07,
+      "triangles": 582,
+      "materials": [
+        "M_ShoreSand",
+        "M_ShoreSandLight",
+        "M_ShoreSandDark"
+      ],
+      "uv_layer": "UVMap",
+      "max_uv_error": 0.0,
+      "degenerate_uv_triangles": 0,
+      "vertex_color": "ShoreData",
+      "vertex_color_domain": "CORNER",
+      "vertex_color_type": "FLOAT_COLOR",
+      "max_vertex_color_error": 0.0,
+      "non_manifold_edges_after_seam_weld": 0,
+      "zero_area_faces": 0,
+      "signed_volume_m3": 130.58636141616347,
+      "volume_error_m3": 6.300727477537293e-07
+    },
+    "SM_ShorelineSite_BankWest": {
+      "passed": true,
+      "file": "Meshes/ShorelineSite/SM_ShorelineSite_BankWest.fbx",
+      "fbx_sha256": "826694fa4edb19c96e2cbf34071eb121c189056cfe1b134f5b38483bafa6296e",
+      "dimensions_m": [
+        4.0,
+        2.765475869178772,
+        1.1450000703334808
+      ],
+      "max_dimensions_error_m": 3.5762786865234375e-07,
+      "bounds_min_m": [
+        -6.300000190734863,
+        -1.0808908939361572,
+        -0.7200000286102295
+      ],
+      "bounds_max_m": [
+        -2.3000001907348633,
+        1.6845849752426147,
+        0.42500004172325134
+      ],
+      "max_bounds_error_m": 5.960464477539062e-07,
+      "max_vertex_position_error_m": 5.960464477539062e-07,
+      "triangles": 158,
+      "materials": [
+        "M_ShoreGrass",
+        "M_ShoreGrassLight",
+        "M_ShoreEarth",
+        "M_ShoreEarthLight"
+      ],
+      "uv_layer": "UVMap",
+      "max_uv_error": 0.0,
+      "degenerate_uv_triangles": 0,
+      "vertex_color": "ShoreData",
+      "vertex_color_domain": "CORNER",
+      "vertex_color_type": "FLOAT_COLOR",
+      "max_vertex_color_error": 0.0,
+      "non_manifold_edges_after_seam_weld": 0,
+      "zero_area_faces": 0,
+      "signed_volume_m3": 6.425208660770421,
+      "volume_error_m3": 1.1725094672954128e-08
+    },
+    "SM_ShorelineSite_BankLow": {
+      "passed": true,
+      "file": "Meshes/ShorelineSite/SM_ShorelineSite_BankLow.fbx",
+      "fbx_sha256": "c735343f6679cfb2393b5de033faf50422f92e9ae872430ba1254a54a6cda7dd",
+      "dimensions_m": [
+        3.999999165534973,
+        2.007415533065796,
+        0.955344945192337
+      ],
+      "max_dimensions_error_m": 2.384185791015625e-07,
+      "bounds_min_m": [
+        -2.4499998092651367,
+        -1.3228874206542969,
+        -0.7200000286102295
+      ],
+      "bounds_max_m": [
+        1.5499993562698364,
+        0.684528112411499,
+        0.23534491658210754
+      ],
+      "max_bounds_error_m": 2.384185791015625e-07,
+      "max_vertex_position_error_m": 2.384185791015625e-07,
+      "triangles": 158,
+      "materials": [
+        "M_ShoreGrass",
+        "M_ShoreGrassLight",
+        "M_ShoreEarth",
+        "M_ShoreEarthLight"
+      ],
+      "uv_layer": "UVMap",
+      "max_uv_error": 0.0,
+      "degenerate_uv_triangles": 0,
+      "vertex_color": "ShoreData",
+      "vertex_color_domain": "CORNER",
+      "vertex_color_type": "FLOAT_COLOR",
+      "max_vertex_color_error": 0.0,
+      "non_manifold_edges_after_seam_weld": 0,
+      "zero_area_faces": 0,
+      "signed_volume_m3": 5.6365517442586945,
+      "volume_error_m3": 6.563664811665149e-08
+    },
+    "SM_ShorelineSite_BankEast": {
+      "passed": true,
+      "file": "Meshes/ShorelineSite/SM_ShorelineSite_BankEast.fbx",
+      "fbx_sha256": "357a463727c2e40cecf9e6ed217de2d2da6aa161640464975005f2f07e797c22",
+      "dimensions_m": [
+        4.0,
+        2.2199138402938843,
+        1.1450000703334808
+      ],
+      "max_dimensions_error_m": 3.5762786865234375e-07,
+      "bounds_min_m": [
+        1.3999996185302734,
+        -1.2328413724899292,
+        -0.7200000286102295
+      ],
+      "bounds_max_m": [
+        5.399999618530273,
+        0.9870724678039551,
+        0.42500004172325134
+      ],
+      "max_bounds_error_m": 4.76837158203125e-07,
+      "max_vertex_position_error_m": 4.76837158203125e-07,
+      "triangles": 158,
+      "materials": [
+        "M_ShoreGrass",
+        "M_ShoreGrassLight",
+        "M_ShoreEarth",
+        "M_ShoreEarthLight"
+      ],
+      "uv_layer": "UVMap",
+      "max_uv_error": 0.0,
+      "degenerate_uv_triangles": 0,
+      "vertex_color": "ShoreData",
+      "vertex_color_domain": "CORNER",
+      "vertex_color_type": "FLOAT_COLOR",
+      "max_vertex_color_error": 0.0,
+      "non_manifold_edges_after_seam_weld": 0,
+      "zero_area_faces": 0,
+      "signed_volume_m3": 6.147369078083543,
+      "volume_error_m3": 1.7016146713899616e-08
+    }
+  }
+}

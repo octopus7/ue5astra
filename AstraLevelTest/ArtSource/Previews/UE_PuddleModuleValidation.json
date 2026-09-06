@@ -1,0 +1,66 @@
+{
+  "map": "/Game/Astra/Maps/L_AstraPuddleModuleReview",
+  "puddle_components": 5,
+  "material": "/Game/Astra/Materials/ModuleReview/M_PuddleCloudReview.M_PuddleCloudReview",
+  "review_camera": "PuddleCloud",
+  "material_checks": {
+    "asset": "/Game/Astra/Materials/ModuleReview/M_PuddleCloudReview.M_PuddleCloudReview",
+    "checks": {
+      "translucent": true,
+      "unlit": true,
+      "no_ssr": true,
+      "depth_test_enabled": true,
+      "colour_output_connected": true,
+      "coverage_output_connected": true,
+      "vertex_red_upstream_of_alpha": true,
+      "depth_fade_upstream_of_alpha": true,
+      "seven_cm_default": true,
+      "cloud_texture_upstream_of_colour": true,
+      "local_mapping_upstream_of_colour": true
+    },
+    "passed": true,
+    "scalar_parameters": [
+      "CloudAmount",
+      "CloudDriftSpeed",
+      "CloudDriftUVAmplitude",
+      "CloudRotationDegrees",
+      "CloudSoftness",
+      "CloudThreshold",
+      "CloudUVScale",
+      "EdgeDepthFadeCm",
+      "EdgeFadePower",
+      "PuddleLocalRadiusCm",
+      "RippleSpeed",
+      "RippleUVAmplitude",
+      "RippleWorldScaleCm",
+      "SurfaceBrightness",
+      "SurfaceOpacity"
+    ],
+    "vector_parameters": [
+      "CloudTint",
+      "CloudUVOffset",
+      "WaterTint"
+    ],
+    "textures": [
+      "/Game/Astra/Textures/T_AnimeSkyReflection.T_AnimeSkyReflection"
+    ],
+    "validation_scope": "Read-only graph contract. Shader compile logs and actual orthographic GPU preview must be checked separately."
+  },
+  "shoreline_saved_state": {
+    "available": true,
+    "passed": true,
+    "reloaded_actor_count": 16,
+    "collision_profiles_persisted": true
+  },
+  "passed": true,
+  "gpu_review": {
+    "unreal_version": "5.7.4",
+    "runtime": "UnrealEditor -game, orthographic review camera",
+    "png": "ArtSource/Previews/UE_PuddleCloud.png",
+    "sha256": "37357efa577750177deb7a706068348b6a596b3f26f3d6308ee046a759c30e55",
+    "import_and_render_log_error_count": 0,
+    "process_exit_code": 0,
+    "original_woodland_map_modified": false,
+    "scope": "Puddle cloud trick material, five components, screenshot of one puddle; saved shoreline NoCollision also reloaded and checked."
+  }
+}
