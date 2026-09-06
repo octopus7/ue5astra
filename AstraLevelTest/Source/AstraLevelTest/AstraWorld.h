@@ -45,6 +45,7 @@ private:
     void TickValidation(float DeltaTime);
     bool bSmokeTest = false;
     bool bBridgeTest = false;
+    bool bCampTest = false;
     bool bBridgeMidpointSupported = false;
     bool bReviewSelected = false;
     bool bCaptured = false;

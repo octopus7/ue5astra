@@ -47,7 +47,7 @@ def import_texture(name):
     if EAL.does_asset_exist(path):
         tex=EAL.load_asset(path)
         tex.set_editor_property('power_of_two_mode',unreal.TexturePowerOfTwoSetting.STRETCH_TO_POWER_OF_TWO)
-        EAL.save_loaded_asset(tex)
+        if not EAL.save_loaded_asset(tex):raise RuntimeError('Texture save failed: '+name)
         return tex
     task=unreal.AssetImportTask();task.filename=str(ART/'Textures'/f'{name}.png');task.destination_path='/Game/Astra/Textures';task.destination_name=name
     task.automated=True;task.save=True;task.replace_existing=True
@@ -55,7 +55,7 @@ def import_texture(name):
     tex=EAL.load_asset(path)
     if not tex:raise RuntimeError('Texture import failed: '+name)
     tex.set_editor_property('power_of_two_mode',unreal.TexturePowerOfTwoSetting.STRETCH_TO_POWER_OF_TWO)
-    EAL.save_loaded_asset(tex)
+    if not EAL.save_loaded_asset(tex):raise RuntimeError('Texture save failed: '+name)
     return tex
 
 def build_materials():
@@ -64,8 +64,22 @@ def build_materials():
         if EAL.does_asset_exist('/Game/Astra/Materials/'+name):
             mats[name]=EAL.load_asset('/Game/Astra/Materials/'+name)
             continue
-        m=newmat(name);connect(color(m,linear(h)),unreal.MaterialProperty.MP_BASE_COLOR)
-        connect(const(m,.86),unreal.MaterialProperty.MP_ROUGHNESS);connect(const(m,.15),unreal.MaterialProperty.MP_SPECULAR)
+        m=newmat(name);props=DATA.get('material_properties',{}).get(name,{})
+        base=color(m,linear(h))
+        if props.get('base_color_texture'):
+            tex=expression(m,unreal.MaterialExpressionTextureSample);tex.texture=import_texture(Path(props['base_color_texture']).stem)
+            base=custom(m,'return TexColour*Tint;',{'TexColour':tex,'Tint':color(m,props.get('tint_linear',[1,1,1]))})
+            # Keep the cliff's painted cool shadow palette readable under the canopy.
+            if 'ForestCliff' in name:connect(color(m,(.012,.021,.036)),unreal.MaterialProperty.MP_EMISSIVE_COLOR)
+        connect(base,unreal.MaterialProperty.MP_BASE_COLOR)
+        connect(const(m,props.get('roughness',.86)),unreal.MaterialProperty.MP_ROUGHNESS)
+        connect(const(m,props.get('specular',.15)),unreal.MaterialProperty.MP_SPECULAR)
+        connect(const(m,props.get('metallic',0)),unreal.MaterialProperty.MP_METALLIC)
+        if props.get('emissive_strength',0)>0:
+            c=linear(h);connect(color(m,[v*props['emissive_strength'] for v in c]),unreal.MaterialProperty.MP_EMISSIVE_COLOR)
+        if 'CampFlame' in name:
+            t=expression(m,unreal.MaterialExpressionTime);wp=expression(m,unreal.MaterialExpressionWorldPosition)
+            connect(custom(m,'return float3(sin(T*5+Pos.x*.013)*2,cos(T*4+Pos.y*.02)*2,sin(T*7)*2);',{'T':t,'Pos':wp}),unreal.MaterialProperty.MP_WORLD_POSITION_OFFSET)
         if any(s in name for s in ['Grass','Reed','Lily','Lotus']):m.set_editor_property('two_sided',True)
         mats[name]=finish(m)
     groundtex=import_texture('T_ForestFloor')
@@ -78,6 +92,9 @@ def build_materials():
         for a,b in zip(points,points[1:]):
             code+=f'a=float2({a[0]},{a[1]}); b=float2({b[0]},{b[1]}); ab=b-a; t=saturate(dot(p-a,ab)/dot(ab,ab)); d=min(d,length(p-a-t*ab)-{width});\n'
     code+='d=min(d,length(float2((p.x+5)*.9,p.y+10))-7.2);\n'
+    for clearing in DATA.get('clearings',[]):
+        cx,cy=clearing['center'];rx,ry=clearing['radii']
+        code+=f'd=min(d,(length((p-float2({cx},{cy}))/float2({rx},{ry}))-1)*{min(rx,ry)});\n'
     code+='d += .22*sin(p.x*2.7+sin(p.y*2.1))+.12*cos(p.y*4.3); float alpha=1-smoothstep(-.15,.45,d); float shore=(1-smoothstep(0.0,50.0,abs(Pos.z-10)))*.55; alpha=max(alpha,shore);\n'
     rgb=linear('B79B66')
     code+=f'float3 dirt=float3({rgb[0]},{rgb[1]},{rgb[2]})*(.83+.25*saturate(dot(Ground,float3(.3,.59,.11))*4));\n'
@@ -89,50 +106,42 @@ def build_materials():
     return mats
 
 def build_water_materials():
-    mats={'M_Water':build_lake_material()}
-    for name,puddle in [('M_PuddleReflection',True)]:
-        m=newmat(name)
-        m.set_editor_property('blend_mode',unreal.BlendMode.BLEND_TRANSLUCENT)
-        m.set_editor_property('shading_model',unreal.MaterialShadingModel.MSM_DEFAULT_LIT)
-        m.set_editor_property('two_sided',True)
-        m.set_editor_property('tangent_space_normal',False)
-        m.set_editor_property('translucency_lighting_mode',unreal.TranslucencyLightingMode.TLM_SURFACE_PER_PIXEL_LIGHTING)
-        m.set_editor_property('translucency_pass',unreal.MaterialTranslucencyPass.MTP_BEFORE_DOF)
-        m.set_editor_property('screen_space_reflections',True)
-        wp=expression(m,unreal.MaterialExpressionWorldPosition)
-        time=expression(m,unreal.MaterialExpressionTime)
-        edge=expression(m,unreal.MaterialExpressionVertexColor)
-        depth=expression(m,unreal.MaterialExpressionDepthFade)
-        depth.set_editor_property('fade_distance_default',7.0 if puddle else 65.0)
-        mask=custom(m,'return smoothstep(0,1,Edge.r)*Depth;',{'Edge':edge,'Depth':depth},unreal.CustomMaterialOutputType.CMOT_FLOAT1)
-        opacity=custom(m,'return Mask*'+('.92;' if puddle else '.88;'),{'Mask':mask},unreal.CustomMaterialOutputType.CMOT_FLOAT1)
-        connect(opacity,unreal.MaterialProperty.MP_OPACITY)
-        if puddle:c=color(m,(.40,.77,1.0))
-        else:
-            sd=expression(m,unreal.MaterialExpressionSceneDepth);pd=expression(m,unreal.MaterialExpressionPixelDepth)
-            c=custom(m,'float d=saturate((Scene-Pixel)/210.0); return lerp(float3(.24,.65,.65),float3(.055,.36,.52),d);',{'Scene':sd,'Pixel':pd})
-        connect(custom(m,'return Colour*Mask;',{'Colour':c,'Mask':mask}),unreal.MaterialProperty.MP_BASE_COLOR)
-        normal_code='float2 p=Pos.xy*.01; float nx=.13*sin(p.x*.72+p.y*.18+T*.15); float ny=.11*cos(p.y*.65-p.x*.15-T*.12); return normalize(float3(nx,ny,1));' if puddle else 'float2 p=Pos.xy*.01; return normalize(float3(.045*sin(p.x*.5+p.y*.12+T*.2),.035*cos(p.y*.42-p.x*.1-T*.17),1));'
-        normal=custom(m,normal_code,{'Pos':wp,'T':time})
-        connect(normal,unreal.MaterialProperty.MP_NORMAL)
-        roughness=custom(m,'return lerp(.035,'+('.012' if puddle else '.028')+',Mask);',{'Mask':mask},unreal.CustomMaterialOutputType.CMOT_FLOAT1)
-        connect(roughness,unreal.MaterialProperty.MP_ROUGHNESS)
-        specular=custom(m,'return Mask;',{'Mask':mask},unreal.CustomMaterialOutputType.CMOT_FLOAT1)
-        connect(specular,unreal.MaterialProperty.MP_SPECULAR)
-        # Strong stylized environment reflectance keeps the fixed top-down view readable.
-        connect(const(m,1.0 if puddle else .72),unreal.MaterialProperty.MP_METALLIC)
-        mats[name]=finish(m)
-    # Clouds live in the sky; neither water material has a texture or emissive input.
-    skytex=import_texture('T_AnimeSkyReflection')
+    import sys
+    sys.path.insert(0,str(ROOT/'Scripts'))
+    from puddle_cloud_trick import build_puddle_material
+    mats={'M_Water':build_lake_material(),'M_PuddleReflection':build_puddle_material()}
+    # A separate sky dome remains independent of the lake/creek material.
+    mats['M_CloudSky']=build_cloud_sky_material()
+    return mats
+
+
+def build_cloud_sky_material():
+    skytex=import_texture('T_AnimeSkyPanorama')
+    # Interchange can mistake a predominantly blue sky for a normal map.
+    skytex.set_editor_property('compression_settings',unreal.TextureCompressionSettings.TC_DEFAULT)
+    skytex.set_editor_property('srgb',True)
+    skytex.set_editor_property('address_x',unreal.TextureAddress.TA_WRAP)
+    skytex.set_editor_property('address_y',unreal.TextureAddress.TA_CLAMP)
+    if not EAL.save_loaded_asset(skytex):raise RuntimeError('Panorama texture save failed')
     m=newmat('M_CloudSky');m.set_editor_property('shading_model',unreal.MaterialShadingModel.MSM_UNLIT)
     m.set_editor_property('two_sided',True);m.set_editor_property('is_sky',True)
     wp=expression(m,unreal.MaterialExpressionWorldPosition)
-    uv=custom(m,'float3 d=normalize(Pos); return d.xy*1.6+float2(.55,.55);',{'Pos':wp},unreal.CustomMaterialOutputType.CMOT_FLOAT2)
+    # Full-sphere longitude/latitude mapping, independent of the sphere mesh UVs.
+    uv=custom(m,'float3 d=normalize(Pos); return float2(atan2(d.y,d.x)/6.28318530718+.5,acos(clamp(d.z,-1,1))/3.14159265359);',{'Pos':wp},unreal.CustomMaterialOutputType.CMOT_FLOAT2)
     tex=expression(m,unreal.MaterialExpressionTextureSample);tex.texture=skytex
     ML.connect_material_expressions(uv,'',tex,'UVs')
-    connect(custom(m,'return Sky*1.5;',{'Sky':tex}),unreal.MaterialProperty.MP_EMISSIVE_COLOR)
-    mats['M_CloudSky']=finish(m)
-    return mats
+    # Compose wrap/polar colours from the image itself, avoiding a tinted seam stripe.
+    def sample_at(code):
+        coords=custom(m,code,{'UV':uv},unreal.CustomMaterialOutputType.CMOT_FLOAT2)
+        sample=expression(m,unreal.MaterialExpressionTextureSample);sample.texture=skytex
+        ML.connect_material_expressions(coords,'',sample,'UVs');return sample
+    left=sample_at('return float2(.002,UV.y);')
+    right=sample_at('return float2(.998,UV.y);')
+    zenith=sample_at('return float2(.5,.005);')
+    nadir=sample_at('return float2(.5,.65);')
+    code='float wrap=smoothstep(0,.024,min(UV.x,1-UV.x)); float3 c=lerp((West+East)*.5,Sky,wrap); c=lerp(Top,c,smoothstep(.015,.09,UV.y)); c=lerp(c,Bottom,smoothstep(.50,.68,UV.y)); return c*1.15;'
+    connect(custom(m,code,{'Sky':tex,'UV':uv,'West':left,'East':right,'Top':zenith,'Bottom':nadir}),unreal.MaterialProperty.MP_EMISSIVE_COLOR)
+    return finish(m)
 
 
 def build_lake_material():
@@ -206,6 +215,8 @@ def import_meshes(mats):
             options.static_mesh_import_data.vertex_color_import_option=unreal.VertexColorImportOption.REPLACE
             options.static_mesh_import_data.convert_scene=True
             options.static_mesh_import_data.convert_scene_unit=True
+            if meta.get('normal_import_method')=='IMPORT_NORMALS_AND_TANGENTS':
+                options.static_mesh_import_data.normal_import_method=unreal.FBXNormalImportMethod.FBXNIM_IMPORT_NORMALS_AND_TANGENTS
             task.options=options;AT.import_asset_tasks([task]);asset=EAL.load_asset(path)
         if not asset:raise RuntimeError('Mesh import failed: '+name)
         for i,slot in enumerate(asset.get_editor_property('static_materials')):

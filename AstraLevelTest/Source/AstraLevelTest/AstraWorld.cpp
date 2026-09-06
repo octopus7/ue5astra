@@ -145,12 +145,13 @@ void AAstraController::BeginPlay()
     SetInputMode(FInputModeGameOnly());
     bSmokeTest = FParse::Param(FCommandLine::Get(),TEXT("AstraSmokeTest"));
     bBridgeTest = FParse::Param(FCommandLine::Get(),TEXT("AstraBridgeTest"));
+    bCampTest = FParse::Param(FCommandLine::Get(),TEXT("AstraCampTest"));
     FParse::Value(FCommandLine::Get(),TEXT("AstraReview="),ReviewCamera);
 }
 void AAstraController::PlayerTick(float Dt)
 {
     Super::PlayerTick(Dt);
-    if (bSmokeTest || bBridgeTest || !ReviewCamera.IsEmpty()) TickValidation(Dt);
+    if (bSmokeTest || bBridgeTest || bCampTest || !ReviewCamera.IsEmpty()) TickValidation(Dt);
     if (APawn* P = GetPawn())
     {
         FVector Direction((IsInputKeyDown(EKeys::W)?1.f:0.f)-(IsInputKeyDown(EKeys::S)?1.f:0.f),
@@ -227,6 +228,29 @@ void AAstraController::TickValidation(float Dt)
             FFileHelper::SaveStringToFile(Result,*(FPaths::ProjectDir()/TEXT("ArtSource/Previews/UE_BridgeValidation.json")));
             UE_LOG(LogTemp,Display,TEXT("ASTRA BRIDGE %s"),*Result);
             TestStage=3;
+        }
+    }
+    if(bCampTest)
+    {
+        if(TestStage==0 && ValidationTime>1)
+        {
+            FVector Start(3300,-2000,250);
+            for(TActorIterator<ALandscape> It(GetWorld());It;++It)
+                Start.Z=UAstraSceneLibrary::LandscapeHeightAt(*It,Start)+110;
+            Cat->SetActorLocation(Start);Cat->GetCharacterMovement()->StopMovementImmediately();TestStage=1;
+        }
+        if(TestStage==1 && ValidationTime>2)
+        {
+            TestStart=Cat->GetActorLocation();InputKey(FInputKeyEventArgs::CreateSimulated(EKeys::D,IE_Pressed,1.f));TestStage=2;
+        }
+        if(TestStage==2 && ValidationTime>6.6)
+        {
+            InputKey(FInputKeyEventArgs::CreateSimulated(EKeys::D,IE_Released,0.f));
+            const FVector Delta=Cat->GetActorLocation()-TestStart;
+            bTestsPassed=Delta.Y>1100 && Delta.Z>250 && Cat->GetCharacterMovement()->IsMovingOnGround();
+            const FString Result=FString::Printf(TEXT("{\"passed\":%s,\"travel_cm\":%.2f,\"climb_cm\":%.2f,\"grounded\":%s,\"final_z\":%.2f}"),bTestsPassed?TEXT("true"):TEXT("false"),Delta.Y,Delta.Z,Cat->GetCharacterMovement()->IsMovingOnGround()?TEXT("true"):TEXT("false"),Cat->GetActorLocation().Z);
+            FFileHelper::SaveStringToFile(Result,*(FPaths::ProjectDir()/TEXT("ArtSource/Previews/UE_CampMovementValidation.json")));
+            UE_LOG(LogTemp,Display,TEXT("ASTRA CAMP %s"),*Result);TestStage=3;
         }
     }
     if(!bCaptured && ValidationTime>13)

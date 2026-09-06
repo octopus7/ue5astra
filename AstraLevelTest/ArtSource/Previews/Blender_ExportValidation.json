@@ -1,5 +1,14 @@
 {
-  "objects": 1787,
-  "layout_unchanged": true,
-  "height_unchanged": true
+  "passed": true,
+  "byte_identical": {
+    "woodland_layout.json": true,
+    "landscape_height.r16": true
+  },
+  "object_count": 1805,
+  "asset_count": 41,
+  "height_samples": 16129,
+  "sha256": {
+    "woodland_layout.json": "63c8db8505f9ad38d9aaeea7e0bdd95dfea647bb992ac5b7ee802754ad30f4a5",
+    "landscape_height.r16": "5c47fe1915e6af57efab698537397c83dce60512b800d16c7c0b546d61e054b0"
+  }
 }

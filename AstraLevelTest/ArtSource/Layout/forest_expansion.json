@@ -1,0 +1,2952 @@
+{
+  "version": 1,
+  "source": "Scripts/place_forest_expansion.py",
+  "asset_ids": [
+    "SM_ForestCliff_A",
+    "SM_ForestCliff_B",
+    "SM_ForestCliff_C",
+    "SM_ForestTent",
+    "SM_CampBedroll",
+    "SM_CampSatchel",
+    "SM_ForestSignpost",
+    "SM_CampLogStool",
+    "SM_CampWoodpile",
+    "SM_Campfire",
+    "SM_CampCookingTripod",
+    "SM_CampCookingStation",
+    "SM_CampLantern"
+  ],
+  "new_instances": [
+    {
+      "name": "ForestExpansion_CliffA",
+      "asset": "SM_ForestCliff_A",
+      "group": "ForestExpansion/Cliffs",
+      "collision": "complex",
+      "blender_location_m": [
+        29.299999237060547,
+        8.0,
+        -2.7950000762939453
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.05235987901687622
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        2929.9999237060547,
+        -800.0,
+        -279.50000762939453
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -3.0000000834826057,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "ForestExpansion_CliffB",
+      "asset": "SM_ForestCliff_B",
+      "group": "ForestExpansion/Cliffs",
+      "collision": "complex",
+      "blender_location_m": [
+        29.450000762939453,
+        3.0999999046325684,
+        -2.6050000190734863
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.03490658476948738
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        2945.0000762939453,
+        -309.99999046325684,
+        -260.50000190734863
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 1.9999999845072665,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "ForestExpansion_CliffC",
+      "asset": "SM_ForestCliff_C",
+      "group": "ForestExpansion/Cliffs",
+      "collision": "complex",
+      "blender_location_m": [
+        29.350000381469727,
+        -1.850000023841858,
+        -2.8550000190734863
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.06981316953897476
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        2935.0000381469727,
+        185.0000023841858,
+        -285.50000190734863
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -3.999999969014533,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "ForestExpansion_CliffSide",
+      "asset": "SM_ForestCliff_A",
+      "group": "ForestExpansion/Cliffs",
+      "collision": "complex",
+      "blender_location_m": [
+        30.200000762939453,
+        -4.699999809265137,
+        -1.2872999906539917
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.186823844909668
+      ],
+      "scale": [
+        0.7799999713897705,
+        0.7799999713897705,
+        0.7799999713897705
+      ],
+      "ue_location_cm": [
+        3020.0000762939453,
+        469.9999809265137,
+        -128.72999906539917
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 67.99999733881295,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "ForestExpansion_Tent",
+      "asset": "SM_ForestTent",
+      "group": "ForestExpansion/Camp",
+      "collision": "complex",
+      "blender_location_m": [
+        38.0,
+        4.0,
+        5.203125
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        3800.0,
+        -400.0,
+        520.3125
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "ForestExpansion_Bedroll",
+      "asset": "SM_CampBedroll",
+      "group": "ForestExpansion/Camp",
+      "collision": "none",
+      "blender_location_m": [
+        36.79999923706055,
+        3.200000047683716,
+        5.203125
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "scale": [
+        0.7799999713897705,
+        0.7799999713897705,
+        0.7799999713897705
+      ],
+      "ue_location_cm": [
+        3679.9999237060547,
+        -320.0000047683716,
+        520.3125
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "ForestExpansion_Satchel",
+      "asset": "SM_CampSatchel",
+      "group": "ForestExpansion/Camp",
+      "collision": "none",
+      "blender_location_m": [
+        36.79999923706055,
+        5.800000190734863,
+        5.203125
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "scale": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "ue_location_cm": [
+        3679.9999237060547,
+        -580.0000190734863,
+        520.3125
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "ForestExpansion_Fire",
+      "asset": "SM_Campfire",
+      "group": "ForestExpansion/Camp",
+      "collision": "complex",
+      "blender_location_m": [
+        33.0,
+        -0.6000000238418579,
+        5.203125
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "scale": [
+        0.8500000238418579,
+        0.8500000238418579,
+        0.8500000238418579
+      ],
+      "ue_location_cm": [
+        3300.0,
+        60.00000238418579,
+        520.3125
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "ForestExpansion_CookFire",
+      "asset": "SM_Campfire",
+      "group": "ForestExpansion/Camp",
+      "collision": "complex",
+      "blender_location_m": [
+        36.0,
+        -3.0999999046325684,
+        5.203125
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "scale": [
+        0.4399999976158142,
+        0.4399999976158142,
+        0.4399999976158142
+      ],
+      "ue_location_cm": [
+        3600.0,
+        309.99999046325684,
+        520.3125
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "ForestExpansion_Tripod",
+      "asset": "SM_CampCookingTripod",
+      "group": "ForestExpansion/Camp",
+      "collision": "complex",
+      "blender_location_m": [
+        36.0,
+        -3.0999999046325684,
+        5.198064804077148
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        3600.0,
+        309.99999046325684,
+        519.8064804077148
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "ForestExpansion_Kitchen",
+      "asset": "SM_CampCookingStation",
+      "group": "ForestExpansion/Camp",
+      "collision": "complex",
+      "blender_location_m": [
+        37.5,
+        -1.25,
+        5.203125
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.20943951606750488
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        3750.0,
+        125.0,
+        520.3125
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -12.000000333930423,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "ForestExpansion_LanternTent",
+      "asset": "SM_CampLantern",
+      "group": "ForestExpansion/Camp",
+      "collision": "none",
+      "blender_location_m": [
+        35.79999923706055,
+        5.400000095367432,
+        5.188125133514404
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        3579.9999237060547,
+        -540.0000095367432,
+        518.8125133514404
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "ForestExpansion_Woodpile",
+      "asset": "SM_CampWoodpile",
+      "group": "ForestExpansion/Camp",
+      "collision": "complex",
+      "blender_location_m": [
+        39.0,
+        -1.2000000476837158,
+        5.203125
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.20943951606750488
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        3900.0,
+        120.00000476837158,
+        520.3125
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 12.000000333930423,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "ForestExpansion_Stool0",
+      "asset": "SM_CampLogStool",
+      "group": "ForestExpansion/Camp",
+      "collision": "complex",
+      "blender_location_m": [
+        31.299999237060547,
+        -0.20000000298023224,
+        5.203125
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.2617993950843811
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        3129.9999237060547,
+        20.000000298023224,
+        520.3125
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -15.000000417413029,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "ForestExpansion_Stool1",
+      "asset": "SM_CampLogStool",
+      "group": "ForestExpansion/Camp",
+      "collision": "complex",
+      "blender_location_m": [
+        33.0,
+        -2.3499999046325684,
+        5.203125
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.1745329201221466
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        3300.0,
+        234.99999046325684,
+        520.3125
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 9.99999970909292,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "ForestExpansion_Stool2",
+      "asset": "SM_CampLogStool",
+      "group": "ForestExpansion/Camp",
+      "collision": "complex",
+      "blender_location_m": [
+        34.29999923706055,
+        0.800000011920929,
+        5.203125
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.5707963705062866
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        3429.9999237060547,
+        -80.0000011920929,
+        520.3125
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 90.00000250447816,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "ForestExpansion_SignCamp",
+      "asset": "SM_ForestSignpost",
+      "group": "ForestExpansion/Camp",
+      "collision": "complex",
+      "blender_location_m": [
+        29.299999237060547,
+        17.0,
+        1.00048828125
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.20943951606750488
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        2929.9999237060547,
+        -1700.0,
+        100.048828125
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -12.000000333930423,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "ForestExpansion_SignClearing",
+      "asset": "SM_ForestSignpost",
+      "group": "ForestExpansion/Camp",
+      "collision": "complex",
+      "blender_location_m": [
+        -2.0999999046325684,
+        13.0,
+        0.6669921875
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        -209.99999046325684,
+        -1300.0,
+        66.69921875
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      }
+    }
+  ],
+  "hidden_original_instances": [
+    {
+      "name": "Oak_03_0015",
+      "asset": "SM_Oak_03",
+      "group": "Forest",
+      "collision": "trunk",
+      "blender_location_m": [
+        40.0,
+        0.0,
+        0.7163541316986084
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.7080679535865784
+      ],
+      "scale": [
+        1.128954529762268,
+        1.128954529762268,
+        1.128954529762268
+      ],
+      "ue_location_cm": [
+        4000.0,
+        -0.0,
+        71.63541316986084
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 40.569305348976,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Fir_03_0055",
+      "asset": "SM_Fir_03",
+      "group": "Forest",
+      "collision": "trunk",
+      "blender_location_m": [
+        32.27848815917969,
+        3.1579806804656982,
+        0.5095298886299133
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -3.044766426086426
+      ],
+      "scale": [
+        1.082983374595642,
+        1.082983374595642,
+        1.082983374595642
+      ],
+      "ue_location_cm": [
+        3227.8488159179688,
+        -315.7980680465698,
+        50.95298886299133
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 174.45226581788353,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Fir_01_0081",
+      "asset": "SM_Fir_01",
+      "group": "Forest",
+      "collision": "trunk",
+      "blender_location_m": [
+        28.217369079589844,
+        -5.668801307678223,
+        0.43766385316848755
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        3.02184796333313
+      ],
+      "scale": [
+        1.14072847366333,
+        1.14072847366333,
+        1.14072847366333
+      ],
+      "ue_location_cm": [
+        2821.7369079589844,
+        566.8801307678223,
+        43.766385316848755
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -173.1391346291919,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Oak_02_0099",
+      "asset": "SM_Oak_02",
+      "group": "Forest",
+      "collision": "trunk",
+      "blender_location_m": [
+        27.869922637939453,
+        8.865532875061035,
+        0.45531511306762695
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.9170033931732178
+      ],
+      "scale": [
+        0.8058227300643921,
+        0.8058227300643921,
+        0.8058227300643921
+      ],
+      "ue_location_cm": [
+        2786.9922637939453,
+        -886.5532875061035,
+        45.531511306762695
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 109.83620374108335,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Oak_01_0102",
+      "asset": "SM_Oak_01",
+      "group": "Forest",
+      "collision": "trunk",
+      "blender_location_m": [
+        37.440364837646484,
+        -5.679337501525879,
+        0.5560287833213806
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.4847660064697266
+      ],
+      "scale": [
+        0.9791449308395386,
+        0.9791449308395386,
+        0.9791449308395386
+      ],
+      "ue_location_cm": [
+        3744.0364837646484,
+        567.9337501525879,
+        55.60287833213806
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 85.07082573520921,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Fir_02_0122",
+      "asset": "SM_Fir_02",
+      "group": "Forest",
+      "collision": "trunk",
+      "blender_location_m": [
+        28.583608627319336,
+        -0.27596646547317505,
+        0.5432012677192688
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        1.3742141723632812
+      ],
+      "scale": [
+        1.2200204133987427,
+        1.2200204133987427,
+        1.2200204133987427
+      ],
+      "ue_location_cm": [
+        2858.3608627319336,
+        27.596646547317505,
+        54.32012677192688
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -78.73667222347947,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Oak_03_0155",
+      "asset": "SM_Oak_03",
+      "group": "Forest",
+      "collision": "trunk",
+      "blender_location_m": [
+        41.89609909057617,
+        5.74330472946167,
+        1.073960781097412
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        3.1099629402160645
+      ],
+      "scale": [
+        0.7770412564277649,
+        0.7770412564277649,
+        0.7770412564277649
+      ],
+      "ue_location_cm": [
+        4189.609909057617,
+        -574.330472946167,
+        107.39607810974121
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -178.18775091647686,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Fir_02_0169",
+      "asset": "SM_Fir_02",
+      "group": "Forest",
+      "collision": "trunk",
+      "blender_location_m": [
+        23.46499252319336,
+        -1.5814012289047241,
+        0.6553027629852295
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        2.8312318325042725
+      ],
+      "scale": [
+        0.7235597968101501,
+        0.7235597968101501,
+        0.7235597968101501
+      ],
+      "ue_location_cm": [
+        2346.499252319336,
+        158.1401228904724,
+        65.53027629852295
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -162.2176348255848,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_0521",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        42.25117492675781,
+        7.9131975173950195,
+        1.2249928712844849
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.8918167352676392
+      ],
+      "scale": [
+        1.2230470180511475,
+        1.2230470180511475,
+        1.2230470180511475
+      ],
+      "ue_location_cm": [
+        4225.117492675781,
+        -791.319751739502,
+        122.49928712844849
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 51.09733502997156,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Flowers_0545",
+      "asset": "SM_Flowers",
+      "group": "Plants/Flowers",
+      "collision": "none",
+      "blender_location_m": [
+        28.61687469482422,
+        0.9665068984031677,
+        0.5460515022277832
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        2.2866809368133545
+      ],
+      "scale": [
+        0.7906456589698792,
+        0.7906456589698792,
+        0.7906456589698792
+      ],
+      "ue_location_cm": [
+        2861.687469482422,
+        -96.65068984031677,
+        54.60515022277832
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -131.0171667724265,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_0560",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        39.12976837158203,
+        7.87096643447876,
+        0.9532305598258972
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        2.056288003921509
+      ],
+      "scale": [
+        1.1285847425460815,
+        1.1285847425460815,
+        1.1285847425460815
+      ],
+      "ue_location_cm": [
+        3912.976837158203,
+        -787.096643447876,
+        95.32305598258972
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -117.81662408808293,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Fern_0585",
+      "asset": "SM_Fern",
+      "group": "Plants/Fern",
+      "collision": "none",
+      "blender_location_m": [
+        31.048824310302734,
+        -3.590182065963745,
+        0.3350731432437897
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.9729300737380981
+      ],
+      "scale": [
+        0.8768870830535889,
+        0.8768870830535889,
+        0.8768870830535889
+      ],
+      "ue_location_cm": [
+        3104.8824310302734,
+        359.0182065963745,
+        33.50731432437897
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 113.04056649962732,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Flowers_0604",
+      "asset": "SM_Flowers",
+      "group": "Plants/Flowers",
+      "collision": "none",
+      "blender_location_m": [
+        29.638702392578125,
+        -1.667226791381836,
+        0.470711886882782
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.6351301670074463
+      ],
+      "scale": [
+        1.1348377466201782,
+        1.1348377466201782,
+        1.1348377466201782
+      ],
+      "ue_location_cm": [
+        2963.8702392578125,
+        166.7226791381836,
+        47.0711886882782
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 36.390278010965794,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_0619",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        30.280282974243164,
+        9.031473159790039,
+        0.4804932475090027
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        1.9142611026763916
+      ],
+      "scale": [
+        1.3336248397827148,
+        1.3336248397827148,
+        1.3336248397827148
+      ],
+      "ue_location_cm": [
+        3028.0282974243164,
+        -903.1473159790039,
+        48.04932475090027
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -109.67908206941638,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Flowers_0625",
+      "asset": "SM_Flowers",
+      "group": "Plants/Flowers",
+      "collision": "none",
+      "blender_location_m": [
+        34.752593994140625,
+        18.106184005737305,
+        0.9546775817871094
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.4956951141357422
+      ],
+      "scale": [
+        1.1653426885604858,
+        1.1653426885604858,
+        1.1653426885604858
+      ],
+      "ue_location_cm": [
+        3475.2593994140625,
+        -1810.6184005737305,
+        95.46775817871094
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 85.69701747831598,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Fern_0632",
+      "asset": "SM_Fern",
+      "group": "Plants/Fern",
+      "collision": "none",
+      "blender_location_m": [
+        34.334259033203125,
+        8.127530097961426,
+        0.6552531719207764
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        2.3815155029296875
+      ],
+      "scale": [
+        1.0885999202728271,
+        1.0885999202728271,
+        1.0885999202728271
+      ],
+      "ue_location_cm": [
+        3433.4259033203125,
+        -812.7530097961426,
+        65.52531719207764
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -136.45078716284672,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_0642",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        31.268260955810547,
+        19.855905532836914,
+        1.2230606079101562
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.987128496170044
+      ],
+      "scale": [
+        1.0472193956375122,
+        1.0472193956375122,
+        1.0472193956375122
+      ],
+      "ue_location_cm": [
+        3126.8260955810547,
+        -1985.5905532836914,
+        122.30606079101562
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 113.85407618072169,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_0699",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        44.16563034057617,
+        0.07410877197980881,
+        1.4423701763153076
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.5241822600364685
+      ],
+      "scale": [
+        0.7623300552368164,
+        0.7623300552368164,
+        0.7623300552368164
+      ],
+      "ue_location_cm": [
+        4416.563034057617,
+        -7.410877197980881,
+        144.23701763153076
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -30.033431195718684,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Flowers_0705",
+      "asset": "SM_Flowers",
+      "group": "Plants/Flowers",
+      "collision": "none",
+      "blender_location_m": [
+        38.67070007324219,
+        -0.8893133401870728,
+        0.5657396912574768
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -3.087702512741089
+      ],
+      "scale": [
+        0.8069899678230286,
+        0.8069899678230286,
+        0.8069899678230286
+      ],
+      "ue_location_cm": [
+        3867.0700073242188,
+        88.93133401870728,
+        56.57396912574768
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 176.9123223720037,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_0724",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        39.102821350097656,
+        4.594245910644531,
+        0.7656875848770142
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -2.051603317260742
+      ],
+      "scale": [
+        1.0310205221176147,
+        1.0310205221176147,
+        1.0310205221176147
+      ],
+      "ue_location_cm": [
+        3910.2821350097656,
+        -459.4245910644531,
+        76.56875848770142
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 117.54821131407977,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Flowers_0741",
+      "asset": "SM_Flowers",
+      "group": "Plants/Flowers",
+      "collision": "none",
+      "blender_location_m": [
+        35.59035873413086,
+        1.4378060102462769,
+        0.45473602414131165
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -2.5943565368652344
+      ],
+      "scale": [
+        1.2477679252624512,
+        1.2477679252624512,
+        1.2477679252624512
+      ],
+      "ue_location_cm": [
+        3559.035873413086,
+        -143.78060102462769,
+        45.473602414131165
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 148.6456801145543,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_0850",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        35.83943176269531,
+        0.01331800501793623,
+        0.4021978974342346
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.4151298999786377
+      ],
+      "scale": [
+        1.049355387687683,
+        1.049355387687683,
+        1.049355387687683
+      ],
+      "ue_location_cm": [
+        3583.9431762695312,
+        -1.331800501793623,
+        40.21978974342346
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 81.08097073154627,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_0875",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        36.823753356933594,
+        3.201859951019287,
+        0.5734212398529053
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.953575849533081
+      ],
+      "scale": [
+        1.3836177587509155,
+        1.3836177587509155,
+        1.3836177587509155
+      ],
+      "ue_location_cm": [
+        3682.3753356933594,
+        -320.1859951019287,
+        57.34212398529053
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -54.63587162384758,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_0919",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        38.77513885498047,
+        -2.632814645767212,
+        0.6020088195800781
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.9440690279006958
+      ],
+      "scale": [
+        1.1991932392120361,
+        1.1991932392120361,
+        1.1991932392120361
+      ],
+      "ue_location_cm": [
+        3877.513885498047,
+        263.2814645767212,
+        60.20088195800781
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 111.38695038081055,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Flowers_0930",
+      "asset": "SM_Flowers",
+      "group": "Plants/Flowers",
+      "collision": "none",
+      "blender_location_m": [
+        29.00790023803711,
+        -1.9560681581497192,
+        0.4969508647918701
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        2.7609922885894775
+      ],
+      "scale": [
+        0.7775900363922119,
+        0.7775900363922119,
+        0.7775900363922119
+      ],
+      "ue_location_cm": [
+        2900.790023803711,
+        195.60681581497192,
+        49.69508647918701
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -158.19320540434327,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Fern_0942",
+      "asset": "SM_Fern",
+      "group": "Plants/Fern",
+      "collision": "none",
+      "blender_location_m": [
+        36.21037292480469,
+        -3.3350048065185547,
+        0.370680034160614
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.1627657413482666
+      ],
+      "scale": [
+        0.8729296922683716,
+        0.8729296922683716,
+        0.8729296922683716
+      ],
+      "ue_location_cm": [
+        3621.0372924804688,
+        333.50048065185547,
+        37.0680034160614
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 66.62156954165599,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Fern_1025",
+      "asset": "SM_Fern",
+      "group": "Plants/Fern",
+      "collision": "none",
+      "blender_location_m": [
+        33.914669036865234,
+        -2.18908429145813,
+        0.3080660402774811
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        2.622448444366455
+      ],
+      "scale": [
+        1.1613633632659912,
+        1.1613633632659912,
+        1.1613633632659912
+      ],
+      "ue_location_cm": [
+        3391.4669036865234,
+        218.908429145813,
+        30.806604027748108
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -150.25522785284613,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1063",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        43.69185256958008,
+        -1.6679532527923584,
+        1.4092216491699219
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.1964227259159088
+      ],
+      "scale": [
+        1.1717853546142578,
+        1.1717853546142578,
+        1.1717853546142578
+      ],
+      "ue_location_cm": [
+        4369.185256958008,
+        166.79532527923584,
+        140.9221649169922
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 11.254193195436512,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1122",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        27.352752685546875,
+        4.170546531677246,
+        0.4959874749183655
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -2.688253402709961
+      ],
+      "scale": [
+        0.7602697014808655,
+        0.7602697014808655,
+        0.7602697014808655
+      ],
+      "ue_location_cm": [
+        2735.2752685546875,
+        -417.0546531677246,
+        49.59874749183655
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 154.02557423696322,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Mushrooms_1148",
+      "asset": "SM_Mushrooms",
+      "group": "Plants/Mushrooms",
+      "collision": "none",
+      "blender_location_m": [
+        34.16961669921875,
+        1.8550679683685303,
+        0.4613622725009918
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.9777480363845825
+      ],
+      "scale": [
+        1.3942378759384155,
+        1.3942378759384155,
+        1.3942378759384155
+      ],
+      "ue_location_cm": [
+        3416.961669921875,
+        -185.50679683685303,
+        46.13622725009918
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -56.02083591204023,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Mushrooms_1150",
+      "asset": "SM_Mushrooms",
+      "group": "Plants/Mushrooms",
+      "collision": "none",
+      "blender_location_m": [
+        40.300540924072266,
+        6.294483661651611,
+        0.950560986995697
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.9337632656097412
+      ],
+      "scale": [
+        0.8399038314819336,
+        0.8399038314819336,
+        0.8399038314819336
+      ],
+      "ue_location_cm": [
+        4030.0540924072266,
+        -629.4483661651611,
+        95.0560986995697
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 110.79647369687378,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1219",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        32.50139617919922,
+        8.460990905761719,
+        0.5599250793457031
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        3.0439116954803467
+      ],
+      "scale": [
+        1.0304186344146729,
+        1.0304186344146729,
+        1.0304186344146729
+      ],
+      "ue_location_cm": [
+        3250.139617919922,
+        -846.0990905761719,
+        55.99250793457031
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -174.40329336153454,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1277",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        29.089859008789062,
+        2.844487190246582,
+        0.5282496809959412
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        2.627275228500366
+      ],
+      "scale": [
+        1.0405409336090088,
+        1.0405409336090088,
+        1.0405409336090088
+      ],
+      "ue_location_cm": [
+        2908.9859008789062,
+        -284.4487190246582,
+        52.824968099594116
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -150.53178221233995,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1307",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        38.153594970703125,
+        -4.162326335906982,
+        0.5751156210899353
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.7949857711791992
+      ],
+      "scale": [
+        1.3040707111358643,
+        1.3040707111358643,
+        1.3040707111358643
+      ],
+      "ue_location_cm": [
+        3815.3594970703125,
+        416.23263359069824,
+        57.51156210899353
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 102.84510897460343,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1362",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        38.89823913574219,
+        6.270456790924072,
+        0.8469553589820862
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        1.8269482851028442
+      ],
+      "scale": [
+        1.36813485622406,
+        1.36813485622406,
+        1.36813485622406
+      ],
+      "ue_location_cm": [
+        3889.8239135742188,
+        -627.0456790924072,
+        84.69553589820862
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -104.67642612505642,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1376",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        41.233238220214844,
+        -0.8321576118469238,
+        0.9097617864608765
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        2.359076976776123
+      ],
+      "scale": [
+        1.1424733400344849,
+        1.1424733400344849,
+        1.1424733400344849
+      ],
+      "ue_location_cm": [
+        4123.323822021484,
+        83.21576118469238,
+        90.97617864608765
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -135.16515431575357,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1386",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        42.892459869384766,
+        3.2416391372680664,
+        1.1405551433563232
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        1.6182708740234375
+      ],
+      "scale": [
+        1.3446779251098633,
+        1.3446779251098633,
+        1.3446779251098633
+      ],
+      "ue_location_cm": [
+        4289.245986938477,
+        -324.16391372680664,
+        114.05551433563232
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -92.7200911904899,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Flowers_1394",
+      "asset": "SM_Flowers",
+      "group": "Plants/Flowers",
+      "collision": "none",
+      "blender_location_m": [
+        37.15046310424805,
+        -2.0716888904571533,
+        0.4310019910335541
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.8919354677200317
+      ],
+      "scale": [
+        1.06658935546875,
+        1.06658935546875,
+        1.06658935546875
+      ],
+      "ue_location_cm": [
+        3715.0463104248047,
+        207.16888904571533,
+        43.10019910335541
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 51.10413789838489,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Fern_1419",
+      "asset": "SM_Fern",
+      "group": "Plants/Fern",
+      "collision": "none",
+      "blender_location_m": [
+        38.55620574951172,
+        -4.114473342895508,
+        0.6238995790481567
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -3.039515972137451
+      ],
+      "scale": [
+        1.2519888877868652,
+        1.2519888877868652,
+        1.2519888877868652
+      ],
+      "ue_location_cm": [
+        3855.620574951172,
+        411.4473342895508,
+        62.389957904815674
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 174.15143696607947,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Mushrooms_1441",
+      "asset": "SM_Mushrooms",
+      "group": "Plants/Mushrooms",
+      "collision": "none",
+      "blender_location_m": [
+        31.507793426513672,
+        3.7189111709594727,
+        0.5179359316825867
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.5935656428337097
+      ],
+      "scale": [
+        1.4486788511276245,
+        1.4486788511276245,
+        1.4486788511276245
+      ],
+      "ue_location_cm": [
+        3150.779342651367,
+        -371.89111709594727,
+        51.79359316825867
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -34.008806198341205,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1444",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        40.221290588378906,
+        7.434458255767822,
+        1.0110901594161987
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.8080124855041504
+      ],
+      "scale": [
+        1.0742305517196655,
+        1.0742305517196655,
+        1.0742305517196655
+      ],
+      "ue_location_cm": [
+        4022.1290588378906,
+        -743.4458255767822,
+        101.10901594161987
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 103.59148472634575,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1543",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        38.49139404296875,
+        -4.252451419830322,
+        0.621155321598053
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        2.1266651153564453
+      ],
+      "scale": [
+        1.1488572359085083,
+        1.1488572359085083,
+        1.1488572359085083
+      ],
+      "ue_location_cm": [
+        3849.139404296875,
+        425.2451419830322,
+        62.1155321598053
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -121.84893554762668,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1544",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        33.078285217285156,
+        1.8065698146820068,
+        0.4642521142959595
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        1.433664083480835
+      ],
+      "scale": [
+        0.8581762313842773,
+        0.8581762313842773,
+        0.8581762313842773
+      ],
+      "ue_location_cm": [
+        3307.8285217285156,
+        -180.65698146820068,
+        46.42521142959595
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -82.14290122294317,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Mushrooms_1553",
+      "asset": "SM_Mushrooms",
+      "group": "Plants/Mushrooms",
+      "collision": "none",
+      "blender_location_m": [
+        33.49699401855469,
+        17.828651428222656,
+        0.9302804470062256
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -2.280489444732666
+      ],
+      "scale": [
+        1.3417860269546509,
+        1.3417860269546509,
+        1.3417860269546509
+      ],
+      "ue_location_cm": [
+        3349.6994018554688,
+        -1782.8651428222656,
+        93.02804470062256
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 130.66242040731436,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1591",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        42.97987747192383,
+        9.249760627746582,
+        1.378861904144287
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.6104258894920349
+      ],
+      "scale": [
+        1.358266830444336,
+        1.358266830444336,
+        1.358266830444336
+      ],
+      "ue_location_cm": [
+        4297.987747192383,
+        -924.9760627746582,
+        137.8861904144287
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 34.97482717341279,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Flowers_1625",
+      "asset": "SM_Flowers",
+      "group": "Plants/Flowers",
+      "collision": "none",
+      "blender_location_m": [
+        40.68866729736328,
+        3.871270179748535,
+        0.8653901815414429
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.212313711643219
+      ],
+      "scale": [
+        1.1645896434783936,
+        1.1645896434783936,
+        1.1645896434783936
+      ],
+      "ue_location_cm": [
+        4068.866729736328,
+        -387.1270179748535,
+        86.53901815414429
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 12.164679609914014,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Flowers_1631",
+      "asset": "SM_Flowers",
+      "group": "Plants/Flowers",
+      "collision": "none",
+      "blender_location_m": [
+        37.39174270629883,
+        -5.309179306030273,
+        0.5332695841789246
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.8588881492614746
+      ],
+      "scale": [
+        1.0307573080062866,
+        1.0307573080062866,
+        1.0307573080062866
+      ],
+      "ue_location_cm": [
+        3739.174270629883,
+        530.9179306030273,
+        53.326958417892456
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 106.50644553956711,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1718",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        30.948429107666016,
+        -2.6788177490234375,
+        0.3688001036643982
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        1.524236798286438
+      ],
+      "scale": [
+        1.1206510066986084,
+        1.1206510066986084,
+        1.1206510066986084
+      ],
+      "ue_location_cm": [
+        3094.8429107666016,
+        267.88177490234375,
+        36.88001036643982
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -87.33233552034629,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Fern_1775",
+      "asset": "SM_Fern",
+      "group": "Plants/Fern",
+      "collision": "none",
+      "blender_location_m": [
+        35.66978073120117,
+        -6.769658088684082,
+        0.42808854579925537
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.8296494483947754
+      ],
+      "scale": [
+        0.8608821034431458,
+        0.8608821034431458,
+        0.8608821034431458
+      ],
+      "ue_location_cm": [
+        3566.978073120117,
+        676.9658088684082,
+        42.80885457992554
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 104.83119138145975,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1788",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        32.82923889160156,
+        5.191006660461426,
+        0.5533361434936523
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.26573342084884644
+      ],
+      "scale": [
+        0.9909359812736511,
+        0.9909359812736511,
+        0.9909359812736511
+      ],
+      "ue_location_cm": [
+        3282.9238891601562,
+        -519.1006660461426,
+        55.333614349365234
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 15.225403490212619,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "FallenLog_1804",
+      "asset": "SM_FallenLog",
+      "group": "Rocks/FallenLogs",
+      "collision": "solid",
+      "blender_location_m": [
+        38.0,
+        -5.0,
+        0.5914191007614136
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -2.4553651809692383
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        3800.0,
+        500.0,
+        59.14191007614136
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 140.68206203291297,
+        "roll": 0.0
+      }
+    }
+  ],
+  "modified_existing_instances": [
+    {
+      "name": "Oak_01_0062",
+      "asset": "SM_Oak_01",
+      "group": "Forest",
+      "collision": "trunk",
+      "blender_location_m": [
+        43.17868423461914,
+        10.82150650024414,
+        5.022130489349365
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.7047097682952881
+      ],
+      "scale": [
+        0.9080994725227356,
+        0.9080994725227356,
+        0.9080994725227356
+      ],
+      "ue_location_cm": [
+        4317.868423461914,
+        -1082.150650024414,
+        502.2130489349365
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -40.37689550496216,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Oak_03_0079",
+      "asset": "SM_Oak_03",
+      "group": "Forest",
+      "collision": "trunk",
+      "blender_location_m": [
+        47.61931610107422,
+        -4.046026229858398,
+        2.3943722248077393
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -2.675489664077759
+      ],
+      "scale": [
+        0.7786238789558411,
+        0.7786238789558411,
+        0.7786238789558411
+      ],
+      "ue_location_cm": [
+        4761.931610107422,
+        404.60262298583984,
+        239.43722248077393
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 153.29426588252997,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Oak_01_0119",
+      "asset": "SM_Oak_01",
+      "group": "Forest",
+      "collision": "trunk",
+      "blender_location_m": [
+        47.85862350463867,
+        2.285214900970459,
+        2.273531675338745
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.2736120223999023
+      ],
+      "scale": [
+        1.0304585695266724,
+        1.0304585695266724,
+        1.0304585695266724
+      ],
+      "ue_location_cm": [
+        4785.862350463867,
+        -228.5214900970459,
+        227.3531675338745
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 72.97259362063566,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "MossRock_04_0319",
+      "asset": "SM_MossRock_04",
+      "group": "Rocks/Woodland",
+      "collision": "solid",
+      "blender_location_m": [
+        28.878477096557617,
+        -7.564870357513428,
+        0.5436261296272278
+      ],
+      "blender_rotation_euler_rad": [
+        0.1816192865371704,
+        0.046232279390096664,
+        -1.9435292482376099
+      ],
+      "scale": [
+        0.8796836733818054,
+        0.8796836733818054,
+        0.8796836733818054
+      ],
+      "ue_location_cm": [
+        2887.8477096557617,
+        756.4870357513428,
+        54.36261296272278
+      ],
+      "ue_rotation_deg": {
+        "pitch": -2.6489144863221985,
+        "yaw": 111.35602328424874,
+        "roll": 10.406018596757036
+      }
+    },
+    {
+      "name": "Flowers_0516",
+      "asset": "SM_Flowers",
+      "group": "Plants/Flowers",
+      "collision": "none",
+      "blender_location_m": [
+        45.895145416259766,
+        5.753539562225342,
+        2.8597490787506104
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.9435968399047852
+      ],
+      "scale": [
+        0.7968729734420776,
+        0.7968729734420776,
+        0.7968729734420776
+      ],
+      "ue_location_cm": [
+        4589.514541625977,
+        -575.3539562225342,
+        285.97490787506104
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 111.35989600150813,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_0542",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        46.760276794433594,
+        -5.235288619995117,
+        2.5457448959350586
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -2.9434494972229004
+      ],
+      "scale": [
+        0.855842649936676,
+        0.855842649936676,
+        0.855842649936676
+      ],
+      "ue_location_cm": [
+        4676.027679443359,
+        523.5288619995117,
+        254.57448959350586
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 168.64723340077632,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_0562",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        39.929481506347656,
+        13.060277938842773,
+        3.1394386291503906
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.9742003679275513
+      ],
+      "scale": [
+        1.1045790910720825,
+        1.1045790910720825,
+        1.1045790910720825
+      ],
+      "ue_location_cm": [
+        3992.9481506347656,
+        -1306.0277938842773,
+        313.94386291503906
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 113.11334899542298,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Fern_0588",
+      "asset": "SM_Fern",
+      "group": "Plants/Fern",
+      "collision": "none",
+      "blender_location_m": [
+        37.51626205444336,
+        -9.2487211227417,
+        0.7821229100227356
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.8506944179534912
+      ],
+      "scale": [
+        1.2097636461257935,
+        1.2097636461257935,
+        1.2097636461257935
+      ],
+      "ue_location_cm": [
+        3751.626205444336,
+        924.8721122741699,
+        78.21229100227356
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -48.74119980407313,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_0645",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        44.447322845458984,
+        10.719110488891602,
+        4.155429363250732
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.007247805595398
+      ],
+      "scale": [
+        1.2332687377929688,
+        1.2332687377929688,
+        1.2332687377929688
+      ],
+      "ue_location_cm": [
+        4444.732284545898,
+        -1071.9110488891602,
+        415.54293632507324
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 57.71104818442993,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_0839",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        30.73488998413086,
+        -6.970392227172852,
+        2.7096750736236572
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.4130758047103882
+      ],
+      "scale": [
+        0.9519676566123962,
+        0.9519676566123962,
+        0.9519676566123962
+      ],
+      "ue_location_cm": [
+        3073.488998413086,
+        697.0392227172852,
+        270.9675073623657
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 80.96327974195778,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Flowers_0866",
+      "asset": "SM_Flowers",
+      "group": "Plants/Flowers",
+      "collision": "none",
+      "blender_location_m": [
+        47.72753143310547,
+        -8.568243980407715,
+        2.212311029434204
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        3.061770439147949
+      ],
+      "scale": [
+        1.4126918315887451,
+        1.4126918315887451,
+        1.4126918315887451
+      ],
+      "ue_location_cm": [
+        4772.753143310547,
+        856.8243980407715,
+        221.2311029434204
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -175.42652400109412,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Flowers_1102",
+      "asset": "SM_Flowers",
+      "group": "Plants/Flowers",
+      "collision": "none",
+      "blender_location_m": [
+        29.006935119628906,
+        13.042984962463379,
+        1.360339641571045
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.3258397877216339
+      ],
+      "scale": [
+        1.3762229681015015,
+        1.3762229681015015,
+        1.3762229681015015
+      ],
+      "ue_location_cm": [
+        2900.6935119628906,
+        -1304.298496246338,
+        136.0339641571045
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -18.669244633888287,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Flowers_1178",
+      "asset": "SM_Flowers",
+      "group": "Plants/Flowers",
+      "collision": "none",
+      "blender_location_m": [
+        46.57347869873047,
+        -6.587234973907471,
+        2.425905227661133
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.3514695167541504
+      ],
+      "scale": [
+        0.8003669381141663,
+        0.8003669381141663,
+        0.8003669381141663
+      ],
+      "ue_location_cm": [
+        4657.347869873047,
+        658.7234973907471,
+        242.59052276611328
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 77.43349945059772,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1208",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        44.1645393371582,
+        -7.539585113525391,
+        2.516390800476074
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        1.4426348209381104
+      ],
+      "scale": [
+        1.020524263381958,
+        1.020524263381958,
+        1.020524263381958
+      ],
+      "ue_location_cm": [
+        4416.45393371582,
+        753.9585113525391,
+        251.63908004760742
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -82.65688661836496,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1358",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        27.805038452148438,
+        9.416385650634766,
+        0.47781065106391907
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.9141339063644409
+      ],
+      "scale": [
+        1.366450309753418,
+        1.366450309753418,
+        1.366450309753418
+      ],
+      "ue_location_cm": [
+        2780.5038452148438,
+        -941.6385650634766,
+        47.78106510639191
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 52.37601474448965,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1379",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        30.454435348510742,
+        -7.527746677398682,
+        1.7599247694015503
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.9552430510520935
+      ],
+      "scale": [
+        1.2667136192321777,
+        1.2667136192321777,
+        1.2667136192321777
+      ],
+      "ue_location_cm": [
+        3045.443534851074,
+        752.7746677398682,
+        175.99247694015503
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -54.73139523448479,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Flowers_1423",
+      "asset": "SM_Flowers",
+      "group": "Plants/Flowers",
+      "collision": "none",
+      "blender_location_m": [
+        30.13869857788086,
+        13.318750381469727,
+        2.4905707836151123
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.5395723581314087
+      ],
+      "scale": [
+        1.0782194137573242,
+        1.0782194137573242,
+        1.0782194137573242
+      ],
+      "ue_location_cm": [
+        3013.869857788086,
+        -1331.8750381469727,
+        249.05707836151123
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 88.2109983759334,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Fern_1446",
+      "asset": "SM_Fern",
+      "group": "Plants/Fern",
+      "collision": "none",
+      "blender_location_m": [
+        46.446922302246094,
+        4.978722095489502,
+        2.47914457321167
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.46030858159065247
+      ],
+      "scale": [
+        0.9790166020393372,
+        0.9790166020393372,
+        0.9790166020393372
+      ],
+      "ue_location_cm": [
+        4644.692230224609,
+        -497.8722095489502,
+        247.914457321167
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -26.373738998797688,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Fern_1493",
+      "asset": "SM_Fern",
+      "group": "Plants/Fern",
+      "collision": "none",
+      "blender_location_m": [
+        31.215662002563477,
+        -9.12817668914795,
+        0.32708749175071716
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.9977971315383911
+      ],
+      "scale": [
+        1.0512882471084595,
+        1.0512882471084595,
+        1.0512882471084595
+      ],
+      "ue_location_cm": [
+        3121.5662002563477,
+        912.8176689147949,
+        32.708749175071716
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -57.169564447409655,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1540",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        45.87578582763672,
+        8.368800163269043,
+        2.8979082107543945
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.37356340885162354
+      ],
+      "scale": [
+        1.173488736152649,
+        1.173488736152649,
+        1.173488736152649
+      ],
+      "ue_location_cm": [
+        4587.578582763672,
+        -836.8800163269043,
+        289.79082107543945
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 21.403606707718048,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1556",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        43.29930877685547,
+        12.81540298461914,
+        3.5285940170288086
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.8301194906234741
+      ],
+      "scale": [
+        1.3348129987716675,
+        1.3348129987716675,
+        1.3348129987716675
+      ],
+      "ue_location_cm": [
+        4329.930877685547,
+        -1281.540298461914,
+        352.85940170288086
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -47.56234330427478,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1579",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        28.710180282592773,
+        13.582828521728516,
+        0.9364399909973145
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.5017179250717163
+      ],
+      "scale": [
+        0.90800940990448,
+        0.90800940990448,
+        0.90800940990448
+      ],
+      "ue_location_cm": [
+        2871.0180282592773,
+        -1358.2828521728516,
+        93.64399909973145
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -28.746319612670217,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Fern_1627",
+      "asset": "SM_Fern",
+      "group": "Plants/Fern",
+      "collision": "none",
+      "blender_location_m": [
+        47.9827766418457,
+        -3.8070015907287598,
+        2.394443988800049
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.13929422199726105
+      ],
+      "scale": [
+        1.4078397750854492,
+        1.4078397750854492,
+        1.4078397750854492
+      ],
+      "ue_location_cm": [
+        4798.27766418457,
+        380.700159072876,
+        239.44439888000488
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -7.980971031001411,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Grass_1755",
+      "asset": "SM_Grass",
+      "group": "Plants/Grass",
+      "collision": "none",
+      "blender_location_m": [
+        47.59703826904297,
+        -1.5247271060943604,
+        2.380652904510498
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.20400242507457733
+      ],
+      "scale": [
+        1.387363076210022,
+        1.387363076210022,
+        1.387363076210022
+      ],
+      "ue_location_cm": [
+        4759.703826904297,
+        152.47271060943604,
+        238.0652904510498
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -11.68847796720708,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Fern_1774",
+      "asset": "SM_Fern",
+      "group": "Plants/Fern",
+      "collision": "none",
+      "blender_location_m": [
+        46.260684967041016,
+        2.9649362564086914,
+        2.63415265083313
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.3957996368408203
+      ],
+      "scale": [
+        0.7923772931098938,
+        0.7923772931098938,
+        0.7923772931098938
+      ],
+      "ue_location_cm": [
+        4626.068496704102,
+        -296.49362564086914,
+        263.415265083313
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 22.677648723789694,
+        "roll": 0.0
+      }
+    }
+  ],
+  "height_samples_changed": 793,
+  "camp_height_m": 5.2,
+  "camp_route": [
+    [
+      33,
+      -20
+    ],
+    [
+      33,
+      -10
+    ]
+  ],
+  "native_landscape_preserved": true
+}

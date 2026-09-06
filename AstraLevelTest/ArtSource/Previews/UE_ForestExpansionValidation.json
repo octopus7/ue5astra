@@ -1,0 +1,241 @@
+{
+  "status": "success",
+  "main_map": "/Game/Astra/Maps/L_AstraWoodland",
+  "new_meshes": 13,
+  "new_instances": [
+    {
+      "name": "ForestExpansion_CliffA",
+      "asset": "SM_ForestCliff_A",
+      "position_cm": [
+        2929.9999237060547,
+        -800.0,
+        -279.50000762939453
+      ],
+      "mesh_height_cm": 803.5,
+      "collision_profile": "BlockAll",
+      "actor_collision": true
+    },
+    {
+      "name": "ForestExpansion_CliffB",
+      "asset": "SM_ForestCliff_B",
+      "position_cm": [
+        2945.0000762939453,
+        -309.99999046325684,
+        -260.50000190734863
+      ],
+      "mesh_height_cm": 803.5,
+      "collision_profile": "BlockAll",
+      "actor_collision": true
+    },
+    {
+      "name": "ForestExpansion_CliffC",
+      "asset": "SM_ForestCliff_C",
+      "position_cm": [
+        2935.0000381469727,
+        185.0000023841858,
+        -285.50000190734863
+      ],
+      "mesh_height_cm": 803.5,
+      "collision_profile": "BlockAll",
+      "actor_collision": true
+    },
+    {
+      "name": "ForestExpansion_CliffSide",
+      "asset": "SM_ForestCliff_A",
+      "position_cm": [
+        3020.0000762939453,
+        469.9999809265137,
+        -128.72999906539917
+      ],
+      "mesh_height_cm": 803.5,
+      "collision_profile": "BlockAll",
+      "actor_collision": true
+    },
+    {
+      "name": "ForestExpansion_Tent",
+      "asset": "SM_ForestTent",
+      "position_cm": [
+        3800.0,
+        -400.0,
+        520.3125
+      ],
+      "mesh_height_cm": 255.60464477539062,
+      "collision_profile": "BlockAll",
+      "actor_collision": true
+    },
+    {
+      "name": "ForestExpansion_Bedroll",
+      "asset": "SM_CampBedroll",
+      "position_cm": [
+        3679.9999237060547,
+        -320.0000047683716,
+        520.3125
+      ],
+      "mesh_height_cm": 81.92749786376953,
+      "collision_profile": "NoCollision",
+      "actor_collision": false
+    },
+    {
+      "name": "ForestExpansion_Satchel",
+      "asset": "SM_CampSatchel",
+      "position_cm": [
+        3679.9999237060547,
+        -580.0000190734863,
+        520.3125
+      ],
+      "mesh_height_cm": 97.69999694824219,
+      "collision_profile": "NoCollision",
+      "actor_collision": false
+    },
+    {
+      "name": "ForestExpansion_Fire",
+      "asset": "SM_Campfire",
+      "position_cm": [
+        3300.0,
+        60.00000238418579,
+        520.3125
+      ],
+      "mesh_height_cm": 105.99999162554741,
+      "collision_profile": "BlockAll",
+      "actor_collision": true
+    },
+    {
+      "name": "ForestExpansion_CookFire",
+      "asset": "SM_Campfire",
+      "position_cm": [
+        3600.0,
+        309.99999046325684,
+        520.3125
+      ],
+      "mesh_height_cm": 105.99999162554741,
+      "collision_profile": "BlockAll",
+      "actor_collision": true
+    },
+    {
+      "name": "ForestExpansion_Tripod",
+      "asset": "SM_CampCookingTripod",
+      "position_cm": [
+        3600.0,
+        309.99999046325684,
+        519.8064804077148
+      ],
+      "mesh_height_cm": 175.9880347251892,
+      "collision_profile": "BlockAll",
+      "actor_collision": true
+    },
+    {
+      "name": "ForestExpansion_Kitchen",
+      "asset": "SM_CampCookingStation",
+      "position_cm": [
+        3750.0,
+        125.0,
+        520.3125
+      ],
+      "mesh_height_cm": 136.0741424560547,
+      "collision_profile": "BlockAll",
+      "actor_collision": true
+    },
+    {
+      "name": "ForestExpansion_LanternTent",
+      "asset": "SM_CampLantern",
+      "position_cm": [
+        3579.9999237060547,
+        -540.0000095367432,
+        518.8125133514404
+      ],
+      "mesh_height_cm": 78.5,
+      "collision_profile": "NoCollision",
+      "actor_collision": false
+    },
+    {
+      "name": "ForestExpansion_Woodpile",
+      "asset": "SM_CampWoodpile",
+      "position_cm": [
+        3900.0,
+        120.00000476837158,
+        520.3125
+      ],
+      "mesh_height_cm": 65.0,
+      "collision_profile": "BlockAll",
+      "actor_collision": true
+    },
+    {
+      "name": "ForestExpansion_Stool0",
+      "asset": "SM_CampLogStool",
+      "position_cm": [
+        3129.9999237060547,
+        20.000000298023224,
+        520.3125
+      ],
+      "mesh_height_cm": 55.0,
+      "collision_profile": "BlockAll",
+      "actor_collision": true
+    },
+    {
+      "name": "ForestExpansion_Stool1",
+      "asset": "SM_CampLogStool",
+      "position_cm": [
+        3300.0,
+        234.99999046325684,
+        520.3125
+      ],
+      "mesh_height_cm": 55.0,
+      "collision_profile": "BlockAll",
+      "actor_collision": true
+    },
+    {
+      "name": "ForestExpansion_Stool2",
+      "asset": "SM_CampLogStool",
+      "position_cm": [
+        3429.9999237060547,
+        -80.0000011920929,
+        520.3125
+      ],
+      "mesh_height_cm": 55.0,
+      "collision_profile": "BlockAll",
+      "actor_collision": true
+    },
+    {
+      "name": "ForestExpansion_SignCamp",
+      "asset": "SM_ForestSignpost",
+      "position_cm": [
+        2929.9999237060547,
+        -1700.0,
+        100.048828125
+      ],
+      "mesh_height_cm": 240.00001525878906,
+      "collision_profile": "BlockAll",
+      "actor_collision": true
+    },
+    {
+      "name": "ForestExpansion_SignClearing",
+      "asset": "SM_ForestSignpost",
+      "position_cm": [
+        -209.99999046325684,
+        -1300.0,
+        66.69921875
+      ],
+      "mesh_height_cm": 240.00001525878906,
+      "collision_profile": "BlockAll",
+      "actor_collision": true
+    }
+  ],
+  "preserved_hidden_originals": 51,
+  "moved_existing_instances": 25,
+  "landscape_actor_preserved": true,
+  "camp_ramp_heights_cm": {
+    "-2000": 115.62240600585938,
+    "-1800": 141.01341247558594,
+    "-1600": 234.3740997314453,
+    "-1400": 360.54241943359375,
+    "-1200": 472.06622314453125,
+    "-1000": 519.13525390625,
+    "-800": 520.3050537109375
+  },
+  "sky_texture": "T_AnimeSkyPanorama",
+  "sky_mapping": "longitude/latitude with smooth pole and wrap caps",
+  "shoreline_actors": 16,
+  "puddle_checks_passed": true,
+  "actor_count": 2080,
+  "backup_map": "D:\\github\\ue5astra\\AstraLevelTest\\ArtSource\\Backups\\BeforeForestExpansion\\L_AstraWoodland.umap"
+}

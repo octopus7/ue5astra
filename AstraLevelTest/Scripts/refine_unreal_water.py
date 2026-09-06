@@ -37,11 +37,11 @@ result={'water_blend_mode':str(mats['M_Water'].get_editor_property('blend_mode')
         'lake_shading_model':str(mats['M_Water'].get_editor_property('shading_model')),
         'lake_cloud_reflections':False,'lake_and_creek_single_surface':True,
         'water_edge_mask':'Blender vertex color red, smoothstep, multiplied by DepthFade',
-        'puddle_sky_texture_input':False,'puddle_emissive_input':False,
+        'puddle_sky_texture_input':True,'puddle_emissive_input':True,
         'sky':'CloudSkyDome / M_CloudSky','skylight_real_time_capture':True,
         'high_quality_translucency_reflections':True,'exponential_height_fog_density':.001,
         'puddle_shading_model':str(mats['M_PuddleReflection'].get_editor_property('shading_model')),
-        'puddle_reflectance':'stylized metallic 1.0; replacement trick module in separate task',
+        'puddle_reflectance':'art-directed cloud illusion with local mapping, bounded ripple/drift and soft edge fade',
         'underwater_terrain':'light sand instead of forest grass'}
 out=ROOT/'ArtSource'/'Previews'/'UE_WaterValidation.json'
 out.write_text(json.dumps(result,indent=2),encoding='utf-8')

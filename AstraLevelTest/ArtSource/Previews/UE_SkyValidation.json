@@ -1,0 +1,11 @@
+{
+  "texture": "/Game/Astra/Textures/T_AnimeSkyPanorama.T_AnimeSkyPanorama",
+  "srgb": true,
+  "compression": "<TextureCompressionSettings.TC_DEFAULT: 0>",
+  "material_is_sky": true,
+  "mapping": "full-sphere longitude/latitude",
+  "material_two_sided": true,
+  "dome_collision": false,
+  "dome_visible": true,
+  "verification": "Saved properties; inspect actual Sky/SkySeam/SkyZenith renders separately."
+}

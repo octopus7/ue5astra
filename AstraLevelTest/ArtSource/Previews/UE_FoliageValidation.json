@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "seed": 73951,
+  "native_foliage_actor_count": 1,
+  "foliage_types": [
+    "/Game/Astra/Foliage/FT_Astra_Grass",
+    "/Game/Astra/Foliage/FT_Astra_Fern",
+    "/Game/Astra/Foliage/FT_Astra_Flowers",
+    "/Game/Astra/Foliage/FT_Astra_Mushrooms",
+    "/Game/Astra/Foliage/FT_Astra_Reeds"
+  ],
+  "converted_original_actors": 1198,
+  "additional_instances": 778,
+  "additional_habitats": {
+    "woodland": 763,
+    "forest_edge": 15,
+    "open_ground": 0
+  },
+  "counts": {
+    "SM_Grass": 1176,
+    "SM_Fern": 374,
+    "SM_Flowers": 268,
+    "SM_Mushrooms": 68,
+    "SM_Reeds": 90
+  },
+  "actor_count": 2083,
+  "path_exclusion_margin_m": 0.7,
+  "plant_collision": "NoCollision",
+  "source_actors_preserved_hidden": true,
+  "placement_layer": "ArtSource/Layout/foliage_placement.json"
+}

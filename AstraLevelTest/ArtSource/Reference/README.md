@@ -11,6 +11,12 @@ Large readable shapes and restrained painted textures take precedence over close
 
 Individual modeling references are saved as `Ref_Oak`, `Ref_Fir`, `Ref_MossRock`, `Ref_Lotus`, `Ref_Reeds`, `Ref_BridgeIntact`, `Ref_BridgeBroken`, `Ref_CabinRuin`, and `Ref_CalicoCat` PNG files. The generation prompt set is recorded in `GENERATION_PROMPTS.md`.
 
-Generated production textures are saved in `../Textures/T_ForestFloor.png` and `../Textures/T_AnimeSkyReflection.png`. The cloud image is used on the actual sky dome. The latest direction excludes sky/cloud reflections from the lake and creek and permits a dedicated reflection illusion for the small puddles.
+Generated production textures are saved in `../Textures`: `T_ForestFloor.png`, `T_AnimeSkyReflection.png`, `T_ForestCliffPaint.png`, and `T_AnimeSkyPanorama.png`. The panorama is used on the actual sky dome; the earlier cloud illustration is used only by the dedicated puddle illusion. The latest direction excludes sky/cloud reflections from the lake and creek.
 
 `Ref_PinkRoofLakesideHouse.png` is the separate modeling reference for a pink-roof house on the right/eastern side of the lake, with its front door facing the game camera and a well in the front yard. The sheet includes front, side, and top views. Its prompt is saved in `PINK_HOUSE_PROMPT.md`. The Blender models have been imported and placed in Unreal; `../Previews/UE_House.png` shows the actual engine result.
+
+`Ref_ForestCliffs.png`, `Ref_ForestTent.png`, `Ref_ForestSignpost.png`, and `Ref_ForestCooking.png` are separate forest expansion references. Each prompt is saved in its corresponding `FOREST_*_PROMPT.md`. The actual Blender asset sheets are saved in `../Previews/Blender_Forest*.png` and the placed Unreal campsite in `../Previews/UE_Camp.png`.
+
+`SKY_PANORAMA_PROMPT.md` records the full built-in image generation prompt and the spherical mapping/compositing method for the replacement sky.
+
+`../Textures/T_AnimeForestRockPaint.png` is the generated albedo for the smooth forest boulders. `FOREST_SMOOTH_ROCK_TEXTURE_PROMPT.md` preserves the prompt and quality notes. The native output is 1254×1254 and is saved without artificial upscaling; UE generates mipmaps through its power-of-two texture setting.

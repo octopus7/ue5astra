@@ -12,6 +12,10 @@ UE 5.7.4에서 실행하는 약 100×100m 숲 탐색 프로젝트. 박스 형태
 
 ![호수 오른쪽의 핑크 지붕 집과 앞마당 우물](AstraLevelTest/ArtSource/Previews/UE_House.png)
 
+![돌 절벽 위의 천막과 화톳불 야영지](AstraLevelTest/ArtSource/Previews/UE_Camp.png)
+
+![부드러운 바위와 장소별 밀도를 적용한 Foliage](AstraLevelTest/ArtSource/Previews/UE_Foliage.png)
+
 - [프로젝트 안내와 실행 방법](AstraLevelTest/README.md)
 - [사용자 작업 지시](AstraLevelTest/WORK_INSTRUCTIONS.md)
 - [검증 결과](AstraLevelTest/VALIDATION.md)

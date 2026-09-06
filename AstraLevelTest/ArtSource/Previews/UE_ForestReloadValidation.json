@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "checks": {
+    "ForestExpansion_CliffA": true,
+    "ForestExpansion_CliffB": true,
+    "ForestExpansion_CliffC": true,
+    "ForestExpansion_CliffSide": true,
+    "ForestExpansion_Tent": true,
+    "ForestExpansion_Bedroll": true,
+    "ForestExpansion_Satchel": true,
+    "ForestExpansion_Fire": true,
+    "ForestExpansion_CookFire": true,
+    "ForestExpansion_Tripod": true,
+    "ForestExpansion_Kitchen": true,
+    "ForestExpansion_LanternTent": true,
+    "ForestExpansion_Woodpile": true,
+    "ForestExpansion_Stool0": true,
+    "ForestExpansion_Stool1": true,
+    "ForestExpansion_Stool2": true,
+    "ForestExpansion_SignCamp": true,
+    "ForestExpansion_SignClearing": true,
+    "preserved_vegetation_hidden_nonblocking": true,
+    "shoreline_16_visual_actors": true,
+    "sky_is_colour_texture": true,
+    "sky_visible_nonblocking": true,
+    "source_angle_50": true,
+    "camp_landscape_height": true,
+    "puddle_graph": true,
+    "SM_MossRock_01_smooth_import": true,
+    "SM_MossRock_02_smooth_import": true,
+    "SM_MossRock_03_smooth_import": true,
+    "SM_MossRock_04_smooth_import": true,
+    "SM_MossRock_05_smooth_import": true,
+    "SM_Grass_foliage_nonblocking": true,
+    "SM_Fern_foliage_nonblocking": true,
+    "SM_Flowers_foliage_nonblocking": true,
+    "SM_Mushrooms_foliage_nonblocking": true,
+    "SM_Reeds_foliage_nonblocking": true,
+    "foliage_saved_instance_counts": true
+  },
+  "mesh_bounds": {
+    "SM_ForestCliff_A": {
+      "height_cm": 803.5,
+      "slots": 4
+    },
+    "SM_ForestCliff_B": {
+      "height_cm": 803.5,
+      "slots": 4
+    },
+    "SM_ForestCliff_C": {
+      "height_cm": 803.5,
+      "slots": 4
+    },
+    "SM_ForestTent": {
+      "height_cm": 255.60464477539062,
+      "slots": 9
+    },
+    "SM_CampBedroll": {
+      "height_cm": 81.92749786376953,
+      "slots": 5
+    },
+    "SM_CampSatchel": {
+      "height_cm": 97.69999694824219,
+      "slots": 7
+    },
+    "SM_Campfire": {
+      "height_cm": 105.99999162554741,
+      "slots": 6
+    },
+    "SM_CampCookingTripod": {
+      "height_cm": 175.9880347251892,
+      "slots": 4
+    },
+    "SM_CampCookingStation": {
+      "height_cm": 136.0741424560547,
+      "slots": 6
+    },
+    "SM_CampLantern": {
+      "height_cm": 78.5,
+      "slots": 3
+    },
+    "SM_CampWoodpile": {
+      "height_cm": 65.0,
+      "slots": 5
+    },
+    "SM_CampLogStool": {
+      "height_cm": 55.0,
+      "slots": 5
+    },
+    "SM_ForestSignpost": {
+      "height_cm": 240.00001525878906,
+      "slots": 10
+    }
+  },
+  "camp_collision_height_cm": 520.3050537109375,
+  "actor_count": 2083,
+  "validation": "Independent full editor reload of saved main map"
+}

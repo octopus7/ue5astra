@@ -4,13 +4,15 @@
   "lake_cloud_reflections": false,
   "lake_and_creek_single_surface": true,
   "water_edge_mask": "Blender vertex color red, smoothstep, multiplied by DepthFade",
-  "puddle_sky_texture_input": false,
-  "puddle_emissive_input": false,
+  "puddle_sky_texture_input": true,
+  "puddle_emissive_input": true,
   "sky": "CloudSkyDome / M_CloudSky",
   "skylight_real_time_capture": true,
   "high_quality_translucency_reflections": true,
   "exponential_height_fog_density": 0.001,
-  "puddle_shading_model": "<MaterialShadingModel.MSM_DEFAULT_LIT: 1>",
-  "puddle_reflectance": "stylized metallic 1.0; replacement trick module in separate task",
-  "underwater_terrain": "light sand instead of forest grass"
+  "puddle_shading_model": "<MaterialShadingModel.MSM_UNLIT: 0>",
+  "puddle_reflectance": "dedicated local cloud illusion with bounded drift/ripple and soft coverage",
+  "underwater_terrain": "light sand instead of forest grass",
+  "sky_texture": "T_AnimeSkyPanorama",
+  "main_map_shoreline_instances": 16
 }

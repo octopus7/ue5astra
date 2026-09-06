@@ -1,0 +1,43 @@
+{
+  "asset": "/Game/Astra/Materials/M_PuddleReflection.M_PuddleReflection",
+  "checks": {
+    "translucent": true,
+    "unlit": true,
+    "no_ssr": true,
+    "depth_test_enabled": true,
+    "colour_output_connected": true,
+    "coverage_output_connected": true,
+    "vertex_red_upstream_of_alpha": true,
+    "depth_fade_upstream_of_alpha": true,
+    "seven_cm_default": true,
+    "cloud_texture_upstream_of_colour": true,
+    "local_mapping_upstream_of_colour": true
+  },
+  "passed": true,
+  "scalar_parameters": [
+    "CloudAmount",
+    "CloudDriftSpeed",
+    "CloudDriftUVAmplitude",
+    "CloudRotationDegrees",
+    "CloudSoftness",
+    "CloudThreshold",
+    "CloudUVScale",
+    "EdgeDepthFadeCm",
+    "EdgeFadePower",
+    "PuddleLocalRadiusCm",
+    "RippleSpeed",
+    "RippleUVAmplitude",
+    "RippleWorldScaleCm",
+    "SurfaceBrightness",
+    "SurfaceOpacity"
+  ],
+  "vector_parameters": [
+    "CloudTint",
+    "CloudUVOffset",
+    "WaterTint"
+  ],
+  "textures": [
+    "/Game/Astra/Textures/T_AnimeSkyReflection.T_AnimeSkyReflection"
+  ],
+  "validation_scope": "Read-only graph contract. Shader compile logs and actual orthographic GPU preview must be checked separately."
+}
