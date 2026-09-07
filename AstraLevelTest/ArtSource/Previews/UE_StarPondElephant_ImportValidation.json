@@ -1,0 +1,248 @@
+{
+  "actor": "SP_UnicornElephant",
+  "mesh": "/Game/Astra/Characters/StarPond/Guardian/SK_SP_UnicornElephant",
+  "mesh_class": "SkeletalMesh",
+  "animation": "/Game/Astra/Characters/StarPond/Guardian/A_SP_UnicornElephant_Idle",
+  "animation_class": "AnimSequence",
+  "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+  "saved_looping": true,
+  "saved_playing": true,
+  "saved_play_rate": 1.0,
+  "duration_seconds": 8.0,
+  "root_motion": false,
+  "skeletal_bone_count": 16,
+  "location_cm": [
+    -100.0,
+    2300.0,
+    118.0
+  ],
+  "physical_dimensions_and_grounding": {
+    "import_uniform_scale": 1.0,
+    "imported_height_cm": 249.05731657160004,
+    "imported_local_ground_z_cm": -4.559881290333578e-06,
+    "actor_scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "actor_rotation": {
+      "roll": 0.0,
+      "pitch": 0.0,
+      "yaw": 134.99999999999997
+    },
+    "foot_world_positions_cm": {
+      "Foot_Front_L": [
+        -162.93250385328284,
+        2292.221825734628,
+        121.4801450296142
+      ],
+      "Foot_Back_L": [
+        -80.90811723564411,
+        2210.1974391169892,
+        121.48016047594841
+      ],
+      "Foot_Front_R": [
+        -92.22182573462808,
+        2362.932503853283,
+        121.4801450296142
+      ],
+      "Foot_Back_R": [
+        -10.197439116989358,
+        2280.908117235644,
+        121.48016047594841
+      ]
+    },
+    "foot_grounding_errors_cm": {
+      "Foot_Front_L": 5.520989660112718e-06,
+      "Foot_Back_L": 9.925344542693892e-06,
+      "Foot_Front_R": 5.520989660112718e-06,
+      "Foot_Back_R": 9.925344542693892e-06
+    },
+    "foot_spacing": {
+      "Foot_Front_L__Foot_Front_R": {
+        "actual_cm": 100.00000000000009,
+        "expected_cm": 100.0
+      },
+      "Foot_Back_L__Foot_Back_R": {
+        "actual_cm": 100.00000000000009,
+        "expected_cm": 100.0
+      },
+      "Foot_Front_L__Foot_Back_L": {
+        "actual_cm": 115.99999999999997,
+        "expected_cm": 115.99999666213989
+      }
+    }
+  },
+  "imported_animation_samples": {
+    "num_frames": 240,
+    "track_names": [
+      "Root",
+      "Body",
+      "Foot_Front_L",
+      "Foot_Back_L",
+      "Foot_Front_R",
+      "Foot_Back_R",
+      "Ear_L",
+      "Blink_L",
+      "Ear_R",
+      "Blink_R",
+      "Horn",
+      "Trunk_1",
+      "Trunk_2",
+      "Trunk_3",
+      "Trunk_4",
+      "Tail"
+    ],
+    "imported_track_names": [
+      "root",
+      "body",
+      "ear_l",
+      "blink_l",
+      "ear_r",
+      "blink_r",
+      "horn",
+      "trunk_1",
+      "trunk_2",
+      "trunk_3",
+      "trunk_4",
+      "tail",
+      "foot_front_l",
+      "foot_back_l",
+      "foot_front_r",
+      "foot_back_r"
+    ],
+    "sample_times_seconds": [
+      0,
+      1,
+      2,
+      2.4,
+      3,
+      4,
+      5,
+      6,
+      6.166666667,
+      7,
+      8
+    ],
+    "loop_endpoint_max_component_error": 0.0,
+    "planted_bone_max_component_error": 0.0,
+    "sampled_change_by_bone": {
+      "Root": 0.0,
+      "Body": 0.012000024318695068,
+      "Foot_Front_L": 0.0,
+      "Foot_Back_L": 0.0,
+      "Foot_Front_R": 0.0,
+      "Foot_Back_R": 0.0,
+      "Ear_L": 0.031419667106179466,
+      "Blink_L": 0.9299999997019768,
+      "Ear_R": 0.03161246542733487,
+      "Blink_R": 0.9299999997019768,
+      "Horn": 0.00020449246396053722,
+      "Trunk_1": 0.020365640569649332,
+      "Trunk_2": 0.07643942534923553,
+      "Trunk_3": 0.053750403225421906,
+      "Trunk_4": 0.05126376822590828,
+      "Tail": 0.053913957584231745
+    }
+  },
+  "mesh_animation_bind_pose": {
+    "Root": {
+      "position_error_cm": 0.0,
+      "rotation_error_degrees": 0.0,
+      "scale_error": 0.0
+    },
+    "Body": {
+      "position_error_cm": 0.0,
+      "rotation_error_degrees": 0.0,
+      "scale_error": 0.0
+    },
+    "Ear_L": {
+      "position_error_cm": 0.0,
+      "rotation_error_degrees": 0.0,
+      "scale_error": 0.0
+    },
+    "Blink_L": {
+      "position_error_cm": 0.0,
+      "rotation_error_degrees": 0.0,
+      "scale_error": 0.0
+    },
+    "Ear_R": {
+      "position_error_cm": 0.0,
+      "rotation_error_degrees": 0.0,
+      "scale_error": 0.0
+    },
+    "Blink_R": {
+      "position_error_cm": 0.0,
+      "rotation_error_degrees": 0.0,
+      "scale_error": 0.0
+    },
+    "Horn": {
+      "position_error_cm": 0.0,
+      "rotation_error_degrees": 0.0,
+      "scale_error": 0.0
+    },
+    "Trunk_1": {
+      "position_error_cm": 0.0,
+      "rotation_error_degrees": 0.0,
+      "scale_error": 0.0
+    },
+    "Trunk_2": {
+      "position_error_cm": 0.0,
+      "rotation_error_degrees": 0.0,
+      "scale_error": 0.0
+    },
+    "Trunk_3": {
+      "position_error_cm": 0.0,
+      "rotation_error_degrees": 0.0,
+      "scale_error": 0.0
+    },
+    "Trunk_4": {
+      "position_error_cm": 0.0,
+      "rotation_error_degrees": 1.7075472925031877e-06,
+      "scale_error": 0.0
+    },
+    "Tail": {
+      "position_error_cm": 0.0,
+      "rotation_error_degrees": 0.0,
+      "scale_error": 0.0
+    },
+    "Foot_Front_L": {
+      "position_error_cm": 0.0,
+      "rotation_error_degrees": 0.0,
+      "scale_error": 0.0
+    },
+    "Foot_Back_L": {
+      "position_error_cm": 0.0,
+      "rotation_error_degrees": 0.0,
+      "scale_error": 0.0
+    },
+    "Foot_Front_R": {
+      "position_error_cm": 0.0,
+      "rotation_error_degrees": 0.0,
+      "scale_error": 0.0
+    },
+    "Foot_Back_R": {
+      "position_error_cm": 0.0,
+      "rotation_error_degrees": 0.0,
+      "scale_error": 0.0
+    }
+  },
+  "imported_assets": [
+    "/Game/Astra/Characters/StarPond/Guardian/SK_SP_UnicornElephant.SK_SP_UnicornElephant"
+  ],
+  "material_slots": [
+    "M_SP_ElephantSkin",
+    "M_SP_ElephantInnerEar",
+    "M_SP_ElephantEye",
+    "M_SP_ElephantEyeLight",
+    "M_SP_ElephantCheek",
+    "M_SP_ElephantIvory",
+    "M_SP_ElephantGold"
+  ],
+  "serialized_method": "SkeletalMeshComponent.override_animation_data",
+  "source_validation": "ArtSource/Previews/Blender_StarPondElephant_Validation.json",
+  "map_saved_by_module": false,
+  "fbx_source_units": "centimetres",
+  "blender_source_units": "metres",
+  "skeletal_import_uniform_scale": 1.0
+}

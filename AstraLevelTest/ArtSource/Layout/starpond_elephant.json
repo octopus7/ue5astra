@@ -264,5 +264,7 @@
   "animation_duration_seconds": 8,
   "animation_looping": true,
   "animation_root_motion": false,
-  "integration": "Call import_starpond_elephant.import_and_place(location_cm, yaw) in the target map. Returns (actor, report); does not save map."
+  "integration": "Call import_starpond_elephant.import_and_place(location_cm, yaw) in the target map. Returns (actor, report); does not save map.",
+  "ue_fbx": "ArtSource/Meshes/StarPond/SK_SP_UnicornElephant_UE.fbx",
+  "ue_fbx_units": "centimetres"
 }

@@ -1,0 +1,138 @@
+{
+  "passed": true,
+  "map": "/Game/Astra/Maps/L_AstraStarPond",
+  "map_sha256": "3e0749ecc68f92a2d5bb5716be204c13a2e864630b9e7bd77db7ca7d2bd641e2",
+  "reports": {
+    "UE_StarPondImportValidation": {
+      "sha256": "f9301bffc29935fe5dd99f7a06534e3e6545e5287efd0f6608742167f99ef6d0",
+      "passed": true
+    },
+    "UE_StarPondValidation": {
+      "sha256": "4b2b7bb34a4c08e237b24840e58dea461eddc28597637556b3523c7943b613ce",
+      "passed": true
+    },
+    "UE_StarPondRuntimeValidation": {
+      "sha256": "8cfb3f6c56740ac90ce13319b17028fa25de21a456a38aef53a3f9bfe9420639",
+      "passed": true
+    },
+    "UE_SPDemoValidation": {
+      "sha256": "4d0eb7211a0599cda7e7bf6f08d68888f72154d6ef669f8f915e878b126ea2eb",
+      "passed": true
+    }
+  },
+  "actual_ue_captures": {
+    "SPPond": {
+      "file": "ArtSource/Previews/UE_SPPond.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "a08db62892386044b315c3cfafec9edf5adc9dccf882c0a5ea7cde613a69c1b0"
+    },
+    "SPElephant": {
+      "file": "ArtSource/Previews/UE_SPElephant.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "16d32525bc9daed87f90ecb18753a61e97b9f2cd9f50b73412466d1586c4bdb8"
+    },
+    "SPGate": {
+      "file": "ArtSource/Previews/UE_SPGate.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "77160e9c6d64a842d0c3e8e3bd5894adc0502594dbcd2ec3676048aa24a3e8e9"
+    },
+    "SPConstellation": {
+      "file": "ArtSource/Previews/UE_SPConstellation.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "e7c46c5b3d5814a3c2089eb5c992287a74e384d19a45b6b9cda6cad306d08f72"
+    },
+    "SPLilies": {
+      "file": "ArtSource/Previews/UE_SPLilies.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "0b824a9ee36891ae4aff20998803b48fc7876c6e041cd9f6d6da8a05985d4358"
+    },
+    "SPOverview": {
+      "file": "ArtSource/Previews/UE_SPOverview.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "e351588006f72af007d85baac4f59622564e8f677309ce5639270fdf810e9b9b"
+    },
+    "SPElephantLater": {
+      "file": "ArtSource/Previews/UE_SPElephantLater.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "9a3e703713b5857da3e0ccfdb57016b85cfae7892aa5a2f05e240e34e3bbb441"
+    }
+  },
+  "protected_content_file_count": 354,
+  "owned_content_sha256": {
+    "Content/Astra/Characters/StarPond/Guardian/A_SP_UnicornElephant_Idle.uasset": "bf3af038abb81ea347180aef7bfe8d3b42ae8a3fdbd9997c37791302caf364f4",
+    "Content/Astra/Characters/StarPond/Guardian/SK_SP_UnicornElephant.uasset": "f5b6bfbe6a4cb0e99bd54249951b764a44fd64b36abd8f9b4c90194ccd8a78e3",
+    "Content/Astra/Characters/StarPond/Guardian/SK_SP_UnicornElephant_Skeleton.uasset": "71f51ac5bb83e746c504a64f9be886961f8381a0f6e4627890ddf66fbab4ae7f",
+    "Content/Astra/Characters/StarPond/Guardian/Materials/M_SP_ElephantCheek.uasset": "6dc987dd884d29bcb5540606c5f2f574597a3c4c61020abe8158f04827bd4682",
+    "Content/Astra/Characters/StarPond/Guardian/Materials/M_SP_ElephantEye.uasset": "1cf803eebe29df0414f18760a1c905660ccb94d2d6dc459fa7100488bf8130a1",
+    "Content/Astra/Characters/StarPond/Guardian/Materials/M_SP_ElephantEyeLight.uasset": "aea74b8631104d7496e1bccae09a000cef674d8b63bb25a24cb09bae161b2112",
+    "Content/Astra/Characters/StarPond/Guardian/Materials/M_SP_ElephantGold.uasset": "3e843b383d00c6fcda3cc368bbbc9b4e6891fdbaa3fa3845837ec54c7dae4260",
+    "Content/Astra/Characters/StarPond/Guardian/Materials/M_SP_ElephantInnerEar.uasset": "e49bc082ae717b8ea075ba7cf025fe95ea64b6a47728ce07489a1a7e653adf9a",
+    "Content/Astra/Characters/StarPond/Guardian/Materials/M_SP_ElephantIvory.uasset": "5cb172062cdd984fb772c7cb64f137ddfdfdbd934abf7249dc9a6401a9f969a2",
+    "Content/Astra/Characters/StarPond/Guardian/Materials/M_SP_ElephantSkin.uasset": "f6dd9d8102a0b316c351cf3aacdb35fe9f5b2fb9b26a26753d2d8d1ba6aee3e1",
+    "Content/Astra/Foliage/StarPond/FT_SP_StarFlowers.uasset": "29e0e5969c9c6dcaa023a0b878586251b9ef3c639e5390e1223e9167d90f59e5",
+    "Content/Astra/Foliage/StarPond/FT_SP_StarLily_01.uasset": "aac9dcc63d9118dc9bd80c4e526c359aa69aa69ea2bdd560cbc726fe68a92b0d",
+    "Content/Astra/Foliage/StarPond/FT_SP_StarLily_02.uasset": "9aa9dde32ad53553aba93ed5e6ccc4ea0bc027df3d56d81f6286532377d58926",
+    "Content/Astra/Maps/L_AstraStarPond.umap": "3e0749ecc68f92a2d5bb5716be204c13a2e864630b9e7bd77db7ca7d2bd641e2",
+    "Content/Astra/Materials/StarPond/M_SP_Flower_StarBlue.uasset": "6ab0fa74ac64cda4ae60bcb97dc3e7dfc0fc41c804144e27b34f83658c043335",
+    "Content/Astra/Materials/StarPond/M_SP_Grass_BlueSilver.uasset": "74818eea97aeb4495d9ac4e640c59ba14e7db3fc38e1b7cf3a84767108b1dabc",
+    "Content/Astra/Materials/StarPond/M_SP_Grass_DeepTeal.uasset": "7161b2e84d886d7f884a75db417cb5068398bc03f8c1247ccc9b8a05b698a8de",
+    "Content/Astra/Materials/StarPond/M_SP_Grass_SilverEdge.uasset": "88691c80cbf655d3dee6109c845c6d24656457e7bf0e99435f80f9ea2a3ab65a",
+    "Content/Astra/Materials/StarPond/M_SP_Landscape.uasset": "765d986182c983cb3d0a4c9e851b0ac8b75e37c1c3a221c42ed09f9aa805df8b",
+    "Content/Astra/Materials/StarPond/M_SP_Lily_BluePetal.uasset": "93f600c99694b36fdecccc65901c4b72f03f0ecf100a91bffc6a709c37a6c5b0",
+    "Content/Astra/Materials/StarPond/M_SP_Lily_IvoryPetal.uasset": "6506dd5ff2a12a53e739673ae247656eb9711775de71f328e3e15ae582cf1419",
+    "Content/Astra/Materials/StarPond/M_SP_Lily_JadePad.uasset": "005fba7893b6bea9808b80f0453f39f8deadc219e4e8c1e891a916bb7b8b769c",
+    "Content/Astra/Materials/StarPond/M_SP_Lily_PadVein.uasset": "365774ab141d561b1023fc51f9620fbbeb261501e42c7d0a240b3e9b2a77800d",
+    "Content/Astra/Materials/StarPond/M_SP_Lily_SilverPetal.uasset": "8069de57d5e48cec929b6aa8ddf84250120f99082105696dc1a43adee842a7a3",
+    "Content/Astra/Materials/StarPond/M_SP_Lily_WarmGold.uasset": "572c578fe66751b2874d7c2d96629691eca5e42850573d325b2c48e85487f59d",
+    "Content/Astra/Materials/StarPond/M_SP_Ruins_Brass.uasset": "6fcc64462847e48f6dd1fd2fddd847e1db172efb6ccd8bb9e422d343808cfbdf",
+    "Content/Astra/Materials/StarPond/M_SP_Ruins_BrassLight.uasset": "85b4f0aa7aa5e2486522e0a826db906c78edefdc52380d8a49d725889eb5952b",
+    "Content/Astra/Materials/StarPond/M_SP_Ruins_Moss.uasset": "5a2a6e0b60d8e88530d3e8ed6da63b568f641468d61fc3bee15ab3eb0578fc58",
+    "Content/Astra/Materials/StarPond/M_SP_Ruins_MossLight.uasset": "7b4e34ba46260e321b9953a176049932819c3dfad10711cceadf01d23eead5ed",
+    "Content/Astra/Materials/StarPond/M_SP_Ruins_PaintedStone.uasset": "015e2dd112a5deac964a7a516d2b6c8b94fea3775f352cc72f409ff53e6f240a",
+    "Content/Astra/Materials/StarPond/M_SP_Ruins_PaleStone.uasset": "e596c2e076616828644c65a285bedda2256086edf4485d9fee9a4c675178e88d",
+    "Content/Astra/Materials/StarPond/M_SP_Ruins_ShadowStone.uasset": "ff757090a7afae77ca63c734a3386622c0e2b9eefbef4e88646d91feb64953e5",
+    "Content/Astra/Materials/StarPond/M_SP_Ruins_StarCore.uasset": "7c004803b76d6e9b261cce642902bf7a263f97e3f5e26a0375a41bea5da44a34",
+    "Content/Astra/Materials/StarPond/M_SP_Ruins_StarInset.uasset": "812d1d33a78867d17b248d25053de0df31730a15b215594a03d245ba2b9aef0a",
+    "Content/Astra/Materials/StarPond/M_SP_StarWater.uasset": "11002a83a84b12d1e9f0e5390f886b6cd28dde98332b8cd534e9b826418a4122",
+    "Content/Astra/Materials/StarPond/M_SP_Willow_Bark.uasset": "8541943df58a8855cfa593e028b22886f079c9235685646458b42f368c1a0117",
+    "Content/Astra/Materials/StarPond/M_SP_Willow_BarkRidge.uasset": "06bc98156f9587fa52a69de70b07d4298a625ca260f2cc80c50d72878f272a7c",
+    "Content/Astra/Materials/StarPond/M_SP_Willow_BarkShadow.uasset": "a263bb60ad8dc9dd50de421bd97725635d8155e4e7d2cca023202a4a7b395840",
+    "Content/Astra/Materials/StarPond/M_SP_Willow_LeafGreen.uasset": "2621e252ac3e0ef86b86307d2b6672a579ea48b2c7b6a1f07406a9961b54a252",
+    "Content/Astra/Materials/StarPond/M_SP_Willow_LeafJade.uasset": "a5c4f2f99b3b5b99efd816a4d68c573a806643740915ab88743e58c3304791ec",
+    "Content/Astra/Materials/StarPond/M_SP_Willow_LeafLight.uasset": "8673134b9596583d6feffedfac7fc93e63d855836b530dc59bc04c6ce70d4f70",
+    "Content/Astra/Materials/StarPond/M_SP_Willow_LeafShadow.uasset": "ed02a5be34e8715030f234f157d10781c0ac8f1f5f417c20fc80c6f623eec70c",
+    "Content/Astra/Materials/StarPond/M_SP_Willow_Moss.uasset": "23405c29f497b278478b75c24f08593667d9c973fb307cd49ec2efa8620c508d",
+    "Content/Astra/Meshes/StarPond/SM_SP_CrescentGate.uasset": "2620d4f7a8adf1a65be9fa0dbc0f8a89e35436e146927f11303ee83065a18df2",
+    "Content/Astra/Meshes/StarPond/SM_SP_OldWillow.uasset": "b60f3460d1fc90a8426de863701d2b269952166c06bca160d22d721496f99dbb",
+    "Content/Astra/Meshes/StarPond/SM_SP_StarFlowers.uasset": "d5f176bbd0dea485d6d45a3845c4f6151d0e3cb334634c6fe998e006f7ed42ee",
+    "Content/Astra/Meshes/StarPond/SM_SP_StarLily_01.uasset": "7e1b70ade5cc74f72c85dea27370217fb59f42e44bb0cce99ce3b506b54838c3",
+    "Content/Astra/Meshes/StarPond/SM_SP_StarLily_02.uasset": "b6e515c122430c8aefece81bfefd38c705bed7b53247de9f257731a9fc3d6b6d",
+    "Content/Astra/Meshes/StarPond/SM_SP_StarMenhir_01.uasset": "538fab20abec9796c628c18a5fabcfd69ac2ee584bc68673706338038c68172e",
+    "Content/Astra/Meshes/StarPond/SM_SP_StarMenhir_02.uasset": "a92860dd7de1e704d04f83ee33dfa863f83481ffc276f9d6c155850ea6aadac0",
+    "Content/Astra/Meshes/StarPond/SM_SP_StarPondSurface.uasset": "e0ee798fb4de7be99ed1b206cbabb2bee679ce475bde5839268d000767dddbc2",
+    "Content/Astra/Meshes/StarPond/SM_SP_ViewingDais.uasset": "53cc2dc8a8ff97ffd08f1ea26b328ad2f8f1b25fc0956fcffd85f7f472cb78e0",
+    "Content/Astra/Textures/StarPond/T_SP_SubmergedStars.uasset": "b636550a80f39e662268c0bf361000bf23079df86d294faa746fcf9c08f8dd1d"
+  },
+  "scope": "UE 5.7.4 editor game execution; this level has not been added to a new Shipping package."
+}

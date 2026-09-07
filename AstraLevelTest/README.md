@@ -2,6 +2,14 @@
 
 Unreal Engine 5.7.4 프로젝트. 약 100m 숲을 탐색하는 직립 보행 삼색 고양이 게임.
 
+**별이 잠긴 연못**에는 낮에도 밤하늘을 품은 연못, 별자리 관측대, 초승달 석문, 은백색 연꽃과 버드나무가 있다. 관측대에 가까이 서면 물속 여섯 별이 이어진다. 연못 북쪽에는 앞뒤로 긴 통통한 체형의 뿔 달린 코끼리가 쉬고 있다.
+
+![연못과 별자리의 실제 UE 화면](ArtSource/Previews/UE_SPPond.png)
+
+![귀여운 뿔 달린 코끼리의 실제 UE 화면](ArtSource/Previews/UE_SPElephant.png)
+
+`/Game/Astra/Maps/L_AstraStarPond`를 열고 Play하거나 `Scripts/play_starpond.ps1`로 실행한다. WASD와 P 자동 산책을 지원한다. 코끼리는 16본 스켈레톤으로 호흡·귀·코·꼬리·눈깜빡임을 포함한 8초 제자리 아이들을 반복한다. [연못 제작 원본·재생성·검증](Docs/StarPondLevel.md).
+
 새 레벨 **별내림 숲**에는 16도 기울어 착륙한 우주선, 큰 웅덩이 3곳, 갓 부러진 나무와 오래된 통나무, 15×15m 버섯 군락, 5×5m 발광 군락, 분홍 나무로 둘러싸인 옹달샘이 있다. 아래는 실제 UE 실행 화면이다.
 
 ![별내림 숲의 기울어진 우주선](ArtSource/Previews/UE_SFSpaceship.png)

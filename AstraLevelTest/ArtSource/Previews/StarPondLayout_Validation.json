@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "placements": 4815,
+  "native_foliage": 4427,
+  "by_group": {
+    "SunkenStars": 1,
+    "Observatory": 1,
+    "MoonGate": 1,
+    "StarMarkers": 6,
+    "WillowGrove": 4,
+    "SilverLilies": 29,
+    "PondBank": 106,
+    "ForestCanopy": 295,
+    "ForestUnderstory": 4328,
+    "ForestRocks": 44
+  },
+  "landscape_samples": 16129,
+  "new_assets": 9,
+  "exact_water_perimeter_mask_zero": true
+}

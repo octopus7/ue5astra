@@ -149,3 +149,14 @@ RTX 4060 / NVIDIA 드라이버 596.36에서 패키지 실행 파일의 실제 �
 - 실제 UE 렌더6장,1600×1000. Point Light만 OFF한 같은 시점과 비교해 바닥·암벽 조명 기여 확인. 결정 자체를 제외한 영역에서 화면 명도 증가0.071/0.089. 렌더 로그의 머터리얼·셰이더 컴파일 오류0건.
 - 증거: `ArtSource/Previews/CrystalCave/UE_CaveFinalValidation.json`, `UE_CaveMovementValidation.json`, `UE_CaveSavedValidation.json`, `Blender_LayoutValidation.json`, `UE_CaveExecution.log`와 `UE_*.png`.
 - 원본·재실행·실행 방법: [동굴 제작 문서](Docs/CrystalCaveLevel.md).
+
+## 별이 잠긴 연못 — 2026-09-07
+
+- 독립 맵 `/Game/Astra/Maps/L_AstraStarPond`, 실제 Landscape 100.8×100.8m, 127×127 높이맵. 388개 정적 배치와 4,427개 Foliage 인스턴스, 새 정적 메시 9종과 스켈레탈 코끼리.
+- 저장 후 새 에디터에서 5,321개 검사를 통과했다. 15,625개 실제 지형 샘플과 Foliage 일대일 변환, 메시 치수·노멀·UV·재질, 96개 Pawn 전용 물 경계, 16본 기준 포즈와 저장된 애니메이션을 확인했다. 기존 맵과 공유 Content 해시를 보존했다.
+- 16본·241키·8초 아이들 루프. FBX 루트 축을 메시 기준에 맞추고 모든 자식 본 모션을 보존했다. 실제 게임에서 몸통·귀·코·꼬리 본의 움직임과 발 이동 오차 0cm, 루트 제자리 재생을 확인했다.
+- 실제 WASD 각 방향 1.54~1.61m, 별자리 연결/해제, 깊은 물 진입 방지 등 14개 게임 검사를 통과했다.
+- P 데모 7개 경로·반복·중도 취소·카메라와 이동 상태 복원을 72.923초 월드 시간에 통과했다. 복귀 후 WASD는 각 방향 약 3.33~3.37m, 위치·회전 복원 오차 0cm/0도다.
+- 실제 UE 렌더 7장(1600×1000)을 시각 검토했다. 연못·별자리·은백색 연꽃·초승달 석문·전체 숲과 두 시점의 정상적인 코끼리 스킨을 확인했다. 렌더 로그의 머터리얼·셰이더 오류는 없다.
+- 초기 코끼리 자산 10개는 다른 자산의 참조가 없음을 확인하고 `Saved/StarPondDebugArchive`로 옮겼다. 완성 자산은 `/Game/Astra/Characters/StarPond/Guardian`에 있다.
+- [통합 검증 JSON](ArtSource/Previews/UE_StarPondFinalValidation.json), [P 데모 결과](ArtSource/Previews/UE_SPDemoValidation.json), [원본·실행·재생성](Docs/StarPondLevel.md). 에디터 게임 실행 검증이며 기존 Shipping 패키지는 갱신하지 않았다.

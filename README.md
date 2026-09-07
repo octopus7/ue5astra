@@ -2,6 +2,14 @@
 
 UE 5.7.4에서 실행하는 약 100×100m 숲 탐색 프로젝트. 박스 형태의 삼색 고양이를 WASD로 움직이고 고정 탑다운 카메라가 따라간다.
 
+**별이 잠긴 연못**은 낮의 숲 속에 밤하늘이 담긴 독립 레벨이다. 관측대에 서면 수면의 별자리가 연결되고, 둘레길에서 초승달 석문·은백색 연꽃·버드나무와 귀여운 뿔 달린 코끼리를 만난다.
+
+![별이 잠긴 연못의 실제 UE 화면](AstraLevelTest/ArtSource/Previews/UE_SPPond.png)
+
+![실제 스켈레탈 아이들을 재생하는 뿔 달린 코끼리](AstraLevelTest/ArtSource/Previews/UE_SPElephant.png)
+
+`AstraLevelTest/Scripts/play_starpond.ps1`로 실행한다. WASD로 이동하고 P로 일곱 장소의 자동 산책을 시작하거나 종료한다. [연못 제작 원본·실행·검증](AstraLevelTest/Docs/StarPondLevel.md).
+
 Windows x64 Shipping 패키지를 제공한다. 기본 실행은 **4K 출력 + DLSS Performance(내부 1920×1080)**이며 1080p·4K 네이티브 실행 옵션도 포함한다. [패키지 실행·빌드 방법](AstraLevelTest/Docs/WindowsPackage.md).
 
 실제 언리얼 실행 화면. 숲과 공터를 중심으로 호수, 개울, 나무다리와 목조 폐허가 이어진다.

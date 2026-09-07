@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "source_blend_unchanged": true,
+  "ue_fbx": "ArtSource/Meshes/StarPond/SK_SP_UnicornElephant_UE.fbx",
+  "fbx_units": "centimetres",
+  "bone_count": 16,
+  "mesh_dimensions_cm": [
+    198.91058349609375,
+    256.10748291015625,
+    249.0573272705078
+  ],
+  "root_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "method": "Scale copied mesh data, armature data and location keys; preserve all scale keys and original metre blend."
+}
