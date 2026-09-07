@@ -2,6 +2,18 @@
 
 UE 5.7 Niagara 테스트용 프로젝트.
 
+## 애니풍 작은 폭포
+
+`L_AnimeWaterfall`은 Blender로 모델링한 2.2m 폭포와 3.6m 물웅덩이 쇼케이스다.
+수직 메시의 UV 흐름과 Niagara 파문·물방울·안개·거품을 조합했다.
+[에셋 구성, 조절 및 Blender 원본](Docs/AnimeWaterfall.md).
+
+## 폭발 규모 비교
+
+`L_ExplosionScaleShowcase`에서 1m / 3m / 10m 받침대와 1m 격자를 기준으로
+소규모·중규모·대규모 효과를 비교한다. 중규모·대규모는 각각 일회성과
+반복 재생 시스템을 포함한다. [에셋 경로, 설정 및 재생성](Docs/ExplosionVariants.md).
+
 ## 소규모 파괴 쇼케이스
 
 `L_SmallDestructionShowcase`는 지름 100cm 받침대와 10cm 바닥·배경 격자를 기준으로 작은 파괴 효과를 확인하는 맵이다.

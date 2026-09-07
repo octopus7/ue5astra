@@ -1,0 +1,178 @@
+{
+  "units": "cm",
+  "waterfall_height_cm": 220,
+  "pool_width_cm": 360,
+  "assets": [
+    {
+      "name": "SM_WF_WaterCurtain",
+      "fbx": "FBX/SM_WF_WaterCurtain.fbx",
+      "triangles": 720,
+      "uv_channels": 1,
+      "materials": [
+        "WF_Water"
+      ],
+      "dimensions_cm": [
+        136.0,
+        101.48795318603516,
+        228.20001220703125
+      ]
+    },
+    {
+      "name": "SM_WF_Pool",
+      "fbx": "FBX/SM_WF_Pool.fbx",
+      "triangles": 576,
+      "uv_channels": 1,
+      "materials": [
+        "WF_Pool"
+      ],
+      "dimensions_cm": [
+        364.671630859375,
+        292.6431884765625,
+        0.0
+      ]
+    },
+    {
+      "name": "SM_WF_ImpactApron",
+      "fbx": "FBX/SM_WF_ImpactApron.fbx",
+      "triangles": 640,
+      "uv_channels": 1,
+      "materials": [
+        "WF_ImpactFoam"
+      ],
+      "dimensions_cm": [
+        194.1995849609375,
+        95.98487854003906,
+        21.704952239990234
+      ]
+    },
+    {
+      "name": "SM_WF_UpperStream",
+      "fbx": "FBX/SM_WF_UpperStream.fbx",
+      "triangles": 2,
+      "uv_channels": 1,
+      "materials": [
+        "WF_Water"
+      ],
+      "dimensions_cm": [
+        94.0,
+        102.0,
+        6.0
+      ]
+    },
+    {
+      "name": "SM_WF_Rockwork",
+      "fbx": "FBX/SM_WF_Rockwork.fbx",
+      "triangles": 2640,
+      "uv_channels": 1,
+      "materials": [
+        "WF_Rock"
+      ],
+      "dimensions_cm": [
+        449.48919677734375,
+        433.34857177734375,
+        276.37054443359375
+      ]
+    },
+    {
+      "name": "SM_WF_Moss",
+      "fbx": "FBX/SM_WF_Moss.fbx",
+      "triangles": 780,
+      "uv_channels": 1,
+      "materials": [
+        "WF_Moss"
+      ],
+      "dimensions_cm": [
+        430.22064208984375,
+        437.25482177734375,
+        241.05471801757812
+      ]
+    },
+    {
+      "name": "SM_WF_Ground",
+      "fbx": "FBX/SM_WF_Ground.fbx",
+      "triangles": 448,
+      "uv_channels": 1,
+      "materials": [
+        "WF_Moss",
+        "WF_Earth"
+      ],
+      "dimensions_cm": [
+        722.8129272460938,
+        605.59228515625,
+        35.0
+      ]
+    },
+    {
+      "name": "SM_WF_Foliage",
+      "fbx": "FBX/SM_WF_Foliage.fbx",
+      "triangles": 2950,
+      "uv_channels": 1,
+      "materials": [
+        "WF_LeafLight",
+        "WF_Flower",
+        "WF_Leaf"
+      ],
+      "dimensions_cm": [
+        604.7039794921875,
+        588.7440795898438,
+        175.23965454101562
+      ]
+    },
+    {
+      "name": "SM_WF_RippleRing",
+      "fbx": "FBX/SM_WF_RippleRing.fbx",
+      "triangles": 128,
+      "uv_channels": 1,
+      "materials": [
+        "WF_Foam"
+      ],
+      "dimensions_cm": [
+        22.273555755615234,
+        21.67943572998047,
+        0.0
+      ]
+    },
+    {
+      "name": "SM_WF_LocatorImpact",
+      "fbx": "FBX/SM_WF_LocatorImpact.fbx",
+      "triangles": 12,
+      "uv_channels": 1,
+      "materials": [
+        "WF_Foam"
+      ],
+      "dimensions_cm": [
+        0.10000000149011612,
+        0.09999847412109375,
+        0.10000038146972656
+      ]
+    },
+    {
+      "name": "SM_WF_LocatorView",
+      "fbx": "FBX/SM_WF_LocatorView.fbx",
+      "triangles": 12,
+      "uv_channels": 1,
+      "materials": [
+        "WF_Foam"
+      ],
+      "dimensions_cm": [
+        0.0999755859375,
+        0.0999755859375,
+        0.0999755859375
+      ]
+    },
+    {
+      "name": "SM_WF_LocatorLookAt",
+      "fbx": "FBX/SM_WF_LocatorLookAt.fbx",
+      "triangles": 12,
+      "uv_channels": 1,
+      "materials": [
+        "WF_Foam"
+      ],
+      "dimensions_cm": [
+        0.10000000149011612,
+        0.09999847412109375,
+        0.100006103515625
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "units": "cm",
+  "wind_channel": "VertexColor.R",
+  "assets": [
+    {
+      "name": "SM_WF_GrassTuft",
+      "fbx": "FBX/SM_WF_GrassTuft.fbx",
+      "triangles": 80,
+      "blades": 8,
+      "dimensions_cm": [
+        43.08416938781738,
+        22.292622566223145,
+        29.121170043945312
+      ],
+      "vertex_color": "WindWeight",
+      "wind_weight_min": 0,
+      "wind_weight_max": 1,
+      "uv_channels": 1
+    },
+    {
+      "name": "SM_WF_GrassFan",
+      "fbx": "FBX/SM_WF_GrassFan.fbx",
+      "triangles": 100,
+      "blades": 10,
+      "dimensions_cm": [
+        44.970542907714844,
+        19.633071899414062,
+        23.47629737854004
+      ],
+      "vertex_color": "WindWeight",
+      "wind_weight_min": 0,
+      "wind_weight_max": 1,
+      "uv_channels": 1
+    },
+    {
+      "name": "SM_WF_GrassSedge",
+      "fbx": "FBX/SM_WF_GrassSedge.fbx",
+      "triangles": 60,
+      "blades": 6,
+      "dimensions_cm": [
+        32.50189399719238,
+        8.117752075195312,
+        38.349761962890625
+      ],
+      "vertex_color": "WindWeight",
+      "wind_weight_min": 0,
+      "wind_weight_max": 1,
+      "uv_channels": 1
+    }
+  ]
+}
