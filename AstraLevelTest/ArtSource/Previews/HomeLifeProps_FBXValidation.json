@@ -1,0 +1,62 @@
+{
+  "source": "ArtSource/Blender/HomeLifeProps.blend",
+  "method": "FBX reimport into Blender; bounds, slot order, finite vertices and closed-solid geometry",
+  "assets": [
+    {
+      "asset_id": "SM_HomeClothesline",
+      "fbx_sha256": "b2272ba16bc7e0e39962b0dbbfc51f47214f6d76eba6dd52e36b2cfc812a87c8",
+      "dimensions_max_error_m": 0.0,
+      "origin_zero": true,
+      "material_slots_match": true,
+      "finite_vertices": true,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "passed": true
+    },
+    {
+      "asset_id": "SM_VegetablePatch",
+      "fbx_sha256": "65206b37697bacddf3932bb5b1c61ac465fa3d487c4b026b63b9b42ae5f1bae6",
+      "dimensions_max_error_m": 0.0,
+      "origin_zero": true,
+      "material_slots_match": true,
+      "finite_vertices": true,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "passed": true
+    },
+    {
+      "asset_id": "SM_WateringTools",
+      "fbx_sha256": "32f74d0e1dd7c7980d1c61e7a8e5a6daf94cc0074ae41b8ae54268a711f31786",
+      "dimensions_max_error_m": 0.0,
+      "origin_zero": true,
+      "material_slots_match": true,
+      "finite_vertices": true,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "passed": true
+    },
+    {
+      "asset_id": "SM_BootsAndBroom",
+      "fbx_sha256": "f2765644eb834780a4ddebb4d2a66176144786188b2d491298b066d1d1a02aca",
+      "dimensions_max_error_m": 0.0,
+      "origin_zero": true,
+      "material_slots_match": true,
+      "finite_vertices": true,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "passed": true
+    },
+    {
+      "asset_id": "SM_HerbDryingRack",
+      "fbx_sha256": "86fb2a851bcf66dbe6501321fb4ceb6c60070c904ca9d855d21cd341001f2976",
+      "dimensions_max_error_m": 0.0,
+      "origin_zero": true,
+      "material_slots_match": true,
+      "finite_vertices": true,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

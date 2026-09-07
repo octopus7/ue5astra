@@ -1,0 +1,295 @@
+{
+  "source": "ArtSource/Blender/WoodlandLifeProps.blend",
+  "script": "Scripts/build_woodland_life_props.py",
+  "reference": "ArtSource/Reference/Ref_WoodlandLifeProps.png",
+  "units": "metres",
+  "unreal_conversion": "(X,-Y,Z)*100",
+  "palette_srgb_hex": {
+    "M_WoodlandLife_Wood": "A97B46",
+    "M_WoodlandLife_WoodLight": "CDA56A",
+    "M_WoodlandLife_WoodDark": "79583B",
+    "M_WoodlandLife_WoodEnd": "DFC08A",
+    "M_WoodlandLife_Iron": "3F626A",
+    "M_WoodlandLife_IronEdge": "77908E",
+    "M_WoodlandLife_Rope": "CCB68A",
+    "M_WoodlandLife_Cream": "F0E2BD",
+    "M_WoodlandLife_Sage": "91A989",
+    "M_WoodlandLife_SageLight": "BDCAA5",
+    "M_WoodlandLife_Teal": "559DA6",
+    "M_WoodlandLife_Berry": "C85E57",
+    "M_WoodlandLife_Mushroom": "DDA04E",
+    "M_WoodlandLife_Bread": "BE813C",
+    "M_WoodlandLife_Leaf": "5E8B63"
+  },
+  "material_properties": {
+    "M_WoodlandLife_Wood": {
+      "roughness": 0.88,
+      "metallic": 0
+    },
+    "M_WoodlandLife_WoodLight": {
+      "roughness": 0.88,
+      "metallic": 0
+    },
+    "M_WoodlandLife_WoodDark": {
+      "roughness": 0.88,
+      "metallic": 0
+    },
+    "M_WoodlandLife_WoodEnd": {
+      "roughness": 0.88,
+      "metallic": 0
+    },
+    "M_WoodlandLife_Iron": {
+      "roughness": 0.44,
+      "metallic": 0.35
+    },
+    "M_WoodlandLife_IronEdge": {
+      "roughness": 0.44,
+      "metallic": 0.35
+    },
+    "M_WoodlandLife_Rope": {
+      "roughness": 0.88,
+      "metallic": 0
+    },
+    "M_WoodlandLife_Cream": {
+      "roughness": 0.88,
+      "metallic": 0
+    },
+    "M_WoodlandLife_Sage": {
+      "roughness": 0.88,
+      "metallic": 0
+    },
+    "M_WoodlandLife_SageLight": {
+      "roughness": 0.88,
+      "metallic": 0
+    },
+    "M_WoodlandLife_Teal": {
+      "roughness": 0.44,
+      "metallic": 0
+    },
+    "M_WoodlandLife_Berry": {
+      "roughness": 0.88,
+      "metallic": 0
+    },
+    "M_WoodlandLife_Mushroom": {
+      "roughness": 0.88,
+      "metallic": 0
+    },
+    "M_WoodlandLife_Bread": {
+      "roughness": 0.88,
+      "metallic": 0
+    },
+    "M_WoodlandLife_Leaf": {
+      "roughness": 0.88,
+      "metallic": 0
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "SM_ChoppingStump",
+      "file": "ArtSource/Meshes/SM_ChoppingStump.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        1.573982,
+        1.509998,
+        1.378403
+      ],
+      "bounds_min_m": [
+        -0.924216,
+        -0.746014,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.649766,
+        0.763985,
+        1.378403
+      ],
+      "vertices": 2044,
+      "triangles": 3956,
+      "material_slots": [
+        "M_WoodlandLife_WoodDark",
+        "M_WoodlandLife_WoodEnd",
+        "M_WoodlandLife_WoodLight",
+        "M_WoodlandLife_Wood",
+        "M_WoodlandLife_Iron"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0,
+        "uv0_finite": true
+      },
+      "normal_import_method": "FBXNIM_IMPORT_NORMALS_AND_TANGENTS"
+    },
+    {
+      "asset_id": "SM_ForagingBasket",
+      "file": "ArtSource/Meshes/SM_ForagingBasket.fbx",
+      "collision": "none",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        0.87869,
+        0.956357,
+        0.792517
+      ],
+      "bounds_min_m": [
+        -0.480648,
+        -0.679857,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.398042,
+        0.2765,
+        0.792517
+      ],
+      "vertices": 3134,
+      "triangles": 6088,
+      "material_slots": [
+        "M_WoodlandLife_WoodDark",
+        "M_WoodlandLife_WoodLight",
+        "M_WoodlandLife_Wood",
+        "M_WoodlandLife_Rope",
+        "M_WoodlandLife_Cream",
+        "M_WoodlandLife_Mushroom",
+        "M_WoodlandLife_Berry",
+        "M_WoodlandLife_Sage",
+        "M_WoodlandLife_SageLight"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0,
+        "uv0_finite": true
+      },
+      "normal_import_method": "FBXNIM_IMPORT_NORMALS_AND_TANGENTS"
+    },
+    {
+      "asset_id": "SM_PicnicSet",
+      "file": "ArtSource/Meshes/SM_PicnicSet.fbx",
+      "collision": "none",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        2.113985,
+        2.0,
+        0.648307
+      ],
+      "bounds_min_m": [
+        -1.056992,
+        -1.0,
+        0.0
+      ],
+      "bounds_max_m": [
+        1.056992,
+        1.0,
+        0.648307
+      ],
+      "vertices": 3568,
+      "triangles": 6844,
+      "material_slots": [
+        "M_WoodlandLife_Cream",
+        "M_WoodlandLife_SageLight",
+        "M_WoodlandLife_Sage",
+        "M_WoodlandLife_WoodDark",
+        "M_WoodlandLife_WoodLight",
+        "M_WoodlandLife_Wood",
+        "M_WoodlandLife_Rope",
+        "M_WoodlandLife_Bread",
+        "M_WoodlandLife_WoodEnd",
+        "M_WoodlandLife_Teal",
+        "M_WoodlandLife_Berry",
+        "M_WoodlandLife_Leaf"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0,
+        "uv0_finite": true
+      },
+      "normal_import_method": "FBXNIM_IMPORT_NORMALS_AND_TANGENTS"
+    },
+    {
+      "asset_id": "SM_BridgeRepairSupplies",
+      "file": "ArtSource/Meshes/SM_BridgeRepairSupplies.fbx",
+      "collision": "none",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        1.9782,
+        1.245618,
+        0.5325
+      ],
+      "bounds_min_m": [
+        -0.875,
+        -0.6445,
+        0.0
+      ],
+      "bounds_max_m": [
+        1.1032,
+        0.601118,
+        0.5325
+      ],
+      "vertices": 1970,
+      "triangles": 3836,
+      "material_slots": [
+        "M_WoodlandLife_WoodEnd",
+        "M_WoodlandLife_WoodLight",
+        "M_WoodlandLife_Rope",
+        "M_WoodlandLife_WoodDark",
+        "M_WoodlandLife_Wood",
+        "M_WoodlandLife_Iron",
+        "M_WoodlandLife_IronEdge"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0,
+        "uv0_finite": true
+      },
+      "normal_import_method": "FBXNIM_IMPORT_NORMALS_AND_TANGENTS"
+    },
+    {
+      "asset_id": "SM_WoodHandcart",
+      "file": "ArtSource/Meshes/SM_WoodHandcart.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        2.270752,
+        1.506,
+        1.246
+      ],
+      "bounds_min_m": [
+        -1.455752,
+        -0.753,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.815,
+        0.753,
+        1.246
+      ],
+      "vertices": 5752,
+      "triangles": 11140,
+      "material_slots": [
+        "M_WoodlandLife_Wood",
+        "M_WoodlandLife_WoodLight",
+        "M_WoodlandLife_Iron",
+        "M_WoodlandLife_WoodDark"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0,
+        "uv0_finite": true
+      },
+      "normal_import_method": "FBXNIM_IMPORT_NORMALS_AND_TANGENTS"
+    }
+  ]
+}

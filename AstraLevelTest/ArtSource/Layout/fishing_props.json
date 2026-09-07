@@ -1,0 +1,289 @@
+{
+  "source": "ArtSource/Blender/FishingProps.blend",
+  "script": "Scripts/build_fishing_props.py",
+  "reference": "ArtSource/Reference/Ref_FishingProps.png",
+  "units": "metres",
+  "unreal_conversion": "(Blender X, -Blender Y, Blender Z) * 100; forward +X",
+  "palette_srgb_hex": {
+    "M_Fishing_Wood": "A77C45",
+    "M_Fishing_WoodLight": "CBA770",
+    "M_Fishing_WoodDark": "796047",
+    "M_Fishing_Cream": "E7DABB",
+    "M_Fishing_Sage": "869C7B",
+    "M_Fishing_Teal": "4B858A",
+    "M_Fishing_Metal": "78999F",
+    "M_Fishing_Coral": "CE806A",
+    "M_Fishing_FishSilver": "BAD0CA",
+    "M_Fishing_Water": "5AABB5",
+    "M_Fishing_Dark": "394F59"
+  },
+  "material_properties": {
+    "M_Fishing_Wood": {
+      "roughness": 0.84,
+      "metallic": 0,
+      "specular": 0.25,
+      "emissive_strength": 0
+    },
+    "M_Fishing_WoodLight": {
+      "roughness": 0.84,
+      "metallic": 0,
+      "specular": 0.25,
+      "emissive_strength": 0
+    },
+    "M_Fishing_WoodDark": {
+      "roughness": 0.84,
+      "metallic": 0,
+      "specular": 0.25,
+      "emissive_strength": 0
+    },
+    "M_Fishing_Cream": {
+      "roughness": 0.84,
+      "metallic": 0,
+      "specular": 0.25,
+      "emissive_strength": 0
+    },
+    "M_Fishing_Sage": {
+      "roughness": 0.84,
+      "metallic": 0,
+      "specular": 0.25,
+      "emissive_strength": 0
+    },
+    "M_Fishing_Teal": {
+      "roughness": 0.38,
+      "metallic": 0.25,
+      "specular": 0.25,
+      "emissive_strength": 0
+    },
+    "M_Fishing_Metal": {
+      "roughness": 0.38,
+      "metallic": 0.25,
+      "specular": 0.25,
+      "emissive_strength": 0
+    },
+    "M_Fishing_Coral": {
+      "roughness": 0.84,
+      "metallic": 0,
+      "specular": 0.25,
+      "emissive_strength": 0
+    },
+    "M_Fishing_FishSilver": {
+      "roughness": 0.84,
+      "metallic": 0,
+      "specular": 0.25,
+      "emissive_strength": 0
+    },
+    "M_Fishing_Water": {
+      "roughness": 0.18,
+      "metallic": 0,
+      "specular": 0.25,
+      "emissive_strength": 0
+    },
+    "M_Fishing_Dark": {
+      "roughness": 0.84,
+      "metallic": 0,
+      "specular": 0.25,
+      "emissive_strength": 0
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "SM_FishingRodStand",
+      "file": "ArtSource/Meshes/SM_FishingRodStand.fbx",
+      "collision": "none",
+      "front_axis_blender": "+X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        2.064317,
+        1.1,
+        1.690336
+      ],
+      "bounds_min_m": [
+        -0.481318,
+        -0.55,
+        0.0
+      ],
+      "bounds_max_m": [
+        1.583,
+        0.55,
+        1.690336
+      ],
+      "vertices": 1788,
+      "triangles": 3392,
+      "material_slots": [
+        "M_Fishing_Wood",
+        "M_Fishing_WoodDark",
+        "M_Fishing_WoodLight",
+        "M_Fishing_Teal",
+        "M_Fishing_Cream",
+        "M_Fishing_Sage",
+        "M_Fishing_Dark",
+        "M_Fishing_Metal",
+        "M_Fishing_Coral"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "uv_channel": 0
+      }
+    },
+    {
+      "asset_id": "SM_FishingChair",
+      "file": "ArtSource/Meshes/SM_FishingChair.fbx",
+      "collision": "none",
+      "front_axis_blender": "+X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        0.721553,
+        0.73,
+        0.827658
+      ],
+      "bounds_min_m": [
+        -0.380184,
+        -0.365,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.341369,
+        0.365,
+        0.827658
+      ],
+      "vertices": 748,
+      "triangles": 1424,
+      "material_slots": [
+        "M_Fishing_Wood",
+        "M_Fishing_WoodLight",
+        "M_Fishing_Metal",
+        "M_Fishing_Cream",
+        "M_Fishing_Sage"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "uv_channel": 0
+      }
+    },
+    {
+      "asset_id": "SM_FishBucket",
+      "file": "ArtSource/Meshes/SM_FishBucket.fbx",
+      "collision": "none",
+      "front_axis_blender": "+X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        0.637845,
+        0.630517,
+        0.704
+      ],
+      "bounds_min_m": [
+        -0.318923,
+        -0.315258,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.318923,
+        0.315258,
+        0.704
+      ],
+      "vertices": 1312,
+      "triangles": 2560,
+      "material_slots": [
+        "M_Fishing_Teal",
+        "M_Fishing_Water",
+        "M_Fishing_Metal",
+        "M_Fishing_WoodLight",
+        "M_Fishing_FishSilver",
+        "M_Fishing_Dark"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "uv_channel": 0
+      }
+    },
+    {
+      "asset_id": "SM_FishingTackleBox",
+      "file": "ArtSource/Meshes/SM_FishingTackleBox.fbx",
+      "collision": "none",
+      "front_axis_blender": "+X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        0.740163,
+        0.675,
+        0.753306
+      ],
+      "bounds_min_m": [
+        -0.381184,
+        -0.3375,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.358979,
+        0.3375,
+        0.753306
+      ],
+      "vertices": 2744,
+      "triangles": 5304,
+      "material_slots": [
+        "M_Fishing_WoodDark",
+        "M_Fishing_Teal",
+        "M_Fishing_Wood",
+        "M_Fishing_WoodLight",
+        "M_Fishing_Metal",
+        "M_Fishing_Cream",
+        "M_Fishing_Coral",
+        "M_Fishing_Sage"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "uv_channel": 0
+      }
+    }
+  ],
+  "fbx_roundtrip_validation": [
+    {
+      "asset_id": "SM_FishingRodStand",
+      "dimension_error_m": 4.6482849125339953e-07,
+      "uv_loops": 10176,
+      "finite_uv": true,
+      "custom_normals_imported": true,
+      "non_manifold_edges": 0,
+      "material_slots": 9
+    },
+    {
+      "asset_id": "SM_FishingChair",
+      "dimension_error_m": 3.552360534619936e-07,
+      "uv_loops": 4272,
+      "finite_uv": true,
+      "custom_normals_imported": true,
+      "non_manifold_edges": 0,
+      "material_slots": 5
+    },
+    {
+      "asset_id": "SM_FishBucket",
+      "dimension_error_m": 3.5170745849022467e-07,
+      "uv_loops": 7680,
+      "finite_uv": true,
+      "custom_normals_imported": true,
+      "non_manifold_edges": 0,
+      "material_slots": 6
+    },
+    {
+      "asset_id": "SM_FishingTackleBox",
+      "dimension_error_m": 1.475868225409016e-07,
+      "uv_loops": 15912,
+      "finite_uv": true,
+      "custom_normals_imported": true,
+      "non_manifold_edges": 0,
+      "material_slots": 8
+    }
+  ],
+  "placement_notes": "Local +X is towards the lake. Put rod stand near the outer +X deck edge; its short 0.21 m display lines remain on the asset. Chair sits 0.65\u20130.9 m behind the stand (-X), with bucket at its side and tackle box towards the dry shore side. All props are non-blocking decoration; keep a 1.0 m wide walking lane on the deck."
+}

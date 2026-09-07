@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "assets": [
+    {
+      "asset_id": "SM_ChoppingStump",
+      "dimensions_error_m": 0.0,
+      "triangles": 3956,
+      "same_triangles": true,
+      "uv0_finite": true,
+      "valid_material_indices": true,
+      "custom_normals": true,
+      "nonzero_faces": true,
+      "passed": true
+    },
+    {
+      "asset_id": "SM_ForagingBasket",
+      "dimensions_error_m": 0.0,
+      "triangles": 6088,
+      "same_triangles": true,
+      "uv0_finite": true,
+      "valid_material_indices": true,
+      "custom_normals": true,
+      "nonzero_faces": true,
+      "passed": true
+    },
+    {
+      "asset_id": "SM_PicnicSet",
+      "dimensions_error_m": 0.0,
+      "triangles": 6844,
+      "same_triangles": true,
+      "uv0_finite": true,
+      "valid_material_indices": true,
+      "custom_normals": true,
+      "nonzero_faces": true,
+      "passed": true
+    },
+    {
+      "asset_id": "SM_BridgeRepairSupplies",
+      "dimensions_error_m": 0.0,
+      "triangles": 3836,
+      "same_triangles": true,
+      "uv0_finite": true,
+      "valid_material_indices": true,
+      "custom_normals": true,
+      "nonzero_faces": true,
+      "passed": true
+    },
+    {
+      "asset_id": "SM_WoodHandcart",
+      "dimensions_error_m": 0.0,
+      "triangles": 11140,
+      "same_triangles": true,
+      "uv0_finite": true,
+      "valid_material_indices": true,
+      "custom_normals": true,
+      "nonzero_faces": true,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,371 @@
+{
+  "source": "ArtSource/Blender/HomeLifeProps.blend",
+  "script": "Scripts/build_home_life_props.py",
+  "reference": "ArtSource/Reference/Ref_HomeLifeProps.png",
+  "units": "metres",
+  "unreal_conversion": "(Blender X, -Blender Y, Blender Z) * 100; yaw negated",
+  "palette_srgb_hex": {
+    "M_HomeLife_Wood": "A87947",
+    "M_HomeLife_WoodLight": "CBA16B",
+    "M_HomeLife_WoodDark": "796049",
+    "M_HomeLife_Cream": "EBDEB8",
+    "M_HomeLife_Sage": "98AB82",
+    "M_HomeLife_SageShade": "738C79",
+    "M_HomeLife_Rope": "CBB58A",
+    "M_HomeLife_Soil": "79624E",
+    "M_HomeLife_SoilLight": "8A7360",
+    "M_HomeLife_Carrot": "E69B48",
+    "M_HomeLife_Pumpkin": "DFA049",
+    "M_HomeLife_PumpkinLight": "EABA64",
+    "M_HomeLife_Leaf": "668C58",
+    "M_HomeLife_LeafLight": "8BA66C",
+    "M_HomeLife_Iron": "6C8087",
+    "M_HomeLife_IronDark": "455860",
+    "M_HomeLife_Ochre": "C89851",
+    "M_HomeLife_Straw": "CBB270",
+    "M_HomeLife_StrawShade": "AD975D",
+    "M_HomeLife_Mushroom": "CAB185"
+  },
+  "material_properties": {
+    "M_HomeLife_Wood": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_HomeLife_WoodLight": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_HomeLife_WoodDark": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_HomeLife_Cream": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_HomeLife_Sage": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_HomeLife_SageShade": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_HomeLife_Rope": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_HomeLife_Soil": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_HomeLife_SoilLight": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_HomeLife_Carrot": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_HomeLife_Pumpkin": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_HomeLife_PumpkinLight": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_HomeLife_Leaf": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_HomeLife_LeafLight": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_HomeLife_Iron": {
+      "roughness": 0.45,
+      "metallic": 0.18
+    },
+    "M_HomeLife_IronDark": {
+      "roughness": 0.45,
+      "metallic": 0.18
+    },
+    "M_HomeLife_Ochre": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_HomeLife_Straw": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_HomeLife_StrawShade": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    },
+    "M_HomeLife_Mushroom": {
+      "roughness": 0.86,
+      "metallic": 0.0
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "SM_HomeClothesline",
+      "file": "ArtSource/Meshes/SM_HomeClothesline.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        0.211,
+        3.145905,
+        1.806402
+      ],
+      "bounds_min_m": [
+        -0.101,
+        -1.572952,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.11,
+        1.572952,
+        1.806402
+      ],
+      "vertices": 1104,
+      "triangles": 2092,
+      "material_slots": [
+        "M_HomeLife_Wood",
+        "M_HomeLife_WoodLight",
+        "M_HomeLife_Rope",
+        "M_HomeLife_Cream",
+        "M_HomeLife_Sage"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0,
+        "fbx_roundtrip": {
+          "asset_id": "SM_HomeClothesline",
+          "fbx_sha256": "b2272ba16bc7e0e39962b0dbbfc51f47214f6d76eba6dd52e36b2cfc812a87c8",
+          "dimensions_max_error_m": 0.0,
+          "origin_zero": true,
+          "material_slots_match": true,
+          "finite_vertices": true,
+          "non_manifold_edges": 0,
+          "degenerate_faces": 0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "asset_id": "SM_VegetablePatch",
+      "file": "ArtSource/Meshes/SM_VegetablePatch.fbx",
+      "collision": "none",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        2.053148,
+        2.06,
+        0.62
+      ],
+      "bounds_min_m": [
+        -1.026574,
+        -1.03,
+        0.0
+      ],
+      "bounds_max_m": [
+        1.026574,
+        1.03,
+        0.62
+      ],
+      "vertices": 1852,
+      "triangles": 3432,
+      "material_slots": [
+        "M_HomeLife_Soil",
+        "M_HomeLife_Wood",
+        "M_HomeLife_WoodLight",
+        "M_HomeLife_SoilLight",
+        "M_HomeLife_Pumpkin",
+        "M_HomeLife_PumpkinLight",
+        "M_HomeLife_WoodDark",
+        "M_HomeLife_LeafLight",
+        "M_HomeLife_Leaf",
+        "M_HomeLife_Carrot"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0,
+        "fbx_roundtrip": {
+          "asset_id": "SM_VegetablePatch",
+          "fbx_sha256": "65206b37697bacddf3932bb5b1c61ac465fa3d487c4b026b63b9b42ae5f1bae6",
+          "dimensions_max_error_m": 0.0,
+          "origin_zero": true,
+          "material_slots_match": true,
+          "finite_vertices": true,
+          "non_manifold_edges": 0,
+          "degenerate_faces": 0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "asset_id": "SM_WateringTools",
+      "file": "ArtSource/Meshes/SM_WateringTools.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        0.513335,
+        1.472331,
+        1.258902
+      ],
+      "bounds_min_m": [
+        -0.256668,
+        -0.913724,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.256668,
+        0.558607,
+        1.258902
+      ],
+      "vertices": 884,
+      "triangles": 1652,
+      "material_slots": [
+        "M_HomeLife_Sage",
+        "M_HomeLife_SageShade",
+        "M_HomeLife_Iron",
+        "M_HomeLife_IronDark",
+        "M_HomeLife_WoodLight"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0,
+        "fbx_roundtrip": {
+          "asset_id": "SM_WateringTools",
+          "fbx_sha256": "32f74d0e1dd7c7980d1c61e7a8e5a6daf94cc0074ae41b8ae54268a711f31786",
+          "dimensions_max_error_m": 0.0,
+          "origin_zero": true,
+          "material_slots_match": true,
+          "finite_vertices": true,
+          "non_manifold_edges": 0,
+          "degenerate_faces": 0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "asset_id": "SM_BootsAndBroom",
+      "file": "ArtSource/Meshes/SM_BootsAndBroom.fbx",
+      "collision": "none",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        0.478362,
+        1.537254,
+        1.33872
+      ],
+      "bounds_min_m": [
+        -0.255362,
+        -0.63,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.223,
+        0.907254,
+        1.33872
+      ],
+      "vertices": 1472,
+      "triangles": 2852,
+      "material_slots": [
+        "M_HomeLife_Ochre",
+        "M_HomeLife_WoodDark",
+        "M_HomeLife_SageShade",
+        "M_HomeLife_Wood",
+        "M_HomeLife_WoodLight",
+        "M_HomeLife_Straw",
+        "M_HomeLife_StrawShade",
+        "M_HomeLife_Rope"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0,
+        "fbx_roundtrip": {
+          "asset_id": "SM_BootsAndBroom",
+          "fbx_sha256": "f2765644eb834780a4ddebb4d2a66176144786188b2d491298b066d1d1a02aca",
+          "dimensions_max_error_m": 0.0,
+          "origin_zero": true,
+          "material_slots_match": true,
+          "finite_vertices": true,
+          "non_manifold_edges": 0,
+          "degenerate_faces": 0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "asset_id": "SM_HerbDryingRack",
+      "file": "ArtSource/Meshes/SM_HerbDryingRack.fbx",
+      "collision": "complex",
+      "front_axis_blender": "-X",
+      "origin": "ground at (0, 0, 0)",
+      "dimensions_m": [
+        0.48,
+        1.52,
+        1.300602
+      ],
+      "bounds_min_m": [
+        -0.24,
+        -0.76,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.24,
+        0.76,
+        1.300602
+      ],
+      "vertices": 1358,
+      "triangles": 2400,
+      "material_slots": [
+        "M_HomeLife_Wood",
+        "M_HomeLife_WoodLight",
+        "M_HomeLife_Rope",
+        "M_HomeLife_Leaf",
+        "M_HomeLife_LeafLight",
+        "M_HomeLife_Cream",
+        "M_HomeLife_Mushroom"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0,
+        "fbx_roundtrip": {
+          "asset_id": "SM_HerbDryingRack",
+          "fbx_sha256": "86fb2a851bcf66dbe6501321fb4ceb6c60070c904ca9d855d21cd341001f2976",
+          "dimensions_max_error_m": 0.0,
+          "origin_zero": true,
+          "material_slots_match": true,
+          "finite_vertices": true,
+          "non_manifold_edges": 0,
+          "degenerate_faces": 0,
+          "passed": true
+        }
+      }
+    }
+  ],
+  "placement_notes": "Front is -X for every set. Clothesline and drying rack span local Y, with cloth/herbs facing the camera at Unreal yaw 0. Vegetable patch and boots are decorative with no collision. Set the origin on the ground; use independent actors so the house approach remains open.",
+  "collision_notes": {
+    "SM_HomeClothesline": "complex; poles and hanging cloth, place clear of walking paths",
+    "SM_VegetablePatch": "none; decorative low frame, soil and plants",
+    "SM_WateringTools": "complex; upright spade and watering can",
+    "SM_BootsAndBroom": "none; small decorative shoes and broom",
+    "SM_HerbDryingRack": "complex; rack, feet and hanging decorative herbs"
+  }
+}

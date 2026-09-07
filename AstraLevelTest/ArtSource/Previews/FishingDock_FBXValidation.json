@@ -1,0 +1,149 @@
+{
+  "asset_id": "SM_FishingDock",
+  "passed": true,
+  "checks": {
+    "single_imported_mesh": true,
+    "exact_source_vertex_count": true,
+    "exact_source_triangle_count": true,
+    "source_and_fbx_closed": true,
+    "no_degenerate_faces": true,
+    "finite_vertices_and_uv0": true,
+    "exact_roundtrip_bounds": true,
+    "metadata_dimensions_match": true,
+    "pile_bottom_at_zero": true,
+    "origin_and_scale_preserved": true,
+    "custom_normals_preserved": true,
+    "ordered_material_slots_preserved": true,
+    "material_indices_valid": true,
+    "continuous_supported_center_samples": true,
+    "platform_surface_matches_metadata": true
+  },
+  "source": {
+    "vertices": 5136,
+    "triangles": 9880,
+    "finite_vertices": true,
+    "non_manifold_edges": 0,
+    "degenerate_faces": 0,
+    "dimensions_m": [
+      8.744999885559082,
+      4.489999771118164,
+      3.2528042793273926
+    ],
+    "bounds_min_m": [
+      -2.43999981880188,
+      -2.244999885559082,
+      0.0
+    ],
+    "bounds_max_m": [
+      6.304999828338623,
+      2.244999885559082,
+      3.2528042793273926
+    ],
+    "material_slots": [
+      "M_DockWoodLight",
+      "M_DockNail",
+      "M_DockWood",
+      "M_DockWoodDark",
+      "M_DockEnd",
+      "M_DockRope"
+    ],
+    "uv0_finite": true,
+    "material_indices_valid": true,
+    "custom_normals": false,
+    "normals_finite_unit_length": true,
+    "origin_translation_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "fresh_fbx_import": {
+    "vertices": 5136,
+    "triangles": 9880,
+    "finite_vertices": true,
+    "non_manifold_edges": 0,
+    "degenerate_faces": 0,
+    "dimensions_m": [
+      8.744999885559082,
+      4.489999771118164,
+      3.2528042793273926
+    ],
+    "bounds_min_m": [
+      -2.43999981880188,
+      -2.244999885559082,
+      0.0
+    ],
+    "bounds_max_m": [
+      6.304999828338623,
+      2.244999885559082,
+      3.2528042793273926
+    ],
+    "material_slots": [
+      "M_DockWoodLight.001",
+      "M_DockNail.001",
+      "M_DockWood.001",
+      "M_DockWoodDark.001",
+      "M_DockEnd.001",
+      "M_DockRope.001"
+    ],
+    "uv0_finite": true,
+    "material_indices_valid": true,
+    "custom_normals": true,
+    "normals_finite_unit_length": true,
+    "origin_translation_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "maximum_dimensions_error_m": 0.0,
+  "maximum_bounds_error_m": 0.0,
+  "maximum_metadata_dimensions_error_m": 2.793273927714779e-07,
+  "surface_samples": [
+    {
+      "location": "ramp_foot",
+      "x_m": -2.28,
+      "y_m": 0,
+      "height_m": 2.152637481689453,
+      "normal_z": 0.9961936473846436
+    },
+    {
+      "location": "ramp_mid",
+      "x_m": -1.2,
+      "y_m": 0,
+      "height_m": 2.245000123977661,
+      "normal_z": 0.9961937665939331
+    },
+    {
+      "location": "walkway",
+      "x_m": 1.36,
+      "y_m": 0,
+      "height_m": 2.3500001430511475,
+      "normal_z": 1.0
+    },
+    {
+      "location": "platform",
+      "x_m": 4.6,
+      "y_m": 0,
+      "height_m": 2.3500003814697266,
+      "normal_z": 1.0
+    }
+  ],
+  "fbx_sha256": "318d7035571f83a269e951826c54f180bee29cd2e6aabefc877cf9085e5b7349",
+  "metadata_sha256": "cf331fbe4b9acbb05bbb71251e66c8e887af4504abd01cccb4f85b8b1904c722",
+  "preview_visual_review": {
+    "path": "ArtSource/Previews/Blender_FishingDock.png",
+    "result": "Reviewed: open fishing edge, broad platform, clear approach, readable wood grain and soft post shading.",
+    "scope": "Geometry/asset validation; runtime walkability is verified separately by the main integration."
+  }
+}

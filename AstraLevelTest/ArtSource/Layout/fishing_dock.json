@@ -1,0 +1,128 @@
+{
+  "source": "ArtSource/Blender/FishingDock.blend",
+  "script": "Scripts/build_fishing_dock.py",
+  "reference": "ArtSource/Reference/Ref_FishingDock.png",
+  "palette_srgb_hex": {
+    "M_DockWood": "B9905E",
+    "M_DockWoodLight": "CAA775",
+    "M_DockWoodDark": "80603E",
+    "M_DockEnd": "BE996A",
+    "M_DockRope": "D2C199",
+    "M_DockNail": "59626A"
+  },
+  "material_properties": {
+    "M_DockWood": {
+      "roughness": 0.86,
+      "metallic": 0,
+      "specular": 0.15,
+      "base_color_texture": "Textures/T_FishingDockWood.png",
+      "tint_linear": [
+        1,
+        1,
+        1
+      ]
+    },
+    "M_DockWoodLight": {
+      "roughness": 0.86,
+      "metallic": 0,
+      "specular": 0.15,
+      "base_color_texture": "Textures/T_FishingDockWood.png",
+      "tint_linear": [
+        1.12,
+        1.1,
+        1.04
+      ]
+    },
+    "M_DockWoodDark": {
+      "roughness": 0.86,
+      "metallic": 0,
+      "specular": 0.15,
+      "base_color_texture": "Textures/T_FishingDockWood.png",
+      "tint_linear": [
+        0.63,
+        0.64,
+        0.64
+      ]
+    },
+    "M_DockEnd": {
+      "roughness": 0.86,
+      "metallic": 0,
+      "specular": 0.15
+    },
+    "M_DockRope": {
+      "roughness": 0.86,
+      "metallic": 0,
+      "specular": 0.15
+    },
+    "M_DockNail": {
+      "roughness": 0.86,
+      "metallic": 0,
+      "specular": 0.15
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "SM_FishingDock",
+      "file": "ArtSource/Meshes/SM_FishingDock.fbx",
+      "collision": "complex",
+      "front_axis_blender": "+X",
+      "origin": "pile bottom, deck surface at local Z 2.35m",
+      "dimensions_m": [
+        8.745,
+        4.49,
+        3.252804
+      ],
+      "bounds_min_m": [
+        -2.44,
+        -2.245,
+        0.0
+      ],
+      "bounds_max_m": [
+        6.305,
+        2.245,
+        3.252804
+      ],
+      "vertices": 5136,
+      "triangles": 9880,
+      "material_slots": [
+        "M_DockWoodLight",
+        "M_DockNail",
+        "M_DockWood",
+        "M_DockWoodDark",
+        "M_DockEnd",
+        "M_DockRope"
+      ],
+      "validation": {
+        "finite_vertices": true,
+        "ground_origin": true,
+        "degenerate_faces": 0,
+        "non_manifold_edges": 0
+      },
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS"
+    }
+  ],
+  "deck_surface_local_z_m": 2.35,
+  "bank_approach_local": [
+    -2.4,
+    0,
+    2.14
+  ],
+  "walkway_bounds_xy_m": [
+    0,
+    3,
+    -0.9,
+    0.9
+  ],
+  "platform_bounds_xy_m": [
+    3,
+    6.2,
+    -2,
+    2
+  ],
+  "placement_ue_m": [
+    4,
+    28,
+    -1.5
+  ],
+  "forward_axis": "+X"
+}
