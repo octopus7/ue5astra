@@ -14,12 +14,14 @@
 #include "NiagaraSystem.h"
 #include "NiagaraSystemEmitterState.h"
 #include "Serialization/JsonSerializer.h"
+#include "StaticMeshResources.h"
 #include "Stateless/NiagaraStatelessEmitter.h"
 #include "Stateless/Modules/NiagaraStatelessModule_AddVelocity.h"
 #include "Stateless/Modules/NiagaraStatelessModule_Drag.h"
 #include "Stateless/Modules/NiagaraStatelessModule_GravityForce.h"
 #include "Stateless/Modules/NiagaraStatelessModule_InitialMeshOrientation.h"
 #include "Stateless/Modules/NiagaraStatelessModule_InitializeParticle.h"
+#include "Stateless/Modules/NiagaraStatelessModule_MeshIndex.h"
 #include "Stateless/Modules/NiagaraStatelessModule_MeshRotationRate.h"
 #include "Stateless/Modules/NiagaraStatelessModule_ScaleColor.h"
 #include "Stateless/Modules/NiagaraStatelessModule_ScaleSpriteSize.h"
@@ -45,6 +47,35 @@ namespace AstraNiagara
     constexpr const TCHAR* TemplatePath = TEXT("/Niagara/DefaultAssets/Templates/Systems/FountainLightweight.FountainLightweight");
     const FBox EffectBounds(FVector(-49.0), FVector(49.0));
 
+    bool LoadDebrisMeshes(TArray<UStaticMesh*>& OutMeshes)
+    {
+        const TCHAR* Names[] = {
+            TEXT("SM_HexBolt"), TEXT("SM_HexNut"), TEXT("SM_CoilSpring"),
+            TEXT("SM_SpurGear"), TEXT("SM_Washer"), TEXT("SM_ShaftCoupler")
+        };
+        for (const TCHAR* Name : Names)
+        {
+            const FString Path = FString::Printf(TEXT("/Game/VFX/SmallDestruction/Meshes/%s.%s"), Name, Name);
+            UStaticMesh* Mesh = LoadObject<UStaticMesh>(nullptr, *Path);
+            if (!Mesh)
+            {
+                UE_LOG(LogAstraNiagara, Error, TEXT("Required mechanical debris mesh is missing: %s"), *Path);
+                return false;
+            }
+            // Account for an off-center pivot as well as mesh size. The 1.2x scale and
+            // ballistic envelope then remain inside the effect's 49 cm local radius.
+            const FBoxSphereBounds Bounds = Mesh->GetBounds();
+            const double PivotRadius = Bounds.Origin.Size() + Bounds.SphereRadius;
+            if (Bounds.SphereRadius <= 0.0 || PivotRadius > 5.0)
+            {
+                UE_LOG(LogAstraNiagara, Error, TEXT("Mechanical debris %s must have geometry within 5 cm of its pivot (found %.3f cm)"), *Path, PivotRadius);
+                return false;
+            }
+            OutMeshes.Add(Mesh);
+        }
+        return true;
+    }
+
     template<typename T>
     T* GetModule(UNiagaraStatelessEmitter* Emitter)
     {
@@ -66,6 +97,15 @@ namespace AstraNiagara
         Distribution.Min = Min;
         Distribution.Max = Max;
         Distribution.ChannelConstantsAndRanges = { Min.X, Min.Y, Min.Z, Max.X, Max.Y, Max.Z };
+        Distribution.ChannelCurves.Reset();
+    }
+
+    void UniformMeshScale(FNiagaraDistributionRangeVector3& Distribution, float Min, float Max)
+    {
+        Distribution.Mode = ENiagaraDistributionMode::UniformRange;
+        Distribution.Min = FVector3f(Min);
+        Distribution.Max = FVector3f(Max);
+        Distribution.ChannelConstantsAndRanges = { Min, Max };
         Distribution.ChannelCurves.Reset();
     }
 
@@ -115,7 +155,8 @@ namespace AstraNiagara
         Distribution.UpdateValuesFromDistribution();
     }
 
-    bool ConfigureEmitter(UNiagaraStatelessEmitter* Emitter, int32 Index, UMaterialInterface* Material, bool bLooping)
+    bool ConfigureEmitter(UNiagaraStatelessEmitter* Emitter, int32 Index, UMaterialInterface* Material,
+        bool bLooping, const TArray<UStaticMesh*>& DebrisMeshes)
     {
         Emitter->Modify();
         for (UNiagaraStatelessModule* Module : Emitter->GetModules())
@@ -146,7 +187,7 @@ namespace AstraNiagara
             FGuid SourceId = Emitter->GetSpawnInfoByIndex(0)->SourceId;
             Emitter->RemoveSpawnInfoBySourceId(SourceId);
         }
-        const int32 Counts[] = { 14, 9, 11, 2 };
+        const int32 Counts[] = { 22, 9, 11, 2 };
         const float StartTimes[] = { 0.0f, 0.0f, 0.045f, 0.0f };
         FNiagaraStatelessSpawnInfo& Spawn = Emitter->AddSpawnInfo();
         Spawn.Type = ENiagaraStatelessSpawnInfoType::Burst;
@@ -169,14 +210,19 @@ namespace AstraNiagara
 
         if (Index == 0)
         {
-            Initialize->LifetimeDistribution.InitRange(0.38f, 0.48f);
+            Initialize->LifetimeDistribution.InitRange(0.36f, 0.46f);
             Initialize->ColorDistribution.InitConstant(FLinearColor(0.35f, 0.30f, 0.24f, 1.0f));
-            VectorRange(Initialize->MeshScaleDistribution, FVector3f(0.014f, 0.018f, 0.012f), FVector3f(0.033f, 0.028f, 0.025f));
-            VectorRange(Velocity->LinearVelocityDistribution, FVector3f(-45.0f, -45.0f, 110.0f), FVector3f(45.0f, 45.0f, 160.0f));
+            UniformMeshScale(Initialize->MeshScaleDistribution, 0.8f, 1.2f);
+            VectorRange(Velocity->LinearVelocityDistribution, FVector3f(-42.0f, -42.0f, 110.0f), FVector3f(42.0f, 42.0f, 155.0f));
             auto* Gravity = GetModule<UNiagaraStatelessModule_GravityForce>(Emitter);
             auto* Orientation = GetModule<UNiagaraStatelessModule_InitialMeshOrientation>(Emitter);
             auto* Rotation = GetModule<UNiagaraStatelessModule_MeshRotationRate>(Emitter);
-            if (!Gravity || !Orientation || !Rotation) { return false; }
+            auto* MeshIndex = GetModule<UNiagaraStatelessModule_MeshIndex>(Emitter);
+            if (!Gravity || !Orientation || !Rotation || !MeshIndex || DebrisMeshes.IsEmpty()) { return false; }
+            MeshIndex->MeshIndex.Mode = ENiagaraDistributionMode::UniformRange;
+            MeshIndex->MeshIndex.Min = 0;
+            MeshIndex->MeshIndex.Max = DebrisMeshes.Num() - 1;
+            MeshIndex->MeshIndexWeight.Init(1.0f, DebrisMeshes.Num());
             Gravity->GravityDistribution.InitConstant(FVector3f(0.0f, 0.0f, -700.0f));
             Orientation->MeshOrientationMode = ENSMInitialMeshOrientationMode::Random;
             Rotation->bUseRateScale = false;
@@ -219,9 +265,18 @@ namespace AstraNiagara
         if (Index == 0)
         {
             auto* Renderer = NewObject<UNiagaraMeshRendererProperties>(Emitter, NAME_None, RF_Transactional);
-            Renderer->Meshes.SetNum(1);
-            Renderer->Meshes[0].Mesh = LoadObject<UStaticMesh>(nullptr, TEXT("/Engine/BasicShapes/Cube.Cube"));
-            if (!Renderer->Meshes[0].Mesh) { return false; }
+            Renderer->Meshes.SetNum(DebrisMeshes.Num());
+            for (int32 MeshIndex = 0; MeshIndex < DebrisMeshes.Num(); ++MeshIndex)
+            {
+                Renderer->Meshes[MeshIndex].Mesh = DebrisMeshes[MeshIndex];
+                Renderer->Meshes[MeshIndex].Scale = FVector::OneVector;
+                // Use each small part's screen size at the burst origin. Using the
+                // system's 98 cm bounds would keep these 2-4 cm parts at excessive
+                // detail, while per-particle LOD adds a dispatch/draw per LOD.
+                Renderer->Meshes[MeshIndex].LODMode = ENiagaraMeshLODMode::ComponentOrigin;
+                Renderer->Meshes[MeshIndex].LODDistanceFactor = 1.0f;
+            }
+            Renderer->SourceMode = ENiagaraRendererSourceDataMode::Particles;
             Renderer->FacingMode = ENiagaraMeshFacingMode::Default;
             Renderer->bOverrideMaterials = true;
             Renderer->OverrideMaterials.SetNum(1);
@@ -247,6 +302,8 @@ UNiagaraSystem* UAstraNiagaraLibrary::CreateSmallDestruction(const FString& Syst
         UE_LOG(LogAstraNiagara, Error, TEXT("Exactly four valid materials required: debris, flame, smoke, distortion"));
         return nullptr;
     }
+    TArray<UStaticMesh*> DebrisMeshes;
+    if (!AstraNiagara::LoadDebrisMeshes(DebrisMeshes)) { return nullptr; }
     FString PackageName = FPackageName::ObjectPathToPackageName(SystemPath);
     if (!PackageName.StartsWith(TEXT("/Game/")) || !FPackageName::IsValidLongPackageName(PackageName))
     {
@@ -281,7 +338,7 @@ UNiagaraSystem* UAstraNiagaraLibrary::CreateSmallDestruction(const FString& Syst
         FNiagaraEmitterHandle& Handle = System->GetEmitterHandles().Last();
         Handle.SetName(FName(Names[Index]), *System);
         Handle.SetIsEnabled(true, *System, false);
-        if (!AstraNiagara::ConfigureEmitter(Handle.GetStatelessEmitter(), Index, Materials[Index], bLooping)) { return nullptr; }
+        if (!AstraNiagara::ConfigureEmitter(Handle.GetStatelessEmitter(), Index, Materials[Index], bLooping, DebrisMeshes)) { return nullptr; }
     }
     System->bFixedBounds = true;
     System->SetFixedBounds(AstraNiagara::EffectBounds);
@@ -331,6 +388,27 @@ FString UAstraNiagaraLibrary::DescribeSystem(UNiagaraSystem* System)
                     Bursts.Add(MakeShared<FJsonValueObject>(Burst));
                 }
                 Item->SetArrayField(TEXT("spawns"), Bursts);
+                if (const auto* MeshIndex = Cast<UNiagaraStatelessModule_MeshIndex>(Emitter->GetModule(UNiagaraStatelessModule_MeshIndex::StaticClass())))
+                {
+                    TSharedRef<FJsonObject> Distribution = MakeShared<FJsonObject>();
+                    Distribution->SetBoolField(TEXT("enabled"), MeshIndex->IsModuleEnabled());
+                    Distribution->SetStringField(TEXT("mode"), StaticEnum<ENiagaraDistributionMode>()->GetNameStringByValue(int64(MeshIndex->MeshIndex.Mode)));
+                    Distribution->SetNumberField(TEXT("min"), MeshIndex->MeshIndex.Min);
+                    Distribution->SetNumberField(TEXT("max"), MeshIndex->MeshIndex.Max);
+                    TArray<TSharedPtr<FJsonValue>> Weights;
+                    for (float Weight : MeshIndex->MeshIndexWeight) { Weights.Add(MakeShared<FJsonValueNumber>(Weight)); }
+                    Distribution->SetArrayField(TEXT("weights"), Weights);
+                    Item->SetObjectField(TEXT("mesh_index_distribution"), Distribution);
+                }
+                if (const auto* Initialize = Cast<UNiagaraStatelessModule_InitializeParticle>(Emitter->GetModule(UNiagaraStatelessModule_InitializeParticle::StaticClass())))
+                {
+                    const auto& Scale = Initialize->MeshScaleDistribution;
+                    TSharedRef<FJsonObject> Distribution = MakeShared<FJsonObject>();
+                    Distribution->SetStringField(TEXT("mode"), StaticEnum<ENiagaraDistributionMode>()->GetNameStringByValue(int64(Scale.Mode)));
+                    Distribution->SetArrayField(TEXT("min"), { MakeShared<FJsonValueNumber>(Scale.Min.X), MakeShared<FJsonValueNumber>(Scale.Min.Y), MakeShared<FJsonValueNumber>(Scale.Min.Z) });
+                    Distribution->SetArrayField(TEXT("max"), { MakeShared<FJsonValueNumber>(Scale.Max.X), MakeShared<FJsonValueNumber>(Scale.Max.Y), MakeShared<FJsonValueNumber>(Scale.Max.Z) });
+                    Item->SetObjectField(TEXT("mesh_scale_distribution"), Distribution);
+                }
                 TArray<TSharedPtr<FJsonValue>> Modules;
                 for (UNiagaraStatelessModule* Module : Emitter->GetModules())
                 {
@@ -354,6 +432,48 @@ FString UAstraNiagaraLibrary::DescribeSystem(UNiagaraSystem* System)
                     {
                         RendererData->SetStringField(TEXT("mesh"), Mesh->Meshes.IsEmpty() ? TEXT("") : GetPathNameSafe(Mesh->Meshes[0].Mesh));
                         RendererData->SetStringField(TEXT("material"), Mesh->OverrideMaterials.IsEmpty() ? TEXT("") : GetPathNameSafe(Mesh->OverrideMaterials[0].ExplicitMat));
+                        RendererData->SetStringField(TEXT("mesh_index_binding"), Mesh->MeshIndexBinding.GetParamMapBindableVariable().GetName().ToString());
+                        TArray<TSharedPtr<FJsonValue>> Meshes;
+                        for (int32 Index = 0; Index < Mesh->Meshes.Num(); ++Index)
+                        {
+                            TSharedRef<FJsonObject> MeshData = MakeShared<FJsonObject>();
+                            MeshData->SetNumberField(TEXT("index"), Index);
+                            MeshData->SetStringField(TEXT("asset"), GetPathNameSafe(Mesh->Meshes[Index].Mesh));
+                            const auto& MeshSlot = Mesh->Meshes[Index];
+                            MeshData->SetStringField(TEXT("lod_mode"), StaticEnum<ENiagaraMeshLODMode>()->GetNameStringByValue(int64(MeshSlot.LODMode)));
+                            MeshData->SetNumberField(TEXT("lod_distance_factor"), MeshSlot.LODDistanceFactor);
+                            MeshData->SetNumberField(TEXT("fixed_lod_level"), MeshSlot.LODLevel);
+                            if (MeshSlot.LODMode == ENiagaraMeshLODMode::ComponentOrigin)
+                            {
+                                MeshData->SetStringField(TEXT("lod_basis"), TEXT("Mesh bounds at component origin; screen-size selection shared by particles using this mesh"));
+                            }
+                            if (const UStaticMesh* StaticMesh = Mesh->Meshes[Index].Mesh)
+                            {
+                                const FBoxSphereBounds Bounds = StaticMesh->GetBounds();
+                                const FVector Size = Bounds.BoxExtent * 2.0;
+                                MeshData->SetArrayField(TEXT("size_cm"), { MakeShared<FJsonValueNumber>(Size.X), MakeShared<FJsonValueNumber>(Size.Y), MakeShared<FJsonValueNumber>(Size.Z) });
+                                MeshData->SetNumberField(TEXT("pivot_radius_cm"), Bounds.Origin.Size() + Bounds.SphereRadius);
+                                MeshData->SetStringField(TEXT("renderer_scale"), Mesh->Meshes[Index].Scale.ToString());
+                                const int32 LODCount = StaticMesh->GetNumLODs();
+                                MeshData->SetNumberField(TEXT("lod_count"), LODCount);
+                                MeshData->SetBoolField(TEXT("lod_auto_screen_sizes"), StaticMesh->GetAutoComputeLODScreenSize());
+                                TArray<TSharedPtr<FJsonValue>> Triangles;
+                                TArray<TSharedPtr<FJsonValue>> ScreenSizes;
+                                const FStaticMeshRenderData* RenderData = StaticMesh->GetRenderData();
+                                for (int32 LOD = 0; LOD < LODCount; ++LOD)
+                                {
+                                    Triangles.Add(MakeShared<FJsonValueNumber>(StaticMesh->GetNumTriangles(LOD)));
+                                    if (RenderData && LOD < MAX_STATIC_MESH_LODS)
+                                    {
+                                        ScreenSizes.Add(MakeShared<FJsonValueNumber>(RenderData->ScreenSize[LOD].GetValue()));
+                                    }
+                                }
+                                MeshData->SetArrayField(TEXT("lod_triangles"), Triangles);
+                                MeshData->SetArrayField(TEXT("lod_screen_sizes"), ScreenSizes);
+                            }
+                            Meshes.Add(MakeShared<FJsonValueObject>(MeshData));
+                        }
+                        RendererData->SetArrayField(TEXT("meshes"), Meshes);
                     }
                     Renderers.Add(MakeShared<FJsonValueObject>(RendererData));
                 }

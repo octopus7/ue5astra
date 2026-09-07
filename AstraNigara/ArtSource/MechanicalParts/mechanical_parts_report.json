@@ -1,0 +1,246 @@
+{
+  "generator": "Scripts/build_mechanical_parts.py",
+  "blender_version": "4.5.12 LTS",
+  "scene_unit_scale_meters": 0.01,
+  "fbx_unit": "centimeter",
+  "unreal_import_uniform_scale": 1.0,
+  "geometry_tier": "VFX LOD0; lower distance LODs are generated in Unreal",
+  "pivot": "center of geometry bounds; transforms applied",
+  "purpose": "Small visual debris; no engineering tolerances or collision meshes",
+  "assets": [
+    {
+      "name": "SM_HexBolt",
+      "fbx": "FBX/SM_HexBolt.fbx",
+      "dimensions_cm": [
+        1.69741,
+        1.895,
+        3.5
+      ],
+      "vertices": 291,
+      "triangles": 570,
+      "triangle_budget": [
+        400,
+        700
+      ],
+      "previous_triangles": 1348,
+      "reduction_percent": 57.72,
+      "material_slots": 1,
+      "uv_channels": 1,
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "fbx_verification": {
+        "version": 7400,
+        "unit_scale_cm": 0.9999999776482582,
+        "geometry_count": 1,
+        "geometry_dimensions_cm": [
+          1.69741,
+          1.895,
+          3.5
+        ]
+      }
+    },
+    {
+      "name": "SM_HexNut",
+      "fbx": "FBX/SM_HexNut.fbx",
+      "dimensions_cm": [
+        1.55885,
+        1.8,
+        0.86
+      ],
+      "vertices": 240,
+      "triangles": 480,
+      "triangle_budget": [
+        250,
+        500
+      ],
+      "previous_triangles": 1152,
+      "reduction_percent": 58.33,
+      "material_slots": 1,
+      "uv_channels": 1,
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "fbx_verification": {
+        "version": 7400,
+        "unit_scale_cm": 0.9999999776482582,
+        "geometry_count": 1,
+        "geometry_dimensions_cm": [
+          1.55885,
+          1.8,
+          0.86
+        ]
+      }
+    },
+    {
+      "name": "SM_CoilSpring",
+      "fbx": "FBX/SM_CoilSpring.fbx",
+      "dimensions_cm": [
+        1.34,
+        1.34,
+        3.39782
+      ],
+      "vertices": 438,
+      "triangles": 872,
+      "triangle_budget": [
+        600,
+        1000
+      ],
+      "previous_triangles": 2316,
+      "reduction_percent": 62.35,
+      "material_slots": 1,
+      "uv_channels": 1,
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "fbx_verification": {
+        "version": 7400,
+        "unit_scale_cm": 0.9999999776482582,
+        "geometry_count": 1,
+        "geometry_dimensions_cm": [
+          1.34,
+          1.34,
+          3.39782
+        ]
+      }
+    },
+    {
+      "name": "SM_SpurGear",
+      "fbx": "FBX/SM_SpurGear.fbx",
+      "dimensions_cm": [
+        3.0,
+        3.0,
+        0.86
+      ],
+      "vertices": 288,
+      "triangles": 576,
+      "triangle_budget": [
+        300,
+        600
+      ],
+      "previous_triangles": 1344,
+      "reduction_percent": 57.14,
+      "material_slots": 1,
+      "uv_channels": 1,
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "fbx_verification": {
+        "version": 7400,
+        "unit_scale_cm": 0.9999999776482582,
+        "geometry_count": 1,
+        "geometry_dimensions_cm": [
+          3.0,
+          3.0,
+          0.86
+        ]
+      }
+    },
+    {
+      "name": "SM_Washer",
+      "fbx": "FBX/SM_Washer.fbx",
+      "dimensions_cm": [
+        1.7,
+        1.7,
+        0.18
+      ],
+      "vertices": 96,
+      "triangles": 192,
+      "triangle_budget": [
+        120,
+        250
+      ],
+      "previous_triangles": 512,
+      "reduction_percent": 62.5,
+      "material_slots": 1,
+      "uv_channels": 1,
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "fbx_verification": {
+        "version": 7400,
+        "unit_scale_cm": 0.9999999776482582,
+        "geometry_count": 1,
+        "geometry_dimensions_cm": [
+          1.7,
+          1.7,
+          0.18
+        ]
+      }
+    },
+    {
+      "name": "SM_ShaftCoupler",
+      "fbx": "FBX/SM_ShaftCoupler.fbx",
+      "dimensions_cm": [
+        1.85951,
+        1.85975,
+        2.7
+      ],
+      "vertices": 272,
+      "triangles": 540,
+      "triangle_budget": [
+        300,
+        600
+      ],
+      "previous_triangles": 1052,
+      "reduction_percent": 48.67,
+      "material_slots": 1,
+      "uv_channels": 1,
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "fbx_verification": {
+        "version": 7400,
+        "unit_scale_cm": 0.9999999776482582,
+        "geometry_count": 1,
+        "geometry_dimensions_cm": [
+          1.85951,
+          1.85975,
+          2.7
+        ]
+      }
+    }
+  ]
+}

@@ -6,6 +6,7 @@ import unreal
 root = Path(unreal.Paths.project_dir()).resolve()
 library = unreal.AstraNiagaraLibrary
 report = {'systems': []}
+part_names = ['SM_HexBolt', 'SM_HexNut', 'SM_CoilSpring', 'SM_SpurGear', 'SM_Washer', 'SM_ShaftCoupler']
 for suffix, behavior in [('', 'Once'), ('_Showcase', 'Infinite')]:
     system = unreal.load_asset('/Game/VFX/SmallDestruction/NS_SmallDestruction' + suffix)
     assert isinstance(system, unreal.NiagaraSystem)
@@ -20,7 +21,25 @@ for suffix, behavior in [('', 'Once'), ('_Showcase', 'Infinite')]:
         renderer = entry['renderers'][0]
         assert renderer['enabled'] and unreal.load_asset(renderer['material'])
     assert 'NiagaraMeshRenderer' in emitters[0]['renderers'][0]['class']
-    assert unreal.load_asset(emitters[0]['renderers'][0]['mesh'])
+    debris = emitters[0]
+    renderer = debris['renderers'][0]
+    assert debris['spawns'][0]['count_min'] == debris['spawns'][0]['count_max'] == 22
+    assert debris['mesh_index_distribution']['enabled']
+    assert debris['mesh_index_distribution']['min'] == 0
+    assert debris['mesh_index_distribution']['max'] == 5
+    assert debris['mesh_scale_distribution']['mode'] == 'UniformRange'
+    assert all(abs(value - .8) < 1e-5 for value in debris['mesh_scale_distribution']['min'])
+    assert all(abs(value - 1.2) < 1e-5 for value in debris['mesh_scale_distribution']['max'])
+    assert renderer['mesh_index_binding'] == 'Particles.MeshIndex'
+    assert [entry['asset'].rsplit('.', 1)[-1] for entry in renderer['meshes']] == part_names
+    for entry in renderer['meshes']:
+        assert unreal.load_asset(entry['asset']) and entry['pivot_radius_cm'] <= 5.0
+        assert max(entry['size_cm']) <= 5.0
+        assert entry['lod_mode'] == 'ComponentOrigin' and entry['lod_distance_factor'] == 1
+        assert entry['lod_count'] == 3 and not entry['lod_auto_screen_sizes']
+        triangles = entry['lod_triangles']
+        assert 1000 >= triangles[0] > triangles[1] > triangles[2] > 0, triangles
+        assert all(abs(actual - target) < 1e-5 for actual, target in zip(entry['lod_screen_sizes'], [1.0, .025, .008]))
     report['systems'].append(description)
 
 heat = unreal.load_asset('/Game/VFX/SmallDestruction/Materials/M_HeatDistortion')

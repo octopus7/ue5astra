@@ -1,8 +1,169 @@
 {
   "engine_version": "5.7.4-51494982+++UE5+Release-5.7",
-  "validated_utc": "2026-09-07T16:48:11.082524+09:00",
+  "validated_at": "2026-09-07T17:22:06.200695+09:00",
   "map": "/Game/Maps/L_SmallDestructionShowcase",
   "structural_validation_passed": true,
+  "mechanical_parts": {
+    "units": "centimeters",
+    "assets": [
+      {
+        "name": "SM_HexBolt",
+        "asset": "/Game/VFX/SmallDestruction/Meshes/SM_HexBolt.SM_HexBolt",
+        "dimensions_cm": [
+          1.6974098682403564,
+          1.8949999809265137,
+          3.5
+        ],
+        "render_vertices": 720,
+        "source_triangles": 570,
+        "lod_render_vertices": [
+          720,
+          372,
+          170
+        ],
+        "lod_triangle_targets": [
+          1.0,
+          0.5,
+          0.2
+        ],
+        "lod_screen_sizes": [
+          1.0,
+          0.025,
+          0.008
+        ]
+      },
+      {
+        "name": "SM_HexNut",
+        "asset": "/Game/VFX/SmallDestruction/Meshes/SM_HexNut.SM_HexNut",
+        "dimensions_cm": [
+          1.5588458776474,
+          1.7999999523162842,
+          0.8600000143051147
+        ],
+        "render_vertices": 508,
+        "source_triangles": 480,
+        "lod_render_vertices": [
+          508,
+          287,
+          156
+        ],
+        "lod_triangle_targets": [
+          1.0,
+          0.5,
+          0.2
+        ],
+        "lod_screen_sizes": [
+          1.0,
+          0.025,
+          0.008
+        ]
+      },
+      {
+        "name": "SM_CoilSpring",
+        "asset": "/Game/VFX/SmallDestruction/Meshes/SM_CoilSpring.SM_CoilSpring",
+        "dimensions_cm": [
+          1.340000033378601,
+          1.340000033378601,
+          3.397819995880127
+        ],
+        "render_vertices": 1102,
+        "source_triangles": 872,
+        "lod_render_vertices": [
+          1102,
+          684,
+          392
+        ],
+        "lod_triangle_targets": [
+          1.0,
+          0.5,
+          0.2
+        ],
+        "lod_screen_sizes": [
+          1.0,
+          0.025,
+          0.008
+        ]
+      },
+      {
+        "name": "SM_SpurGear",
+        "asset": "/Game/VFX/SmallDestruction/Meshes/SM_SpurGear.SM_SpurGear",
+        "dimensions_cm": [
+          3.0,
+          3.0,
+          0.8600000143051147
+        ],
+        "render_vertices": 744,
+        "source_triangles": 576,
+        "lod_render_vertices": [
+          744,
+          408,
+          176
+        ],
+        "lod_triangle_targets": [
+          1.0,
+          0.5,
+          0.2
+        ],
+        "lod_screen_sizes": [
+          1.0,
+          0.025,
+          0.008
+        ]
+      },
+      {
+        "name": "SM_Washer",
+        "asset": "/Game/VFX/SmallDestruction/Meshes/SM_Washer.SM_Washer",
+        "dimensions_cm": [
+          1.7000000476837158,
+          1.7000000476837158,
+          0.18000000715255737
+        ],
+        "render_vertices": 176,
+        "source_triangles": 192,
+        "lod_render_vertices": [
+          176,
+          106,
+          80
+        ],
+        "lod_triangle_targets": [
+          1.0,
+          0.5,
+          0.2
+        ],
+        "lod_screen_sizes": [
+          1.0,
+          0.025,
+          0.008
+        ]
+      },
+      {
+        "name": "SM_ShaftCoupler",
+        "asset": "/Game/VFX/SmallDestruction/Meshes/SM_ShaftCoupler.SM_ShaftCoupler",
+        "dimensions_cm": [
+          1.8595088720321655,
+          1.8597544431686401,
+          2.700000047683716
+        ],
+        "render_vertices": 708,
+        "source_triangles": 540,
+        "lod_render_vertices": [
+          708,
+          426,
+          162
+        ],
+        "lod_triangle_targets": [
+          1.0,
+          0.5,
+          0.2
+        ],
+        "lod_screen_sizes": [
+          1.0,
+          0.025,
+          0.008
+        ]
+      }
+    ]
+  },
   "systems": [
     {
       "asset": "/Game/VFX/SmallDestruction/NS_SmallDestruction.NS_SmallDestruction",
@@ -18,16 +179,208 @@
               "type": "Burst",
               "enabled": true,
               "time": 0,
-              "count_min": 14,
-              "count_max": 14
+              "count_min": 22,
+              "count_max": 22
             }
           ],
+          "mesh_index_distribution": {
+            "enabled": true,
+            "mode": "UniformRange",
+            "min": 0,
+            "max": 5,
+            "weights": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "mesh_scale_distribution": {
+            "mode": "UniformRange",
+            "min": [
+              0.800000011920929,
+              0.800000011920929,
+              0.800000011920929
+            ],
+            "max": [
+              1.2000000476837158,
+              1.2000000476837158,
+              1.2000000476837158
+            ]
+          },
           "renderers": [
             {
               "class": "NiagaraMeshRendererProperties",
               "enabled": true,
-              "mesh": "/Engine/BasicShapes/Cube.Cube",
-              "material": "/Game/VFX/SmallDestruction/Materials/M_Debris.M_Debris"
+              "mesh": "/Game/VFX/SmallDestruction/Meshes/SM_HexBolt.SM_HexBolt",
+              "material": "/Game/VFX/SmallDestruction/Materials/M_Debris.M_Debris",
+              "mesh_index_binding": "Particles.MeshIndex",
+              "meshes": [
+                {
+                  "index": 0,
+                  "asset": "/Game/VFX/SmallDestruction/Meshes/SM_HexBolt.SM_HexBolt",
+                  "lod_mode": "ComponentOrigin",
+                  "lod_distance_factor": 1,
+                  "fixed_lod_level": 0,
+                  "lod_basis": "Mesh bounds at component origin; screen-size selection shared by particles using this mesh",
+                  "size_cm": [
+                    1.6974098682403564,
+                    1.8949999809265137,
+                    3.5
+                  ],
+                  "pivot_radius_cm": 1.9701331245021558,
+                  "renderer_scale": "X=1.000 Y=1.000 Z=1.000",
+                  "lod_count": 3,
+                  "lod_auto_screen_sizes": false,
+                  "lod_triangles": [
+                    570,
+                    282,
+                    114
+                  ],
+                  "lod_screen_sizes": [
+                    1,
+                    0.02500000037252903,
+                    0.00800000037997961
+                  ]
+                },
+                {
+                  "index": 1,
+                  "asset": "/Game/VFX/SmallDestruction/Meshes/SM_HexNut.SM_HexNut",
+                  "lod_mode": "ComponentOrigin",
+                  "lod_distance_factor": 1,
+                  "fixed_lod_level": 0,
+                  "lod_basis": "Mesh bounds at component origin; screen-size selection shared by particles using this mesh",
+                  "size_cm": [
+                    1.5588458776474,
+                    1.7999999523162842,
+                    0.8600000143051147
+                  ],
+                  "pivot_radius_cm": 0.9585927507790555,
+                  "renderer_scale": "X=1.000 Y=1.000 Z=1.000",
+                  "lod_count": 3,
+                  "lod_auto_screen_sizes": false,
+                  "lod_triangles": [
+                    480,
+                    240,
+                    96
+                  ],
+                  "lod_screen_sizes": [
+                    1,
+                    0.02500000037252903,
+                    0.00800000037997961
+                  ]
+                },
+                {
+                  "index": 2,
+                  "asset": "/Game/VFX/SmallDestruction/Meshes/SM_CoilSpring.SM_CoilSpring",
+                  "lod_mode": "ComponentOrigin",
+                  "lod_distance_factor": 1,
+                  "fixed_lod_level": 0,
+                  "lod_basis": "Mesh bounds at component origin; screen-size selection shared by particles using this mesh",
+                  "size_cm": [
+                    1.340000033378601,
+                    1.340000033378601,
+                    3.397819995880127
+                  ],
+                  "pivot_radius_cm": 1.8085513268611355,
+                  "renderer_scale": "X=1.000 Y=1.000 Z=1.000",
+                  "lod_count": 3,
+                  "lod_auto_screen_sizes": false,
+                  "lod_triangles": [
+                    872,
+                    436,
+                    174
+                  ],
+                  "lod_screen_sizes": [
+                    1,
+                    0.02500000037252903,
+                    0.00800000037997961
+                  ]
+                },
+                {
+                  "index": 3,
+                  "asset": "/Game/VFX/SmallDestruction/Meshes/SM_SpurGear.SM_SpurGear",
+                  "lod_mode": "ComponentOrigin",
+                  "lod_distance_factor": 1,
+                  "fixed_lod_level": 0,
+                  "lod_basis": "Mesh bounds at component origin; screen-size selection shared by particles using this mesh",
+                  "size_cm": [
+                    3,
+                    3,
+                    0.8600000143051147
+                  ],
+                  "pivot_radius_cm": 1.5368468230774641,
+                  "renderer_scale": "X=1.000 Y=1.000 Z=1.000",
+                  "lod_count": 3,
+                  "lod_auto_screen_sizes": false,
+                  "lod_triangles": [
+                    576,
+                    288,
+                    116
+                  ],
+                  "lod_screen_sizes": [
+                    1,
+                    0.02500000037252903,
+                    0.00800000037997961
+                  ]
+                },
+                {
+                  "index": 4,
+                  "asset": "/Game/VFX/SmallDestruction/Meshes/SM_Washer.SM_Washer",
+                  "lod_mode": "ComponentOrigin",
+                  "lod_distance_factor": 1,
+                  "fixed_lod_level": 0,
+                  "lod_basis": "Mesh bounds at component origin; screen-size selection shared by particles using this mesh",
+                  "size_cm": [
+                    1.7000000476837158,
+                    1.7000000476837158,
+                    0.18000000715255737
+                  ],
+                  "pivot_radius_cm": 0.8517775982719408,
+                  "renderer_scale": "X=1.000 Y=1.000 Z=1.000",
+                  "lod_count": 3,
+                  "lod_auto_screen_sizes": false,
+                  "lod_triangles": [
+                    192,
+                    96,
+                    64
+                  ],
+                  "lod_screen_sizes": [
+                    1,
+                    0.02500000037252903,
+                    0.00800000037997961
+                  ]
+                },
+                {
+                  "index": 5,
+                  "asset": "/Game/VFX/SmallDestruction/Meshes/SM_ShaftCoupler.SM_ShaftCoupler",
+                  "lod_mode": "ComponentOrigin",
+                  "lod_distance_factor": 1,
+                  "fixed_lod_level": 0,
+                  "lod_basis": "Mesh bounds at component origin; screen-size selection shared by particles using this mesh",
+                  "size_cm": [
+                    1.8595088720321655,
+                    1.8597544431686401,
+                    2.700000047683716
+                  ],
+                  "pivot_radius_cm": 1.5901296928250863,
+                  "renderer_scale": "X=1.000 Y=1.000 Z=1.000",
+                  "lod_count": 3,
+                  "lod_auto_screen_sizes": false,
+                  "lod_triangles": [
+                    540,
+                    270,
+                    108
+                  ],
+                  "lod_screen_sizes": [
+                    1,
+                    0.02500000037252903,
+                    0.00800000037997961
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -44,6 +397,26 @@
               "count_max": 9
             }
           ],
+          "mesh_index_distribution": {
+            "enabled": false,
+            "mode": "UniformConstant",
+            "min": 0,
+            "max": 0,
+            "weights": []
+          },
+          "mesh_scale_distribution": {
+            "mode": "NonUniformConstant",
+            "min": [
+              1,
+              1,
+              1
+            ],
+            "max": [
+              1,
+              1,
+              1
+            ]
+          },
           "renderers": [
             {
               "class": "NiagaraSpriteRendererProperties",
@@ -65,6 +438,26 @@
               "count_max": 11
             }
           ],
+          "mesh_index_distribution": {
+            "enabled": false,
+            "mode": "UniformConstant",
+            "min": 0,
+            "max": 0,
+            "weights": []
+          },
+          "mesh_scale_distribution": {
+            "mode": "NonUniformConstant",
+            "min": [
+              1,
+              1,
+              1
+            ],
+            "max": [
+              1,
+              1,
+              1
+            ]
+          },
           "renderers": [
             {
               "class": "NiagaraSpriteRendererProperties",
@@ -86,6 +479,26 @@
               "count_max": 2
             }
           ],
+          "mesh_index_distribution": {
+            "enabled": false,
+            "mode": "UniformConstant",
+            "min": 0,
+            "max": 0,
+            "weights": []
+          },
+          "mesh_scale_distribution": {
+            "mode": "NonUniformConstant",
+            "min": [
+              1,
+              1,
+              1
+            ],
+            "max": [
+              1,
+              1,
+              1
+            ]
+          },
           "renderers": [
             {
               "class": "NiagaraSpriteRendererProperties",
@@ -110,16 +523,208 @@
               "type": "Burst",
               "enabled": true,
               "time": 0,
-              "count_min": 14,
-              "count_max": 14
+              "count_min": 22,
+              "count_max": 22
             }
           ],
+          "mesh_index_distribution": {
+            "enabled": true,
+            "mode": "UniformRange",
+            "min": 0,
+            "max": 5,
+            "weights": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "mesh_scale_distribution": {
+            "mode": "UniformRange",
+            "min": [
+              0.800000011920929,
+              0.800000011920929,
+              0.800000011920929
+            ],
+            "max": [
+              1.2000000476837158,
+              1.2000000476837158,
+              1.2000000476837158
+            ]
+          },
           "renderers": [
             {
               "class": "NiagaraMeshRendererProperties",
               "enabled": true,
-              "mesh": "/Engine/BasicShapes/Cube.Cube",
-              "material": "/Game/VFX/SmallDestruction/Materials/M_Debris.M_Debris"
+              "mesh": "/Game/VFX/SmallDestruction/Meshes/SM_HexBolt.SM_HexBolt",
+              "material": "/Game/VFX/SmallDestruction/Materials/M_Debris.M_Debris",
+              "mesh_index_binding": "Particles.MeshIndex",
+              "meshes": [
+                {
+                  "index": 0,
+                  "asset": "/Game/VFX/SmallDestruction/Meshes/SM_HexBolt.SM_HexBolt",
+                  "lod_mode": "ComponentOrigin",
+                  "lod_distance_factor": 1,
+                  "fixed_lod_level": 0,
+                  "lod_basis": "Mesh bounds at component origin; screen-size selection shared by particles using this mesh",
+                  "size_cm": [
+                    1.6974098682403564,
+                    1.8949999809265137,
+                    3.5
+                  ],
+                  "pivot_radius_cm": 1.9701331245021558,
+                  "renderer_scale": "X=1.000 Y=1.000 Z=1.000",
+                  "lod_count": 3,
+                  "lod_auto_screen_sizes": false,
+                  "lod_triangles": [
+                    570,
+                    282,
+                    114
+                  ],
+                  "lod_screen_sizes": [
+                    1,
+                    0.02500000037252903,
+                    0.00800000037997961
+                  ]
+                },
+                {
+                  "index": 1,
+                  "asset": "/Game/VFX/SmallDestruction/Meshes/SM_HexNut.SM_HexNut",
+                  "lod_mode": "ComponentOrigin",
+                  "lod_distance_factor": 1,
+                  "fixed_lod_level": 0,
+                  "lod_basis": "Mesh bounds at component origin; screen-size selection shared by particles using this mesh",
+                  "size_cm": [
+                    1.5588458776474,
+                    1.7999999523162842,
+                    0.8600000143051147
+                  ],
+                  "pivot_radius_cm": 0.9585927507790555,
+                  "renderer_scale": "X=1.000 Y=1.000 Z=1.000",
+                  "lod_count": 3,
+                  "lod_auto_screen_sizes": false,
+                  "lod_triangles": [
+                    480,
+                    240,
+                    96
+                  ],
+                  "lod_screen_sizes": [
+                    1,
+                    0.02500000037252903,
+                    0.00800000037997961
+                  ]
+                },
+                {
+                  "index": 2,
+                  "asset": "/Game/VFX/SmallDestruction/Meshes/SM_CoilSpring.SM_CoilSpring",
+                  "lod_mode": "ComponentOrigin",
+                  "lod_distance_factor": 1,
+                  "fixed_lod_level": 0,
+                  "lod_basis": "Mesh bounds at component origin; screen-size selection shared by particles using this mesh",
+                  "size_cm": [
+                    1.340000033378601,
+                    1.340000033378601,
+                    3.397819995880127
+                  ],
+                  "pivot_radius_cm": 1.8085513268611355,
+                  "renderer_scale": "X=1.000 Y=1.000 Z=1.000",
+                  "lod_count": 3,
+                  "lod_auto_screen_sizes": false,
+                  "lod_triangles": [
+                    872,
+                    436,
+                    174
+                  ],
+                  "lod_screen_sizes": [
+                    1,
+                    0.02500000037252903,
+                    0.00800000037997961
+                  ]
+                },
+                {
+                  "index": 3,
+                  "asset": "/Game/VFX/SmallDestruction/Meshes/SM_SpurGear.SM_SpurGear",
+                  "lod_mode": "ComponentOrigin",
+                  "lod_distance_factor": 1,
+                  "fixed_lod_level": 0,
+                  "lod_basis": "Mesh bounds at component origin; screen-size selection shared by particles using this mesh",
+                  "size_cm": [
+                    3,
+                    3,
+                    0.8600000143051147
+                  ],
+                  "pivot_radius_cm": 1.5368468230774641,
+                  "renderer_scale": "X=1.000 Y=1.000 Z=1.000",
+                  "lod_count": 3,
+                  "lod_auto_screen_sizes": false,
+                  "lod_triangles": [
+                    576,
+                    288,
+                    116
+                  ],
+                  "lod_screen_sizes": [
+                    1,
+                    0.02500000037252903,
+                    0.00800000037997961
+                  ]
+                },
+                {
+                  "index": 4,
+                  "asset": "/Game/VFX/SmallDestruction/Meshes/SM_Washer.SM_Washer",
+                  "lod_mode": "ComponentOrigin",
+                  "lod_distance_factor": 1,
+                  "fixed_lod_level": 0,
+                  "lod_basis": "Mesh bounds at component origin; screen-size selection shared by particles using this mesh",
+                  "size_cm": [
+                    1.7000000476837158,
+                    1.7000000476837158,
+                    0.18000000715255737
+                  ],
+                  "pivot_radius_cm": 0.8517775982719408,
+                  "renderer_scale": "X=1.000 Y=1.000 Z=1.000",
+                  "lod_count": 3,
+                  "lod_auto_screen_sizes": false,
+                  "lod_triangles": [
+                    192,
+                    96,
+                    64
+                  ],
+                  "lod_screen_sizes": [
+                    1,
+                    0.02500000037252903,
+                    0.00800000037997961
+                  ]
+                },
+                {
+                  "index": 5,
+                  "asset": "/Game/VFX/SmallDestruction/Meshes/SM_ShaftCoupler.SM_ShaftCoupler",
+                  "lod_mode": "ComponentOrigin",
+                  "lod_distance_factor": 1,
+                  "fixed_lod_level": 0,
+                  "lod_basis": "Mesh bounds at component origin; screen-size selection shared by particles using this mesh",
+                  "size_cm": [
+                    1.8595088720321655,
+                    1.8597544431686401,
+                    2.700000047683716
+                  ],
+                  "pivot_radius_cm": 1.5901296928250863,
+                  "renderer_scale": "X=1.000 Y=1.000 Z=1.000",
+                  "lod_count": 3,
+                  "lod_auto_screen_sizes": false,
+                  "lod_triangles": [
+                    540,
+                    270,
+                    108
+                  ],
+                  "lod_screen_sizes": [
+                    1,
+                    0.02500000037252903,
+                    0.00800000037997961
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -136,6 +741,26 @@
               "count_max": 9
             }
           ],
+          "mesh_index_distribution": {
+            "enabled": false,
+            "mode": "UniformConstant",
+            "min": 0,
+            "max": 0,
+            "weights": []
+          },
+          "mesh_scale_distribution": {
+            "mode": "NonUniformConstant",
+            "min": [
+              1,
+              1,
+              1
+            ],
+            "max": [
+              1,
+              1,
+              1
+            ]
+          },
           "renderers": [
             {
               "class": "NiagaraSpriteRendererProperties",
@@ -157,6 +782,26 @@
               "count_max": 11
             }
           ],
+          "mesh_index_distribution": {
+            "enabled": false,
+            "mode": "UniformConstant",
+            "min": 0,
+            "max": 0,
+            "weights": []
+          },
+          "mesh_scale_distribution": {
+            "mode": "NonUniformConstant",
+            "min": [
+              1,
+              1,
+              1
+            ],
+            "max": [
+              1,
+              1,
+              1
+            ]
+          },
           "renderers": [
             {
               "class": "NiagaraSpriteRendererProperties",
@@ -178,6 +823,26 @@
               "count_max": 2
             }
           ],
+          "mesh_index_distribution": {
+            "enabled": false,
+            "mode": "UniformConstant",
+            "min": 0,
+            "max": 0,
+            "weights": []
+          },
+          "mesh_scale_distribution": {
+            "mode": "NonUniformConstant",
+            "min": [
+              1,
+              1,
+              1
+            ],
+            "max": [
+              1,
+              1,
+              1
+            ]
+          },
           "renderers": [
             {
               "class": "NiagaraSpriteRendererProperties",
@@ -199,6 +864,12 @@
     {
       "file": "SmallDestruction_Smoke.png",
       "requested_age_seconds": 0.6,
+      "completed": true,
+      "restore_errors": []
+    },
+    {
+      "file": "MechanicalParts_Explosion.png",
+      "requested_age_seconds": 0.2,
       "completed": true,
       "restore_errors": []
     }

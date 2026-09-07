@@ -14,7 +14,7 @@ class ASTRANIGARATOOLS_API UAstraNiagaraLibrary : public UBlueprintFunctionLibra
     GENERATED_BODY()
 
 public:
-    /** Materials must be ordered debris, flame, smoke, distortion. Returns an unsaved dirty asset. */
+    /** Materials are debris, flame, smoke, distortion. Requires the six mechanical meshes in /Game/VFX/SmallDestruction/Meshes. Returns an unsaved dirty asset. */
     UFUNCTION(BlueprintCallable, Category = "Astra Niagara")
     static UNiagaraSystem* CreateSmallDestruction(const FString& SystemPath,
         const TArray<UMaterialInterface*>& Materials, bool bLooping);

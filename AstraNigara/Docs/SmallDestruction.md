@@ -4,7 +4,7 @@ UE 5.7, 1 Unreal unit = 1cm. The one-shot asset is `/Game/VFX/SmallDestruction/N
 
 | Emitter | Burst | Lifetime | Appearance |
 | --- | ---: | --- | --- |
-| Debris | 14 | 0.38–0.48s | Irregularly scaled 1.2–3.3cm cube fragments, random orientation and angular velocity, gravity |
+| Debris | 22 | 0.36–0.46s | Six mechanical meshes selected per particle: bolt, nut, spring, gear, washer and shaft coupler; uniform 0.8–1.2 scale, random orientation, angular velocity and gravity |
 | Flame | 9 | 0.16–0.28s | Soft procedural orange/yellow additive burst, shrinking and fading |
 | Smoke | 11 at 0.045s | 0.75–1.05s | Dark translucent puffs, rising, growing and fading |
 | Distortion | 2 | 0.20–0.32s | Actual 2D-offset refraction, radial distortion fading with particle alpha |
@@ -12,6 +12,12 @@ UE 5.7, 1 Unreal unit = 1cm. The one-shot asset is `/Game/VFX/SmallDestruction/N
 The particles' configured movement and sizes keep this preset within a sub-meter region at actor scale 1.0. Fixed bounds are ±49cm on every axis; bounds alone are culling metadata and do not physically constrain particles. The showcase's gold rim is 100cm in diameter; the floor and backdrop grid spacing is 10cm. The floor lines also make heat refraction easier to inspect.
 
 This is a visual effect preset. Debris uses short ballistic motion and has no collision, bounce, damage, or Chaos geometry fracture. Re-scaling the actor or editing spawn size/velocity can exceed the intended scale. Materials use procedural expressions, so no external image downloads are required.
+
+The [mechanical part kit](../ArtSource/MechanicalParts/README.md) contains centimeter-scale static meshes under `/Game/VFX/SmallDestruction/Meshes`, with Blender source and individual FBX exports. The renderer's `Particles.MeshIndex` selects indices 0–5 with equal weights. A single steel material is assigned both to the assets and the Niagara renderer. Source dimensions are checked against the imported Unreal bounds before systems are rebuilt.
+
+Each mesh has three LODs. The source kit totals 3,230 triangles across its six LOD0 meshes (58.2% below the initial 7,724). Unreal generates LOD1 at a 50% triangle target and LOD2 at 20%, with screen-size thresholds 0.025 and 0.008. Each Niagara mesh slot uses `ComponentOrigin` LOD selection, rather than the engine default of a fixed LOD0. Selection uses each mesh's size at the effect origin and the camera projection; particles using the same mesh share its selected LOD. Exact switch distances therefore depend on mesh size and camera FOV. This avoids basing tiny part LODs on the much larger effect bounds.
+
+![Six authored mechanical parts](Previews/MechanicalParts_Lineup.png)
 
 The one-shot's visible particles finish by approximately 1.095 seconds and its Niagara system completes at approximately 2 seconds. The looping variant starts a new burst every 2 seconds.
 
@@ -26,6 +32,10 @@ Real Unreal viewport captures (1280×720), with matching [validation evidence](P
 Initial burst at 0.15 seconds:
 
 ![Small destruction burst](Previews/SmallDestruction_Burst.png)
+
+Mechanical fragments at 0.2 seconds:
+
+![Mechanical parts in the Unreal effect](Previews/MechanicalParts_Explosion.png)
 
 Smoke at 0.6 seconds:
 

@@ -69,8 +69,10 @@ def finish(result):
 def build_materials():
     debris = material('M_Debris', unlit=False)
     debris.set_editor_property('used_with_niagara_mesh_particles', True)
-    connect(debris, color(debris, (.13, .085, .045)), unreal.MaterialProperty.MP_BASE_COLOR)
-    connect(debris, scalar(debris, .9), unreal.MaterialProperty.MP_ROUGHNESS)
+    connect(debris, color(debris, (.38, .44, .52)), unreal.MaterialProperty.MP_BASE_COLOR)
+    connect(debris, scalar(debris, .65), unreal.MaterialProperty.MP_METALLIC)
+    connect(debris, scalar(debris, .3), unreal.MaterialProperty.MP_ROUGHNESS)
+    connect(debris, color(debris, (.012, .018, .026)), unreal.MaterialProperty.MP_EMISSIVE_COLOR)
     finish(debris)
 
     # Procedural soft, irregular billboards: no downloaded flipbook dependency.
@@ -136,6 +138,8 @@ def mesh(label, asset, position, scale, mat):
 def build():
     LEVELS.eject_pilot_level_actor()
     materials, stage, grid, rim = build_materials()
+    import_module = runpy.run_path(str(ROOT / 'Scripts' / 'import_mechanical_parts.py'))
+    parts_report = import_module['import_mechanical_parts'](materials[0])
     library = unreal.AstraNiagaraLibrary
     one_shot = library.create_small_destruction('/Game/VFX/SmallDestruction/NS_SmallDestruction', materials, False)
     looping = library.create_small_destruction('/Game/VFX/SmallDestruction/NS_SmallDestruction_Showcase', materials, True)
@@ -168,7 +172,7 @@ def build():
     camera.set_actor_label('SD_Showcase_Camera')
     camera.camera_component.set_editor_property('field_of_view', 42)
     camera.set_editor_property('auto_activate_for_player', unreal.AutoReceiveInput.PLAYER0)
-    light = ACTORS.spawn_actor_from_class(unreal.DirectionalLight, unreal.Vector(0, 0, 200), unreal.Rotator(pitch=-50, yaw=-30, roll=0))
+    light = ACTORS.spawn_actor_from_class(unreal.DirectionalLight, unreal.Vector(0, 0, 200), unreal.Rotator(pitch=-45, yaw=130, roll=0))
     light.set_actor_label('SD_KeyLight')
     light.light_component.set_editor_property('intensity', 6)
     unreal.EditorLevelLibrary.set_level_viewport_camera_info(camera_pos, camera_rot)
@@ -176,7 +180,7 @@ def build():
     LEVELS.editor_set_game_view(True)
     library.enable_viewport_realtime()
     assert LEVELS.save_current_level()
-    report = {'map': map_path, 'one_shot': json.loads(library.describe_system(one_shot)), 'showcase': json.loads(library.describe_system(looping))}
+    report = {'map': map_path, 'mechanical_parts': parts_report, 'one_shot': json.loads(library.describe_system(one_shot)), 'showcase': json.loads(library.describe_system(looping))}
     out = ROOT / 'Saved' / 'SmallDestruction'
     out.mkdir(parents=True, exist_ok=True)
     (out / 'build_report.json').write_text(json.dumps(report, indent=2), encoding='utf-8')

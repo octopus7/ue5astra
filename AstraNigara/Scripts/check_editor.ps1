@@ -3,6 +3,7 @@ param(
     [switch]$Screenshot,
     [switch]$Refresh,
     [switch]$RebuildAssets,
+    [switch]$CloseEditor,
     [switch]$AsJson,
     [ValidateRange(1, 60)][int]$WaitSeconds = 30,
     [ValidateRange(3, 300)][int]$StaleSeconds = 15,
@@ -14,8 +15,8 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-if (([int][bool]$Screenshot + [int][bool]$Refresh + [int][bool]$RebuildAssets) -gt 1) {
-    throw 'Choose only one request switch: -Screenshot, -Refresh or -RebuildAssets.'
+if (([int][bool]$Screenshot + [int][bool]$Refresh + [int][bool]$RebuildAssets + [int][bool]$CloseEditor) -gt 1) {
+    throw 'Choose only one request switch: -Screenshot, -Refresh, -RebuildAssets or -CloseEditor.'
 }
 $projectDirectory = Split-Path -Parent $PSScriptRoot
 $projectFile = Join-Path $projectDirectory 'AstraNigara.uproject'
@@ -58,7 +59,7 @@ if ($status) {
 } elseif ($statusError) { $state = 'INVALID_STATUS' }
 
 $response = $null
-if ($Screenshot -or $Refresh -or $RebuildAssets) {
+if ($Screenshot -or $Refresh -or $RebuildAssets -or $CloseEditor) {
     if ($state -ne 'LIVE') {
         $response = [pscustomobject]@{ state = 'error'; error = "Cannot request an editor action while heartbeat is $state. Start the project with editor_status.py loaded." }
     } else {
@@ -69,7 +70,7 @@ if ($Screenshot -or $Refresh -or $RebuildAssets) {
         $temporaryPath = Join-Path $requestsDirectory ($requestId + '.tmp')
         $responsePath = Join-Path (Join-Path $bridgeDirectory 'responses') ($requestId + '.json')
         $request = [ordered]@{
-            action = if ($Screenshot) { 'screenshot' } elseif ($RebuildAssets) { 'rebuild_small_destruction' } else { 'status' }
+            action = if ($Screenshot) { 'screenshot' } elseif ($RebuildAssets) { 'rebuild_small_destruction' } elseif ($CloseEditor) { 'close_editor' } else { 'status' }
             session_id = $status.session_id
             requested_utc = [DateTimeOffset]::UtcNow.ToString('o')
             width = $Width
@@ -146,6 +147,7 @@ if ($AsJson) {
     Write-Output ('Status JSON: ' + $statusPath)
 }
 
+if ($CloseEditor -and $response -and $response.action -eq 'close_editor' -and $response.state -eq 'complete' -and $response.closing) { exit 0 }
 if ($state -ne 'LIVE') { exit 2 }
 if ($response -and $response.state -ne 'complete') { exit 3 }
 exit 0

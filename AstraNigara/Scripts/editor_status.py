@@ -62,6 +62,7 @@ class EditorStatusBridge:
         self.in_tick = False
         self.busy_action = None
         self.capture_performance_state = None
+        self.pending_close = None
 
     def stop(self):
         if self.handle is not None:
@@ -153,6 +154,7 @@ class EditorStatusBridge:
             "last_screenshot": self.last_screenshot,
             "screenshot_pending": self.pending_screenshot["id"] if self.pending_screenshot else None,
             "busy_action": self.busy_action,
+            "close_pending": self.pending_close is not None,
             "background_throttle_temporarily_disabled": self.capture_performance_state is not None,
             "errors": errors,
         }
@@ -266,6 +268,41 @@ class EditorStatusBridge:
             raise
         return states, age
 
+    def check_close_preconditions(self):
+        levels = unreal.get_editor_subsystem(unreal.LevelEditorSubsystem)
+        if levels.is_in_play_in_editor():
+            raise ValueError("Stop PIE before closing the editor")
+        if self.pending_screenshot or self.busy_action or self.capture_performance_state is not None:
+            raise ValueError("Wait for the current capture, rebuild or settings restoration before closing")
+        # These reflected UE APIs inspect loaded packages; no save/discard API is
+        # called. Include plugin/engine packages too if edited in this editor.
+        dirty = list(unreal.EditorLoadingAndSavingUtils.get_dirty_map_packages())
+        dirty.extend(unreal.EditorLoadingAndSavingUtils.get_dirty_content_packages())
+        return sorted({package.get_path_name() for package in dirty if package})
+
+    def finish_close(self):
+        request_id = self.pending_close
+        self.pending_close = None
+        try:
+            # Recheck immediately before quitting in case a package changed
+            # after the closing acknowledgement was persisted on the last tick.
+            dirty = self.check_close_preconditions()
+            if dirty:
+                self.respond(request_id, "error", action="close_editor", closing=False,
+                             error="Editor close refused because packages have unsaved changes", dirty_packages=dirty)
+                self.publish()
+                return
+            self.busy_action = "close_editor"
+            self.publish()
+            # UE dispatches QUIT_EDITOR through its normal editor shutdown path.
+            unreal.SystemLibrary.quit_editor()
+            self.stop()
+        except Exception as exc:
+            self.busy_action = None
+            self.respond(request_id, "error", action="close_editor", closing=False, error=str(exc))
+            self.publish()
+            unreal.log_error("ASTRA_EDITOR_BRIDGE_CLOSE_ERROR: " + str(exc))
+
     def process_requests(self):
         # Process a bounded batch; never execute Python/console text from requests.
         for path in sorted((self.folder / "requests").glob("*.json"))[:8]:
@@ -282,6 +319,22 @@ class EditorStatusBridge:
                 if action == "status":
                     self.publish()
                     self.respond(request_id, "complete", action=action, status_path=str(self.folder / "status.json"))
+                elif action == "close_editor":
+                    dirty = self.check_close_preconditions()
+                    if dirty:
+                        self.respond(request_id, "error", action=action, closing=False,
+                                     error="Editor close refused because packages have unsaved changes", dirty_packages=dirty)
+                    else:
+                        self.pending_close = request_id
+                        try:
+                            self.respond(request_id, "complete", action=action, closing=True, dirty_packages=[],
+                                         message="Closing accepted; normal editor shutdown will be requested on the next Slate tick")
+                            self.publish()
+                        except Exception:
+                            self.pending_close = None
+                            raise
+                        # Do not run another queued action after accepting close.
+                        return
                 elif action == "rebuild_small_destruction":
                     levels = unreal.get_editor_subsystem(unreal.LevelEditorSubsystem)
                     if levels.is_in_play_in_editor():
@@ -335,7 +388,7 @@ class EditorStatusBridge:
                             unreal.log_error("ASTRA_EDITOR_BRIDGE_RESTORE_ERROR: " + error)
                         raise
                 else:
-                    raise ValueError("Supported actions are status, screenshot and rebuild_small_destruction")
+                    raise ValueError("Supported actions are status, screenshot, rebuild_small_destruction and close_editor")
             except Exception as exc:
                 self.respond(request_id, "error", error=str(exc))
                 unreal.log_warning("ASTRA_EDITOR_BRIDGE_REQUEST_ERROR: {}".format(exc))
@@ -344,7 +397,16 @@ class EditorStatusBridge:
 
     def tick(self, delta_seconds):
         now = time.monotonic()
-        if self.in_tick or now < self.next_tick:
+        if self.in_tick:
+            return
+        if self.pending_close is not None:
+            self.in_tick = True
+            try:
+                self.finish_close()
+            finally:
+                self.in_tick = False
+            return
+        if now < self.next_tick:
             return
         self.in_tick = True
         self.next_tick = now + self.INTERVAL

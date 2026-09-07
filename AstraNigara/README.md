@@ -9,6 +9,8 @@ UE 5.7 Niagara 테스트용 프로젝트.
 - `VFX/SmallDestruction/NS_SmallDestruction`: 일회성 효과.
 - `VFX/SmallDestruction/NS_SmallDestruction_Showcase`: 동일한 구성으로 2초마다 반복.
 - 파편, 화염, 연기, 열 왜곡을 각각 독립 이미터로 구성.
+- 파편 22개는 볼트·너트·스프링·기어·와셔·샤프트 커플러 6종 메시를 무작위로 사용한다. [부품 원본과 재생성](ArtSource/MechanicalParts/README.md).
+- 부품마다 LOD0/1/2를 생성하고 화면 크기에 따라 자동 선택한다. LOD1/2 삼각형 목표는 원본의 50%/20%다.
 - [효과 구성과 제한](Docs/SmallDestruction.md), [에디터 상태와 화면 점검](Docs/EditorStatus.md).
 
 처음 체크아웃한 PC에서는 Visual Studio 2022 C++ 도구와 UE 5.7로 에디터 전용 모듈을 빌드한다. 생성된 Niagara 에셋 자체는 엔진 기본 모듈만 사용한다.
