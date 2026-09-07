@@ -1,0 +1,4140 @@
+{
+	"schema_version": 1,
+	"map": "L_AstraCrystalCave",
+	"passed": true,
+	"exit_code": 0,
+	"elapsed_game_seconds": 75.92327880859375,
+	"failed_checks": 0,
+	"input_method": "FInputKeyEventArgs::CreateSimulated -> AAstraController::PlayerTick WASD -> CharacterMovement",
+	"route_source": "ArtSource/Layout/CrystalCave/cave_routes.json",
+	"position_writes": "Initial route placement only; no teleport or SetActorLocation during traversal",
+	"camera_pitch": -58,
+	"camera_yaw": 0,
+	"ortho_width_cm": 2300,
+	"walk_speed_cm_s": 260,
+	"waypoint_tolerance_cm": 45,
+	"routes_expected": 9,
+	"routes_completed": 9,
+	"checks": [
+		{
+			"name": "cave_controller_and_camera",
+			"passed": true,
+			"detail": "Calico, pitch -58 yaw 0, orthographic width 2300cm"
+		},
+		{
+			"name": "forest_demo_unbound",
+			"passed": true,
+			"detail": "P has no binding in the cave controller"
+		},
+		{
+			"name": "input_W",
+			"passed": true,
+			"detail": "travel_cm=138.35 lateral_cm=0.00 delta=X=138.350 Y=0.000 Z=-1.995 grounded=1 camera_fixed=1"
+		},
+		{
+			"name": "input_A",
+			"passed": true,
+			"detail": "travel_cm=132.43 lateral_cm=0.00 delta=X=0.000 Y=-132.430 Z=-1.769 grounded=1 camera_fixed=1"
+		},
+		{
+			"name": "input_S",
+			"passed": true,
+			"detail": "travel_cm=121.64 lateral_cm=0.00 delta=X=-121.638 Y=0.000 Z=0.631 grounded=1 camera_fixed=1"
+		},
+		{
+			"name": "input_D",
+			"passed": true,
+			"detail": "travel_cm=104.99 lateral_cm=0.00 delta=X=0.000 Y=104.995 Z=2.593 grounded=1 camera_fixed=1"
+		},
+		{
+			"name": "full_traversal",
+			"passed": true,
+			"detail": "Every waypoint reached by actual WASD with continuous supported movement"
+		},
+		{
+			"name": "fork1_left",
+			"passed": true,
+			"detail": "Every waypoint reached by actual WASD with continuous supported movement"
+		},
+		{
+			"name": "fork1_right",
+			"passed": true,
+			"detail": "Every waypoint reached by actual WASD with continuous supported movement"
+		},
+		{
+			"name": "fork2_left",
+			"passed": true,
+			"detail": "Every waypoint reached by actual WASD with continuous supported movement"
+		},
+		{
+			"name": "fork2_right",
+			"passed": true,
+			"detail": "Every waypoint reached by actual WASD with continuous supported movement"
+		},
+		{
+			"name": "island1_collision",
+			"passed": true,
+			"detail": "Held WASD into the tagged barrier for 1.2 seconds; capsule stopped at expected collision surface"
+		},
+		{
+			"name": "island2_collision",
+			"passed": true,
+			"detail": "Held WASD into the tagged barrier for 1.2 seconds; capsule stopped at expected collision surface"
+		},
+		{
+			"name": "boundary_collision",
+			"passed": true,
+			"detail": "Held WASD into the tagged barrier for 1.2 seconds; capsule stopped at expected collision surface"
+		},
+		{
+			"name": "entrance_collision",
+			"passed": true,
+			"detail": "Held WASD into the tagged barrier for 1.2 seconds; capsule stopped at expected collision surface"
+		}
+	],
+	"routes": [
+		{
+			"name": "full_traversal",
+			"kind": "walk",
+			"initial_position_cm": [
+				0,
+				-2100,
+				124.59306116690212
+			],
+			"passed": true,
+			"reached_objective": true,
+			"detail": "Every waypoint reached by actual WASD with continuous supported movement",
+			"seconds": 22.368837356567383,
+			"travel_cm": 5676.5458984375,
+			"max_unsupported_seconds": 0,
+			"discontinuous_moves": 0,
+			"fixed_camera": true,
+			"within_cave_bounds": true,
+			"final_grounded": true,
+			"final_position_cm": [
+				-1.1925576432496745,
+				2056.4735298423634,
+				100.48492794954034
+			],
+			"reached_waypoints": [
+				{
+					"index": 1,
+					"error_cm": 31.991934220443,
+					"seconds": 2.3557353019714355,
+					"grounded": true,
+					"position_cm": [
+						0,
+						-1631.991934220443,
+						126.42935740731369
+					]
+				},
+				{
+					"index": 2,
+					"error_cm": 37.395331255337524,
+					"seconds": 4.7122817039489746,
+					"grounded": true,
+					"position_cm": [
+						-512.67555456784385,
+						-1402.3014284430374,
+						110.34563682870522
+					]
+				},
+				{
+					"index": 3,
+					"error_cm": 32.023331830404885,
+					"seconds": 8.5181903839111328,
+					"grounded": true,
+					"position_cm": [
+						-552.23523525168014,
+						-431.945226637009,
+						120.39797966905726
+					]
+				},
+				{
+					"index": 4,
+					"error_cm": 42.567263520950746,
+					"seconds": 10.845354080200195,
+					"grounded": true,
+					"position_cm": [
+						-42.546169967840456,
+						-201.33990474650068,
+						103.99995477178064
+					]
+				},
+				{
+					"index": 5,
+					"error_cm": 43.278570534557829,
+					"seconds": 11.911813735961914,
+					"grounded": true,
+					"position_cm": [
+						-1.3035900644477412,
+						56.741066582050706,
+						115.84802019196637
+					]
+				},
+				{
+					"index": 6,
+					"error_cm": 39.521755269079328,
+					"seconds": 14.279508590698242,
+					"grounded": true,
+					"position_cm": [
+						510.51469704451273,
+						301.69705334694805,
+						107.56272546613518
+					]
+				},
+				{
+					"index": 7,
+					"error_cm": 40.721996530519093,
+					"seconds": 18.023103713989258,
+					"grounded": true,
+					"position_cm": [
+						551.13114165823924,
+						1259.2937164558025,
+						116.51416640121178
+					]
+				},
+				{
+					"index": 8,
+					"error_cm": 38.668454415329009,
+					"seconds": 20.54498291015625,
+					"grounded": true,
+					"position_cm": [
+						38.664190700348328,
+						1599.4257837014893,
+						99.360644091627606
+					]
+				},
+				{
+					"index": 9,
+					"error_cm": 43.542804205931688,
+					"seconds": 22.368837356567383,
+					"grounded": true,
+					"position_cm": [
+						-1.1925576432496745,
+						2056.4735298423634,
+						100.48492794954034
+					]
+				}
+			],
+			"samples": [
+				{
+					"seconds": 0.49790811538696289,
+					"position_cm": [
+						0,
+						-2100,
+						124.59306116690212
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 36.593061166902118,
+					"speed_cm_s": 0
+				},
+				{
+					"seconds": 0.7168583869934082,
+					"position_cm": [
+						0,
+						-2056.6280170186856,
+						125.44699270367443
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 37.446992703674425,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 0.94224691390991211,
+					"position_cm": [
+						0,
+						-2000.4021330579617,
+						126.41538269453989
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 38.415382694539886,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.1609268188476562,
+					"position_cm": [
+						0,
+						-1941.2380143656828,
+						127.58023848644076
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 39.580238486440763,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.3868422508239746,
+					"position_cm": [
+						0,
+						-1884.0452421858408,
+						128.17363276592073
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 40.173632765920729,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.6228976249694824,
+					"position_cm": [
+						0,
+						-1823.3690948441126,
+						128.02193276564904
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 40.021932765649041,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.8503069877624512,
+					"position_cm": [
+						0,
+						-1764.6569086268046,
+						127.73000399749108
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 39.730003997491082,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 2.0764470100402832,
+					"position_cm": [
+						0,
+						-1705.7396604522564,
+						127.73000399749108
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 39.730003997491082,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 2.3009638786315918,
+					"position_cm": [
+						0,
+						-1647.2668305441239,
+						126.73009798605972
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 38.730097986059718,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 2.5342230796813965,
+					"position_cm": [
+						-24.096586213468278,
+						-1593.4070452618189,
+						126.40141004948701
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 38.401410049487012,
+					"speed_cm_s": 260.00000000000227
+				},
+				{
+					"seconds": 2.7657790184020996,
+					"position_cm": [
+						-66.420506512437399,
+						-1549.9488829552747,
+						126.3870530249954
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 38.387053024995396,
+					"speed_cm_s": 260.00000000000028
+				},
+				{
+					"seconds": 3.0014119148254395,
+					"position_cm": [
+						-109.37569574312548,
+						-1506.9574633942561,
+						125.68072392669322
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 37.680723926693219,
+					"speed_cm_s": 259.99999999999898
+				},
+				{
+					"seconds": 3.2325615882873535,
+					"position_cm": [
+						-151.57818657818478,
+						-1464.7538283956562,
+						125.18808954340174
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 37.188089543401745,
+					"speed_cm_s": 259.99999999999847
+				},
+				{
+					"seconds": 3.4552597999572754,
+					"position_cm": [
+						-192.76205175323108,
+						-1423.5699249246568,
+						124.3774917690632
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 36.377491769063198,
+					"speed_cm_s": 259.99999999999864
+				},
+				{
+					"seconds": 3.693789005279541,
+					"position_cm": [
+						-248.19331020543791,
+						-1403.0882803799063,
+						123.01738553637244
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 35.017385536372444,
+					"speed_cm_s": 259.99999999999972
+				},
+				{
+					"seconds": 3.9241223335266113,
+					"position_cm": [
+						-307.36521159057531,
+						-1402.3287010539525,
+						121.48672031884122
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 33.486720318841222,
+					"speed_cm_s": 259.99999999999903
+				},
+				{
+					"seconds": 4.1509366035461426,
+					"position_cm": [
+						-366.64733415027547,
+						-1402.3023778758568,
+						118.49672839130903
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 30.496728391309034,
+					"speed_cm_s": 260.00000000000017
+				},
+				{
+					"seconds": 4.3706889152526855,
+					"position_cm": [
+						-425.69153931169376,
+						-1402.3014624161483,
+						115.29384661117051
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 27.293846611170508,
+					"speed_cm_s": 260.00000000000091
+				},
+				{
+					"seconds": 4.5887503623962402,
+					"position_cm": [
+						-481.31268929865979,
+						-1402.3014296311944,
+						111.64351401261111
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.643514012611107,
+					"speed_cm_s": 259.99999999999937
+				},
+				{
+					"seconds": 4.8237948417663574,
+					"position_cm": [
+						-539.07237385653605,
+						-1388.5365624915162,
+						108.74871577685678
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 20.748715776856784,
+					"speed_cm_s": 259.99999999999784
+				},
+				{
+					"seconds": 5.0510010719299316,
+					"position_cm": [
+						-551.72980311660103,
+						-1333.380213993466,
+						109.05944160361784
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 21.059441603617842,
+					"speed_cm_s": 259.99999999999613
+				},
+				{
+					"seconds": 5.276033878326416,
+					"position_cm": [
+						-552.21748273316473,
+						-1274.8882333441668,
+						109.84953168236348
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 21.849531682363477,
+					"speed_cm_s": 260.00000000000136
+				},
+				{
+					"seconds": 5.5005974769592285,
+					"position_cm": [
+						-552.23465444939484,
+						-1215.6609136535521,
+						110.64755758587631
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 22.647557585876314,
+					"speed_cm_s": 259.9999999999979
+				},
+				{
+					"seconds": 5.7392230033874512,
+					"position_cm": [
+						-552.23521824544559,
+						-1153.4592938398116,
+						111.87185805772208
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.871858057722079,
+					"speed_cm_s": 259.99999999999847
+				},
+				{
+					"seconds": 5.9746832847595215,
+					"position_cm": [
+						-552.23523469212012,
+						-1093.6041740303071,
+						113.05031812804368
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 25.050318128043685,
+					"speed_cm_s": 260.00000000000023
+				},
+				{
+					"seconds": 6.208895206451416,
+					"position_cm": [
+						-552.2352352343762,
+						-1032.1987000082763,
+						113.88951326914805
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 25.889513269148054,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 6.4318099021911621,
+					"position_cm": [
+						-552.23523525101086,
+						-974.97745848942122,
+						114.72496690062353
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 26.724966900623528,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 6.6707825660705566,
+					"position_cm": [
+						-552.23523525165615,
+						-911.58758543181739,
+						115.89122448933574
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 27.891224489335741,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 6.9013800621032715,
+					"position_cm": [
+						-552.23523525167366,
+						-851.6170259540113,
+						117.07195790365009
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 29.071957903650087,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 7.1281018257141113,
+					"position_cm": [
+						-552.23523525167468,
+						-791.87594137835822,
+						117.88338287204402
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 29.883382872044024,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 7.3647570610046387,
+					"position_cm": [
+						-552.23523525167559,
+						-731.81258752692065,
+						118.4709206851071
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 30.470920685107103,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 7.5905594825744629,
+					"position_cm": [
+						-552.2352352516765,
+						-671.46851144481025,
+						119.08827221708952
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 31.088272217089525,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 7.8246111869812012,
+					"position_cm": [
+						-552.23523525167741,
+						-612.9632855926784,
+						119.6643964083737
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 31.664396408373705,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 8.0523128509521484,
+					"position_cm": [
+						-552.23523525167832,
+						-550.85451148200355,
+						119.6643964083737
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 31.664396408373705,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 8.2841377258300781,
+					"position_cm": [
+						-552.23523525167923,
+						-494.03312310326419,
+						120.01273180308989
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 32.012731803089892,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 8.5181903839111328,
+					"position_cm": [
+						-552.23523525168014,
+						-431.945226637009,
+						120.39797966905726
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 32.397979669057264,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 8.7386226654052734,
+					"position_cm": [
+						-519.1651580638777,
+						-383.93730036430401,
+						119.34827760658254
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 31.348277606582542,
+					"speed_cm_s": 259.99999999999915
+				},
+				{
+					"seconds": 8.9587345123291016,
+					"position_cm": [
+						-479.64612488108952,
+						-343.87445885782171,
+						117.657112221605
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 29.657112221605004,
+					"speed_cm_s": 260.00000000000091
+				},
+				{
+					"seconds": 9.1951637268066406,
+					"position_cm": [
+						-436.37412125660956,
+						-300.58009411821985,
+						115.19380948804657
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 27.193809488046568,
+					"speed_cm_s": 260.00000000000034
+				},
+				{
+					"seconds": 9.3982315063476562,
+					"position_cm": [
+						-396.40264804480739,
+						-260.60794137842475,
+						112.28410775648959
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 24.28410775648959,
+					"speed_cm_s": 260.00000000000023
+				},
+				{
+					"seconds": 9.6238136291503906,
+					"position_cm": [
+						-355.60667483008967,
+						-219.81194541107044,
+						109.79048945349619
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 21.790489453496193,
+					"speed_cm_s": 259.99999999999983
+				},
+				{
+					"seconds": 9.8770294189453125,
+					"position_cm": [
+						-297.1893102000451,
+						-201.86688457871958,
+						106.59234739088144
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.592347390881443,
+					"speed_cm_s": 260.00000000000034
+				},
+				{
+					"seconds": 10.100320816040039,
+					"position_cm": [
+						-235.35756573769612,
+						-201.35276967644313,
+						104.06616503695804
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 16.06616503695804,
+					"speed_cm_s": 260.00000000000006
+				},
+				{
+					"seconds": 10.327186584472656,
+					"position_cm": [
+						-176.81539593547126,
+						-201.34030736987356,
+						102.94701085253146
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 14.947010852531463,
+					"speed_cm_s": 259.99999999999989
+				},
+				{
+					"seconds": 10.550788879394531,
+					"position_cm": [
+						-118.85895235974363,
+						-201.33991839449698,
+						102.55906463051149
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 14.559064630511486,
+					"speed_cm_s": 259.99999999999983
+				},
+				{
+					"seconds": 10.798149108886719,
+					"position_cm": [
+						-55.607192353795313,
+						-201.33990495390753,
+						103.78572795519247
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 15.785727955192471,
+					"speed_cm_s": 260.00000000000006
+				},
+				{
+					"seconds": 11.040712356567383,
+					"position_cm": [
+						-6.0272693493894485,
+						-169.07340031633572,
+						106.32312281733604
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.323122817336042,
+					"speed_cm_s": 259.99999999999972
+				},
+				{
+					"seconds": 11.278879165649414,
+					"position_cm": [
+						-1.4244638495650968,
+						-107.24808648359121,
+						108.57062564428745
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 20.570625644287446,
+					"speed_cm_s": 260.00000000000006
+				},
+				{
+					"seconds": 11.502143859863281,
+					"position_cm": [
+						-1.3073898768723842,
+						-48.490527876784022,
+						110.89201142156625
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 22.892011421566252,
+					"speed_cm_s": 259.99999999999994
+				},
+				{
+					"seconds": 11.730646133422852,
+					"position_cm": [
+						-1.3036981888340653,
+						10.606016002333444,
+						113.68793866704588
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 25.687938667045884,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 11.959117889404297,
+					"position_cm": [
+						3.90017692017173,
+						68.384936342718646,
+						116.64803749258911
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 28.648037492589111,
+					"speed_cm_s": 260.00000000000011
+				},
+				{
+					"seconds": 12.179882049560547,
+					"position_cm": [
+						41.999079878809873,
+						112.28332547205109,
+						119.62675502132873
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 31.626755021328734,
+					"speed_cm_s": 260.00000000000006
+				},
+				{
+					"seconds": 12.403095245361328,
+					"position_cm": [
+						82.963995277849378,
+						153.43836779702093,
+						122.26650819577333
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 34.266508195773326,
+					"speed_cm_s": 259.99999999999983
+				},
+				{
+					"seconds": 12.626031875610352,
+					"position_cm": [
+						123.33290422066037,
+						193.81348360625267,
+						123.62094114492096
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 35.620941144920963,
+					"speed_cm_s": 259.99999999999989
+				},
+				{
+					"seconds": 12.844367980957031,
+					"position_cm": [
+						163.81436613016973,
+						234.29515705365534,
+						124.09095210168999
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 36.090952101689993,
+					"speed_cm_s": 259.9999999999996
+				},
+				{
+					"seconds": 13.069597244262695,
+					"position_cm": [
+						205.35759567822339,
+						275.83839390624541,
+						123.87868844114138
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 35.878688441141378,
+					"speed_cm_s": 260.00000000000023
+				},
+				{
+					"seconds": 13.293956756591797,
+					"position_cm": [
+						255.54563758831975,
+						300.49852592701779,
+						122.00782390189939
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 34.007823901899386,
+					"speed_cm_s": 259.99999999999994
+				},
+				{
+					"seconds": 13.51470947265625,
+					"position_cm": [
+						313.58071005700623,
+						301.65720369363055,
+						118.96341050234615
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 30.96341050234615,
+					"speed_cm_s": 260.0000000000004
+				},
+				{
+					"seconds": 13.739629745483398,
+					"position_cm": [
+						371.65888943563732,
+						301.69577093815178,
+						115.15207705740502
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 27.152077057405023,
+					"speed_cm_s": 259.9999999999996
+				},
+				{
+					"seconds": 13.958621978759766,
+					"position_cm": [
+						428.2373590612911,
+						301.69700845942282,
+						111.87708744726966
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.877087447269659,
+					"speed_cm_s": 259.9999999999996
+				},
+				{
+					"seconds": 14.184587478637695,
+					"position_cm": [
+						486.92770487012575,
+						301.69705228570831,
+						109.11070448446674
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 21.110704484466737,
+					"speed_cm_s": 260.00000000000057
+				},
+				{
+					"seconds": 14.415395736694336,
+					"position_cm": [
+						541.08224740396008,
+						321.34074272800922,
+						106.36654953006533
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.366549530065328,
+					"speed_cm_s": 260.00000000000074
+				},
+				{
+					"seconds": 14.645235061645508,
+					"position_cm": [
+						550.8219088638225,
+						379.11930644038108,
+						105.89963151253038
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 17.899631512530377,
+					"speed_cm_s": 259.9999999999996
+				},
+				{
+					"seconds": 14.859285354614258,
+					"position_cm": [
+						551.12010339750714,
+						436.07394421724194,
+						105.89963151253038
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 17.899631512530377,
+					"speed_cm_s": 259.9999999999996
+				},
+				{
+					"seconds": 15.079811096191406,
+					"position_cm": [
+						551.13075554304612,
+						493.00284078462499,
+						106.23807904322987
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.238079043229874,
+					"speed_cm_s": 259.99999999999949
+				},
+				{
+					"seconds": 15.298101425170898,
+					"position_cm": [
+						551.13112791727906,
+						549.59220399986486,
+						106.57285138103671
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.572851381036713,
+					"speed_cm_s": 260.00000000000108
+				},
+				{
+					"seconds": 15.517559051513672,
+					"position_cm": [
+						551.13114118268413,
+						606.95785043667274,
+						106.57285138103671
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.572851381036713,
+					"speed_cm_s": 260.00000000000017
+				},
+				{
+					"seconds": 15.726432800292969,
+					"position_cm": [
+						551.1311416389417,
+						662.35116241405922,
+						107.21810742351718
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 19.218107423517182,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 15.964466094970703,
+					"position_cm": [
+						551.13114165770389,
+						723.96921260188537,
+						107.82457753154941
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 19.824577531549409,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 16.199954986572266,
+					"position_cm": [
+						551.13114165822014,
+						785.53786253462749,
+						108.6466451104819
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 20.646645110481899,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 16.437562942504883,
+					"position_cm": [
+						551.13114165823458,
+						846.79885415266472,
+						109.24990383138599
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 21.249903831385993,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 16.67656135559082,
+					"position_cm": [
+						551.13114165823538,
+						909.10699596534687,
+						110.47666089289589
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 22.476660892895893,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 16.91059684753418,
+					"position_cm": [
+						551.13114165823606,
+						970.44838031660038,
+						111.38125909766116
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.381259097661157,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 17.145793914794922,
+					"position_cm": [
+						551.13114165823674,
+						1031.6686559272857,
+						112.28306085393567
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 24.283060853935666,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 17.386163711547852,
+					"position_cm": [
+						551.13114165823742,
+						1093.3889382881971,
+						113.49824380286394
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 25.498243802863939,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 17.627477645874023,
+					"position_cm": [
+						551.13114165823811,
+						1155.6092525822969,
+						114.72327166591057
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 26.723271665910573,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 17.862138748168945,
+					"position_cm": [
+						551.13114165823879,
+						1217.6821981174799,
+						115.9451468012425
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 27.945146801242501,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 18.062578201293945,
+					"position_cm": [
+						547.61168331700981,
+						1268.9202239209862,
+						116.37798525395721
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 28.377985253957206,
+					"speed_cm_s": 260.00000000000068
+				},
+				{
+					"seconds": 18.299663543701172,
+					"position_cm": [
+						508.09946753222164,
+						1315.932506494277,
+						115.15398763968584
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 27.153987639685838,
+					"speed_cm_s": 260.00000000000188
+				},
+				{
+					"seconds": 18.502384185791016,
+					"position_cm": [
+						471.03633568065874,
+						1353.1986072759294,
+						113.40403910394384
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 25.404039103943845,
+					"speed_cm_s": 260.00000000000119
+				},
+				{
+					"seconds": 18.702800750732422,
+					"position_cm": [
+						433.93381342340984,
+						1390.3106457659724,
+						111.64968041133119
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.64968041133119,
+					"speed_cm_s": 260.00000000000102
+				},
+				{
+					"seconds": 18.949064254760742,
+					"position_cm": [
+						390.23151703368353,
+						1434.0134005098632,
+						109.45218393223391
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 21.452183932233908,
+					"speed_cm_s": 259.99999999999835
+				},
+				{
+					"seconds": 19.185384750366211,
+					"position_cm": [
+						345.43532446144974,
+						1478.8096050683321,
+						106.58316197379783
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.583161973797829,
+					"speed_cm_s": 260.00000000000182
+				},
+				{
+					"seconds": 19.385560989379883,
+					"position_cm": [
+						308.78793871972493,
+						1515.4569911127019,
+						104.96525237134725
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 16.965252371347248,
+					"speed_cm_s": 259.99999999999903
+				},
+				{
+					"seconds": 19.588274002075195,
+					"position_cm": [
+						271.80890966174229,
+						1552.4360201853553,
+						103.03966190508011
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 15.039661905080109,
+					"speed_cm_s": 259.99999999999835
+				},
+				{
+					"seconds": 19.789108276367188,
+					"position_cm": [
+						234.52439939582504,
+						1589.7205304519621,
+						101.96870217232656
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 13.968702172326559,
+					"speed_cm_s": 259.99999999999977
+				},
+				{
+					"seconds": 20.029926300048828,
+					"position_cm": [
+						173.42751211581182,
+						1599.165855189415,
+						99.256975984975426
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 11.256975984975426,
+					"speed_cm_s": 259.99999999999977
+				},
+				{
+					"seconds": 20.266408920288086,
+					"position_cm": [
+						112.11954587086302,
+						1599.4186131219008,
+						98.299702520101278
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 10.299702520101278,
+					"speed_cm_s": 259.99999999999989
+				},
+				{
+					"seconds": 20.468353271484375,
+					"position_cm": [
+						59.436318506020214,
+						1599.4255460257639,
+						99.360648771118434
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 11.360648771118434,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 20.672664642333984,
+					"position_cm": [
+						10.546583180992949,
+						1615.9513424197035,
+						99.958031794497245
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 11.958031794497245,
+					"speed_cm_s": 259.99999999999966
+				},
+				{
+					"seconds": 20.902170181274414,
+					"position_cm": [
+						-0.8236775275542696,
+						1675.13463706992,
+						99.165814371955918
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 11.165814371955918,
+					"speed_cm_s": 259.99999999999704
+				},
+				{
+					"seconds": 21.102190017700195,
+					"position_cm": [
+						-1.1738349670891861,
+						1727.1388408408643,
+						98.594881640064997
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 10.594881640064997,
+					"speed_cm_s": 260.00000000000063
+				},
+				{
+					"seconds": 21.335519790649414,
+					"position_cm": [
+						-1.1919792281959034,
+						1787.8057023749711,
+						97.998389322072683
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 9.9983893220726827,
+					"speed_cm_s": 259.99999999999909
+				},
+				{
+					"seconds": 21.568849563598633,
+					"position_cm": [
+						-1.1925397739604915,
+						1848.4726201562794,
+						97.998407710209776
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 9.9984077102097757,
+					"speed_cm_s": 259.99999999999682
+				},
+				{
+					"seconds": 21.802179336547852,
+					"position_cm": [
+						-1.1925570913162209,
+						1909.1395640938149,
+						98.424862004919362
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 10.424862004919362,
+					"speed_cm_s": 260.00000000000023
+				},
+				{
+					"seconds": 22.03550910949707,
+					"position_cm": [
+						-1.1925576263134403,
+						1969.8064818798171,
+						98.994549016432217
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 10.994549016432217,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 22.268838882446289,
+					"position_cm": [
+						-1.1925576428415026,
+						2030.4733996658192,
+						99.717150646896044
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 11.717150646896044,
+					"speed_cm_s": 260
+				}
+			]
+		},
+		{
+			"name": "fork1_left",
+			"kind": "walk",
+			"initial_position_cm": [
+				0,
+				-1600,
+				125.57799396428209
+			],
+			"passed": true,
+			"reached_objective": true,
+			"detail": "Every waypoint reached by actual WASD with continuous supported movement",
+			"seconds": 8.9334754943847656,
+			"travel_cm": 2184.52587890625,
+			"max_unsupported_seconds": 0,
+			"discontinuous_moves": 0,
+			"fixed_camera": true,
+			"within_cave_bounds": true,
+			"final_grounded": true,
+			"final_position_cm": [
+				-37.280167901091382,
+				-202.07438655985882,
+				104.1880632390592
+			],
+			"reached_waypoints": [
+				{
+					"index": 1,
+					"error_cm": 40.631691761387948,
+					"seconds": 2.799957275390625,
+					"grounded": true,
+					"position_cm": [
+						-509.37598529671146,
+						-1399.2101868705586,
+						110.59259464056119
+					]
+				},
+				{
+					"index": 2,
+					"error_cm": 39.510864535602671,
+					"seconds": 6.5668449401855469,
+					"grounded": true,
+					"position_cm": [
+						-551.10689046490938,
+						-439.49535681380075,
+						120.60399342557302
+					]
+				},
+				{
+					"index": 3,
+					"error_cm": 37.337836015672991,
+					"seconds": 8.9334754943847656,
+					"grounded": true,
+					"position_cm": [
+						-37.280167901091382,
+						-202.07438655985882,
+						104.1880632390592
+					]
+				}
+			],
+			"samples": [
+				{
+					"seconds": 0.4666595458984375,
+					"position_cm": [
+						0,
+						-1600,
+						125.57799396428209
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 37.577993964282086,
+					"speed_cm_s": 0
+				},
+				{
+					"seconds": 0.69998931884765625,
+					"position_cm": [
+						-30.955762345006949,
+						-1569.0442376549931,
+						125.9841181171663
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 37.984118117166304,
+					"speed_cm_s": 260.00000000000131
+				},
+				{
+					"seconds": 0.933319091796875,
+					"position_cm": [
+						-73.853769797105542,
+						-1526.1462302028942,
+						125.82340523459227
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 37.823405234592272,
+					"speed_cm_s": 260.00000000000125
+				},
+				{
+					"seconds": 1.1666488647460938,
+					"position_cm": [
+						-116.75174026534452,
+						-1483.2482597346548,
+						125.60200553212934
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 37.60200553212934,
+					"speed_cm_s": 259.99999999999915
+				},
+				{
+					"seconds": 1.3999786376953125,
+					"position_cm": [
+						-159.64974771744306,
+						-1440.3502522825559,
+						124.89824116011141
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 36.898241160111411,
+					"speed_cm_s": 259.99999999999972
+				},
+				{
+					"seconds": 1.6333084106445312,
+					"position_cm": [
+						-206.26264813462544,
+						-1403.1730141361697,
+						123.91047831320589
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 35.910478313205886,
+					"speed_cm_s": 259.99999999999977
+				},
+				{
+					"seconds": 1.86663818359375,
+					"position_cm": [
+						-266.70862857741196,
+						-1399.3329900363487,
+						123.0357250938192
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 35.035725093819195,
+					"speed_cm_s": 259.99999999999977
+				},
+				{
+					"seconds": 2.0999679565429688,
+					"position_cm": [
+						-327.37530865827335,
+						-1399.2139806280479,
+						120.29287607310859
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 32.292876073108587,
+					"speed_cm_s": 259.99999999999972
+				},
+				{
+					"seconds": 2.3332977294921875,
+					"position_cm": [
+						-388.04222721093822,
+						-1399.2103039655833,
+						117.16448194816003
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 29.164481948160031,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 2.5666275024414062,
+					"position_cm": [
+						-448.70909269367189,
+						-1399.210190379662,
+						114.03644651233989
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 26.036446512339893,
+					"speed_cm_s": 260.00000000000085
+				},
+				{
+					"seconds": 2.799957275390625,
+					"position_cm": [
+						-509.37598529671146,
+						-1399.2101868705586,
+						110.59259464056119
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 22.592594640561188,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 3.0332870483398438,
+					"position_cm": [
+						-548.34302683936903,
+						-1358.1300401984495,
+						108.58115870068231
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 20.581158700682309,
+					"speed_cm_s": 259.99999999999648
+				},
+				{
+					"seconds": 3.2666168212890625,
+					"position_cm": [
+						-551.02137934478992,
+						-1297.5704981132583,
+						109.59853276818203
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 21.598532768182025,
+					"speed_cm_s": 260.00000000000313
+				},
+				{
+					"seconds": 3.5001945495605469,
+					"position_cm": [
+						-551.10425142015868,
+						-1236.9036819412333,
+						110.19050166912983
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 22.19050166912983,
+					"speed_cm_s": 259.99999999999733
+				},
+				{
+					"seconds": 3.7335243225097656,
+					"position_cm": [
+						-551.10680917655247,
+						-1176.1726222789675,
+						111.38580405868677
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.385804058686773,
+					"speed_cm_s": 260.00000000000057
+				},
+				{
+					"seconds": 3.9335517883300781,
+					"position_cm": [
+						-551.10688633954044,
+						-1124.164848685992,
+						112.40965245506314
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 24.409652455063139,
+					"speed_cm_s": 259.99999999999858
+				},
+				{
+					"seconds": 4.1668815612792969,
+					"position_cm": [
+						-551.10689033745723,
+						-1063.4979047484521,
+						113.51880578664435
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 25.51880578664435,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 4.4002113342285156,
+					"position_cm": [
+						-551.10689046096741,
+						-1002.8309346593742,
+						114.11621495917612
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 26.116214959176119,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 4.6335411071777344,
+					"position_cm": [
+						-551.10689046478285,
+						-942.16399072183412,
+						115.31039235168932
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 27.310392351689316,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 4.8668708801269531,
+					"position_cm": [
+						-551.10689046490063,
+						-881.49704678429407,
+						116.41933230782968
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 28.419332307829677,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 5.1002006530761719,
+					"position_cm": [
+						-551.10689046490438,
+						-820.83012802971643,
+						117.52848528151918
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 29.528485281519181,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 5.3335304260253906,
+					"position_cm": [
+						-551.10689046490518,
+						-760.16321024371427,
+						118.12589394711439
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 30.125893947114392,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 5.5668601989746094,
+					"position_cm": [
+						-551.10689046490597,
+						-699.49631860925001,
+						118.8124195125807
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 30.812419512580703,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 5.8001899719238281,
+					"position_cm": [
+						-551.10689046490677,
+						-638.82945215774816,
+						119.32434044153578
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 31.324340441535782,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 6.0335197448730469,
+					"position_cm": [
+						-551.10689046490756,
+						-578.1625605232839,
+						119.83637676508314
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 31.836376765083145,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 6.2668495178222656,
+					"position_cm": [
+						-551.10689046490836,
+						-517.49569407178205,
+						119.92166756809048
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 31.921667568090484,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 6.5001792907714844,
+					"position_cm": [
+						-551.10689046490916,
+						-456.8287762857799,
+						120.51870263002064
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 32.518702630020641,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 6.7335090637207031,
+					"position_cm": [
+						-528.36741934940801,
+						-403.17505475956773,
+						119.87592151930846
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 31.875921519308463,
+					"speed_cm_s": 260.00000000000028
+				},
+				{
+					"seconds": 6.9668388366699219,
+					"position_cm": [
+						-486.09105103550189,
+						-359.67135626374818,
+						118.06051638611926
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 30.060516386119261,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 7.2001686096191406,
+					"position_cm": [
+						-443.21203114241126,
+						-316.75441342607667,
+						115.39370742224678
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 27.393707422246777,
+					"speed_cm_s": 259.99999999999943
+				},
+				{
+					"seconds": 7.4334983825683594,
+					"position_cm": [
+						-400.31464647259281,
+						-273.85585717391427,
+						112.61898880063734
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 24.618988800637339,
+					"speed_cm_s": 259.99999999999955
+				},
+				{
+					"seconds": 7.6668281555175781,
+					"position_cm": [
+						-357.41667492484453,
+						-230.95784943156602,
+						109.94446971998192
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 21.944469719981925,
+					"speed_cm_s": 259.9999999999996
+				},
+				{
+					"seconds": 7.9001579284667969,
+					"position_cm": [
+						-305.91771737866617,
+						-203.54565421249282,
+						107.33082184139631
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 19.330821841396315,
+					"speed_cm_s": 259.99999999999994
+				},
+				{
+					"seconds": 8.1334877014160156,
+					"position_cm": [
+						-245.28115219095108,
+						-202.11985834337025,
+						104.48902848827358
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 16.489028488273576,
+					"speed_cm_s": 259.99999999999994
+				},
+				{
+					"seconds": 8.3668174743652344,
+					"position_cm": [
+						-184.61415977346758,
+						-202.07579105254931,
+						103.35185186677478
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 15.35185186677478,
+					"speed_cm_s": 260.0000000000004
+				},
+				{
+					"seconds": 8.6001472473144531,
+					"position_cm": [
+						-123.94724201514917,
+						-202.07442965713216,
+						102.4986157043279
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 14.498615704327904,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 8.8334770202636719,
+					"position_cm": [
+						-63.280297109060072,
+						-202.07438759852266,
+						103.61945705996435
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 15.619457059964347,
+					"speed_cm_s": 260
+				}
+			]
+		},
+		{
+			"name": "fork1_right",
+			"kind": "walk",
+			"initial_position_cm": [
+				0,
+				-1600,
+				125.57800173920704
+			],
+			"passed": true,
+			"reached_objective": true,
+			"detail": "Every waypoint reached by actual WASD with continuous supported movement",
+			"seconds": 8.8794021606445312,
+			"travel_cm": 2179.122314453125,
+			"max_unsupported_seconds": 0,
+			"discontinuous_moves": 0,
+			"fixed_camera": true,
+			"within_cave_bounds": true,
+			"final_grounded": true,
+			"final_position_cm": [
+				39.819719265415522,
+				-201.35094932572929,
+				106.88816981318494
+			],
+			"reached_waypoints": [
+				{
+					"index": 1,
+					"error_cm": 40.630142164902324,
+					"seconds": 2.7666587829589844,
+					"grounded": true,
+					"position_cm": [
+						509.37754534870868,
+						-1399.2096643472839,
+						115.21441031138355
+					]
+				},
+				{
+					"index": 2,
+					"error_cm": 44.913816226480982,
+					"seconds": 6.5127677917480469,
+					"grounded": true,
+					"position_cm": [
+						551.10846907291796,
+						-444.90013568287395,
+						116.113609307011
+					]
+				},
+				{
+					"index": 3,
+					"error_cm": 39.842629261347604,
+					"seconds": 8.8794021606445312,
+					"grounded": true,
+					"position_cm": [
+						39.819719265415522,
+						-201.35094932572929,
+						106.88816981318494
+					]
+				}
+			],
+			"samples": [
+				{
+					"seconds": 0.43335342407226562,
+					"position_cm": [
+						0,
+						-1600,
+						125.57800173920704
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 37.578001739207039,
+					"speed_cm_s": 0
+				},
+				{
+					"seconds": 0.66668319702148438,
+					"position_cm": [
+						30.956007369636861,
+						-1569.0439926303634,
+						123.25976406252266
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 35.259764062522663,
+					"speed_cm_s": 259.99999999999983
+				},
+				{
+					"seconds": 0.90001296997070312,
+					"position_cm": [
+						73.854014821735433,
+						-1526.1459851782645,
+						120.64557746052351
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 32.645577460523512,
+					"speed_cm_s": 259.99999999999943
+				},
+				{
+					"seconds": 1.1333427429199219,
+					"position_cm": [
+						116.75198528997454,
+						-1483.2480147100252,
+						117.36804994882306
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 29.368049948823057,
+					"speed_cm_s": 260.00000000000176
+				},
+				{
+					"seconds": 1.3666725158691406,
+					"position_cm": [
+						159.65004821786258,
+						-1440.3499517821372,
+						114.5527021400143
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 26.552702140014304,
+					"speed_cm_s": 260.00000000000233
+				},
+				{
+					"seconds": 1.5666732788085938,
+					"position_cm": [
+						197.96959172814948,
+						-1405.6881303754978,
+						112.21062760825912
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 24.210627608259117,
+					"speed_cm_s": 260.00000000000085
+				},
+				{
+					"seconds": 1.8000030517578125,
+					"position_cm": [
+						258.04274742868569,
+						-1399.4114739279291,
+						111.51930553823873
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.519305538238726,
+					"speed_cm_s": 260.00000000000017
+				},
+				{
+					"seconds": 2.0333328247070312,
+					"position_cm": [
+						318.70909388496619,
+						-1399.2158989425907,
+						111.51775002348175
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.517750023481753,
+					"speed_cm_s": 259.99999999999937
+				},
+				{
+					"seconds": 2.26666259765625,
+					"position_cm": [
+						379.37603727721097,
+						-1399.2098568474921,
+						112.0863410335423
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 24.086341033542297,
+					"speed_cm_s": 260.00000000000057
+				},
+				{
+					"seconds": 2.4666633605957031,
+					"position_cm": [
+						431.3771557876529,
+						-1399.2096740137608,
+						113.50823860337253
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 25.508238603372533,
+					"speed_cm_s": 260.00000000000028
+				},
+				{
+					"seconds": 2.6999931335449219,
+					"position_cm": [
+						492.04412587672954,
+						-1399.2096645375143,
+						114.64580503024494
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 26.645805030244944,
+					"speed_cm_s": 260.00000000000006
+				},
+				{
+					"seconds": 2.9333229064941406,
+					"position_cm": [
+						543.71381892819193,
+						-1374.7939777375566,
+						115.8993040495539
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 27.899304049553905,
+					"speed_cm_s": 260.00000000000023
+				},
+				{
+					"seconds": 3.1666526794433594,
+					"position_cm": [
+						550.87753039886729,
+						-1314.9026503812515,
+						116.66033921023643
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 28.66033921023643,
+					"speed_cm_s": 260.00000000000017
+				},
+				{
+					"seconds": 3.3999824523925781,
+					"position_cm": [
+						551.10133445329757,
+						-1254.2364546084007,
+						117.68896400627563
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 29.688964006275626,
+					"speed_cm_s": 260.00000000000182
+				},
+				{
+					"seconds": 3.6333122253417969,
+					"position_cm": [
+						551.10824865770167,
+						-1193.5694852333925,
+						118.46586117477477
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 30.465861174774773,
+					"speed_cm_s": 260.00000000000188
+				},
+				{
+					"seconds": 3.8666419982910156,
+					"position_cm": [
+						551.10846226277886,
+						-1132.9026187825723,
+						118.97760042877258
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 30.977600428772575,
+					"speed_cm_s": 259.99999999999909
+				},
+				{
+					"seconds": 4.0999717712402344,
+					"position_cm": [
+						551.10846886185902,
+						-1072.2356748450329,
+						118.97760055787934
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 30.977600557879342,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 4.3287887573242188,
+					"position_cm": [
+						551.10846906596851,
+						-1012.7441912013819,
+						119.63529442514273
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 31.635294425142732,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 4.5337791442871094,
+					"position_cm": [
+						551.10846907259725,
+						-959.44606295412086,
+						119.63529442514273
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 31.635294425142732,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 4.7457046508789062,
+					"position_cm": [
+						551.10846907289931,
+						-904.34525108521484,
+						119.63529442514273
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 31.635294425142732,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 4.979034423828125,
+					"position_cm": [
+						551.10846907291273,
+						-843.67822966163658,
+						119.63529442514273
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 31.635294425142732,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 5.2123641967773438,
+					"position_cm": [
+						551.10846907291352,
+						-783.01105132883094,
+						119.63529442514273
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 31.635294425142732,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 5.4456939697265625,
+					"position_cm": [
+						551.10846907291432,
+						-722.34413354282879,
+						119.63529442514273
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 31.635294425142732,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 5.6790237426757812,
+					"position_cm": [
+						551.10846907291511,
+						-661.67718960528873,
+						119.10080574716422
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 31.100805747164216,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 5.8790550231933594,
+					"position_cm": [
+						551.1084690729158,
+						-609.66866149192356,
+						118.58903168405386
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 30.589031684053865,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 6.0794410705566406,
+					"position_cm": [
+						551.10846907291648,
+						-557.5673651564648,
+						117.82011986864386
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 29.820119868643857,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 6.3127708435058594,
+					"position_cm": [
+						551.10846907291727,
+						-496.90047352200054,
+						117.13742066004725
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 29.137420660047255,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 6.5461006164550781,
+					"position_cm": [
+						548.52206896973269,
+						-436.62837917969262,
+						115.95075040820129
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 27.950750408201287,
+					"speed_cm_s": 260.00000000000006
+				},
+				{
+					"seconds": 6.7794303894042969,
+					"position_cm": [
+						510.48219954386269,
+						-389.71197707931373,
+						115.75542733680889
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 27.755427336808893,
+					"speed_cm_s": 259.99999999999972
+				},
+				{
+					"seconds": 7.0127601623535156,
+					"position_cm": [
+						467.72288848841163,
+						-346.67608121282018,
+						116.03295643391658
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 28.032956433916581,
+					"speed_cm_s": 260.00000000000006
+				},
+				{
+					"seconds": 7.2460899353027344,
+					"position_cm": [
+						424.82922710316319,
+						-303.7738750306977,
+						116.17095657528402
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 28.170956575284023,
+					"speed_cm_s": 259.99999999999955
+				},
+				{
+					"seconds": 7.4794197082519531,
+					"position_cm": [
+						381.93138862631253,
+						-260.87577257180618,
+						116.17095657528402
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 28.170956575284023,
+					"speed_cm_s": 260.0000000000004
+				},
+				{
+					"seconds": 7.7127494812011719,
+					"position_cm": [
+						339.03345853475059,
+						-217.97783432483718,
+						116.17095657528402
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 28.170956575284023,
+					"speed_cm_s": 259.99999999999994
+				},
+				{
+					"seconds": 7.9460792541503906,
+					"position_cm": [
+						282.48392288861777,
+						-201.89593442855372,
+						115.8577962673202
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 27.857796267320197,
+					"speed_cm_s": 260.00000000000074
+				},
+				{
+					"seconds": 8.1794090270996094,
+					"position_cm": [
+						221.8212231628502,
+						-201.36778648246656,
+						114.72706607604231
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 26.727066076042306,
+					"speed_cm_s": 259.99999999999983
+				},
+				{
+					"seconds": 8.3794097900390625,
+					"position_cm": [
+						169.82026553172494,
+						-201.35180363072547,
+						113.02134349100152
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 25.021343491001517,
+					"speed_cm_s": 259.9999999999996
+				},
+				{
+					"seconds": 8.6127395629882812,
+					"position_cm": [
+						109.15332160443504,
+						-201.35097523726293,
+						110.06138509580404
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 22.061385095804042,
+					"speed_cm_s": 259.99999999999994
+				},
+				{
+					"seconds": 8.8460693359375,
+					"position_cm": [
+						48.486429001405085,
+						-201.35094964512416,
+						107.17247243593266
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 19.172472435932661,
+					"speed_cm_s": 260.00000000000006
+				}
+			]
+		},
+		{
+			"name": "fork2_left",
+			"kind": "walk",
+			"initial_position_cm": [
+				0,
+				100,
+				117.56423534925014
+			],
+			"passed": true,
+			"reached_objective": true,
+			"detail": "Every waypoint reached by actual WASD with continuous supported movement",
+			"seconds": 9.0774917602539062,
+			"travel_cm": 2221.967529296875,
+			"max_unsupported_seconds": 0,
+			"discontinuous_moves": 0,
+			"fixed_camera": true,
+			"within_cave_bounds": true,
+			"final_grounded": true,
+			"final_position_cm": [
+				-39.729594522453908,
+				1598.936103157826,
+				102.47277280278539
+			],
+			"reached_waypoints": [
+				{
+					"index": 1,
+					"error_cm": 44.489975074285731,
+					"seconds": 2.7775535583496094,
+					"grounded": true,
+					"position_cm": [
+						-505.7898935013601,
+						295.01759440736873,
+						111.25766640510123
+					]
+				},
+				{
+					"index": 2,
+					"error_cm": 36.618483741018657,
+					"seconds": 6.5775146484375,
+					"grounded": true,
+					"position_cm": [
+						-547.61146192000706,
+						1263.4594986715881,
+						108.46410865679883
+					]
+				},
+				{
+					"index": 3,
+					"error_cm": 39.74383672230686,
+					"seconds": 9.0774917602539062,
+					"grounded": true,
+					"position_cm": [
+						-39.729594522453908,
+						1598.936103157826,
+						102.47277280278539
+					]
+				}
+			],
+			"samples": [
+				{
+					"seconds": 0.4666595458984375,
+					"position_cm": [
+						0,
+						100,
+						117.56423534925014
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 29.56423534925014,
+					"speed_cm_s": 0
+				},
+				{
+					"seconds": 0.69998931884765625,
+					"position_cm": [
+						-30.955706314070472,
+						130.95570631407045,
+						116.93367807825297
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 28.933678078252967,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 0.933319091796875,
+					"position_cm": [
+						-73.853658975266072,
+						173.85365897526614,
+						116.69226344761678
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 28.692263447616781,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.1350936889648438,
+					"position_cm": [
+						-110.94981729360958,
+						210.94981729360973,
+						116.67433687078663
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 28.674336870786632,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.3352203369140625,
+					"position_cm": [
+						-147.74339832887162,
+						247.74339832887176,
+						116.13157986272549
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 28.131579862725488,
+					"speed_cm_s": 260.00000000000045
+				},
+				{
+					"seconds": 1.5352516174316406,
+					"position_cm": [
+						-184.51907301212589,
+						284.51907301212617,
+						115.46771898144574
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 27.467718981445742,
+					"speed_cm_s": 259.99999999999972
+				},
+				{
+					"seconds": 1.7685813903808594,
+					"position_cm": [
+						-243.6043701626152,
+						294.68604592282037,
+						112.94553058515005
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 24.945530585150053,
+					"speed_cm_s": 260.00000000000034
+				},
+				{
+					"seconds": 1.9693145751953125,
+					"position_cm": [
+						-295.79437116431865,
+						295.00095933297411,
+						111.52973755424816
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.529737554248157,
+					"speed_cm_s": 259.99999999999977
+				},
+				{
+					"seconds": 2.1695518493652344,
+					"position_cm": [
+						-347.85629974638596,
+						295.01675417565707,
+						110.67508540864063
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 22.675085408640626,
+					"speed_cm_s": 260.00000000000028
+				},
+				{
+					"seconds": 2.3714828491210938,
+					"position_cm": [
+						-400.18301554857038,
+						295.0175528365877,
+						110.67508540864063
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 22.675085408640626,
+					"speed_cm_s": 260.00000000000085
+				},
+				{
+					"seconds": 2.5754776000976562,
+					"position_cm": [
+						-452.97193364139292,
+						295.01759249716309,
+						110.67508540864063
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 22.675085408640626,
+					"speed_cm_s": 259.99999999999966
+				},
+				{
+					"seconds": 2.7775535583496094,
+					"position_cm": [
+						-505.7898935013601,
+						295.01759440736873,
+						111.25766640510123
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.257666405101233,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 2.9775543212890625,
+					"position_cm": [
+						-543.08641541123723,
+						327.74081080224295,
+						111.76340053334135
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.763400533341354,
+					"speed_cm_s": 260.0000000000004
+				},
+				{
+					"seconds": 3.2108840942382812,
+					"position_cm": [
+						-547.47110402105466,
+						388.11933539453275,
+						110.846445085197
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 22.846445085197004,
+					"speed_cm_s": 259.99999999999966
+				},
+				{
+					"seconds": 3.4442138671875,
+					"position_cm": [
+						-547.60712572228056,
+						448.78597682085149,
+						110.08299821844085
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 22.082998218440849,
+					"speed_cm_s": 259.99999999999937
+				},
+				{
+					"seconds": 3.6775436401367188,
+					"position_cm": [
+						-547.61132795899334,
+						509.45286819155058,
+						108.88855499827758
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 20.888554998277584,
+					"speed_cm_s": 259.99999999999977
+				},
+				{
+					"seconds": 3.8775482177734375,
+					"position_cm": [
+						-547.61145511964764,
+						561.45502695232369,
+						108.45248432055615
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 20.452484320556152,
+					"speed_cm_s": 259.99999999999903
+				},
+				{
+					"seconds": 4.1108779907226562,
+					"position_cm": [
+						-547.61146170991367,
+						622.12194473832528,
+						107.94053287402295
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 19.940532874022949,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 4.344207763671875,
+					"position_cm": [
+						-547.61146191351168,
+						682.78886252432744,
+						107.42879123583936
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 19.428791235839356,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 4.5442123413085938,
+					"position_cm": [
+						-547.61146191967248,
+						734.79089052766244,
+						106.84781379595898
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.847813795958984,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 4.7775421142578125,
+					"position_cm": [
+						-547.61146191999183,
+						795.45773082762639,
+						106.59178419009351
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.591784190093506,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 5.0108718872070312,
+					"position_cm": [
+						-547.61146192000172,
+						856.12462246209066,
+						106.59178419009351
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.591784190093506,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 5.24420166015625,
+					"position_cm": [
+						-547.61146192000251,
+						916.7915150651304,
+						106.59178419009351
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.591784190093506,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 5.4775314331054688,
+					"position_cm": [
+						-547.61146192000331,
+						977.45835439651887,
+						106.59178419009351
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.591784190093506,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 5.7108612060546875,
+					"position_cm": [
+						-547.6114619200041,
+						1038.1252983340589,
+						106.92547578707837
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.925475787078369,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 5.9441909790039062,
+					"position_cm": [
+						-547.6114619200049,
+						1098.7921386340229,
+						107.18150205508374
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 19.18150205508374,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 6.177520751953125,
+					"position_cm": [
+						-547.61146192000569,
+						1159.4590825715629,
+						107.44044132128857
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 19.440441321288574,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 6.4108505249023438,
+					"position_cm": [
+						-547.61146192000649,
+						1220.1259742060272,
+						107.95218152896069
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 19.952181528960693,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 6.6441802978515625,
+					"position_cm": [
+						-540.93942356666196,
+						1279.3745442787358,
+						108.67339939687764
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 20.673399396877642,
+					"speed_cm_s": 260.00000000000244
+				},
+				{
+					"seconds": 6.8441810607910156,
+					"position_cm": [
+						-506.98428941837926,
+						1318.6485591330045,
+						110.17425937733425
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 22.174259377334252,
+					"speed_cm_s": 260.00000000000097
+				},
+				{
+					"seconds": 7.044189453125,
+					"position_cm": [
+						-470.3481225270553,
+						1355.5556177418896,
+						111.47817108714618
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.47817108714618,
+					"speed_cm_s": 260.00000000000153
+				},
+				{
+					"seconds": 7.2775192260742188,
+					"position_cm": [
+						-427.45715374526725,
+						1398.4606247989752,
+						112.80415235891037
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 24.804152358910372,
+					"speed_cm_s": 260.00000000000222
+				},
+				{
+					"seconds": 7.5108489990234375,
+					"position_cm": [
+						-384.55938094860232,
+						1441.3588312904342,
+						114.26638268016609
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 26.266382680166089,
+					"speed_cm_s": 260.00000000000028
+				},
+				{
+					"seconds": 7.7441787719726562,
+					"position_cm": [
+						-341.66143567152386,
+						1484.2567899659723,
+						114.467540110134
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 26.467540110133996,
+					"speed_cm_s": 260.0000000000004
+				},
+				{
+					"seconds": 7.977508544921875,
+					"position_cm": [
+						-298.76344691831991,
+						1527.1547791331063,
+						114.26638259071096
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 26.266382590710961,
+					"speed_cm_s": 259.99999999999932
+				},
+				{
+					"seconds": 8.2108383178710938,
+					"position_cm": [
+						-255.8654572796585,
+						1570.0527687845549,
+						112.40466965026602
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 24.404669650266015,
+					"speed_cm_s": 259.99999999999847
+				},
+				{
+					"seconds": 8.4441680908203125,
+					"position_cm": [
+						-204.36657272265552,
+						1597.4649473211477,
+						110.46285094084247
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 22.462850940842472,
+					"speed_cm_s": 260.00000000000023
+				},
+				{
+					"seconds": 8.6774978637695312,
+					"position_cm": [
+						-143.73003389161224,
+						1598.8907480262003,
+						107.30825215635345
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 19.308252156353447,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 8.91082763671875,
+					"position_cm": [
+						-83.063144143459311,
+						1598.9348155542727,
+						104.74775922217225
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 16.747759222172249,
+					"speed_cm_s": 260.00000000000006
+				}
+			]
+		},
+		{
+			"name": "fork2_right",
+			"kind": "walk",
+			"initial_position_cm": [
+				0,
+				100,
+				117.56423625599618
+			],
+			"passed": true,
+			"reached_objective": true,
+			"detail": "Every waypoint reached by actual WASD with continuous supported movement",
+			"seconds": 9.0867729187011719,
+			"travel_cm": 2224.37646484375,
+			"max_unsupported_seconds": 0,
+			"discontinuous_moves": 0,
+			"fixed_camera": true,
+			"within_cave_bounds": true,
+			"final_grounded": true,
+			"final_position_cm": [
+				37.318101400828979,
+				1598.5567083943483,
+				99.591222965811355
+			],
+			"reached_waypoints": [
+				{
+					"index": 1,
+					"error_cm": 40.59096933745662,
+					"seconds": 2.8001136779785156,
+					"grounded": true,
+					"position_cm": [
+						509.41671359864682,
+						300.78971932994324,
+						107.78192221529389
+					]
+				},
+				{
+					"index": 2,
+					"error_cm": 43.067426275024438,
+					"seconds": 6.553466796875,
+					"grounded": true,
+					"position_cm": [
+						551.3276107387818,
+						1256.9530412725715,
+						116.57634126417035
+					]
+				},
+				{
+					"index": 3,
+					"error_cm": 37.346000894627238,
+					"seconds": 9.0867729187011719,
+					"grounded": true,
+					"position_cm": [
+						37.318101400828979,
+						1598.5567083943483,
+						99.591222965811355
+					]
+				}
+			],
+			"samples": [
+				{
+					"seconds": 0.4666595458984375,
+					"position_cm": [
+						0,
+						100,
+						117.56423625599618
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 29.564236255996178,
+					"speed_cm_s": 0
+				},
+				{
+					"seconds": 0.69998931884765625,
+					"position_cm": [
+						30.955705835162789,
+						130.95570583516283,
+						119.67808402292471
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 31.678084022924708,
+					"speed_cm_s": 260.00000000000023
+				},
+				{
+					"seconds": 0.933319091796875,
+					"position_cm": [
+						73.853695480217937,
+						173.85369548021808,
+						122.35245338631343
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 34.352453386313428,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.1666488647460938,
+					"position_cm": [
+						116.7516844403868,
+						216.75168444038704,
+						124.24272274242851
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 36.242722742428512,
+					"speed_cm_s": 260.00000000000023
+				},
+				{
+					"seconds": 1.3999786376953125,
+					"position_cm": [
+						159.64967340055557,
+						259.64967340055603,
+						124.42007051127536
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 36.420070511275355,
+					"speed_cm_s": 260.00000000000034
+				},
+				{
+					"seconds": 1.6333084106445312,
+					"position_cm": [
+						206.26258263856101,
+						296.82689551058735,
+						124.02302897886504
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 36.023028978865042,
+					"speed_cm_s": 259.99999999999943
+				},
+				{
+					"seconds": 1.86663818359375,
+					"position_cm": [
+						266.70845975032074,
+						300.66691581922964,
+						121.14885175888659
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 33.148851758886593,
+					"speed_cm_s": 259.99999999999983
+				},
+				{
+					"seconds": 2.0999679565429688,
+					"position_cm": [
+						327.37519213231604,
+						300.78592577954026,
+						118.02081906416882
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 30.020819064168819,
+					"speed_cm_s": 260.0000000000004
+				},
+				{
+					"seconds": 2.3001213073730469,
+					"position_cm": [
+						379.41616732259575,
+						300.78952731140288,
+						114.8914423293796
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 26.891442329379601,
+					"speed_cm_s": 260.00000000000028
+				},
+				{
+					"seconds": 2.5334510803222656,
+					"position_cm": [
+						440.08308607665555,
+						300.78971350591024,
+						111.19444186639372
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.194441866393717,
+					"speed_cm_s": 259.99999999999966
+				},
+				{
+					"seconds": 2.7667808532714844,
+					"position_cm": [
+						500.75000386265725,
+						300.78971925815421,
+						108.35070539829404
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 20.350705398294039,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 3.0201759338378906,
+					"position_cm": [
+						546.61709508186709,
+						333.38513022366328,
+						106.24056665877407
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.240566658774071,
+					"speed_cm_s": 259.99999999999955
+				},
+				{
+					"seconds": 3.2535057067871094,
+					"position_cm": [
+						551.22213533058004,
+						398.94659354432343,
+						105.79101190512017
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 17.791011905120172,
+					"speed_cm_s": 260.00000000000034
+				},
+				{
+					"seconds": 3.4868354797363281,
+					"position_cm": [
+						551.32435220683385,
+						459.6133814178832,
+						105.87623392876897
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 17.876233928768968,
+					"speed_cm_s": 260.00000000000045
+				},
+				{
+					"seconds": 3.7201652526855469,
+					"position_cm": [
+						551.32751007051615,
+						520.28029905493452,
+						106.47316539672923
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.473165396729229,
+					"speed_cm_s": 260.00000000000045
+				},
+				{
+					"seconds": 3.9534950256347656,
+					"position_cm": [
+						551.32760762874341,
+						580.94713935475636,
+						106.55845489512051
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.558454895120505,
+					"speed_cm_s": 260.00000000000011
+				},
+				{
+					"seconds": 4.1868247985839844,
+					"position_cm": [
+						551.32761064269664,
+						641.61403098922051,
+						106.84322156916225
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.843221569162253,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 4.4201545715332031,
+					"position_cm": [
+						551.32761073580878,
+						702.28089744072236,
+						107.61114110956753
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 19.611141109567527,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 4.6201553344726562,
+					"position_cm": [
+						551.32761073862628,
+						754.28214574079789,
+						108.13035001764858
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 20.130350017648581,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 4.853485107421875,
+					"position_cm": [
+						551.32761073877225,
+						814.94908967833794,
+						108.81299611314331
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 20.812996113143313,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 5.0868148803710938,
+					"position_cm": [
+						551.3276107387768,
+						875.61595516126431,
+						109.66627641539654
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 21.666276415396538,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 5.3201522827148438,
+					"position_cm": [
+						551.32761073877759,
+						936.28287294726647,
+						110.86061341777052
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 22.860613417770523,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 5.5534820556640625,
+					"position_cm": [
+						551.32761073877839,
+						996.9519235364703,
+						111.45766945792688
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.457669457926883,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 5.7868118286132812,
+					"position_cm": [
+						551.32761073877919,
+						1057.6188413224725,
+						112.65211318692634
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 24.652113186926343,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 6.0201416015625,
+					"position_cm": [
+						551.32761073877998,
+						1118.2858114115504,
+						113.84655797468227
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 25.84655797468227,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 6.2534713745117188,
+					"position_cm": [
+						551.32761073878078,
+						1178.9527553490905,
+						115.04094885994684
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 27.040948859946838,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 6.4868011474609375,
+					"position_cm": [
+						551.32761073878157,
+						1239.6196208320168,
+						116.23507133172558
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 28.235071331725578,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 6.7201309204101562,
+					"position_cm": [
+						528.58810471916706,
+						1293.273381687188,
+						115.69322942494665
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 27.693229424946651,
+					"speed_cm_s": 260.00000000000142
+				},
+				{
+					"seconds": 6.953460693359375,
+					"position_cm": [
+						486.31173537234702,
+						1336.777077859982,
+						113.86054537469944
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 25.860545374699441,
+					"speed_cm_s": 259.99999999999852
+				},
+				{
+					"seconds": 7.1867904663085938,
+					"position_cm": [
+						443.43267843164205,
+						1379.6940576178615,
+						112.25310363142229
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 24.253103631422292,
+					"speed_cm_s": 259.99999999999903
+				},
+				{
+					"seconds": 7.4201202392578125,
+					"position_cm": [
+						400.53525677384181,
+						1422.5926508497616,
+						109.86014700106468
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 21.860147001064675,
+					"speed_cm_s": 259.99999999999835
+				},
+				{
+					"seconds": 7.6534500122070312,
+					"position_cm": [
+						357.63734070171887,
+						1465.4906031161568,
+						107.56783023840883
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 19.567830238408831,
+					"speed_cm_s": 260.00000000000097
+				},
+				{
+					"seconds": 7.8534507751464844,
+					"position_cm": [
+						320.86710867253549,
+						1502.2608362405886,
+						105.65736659616407
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 17.657366596164067,
+					"speed_cm_s": 259.99999999999909
+				},
+				{
+					"seconds": 8.0534553527832031,
+					"position_cm": [
+						284.09603028896339,
+						1539.0319146797635,
+						103.50585513715527
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 15.505855137155265,
+					"speed_cm_s": 259.99999999999903
+				},
+				{
+					"seconds": 8.2867851257324219,
+					"position_cm": [
+						241.19802283830549,
+						1581.9299221333031,
+						102.21874559507067
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 14.218745595070672,
+					"speed_cm_s": 260.00000000000034
+				},
+				{
+					"seconds": 8.5201148986816406,
+					"position_cm": [
+						184.64844273511778,
+						1598.0118410346668,
+						99.56287920607231
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 11.56287920607231,
+					"speed_cm_s": 259.99999999999977
+				},
+				{
+					"seconds": 8.7534446716308594,
+					"position_cm": [
+						123.98569165930135,
+						1598.5399880138084,
+						98.706251095207421
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 10.706251095207421,
+					"speed_cm_s": 260.00000000000011
+				},
+				{
+					"seconds": 8.9867744445800781,
+					"position_cm": [
+						63.31820542222902,
+						1598.5563054390004,
+						99.306750337698347
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 11.306750337698347,
+					"speed_cm_s": 259.99999999999994
+				}
+			]
+		},
+		{
+			"name": "island1_collision",
+			"kind": "collision",
+			"initial_position_cm": [
+				-550,
+				-900,
+				116.12463695200715
+			],
+			"initial_sweep_hit": true,
+			"expected_blocker_tag_matched": true,
+			"expected_blocker_tag": "CaveIsland",
+			"blocking_actor": "StaticMeshActor_160",
+			"initial_penetration": false,
+			"expected_stop_distance_cm": 330,
+			"expected_stop_cm": [
+				-220,
+				-900,
+				116.12463695200715
+			],
+			"actual_forward_travel_cm": 329.82452392578125,
+			"lateral_error_cm": 1.3665802725881804e-05,
+			"held_against_wall_seconds": 1.2010586261749268,
+			"stop_error_cm": 0.17547607421875,
+			"passed": true,
+			"reached_objective": true,
+			"detail": "Held WASD into the tagged barrier for 1.2 seconds; capsule stopped at expected collision surface",
+			"seconds": 3.0010147094726562,
+			"travel_cm": 329.82467651367188,
+			"max_unsupported_seconds": 0,
+			"discontinuous_moves": 0,
+			"fixed_camera": true,
+			"within_cave_bounds": true,
+			"final_grounded": true,
+			"final_position_cm": [
+				-220.17546240841625,
+				-900,
+				111.09095054300084
+			],
+			"reached_waypoints": [],
+			"samples": [
+				{
+					"seconds": 0.4666595458984375,
+					"position_cm": [
+						-550,
+						-900,
+						116.12463695200715
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 28.124636952007151,
+					"speed_cm_s": 0
+				},
+				{
+					"seconds": 0.69998931884765625,
+					"position_cm": [
+						-506.22194037869144,
+						-900,
+						116.70085657073156
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 28.70085657073156,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 0.933319091796875,
+					"position_cm": [
+						-445.5550477756517,
+						-900,
+						117.26946185412021
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 29.269461854120209,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.1666488647460938,
+					"position_cm": [
+						-384.88807865514923,
+						-900,
+						116.41637685514193
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 28.416376855141934,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.3999786376953125,
+					"position_cm": [
+						-324.22118605210949,
+						-900,
+						115.5631130625368
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 27.5631130625368,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.6333084106445312,
+					"position_cm": [
+						-263.55361835196186,
+						-900,
+						112.7346499020548
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 24.734649902054798,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.86663818359375,
+					"position_cm": [
+						-220.17546240841625,
+						-900,
+						111.09095054300084
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.090950543000844,
+					"speed_cm_s": 1.3381862384590237
+				},
+				{
+					"seconds": 2.0999679565429688,
+					"position_cm": [
+						-220.17546240841625,
+						-900,
+						111.09095054300084
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.090950543000844,
+					"speed_cm_s": 0
+				},
+				{
+					"seconds": 2.3004837036132812,
+					"position_cm": [
+						-220.17546240841625,
+						-900,
+						111.09095054300084
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.090950543000844,
+					"speed_cm_s": 0
+				},
+				{
+					"seconds": 2.5009613037109375,
+					"position_cm": [
+						-220.17546240841625,
+						-900,
+						111.09095054300084
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.090950543000844,
+					"speed_cm_s": 0
+				},
+				{
+					"seconds": 2.7342910766601562,
+					"position_cm": [
+						-220.17546240841625,
+						-900,
+						111.09095054300084
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.090950543000844,
+					"speed_cm_s": 0
+				},
+				{
+					"seconds": 2.967681884765625,
+					"position_cm": [
+						-220.17546240841625,
+						-900,
+						111.09095054300084
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 23.090950543000844,
+					"speed_cm_s": 0
+				}
+			]
+		},
+		{
+			"name": "island2_collision",
+			"kind": "collision",
+			"initial_position_cm": [
+				550,
+				800,
+				108.66733958980539
+			],
+			"initial_sweep_hit": true,
+			"expected_blocker_tag_matched": true,
+			"expected_blocker_tag": "CaveIsland",
+			"blocking_actor": "StaticMeshActor_59",
+			"initial_penetration": false,
+			"expected_stop_distance_cm": 327.68096923828125,
+			"expected_stop_cm": [
+				222.31903076171875,
+				800,
+				108.66733958980539
+			],
+			"actual_forward_travel_cm": 327.67501831054688,
+			"lateral_error_cm": 7.2779521942138672,
+			"held_against_wall_seconds": 1.2027797698974609,
+			"stop_error_cm": 0.005950927734375,
+			"passed": true,
+			"reached_objective": true,
+			"detail": "Held WASD into the tagged barrier for 1.2 seconds; capsule stopped at expected collision surface",
+			"seconds": 3.0693893432617188,
+			"travel_cm": 334.4073486328125,
+			"max_unsupported_seconds": 0,
+			"discontinuous_moves": 0,
+			"fixed_camera": true,
+			"within_cave_bounds": true,
+			"final_grounded": true,
+			"final_position_cm": [
+				222.32497346789586,
+				792.72204794767629,
+				118.40847886037352
+			],
+			"reached_waypoints": [],
+			"samples": [
+				{
+					"seconds": 0.4666595458984375,
+					"position_cm": [
+						550,
+						800,
+						108.66733958980539
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 20.667339589805394,
+					"speed_cm_s": 0
+				},
+				{
+					"seconds": 0.69998931884765625,
+					"position_cm": [
+						506.22144832048264,
+						800,
+						108.49238428141176
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 20.492384281411759,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 0.933319091796875,
+					"position_cm": [
+						445.55458283755627,
+						800,
+						109.13995925181108
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 21.139959251811078,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.1666488647460938,
+					"position_cm": [
+						384.88774253759232,
+						800,
+						110.2775230718284
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 22.277523071828398,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.3999786376953125,
+					"position_cm": [
+						324.22082475159016,
+						800,
+						113.11215693264299
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 25.112156932642989,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.6333084106445312,
+					"position_cm": [
+						263.55317859682884,
+						800,
+						115.67161553190716
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 27.671615531907165,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.86663818359375,
+					"position_cm": [
+						222.51696509058846,
+						799.44576173035637,
+						118.15684978386655
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 30.156849783866548,
+					"speed_cm_s": 18.143283930016267
+				},
+				{
+					"seconds": 2.0683517456054688,
+					"position_cm": [
+						222.47287104725061,
+						798.20635955403191,
+						118.15724711752543
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 30.157247117525429,
+					"speed_cm_s": 5.7384566210847252
+				},
+				{
+					"seconds": 2.3016815185546875,
+					"position_cm": [
+						222.43801356142799,
+						796.91055166450133,
+						118.15726292879907
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 30.157262928799071,
+					"speed_cm_s": 5.4881764244845268
+				},
+				{
+					"seconds": 2.5017929077148438,
+					"position_cm": [
+						222.4089730117403,
+						795.81685383965464,
+						118.15726292879907
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 30.157262928799071,
+					"speed_cm_s": 5.4591270269933654
+				},
+				{
+					"seconds": 2.7351226806640625,
+					"position_cm": [
+						222.37518489665692,
+						794.54435765498101,
+						118.15726292879907
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 30.157262928799071,
+					"speed_cm_s": 5.454103247383415
+				},
+				{
+					"seconds": 2.9689559936523438,
+					"position_cm": [
+						222.3395849151338,
+						793.2723305100094,
+						118.40847886037352
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 30.408478860373521,
+					"speed_cm_s": 5.4534911379876654
+				}
+			]
+		},
+		{
+			"name": "boundary_collision",
+			"kind": "collision",
+			"initial_position_cm": [
+				-550,
+				-1900,
+				106.5557659610473
+			],
+			"initial_sweep_hit": true,
+			"expected_blocker_tag_matched": true,
+			"expected_blocker_tag": "CaveBoundary",
+			"blocking_actor": "StaticMeshActor_163",
+			"initial_penetration": false,
+			"expected_stop_distance_cm": 140.31632995605469,
+			"expected_stop_cm": [
+				-690.31632995605469,
+				-1900,
+				106.5557659610473
+			],
+			"actual_forward_travel_cm": 140.25765991210938,
+			"lateral_error_cm": 4.3704495429992676,
+			"held_against_wall_seconds": 1.2000076770782471,
+			"stop_error_cm": 0.0586700439453125,
+			"passed": true,
+			"reached_objective": true,
+			"detail": "Held WASD into the tagged barrier for 1.2 seconds; capsule stopped at expected collision surface",
+			"seconds": 2.30096435546875,
+			"travel_cm": 144.3582763671875,
+			"max_unsupported_seconds": 0,
+			"discontinuous_moves": 0,
+			"fixed_camera": true,
+			"within_cave_bounds": true,
+			"final_grounded": true,
+			"final_position_cm": [
+				-690.25766085881446,
+				-1895.6295503248675,
+				107.16229300236972
+			],
+			"reached_waypoints": [],
+			"samples": [
+				{
+					"seconds": 0.43373870849609375,
+					"position_cm": [
+						-550,
+						-1900,
+						106.5557659610473
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.5557659610473,
+					"speed_cm_s": 0
+				},
+				{
+					"seconds": 0.63402557373046875,
+					"position_cm": [
+						-585.15121684758071,
+						-1900,
+						106.03758295967511
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.037582959675106,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 0.834320068359375,
+					"position_cm": [
+						-637.28979752747421,
+						-1900,
+						106.32206438870877
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 18.322064388708768,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.0676498413085938,
+					"position_cm": [
+						-689.45856329376898,
+						-1899.8595888074042,
+						107.22910665571789
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 19.229106655717885,
+					"speed_cm_s": 6.5801637226152208
+				},
+				{
+					"seconds": 1.3009796142578125,
+					"position_cm": [
+						-690.20195800946863,
+						-1899.0008823668281,
+						107.22820246431314
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 19.228202464313142,
+					"speed_cm_s": 3.4899722751831188
+				},
+				{
+					"seconds": 1.5343093872070312,
+					"position_cm": [
+						-690.21508620676036,
+						-1898.2063177673074,
+						107.21267521085423
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 19.212675210854229,
+					"speed_cm_s": 3.3750624296480334
+				},
+				{
+					"seconds": 1.76763916015625,
+					"position_cm": [
+						-690.22805756913806,
+						-1897.4212453675027,
+						107.19731885582991
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 19.197318855829906,
+					"speed_cm_s": 3.3613955044032822
+				},
+				{
+					"seconds": 2.0009689331054688,
+					"position_cm": [
+						-690.24101028978862,
+						-1896.6373012304937,
+						107.18199454426207
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 19.181994544262068,
+					"speed_cm_s": 3.3597700116366598
+				},
+				{
+					"seconds": 2.2342987060546875,
+					"position_cm": [
+						-690.25396078637607,
+						-1895.8534917015813,
+						107.16666756240619
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 19.16666756240619,
+					"speed_cm_s": 3.3595766827128029
+				}
+			]
+		},
+		{
+			"name": "entrance_collision",
+			"kind": "collision",
+			"initial_position_cm": [
+				0,
+				-2100,
+				124.5930619681799
+			],
+			"initial_sweep_hit": true,
+			"expected_blocker_tag_matched": true,
+			"expected_blocker_tag": "CaveBoundary",
+			"blocking_actor": "StaticMeshActor_201",
+			"initial_penetration": false,
+			"expected_stop_distance_cm": 230.08767700195312,
+			"expected_stop_cm": [
+				0,
+				-2330.0876770019531,
+				124.5930619681799
+			],
+			"actual_forward_travel_cm": 229.98590087890625,
+			"lateral_error_cm": 6.461219527409412e-06,
+			"held_against_wall_seconds": 1.2000049352645874,
+			"stop_error_cm": 0.101776123046875,
+			"passed": true,
+			"reached_objective": true,
+			"detail": "Held WASD into the tagged barrier for 1.2 seconds; capsule stopped at expected collision surface",
+			"seconds": 2.5835800170898438,
+			"travel_cm": 229.98594665527344,
+			"max_unsupported_seconds": 0,
+			"discontinuous_moves": 0,
+			"fixed_camera": true,
+			"within_cave_bounds": true,
+			"final_grounded": true,
+			"final_position_cm": [
+				0,
+				-2329.9858944176867,
+				117.92259145373062
+			],
+			"reached_waypoints": [],
+			"samples": [
+				{
+					"seconds": 0.4342193603515625,
+					"position_cm": [
+						0,
+						-2100,
+						124.5930619681799
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 36.593061968179896,
+					"speed_cm_s": 0
+				},
+				{
+					"seconds": 0.64410400390625,
+					"position_cm": [
+						0,
+						-2135.9308385907843,
+						123.88563579532892
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 35.885635795328923,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 0.846466064453125,
+					"position_cm": [
+						0,
+						-2190.3295204102233,
+						122.81460454569876
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 34.814604545698757,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.0797958374023438,
+					"position_cm": [
+						0,
+						-2250.9963597416117,
+						120.42609374608038
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 32.426093746080383,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.283599853515625,
+					"position_cm": [
+						0,
+						-2303.9858165442183,
+						118.6905273300052
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 30.690527330005196,
+					"speed_cm_s": 260
+				},
+				{
+					"seconds": 1.5169296264648438,
+					"position_cm": [
+						0,
+						-2329.9858944176867,
+						117.92259145373062
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 29.922591453730618,
+					"speed_cm_s": 0
+				},
+				{
+					"seconds": 1.7502593994140625,
+					"position_cm": [
+						0,
+						-2329.9858944176867,
+						117.92259145373062
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 29.922591453730618,
+					"speed_cm_s": 0
+				},
+				{
+					"seconds": 1.9835891723632812,
+					"position_cm": [
+						0,
+						-2329.9858944176867,
+						117.92259145373062
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 29.922591453730618,
+					"speed_cm_s": 0
+				},
+				{
+					"seconds": 2.2169189453125,
+					"position_cm": [
+						0,
+						-2329.9858944176867,
+						117.92259145373062
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 29.922591453730618,
+					"speed_cm_s": 0
+				},
+				{
+					"seconds": 2.4502487182617188,
+					"position_cm": [
+						0,
+						-2329.9858944176867,
+						117.92259145373062
+					],
+					"grounded": true,
+					"fixed_camera": true,
+					"foot_z_cm": 29.922591453730618,
+					"speed_cm_s": 0
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "map": "/Game/Astra/Maps/L_AstraCrystalCave",
+  "movement": {
+    "passed": true,
+    "routes": 9,
+    "failed_checks": 0,
+    "elapsed_game_seconds": 75.92327880859375,
+    "full_traversal_m": 56.765458984375
+  },
+  "saved_map_passed": true,
+  "blender_actionable_issues": [],
+  "lighting_passed": true,
+  "lighting_comparison": {
+    "floor_front_path": {
+      "pixel_region": [
+        690,
+        720,
+        760,
+        775
+      ],
+      "lights_on_luma": 0.09981673155080213,
+      "lights_off_luma": 0.029037468398268398,
+      "mean_rgb_gain": [
+        -0.005040998217468788,
+        0.08622663610899146,
+        0.14102062643238714
+      ],
+      "luma_gain": 0.07077926315253373
+    },
+    "floor_rear_path": {
+      "pixel_region": [
+        650,
+        275,
+        720,
+        330
+      ],
+      "lights_on_luma": 0.09576996221033866,
+      "lights_off_luma": 0.02807330114591291,
+      "mean_rgb_gain": [
+        -0.004857652151769782,
+        0.08262694168576504,
+        0.13344334097274882
+      ],
+      "luma_gain": 0.06769666106442576
+    },
+    "island_front_rock": {
+      "pixel_region": [
+        750,
+        565,
+        805,
+        610
+      ],
+      "lights_on_luma": 0.10951771519112694,
+      "lights_off_luma": 0.02041174030501089,
+      "mean_rgb_gain": [
+        -0.003649039413745283,
+        0.10776470588235086,
+        0.17740225787284586
+      ],
+      "luma_gain": 0.08910597488611605
+    }
+  },
+  "images": {
+    "CaveOverview": {
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "64b393f4fcdb429a4b835ca6dcf79c52d45c2a61782a55a3d05fdd1c24948084"
+    },
+    "CaveFork1": {
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "7c75ab12365ad189ff2ced200a2a418020233c6614d268ac5292b1f1d3f71459"
+    },
+    "CaveFork2": {
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "775171fa83be31298fc2872bf8c863019915cd991fcfd6188fe4f3752f4587a1"
+    },
+    "CaveHeart": {
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "751fb266eae0e5b424d34f5038579003f361f051e3b5ff95f6cd80f248f3366e"
+    },
+    "CaveGameplay": {
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "e60fb9666788a3f5f3ea2fbf47ee4e86df36c9512798af0582df2e5f9ff4d8d3"
+    },
+    "CaveFork1_LightsOff": {
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "d438770bed30aac7dfefdf1ec410e4c0a8f237e5b182d0a12fc1d702ac909ae7"
+    }
+  },
+  "modified_preexisting_content_config_source": [],
+  "cave_native_render_profile": "1600x1000 native; NGX disabled only in review launcher; shared DLSS configuration preserved"
+}

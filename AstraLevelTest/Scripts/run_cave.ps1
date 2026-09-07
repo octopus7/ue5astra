@@ -1,6 +1,6 @@
 param(
     [ValidateSet('Import','Relight','Review','Movement','Open')][string]$Mode='Open',
-    [string]$View='CaveOverview',
+    [ValidateSet('CaveOverview','CaveFork1','CaveFork2','CaveHeart','CaveGameplay')][string]$View='CaveOverview',
     [switch]$LightsOff
 )
 $ErrorActionPreference='Stop'
@@ -47,6 +47,7 @@ if($Mode -ne 'Open') {
         if((Get-Item $caveSource).LastWriteTime -lt $caveStarted) {throw 'Cave screenshot is stale'}
         $caveSuffix=if($LightsOff){'_LightsOff'}else{''}
         Copy-Item -LiteralPath $caveSource -Destination "$caveProject/ArtSource/Previews/CrystalCave/UE_$View$caveSuffix.png" -Force
+        Remove-Item -LiteralPath $caveSource
     }
     Write-Output "Cave $Mode complete"
 }
