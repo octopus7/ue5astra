@@ -1,6 +1,7 @@
 #include "AstraDemoValidation.h"
 
 #include "AstraDemoPlayback.h"
+#include "AstraLevelConfig.h"
 #include "AstraWorld.h"
 #include "Camera/CameraActor.h"
 #include "Camera/CameraComponent.h"
@@ -36,6 +37,8 @@ namespace
 
 FAstraDemoValidation::FAstraDemoValidation(UAstraDemoPlayback& InDemo) : Demo(InDemo)
 {
+    if (const AAstraLevelConfig* LevelConfig = AAstraLevelConfig::FindForWorld(Demo.GetWorld()))
+        ValidationPrefix = LevelConfig->GetSafeValidationPrefix();
     UE_LOG(LogTemp, Display, TEXT("ASTRA DEMO TEST: P toggle, seven shots, loop, restoration, early cancel, WASD; timeout 180 world seconds"));
 }
 
@@ -315,7 +318,8 @@ void FAstraDemoValidation::Finish(const FString& Failure)
     }
     EnterStage(EStage::Finished);
     const bool bPassed = FailedChecks == 0 && MovementIndex == UE_ARRAY_COUNT(MovementKeys) && ShotCount == 7;
-    const FString OutputPath = FPaths::ProjectDir() / TEXT("ArtSource/Previews/UE_DemoValidation.json");
+    const FString OutputPath = FPaths::ProjectDir() / TEXT("ArtSource/Previews")
+        / (TEXT("UE_") + ValidationPrefix + TEXT("DemoValidation.json"));
     IFileManager::Get().MakeDirectory(*FPaths::GetPath(OutputPath), true);
     const FString Result = FString::Printf(TEXT("{\n  \"test\":\"AstraDemoTest\",\n  \"passed\":%s,\n  \"elapsed_world_seconds\":%.3f,\n  \"timeout_world_seconds\":180,\n  \"failed_checks\":%d,\n  \"shots\":[%s],\n  \"checks\":[%s],\n  \"post_demo_movement\":[%s]\n}\n"),
         JsonBool(bPassed), Elapsed, FailedChecks, *FString::Join(ShotResults, TEXT(",\n    ")), *FString::Join(Checks, TEXT(",\n    ")), *FString::Join(MovementResults, TEXT(",\n    ")));

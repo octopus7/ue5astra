@@ -1,5 +1,6 @@
 #include "AstraDemoPlayback.h"
 #include "AstraDemoValidation.h"
+#include "AstraLevelConfig.h"
 #include "AstraWorld.h"
 #include "Camera/CameraComponent.h"
 #include "Camera/PlayerCameraManager.h"
@@ -39,6 +40,12 @@ void UAstraDemoPlayback::BeginPlay()
 {
     Super::BeginPlay();
     Controller = Cast<AAstraController>(GetOwner());
+    if (const AAstraLevelConfig* LevelConfig = AAstraLevelConfig::FindForWorld(GetWorld()))
+    {
+        Shots = LevelConfig->DemoShots;
+        UE_LOG(LogTemp, Display, TEXT("ASTRA DEMO loaded %d level-local shots from %s"),
+            Shots.Num(), *LevelConfig->GetName());
+    }
     if (Controller && FParse::Param(FCommandLine::Get(), TEXT("AstraDemoTest")))
         Validation = MakeUnique<FAstraDemoValidation>(*this);
 }

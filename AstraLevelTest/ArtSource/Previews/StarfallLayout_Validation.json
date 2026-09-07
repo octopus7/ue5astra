@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "placement_count": 4544,
+  "placement_count": 4488,
   "by_group": {
     "Water": 3,
     "Spring": 2,
@@ -10,10 +10,10 @@
     "PinkSpringGrove": 7,
     "MushroomMeadow15m": 56,
     "GlowGrove5m": 13,
-    "ForestCanopy": 329,
-    "LandingRubble": 27,
+    "ForestCanopy": 309,
+    "LandingRubble": 26,
     "PuddleBanks": 49,
-    "ForestUnderstory": 4052
+    "ForestUnderstory": 4017
   },
   "new_assets": 17,
   "reused_assets": 16,
@@ -31,7 +31,7 @@
       -26.5
     ]
   },
-  "native_foliage_count": 4152,
+  "native_foliage_count": 4118,
   "landscape_samples": 16129,
   "landscape_extent_m": [
     100.8,

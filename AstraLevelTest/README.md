@@ -2,6 +2,18 @@
 
 Unreal Engine 5.7.4 프로젝트. 약 100m 숲을 탐색하는 직립 보행 삼색 고양이 게임.
 
+새 레벨 **별내림 숲**에는 16도 기울어 착륙한 우주선, 큰 웅덩이 3곳, 갓 부러진 나무와 오래된 통나무, 15×15m 버섯 군락, 5×5m 발광 군락, 분홍 나무로 둘러싸인 옹달샘이 있다. 아래는 실제 UE 실행 화면이다.
+
+![별내림 숲의 기울어진 우주선](ArtSource/Previews/UE_SFSpaceship.png)
+
+| 분홍 나무와 옹달샘 | 작은 발광 버섯 군락 |
+| --- | --- |
+| ![겹겹의 분홍 잎 수관과 옹달샘](ArtSource/Previews/UE_SFSpring.png) | ![청록·라일락 발광 버섯](ArtSource/Previews/UE_SFGlow.png) |
+
+![별내림 숲 전체 배치](ArtSource/Previews/UE_SFOverview.png)
+
+`Content/Astra/Maps/L_AstraStarfall`을 열고 Play하면 기존과 같은 WASD 이동과 P 자동 산책을 사용할 수 있다. 기존 기본 맵은 유지한다. 물 반사와 스카이는 기존 자산을 재사용했다. [새 레벨 구성·모델·레퍼런스·재생성](Docs/StarfallLevel.md)을 참고한다.
+
 실제 언리얼 실행 화면. 숲과 공터를 중심으로 호수, 개울, 나무다리와 목조 폐허가 이어진다.
 
 ![숲·공터·호수·다리·목조 폐허의 전체 배치](ArtSource/Previews/UE_Overview.png)

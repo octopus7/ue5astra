@@ -55,4 +55,4 @@ float3 grass=Tex.rgb*float3(.94,1.02,.96);
 float grain=dot(Tex.rgb,float3(.25,.55,.2));
 float3 trail=float3(.47,.32,.145)*(0.85+grain*.85+n*.025);
 float3 ground=lerp(grass,trail,max(dry,bank*.85));
-return lerp(ground,float3(.40,.44,.28)*(0.9+grain*.3),floorMask);
+return lerp(ground,float3(.035,.09,.11)*(0.72+grain*.7),floorMask);

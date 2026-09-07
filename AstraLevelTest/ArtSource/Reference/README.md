@@ -37,3 +37,9 @@ Four additional built-in ImageGen reference sheets guide the 15 new assets. Each
 `../Textures/T_FishingDockWood.png` is the separately generated painted honey-oak albedo for the dock planks. `FISHING_DOCK_WOOD_PROMPT.md` records the full prompt: continuous vertical grain, restrained knots and warm variation, with no plank borders, nails or baked directional lighting. UVs align the grain with individual timbers.
 
 The four source files are `../Blender/FishingDock.blend`, `FishingProps.blend`, `HomeLifeProps.blend` and `WoodlandLifeProps.blend`. Their matching metadata files live in `../Layout`. Actual Blender model previews use the `../Previews/Blender_FishingDock.png`, `Blender_FishingProps.png`, `Blender_HomeLifeProps.png` and `Blender_WoodlandLifeProps.png` names. In-engine presentation images are recorded separately as `UE_Fishing.png`, `UE_HomeLife.png`, `UE_Picnic.png` and `UE_Repair.png`; engine validation status is documented in the project `VALIDATION.md`.
+
+## Starfall second level
+
+Four new built-in ImageGen references are saved in `Starfall`: `Ref_StarfallOverview.png`, `Ref_StarfallSpaceship.png`, `Ref_StarfallTrees.png`, and `Ref_StarfallFungiSpring.png`. A fifth generated image, `../Textures/Starfall/T_SF_ShipPaint.png`, is the production hull albedo. All five exact generation prompts are preserved in [GENERATION_PROMPTS.md](Starfall/GENERATION_PROMPTS.md).
+
+The water reflection material and sky are reused from the woodland level. New Blender source kits are `StarfallSpaceship.blend`, `StarfallTrees.blend`, and `StarfallFungiSpring.blend`; their assembled placement is `AstraStarfall.blend`. Actual engine screenshots are named `UE_SF*.png` and `UE_Demo_SF*.png`, and are distinct from these generated references. See [Starfall level documentation](../../Docs/StarfallLevel.md).

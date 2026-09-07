@@ -1,0 +1,215 @@
+{
+  "passed": true,
+  "map": "/Game/Astra/Maps/L_AstraStarfall",
+  "reports": {
+    "StarfallLayout_Validation.json": "e8163d404e738070929d5209f2a843544b76c8740c5c4e3809c8cae7de4c4fdb",
+    "StarfallSpaceship_FBXValidation.json": "5be1891abe52b944fbb1b1d5f10bb9fd234cfd289606cd29f1392363670d0eb7",
+    "StarfallTrees_Validation.json": "4ea4cf0438fef4c42798bff58f095002c887f16d5054649c9f623fa5aaeb0974",
+    "StarfallFungiSpring_Validation.json": "e6850ebf5b10bf79cd6027b59345327c3d6756afcec6209341c301f86281e6e8",
+    "UE_StarfallImportValidation.json": "531e853c8c6943afaf9538712d4d613375b0db18331878a60635ecb2f0f9f6bd",
+    "UE_StarfallReloadValidation.json": "da187ee16a8e01ea8e1b5dc07604d9ac08cd84bb057fbe19db10950c45265de4",
+    "UE_SFDemoValidation.json": "1c8b2d000f28ea76bd21998d4cf3f56896fd6f0eb040f91c6be9da3afe2f6ca7"
+  },
+  "protected_existing_content_files": 254,
+  "existing_content_unchanged": true,
+  "new_meshes": 17,
+  "reused_meshes": 16,
+  "native_foliage": 4118,
+  "placements": 4488,
+  "saved_level_actor_count": 704,
+  "actual_ue_screenshots": 14,
+  "new_generated_reference_and_texture_images": 5,
+  "images": [
+    {
+      "file": "ArtSource/Previews/UE_SFOverview.png",
+      "size": [
+        1600,
+        900
+      ],
+      "bytes": 2588359,
+      "sha256": "a903333af6e0596b3e2d1c3bfe36af86a1a05c80996cfdf7bf86d59d4e1d465d",
+      "png_crc_and_decode_passed": true
+    },
+    {
+      "file": "ArtSource/Previews/UE_SFSpaceship.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "bytes": 2872895,
+      "sha256": "6f0864dfe45208e7b0102ae3887d9715e4834340f7e5d7e7938f53ddb107e09d",
+      "png_crc_and_decode_passed": true
+    },
+    {
+      "file": "ArtSource/Previews/UE_SFMushrooms.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "bytes": 3127955,
+      "sha256": "3af9628ab3a012c20247a1905303010c7491f860f390eb2711a2ae7061a71fc4",
+      "png_crc_and_decode_passed": true
+    },
+    {
+      "file": "ArtSource/Previews/UE_SFGlow.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "bytes": 2805150,
+      "sha256": "f42d1d65c0c3cda2e017d8eb438b4b9518d86c98bd7bb0594bf06fd34231c370",
+      "png_crc_and_decode_passed": true
+    },
+    {
+      "file": "ArtSource/Previews/UE_SFSpring.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "bytes": 2769050,
+      "sha256": "44b71598c22ae738334ddfca2edea90bdb4b797e2db69f51eead24a2c1a32ffd",
+      "png_crc_and_decode_passed": true
+    },
+    {
+      "file": "ArtSource/Previews/UE_SFPuddles.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "bytes": 2853812,
+      "sha256": "49a684938123942522ab19289d3b601dcfa25c9c4b5ff1378ede031520d8f1bf",
+      "png_crc_and_decode_passed": true
+    },
+    {
+      "file": "ArtSource/Previews/UE_SFBrokenTrees.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "bytes": 2826017,
+      "sha256": "8ae7e2761230e41fdad6da8629534c8a7a75ca3d3f4b35ff764e70fd641e5365",
+      "png_crc_and_decode_passed": true
+    },
+    {
+      "file": "ArtSource/Previews/UE_Demo_SFClearing.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "bytes": 2670189,
+      "sha256": "a6ef2fceaf3167beefb46b842d3f7b14c51f316c3c0305b7ad6c94c0adcd696c",
+      "png_crc_and_decode_passed": true
+    },
+    {
+      "file": "ArtSource/Previews/UE_Demo_SFMushrooms.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "bytes": 3059673,
+      "sha256": "0261123e21b7b15279f18a64e03c7755791a385f12813d7543c848926d8560b1",
+      "png_crc_and_decode_passed": true
+    },
+    {
+      "file": "ArtSource/Previews/UE_Demo_SFGlow.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "bytes": 2807618,
+      "sha256": "b6793d4bd1fe3545a0fbc6eb707e7f807a09f3676dd5ef15a2c4eb1cffd357d2",
+      "png_crc_and_decode_passed": true
+    },
+    {
+      "file": "ArtSource/Previews/UE_Demo_SFSpring.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "bytes": 2804881,
+      "sha256": "a06a3525204a26345159deeb8dbc961226786b6c5ec367cf1f67231f971e931a",
+      "png_crc_and_decode_passed": true
+    },
+    {
+      "file": "ArtSource/Previews/UE_Demo_SFOldLogs.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "bytes": 2750354,
+      "sha256": "426efa4b67a51ae58d4049a6a88fb40fce3466be1b63cb29ccf275a0fb957d92",
+      "png_crc_and_decode_passed": true
+    },
+    {
+      "file": "ArtSource/Previews/UE_Demo_SFPuddles.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "bytes": 2615080,
+      "sha256": "db735bdbf12d1c98eef79862daa751e97aeb8ea489551a7e07d4c81c8d11f240",
+      "png_crc_and_decode_passed": true
+    },
+    {
+      "file": "ArtSource/Previews/UE_Demo_SFLanding.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "bytes": 2721118,
+      "sha256": "cd6a70c7e7ad13c6b7ea75c0186ba6ae3ec7ff98c04ed7eccafc943064b621cd",
+      "png_crc_and_decode_passed": true
+    },
+    {
+      "file": "ArtSource/Reference/Starfall/Ref_StarfallFungiSpring.png",
+      "size": [
+        1400,
+        1123
+      ],
+      "bytes": 2231209,
+      "sha256": "c284bd3ceb66edcb806ad48426993fad51a80da77d2d7a91b6d658051239d567",
+      "png_crc_and_decode_passed": true
+    },
+    {
+      "file": "ArtSource/Reference/Starfall/Ref_StarfallOverview.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "bytes": 3766792,
+      "sha256": "7a93c106bff98dbbb85ee518dd176d1b615d42bf83847d4f4006aca43035b0a7",
+      "png_crc_and_decode_passed": true
+    },
+    {
+      "file": "ArtSource/Reference/Starfall/Ref_StarfallSpaceship.png",
+      "size": [
+        1402,
+        1122
+      ],
+      "bytes": 1521106,
+      "sha256": "58bf4a515092896889cbe54829b599d066d32e1b93f5b11e2fdab53ab6c0764c",
+      "png_crc_and_decode_passed": true
+    },
+    {
+      "file": "ArtSource/Reference/Starfall/Ref_StarfallTrees.png",
+      "size": [
+        1330,
+        1182
+      ],
+      "bytes": 1986395,
+      "sha256": "6f601ec360d0502d748c27112c809343694c4407ef14558cf99f4f1aaa022fc9",
+      "png_crc_and_decode_passed": true
+    },
+    {
+      "file": "ArtSource/Textures/Starfall/T_SF_ShipPaint.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 1840728,
+      "sha256": "ee6aca35471d1bcebe4ad359cdca4e55ba74446efb0290c6da4e19210ee53a10",
+      "png_crc_and_decode_passed": true
+    }
+  ],
+  "packaged_windows_build_refreshed": false
+}

@@ -144,7 +144,7 @@ place('SM_SF_FreshBrokenStump',3,-11.8,group='FreshlyBrokenTrees')
 place('SM_SF_FreshFallenTree',9,-11.5,yaw=0,group='FreshlyBrokenTrees')
 for x,y,yaw,scale in [(28,-35,18,1),(-34,30,60,1.12),(-29,-35,-28,.95)]:
     place('SM_SF_OldMossLog',x,y,yaw=yaw,scale=scale,group='OldMossLogs')
-pink_positions=[(25,26),(25.5,31.5),(29,33.3),(34,33),(36.3,29),(35.5,24.8),(30.8,23.6)]
+pink_positions=[(23,24.5),(25.5,31.5),(29,33.3),(34,33),(36.3,29),(35.5,24.8),(30.8,23.6)]
 for i,(x,y) in enumerate(pink_positions):
     place(f'SM_SF_PinkTree_{i%3+1:02}',x,y,scale=RNG.uniform(.85,1.05),yaw=RNG.uniform(0,360),group='PinkSpringGrove')
 
@@ -161,8 +161,9 @@ for glowing,center,size,grid in [(False,design.MUSHROOM,15,8),(True,design.GLOW,
             scale=RNG.uniform(.55,.70) if glowing else RNG.uniform(.66,1.0)
             radius=math.hypot(*assets[asset]['dimensions_m'][:2])*.5*scale
             spacing=(size-2*radius)/(grid-1)
-            x=center[0]-size/2+radius+ix*spacing+RNG.uniform(-.12,.12)
-            y=center[1]-size/2+radius+iy*spacing+RNG.uniform(-.12,.12)
+            jitter=.23 if glowing else .64
+            x=center[0]-size/2+radius+ix*spacing+RNG.uniform(-jitter,jitter)
+            y=center[1]-size/2+radius+iy*spacing+RNG.uniform(-jitter,jitter)
             x=max(center[0]-size/2+radius,min(center[0]+size/2-radius,x))
             y=max(center[1]-size/2+radius,min(center[1]+size/2-radius,y))
             place(asset,x,y,scale=scale,yaw=RNG.uniform(0,360),group=group,foliage=True,collision='none')
@@ -177,6 +178,12 @@ for ix in range(26):
         x=-48+ix*3.84+RNG.uniform(-1.3,1.3)
         y=-48+iy*3.84+RNG.uniform(-1.3,1.3)
         if design.reserved(x,y,.45):continue
+        # At the fixed camera angle tall foreground crowns project northwards.
+        # Keep that projected canopy off the small focal props, not only their trunks.
+        projected_x=x+3.7
+        focal_rects=[(.5,-35.5,15.5,-20.5),(-26.5,-31.5,-21.5,-26.5),
+            (1.9,-13.6,12.7,-9.4),(25,-36.5,31,-33.5),(-36.5,27,-31.5,33),(-32,-37,-26,-33)]
+        if any(a-1.3<projected_x<c+1.3 and b-1.3<y<d+1.3 for a,b,c,d in focal_rects):continue
         if max(abs(x),abs(y))<37 and RNG.random()<.20:continue
         if any(math.hypot(x-p[0],y-p[1])<3.05 for p in tree_positions):continue
         kind='Fir' if RNG.random()<.72 else 'Oak'
@@ -261,7 +268,7 @@ shader += ['r=length(p-float2(30,27));floorMask=max(floorMask,1-smoothstep(1.65,
     'float grain=dot(Tex.rgb,float3(.25,.55,.2));',
     'float3 trail=float3(.47,.32,.145)*(0.85+grain*.85+n*.025);',
     'float3 ground=lerp(grass,trail,max(dry,bank*.85));',
-    'return lerp(ground,float3(.40,.44,.28)*(0.9+grain*.3),floorMask);']
+    'return lerp(ground,float3(.035,.09,.11)*(0.72+grain*.7),floorMask);']
 (ART/'Layout/starfall_ground.hlsl').write_text('\n'.join(shader)+'\n',encoding='utf-8')
 
 cameras=[

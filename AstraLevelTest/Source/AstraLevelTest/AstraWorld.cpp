@@ -397,6 +397,11 @@ float UAstraSceneLibrary::TerrainHeight(float X, float Y)
 
 AActor* UAstraSceneLibrary::CreateTerrain(UMaterialInterface* Material)
 {
+    return CreateTerrainFromHeightmap(Material, FPaths::ProjectDir() / TEXT("ArtSource/Layout/landscape_height.r16"));
+}
+
+AActor* UAstraSceneLibrary::CreateTerrainFromHeightmap(UMaterialInterface* Material, const FString& HeightFile)
+{
 #if WITH_EDITOR
     UWorld* World = GEditor ? GEditor->GetEditorWorldContext().World() : nullptr;
     if (!World) return nullptr;
@@ -406,7 +411,6 @@ AActor* UAstraSceneLibrary::CreateTerrain(UMaterialInterface* Material)
     L->LandscapeMaterial = Material;
     // Use the exact unsigned 16-bit height field exported from the Blender layout.
     TArray<uint8> Raw;
-    const FString HeightFile = FPaths::ProjectDir() / TEXT("ArtSource/Layout/landscape_height.r16");
     if (!FFileHelper::LoadFileToArray(Raw,*HeightFile) || Raw.Num()!=127*127*2)
     {
         UE_LOG(LogTemp,Error,TEXT("Missing or invalid Blender heightmap: %s"),*HeightFile);

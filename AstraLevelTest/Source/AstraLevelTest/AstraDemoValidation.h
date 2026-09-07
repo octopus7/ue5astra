@@ -59,6 +59,7 @@ private:
     void Finish(const FString& Failure = FString());
 
     UAstraDemoPlayback& Demo;
+    FString ValidationPrefix;
     EStage Stage = EStage::AwaitWorld;
     FSnapshot Snapshot;
     TArray<FString> Checks;
