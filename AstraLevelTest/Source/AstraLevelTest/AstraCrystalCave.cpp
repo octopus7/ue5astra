@@ -170,7 +170,11 @@ struct FAstraCaveValidation
         const bool bSaved = FFileHelper::SaveStringToFile(Json, *(Directory / TEXT("UE_CaveMovementValidation.json")));
         UE_LOG(LogTemp, Display, TEXT("ASTRA CAVE COMPLETE passed=%d saved=%d completed_routes=%d/%d failed_checks=%d"), bPass, bSaved, RouteResults.Num(), Routes.Num(), FailedChecks);
         Enter(EPhase::Done);
-        FPlatformMisc::RequestExitWithStatus(false, bPass && bSaved ? 0 : 1);
+        // This is an explicitly requested standalone validation run. SaveStringToFile
+        // has closed its file above. UE's graceful Windows exit can lose a nonzero
+        // PostQuitMessage status in the -game main loop; force preserves the real
+        // result via TerminateProcess and FWindowsPlatformMisc flushes GLog first.
+        FPlatformMisc::RequestExitWithStatus(true, bPass && bSaved ? 0 : 1, TEXT("AstraCaveTest finished and report saved"));
     }
 
     bool LoadRoutes(FString& Error)

@@ -188,6 +188,21 @@
           -1900
         ]
       ]
+    },
+    {
+      "name": "entrance_collision",
+      "kind": "collision",
+      "expected_blocker_tag": "CaveBoundary",
+      "waypoints": [
+        [
+          0,
+          -2100
+        ],
+        [
+          0,
+          -2600
+        ]
+      ]
     }
   ]
 }

@@ -11,7 +11,7 @@ bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=Fals
 scene=bpy.context.scene;scene.unit_settings.system='METRIC'
 lib=bpy.data.collections.new('01_AssetLibrary');scene.collection.children.link(lib)
 placement=bpy.data.collections.new('02_CavePlacement');scene.collection.children.link(placement)
-assets={};materials={};sources={};objects=[];lights=[]
+assets={};materials={};sources={};objects=[];lights=[];collision_boxes=[]
 for kit,blend in [('rocks','CrystalCaveRocks.blend'),('crystals','CrystalCaveCrystals.blend')]:
     data=json.loads((OUT/f'{kit}_kit.json').read_text(encoding='utf-8'))
     assets.update(data['assets']);materials.update(data['materials'])
@@ -34,7 +34,9 @@ def place(asset,x,y,z=None,scale=1,yaw=0,group='Rocks',tags=None,collision=None)
     return ob
 
 def crystal(x,y,kind='Cyan',scale=1,z=None,power=1800,radius=650):
-    ob=place('SM_CC_Crystal'+kind,x,y,z,scale,R.uniform(-180,180),'Crystals',collision='complex' if scale>.65 else 'none')
+    yaw=R.uniform(-180,180)
+    if kind=='Heart':yaw=90
+    ob=place('SM_CC_Crystal'+kind,x,y,z,scale,yaw,'Crystals',collision='complex' if scale>.65 else 'none')
     if power:
         z=ob.location.z+(.85 if kind=='Violet' else 1.2)*scale
         rgb=[.13,.77,1] if kind!='Violet' else [.63,.28,1]
@@ -59,8 +61,14 @@ for y in [-23.7,23.7]:
         place('SM_CC_RockWall_'+['A','B','C'][i%3],x,y,scale=[1.1,1,.65 if x<0 else 1.1],yaw=R.uniform(-9,9),group='Architecture/EndWalls',tags=['CaveBoundary'])
 # Entrance roof fragment is outside the active route; other ceiling is cut away.
 place('SM_CC_Portal',0,-23.2,scale=1,yaw=0,group='Architecture/Entrance',tags=['CaveBoundary'])
+place('SM_CC_RockWallLow',0,-24.2,scale=[1.15,.8,1.05],yaw=0,group='Architecture/EntranceThreshold',tags=['CaveBoundary'])
 for i,(x,y) in enumerate(D.ISLANDS):
     place('SM_CC_RockIsland_'+('A' if i==0 else 'B'),x,y,group='Architecture/ForkIslands',tags=['CaveIsland'])
+    box=dict(name=f'CC_IslandInteriorCollision_{i+1}',ue_location_cm=[x*100,y*100,D.height(x,y)*100+105],dimensions_cm=[380,660,210],tag='CaveIsland')
+    collision_boxes.append(box)
+    helper=bpy.data.objects.new(box['name'],None);scene.collection.objects.link(helper)
+    helper.empty_display_type='CUBE';helper.empty_display_size=1;helper.location=(x,-y,D.height(x,y)+1.05);helper.scale=(1.9,3.3,1.05)
+    helper['ue_collision_only']=True
     crystal(.3,y-.3,'Cyan' if i==0 else 'Violet',scale=.85,z=D.height(x,y)+1.52,power=2200,radius=740)
 
 # Large chamber landmark rests beyond the thoroughfare and leaves endpoint clear.
@@ -83,6 +91,17 @@ for i in range(105):
     if i%3==0:place('SM_CC_CrystalShards',x,y,scale=R.uniform(.6,1.3),yaw=R.uniform(0,360),group='Details/Shards',collision='none')
     else:place('SM_CC_RockRubble',x,y,scale=R.uniform(.35,.9),yaw=R.uniform(0,360),group='Details/Rubble',collision='none')
 
+# Low decorative strata must not become stairs over the cave boundary.
+for ob in list(objects):
+    if ob['group'] not in ['Architecture/Perimeter','Architecture/EndWalls','Architecture/EntranceThreshold']:continue
+    dims=[a*b*100 for a,b in zip(assets[ob['asset']]['dimensions_m'],ob['scale'])]
+    dims[2]=max(210,dims[2]);pos=list(ob['ue_location_cm']);pos[2]+=dims[2]/2
+    box=dict(name=ob['name']+'_InteriorCollision',ue_location_cm=pos,dimensions_cm=dims,ue_yaw=ob['ue_rotation_deg']['yaw'],tag='CaveBoundary')
+    collision_boxes.append(box)
+    helper=bpy.data.objects.new(box['name'],None);scene.collection.objects.link(helper)
+    helper.empty_display_type='CUBE';helper.empty_display_size=1;helper.location=(pos[0]/100,-pos[1]/100,pos[2]/100)
+    helper.rotation_euler.z=math.radians(-box['ue_yaw']);helper.scale=[v/200 for v in dims];helper['ue_collision_only']=True
+
 # Real source terrain: UE rectangular component grid, Blender Y flipped.
 verts=[];faces=[];heights=[]
 for iy in range(64):
@@ -102,7 +121,7 @@ mesh.materials.append(m)
 data=dict(schema_version=1,seed=D.SEED,map='/Game/Astra/Maps/L_AstraCrystalCave',dimensions_m=[30,50],
     axis_mapping='Blender (x,y,z) m -> Unreal (x,-y,z)*100 cm; yaw=-Blender Z degrees',
     landscape=dict(samples=[127,64],origin_cm=[-1500,-2500,0],scale=[3000/126,5000/63,100],file='ArtSource/Layout/CrystalCave/cave_height.r16'),
-    assets=assets,materials=materials,objects=objects,lights=lights,spawn_cm=[0,-2100,D.height(0,-21)*100+100],
+    assets=assets,materials=materials,objects=objects,lights=lights,collision_boxes=collision_boxes,lighting_settings=dict(point_intensity_multiplier=.32,fill_intensity=1.25),spawn_cm=[0,-2100,D.height(0,-21)*100+100],
     cutaway='Low foreground perimeter; no roof over traversable interior; only entrance lintel outside entry spawn.',
     review_cameras=[dict(name='CaveOverview',look=[0,0,70],width=6000),dict(name='CaveFork1',look=[0,-900,100],width=2600),
       dict(name='CaveFork2',look=[0,800,100],width=2600),dict(name='CaveHeart',look=[260,1970,130],width=2000)])

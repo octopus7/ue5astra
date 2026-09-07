@@ -1845,7 +1845,31 @@
       ]
     },
     {
-      "name": "CC_RockIsland_A_056",
+      "name": "CC_RockWallLow_056",
+      "asset": "SM_CC_RockWallLow",
+      "group": "Architecture/EntranceThreshold",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        0,
+        -2420.0,
+        16.4617
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 0,
+        "roll": 0
+      },
+      "scale": [
+        1.15,
+        0.8,
+        1.05
+      ]
+    },
+    {
+      "name": "CC_RockIsland_A_057",
       "asset": "SM_CC_RockIsland_A",
       "group": "Architecture/ForkIslands",
       "tags": [
@@ -1869,7 +1893,7 @@
       ]
     },
     {
-      "name": "CC_CrystalCyan_057",
+      "name": "CC_CrystalCyan_058",
       "asset": "SM_CC_CrystalCyan",
       "group": "Crystals",
       "tags": [],
@@ -1891,7 +1915,7 @@
       ]
     },
     {
-      "name": "CC_RockIsland_B_058",
+      "name": "CC_RockIsland_B_059",
       "asset": "SM_CC_RockIsland_B",
       "group": "Architecture/ForkIslands",
       "tags": [
@@ -1915,7 +1939,7 @@
       ]
     },
     {
-      "name": "CC_CrystalViolet_059",
+      "name": "CC_CrystalViolet_060",
       "asset": "SM_CC_CrystalViolet",
       "group": "Crystals",
       "tags": [],
@@ -1937,7 +1961,7 @@
       ]
     },
     {
-      "name": "CC_CrystalHeart_060",
+      "name": "CC_CrystalHeart_061",
       "asset": "SM_CC_CrystalHeart",
       "group": "Crystals",
       "tags": [],
@@ -1949,7 +1973,7 @@
       ],
       "ue_rotation_deg": {
         "pitch": 0,
-        "yaw": -9.410344402676031,
+        "yaw": 90,
         "roll": 0
       },
       "scale": [
@@ -1959,7 +1983,7 @@
       ]
     },
     {
-      "name": "CC_CrystalCyan_061",
+      "name": "CC_CrystalCyan_062",
       "asset": "SM_CC_CrystalCyan",
       "group": "Crystals",
       "tags": [],
@@ -1981,7 +2005,7 @@
       ]
     },
     {
-      "name": "CC_CrystalCyan_062",
+      "name": "CC_CrystalCyan_063",
       "asset": "SM_CC_CrystalCyan",
       "group": "Crystals",
       "tags": [],
@@ -2003,7 +2027,7 @@
       ]
     },
     {
-      "name": "CC_CrystalCyan_063",
+      "name": "CC_CrystalCyan_064",
       "asset": "SM_CC_CrystalCyan",
       "group": "Crystals",
       "tags": [],
@@ -2025,7 +2049,7 @@
       ]
     },
     {
-      "name": "CC_CrystalCyan_064",
+      "name": "CC_CrystalCyan_065",
       "asset": "SM_CC_CrystalCyan",
       "group": "Crystals",
       "tags": [],
@@ -2047,7 +2071,7 @@
       ]
     },
     {
-      "name": "CC_CrystalCyan_065",
+      "name": "CC_CrystalCyan_066",
       "asset": "SM_CC_CrystalCyan",
       "group": "Crystals",
       "tags": [],
@@ -2069,7 +2093,7 @@
       ]
     },
     {
-      "name": "CC_CrystalCyan_066",
+      "name": "CC_CrystalCyan_067",
       "asset": "SM_CC_CrystalCyan",
       "group": "Crystals",
       "tags": [],
@@ -2091,7 +2115,7 @@
       ]
     },
     {
-      "name": "CC_CrystalCyan_067",
+      "name": "CC_CrystalCyan_068",
       "asset": "SM_CC_CrystalCyan",
       "group": "Crystals",
       "tags": [],
@@ -2113,7 +2137,7 @@
       ]
     },
     {
-      "name": "CC_CrystalViolet_068",
+      "name": "CC_CrystalViolet_069",
       "asset": "SM_CC_CrystalViolet",
       "group": "Crystals",
       "tags": [],
@@ -2135,7 +2159,7 @@
       ]
     },
     {
-      "name": "CC_CrystalViolet_069",
+      "name": "CC_CrystalViolet_070",
       "asset": "SM_CC_CrystalViolet",
       "group": "Crystals",
       "tags": [],
@@ -2157,7 +2181,7 @@
       ]
     },
     {
-      "name": "CC_CrystalViolet_070",
+      "name": "CC_CrystalViolet_071",
       "asset": "SM_CC_CrystalViolet",
       "group": "Crystals",
       "tags": [],
@@ -2179,7 +2203,7 @@
       ]
     },
     {
-      "name": "CC_CrystalViolet_071",
+      "name": "CC_CrystalViolet_072",
       "asset": "SM_CC_CrystalViolet",
       "group": "Crystals",
       "tags": [],
@@ -2201,7 +2225,7 @@
       ]
     },
     {
-      "name": "CC_CrystalViolet_072",
+      "name": "CC_CrystalViolet_073",
       "asset": "SM_CC_CrystalViolet",
       "group": "Crystals",
       "tags": [],
@@ -2223,7 +2247,7 @@
       ]
     },
     {
-      "name": "CC_CrystalCyan_073",
+      "name": "CC_CrystalCyan_074",
       "asset": "SM_CC_CrystalCyan",
       "group": "Crystals",
       "tags": [],
@@ -2245,7 +2269,7 @@
       ]
     },
     {
-      "name": "CC_CrystalCyan_074",
+      "name": "CC_CrystalCyan_075",
       "asset": "SM_CC_CrystalCyan",
       "group": "Crystals",
       "tags": [],
@@ -2267,7 +2291,7 @@
       ]
     },
     {
-      "name": "CC_CrystalCyan_075",
+      "name": "CC_CrystalCyan_076",
       "asset": "SM_CC_CrystalCyan",
       "group": "Crystals",
       "tags": [],
@@ -2289,7 +2313,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_076",
+      "name": "CC_CrystalShards_077",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -2311,7 +2335,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_077",
+      "name": "CC_RockRubble_078",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2333,7 +2357,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_078",
+      "name": "CC_RockRubble_079",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2355,7 +2379,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_079",
+      "name": "CC_CrystalShards_080",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -2377,7 +2401,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_080",
+      "name": "CC_RockRubble_081",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2399,7 +2423,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_081",
+      "name": "CC_RockRubble_082",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2421,7 +2445,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_082",
+      "name": "CC_CrystalShards_083",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -2443,7 +2467,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_083",
+      "name": "CC_RockRubble_084",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2465,7 +2489,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_084",
+      "name": "CC_RockRubble_085",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2487,7 +2511,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_085",
+      "name": "CC_CrystalShards_086",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -2509,7 +2533,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_086",
+      "name": "CC_RockRubble_087",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2531,7 +2555,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_087",
+      "name": "CC_RockRubble_088",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2553,7 +2577,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_088",
+      "name": "CC_RockRubble_089",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2575,7 +2599,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_089",
+      "name": "CC_RockRubble_090",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2597,7 +2621,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_090",
+      "name": "CC_RockRubble_091",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2619,7 +2643,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_091",
+      "name": "CC_RockRubble_092",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2641,7 +2665,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_092",
+      "name": "CC_CrystalShards_093",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -2663,7 +2687,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_093",
+      "name": "CC_RockRubble_094",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2685,7 +2709,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_094",
+      "name": "CC_RockRubble_095",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2707,7 +2731,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_095",
+      "name": "CC_RockRubble_096",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2729,7 +2753,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_096",
+      "name": "CC_CrystalShards_097",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -2751,7 +2775,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_097",
+      "name": "CC_RockRubble_098",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2773,7 +2797,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_098",
+      "name": "CC_RockRubble_099",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2795,7 +2819,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_099",
+      "name": "CC_CrystalShards_100",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -2817,7 +2841,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_100",
+      "name": "CC_RockRubble_101",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2839,7 +2863,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_101",
+      "name": "CC_RockRubble_102",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2861,7 +2885,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_102",
+      "name": "CC_RockRubble_103",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2883,7 +2907,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_103",
+      "name": "CC_RockRubble_104",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2905,7 +2929,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_104",
+      "name": "CC_CrystalShards_105",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -2927,7 +2951,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_105",
+      "name": "CC_RockRubble_106",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2949,7 +2973,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_106",
+      "name": "CC_RockRubble_107",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -2971,7 +2995,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_107",
+      "name": "CC_CrystalShards_108",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -2993,7 +3017,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_108",
+      "name": "CC_RockRubble_109",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3015,7 +3039,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_109",
+      "name": "CC_RockRubble_110",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3037,7 +3061,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_110",
+      "name": "CC_CrystalShards_111",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -3059,7 +3083,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_111",
+      "name": "CC_RockRubble_112",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3081,7 +3105,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_112",
+      "name": "CC_CrystalShards_113",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -3103,7 +3127,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_113",
+      "name": "CC_RockRubble_114",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3125,7 +3149,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_114",
+      "name": "CC_RockRubble_115",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3147,7 +3171,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_115",
+      "name": "CC_CrystalShards_116",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -3169,7 +3193,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_116",
+      "name": "CC_RockRubble_117",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3191,7 +3215,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_117",
+      "name": "CC_RockRubble_118",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3213,7 +3237,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_118",
+      "name": "CC_CrystalShards_119",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -3235,7 +3259,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_119",
+      "name": "CC_RockRubble_120",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3257,7 +3281,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_120",
+      "name": "CC_RockRubble_121",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3279,7 +3303,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_121",
+      "name": "CC_CrystalShards_122",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -3301,7 +3325,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_122",
+      "name": "CC_RockRubble_123",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3323,7 +3347,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_123",
+      "name": "CC_CrystalShards_124",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -3345,7 +3369,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_124",
+      "name": "CC_RockRubble_125",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3367,7 +3391,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_125",
+      "name": "CC_CrystalShards_126",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -3389,7 +3413,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_126",
+      "name": "CC_RockRubble_127",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3411,7 +3435,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_127",
+      "name": "CC_CrystalShards_128",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -3433,7 +3457,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_128",
+      "name": "CC_RockRubble_129",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3455,7 +3479,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_129",
+      "name": "CC_RockRubble_130",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3477,7 +3501,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_130",
+      "name": "CC_CrystalShards_131",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -3499,7 +3523,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_131",
+      "name": "CC_RockRubble_132",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3521,7 +3545,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_132",
+      "name": "CC_CrystalShards_133",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -3543,7 +3567,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_133",
+      "name": "CC_RockRubble_134",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3565,7 +3589,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_134",
+      "name": "CC_CrystalShards_135",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -3587,7 +3611,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_135",
+      "name": "CC_RockRubble_136",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3609,7 +3633,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_136",
+      "name": "CC_RockRubble_137",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3631,7 +3655,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_137",
+      "name": "CC_RockRubble_138",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3653,7 +3677,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_138",
+      "name": "CC_CrystalShards_139",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -3675,7 +3699,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_139",
+      "name": "CC_RockRubble_140",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3697,7 +3721,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_140",
+      "name": "CC_CrystalShards_141",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -3719,7 +3743,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_141",
+      "name": "CC_RockRubble_142",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3741,7 +3765,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_142",
+      "name": "CC_RockRubble_143",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3763,7 +3787,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_143",
+      "name": "CC_CrystalShards_144",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -3785,7 +3809,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_144",
+      "name": "CC_RockRubble_145",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3807,7 +3831,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_145",
+      "name": "CC_RockRubble_146",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3829,7 +3853,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_146",
+      "name": "CC_CrystalShards_147",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -3851,7 +3875,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_147",
+      "name": "CC_RockRubble_148",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3873,7 +3897,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_148",
+      "name": "CC_RockRubble_149",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3895,7 +3919,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_149",
+      "name": "CC_CrystalShards_150",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -3917,7 +3941,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_150",
+      "name": "CC_RockRubble_151",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3939,7 +3963,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_151",
+      "name": "CC_CrystalShards_152",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -3961,7 +3985,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_152",
+      "name": "CC_RockRubble_153",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -3983,7 +4007,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_153",
+      "name": "CC_RockRubble_154",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -4005,7 +4029,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_154",
+      "name": "CC_RockRubble_155",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -4027,7 +4051,7 @@
       ]
     },
     {
-      "name": "CC_CrystalShards_155",
+      "name": "CC_CrystalShards_156",
       "asset": "SM_CC_CrystalShards",
       "group": "Details/Shards",
       "tags": [],
@@ -4049,7 +4073,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_156",
+      "name": "CC_RockRubble_157",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -4071,7 +4095,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_157",
+      "name": "CC_RockRubble_158",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -4093,7 +4117,7 @@
       ]
     },
     {
-      "name": "CC_RockRubble_158",
+      "name": "CC_RockRubble_159",
       "asset": "SM_CC_RockRubble",
       "group": "Details/Rubble",
       "tags": [],
@@ -4117,7 +4141,7 @@
   ],
   "lights": [
     {
-      "name": "CC_CrystalCyan_057_Light",
+      "name": "CC_CrystalCyan_058_Light",
       "ue_location_cm": [
         30.0,
         -930.0000000000001,
@@ -4133,7 +4157,7 @@
       "source_radius_cm": 59.5
     },
     {
-      "name": "CC_CrystalViolet_059_Light",
+      "name": "CC_CrystalViolet_060_Light",
       "ue_location_cm": [
         30.0,
         770.0,
@@ -4149,7 +4173,7 @@
       "source_radius_cm": 59.5
     },
     {
-      "name": "CC_CrystalHeart_060_Light",
+      "name": "CC_CrystalHeart_061_Light",
       "ue_location_cm": [
         430.0,
         2000,
@@ -4165,7 +4189,7 @@
       "source_radius_cm": 70
     },
     {
-      "name": "CC_CrystalCyan_061_Light",
+      "name": "CC_CrystalCyan_062_Light",
       "ue_location_cm": [
         380.0,
         -2000,
@@ -4181,7 +4205,7 @@
       "source_radius_cm": 70
     },
     {
-      "name": "CC_CrystalCyan_062_Light",
+      "name": "CC_CrystalCyan_063_Light",
       "ue_location_cm": [
         -470.0,
         -2200,
@@ -4197,7 +4221,7 @@
       "source_radius_cm": 43.4
     },
     {
-      "name": "CC_CrystalCyan_063_Light",
+      "name": "CC_CrystalCyan_064_Light",
       "ue_location_cm": [
         790.0,
         -1300,
@@ -4213,7 +4237,7 @@
       "source_radius_cm": 52.5
     },
     {
-      "name": "CC_CrystalCyan_064_Light",
+      "name": "CC_CrystalCyan_065_Light",
       "ue_location_cm": [
         -780.0,
         -1150.0,
@@ -4229,7 +4253,7 @@
       "source_radius_cm": 59.5
     },
     {
-      "name": "CC_CrystalCyan_065_Light",
+      "name": "CC_CrystalCyan_066_Light",
       "ue_location_cm": [
         790.0,
         -600,
@@ -4245,7 +4269,7 @@
       "source_radius_cm": 45.5
     },
     {
-      "name": "CC_CrystalCyan_066_Light",
+      "name": "CC_CrystalCyan_067_Light",
       "ue_location_cm": [
         -780.0,
         -430.0,
@@ -4261,7 +4285,7 @@
       "source_radius_cm": 42.0
     },
     {
-      "name": "CC_CrystalCyan_067_Light",
+      "name": "CC_CrystalCyan_068_Light",
       "ue_location_cm": [
         480.0,
         -90.0,
@@ -4277,7 +4301,7 @@
       "source_radius_cm": 63.0
     },
     {
-      "name": "CC_CrystalViolet_068_Light",
+      "name": "CC_CrystalViolet_069_Light",
       "ue_location_cm": [
         -570.0,
         10.0,
@@ -4293,7 +4317,7 @@
       "source_radius_cm": 56.0
     },
     {
-      "name": "CC_CrystalViolet_069_Light",
+      "name": "CC_CrystalViolet_070_Light",
       "ue_location_cm": [
         780.0,
         500,
@@ -4309,7 +4333,7 @@
       "source_radius_cm": 59.5
     },
     {
-      "name": "CC_CrystalViolet_070_Light",
+      "name": "CC_CrystalViolet_071_Light",
       "ue_location_cm": [
         -790.0,
         550.0,
@@ -4325,7 +4349,7 @@
       "source_radius_cm": 56.0
     },
     {
-      "name": "CC_CrystalViolet_071_Light",
+      "name": "CC_CrystalViolet_072_Light",
       "ue_location_cm": [
         760.0,
         1100,
@@ -4341,7 +4365,7 @@
       "source_radius_cm": 49.0
     },
     {
-      "name": "CC_CrystalViolet_072_Light",
+      "name": "CC_CrystalViolet_073_Light",
       "ue_location_cm": [
         -780.0,
         1220.0,
@@ -4357,7 +4381,7 @@
       "source_radius_cm": 63.0
     },
     {
-      "name": "CC_CrystalCyan_073_Light",
+      "name": "CC_CrystalCyan_074_Light",
       "ue_location_cm": [
         -550.0,
         1800,
@@ -4373,7 +4397,7 @@
       "source_radius_cm": 70
     },
     {
-      "name": "CC_CrystalCyan_074_Light",
+      "name": "CC_CrystalCyan_075_Light",
       "ue_location_cm": [
         100,
         2300,
@@ -4389,7 +4413,7 @@
       "source_radius_cm": 56.0
     },
     {
-      "name": "CC_CrystalCyan_075_Light",
+      "name": "CC_CrystalCyan_076_Light",
       "ue_location_cm": [
         -700,
         2200,
@@ -4405,6 +4429,640 @@
       "source_radius_cm": 38.5
     }
   ],
+  "collision_boxes": [
+    {
+      "name": "CC_IslandInteriorCollision_1",
+      "ue_location_cm": [
+        0,
+        -900,
+        116.20180810628288
+      ],
+      "dimensions_cm": [
+        380,
+        660,
+        210
+      ],
+      "tag": "CaveIsland"
+    },
+    {
+      "name": "CC_IslandInteriorCollision_2",
+      "ue_location_cm": [
+        0,
+        800,
+        142.09773258470153
+      ],
+      "dimensions_cm": [
+        380,
+        660,
+        210
+      ],
+      "tag": "CaveIsland"
+    },
+    {
+      "name": "CC_RockWallLow_000_InteriorCollision",
+      "ue_location_cm": [
+        -816.082,
+        -2150.0,
+        121.8933
+      ],
+      "dimensions_cm": [
+        436.4608497630218,
+        154.10610435471764,
+        210
+      ],
+      "ue_yaw": 80.53295082977334,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_002_InteriorCollision",
+      "ue_location_cm": [
+        -798.3029,
+        -1842.0,
+        114.7446
+      ],
+      "dimensions_cm": [
+        399.686766633718,
+        154.0273062615831,
+        210
+      ],
+      "ue_yaw": 90.946580396799,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_003_InteriorCollision",
+      "ue_location_cm": [
+        -807.6489,
+        -1534.0,
+        111.7952
+      ],
+      "dimensions_cm": [
+        407.6499108754692,
+        145.68271391792308,
+        210
+      ],
+      "ue_yaw": 82.97968101641365,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_005_InteriorCollision",
+      "ue_location_cm": [
+        -917.374,
+        -1226.0,
+        117.3017
+      ],
+      "dimensions_cm": [
+        373.2063748732055,
+        161.30197043464648,
+        210
+      ],
+      "ue_yaw": 86.79046558964441,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_006_InteriorCollision",
+      "ue_location_cm": [
+        -994.7788,
+        -918.0,
+        124.0875
+      ],
+      "dimensions_cm": [
+        421.0163366376226,
+        161.415021574471,
+        210
+      ],
+      "ue_yaw": 88.73712092261505,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_008_InteriorCollision",
+      "ue_location_cm": [
+        -931.5575,
+        -610.0,
+        123.6663
+      ],
+      "dimensions_cm": [
+        362.4355444258627,
+        149.9327458276069,
+        210
+      ],
+      "ue_yaw": 90.14891072308725,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_009_InteriorCollision",
+      "ue_location_cm": [
+        -812.2015,
+        -302.0,
+        125.32900000000001
+      ],
+      "dimensions_cm": [
+        390.83230807192314,
+        153.60177074168547,
+        210
+      ],
+      "ue_yaw": 81.03559164565046,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_011_InteriorCollision",
+      "ue_location_cm": [
+        -770.1847,
+        6.0,
+        124.60300000000001
+      ],
+      "dimensions_cm": [
+        365.62782465461606,
+        161.6366233431702,
+        210
+      ],
+      "ue_yaw": 80.591525591508,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_012_InteriorCollision",
+      "ue_location_cm": [
+        -837.4662,
+        314.0,
+        119.0494
+      ],
+      "dimensions_cm": [
+        392.5000786401657,
+        160.48733626533408,
+        210
+      ],
+      "ue_yaw": 96.5469360153229,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_014_InteriorCollision",
+      "ue_location_cm": [
+        -941.9404,
+        622.0,
+        115.7031
+      ],
+      "dimensions_cm": [
+        436.24270154015267,
+        161.13433556228273,
+        210
+      ],
+      "ue_yaw": 85.84317340347985,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_015_InteriorCollision",
+      "ue_location_cm": [
+        -952.8703,
+        930.0,
+        120.109
+      ],
+      "dimensions_cm": [
+        413.29802229158395,
+        151.48245035797825,
+        210
+      ],
+      "ue_yaw": 97.17741192835972,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_017_InteriorCollision",
+      "ue_location_cm": [
+        -861.6591,
+        1238.0,
+        122.0353
+      ],
+      "dimensions_cm": [
+        439.2638025652629,
+        163.52700460438047,
+        210
+      ],
+      "ue_yaw": 88.75377831028474,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_018_InteriorCollision",
+      "ue_location_cm": [
+        -816.15,
+        1546.0,
+        122.03280000000001
+      ],
+      "dimensions_cm": [
+        419.05575127319577,
+        145.40693720708296,
+        210
+      ],
+      "ue_yaw": 88.13064436084434,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_020_InteriorCollision",
+      "ue_location_cm": [
+        -867.5817,
+        1854.0,
+        122.78020000000001
+      ],
+      "dimensions_cm": [
+        377.51042615486324,
+        156.9583518585056,
+        210
+      ],
+      "ue_yaw": 83.60545101993709,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_021_InteriorCollision",
+      "ue_location_cm": [
+        -855.3833,
+        2162.0,
+        118.7074
+      ],
+      "dimensions_cm": [
+        389.28685808316663,
+        147.11381888688436,
+        210
+      ],
+      "ue_yaw": 88.43373704032541,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_A_023_InteriorCollision",
+      "ue_location_cm": [
+        816.082,
+        -2150.0,
+        149.33135152123754
+      ],
+      "dimensions_cm": [
+        413.4147395162084,
+        204.54016843922395,
+        267.86430304247506
+      ],
+      "ue_yaw": 93.43708592044408,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_B_025_InteriorCollision",
+      "ue_location_cm": [
+        798.3029,
+        -1842.0,
+        167.42312689746663
+      ],
+      "dimensions_cm": [
+        389.23010996627914,
+        215.0629566822534,
+        308.31665379493325
+      ],
+      "ue_yaw": 92.78134898914541,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_C_026_InteriorCollision",
+      "ue_location_cm": [
+        807.6489,
+        -1534.0,
+        182.3436496903002
+      ],
+      "dimensions_cm": [
+        420.3631882970291,
+        192.5911391972757,
+        338.0074993806004
+      ],
+      "ue_yaw": 90.05130150364599,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_A_028_InteriorCollision",
+      "ue_location_cm": [
+        917.374,
+        -1226.0,
+        159.99382380883227
+      ],
+      "dimensions_cm": [
+        415.75056027988904,
+        211.19415241656395,
+        298.5260476176646
+      ],
+      "ue_yaw": 88.37123480106874,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_B_029_InteriorCollision",
+      "ue_location_cm": [
+        994.7788,
+        -918.0,
+        158.37228502708766
+      ],
+      "dimensions_cm": [
+        385.83677672700554,
+        203.9656830533421,
+        286.3387700541753
+      ],
+      "ue_yaw": 90.64024738707593,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_C_031_InteriorCollision",
+      "ue_location_cm": [
+        931.5575,
+        -610.0,
+        148.58130510255108
+      ],
+      "dimensions_cm": [
+        401.58830542561896,
+        214.52700926743407,
+        258.8860102051022
+      ],
+      "ue_yaw": 98.35542570542042,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_A_032_InteriorCollision",
+      "ue_location_cm": [
+        812.2015,
+        -302.0,
+        160.62030700261093
+      ],
+      "dimensions_cm": [
+        403.7496927792832,
+        197.16689276617032,
+        290.9604140052219
+      ],
+      "ue_yaw": 90.07339828469365,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_B_034_InteriorCollision",
+      "ue_location_cm": [
+        770.1847,
+        6.0,
+        178.76775362460063
+      ],
+      "dimensions_cm": [
+        397.99127647019793,
+        218.23202489759606,
+        337.00590724920124
+      ],
+      "ue_yaw": 99.83486732494552,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_C_035_InteriorCollision",
+      "ue_location_cm": [
+        837.4662,
+        314.0,
+        164.9935065614542
+      ],
+      "dimensions_cm": [
+        424.415734961354,
+        199.21541158350715,
+        309.2466131229084
+      ],
+      "ue_yaw": 89.32491628201501,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_A_037_InteriorCollision",
+      "ue_location_cm": [
+        941.9404,
+        622.0,
+        142.00106622741032
+      ],
+      "dimensions_cm": [
+        426.38001389791447,
+        207.70878866854733,
+        261.57153245482067
+      ],
+      "ue_yaw": 91.37594846582016,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_B_038_InteriorCollision",
+      "ue_location_cm": [
+        952.8703,
+        930.0,
+        172.76480445301888
+      ],
+      "dimensions_cm": [
+        431.3659568852076,
+        213.14001320536096,
+        320.18480890603774
+      ],
+      "ue_yaw": 95.6705361462688,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_C_040_InteriorCollision",
+      "ue_location_cm": [
+        861.6591,
+        1238.0,
+        153.96287679102429
+      ],
+      "dimensions_cm": [
+        362.94391930569117,
+        201.2248949435084,
+        268.13755358204855
+      ],
+      "ue_yaw": 89.1624141766863,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_A_041_InteriorCollision",
+      "ue_location_cm": [
+        816.15,
+        1546.0,
+        154.9313399950237
+      ],
+      "dimensions_cm": [
+        379.33601279326604,
+        207.57585774184128,
+        263.9384799900474
+      ],
+      "ue_yaw": 94.18558412330238,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_B_043_InteriorCollision",
+      "ue_location_cm": [
+        867.5817,
+        1854.0,
+        181.98093170057876
+      ],
+      "dimensions_cm": [
+        414.1232913915077,
+        204.33139715335122,
+        326.23246340115753
+      ],
+      "ue_yaw": 89.59196153397798,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_C_044_InteriorCollision",
+      "ue_location_cm": [
+        855.3833,
+        2162.0,
+        183.88476505657627
+      ],
+      "dimensions_cm": [
+        370.9514714409858,
+        198.84105617991216,
+        342.15293011315254
+      ],
+      "ue_yaw": 88.94042279933349,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_A_046_InteriorCollision",
+      "ue_location_cm": [
+        -760.0,
+        -2370.0,
+        126.6663
+      ],
+      "dimensions_cm": [
+        439.58728,
+        199.6939,
+        210
+      ],
+      "ue_yaw": 4.687435698830939,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_B_047_InteriorCollision",
+      "ue_location_cm": [
+        -400,
+        -2370.0,
+        114.0914
+      ],
+      "dimensions_cm": [
+        439.6575700000001,
+        199.7077,
+        210
+      ],
+      "ue_yaw": 7.946591000485796,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_A_048_InteriorCollision",
+      "ue_location_cm": [
+        400,
+        -2370.0,
+        176.707105
+      ],
+      "dimensions_cm": [
+        439.58728,
+        199.6939,
+        329.81861000000004
+      ],
+      "ue_yaw": -8.11841682913973,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_B_049_InteriorCollision",
+      "ue_location_cm": [
+        760.0,
+        -2370.0,
+        180.00911000000002
+      ],
+      "dimensions_cm": [
+        439.6575700000001,
+        199.7077,
+        329.95182000000005
+      ],
+      "ue_yaw": 8.40519410223811,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_A_050_InteriorCollision",
+      "ue_location_cm": [
+        -760.0,
+        2370.0,
+        119.9668
+      ],
+      "dimensions_cm": [
+        439.58728,
+        199.6939,
+        210
+      ],
+      "ue_yaw": 0.5261816187343946,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_B_051_InteriorCollision",
+      "ue_location_cm": [
+        -400,
+        2370.0,
+        123.2022
+      ],
+      "dimensions_cm": [
+        439.6575700000001,
+        199.7077,
+        210
+      ],
+      "ue_yaw": -0.22264206789725804,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_C_052_InteriorCollision",
+      "ue_location_cm": [
+        0,
+        2370.0,
+        176.61883500000002
+      ],
+      "dimensions_cm": [
+        439.37421000000006,
+        199.7858,
+        329.79947000000004
+      ],
+      "ue_yaw": -6.47260717226105,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_A_053_InteriorCollision",
+      "ue_location_cm": [
+        400,
+        2370.0,
+        185.81790500000002
+      ],
+      "dimensions_cm": [
+        439.58728,
+        199.6939,
+        329.81861000000004
+      ],
+      "ue_yaw": 5.340677128627425,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_B_054_InteriorCollision",
+      "ue_location_cm": [
+        760.0,
+        2370.0,
+        173.30961000000002
+      ],
+      "dimensions_cm": [
+        439.6575700000001,
+        199.7077,
+        329.95182000000005
+      ],
+      "ue_yaw": 1.7657422666443896,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_056_InteriorCollision",
+      "ue_location_cm": [
+        0,
+        -2420.0,
+        121.46170000000001
+      ],
+      "dimensions_cm": [
+        459.82358999999997,
+        119.82464000000002,
+        210
+      ],
+      "ue_yaw": 0,
+      "tag": "CaveBoundary"
+    }
+  ],
+  "lighting_settings": {
+    "point_intensity_multiplier": 0.32,
+    "fill_intensity": 1.25
+  },
   "spawn_cm": [
     0,
     -2100,

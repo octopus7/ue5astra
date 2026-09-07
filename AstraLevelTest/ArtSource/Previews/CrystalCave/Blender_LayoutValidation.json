@@ -1,0 +1,170 @@
+{
+  "source": "Read-only independent Blender geometry audit",
+  "objects": 160,
+  "lights": 18,
+  "transform_mismatches": [],
+  "actionable_issues": [],
+  "landscape": {
+    "samples": [
+      127,
+      64
+    ],
+    "vertices": 8128,
+    "faces": 7938,
+    "dimensions_m": [
+      30.0,
+      50.0,
+      0.3192498981952667
+    ],
+    "raw_bytes": 16256,
+    "height_quantization_error_m": 0.003905564546585083,
+    "origin_and_scale_dimensions_m": [
+      30.0,
+      50.0
+    ]
+  },
+  "walking_routes": [
+    {
+      "name": "full_traversal",
+      "sample_count": 579,
+      "minimum_capsule_surface_margin_m": 1.2488,
+      "closest_point_m": [
+        0.0,
+        21.0,
+        0.59
+      ],
+      "surface_contact_samples": []
+    },
+    {
+      "name": "fork1_left",
+      "sample_count": 221,
+      "minimum_capsule_surface_margin_m": 1.4059,
+      "closest_point_m": [
+        -5.5,
+        -11.6,
+        0.3
+      ],
+      "surface_contact_samples": []
+    },
+    {
+      "name": "fork1_right",
+      "sample_count": 221,
+      "minimum_capsule_surface_margin_m": 1.3344,
+      "closest_point_m": [
+        5.5,
+        -14.0,
+        0.3
+      ],
+      "surface_contact_samples": []
+    },
+    {
+      "name": "fork2_left",
+      "sample_count": 225,
+      "minimum_capsule_surface_margin_m": 1.3247,
+      "closest_point_m": [
+        -5.5,
+        12.0,
+        0.59
+      ],
+      "surface_contact_samples": []
+    },
+    {
+      "name": "fork2_right",
+      "sample_count": 225,
+      "minimum_capsule_surface_margin_m": 1.2767,
+      "closest_point_m": [
+        5.5,
+        10.9,
+        0.3
+      ],
+      "surface_contact_samples": []
+    }
+  ],
+  "islands": [
+    {
+      "name": "CC_RockIsland_A_057",
+      "ue_xy_bounds_m": [
+        -1.9984055757522583,
+        1.9998279809951782,
+        -12.492307662963867,
+        -5.505825042724609
+      ],
+      "footprint_m": [
+        3.9982335567474365,
+        6.986482620239258
+      ],
+      "side_centerline_minimum_bbox_clearance_m": 3.5001720190048218
+    },
+    {
+      "name": "CC_RockIsland_B_059",
+      "ue_xy_bounds_m": [
+        -1.99936044216156,
+        1.9989129304885864,
+        4.506899833679199,
+        11.495368003845215
+      ],
+      "footprint_m": [
+        3.9982733726501465,
+        6.988468170166016
+      ],
+      "side_centerline_minimum_bbox_clearance_m": 3.50063955783844
+    }
+  ],
+  "collision_probes": [
+    {
+      "name": "island1_collision",
+      "first_hit": [
+        3.6994779109954834,
+        "CC_RockIsland_A_057",
+        [
+          "CaveIsland"
+        ],
+        0.45
+      ],
+      "expected_tag_hit": true
+    },
+    {
+      "name": "island2_collision",
+      "first_hit": [
+        3.576978921890259,
+        "CC_RockIsland_B_059",
+        [
+          "CaveIsland"
+        ],
+        0.45
+      ],
+      "expected_tag_hit": true
+    },
+    {
+      "name": "boundary_collision",
+      "first_hit": [
+        1.9168391227722168,
+        "CC_RockWallLow_002",
+        [
+          "CaveBoundary"
+        ],
+        0.45
+      ],
+      "expected_tag_hit": true
+    },
+    {
+      "name": "entrance_collision",
+      "first_hit": [
+        2.7775802612304688,
+        "CC_RockWallLow_056",
+        [
+          "CaveBoundary"
+        ],
+        0.45
+      ],
+      "expected_tag_hit": true
+    }
+  ],
+  "perimeter_ray_gaps": {
+    "left": [],
+    "right": [],
+    "entrance": [],
+    "far_end": []
+  },
+  "limitations": "Geometric sampled audit; no UE movement, stepping, pawn sweep or runtime collision-channel simulation. Endcap probes from centre can intersect side boundary at distant x."
+}

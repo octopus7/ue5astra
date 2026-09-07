@@ -23,11 +23,11 @@ def color(m,v):
     e=expr(m,unreal.MaterialExpressionConstant3Vector);e.set_editor_property('constant',unreal.LinearColor(*v,1));return e
 def output(node,prop):ML.connect_material_property(node,'',prop)
 def custom(m,code,inputs,type=unreal.CustomMaterialOutputType.CMOT_FLOAT3):
-    e=expr(m,unreal.MaterialExpressionCustom);e.code=code;e.output_type=type
+    e=expr(m,unreal.MaterialExpressionCustom);e.set_editor_property('code',code);e.set_editor_property('output_type',type)
     arr=[]
     for n in inputs:
-        ci=unreal.CustomInput();ci.input_name=n;arr.append(ci)
-    e.inputs=arr
+        ci=unreal.CustomInput();ci.set_editor_property('input_name',n);arr.append(ci)
+    e.set_editor_property('inputs',arr)
     for n,v in inputs.items():ML.connect_material_expressions(v,'',e,n)
     return e
 def newmat(name):
@@ -125,16 +125,22 @@ def build(mats,meshs):
         a.tags=[unreal.Name(t) for t in o.get('tags',[])]
         c.set_collision_profile_name('BlockAll' if o['collision']=='complex' else 'NoCollision')
         c.set_collision_enabled(unreal.CollisionEnabled.QUERY_AND_PHYSICS if o['collision']=='complex' else unreal.CollisionEnabled.NO_COLLISION)
+        if o['group']=='Crystals' or o['group']=='Details/Shards':c.set_cast_shadow(False)
+    for box in DATA.get('collision_boxes',[]):
+        a=spawn(unreal.StaticMeshActor,box['ue_location_cm'],unreal.Rotator(yaw=box.get('ue_yaw',0)),name=box['name'],folder='CrystalCave/Collision')
+        a.tags=[unreal.Name(box['tag'])];c=a.static_mesh_component;c.set_static_mesh(EAL.load_asset('/Engine/BasicShapes/Cube'))
+        a.set_actor_scale3d(unreal.Vector(*[v/100 for v in box['dimensions_cm']]))
+        a.set_actor_hidden_in_game(True);c.set_visibility(False);c.set_collision_profile_name('BlockAll')
     for l in DATA['lights']:
         a=spawn(unreal.PointLight,l['ue_location_cm'],name=l['name'],folder='CrystalCave/Lighting/CrystalLight')
         a.tags=[unreal.Name('CaveCrystalLight')];c=a.light_component;c.set_mobility(unreal.ComponentMobility.MOVABLE)
-        c.set_editor_property('intensity_units',unreal.LightUnits.LUMENS);c.set_intensity(l['intensity'])
+        c.set_editor_property('intensity_units',unreal.LightUnits.LUMENS);c.set_intensity(l['intensity']*.32)
         c.set_light_color(unreal.LinearColor(*l['color'],1));c.set_editor_property('attenuation_radius',l['radius_cm'])
         c.set_editor_property('source_radius',l['source_radius_cm']);c.set_editor_property('soft_source_radius',l['source_radius_cm'])
         c.set_cast_shadows(True)
     # Dim diffuse fill maintains silhouettes between localized crystal light pools.
     sun=spawn(unreal.DirectionalLight,[0,0,3500],unreal.Rotator(pitch=-65,yaw=-35),'CC_DimSoftFill','CrystalCave/Lighting')
-    c=sun.light_component;c.set_mobility(unreal.ComponentMobility.MOVABLE);c.set_intensity(.32)
+    c=sun.light_component;c.set_mobility(unreal.ComponentMobility.MOVABLE);c.set_intensity(1.25);c.set_cast_shadows(False)
     c.set_light_color(unreal.LinearColor(.36,.44,.7,1));c.set_editor_property('light_source_angle',50.0)
     c.set_editor_property('specular_scale',0.0)
     fog=spawn(unreal.ExponentialHeightFog,[0,0,-100],name='CC_GroundHaze',folder='CrystalCave/Lighting')

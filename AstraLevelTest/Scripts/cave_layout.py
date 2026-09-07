@@ -38,4 +38,5 @@ def routes_json():
         [
          dict(name='island1_collision',kind='collision',expected_blocker_tag='CaveIsland',waypoints=cm([(-5.5,-9),(0,-9)])),
          dict(name='island2_collision',kind='collision',expected_blocker_tag='CaveIsland',waypoints=cm([(5.5,8),(0,8)])),
-         dict(name='boundary_collision',kind='collision',expected_blocker_tag='CaveBoundary',waypoints=cm([(-5.5,-19),(-14,-19)]))])
+         dict(name='boundary_collision',kind='collision',expected_blocker_tag='CaveBoundary',waypoints=cm([(-5.5,-19),(-14,-19)])),
+         dict(name='entrance_collision',kind='collision',expected_blocker_tag='CaveBoundary',waypoints=cm([(0,-21),(0,-26)]))])
