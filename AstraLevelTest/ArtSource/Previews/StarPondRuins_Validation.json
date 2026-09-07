@@ -1,0 +1,196 @@
+{
+  "passed": true,
+  "asset_count": 4,
+  "assets": [
+    {
+      "asset_id": "SM_SP_CrescentGate",
+      "file": "ArtSource/Meshes/StarPond/SM_SP_CrescentGate.fbx",
+      "materials": [
+        "M_SP_Ruins_PaintedStone",
+        "M_SP_Ruins_PaleStone",
+        "M_SP_Ruins_Brass",
+        "M_SP_Ruins_BrassLight",
+        "M_SP_Ruins_Moss"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        5.640999794006348,
+        2.25,
+        5.998129367828369
+      ],
+      "bounds_min_m": [
+        -2.820499897003174,
+        -1.125,
+        0.0
+      ],
+      "bounds_max_m": [
+        2.820499897003174,
+        1.125,
+        5.998129367828369
+      ],
+      "triangles": 22728,
+      "vertices": 11630,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "floor origin at Z=0",
+      "uv_channel": 0,
+      "front_axis": "-Y"
+    },
+    {
+      "asset_id": "SM_SP_ViewingDais",
+      "file": "ArtSource/Meshes/StarPond/SM_SP_ViewingDais.fbx",
+      "materials": [
+        "M_SP_Ruins_PaintedStone",
+        "M_SP_Ruins_Brass",
+        "M_SP_Ruins_BrassLight",
+        "M_SP_Ruins_Moss"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        3.599268913269043,
+        3.599268913269043,
+        0.30399999022483826
+      ],
+      "bounds_min_m": [
+        -1.7996344566345215,
+        -1.7996344566345215,
+        0.0
+      ],
+      "bounds_max_m": [
+        1.7996344566345215,
+        1.7996344566345215,
+        0.30399999022483826
+      ],
+      "triangles": 11324,
+      "vertices": 5777,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "floor origin at Z=0",
+      "uv_channel": 0,
+      "front_axis": "-Y"
+    },
+    {
+      "asset_id": "SM_SP_StarMenhir_01",
+      "file": "ArtSource/Meshes/StarPond/SM_SP_StarMenhir_01.fbx",
+      "materials": [
+        "M_SP_Ruins_PaintedStone",
+        "M_SP_Ruins_StarInset",
+        "M_SP_Ruins_StarCore",
+        "M_SP_Ruins_Moss",
+        "M_SP_Ruins_Brass",
+        "M_SP_Ruins_BrassLight"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        1.0698554515838623,
+        0.8152366578578949,
+        1.7000000476837158
+      ],
+      "bounds_min_m": [
+        -0.5226122736930847,
+        -0.43479999899864197,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.5472431778907776,
+        0.38043665885925293,
+        1.7000000476837158
+      ],
+      "triangles": 3436,
+      "vertices": 1777,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "floor origin at Z=0",
+      "uv_channel": 0,
+      "front_axis": "-Y"
+    },
+    {
+      "asset_id": "SM_SP_StarMenhir_02",
+      "file": "ArtSource/Meshes/StarPond/SM_SP_StarMenhir_02.fbx",
+      "materials": [
+        "M_SP_Ruins_PaintedStone",
+        "M_SP_Ruins_StarInset",
+        "M_SP_Ruins_StarCore",
+        "M_SP_Ruins_Moss",
+        "M_SP_Ruins_Brass",
+        "M_SP_Ruins_BrassLight"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        0.8023786544799805,
+        0.7013797163963318,
+        1.7000000476837158
+      ],
+      "bounds_min_m": [
+        -0.39194947481155396,
+        -0.3776000142097473,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.4104291796684265,
+        0.3237797021865845,
+        1.7000000476837158
+      ],
+      "triangles": 3356,
+      "vertices": 1737,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "floor origin at Z=0",
+      "uv_channel": 0,
+      "front_axis": "-Y"
+    }
+  ],
+  "fbx_roundtrip_validation": [
+    {
+      "asset_id": "SM_SP_CrescentGate",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangle_count_preserved": true,
+      "ordered_material_slots_preserved": true,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true,
+      "ground_pivot_preserved": true
+    },
+    {
+      "asset_id": "SM_SP_ViewingDais",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangle_count_preserved": true,
+      "ordered_material_slots_preserved": true,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true,
+      "ground_pivot_preserved": true
+    },
+    {
+      "asset_id": "SM_SP_StarMenhir_01",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangle_count_preserved": true,
+      "ordered_material_slots_preserved": true,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true,
+      "ground_pivot_preserved": true
+    },
+    {
+      "asset_id": "SM_SP_StarMenhir_02",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangle_count_preserved": true,
+      "ordered_material_slots_preserved": true,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true,
+      "ground_pivot_preserved": true
+    }
+  ],
+  "accessibility": {
+    "step_rise_m": 0.15,
+    "dais_outer_diameter_m": 3.6,
+    "dais_top_height_m": 0.3,
+    "dais_max_inlay_relief_m": 0.005,
+    "gate_passage_floor_height_m": 0.45,
+    "gate_passage_center_x_m": 0.65,
+    "gate_clearance_rays_passed": 35,
+    "gate_walkable_floor_samples": 97,
+    "gate_max_measured_step_m": 0.14946484565734863
+  }
+}

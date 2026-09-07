@@ -1,0 +1,235 @@
+{
+  "passed": true,
+  "asset_count": 4,
+  "assets": [
+    {
+      "asset_id": "SM_SP_StarLily_01",
+      "file": "ArtSource/Meshes/StarPond/SM_SP_StarLily_01.fbx",
+      "materials": [
+        "M_SP_Lily_JadePad",
+        "M_SP_Lily_PadVein",
+        "M_SP_Lily_BluePetal",
+        "M_SP_Lily_SilverPetal",
+        "M_SP_Lily_IvoryPetal",
+        "M_SP_Lily_WarmGold"
+      ],
+      "collision": "none",
+      "dimensions_m": [
+        0.9400000274181366,
+        0.7795815765857697,
+        0.4354475438594818
+      ],
+      "bounds_min_m": [
+        -0.48245954513549805,
+        -0.48047563433647156,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.45754048228263855,
+        0.2991059422492981,
+        0.4354475438594818
+      ],
+      "triangles": 4032,
+      "vertices": 2188,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "ground origin at local Z=0",
+      "uv_channel": 0,
+      "actual_leaf_and_petal_count": 26,
+      "description": "Three notched jade pads surrounding a silver-white, three-tier pointed star lily with warm gold stamens.",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_triangles": 0,
+        "smooth_normals": true
+      }
+    },
+    {
+      "asset_id": "SM_SP_StarLily_02",
+      "file": "ArtSource/Meshes/StarPond/SM_SP_StarLily_02.fbx",
+      "materials": [
+        "M_SP_Lily_JadePad",
+        "M_SP_Lily_PadVein",
+        "M_SP_Lily_BluePetal",
+        "M_SP_Lily_SilverPetal",
+        "M_SP_Lily_IvoryPetal",
+        "M_SP_Lily_WarmGold"
+      ],
+      "collision": "none",
+      "dimensions_m": [
+        0.9000000059604645,
+        0.7708642184734344,
+        0.38584432005882263
+      ],
+      "bounds_min_m": [
+        -0.46395206451416016,
+        -0.3738410174846649,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.4360479414463043,
+        0.39702320098876953,
+        0.38584432005882263
+      ],
+      "triangles": 4244,
+      "vertices": 2298,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "ground origin at local Z=0",
+      "uv_channel": 0,
+      "actual_leaf_and_petal_count": 26,
+      "description": "Asymmetric silver-white lily with three different pads and a closed side bud.",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_triangles": 0,
+        "smooth_normals": true
+      }
+    },
+    {
+      "asset_id": "SM_SP_StarFlowers",
+      "file": "ArtSource/Meshes/StarPond/SM_SP_StarFlowers.fbx",
+      "materials": [
+        "M_SP_Grass_DeepTeal",
+        "M_SP_Grass_BlueSilver",
+        "M_SP_Grass_SilverEdge",
+        "M_SP_Flower_StarBlue",
+        "M_SP_Lily_WarmGold"
+      ],
+      "collision": "none",
+      "dimensions_m": [
+        0.6400000154972076,
+        0.6087779402732849,
+        0.4757014513015747
+      ],
+      "bounds_min_m": [
+        -0.32567477226257324,
+        -0.3269970118999481,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.3143252432346344,
+        0.2817809283733368,
+        0.4757014513015747
+      ],
+      "triangles": 2644,
+      "vertices": 1428,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "ground origin at local Z=0",
+      "uv_channel": 0,
+      "actual_leaf_and_petal_count": 45,
+      "description": "Blue-silver curved grass blades supporting four five-point pale blue star flowers with gold centres.",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_triangles": 0,
+        "smooth_normals": true
+      }
+    },
+    {
+      "asset_id": "SM_SP_OldWillow",
+      "file": "ArtSource/Meshes/StarPond/SM_SP_OldWillow.fbx",
+      "materials": [
+        "M_SP_Willow_Bark",
+        "M_SP_Willow_Moss",
+        "M_SP_Willow_BarkShadow",
+        "M_SP_Willow_BarkRidge",
+        "M_SP_Willow_LeafShadow",
+        "M_SP_Willow_LeafGreen",
+        "M_SP_Willow_LeafLight",
+        "M_SP_Willow_LeafJade"
+      ],
+      "collision": "trunk",
+      "dimensions_m": [
+        6.736670255661011,
+        3.6520586013793945,
+        8.09999942779541
+      ],
+      "bounds_min_m": [
+        -3.1194467544555664,
+        -1.3898346424102783,
+        0.0
+      ],
+      "bounds_max_m": [
+        3.6172235012054443,
+        2.262223958969116,
+        8.09999942779541
+      ],
+      "triangles": 77964,
+      "vertices": 41734,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "ground origin at local Z=0",
+      "uv_channel": 0,
+      "actual_leaf_and_petal_count": 1242,
+      "description": "Asymmetric old willow with sinuous fluted trunk, six branching green leaf crowns and open, jade drooping leaf trails.",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_triangles": 0,
+        "smooth_normals": true
+      },
+      "trunk_collision": {
+        "radius_m": 0.8666634189497465,
+        "height_m": 2.792582127726961,
+        "centre_xy_m": [
+          -0.15407349670217715,
+          0
+        ],
+        "roots_no_collision": true,
+        "canopy_no_collision": true
+      }
+    }
+  ],
+  "fbx_roundtrip_validation": [
+    {
+      "asset_id": "SM_SP_StarLily_01",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangles": 4032,
+      "triangle_count_preserved": true,
+      "ordered_material_slots_preserved": true,
+      "finite_uv": true,
+      "authored_smooth_normals_preserved": true,
+      "ground_pivot_preserved": true
+    },
+    {
+      "asset_id": "SM_SP_StarLily_02",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangles": 4244,
+      "triangle_count_preserved": true,
+      "ordered_material_slots_preserved": true,
+      "finite_uv": true,
+      "authored_smooth_normals_preserved": true,
+      "ground_pivot_preserved": true
+    },
+    {
+      "asset_id": "SM_SP_StarFlowers",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangles": 2644,
+      "triangle_count_preserved": true,
+      "ordered_material_slots_preserved": true,
+      "finite_uv": true,
+      "authored_smooth_normals_preserved": true,
+      "ground_pivot_preserved": true
+    },
+    {
+      "asset_id": "SM_SP_OldWillow",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangles": 77964,
+      "triangle_count_preserved": true,
+      "ordered_material_slots_preserved": true,
+      "finite_uv": true,
+      "authored_smooth_normals_preserved": true,
+      "ground_pivot_preserved": true
+    }
+  ],
+  "visual_review": {
+    "passed": true,
+    "source": "ArtSource/Previews/Blender_StarPondBotany.png",
+    "method": "Actual Blender Cycles render inspected after second model iteration",
+    "findings": [
+      "Silvery layered star lilies with distinct jade notched pads and gold stamens",
+      "Star-flower petals meet at the centre after correction",
+      "Willow has flowing united branch joints and asymmetric silhouette",
+      "Overlapping leafy green crowns and visible drooping trails; no tree emissive material",
+      "Independent presentation duplicates keep actual-size library origins intact"
+    ]
+  }
+}
