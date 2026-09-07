@@ -1,0 +1,319 @@
+{
+  "source": "ArtSource/Blender/RootBelltowerArchitecture.blend",
+  "script": "Scripts/build_rootbelltower_architecture.py",
+  "reference": "ArtSource/Reference/RootBelltower/Ref_RootBelltowerArchitecture.png",
+  "units": "metres",
+  "materials": {
+    "M_RB_StonePaint": {
+      "base_color": "D8D4B9",
+      "roughness": 0.87,
+      "metallic": 0,
+      "base_color_texture": "ArtSource/Textures/T_AnimeForestRockPaint.png"
+    },
+    "M_RB_CreamStone": {
+      "base_color": "D2CCAF",
+      "roughness": 0.85,
+      "metallic": 0
+    },
+    "M_RB_LightStone": {
+      "base_color": "E4DCC3",
+      "roughness": 0.83,
+      "metallic": 0
+    },
+    "M_RB_ShadowStone": {
+      "base_color": "989F88",
+      "roughness": 0.9,
+      "metallic": 0
+    },
+    "M_RB_Moss": {
+      "base_color": "7A8451",
+      "roughness": 0.97,
+      "metallic": 0
+    },
+    "M_RB_MossGold": {
+      "base_color": "A0A65D",
+      "roughness": 0.97,
+      "metallic": 0
+    },
+    "M_RB_TealSlate": {
+      "base_color": "49817B",
+      "roughness": 0.72,
+      "metallic": 0.02
+    },
+    "M_RB_TealSlateLight": {
+      "base_color": "7AA397",
+      "roughness": 0.75,
+      "metallic": 0.02
+    },
+    "M_RB_TealSlateDark": {
+      "base_color": "355956",
+      "roughness": 0.81,
+      "metallic": 0.02
+    },
+    "M_RB_OldWood": {
+      "base_color": "62543C",
+      "roughness": 0.91,
+      "metallic": 0
+    },
+    "M_RB_WoodGrain": {
+      "base_color": "92816A",
+      "roughness": 0.88,
+      "metallic": 0
+    },
+    "M_RB_Iron": {
+      "base_color": "414A40",
+      "roughness": 0.5,
+      "metallic": 0.7
+    },
+    "M_RB_Bronze": {
+      "base_color": "697660",
+      "roughness": 0.46,
+      "metallic": 0.73
+    },
+    "M_RB_BronzeRim": {
+      "base_color": "AF9E68",
+      "roughness": 0.35,
+      "metallic": 0.78
+    },
+    "M_RB_BronzeDark": {
+      "base_color": "3F4A3E",
+      "roughness": 0.58,
+      "metallic": 0.55
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "SM_RB_Tower",
+      "file": "ArtSource/Meshes/RootBelltower/SM_RB_Tower.fbx",
+      "materials": [
+        "M_RB_CreamStone",
+        "M_RB_StonePaint",
+        "M_RB_LightStone",
+        "M_RB_ShadowStone",
+        "M_RB_Iron",
+        "M_RB_OldWood",
+        "M_RB_BronzeRim",
+        "M_RB_BronzeDark",
+        "M_RB_TealSlate",
+        "M_RB_TealSlateLight",
+        "M_RB_TealSlateDark",
+        "M_RB_Bronze",
+        "M_RB_Moss"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        7.808491468429565,
+        6.276378393173218,
+        17.96112060546875
+      ],
+      "bounds_min_m": [
+        -2.998500108718872,
+        -3.1381890773773193,
+        0.0
+      ],
+      "bounds_max_m": [
+        4.809991359710693,
+        3.1381893157958984,
+        17.96112060546875
+      ],
+      "triangles": 158288,
+      "vertices": 81916,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "floor origin at Z=0",
+      "uv_channel": 0,
+      "front_axis": "-Y"
+    },
+    {
+      "asset_id": "SM_RB_Bell",
+      "file": "ArtSource/Meshes/RootBelltower/SM_RB_Bell.fbx",
+      "materials": [
+        "M_RB_Bronze",
+        "M_RB_BronzeDark",
+        "M_RB_BronzeRim"
+      ],
+      "collision": "none",
+      "dimensions_m": [
+        1.8200000524520874,
+        1.8200000524520874,
+        2.3350000381469727
+      ],
+      "bounds_min_m": [
+        -0.9100000262260437,
+        -0.9100000262260437,
+        -2.3350000381469727
+      ],
+      "bounds_max_m": [
+        0.9100000262260437,
+        0.9100000262260437,
+        0.0
+      ],
+      "triangles": 4744,
+      "vertices": 2394,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "suspension pivot; geometry hangs below Z=0",
+      "uv_channel": 0,
+      "front_axis": "-Y"
+    },
+    {
+      "asset_id": "SM_RB_CloisterArch",
+      "file": "ArtSource/Meshes/RootBelltower/SM_RB_CloisterArch.fbx",
+      "materials": [
+        "M_RB_StonePaint",
+        "M_RB_CreamStone",
+        "M_RB_LightStone",
+        "M_RB_Moss"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        5.03000020980835,
+        1.1200000047683716,
+        4.880000114440918
+      ],
+      "bounds_min_m": [
+        -2.515000104904175,
+        -0.5600000023841858,
+        0.0
+      ],
+      "bounds_max_m": [
+        2.515000104904175,
+        0.5600000023841858,
+        4.880000114440918
+      ],
+      "triangles": 7356,
+      "vertices": 3764,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "floor origin at Z=0",
+      "uv_channel": 0,
+      "front_axis": "-Y"
+    },
+    {
+      "asset_id": "SM_RB_Courtyard",
+      "file": "ArtSource/Meshes/RootBelltower/SM_RB_Courtyard.fbx",
+      "materials": [
+        "M_RB_ShadowStone",
+        "M_RB_CreamStone",
+        "M_RB_LightStone",
+        "M_RB_StonePaint",
+        "M_RB_BronzeRim"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        12.0,
+        12.0,
+        0.12200000137090683
+      ],
+      "bounds_min_m": [
+        -6.0,
+        -6.0,
+        0.0
+      ],
+      "bounds_max_m": [
+        6.0,
+        6.0,
+        0.12200000137090683
+      ],
+      "triangles": 9184,
+      "vertices": 5056,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "floor origin at Z=0",
+      "uv_channel": 0,
+      "front_axis": "-Y"
+    },
+    {
+      "asset_id": "SM_RB_FallenCapital",
+      "file": "ArtSource/Meshes/RootBelltower/SM_RB_FallenCapital.fbx",
+      "materials": [
+        "M_RB_StonePaint",
+        "M_RB_CreamStone",
+        "M_RB_LightStone"
+      ],
+      "collision": "none",
+      "dimensions_m": [
+        1.4850000739097595,
+        1.2200000286102295,
+        1.2200000286102295
+      ],
+      "bounds_min_m": [
+        -0.7400000691413879,
+        -0.6100000143051147,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.7450000047683716,
+        0.6100000143051147,
+        1.2200000286102295
+      ],
+      "triangles": 7416,
+      "vertices": 3752,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "floor origin at Z=0",
+      "uv_channel": 0,
+      "front_axis": "-Y"
+    }
+  ],
+  "tower_lean_degrees_towards_blender_positive_x": 7,
+  "bell_pivot_m": [
+    1.492899775505066,
+    -0.15000000596046448,
+    12.958690643310547
+  ],
+  "bell_rotation_degrees_xyz": [
+    0,
+    7,
+    0
+  ],
+  "tower_nominal_foundation_width_m": 6,
+  "placement_notes": "Tower lean is already baked into vertices. Do not add a second 7 degree tilt. Bell origin is its suspension pivot: put it at bell_pivot_m then rotate local Y +7 degrees. Cloister faces -Y with a tested 2.8 m wide by 3.2 m tall clear passage. Courtyard is a 12 m diameter continuous low slab (10 to 12.2 cm) with radial paving. Giant tree and roots are deliberately separate assets.",
+  "fbx_roundtrip_validation": [
+    {
+      "asset_id": "SM_RB_Tower",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangle_count_preserved": true,
+      "ordered_material_slots_preserved": true,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true
+    },
+    {
+      "asset_id": "SM_RB_Bell",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangle_count_preserved": true,
+      "ordered_material_slots_preserved": true,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true
+    },
+    {
+      "asset_id": "SM_RB_CloisterArch",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangle_count_preserved": true,
+      "ordered_material_slots_preserved": true,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true
+    },
+    {
+      "asset_id": "SM_RB_Courtyard",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangle_count_preserved": true,
+      "ordered_material_slots_preserved": true,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true
+    },
+    {
+      "asset_id": "SM_RB_FallenCapital",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangle_count_preserved": true,
+      "ordered_material_slots_preserved": true,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true
+    }
+  ]
+}

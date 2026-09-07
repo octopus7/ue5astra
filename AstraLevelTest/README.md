@@ -2,6 +2,12 @@
 
 Unreal Engine 5.7.4 프로젝트. 약 100m 숲을 탐색하는 직립 보행 삼색 고양이 게임.
 
+**뿌리가 붙잡은 종탑**에는 거목의 뿌리가 감싼 기울어진 석탑, 열린 종루, 뿌리 통로와 무너진 회랑이 있다. 안뜰에 다가가면 종소리가 울리고 뿌리의 청록빛이 강해진다.
+
+![거목과 뿌리가 붙잡은 종탑의 실제 UE 화면](ArtSource/Previews/UE_RBTower.png)
+
+`/Game/Astra/Maps/L_AstraRootBelltower`를 열고 Play하거나 `Scripts/play_rootbelltower.ps1`로 실행한다. WASD 이동과 P 자동 산책 7개 컷을 지원한다. [종탑 원본·재생성·검증](Docs/RootBelltowerLevel.md).
+
 **별이 잠긴 연못**에는 낮에도 밤하늘을 품은 연못, 별자리 관측대, 초승달 석문, 은백색 연꽃과 버드나무가 있다. 관측대에 가까이 서면 물속 여섯 별이 이어진다. 연못 북쪽에는 앞뒤로 긴 통통한 체형의 뿔 달린 코끼리가 쉬고 있다.
 
 ![연못과 별자리의 실제 UE 화면](ArtSource/Previews/UE_SPPond.png)

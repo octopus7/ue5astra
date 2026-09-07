@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "map": "/Game/Astra/Maps/L_AstraRootBelltower",
+  "map_sha256": "e7ec176c25e6905fc8fc33d593bf59d95d1bc929ca2e48d8beb2f7762db256de",
+  "reports": {
+    "UE_RootBelltowerImportValidation": {
+      "sha256": "eaa1421269546d8d42773590cbc218314a97f0d2dc0099cb53f12fd938fae021",
+      "passed": true
+    },
+    "UE_RootBelltowerSavedValidation": {
+      "sha256": "bf93eec5769ad5fede57c0de940ed3d2c70031c76a9d813f5105c261f1f1004e",
+      "passed": true
+    },
+    "UE_RootBelltowerRuntimeValidation": {
+      "sha256": "273f2869604046b6d3bdecb7c06fd66c4ddc71493a9dbcf13d21cf80e2afdd51",
+      "passed": true
+    },
+    "UE_RBDemoValidation": {
+      "sha256": "b144e0085da5f2e5e1ff396e4e870bdfd4a35587f99d6fd80599423dcb3c8af7",
+      "passed": true
+    }
+  },
+  "actual_ue_captures": {
+    "RBTower": {
+      "file": "ArtSource/Previews/UE_RBTower.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "1e152ec1146e31d5f1f8f8616185bc2a24e254b4801c76418d75bc6d41a77057"
+    },
+    "RBBell": {
+      "file": "ArtSource/Previews/UE_RBBell.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "fa63f82fdbf09b956c03f69e8ef6323b4bb1df59cf0ac70ec1f57c1dbb4cc59c"
+    },
+    "RBRoots": {
+      "file": "ArtSource/Previews/UE_RBRoots.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "c47df33afd92b9f66ec886070660f6ff5ea00c6ed9a9bdd60aa2b6ecb8e8a38f"
+    },
+    "RBArch": {
+      "file": "ArtSource/Previews/UE_RBArch.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "6b7caa10784043e59378bfd259043c18402dc3d544f17b92b4b98ddf5c0de2b3"
+    },
+    "RBCloister": {
+      "file": "ArtSource/Previews/UE_RBCloister.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "a644c1aaaa4deb133a45e17b6d5acd6098b7ce65d27f5f8ae73eba7a5a460a09"
+    },
+    "RBOverview": {
+      "file": "ArtSource/Previews/UE_RBOverview.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "d122fb08fb8daf41e52f6b7ce9941aab946a60599d70310f85266d2d49890976"
+    },
+    "RBTowerLater": {
+      "file": "ArtSource/Previews/UE_RBTowerLater.png",
+      "size": [
+        1600,
+        1000
+      ],
+      "sha256": "8ccc78fc221a53d97a4bad74d1ad0ac8ee0756b12e67da5bab9745f0b224dd69"
+    }
+  },
+  "protected_content_file_count": 413,
+  "owned_content_sha256": {
+    "Content/Astra/Audio/RootBelltower/A_RB_BronzeChime.uasset": "4d3c815138ded3b11205f6605f9f9348a5b38e9d8cb7e332f23272e269e4a8ad",
+    "Content/Astra/Foliage/RootBelltower/FT_RB_GlowMushrooms.uasset": "208453e16cfd7c08fdc3ff02d23e9991751bef78ac1576c41178c4f02daacce1",
+    "Content/Astra/Maps/L_AstraRootBelltower.umap": "e7ec176c25e6905fc8fc33d593bf59d95d1bc929ca2e48d8beb2f7762db256de",
+    "Content/Astra/Materials/RootBelltower/M_RB_Bark.uasset": "3407b209baddd031c93178500f02f9ba6df1ce180ae984a9b84b4af710e3d451",
+    "Content/Astra/Materials/RootBelltower/M_RB_BarkRidge.uasset": "49a3a86c99ad2386d0b7f14dbb1fecf8d4870aaf5e16f22379d218686acd4e14",
+    "Content/Astra/Materials/RootBelltower/M_RB_BarkShadow.uasset": "14ab929f8cde0a223901314e64554515d408ab38cb75b57c1aad620793d07097",
+    "Content/Astra/Materials/RootBelltower/M_RB_Bronze.uasset": "ef4e7d9cd32c5f73e3f2137e33125f03bb57660084f738cad2b0e94c7be430be",
+    "Content/Astra/Materials/RootBelltower/M_RB_BronzeDark.uasset": "ecce947cb45e417e53629bb64c11f153b919c12ce29e00443b7050f5463def2a",
+    "Content/Astra/Materials/RootBelltower/M_RB_BronzeRim.uasset": "b2a4f98835dcda0ac818dc72d9f97697a31c1b2b610978d4a484119671a878e8",
+    "Content/Astra/Materials/RootBelltower/M_RB_CreamStone.uasset": "39be4925ed2b77fa2119db1e0a7a6db8b998c75f425115658e9ad50d16630512",
+    "Content/Astra/Materials/RootBelltower/M_RB_Iron.uasset": "285442b1adf1425d63c9046db7109942889272744a4fa9f70d9a3ef5a0d11e90",
+    "Content/Astra/Materials/RootBelltower/M_RB_Landscape.uasset": "23d156c31d71352ef6846d06e56147980aa3bb2b38667b3845fd8df622d3fb43",
+    "Content/Astra/Materials/RootBelltower/M_RB_LeafJade.uasset": "96a4e296f011daa6554b2b90b94622fa8d0db50b11fc4f28d850d50ee4c4c631",
+    "Content/Astra/Materials/RootBelltower/M_RB_LeafLight.uasset": "d95f6609d5fef50627128ac20b60be9b9a0aa4de6a2dfe3d73dc62df12363f0c",
+    "Content/Astra/Materials/RootBelltower/M_RB_LeafOlive.uasset": "3e75a4e334fbe3accf200853e2a6af38e72b7cea76036a3186d5506dcfceed3d",
+    "Content/Astra/Materials/RootBelltower/M_RB_LightStone.uasset": "d666726ef332eae6bf69b64f7a73b8d1cb0a8c143b511c35dfcecfe3cbf7a5b0",
+    "Content/Astra/Materials/RootBelltower/M_RB_Moss.uasset": "90800b0c84d3fa3d2ec385cdfb1417f0e5fc2c0b0a2293d6186a42fca85c7879",
+    "Content/Astra/Materials/RootBelltower/M_RB_MossGold.uasset": "99e2e1739fc2e9922bed6e6920eddf1f44d3ca5571c18c0f72ea7c8a31cca937",
+    "Content/Astra/Materials/RootBelltower/M_RB_MushroomCap.uasset": "6907e0e091fdffb100e3ab0bbf2da847048b9bb2694a805ac8f200741b624c55",
+    "Content/Astra/Materials/RootBelltower/M_RB_MushroomStem.uasset": "7b8fc138ef082e74aac8841d32bb458dda8afb3c79d1be882e41e54655925a7c",
+    "Content/Astra/Materials/RootBelltower/M_RB_OldWood.uasset": "7d75dd63d73efcbcd3633fc0609fc1dd4fae00c845b0c9eccd576c26466d22e8",
+    "Content/Astra/Materials/RootBelltower/M_RB_RootMoss.uasset": "2cd56d82835574aab3097dc0970503deffbf089728bba6eae940524485587df1",
+    "Content/Astra/Materials/RootBelltower/M_RB_SapGlow.uasset": "d30b74116de08fd2265dd5fd258209d0fa6e028b3a85b1aba9fea4dcd63a46ff",
+    "Content/Astra/Materials/RootBelltower/M_RB_ShadowStone.uasset": "9defcc0c9c304c6967161fdfb8a925650f76b7a525e7cc2af5638cd4fcab06cb",
+    "Content/Astra/Materials/RootBelltower/M_RB_StonePaint.uasset": "1bc2a7803e131e813b5e14e406dec50c0015190d93fb0684ed9f7081d48a0400",
+    "Content/Astra/Materials/RootBelltower/M_RB_TealSlate.uasset": "0f22ad649957507ed1de6a37d14d0a238f8ce0de58617b46bc2614c36774b19d",
+    "Content/Astra/Materials/RootBelltower/M_RB_TealSlateDark.uasset": "adcaa5cff05aaee0890ebac5fdeca04c35d9e7d23a31982612762937238e194d",
+    "Content/Astra/Materials/RootBelltower/M_RB_TealSlateLight.uasset": "963c2f2bb94de0660d9a6c03964199935232403c93aefa538cd6bb8d1e2cba4c",
+    "Content/Astra/Materials/RootBelltower/M_RB_WoodGrain.uasset": "1072950d3c88fc19750826b2c781462169f4af10ed5ce1978ddd1ae3fcb901f4",
+    "Content/Astra/Meshes/RootBelltower/SM_RB_AncientTree.uasset": "039ca0f8be7801ed4e8c48e602eb71e7a8edb5f97037c9726c9206bcfdbfaa4a",
+    "Content/Astra/Meshes/RootBelltower/SM_RB_Bell.uasset": "cbca2c909b94576eb0dd8d059737814b6986db9c841376d87c3b12e1e6ceaf26",
+    "Content/Astra/Meshes/RootBelltower/SM_RB_CloisterArch.uasset": "2aa814f5b6b07f97c3bad2617d40f8d165d3aad8ac7f1773d32ac7dbb27c6f19",
+    "Content/Astra/Meshes/RootBelltower/SM_RB_Courtyard.uasset": "d0ae6e9e6091ae6feef028ed64ce629b1b1f3b151746c71c3fb471485c653a63",
+    "Content/Astra/Meshes/RootBelltower/SM_RB_CrawlingRoot.uasset": "0bc489401d01a96e13e56054a20ead5bcb0bab2f660645f8e2df4d6e3dbcca34",
+    "Content/Astra/Meshes/RootBelltower/SM_RB_FallenCapital.uasset": "78a9818dec09301763c06ed8ecd1a07940a6a673c92e4af14b9c633970e6cc3b",
+    "Content/Astra/Meshes/RootBelltower/SM_RB_GlowMushrooms.uasset": "cc91666233a5a9fa2b9b99b9d83b5bcaaf44a943a4453b4674cad71919d3f863",
+    "Content/Astra/Meshes/RootBelltower/SM_RB_GrippingRoots.uasset": "0e4b94b7abd68d74a2a8814aea42a46b4a0f69914ce16763a5122fc40b365898",
+    "Content/Astra/Meshes/RootBelltower/SM_RB_MossPendant.uasset": "63fefa5a10ac12f3c939a773b56af50405d070c82957776b179e53bd24298deb",
+    "Content/Astra/Meshes/RootBelltower/SM_RB_RootArch.uasset": "62fac809e25a50b44be112eb06a835c02698294927fb0907212b6826ad7e0711",
+    "Content/Astra/Meshes/RootBelltower/SM_RB_Tower.uasset": "f1f103aa38a34048496797728d1242e44a092390e6629b599828c58b5079656c",
+    "Content/Astra/Textures/RootBelltower/T_RB_AncientBark.uasset": "e4f2951fbfa98b6821122f4bd1ffdaf1bdac426c53526b29daa267c7d038c213"
+  },
+  "scope": "UE 5.7.4 editor game execution; no new Shipping package was produced."
+}

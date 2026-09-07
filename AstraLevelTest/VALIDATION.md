@@ -160,3 +160,15 @@ RTX 4060 / NVIDIA 드라이버 596.36에서 패키지 실행 파일의 실제 �
 - 실제 UE 렌더 7장(1600×1000)을 시각 검토했다. 연못·별자리·은백색 연꽃·초승달 석문·전체 숲과 두 시점의 정상적인 코끼리 스킨을 확인했다. 렌더 로그의 머터리얼·셰이더 오류는 없다.
 - 초기 코끼리 자산 10개는 다른 자산의 참조가 없음을 확인하고 `Saved/StarPondDebugArchive`로 옮겼다. 완성 자산은 `/Game/Astra/Characters/StarPond/Guardian`에 있다.
 - [통합 검증 JSON](ArtSource/Previews/UE_StarPondFinalValidation.json), [P 데모 결과](ArtSource/Previews/UE_SPDemoValidation.json), [원본·실행·재생성](Docs/StarPondLevel.md). 에디터 게임 실행 검증이며 기존 Shipping 패키지는 갱신하지 않았다.
+
+## 뿌리가 붙잡은 종탑 — 2026-09-07
+
+- 독립 맵 `/Game/Astra/Maps/L_AstraRootBelltower`. 실제 Landscape 100.8×100.8m, 새 메시 11종, 355개 정적 배치, native Foliage 3,784개. 저장 액터 681개.
+- Blender FBX 재수입에서 11종의 삼각형·노멀·UV·치수를 검증했다. UE에서도 모든 새 메시의 원본/렌더 삼각형 수가 정확히 일치한다. 가장 큰 종탑은 158,288개 삼각형이며 치수 오차는 0.001cm 미만이다.
+- 새 에디터에서 저장 상태 4,624개 검사 통과. 지형 높이 15,625개 샘플, 배치 전체와 Foliage 일대일 변환, 재질·충돌·조명·종 참조를 확인했다. 기존 맵과 공유 콘텐츠의 해시를 보존했다.
+- UE 5.7.4 Development Editor 빌드 및 실제 게임 검사 14개 통과(약 19초). WASD 각 방향 약 1.7m, 뿌리 통로 약 15m 횡단과 종탑 벽 정지, 안뜰 발광 0.99 이상/이탈 후 0.02 미만, 종소리 1회 재생을 확인했다. 종 최대 흔들림 약 4.2°, 매달림 원점 이동 0cm.
+- 탑다운 카메라의 거리·추적 지연으로 종소리가 조기에 중단되는 문제를 수정했다. 이 맵에서는 소리 감쇠를 고양이 위치에서 계산하고, 레벨 종료 시 청취 위치 오버라이드를 해제한다.
+- P 데모는 약 86초에 7개 동선·접지·반복·중도 취소·복귀 후 WASD를 통과했다. 위치와 회전 복원 오차는 0cm/0°다. 데모의 실제 플레이 캡처도 별도로 보관한다.
+- 실제 UE 검토 화면 7장을 저장했다. 회랑과 뿌리 아치의 근접 카메라가 앞쪽 나무를 자르는 현상을 촬영 위치 조정으로 해결하고 위치·회전·화각의 저장값 일치도 검사했다.
+- [통합 검증 JSON](ArtSource/Previews/UE_RootBelltowerFinalValidation.json), [저장 상태](ArtSource/Previews/UE_RootBelltowerSavedValidation.json), [플레이 검사](ArtSource/Previews/UE_RootBelltowerRuntimeValidation.json), [P 데모](ArtSource/Previews/UE_RBDemoValidation.json), [원본·실행·재생성](Docs/RootBelltowerLevel.md).
+- 검증 범위는 에디터 게임 실행이다. 기존 Shipping 패키지를 재배포하지 않았다.

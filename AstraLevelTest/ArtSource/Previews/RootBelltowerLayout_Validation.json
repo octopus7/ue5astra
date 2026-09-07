@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "placements": 4139,
+  "native_foliage": 3784,
+  "new_assets": 11,
+  "by_group": {
+    "Landmark": 4,
+    "Courtyard": 1,
+    "RootPassage": 1,
+    "Cloister": 4,
+    "RootGarden": 4,
+    "SapGarden": 50,
+    "HangingMoss": 4,
+    "ForestCanopy": 306,
+    "ForestFloor": 3734,
+    "ForestRocks": 31
+  },
+  "landscape_samples": 16129,
+  "bell_world_pivot_cm": [
+    584.9999994039536,
+    149.2899775505066,
+    1450.8690643310547
+  ]
+}

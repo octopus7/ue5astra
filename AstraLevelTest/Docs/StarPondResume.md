@@ -7,5 +7,5 @@
 - 저장 상태 5,321개 검사, 실제 WASD·별자리·물가·아이들 14개 검사와 P 데모 7개 경로를 통과했다. 실제 UE 렌더 7장을 검토했고 README에 반영했다.
 - 완성 코끼리 자산: `/Game/Astra/Characters/StarPond/Guardian`. 초기 실패 자산과 임시 디버깅 자료는 참조 확인 후 `Saved/StarPondDebugArchive`에 보관했다.
 - 실행: `Scripts/play_starpond.ps1`. 재생성·검증 절차는 [StarPondLevel.md](StarPondLevel.md), 최종 증거는 `ArtSource/Previews/UE_StarPondFinalValidation.json`이다.
-- **뿌리가 붙잡은 종탑은 대기 상태다.** 모델링이나 이미지 생성을 시작하지 않았다.
+- **뿌리가 붙잡은 종탑도 후속 요청으로 완료했다.** 새 맵 `L_AstraRootBelltower`에 11종 모델, 거목과 뿌리 통로, 회랑, 안뜰의 종소리·발광 반응을 구성했다. 저장 상태 4,624개 검사와 실제 보행·충돌·종 반응, P 데모 7개 동선을 통과했다. 실행은 `Scripts/play_rootbelltower.ps1`, 원본과 검증은 [RootBelltowerLevel.md](RootBelltowerLevel.md)를 참고한다.
 - 메모리 부담을 줄이기 위해 무거운 모델링·Unreal 작업은 앞으로도 한 번에 하나씩 실행한다.

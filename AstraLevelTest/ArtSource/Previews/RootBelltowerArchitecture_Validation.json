@@ -1,0 +1,241 @@
+{
+  "passed": true,
+  "asset_count": 5,
+  "assets": [
+    {
+      "asset_id": "SM_RB_Tower",
+      "file": "ArtSource/Meshes/RootBelltower/SM_RB_Tower.fbx",
+      "materials": [
+        "M_RB_CreamStone",
+        "M_RB_StonePaint",
+        "M_RB_LightStone",
+        "M_RB_ShadowStone",
+        "M_RB_Iron",
+        "M_RB_OldWood",
+        "M_RB_BronzeRim",
+        "M_RB_BronzeDark",
+        "M_RB_TealSlate",
+        "M_RB_TealSlateLight",
+        "M_RB_TealSlateDark",
+        "M_RB_Bronze",
+        "M_RB_Moss"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        7.808491468429565,
+        6.276378393173218,
+        17.96112060546875
+      ],
+      "bounds_min_m": [
+        -2.998500108718872,
+        -3.1381890773773193,
+        0.0
+      ],
+      "bounds_max_m": [
+        4.809991359710693,
+        3.1381893157958984,
+        17.96112060546875
+      ],
+      "triangles": 158288,
+      "vertices": 81916,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "floor origin at Z=0",
+      "uv_channel": 0,
+      "front_axis": "-Y"
+    },
+    {
+      "asset_id": "SM_RB_Bell",
+      "file": "ArtSource/Meshes/RootBelltower/SM_RB_Bell.fbx",
+      "materials": [
+        "M_RB_Bronze",
+        "M_RB_BronzeDark",
+        "M_RB_BronzeRim"
+      ],
+      "collision": "none",
+      "dimensions_m": [
+        1.8200000524520874,
+        1.8200000524520874,
+        2.3350000381469727
+      ],
+      "bounds_min_m": [
+        -0.9100000262260437,
+        -0.9100000262260437,
+        -2.3350000381469727
+      ],
+      "bounds_max_m": [
+        0.9100000262260437,
+        0.9100000262260437,
+        0.0
+      ],
+      "triangles": 4744,
+      "vertices": 2394,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "suspension pivot; geometry hangs below Z=0",
+      "uv_channel": 0,
+      "front_axis": "-Y"
+    },
+    {
+      "asset_id": "SM_RB_CloisterArch",
+      "file": "ArtSource/Meshes/RootBelltower/SM_RB_CloisterArch.fbx",
+      "materials": [
+        "M_RB_StonePaint",
+        "M_RB_CreamStone",
+        "M_RB_LightStone",
+        "M_RB_Moss"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        5.03000020980835,
+        1.1200000047683716,
+        4.880000114440918
+      ],
+      "bounds_min_m": [
+        -2.515000104904175,
+        -0.5600000023841858,
+        0.0
+      ],
+      "bounds_max_m": [
+        2.515000104904175,
+        0.5600000023841858,
+        4.880000114440918
+      ],
+      "triangles": 7356,
+      "vertices": 3764,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "floor origin at Z=0",
+      "uv_channel": 0,
+      "front_axis": "-Y"
+    },
+    {
+      "asset_id": "SM_RB_Courtyard",
+      "file": "ArtSource/Meshes/RootBelltower/SM_RB_Courtyard.fbx",
+      "materials": [
+        "M_RB_ShadowStone",
+        "M_RB_CreamStone",
+        "M_RB_LightStone",
+        "M_RB_StonePaint",
+        "M_RB_BronzeRim"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        12.0,
+        12.0,
+        0.12200000137090683
+      ],
+      "bounds_min_m": [
+        -6.0,
+        -6.0,
+        0.0
+      ],
+      "bounds_max_m": [
+        6.0,
+        6.0,
+        0.12200000137090683
+      ],
+      "triangles": 9184,
+      "vertices": 5056,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "floor origin at Z=0",
+      "uv_channel": 0,
+      "front_axis": "-Y"
+    },
+    {
+      "asset_id": "SM_RB_FallenCapital",
+      "file": "ArtSource/Meshes/RootBelltower/SM_RB_FallenCapital.fbx",
+      "materials": [
+        "M_RB_StonePaint",
+        "M_RB_CreamStone",
+        "M_RB_LightStone"
+      ],
+      "collision": "none",
+      "dimensions_m": [
+        1.4850000739097595,
+        1.2200000286102295,
+        1.2200000286102295
+      ],
+      "bounds_min_m": [
+        -0.7400000691413879,
+        -0.6100000143051147,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.7450000047683716,
+        0.6100000143051147,
+        1.2200000286102295
+      ],
+      "triangles": 7416,
+      "vertices": 3752,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "floor origin at Z=0",
+      "uv_channel": 0,
+      "front_axis": "-Y"
+    }
+  ],
+  "fbx_roundtrip_validation": [
+    {
+      "asset_id": "SM_RB_Tower",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangle_count_preserved": true,
+      "ordered_material_slots_preserved": true,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true
+    },
+    {
+      "asset_id": "SM_RB_Bell",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangle_count_preserved": true,
+      "ordered_material_slots_preserved": true,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true
+    },
+    {
+      "asset_id": "SM_RB_CloisterArch",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangle_count_preserved": true,
+      "ordered_material_slots_preserved": true,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true
+    },
+    {
+      "asset_id": "SM_RB_Courtyard",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangle_count_preserved": true,
+      "ordered_material_slots_preserved": true,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true
+    },
+    {
+      "asset_id": "SM_RB_FallenCapital",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangle_count_preserved": true,
+      "ordered_material_slots_preserved": true,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true
+    }
+  ],
+  "bell_pivot_m": [
+    1.492899775505066,
+    -0.15000000596046448,
+    12.958690643310547
+  ],
+  "bell_hollow_shell": true,
+  "accessibility": {
+    "arch_clearance_width_m": 2.8,
+    "arch_clearance_height_m": 3.2,
+    "arch_clearance_rays_passed": 30,
+    "courtyard_floor_sample_count": 421,
+    "courtyard_min_height_m": 0.09999996423721313,
+    "courtyard_max_height_m": 0.12000012397766113,
+    "courtyard_continuous_foundation": true
+  }
+}

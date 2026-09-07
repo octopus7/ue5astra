@@ -1,0 +1,34 @@
+{
+  "source": "Original additive synthesis; no external recordings",
+  "sample_rate_hz": 44100,
+  "duration_seconds": 5.0,
+  "fundamental_hz": 196,
+  "partials": [
+    [
+      1,
+      0.8,
+      0.65
+    ],
+    [
+      2.76,
+      0.28,
+      0.9
+    ],
+    [
+      5.41,
+      0.13,
+      1.35
+    ],
+    [
+      8.93,
+      0.06,
+      2.1
+    ],
+    [
+      13.34,
+      0.035,
+      3.3
+    ]
+  ],
+  "peak": 0.48
+}

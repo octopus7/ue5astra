@@ -1,0 +1,300 @@
+{
+  "source": "ArtSource/Blender/RootBelltowerRoots.blend",
+  "script": "Scripts/build_rootbelltower_roots.py",
+  "units": "metres",
+  "reference": "ArtSource/Reference/RootBelltower/Ref_RootBelltowerRoots.png",
+  "materials": {
+    "M_RB_Bark": {
+      "base_color": "82705B",
+      "roughness": 0.9,
+      "metallic": 0,
+      "base_color_texture": "ArtSource/Textures/RootBelltower/T_RB_AncientBark.png"
+    },
+    "M_RB_BarkRidge": {
+      "base_color": "8F7B60",
+      "roughness": 0.9,
+      "metallic": 0
+    },
+    "M_RB_BarkShadow": {
+      "base_color": "4B5143",
+      "roughness": 0.95,
+      "metallic": 0
+    },
+    "M_RB_RootMoss": {
+      "base_color": "6D8050",
+      "roughness": 0.95,
+      "metallic": 0
+    },
+    "M_RB_LeafJade": {
+      "base_color": "4E745D",
+      "roughness": 0.86,
+      "metallic": 0
+    },
+    "M_RB_LeafOlive": {
+      "base_color": "71884A",
+      "roughness": 0.86,
+      "metallic": 0
+    },
+    "M_RB_LeafLight": {
+      "base_color": "8D9B58",
+      "roughness": 0.86,
+      "metallic": 0
+    },
+    "M_RB_SapGlow": {
+      "base_color": "3FABA4",
+      "roughness": 0.45,
+      "metallic": 0.08,
+      "emissive_color": "60DBCF",
+      "emissive_strength": 1.4
+    },
+    "M_RB_MushroomStem": {
+      "base_color": "B4B49A",
+      "roughness": 0.85,
+      "metallic": 0
+    },
+    "M_RB_MushroomCap": {
+      "base_color": "B0D9C4",
+      "roughness": 0.6,
+      "metallic": 0,
+      "emissive_color": "9AE6C7",
+      "emissive_strength": 0.6
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "SM_RB_AncientTree",
+      "file": "ArtSource/Meshes/RootBelltower/SM_RB_AncientTree.fbx",
+      "materials": [
+        "M_RB_Bark",
+        "M_RB_LeafJade",
+        "M_RB_LeafOlive",
+        "M_RB_LeafLight",
+        "M_RB_SapGlow"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        20.042771339416504,
+        12.884023666381836,
+        22.149999618530273
+      ],
+      "bounds_min_m": [
+        -9.749649047851562,
+        -5.422865867614746,
+        0.0
+      ],
+      "bounds_max_m": [
+        10.293122291564941,
+        7.46115779876709,
+        22.149999618530273
+      ],
+      "triangles": 21448,
+      "vertices": 10972,
+      "front_axis": "-Y",
+      "uv_channel": 0,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS"
+    },
+    {
+      "asset_id": "SM_RB_GrippingRoots",
+      "file": "ArtSource/Meshes/RootBelltower/SM_RB_GrippingRoots.fbx",
+      "materials": [
+        "M_RB_Bark",
+        "M_RB_SapGlow",
+        "M_RB_RootMoss"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        17.630695343017578,
+        12.70382833480835,
+        9.025116920471191
+      ],
+      "bounds_min_m": [
+        -8.815347671508789,
+        -6.530606746673584,
+        0.0
+      ],
+      "bounds_max_m": [
+        8.815347671508789,
+        6.173221588134766,
+        9.025116920471191
+      ],
+      "triangles": 8496,
+      "vertices": 4304,
+      "front_axis": "-Y",
+      "uv_channel": 0,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS"
+    },
+    {
+      "asset_id": "SM_RB_RootArch",
+      "file": "ArtSource/Meshes/RootBelltower/SM_RB_RootArch.fbx",
+      "materials": [
+        "M_RB_Bark",
+        "M_RB_SapGlow",
+        "M_RB_RootMoss"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        10.050858974456787,
+        4.172174096107483,
+        4.661535263061523
+      ],
+      "bounds_min_m": [
+        -5.025673866271973,
+        -2.2004892826080322,
+        0.0
+      ],
+      "bounds_max_m": [
+        5.0251851081848145,
+        1.9716848134994507,
+        4.661535263061523
+      ],
+      "triangles": 5088,
+      "vertices": 2574,
+      "front_axis": "-Y",
+      "uv_channel": 0,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS"
+    },
+    {
+      "asset_id": "SM_RB_CrawlingRoot",
+      "file": "ArtSource/Meshes/RootBelltower/SM_RB_CrawlingRoot.fbx",
+      "materials": [
+        "M_RB_Bark",
+        "M_RB_SapGlow"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        7.0170087814331055,
+        2.3140276670455933,
+        1.5101146697998047
+      ],
+      "bounds_min_m": [
+        -3.5109376907348633,
+        -0.7011849880218506,
+        0.0
+      ],
+      "bounds_max_m": [
+        3.506071090698242,
+        1.6128426790237427,
+        1.5101146697998047
+      ],
+      "triangles": 1556,
+      "vertices": 786,
+      "front_axis": "-Y",
+      "uv_channel": 0,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS"
+    },
+    {
+      "asset_id": "SM_RB_GlowMushrooms",
+      "file": "ArtSource/Meshes/RootBelltower/SM_RB_GlowMushrooms.fbx",
+      "materials": [
+        "M_RB_MushroomStem",
+        "M_RB_MushroomCap"
+      ],
+      "collision": "none",
+      "dimensions_m": [
+        1.2524170279502869,
+        0.8620843589305878,
+        0.9300000071525574
+      ],
+      "bounds_min_m": [
+        -0.6082603931427002,
+        -0.4376404583454132,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.6441566348075867,
+        0.42444390058517456,
+        0.9300000071525574
+      ],
+      "triangles": 1208,
+      "vertices": 620,
+      "front_axis": "-Y",
+      "uv_channel": 0,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS"
+    },
+    {
+      "asset_id": "SM_RB_MossPendant",
+      "file": "ArtSource/Meshes/RootBelltower/SM_RB_MossPendant.fbx",
+      "materials": [
+        "M_RB_RootMoss",
+        "M_RB_LeafOlive"
+      ],
+      "collision": "none",
+      "dimensions_m": [
+        1.4636083841323853,
+        0.4868532568216324,
+        1.6565820053219795
+      ],
+      "bounds_min_m": [
+        -0.6162751317024231,
+        -0.25548267364501953,
+        0.11341797560453415
+      ],
+      "bounds_max_m": [
+        0.8473332524299622,
+        0.23137058317661285,
+        1.7699999809265137
+      ],
+      "triangles": 3458,
+      "vertices": 1833,
+      "front_axis": "-Y",
+      "uv_channel": 0,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS"
+    }
+  ],
+  "placement_notes": "GrippingRoots shares tower origin. Place AncientTree at tower-local (0,+5,0). RootArch passage runs along source Y.",
+  "arch_clearance": {
+    "width_m": 2.4,
+    "height_m": 2.75,
+    "ray_count": 25
+  },
+  "fbx_roundtrip_validation": [
+    {
+      "asset_id": "SM_RB_AncientTree",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangles_preserved": true,
+      "normals_preserved": true,
+      "uv0_present": true
+    },
+    {
+      "asset_id": "SM_RB_GrippingRoots",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangles_preserved": true,
+      "normals_preserved": true,
+      "uv0_present": true
+    },
+    {
+      "asset_id": "SM_RB_RootArch",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangles_preserved": true,
+      "normals_preserved": true,
+      "uv0_present": true
+    },
+    {
+      "asset_id": "SM_RB_CrawlingRoot",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangles_preserved": true,
+      "normals_preserved": true,
+      "uv0_present": true
+    },
+    {
+      "asset_id": "SM_RB_GlowMushrooms",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangles_preserved": true,
+      "normals_preserved": true,
+      "uv0_present": true
+    },
+    {
+      "asset_id": "SM_RB_MossPendant",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangles_preserved": true,
+      "normals_preserved": true,
+      "uv0_present": true
+    }
+  ]
+}
