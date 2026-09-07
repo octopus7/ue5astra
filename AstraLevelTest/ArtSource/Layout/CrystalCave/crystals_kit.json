@@ -1,0 +1,261 @@
+{
+  "source": "ArtSource/Blender/CrystalCaveCrystals.blend",
+  "script": "Scripts/build_cave_crystals.py",
+  "reference": "ArtSource/Reference/CrystalCave/Ref_CC_Crystals.png",
+  "units": "metres",
+  "fbx_axes": {
+    "forward": "-Y",
+    "up": "Z",
+    "apply_scale_options": "FBX_SCALE_UNITS"
+  },
+  "assets": {
+    "SM_CC_CrystalCyan": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_CrystalCyan.fbx",
+      "materials": [
+        "M_CC_Rock",
+        "M_CC_CyanDeep",
+        "M_CC_CyanBlue",
+        "M_CC_CyanBody",
+        "M_CC_CyanLight",
+        "M_CC_CyanTip",
+        "M_CC_CyanEdge"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        1.6,
+        1.49728,
+        2.0
+      ],
+      "origin": "ground centre",
+      "vertex_count": 2524,
+      "polygon_count": 2465,
+      "uv_channels": 1,
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "recommended_light": {
+        "color": "53DAEF",
+        "intensity_lumens": 450,
+        "attenuation_radius_m": 3.6
+      }
+    },
+    "SM_CC_CrystalViolet": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_CrystalViolet.fbx",
+      "materials": [
+        "M_CC_Rock",
+        "M_CC_VioletDeep",
+        "M_CC_VioletBlue",
+        "M_CC_VioletBody",
+        "M_CC_VioletLight",
+        "M_CC_VioletTip",
+        "M_CC_VioletEdge"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        1.4,
+        1.36929,
+        1.3
+      ],
+      "origin": "ground centre",
+      "vertex_count": 2274,
+      "polygon_count": 2205,
+      "uv_channels": 1,
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "recommended_light": {
+        "color": "BB85EF",
+        "intensity_lumens": 450,
+        "attenuation_radius_m": 3.6
+      }
+    },
+    "SM_CC_CrystalHeart": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_CrystalHeart.fbx",
+      "materials": [
+        "M_CC_Rock",
+        "M_CC_CyanDeep",
+        "M_CC_CyanBlue",
+        "M_CC_CyanBody",
+        "M_CC_CyanLight",
+        "M_CC_CyanTip",
+        "M_CC_CyanEdge"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        3.0,
+        2.93712,
+        3.5
+      ],
+      "origin": "ground centre",
+      "vertex_count": 4060,
+      "polygon_count": 4039,
+      "uv_channels": 1,
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "recommended_light": {
+        "color": "53DAEF",
+        "intensity_lumens": 1200,
+        "attenuation_radius_m": 6
+      }
+    },
+    "SM_CC_CrystalShards": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_CrystalShards.fbx",
+      "materials": [
+        "M_CC_Rock",
+        "M_CC_CyanDeep",
+        "M_CC_CyanBlue",
+        "M_CC_CyanBody",
+        "M_CC_CyanLight",
+        "M_CC_CyanTip",
+        "M_CC_CyanEdge"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        0.6,
+        0.59457,
+        0.45
+      ],
+      "origin": "ground centre",
+      "vertex_count": 1220,
+      "polygon_count": 1129,
+      "uv_channels": 1,
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "recommended_light": {
+        "color": "53DAEF",
+        "intensity_lumens": 450,
+        "attenuation_radius_m": 3.6
+      }
+    }
+  },
+  "materials": {
+    "M_CC_Rock": {
+      "base_color": "283343",
+      "roughness": 0.87,
+      "metallic": 0,
+      "emissive_strength": 0,
+      "base_color_texture": "ArtSource/Textures/CrystalCave/T_CC_Rock.png"
+    },
+    "M_CC_CyanDeep": {
+      "base_color": "08657E",
+      "emissive_color": "0A6881",
+      "emissive_strength": 0.32,
+      "roughness": 0.25,
+      "metallic": 0.12
+    },
+    "M_CC_CyanBlue": {
+      "base_color": "08779D",
+      "emissive_color": "0797BC",
+      "emissive_strength": 0.38,
+      "roughness": 0.24,
+      "metallic": 0.1
+    },
+    "M_CC_CyanBody": {
+      "base_color": "14A9C8",
+      "emissive_color": "18CDE2",
+      "emissive_strength": 0.55,
+      "roughness": 0.22,
+      "metallic": 0.08
+    },
+    "M_CC_CyanLight": {
+      "base_color": "37C4DB",
+      "emissive_color": "3BDEEB",
+      "emissive_strength": 0.85,
+      "roughness": 0.2,
+      "metallic": 0.06
+    },
+    "M_CC_CyanTip": {
+      "base_color": "75EAF0",
+      "emissive_color": "76FFF2",
+      "emissive_strength": 1.35,
+      "roughness": 0.18,
+      "metallic": 0.02
+    },
+    "M_CC_CyanEdge": {
+      "base_color": "D5FFFF",
+      "emissive_color": "B4FFF9",
+      "emissive_strength": 2.2,
+      "roughness": 0.18,
+      "metallic": 0.02
+    },
+    "M_CC_VioletDeep": {
+      "base_color": "392169",
+      "emissive_color": "552D93",
+      "emissive_strength": 0.35,
+      "roughness": 0.26,
+      "metallic": 0.12
+    },
+    "M_CC_VioletBlue": {
+      "base_color": "522491",
+      "emissive_color": "7135C6",
+      "emissive_strength": 0.4,
+      "roughness": 0.23,
+      "metallic": 0.1
+    },
+    "M_CC_VioletBody": {
+      "base_color": "8540D0",
+      "emissive_color": "A65FE8",
+      "emissive_strength": 0.6,
+      "roughness": 0.22,
+      "metallic": 0.08
+    },
+    "M_CC_VioletLight": {
+      "base_color": "AF62E1",
+      "emissive_color": "C478FC",
+      "emissive_strength": 0.85,
+      "roughness": 0.2,
+      "metallic": 0.06
+    },
+    "M_CC_VioletTip": {
+      "base_color": "D393F7",
+      "emissive_color": "E7A1FF",
+      "emissive_strength": 1.35,
+      "roughness": 0.18,
+      "metallic": 0.02
+    },
+    "M_CC_VioletEdge": {
+      "base_color": "F6E1FF",
+      "emissive_color": "F9D8FF",
+      "emissive_strength": 2.1,
+      "roughness": 0.18,
+      "metallic": 0.02
+    }
+  },
+  "notes": [
+    "Each asset is one mesh, with disconnected closed crystal and fractured socket components.",
+    "Narrow bevel polygons carry a brighter edge material; large faces keep distinct emission levels.",
+    "Opaque polished gemstones retain facets. Add local UE lights to illuminate surrounding rocks.",
+    "Preview point lights are presentation-only and are not exported.",
+    "Hero heart faces local -Y; rotate toward the fixed camera when placing it."
+  ]
+}

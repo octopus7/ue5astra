@@ -138,3 +138,14 @@ RTX 4060 / NVIDIA 드라이버 596.36에서 패키지 실행 파일의 실제 �
 ![분홍 지붕 집과 우물](ArtSource/Previews/UE_House.png)
 ![목조 폐허](ArtSource/Previews/UE_Cabin.png)
 ![다리 횡단 후](ArtSource/Previews/UE_Bridge.png)
+
+## 발광석 동굴 — 2026-09-07
+
+- 별도 맵 `/Game/Astra/Maps/L_AstraCrystalCave`, 실제 Landscape 30×50m (127×64 샘플,2×1 컴포넌트).
+- 새 메시 12종,160개 배치,실제 Point Light 18개,충돌 경계 42개. 최종 저장 액터229개.
+- Blender→UE 위치·회전·크기 일치. 기존 Content·Config·Source 파일 변경0개; 동굴 전용 파일 추가.
+- UE 5.7.4 Editor Development 빌드 통과.
+- `-AstraCaveTest` 실제 WASD 입력 검사: 9/9 경로,실패0,75.92초 게임 시간. 전체 연속 경로56.77m; 두 갈림길의 양쪽4경로; 두 섬·전경벽·입구 경계4충돌 검사 통과. 접지와 고정 카메라 유지,실제 종료코드0.
+- 실제 UE 렌더6장,1600×1000. Point Light만 OFF한 같은 시점과 비교해 바닥·암벽 조명 기여 확인. 결정 자체를 제외한 영역에서 화면 명도 증가0.071/0.089. 렌더 로그의 머터리얼·셰이더 컴파일 오류0건.
+- 증거: `ArtSource/Previews/CrystalCave/UE_CaveFinalValidation.json`, `UE_CaveMovementValidation.json`, `UE_CaveSavedValidation.json`, `Blender_LayoutValidation.json`, `UE_CaveExecution.log`와 `UE_*.png`.
+- 원본·재실행·실행 방법: [동굴 제작 문서](Docs/CrystalCaveLevel.md).

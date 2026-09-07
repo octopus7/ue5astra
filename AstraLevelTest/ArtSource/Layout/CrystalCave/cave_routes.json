@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "waypoint_tolerance_cm": 45,
+  "max_segment_seconds": 20,
+  "walk_speed_cm_s": 260,
+  "bounds_cm": {
+    "min_x": -1480,
+    "max_x": 1480,
+    "min_y": -2480,
+    "max_y": 2480
+  },
+  "routes": [
+    {
+      "name": "full_traversal",
+      "kind": "walk",
+      "waypoints": [
+        [
+          0,
+          -2100
+        ],
+        [
+          0,
+          -1600
+        ],
+        [
+          -550.0,
+          -1400
+        ],
+        [
+          -550.0,
+          -400
+        ],
+        [
+          0,
+          -200
+        ],
+        [
+          0,
+          100
+        ],
+        [
+          550.0,
+          300
+        ],
+        [
+          550.0,
+          1300
+        ],
+        [
+          0,
+          1600
+        ],
+        [
+          0,
+          2100
+        ]
+      ]
+    },
+    {
+      "name": "fork1_left",
+      "kind": "walk",
+      "waypoints": [
+        [
+          0,
+          -1600
+        ],
+        [
+          -550.0,
+          -1400
+        ],
+        [
+          -550.0,
+          -400
+        ],
+        [
+          0,
+          -200
+        ]
+      ]
+    },
+    {
+      "name": "fork1_right",
+      "kind": "walk",
+      "waypoints": [
+        [
+          0,
+          -1600
+        ],
+        [
+          550.0,
+          -1400
+        ],
+        [
+          550.0,
+          -400
+        ],
+        [
+          0,
+          -200
+        ]
+      ]
+    },
+    {
+      "name": "fork2_left",
+      "kind": "walk",
+      "waypoints": [
+        [
+          0,
+          100
+        ],
+        [
+          -550.0,
+          300
+        ],
+        [
+          -550.0,
+          1300
+        ],
+        [
+          0,
+          1600
+        ]
+      ]
+    },
+    {
+      "name": "fork2_right",
+      "kind": "walk",
+      "waypoints": [
+        [
+          0,
+          100
+        ],
+        [
+          550.0,
+          300
+        ],
+        [
+          550.0,
+          1300
+        ],
+        [
+          0,
+          1600
+        ]
+      ]
+    },
+    {
+      "name": "island1_collision",
+      "kind": "collision",
+      "expected_blocker_tag": "CaveIsland",
+      "waypoints": [
+        [
+          -550.0,
+          -900
+        ],
+        [
+          0,
+          -900
+        ]
+      ]
+    },
+    {
+      "name": "island2_collision",
+      "kind": "collision",
+      "expected_blocker_tag": "CaveIsland",
+      "waypoints": [
+        [
+          550.0,
+          800
+        ],
+        [
+          0,
+          800
+        ]
+      ]
+    },
+    {
+      "name": "boundary_collision",
+      "kind": "collision",
+      "expected_blocker_tag": "CaveBoundary",
+      "waypoints": [
+        [
+          -550.0,
+          -1900
+        ],
+        [
+          -1400,
+          -1900
+        ]
+      ]
+    },
+    {
+      "name": "entrance_collision",
+      "kind": "collision",
+      "expected_blocker_tag": "CaveBoundary",
+      "waypoints": [
+        [
+          0,
+          -2100
+        ],
+        [
+          0,
+          -2600
+        ]
+      ]
+    }
+  ]
+}

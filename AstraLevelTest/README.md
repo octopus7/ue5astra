@@ -14,6 +14,12 @@ Unreal Engine 5.7.4 프로젝트. 약 100m 숲을 탐색하는 직립 보행 삼
 
 `Content/Astra/Maps/L_AstraStarfall`을 열고 Play하면 기존과 같은 WASD 이동과 P 자동 산책을 사용할 수 있다. 기존 기본 맵은 유지한다. 물 반사와 스카이는 기존 자산을 재사용했다. [새 레벨 구성·모델·레퍼런스·재생성](Docs/StarfallLevel.md)을 참고한다.
 
+별도 **발광석 동굴** 맵을 추가했다. 약 50×30m 내부에서 청록색·보랏빛 결정이 길과 암벽을 비추며 두 차례 갈림길을 지난다. 기존 삼색 고양이의 WASD와 고정 탑다운 카메라를 사용한다.
+
+![실제 UE 발광석 동굴 전체 화면](ArtSource/Previews/CrystalCave/UE_CaveOverview.png)
+
+`/Game/Astra/Maps/L_AstraCrystalCave`를 열고 Play하거나, PowerShell에서 `Scripts/run_cave.ps1 -Mode Open`을 실행한다. [동굴 제작 원본·재생성·검증](Docs/CrystalCaveLevel.md)을 참고한다. 아래 숲 화면과 별도로 만든 실제 UE 레벨이며, 생성 레퍼런스는 제작 자료 폴더에 구분해 보관한다.
+
 실제 언리얼 실행 화면. 숲과 공터를 중심으로 호수, 개울, 나무다리와 목조 폐허가 이어진다.
 
 ![숲·공터·호수·다리·목조 폐허의 전체 배치](ArtSource/Previews/UE_Overview.png)

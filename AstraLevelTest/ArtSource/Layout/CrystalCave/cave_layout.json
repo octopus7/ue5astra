@@ -1,0 +1,5110 @@
+{
+  "schema_version": 1,
+  "seed": 90726,
+  "map": "/Game/Astra/Maps/L_AstraCrystalCave",
+  "dimensions_m": [
+    30,
+    50
+  ],
+  "axis_mapping": "Blender (x,y,z) m -> Unreal (x,-y,z)*100 cm; yaw=-Blender Z degrees",
+  "landscape": {
+    "samples": [
+      127,
+      64
+    ],
+    "origin_cm": [
+      -1500,
+      -2500,
+      0
+    ],
+    "scale": [
+      23.80952380952381,
+      79.36507936507937,
+      100
+    ],
+    "file": "ArtSource/Layout/CrystalCave/cave_height.r16"
+  },
+  "assets": {
+    "SM_CC_RockWall_A": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_RockWall_A.fbx",
+      "materials": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        3.996248,
+        1.996939,
+        2.998351
+      ],
+      "nominal_dimensions_m": [
+        4.0,
+        2.0,
+        3.0
+      ],
+      "origin": "bottom centre",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "custom_normals": true,
+        "triangles": 13950
+      }
+    },
+    "SM_CC_RockWall_B": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_RockWall_B.fbx",
+      "materials": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        3.996887,
+        1.997077,
+        2.999562
+      ],
+      "nominal_dimensions_m": [
+        4.0,
+        2.0,
+        3.0
+      ],
+      "origin": "bottom centre",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "custom_normals": true,
+        "triangles": 14022
+      }
+    },
+    "SM_CC_RockWall_C": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_RockWall_C.fbx",
+      "materials": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        3.994311,
+        1.997858,
+        2.998177
+      ],
+      "nominal_dimensions_m": [
+        4.0,
+        2.0,
+        3.0
+      ],
+      "origin": "bottom centre",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "custom_normals": true,
+        "triangles": 10584
+      }
+    },
+    "SM_CC_RockWallLow": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_RockWallLow.fbx",
+      "materials": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        3.998466,
+        1.497808,
+        0.99961
+      ],
+      "nominal_dimensions_m": [
+        4.0,
+        1.5,
+        1.0
+      ],
+      "origin": "bottom centre",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "custom_normals": true,
+        "triangles": 6476
+      }
+    },
+    "SM_CC_RockIsland_A": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_RockIsland_A.fbx",
+      "materials": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        3.998234,
+        6.986483,
+        1.597928
+      ],
+      "nominal_dimensions_m": [
+        4.0,
+        7.0,
+        1.6
+      ],
+      "origin": "bottom centre",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "custom_normals": true,
+        "triangles": 12294
+      }
+    },
+    "SM_CC_RockIsland_B": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_RockIsland_B.fbx",
+      "materials": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        3.998273,
+        6.988468,
+        1.598499
+      ],
+      "nominal_dimensions_m": [
+        4.0,
+        7.0,
+        1.6
+      ],
+      "origin": "bottom centre",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "custom_normals": true,
+        "triangles": 12010
+      }
+    },
+    "SM_CC_RockRubble": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_RockRubble.fbx",
+      "materials": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        0.999578,
+        0.998258,
+        0.499797
+      ],
+      "nominal_dimensions_m": [
+        1.0,
+        1.0,
+        0.5
+      ],
+      "origin": "bottom centre",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "custom_normals": true,
+        "triangles": 6508
+      }
+    },
+    "SM_CC_Portal": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_Portal.fbx",
+      "materials": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        5.99683,
+        1.193688,
+        3.498884
+      ],
+      "nominal_dimensions_m": [
+        6.0,
+        1.2,
+        3.5
+      ],
+      "origin": "bottom centre",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "custom_normals": true,
+        "triangles": 8740
+      },
+      "clear_opening_minimum_m": [
+        3.12144,
+        2.57842
+      ],
+      "clear_opening_x_bounds_m": [
+        -1.58147,
+        1.53997
+      ],
+      "clearance_validation": "Conservative bounds of all seven disconnected solid rock components, after bevel and triangulation"
+    },
+    "SM_CC_CrystalCyan": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_CrystalCyan.fbx",
+      "materials": [
+        "M_CC_Rock",
+        "M_CC_CyanDeep",
+        "M_CC_CyanBlue",
+        "M_CC_CyanBody",
+        "M_CC_CyanLight",
+        "M_CC_CyanTip",
+        "M_CC_CyanEdge"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        1.6,
+        1.49728,
+        2.0
+      ],
+      "origin": "ground centre",
+      "vertex_count": 2524,
+      "polygon_count": 2465,
+      "uv_channels": 1,
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "recommended_light": {
+        "color": "53DAEF",
+        "intensity_lumens": 450,
+        "attenuation_radius_m": 3.6
+      }
+    },
+    "SM_CC_CrystalViolet": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_CrystalViolet.fbx",
+      "materials": [
+        "M_CC_Rock",
+        "M_CC_VioletDeep",
+        "M_CC_VioletBlue",
+        "M_CC_VioletBody",
+        "M_CC_VioletLight",
+        "M_CC_VioletTip",
+        "M_CC_VioletEdge"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        1.4,
+        1.36929,
+        1.3
+      ],
+      "origin": "ground centre",
+      "vertex_count": 2274,
+      "polygon_count": 2205,
+      "uv_channels": 1,
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "recommended_light": {
+        "color": "BB85EF",
+        "intensity_lumens": 450,
+        "attenuation_radius_m": 3.6
+      }
+    },
+    "SM_CC_CrystalHeart": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_CrystalHeart.fbx",
+      "materials": [
+        "M_CC_Rock",
+        "M_CC_CyanDeep",
+        "M_CC_CyanBlue",
+        "M_CC_CyanBody",
+        "M_CC_CyanLight",
+        "M_CC_CyanTip",
+        "M_CC_CyanEdge"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        3.0,
+        2.93712,
+        3.5
+      ],
+      "origin": "ground centre",
+      "vertex_count": 4060,
+      "polygon_count": 4039,
+      "uv_channels": 1,
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "recommended_light": {
+        "color": "53DAEF",
+        "intensity_lumens": 1200,
+        "attenuation_radius_m": 6
+      }
+    },
+    "SM_CC_CrystalShards": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_CrystalShards.fbx",
+      "materials": [
+        "M_CC_Rock",
+        "M_CC_CyanDeep",
+        "M_CC_CyanBlue",
+        "M_CC_CyanBody",
+        "M_CC_CyanLight",
+        "M_CC_CyanTip",
+        "M_CC_CyanEdge"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        0.6,
+        0.59457,
+        0.45
+      ],
+      "origin": "ground centre",
+      "vertex_count": 1220,
+      "polygon_count": 1129,
+      "uv_channels": 1,
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "recommended_light": {
+        "color": "53DAEF",
+        "intensity_lumens": 450,
+        "attenuation_radius_m": 3.6
+      }
+    }
+  },
+  "materials": {
+    "M_CC_Rock": {
+      "base_color": "283343",
+      "roughness": 0.87,
+      "metallic": 0,
+      "emissive_strength": 0,
+      "base_color_texture": "ArtSource/Textures/CrystalCave/T_CC_Rock.png"
+    },
+    "M_CC_RockDark": {
+      "base_color": "#3F475F",
+      "texture": "ArtSource/Textures/CrystalCave/T_CC_Rock.png",
+      "texture_multiplier": 0.67,
+      "roughness": 0.88,
+      "specular": 0.24
+    },
+    "M_CC_CyanDeep": {
+      "base_color": "08657E",
+      "emissive_color": "0A6881",
+      "emissive_strength": 0.32,
+      "roughness": 0.25,
+      "metallic": 0.12
+    },
+    "M_CC_CyanBlue": {
+      "base_color": "08779D",
+      "emissive_color": "0797BC",
+      "emissive_strength": 0.38,
+      "roughness": 0.24,
+      "metallic": 0.1
+    },
+    "M_CC_CyanBody": {
+      "base_color": "14A9C8",
+      "emissive_color": "18CDE2",
+      "emissive_strength": 0.55,
+      "roughness": 0.22,
+      "metallic": 0.08
+    },
+    "M_CC_CyanLight": {
+      "base_color": "37C4DB",
+      "emissive_color": "3BDEEB",
+      "emissive_strength": 0.85,
+      "roughness": 0.2,
+      "metallic": 0.06
+    },
+    "M_CC_CyanTip": {
+      "base_color": "75EAF0",
+      "emissive_color": "76FFF2",
+      "emissive_strength": 1.35,
+      "roughness": 0.18,
+      "metallic": 0.02
+    },
+    "M_CC_CyanEdge": {
+      "base_color": "D5FFFF",
+      "emissive_color": "B4FFF9",
+      "emissive_strength": 2.2,
+      "roughness": 0.18,
+      "metallic": 0.02
+    },
+    "M_CC_VioletDeep": {
+      "base_color": "392169",
+      "emissive_color": "552D93",
+      "emissive_strength": 0.35,
+      "roughness": 0.26,
+      "metallic": 0.12
+    },
+    "M_CC_VioletBlue": {
+      "base_color": "522491",
+      "emissive_color": "7135C6",
+      "emissive_strength": 0.4,
+      "roughness": 0.23,
+      "metallic": 0.1
+    },
+    "M_CC_VioletBody": {
+      "base_color": "8540D0",
+      "emissive_color": "A65FE8",
+      "emissive_strength": 0.6,
+      "roughness": 0.22,
+      "metallic": 0.08
+    },
+    "M_CC_VioletLight": {
+      "base_color": "AF62E1",
+      "emissive_color": "C478FC",
+      "emissive_strength": 0.85,
+      "roughness": 0.2,
+      "metallic": 0.06
+    },
+    "M_CC_VioletTip": {
+      "base_color": "D393F7",
+      "emissive_color": "E7A1FF",
+      "emissive_strength": 1.35,
+      "roughness": 0.18,
+      "metallic": 0.02
+    },
+    "M_CC_VioletEdge": {
+      "base_color": "F6E1FF",
+      "emissive_color": "F9D8FF",
+      "emissive_strength": 2.1,
+      "roughness": 0.18,
+      "metallic": 0.02
+    }
+  },
+  "objects": [
+    {
+      "name": "CC_RockWallLow_000",
+      "asset": "SM_CC_RockWallLow",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -816.082,
+        -2150.0,
+        16.8933
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 80.53295082977334,
+        "roll": 0
+      },
+      "scale": [
+        1.09157074178703,
+        1.0288775621088795,
+        1.0072919261734714
+      ]
+    },
+    {
+      "name": "CC_RockWall_B_001",
+      "asset": "SM_CC_RockWall_B",
+      "group": "Architecture/OuterCrags",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -1026.082,
+        -2110.0,
+        -15.1067
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 92.47173357903966,
+        "roll": 0
+      },
+      "scale": [
+        1.2,
+        1.05,
+        0.6
+      ]
+    },
+    {
+      "name": "CC_RockWallLow_002",
+      "asset": "SM_CC_RockWallLow",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -798.3029,
+        -1842.0,
+        9.7446
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 90.946580396799,
+        "roll": 0
+      },
+      "scale": [
+        0.9996002632852649,
+        1.028351472695987,
+        0.9851486804176799
+      ]
+    },
+    {
+      "name": "CC_RockWallLow_003",
+      "asset": "SM_CC_RockWallLow",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -807.6489,
+        -1534.0,
+        6.7952
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 82.97968101641365,
+        "roll": 0
+      },
+      "scale": [
+        1.0195157614832018,
+        0.9726394432258545,
+        1.0184339224130825
+      ]
+    },
+    {
+      "name": "CC_RockWall_A_004",
+      "asset": "SM_CC_RockWall_A",
+      "group": "Architecture/OuterCrags",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -1017.6489,
+        -1494.0,
+        -25.2048
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 80.65004527974821,
+        "roll": 0
+      },
+      "scale": [
+        1.2,
+        1.05,
+        0.6
+      ]
+    },
+    {
+      "name": "CC_RockWallLow_005",
+      "asset": "SM_CC_RockWallLow",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -917.374,
+        -1226.0,
+        12.3017
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 86.79046558964441,
+        "roll": 0
+      },
+      "scale": [
+        0.933373886068321,
+        1.0769202089630079,
+        0.9684639817489302
+      ]
+    },
+    {
+      "name": "CC_RockWallLow_006",
+      "asset": "SM_CC_RockWallLow",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -994.7788,
+        -918.0,
+        19.0875
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 88.73712092261505,
+        "roll": 0
+      },
+      "scale": [
+        1.0529446458657459,
+        1.0776749862096544,
+        0.9759572347982215
+      ]
+    },
+    {
+      "name": "CC_RockWall_C_007",
+      "asset": "SM_CC_RockWall_C",
+      "group": "Architecture/OuterCrags",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -1204.7788,
+        -878.0,
+        -12.9125
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 84.8293451887851,
+        "roll": 0
+      },
+      "scale": [
+        1.2,
+        1.05,
+        0.6
+      ]
+    },
+    {
+      "name": "CC_RockWallLow_008",
+      "asset": "SM_CC_RockWallLow",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -931.5575,
+        -610.0,
+        18.6663
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 90.14891072308725,
+        "roll": 0
+      },
+      "scale": [
+        0.9064364794545274,
+        1.0010144546404274,
+        1.0021078040497824
+      ]
+    },
+    {
+      "name": "CC_RockWallLow_009",
+      "asset": "SM_CC_RockWallLow",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -812.2015,
+        -302.0,
+        20.329
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 81.03559164565046,
+        "roll": 0
+      },
+      "scale": [
+        0.9774556244117698,
+        1.025510417501345,
+        1.0856663203595052
+      ]
+    },
+    {
+      "name": "CC_RockWall_B_010",
+      "asset": "SM_CC_RockWall_B",
+      "group": "Architecture/OuterCrags",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -1022.2015,
+        -262.0,
+        -11.671
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 95.92954024074577,
+        "roll": 0
+      },
+      "scale": [
+        1.2,
+        1.05,
+        0.6
+      ]
+    },
+    {
+      "name": "CC_RockWallLow_011",
+      "asset": "SM_CC_RockWallLow",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -770.1847,
+        6.0,
+        19.603
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 80.591525591508,
+        "roll": 0
+      },
+      "scale": [
+        0.9144202417992702,
+        1.0791544933874717,
+        0.9302054115265406
+      ]
+    },
+    {
+      "name": "CC_RockWallLow_012",
+      "asset": "SM_CC_RockWallLow",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -837.4662,
+        314.0,
+        14.0494
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 96.5469360153229,
+        "roll": 0
+      },
+      "scale": [
+        0.9816266504208507,
+        1.0714813665391965,
+        1.1478606439726387
+      ]
+    },
+    {
+      "name": "CC_RockWall_A_013",
+      "asset": "SM_CC_RockWall_A",
+      "group": "Architecture/OuterCrags",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -1047.4662,
+        354.0,
+        -17.9506
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 98.48322306248662,
+        "roll": 0
+      },
+      "scale": [
+        1.2,
+        1.05,
+        0.6
+      ]
+    },
+    {
+      "name": "CC_RockWallLow_014",
+      "asset": "SM_CC_RockWallLow",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -941.9404,
+        622.0,
+        10.7031
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 85.84317340347985,
+        "roll": 0
+      },
+      "scale": [
+        1.0910251620000087,
+        1.0758010076210218,
+        0.8968666236034752
+      ]
+    },
+    {
+      "name": "CC_RockWallLow_015",
+      "asset": "SM_CC_RockWallLow",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -952.8703,
+        930.0,
+        15.109
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 97.17741192835972,
+        "roll": 0
+      },
+      "scale": [
+        1.0336414572278068,
+        1.011360937837014,
+        0.9326622525767168
+      ]
+    },
+    {
+      "name": "CC_RockWall_C_016",
+      "asset": "SM_CC_RockWall_C",
+      "group": "Architecture/OuterCrags",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -1162.8703,
+        970.0,
+        -16.891
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 98.52906206552028,
+        "roll": 0
+      },
+      "scale": [
+        1.2,
+        1.05,
+        0.6
+      ]
+    },
+    {
+      "name": "CC_RockWallLow_017",
+      "asset": "SM_CC_RockWallLow",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -861.6591,
+        1238.0,
+        17.0353
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 88.75377831028474,
+        "roll": 0
+      },
+      "scale": [
+        1.0985808121546186,
+        1.091775478595257,
+        1.0292189613772487
+      ]
+    },
+    {
+      "name": "CC_RockWallLow_018",
+      "asset": "SM_CC_RockWallLow",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -816.15,
+        1546.0,
+        17.0328
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 88.13064436084434,
+        "roll": 0
+      },
+      "scale": [
+        1.048041302022315,
+        0.9707982412103751,
+        1.1451701683063231
+      ]
+    },
+    {
+      "name": "CC_RockWall_B_019",
+      "asset": "SM_CC_RockWall_B",
+      "group": "Architecture/OuterCrags",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -1026.15,
+        1586.0,
+        -14.9672
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 97.57579172179591,
+        "roll": 0
+      },
+      "scale": [
+        1.2,
+        1.05,
+        0.6
+      ]
+    },
+    {
+      "name": "CC_RockWallLow_020",
+      "asset": "SM_CC_RockWallLow",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -867.5817,
+        1854.0,
+        17.7802
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 83.60545101993709,
+        "roll": 0
+      },
+      "scale": [
+        0.9441381423647549,
+        1.0479203733623108,
+        1.003979371381907
+      ]
+    },
+    {
+      "name": "CC_RockWallLow_021",
+      "asset": "SM_CC_RockWallLow",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -855.3833,
+        2162.0,
+        13.7074
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 88.43373704032541,
+        "roll": 0
+      },
+      "scale": [
+        0.9735905171712518,
+        0.9821941055654954,
+        0.8824866417620251
+      ]
+    },
+    {
+      "name": "CC_RockWall_A_022",
+      "asset": "SM_CC_RockWall_A",
+      "group": "Architecture/OuterCrags",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -1065.3833,
+        2202.0,
+        -18.2926
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 93.26448338861749,
+        "roll": 0
+      },
+      "scale": [
+        1.2,
+        1.05,
+        0.6
+      ]
+    },
+    {
+      "name": "CC_RockWall_A_023",
+      "asset": "SM_CC_RockWall_A",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        816.082,
+        -2150.0,
+        15.3992
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 93.43708592044408,
+        "roll": 0
+      },
+      "scale": [
+        1.0345072165596538,
+        1.0242684851125845,
+        0.8933720669877379
+      ]
+    },
+    {
+      "name": "CC_RockWall_B_024",
+      "asset": "SM_CC_RockWall_B",
+      "group": "Architecture/OuterCrags",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        1026.082,
+        -2110.0,
+        -16.6008
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 88.51465416124495,
+        "roll": 0
+      },
+      "scale": [
+        1.2,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "name": "CC_RockWall_B_025",
+      "asset": "SM_CC_RockWall_B",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        798.3029,
+        -1842.0,
+        13.2648
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 92.78134898914541,
+        "roll": 0
+      },
+      "scale": [
+        0.9738331605729137,
+        1.0768886561822775,
+        1.0278722486647491
+      ]
+    },
+    {
+      "name": "CC_RockWall_C_026",
+      "asset": "SM_CC_RockWall_C",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        807.6489,
+        -1534.0,
+        13.3399
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 90.05130150364599,
+        "roll": 0
+      },
+      "scale": [
+        1.0524047534031002,
+        0.9639881272706855,
+        1.127376733863946
+      ]
+    },
+    {
+      "name": "CC_RockWall_A_027",
+      "asset": "SM_CC_RockWall_A",
+      "group": "Architecture/OuterCrags",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        1017.6489,
+        -1494.0,
+        -18.6601
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 88.53312240970544,
+        "roll": 0
+      },
+      "scale": [
+        1.2,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "name": "CC_RockWall_A_028",
+      "asset": "SM_CC_RockWall_A",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        917.374,
+        -1226.0,
+        10.7308
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 88.37123480106874,
+        "roll": 0
+      },
+      "scale": [
+        1.040352251111265,
+        1.0575894026635964,
+        0.9956340922649302
+      ]
+    },
+    {
+      "name": "CC_RockWall_B_029",
+      "asset": "SM_CC_RockWall_B",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        994.7788,
+        -918.0,
+        15.2029
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 90.64024738707593,
+        "roll": 0
+      },
+      "scale": [
+        0.9653432201786178,
+        1.0213210760193128,
+        0.9546019387303057
+      ]
+    },
+    {
+      "name": "CC_RockWall_C_030",
+      "asset": "SM_CC_RockWall_C",
+      "group": "Architecture/OuterCrags",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        1204.7788,
+        -878.0,
+        -16.7971
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 90.89240208920893,
+        "roll": 0
+      },
+      "scale": [
+        1.2,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "name": "CC_RockWall_C_031",
+      "asset": "SM_CC_RockWall_C",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        931.5575,
+        -610.0,
+        19.1383
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 98.35542570542042,
+        "roll": 0
+      },
+      "scale": [
+        1.0054006947020873,
+        1.0737850701472982,
+        0.8634780741934254
+      ]
+    },
+    {
+      "name": "CC_RockWall_A_032",
+      "asset": "SM_CC_RockWall_A",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        812.2015,
+        -302.0,
+        15.1401
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 90.07339828469365,
+        "roll": 0
+      },
+      "scale": [
+        1.0103219139034494,
+        0.9873455962659367,
+        0.9704014440111312
+      ]
+    },
+    {
+      "name": "CC_RockWall_B_033",
+      "asset": "SM_CC_RockWall_B",
+      "group": "Architecture/OuterCrags",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        1022.2015,
+        -262.0,
+        -16.8599
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 87.87162518142672,
+        "roll": 0
+      },
+      "scale": [
+        1.2,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "name": "CC_RockWall_B_034",
+      "asset": "SM_CC_RockWall_B",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        770.1847,
+        6.0,
+        10.2648
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 99.83486732494552,
+        "roll": 0
+      },
+      "scale": [
+        0.9957531360536285,
+        1.092757189119879,
+        1.1235170576544216
+      ]
+    },
+    {
+      "name": "CC_RockWall_C_035",
+      "asset": "SM_CC_RockWall_C",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        837.4662,
+        314.0,
+        10.3702
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 89.32491628201501,
+        "roll": 0
+      },
+      "scale": [
+        1.062550549923013,
+        0.9971450002127636,
+        1.0314488208098067
+      ]
+    },
+    {
+      "name": "CC_RockWall_A_036",
+      "asset": "SM_CC_RockWall_A",
+      "group": "Architecture/OuterCrags",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        1047.4662,
+        354.0,
+        -21.6298
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 98.452046528885,
+        "roll": 0
+      },
+      "scale": [
+        1.2,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "name": "CC_RockWall_A_037",
+      "asset": "SM_CC_RockWall_A",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        941.9404,
+        622.0,
+        11.2153
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 91.37594846582016,
+        "roll": 0
+      },
+      "scale": [
+        1.0669508346276668,
+        1.0401358712937516,
+        0.8723846289337729
+      ]
+    },
+    {
+      "name": "CC_RockWall_B_038",
+      "asset": "SM_CC_RockWall_B",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        952.8703,
+        930.0,
+        12.6724
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 95.6705361462688,
+        "roll": 0
+      },
+      "scale": [
+        1.0792548222784573,
+        1.0672598663214337,
+        1.0674385423806467
+      ]
+    },
+    {
+      "name": "CC_RockWall_C_039",
+      "asset": "SM_CC_RockWall_C",
+      "group": "Architecture/OuterCrags",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        1162.8703,
+        970.0,
+        -19.3276
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 81.43001761846435,
+        "roll": 0
+      },
+      "scale": [
+        1.2,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "name": "CC_RockWall_C_040",
+      "asset": "SM_CC_RockWall_C",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        861.6591,
+        1238.0,
+        19.8941
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 89.1624141766863,
+        "roll": 0
+      },
+      "scale": [
+        0.9086521287543488,
+        1.007203189333318,
+        0.8943353030259673
+      ]
+    },
+    {
+      "name": "CC_RockWall_A_041",
+      "asset": "SM_CC_RockWall_A",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        816.15,
+        1546.0,
+        22.9621
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 94.18558412330238,
+        "roll": 0
+      },
+      "scale": [
+        0.9492304101078463,
+        1.0394701978470111,
+        0.8802787932101592
+      ]
+    },
+    {
+      "name": "CC_RockWall_B_042",
+      "asset": "SM_CC_RockWall_B",
+      "group": "Architecture/OuterCrags",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        1026.15,
+        1586.0,
+        -9.0379
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 80.2941700453455,
+        "roll": 0
+      },
+      "scale": [
+        1.2,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "name": "CC_RockWall_B_043",
+      "asset": "SM_CC_RockWall_B",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        867.5817,
+        1854.0,
+        18.8647
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 89.59196153397798,
+        "roll": 0
+      },
+      "scale": [
+        1.0361145846542763,
+        1.023152322886655,
+        1.0876003343193357
+      ]
+    },
+    {
+      "name": "CC_RockWall_C_044",
+      "asset": "SM_CC_RockWall_C",
+      "group": "Architecture/Perimeter",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        855.3833,
+        2162.0,
+        12.8083
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 88.94042279933349,
+        "roll": 0
+      },
+      "scale": [
+        0.9286995214969135,
+        0.9952712163722957,
+        1.1412032382115949
+      ]
+    },
+    {
+      "name": "CC_RockWall_A_045",
+      "asset": "SM_CC_RockWall_A",
+      "group": "Architecture/OuterCrags",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        1065.3833,
+        2202.0,
+        -19.1917
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 81.0107856441949,
+        "roll": 0
+      },
+      "scale": [
+        1.2,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "name": "CC_RockWall_A_046",
+      "asset": "SM_CC_RockWall_A",
+      "group": "Architecture/EndWalls",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -760.0,
+        -2370.0,
+        21.6663
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 4.687435698830939,
+        "roll": 0
+      },
+      "scale": [
+        1.1,
+        1,
+        0.65
+      ]
+    },
+    {
+      "name": "CC_RockWall_B_047",
+      "asset": "SM_CC_RockWall_B",
+      "group": "Architecture/EndWalls",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -400,
+        -2370.0,
+        9.0914
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 7.946591000485796,
+        "roll": 0
+      },
+      "scale": [
+        1.1,
+        1,
+        0.65
+      ]
+    },
+    {
+      "name": "CC_RockWall_A_048",
+      "asset": "SM_CC_RockWall_A",
+      "group": "Architecture/EndWalls",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        400,
+        -2370.0,
+        11.7978
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": -8.11841682913973,
+        "roll": 0
+      },
+      "scale": [
+        1.1,
+        1,
+        1.1
+      ]
+    },
+    {
+      "name": "CC_RockWall_B_049",
+      "asset": "SM_CC_RockWall_B",
+      "group": "Architecture/EndWalls",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        760.0,
+        -2370.0,
+        15.0332
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 8.40519410223811,
+        "roll": 0
+      },
+      "scale": [
+        1.1,
+        1,
+        1.1
+      ]
+    },
+    {
+      "name": "CC_RockWall_A_050",
+      "asset": "SM_CC_RockWall_A",
+      "group": "Architecture/EndWalls",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -760.0,
+        2370.0,
+        14.9668
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 0.5261816187343946,
+        "roll": 0
+      },
+      "scale": [
+        1.1,
+        1,
+        0.65
+      ]
+    },
+    {
+      "name": "CC_RockWall_B_051",
+      "asset": "SM_CC_RockWall_B",
+      "group": "Architecture/EndWalls",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        -400,
+        2370.0,
+        18.2022
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": -0.22264206789725804,
+        "roll": 0
+      },
+      "scale": [
+        1.1,
+        1,
+        0.65
+      ]
+    },
+    {
+      "name": "CC_RockWall_C_052",
+      "asset": "SM_CC_RockWall_C",
+      "group": "Architecture/EndWalls",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        0,
+        2370.0,
+        11.7191
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": -6.47260717226105,
+        "roll": 0
+      },
+      "scale": [
+        1.1,
+        1,
+        1.1
+      ]
+    },
+    {
+      "name": "CC_RockWall_A_053",
+      "asset": "SM_CC_RockWall_A",
+      "group": "Architecture/EndWalls",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        400,
+        2370.0,
+        20.9086
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 5.340677128627425,
+        "roll": 0
+      },
+      "scale": [
+        1.1,
+        1,
+        1.1
+      ]
+    },
+    {
+      "name": "CC_RockWall_B_054",
+      "asset": "SM_CC_RockWall_B",
+      "group": "Architecture/EndWalls",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        760.0,
+        2370.0,
+        8.3337
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 1.7657422666443896,
+        "roll": 0
+      },
+      "scale": [
+        1.1,
+        1,
+        1.1
+      ]
+    },
+    {
+      "name": "CC_Portal_055",
+      "asset": "SM_CC_Portal",
+      "group": "Architecture/Entrance",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        0,
+        -2320.0,
+        20.0625
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 0,
+        "roll": 0
+      },
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "CC_RockWallLow_056",
+      "asset": "SM_CC_RockWallLow",
+      "group": "Architecture/EntranceThreshold",
+      "tags": [
+        "CaveBoundary"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        0,
+        -2420.0,
+        16.4617
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 0,
+        "roll": 0
+      },
+      "scale": [
+        1.15,
+        0.8,
+        1.05
+      ]
+    },
+    {
+      "name": "CC_RockIsland_A_057",
+      "asset": "SM_CC_RockIsland_A",
+      "group": "Architecture/ForkIslands",
+      "tags": [
+        "CaveIsland"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        0,
+        -900,
+        3.2018
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 0,
+        "roll": 0
+      },
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "CC_CrystalCyan_058",
+      "asset": "SM_CC_CrystalCyan",
+      "group": "Crystals",
+      "tags": [],
+      "collision": "complex",
+      "ue_location_cm": [
+        30.0,
+        -930.0,
+        163.2018
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 150.9103547909349,
+        "roll": 0
+      },
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ]
+    },
+    {
+      "name": "CC_RockIsland_B_059",
+      "asset": "SM_CC_RockIsland_B",
+      "group": "Architecture/ForkIslands",
+      "tags": [
+        "CaveIsland"
+      ],
+      "collision": "complex",
+      "ue_location_cm": [
+        0,
+        800,
+        29.0977
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 0,
+        "roll": 0
+      },
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "CC_CrystalViolet_060",
+      "asset": "SM_CC_CrystalViolet",
+      "group": "Crystals",
+      "tags": [],
+      "collision": "complex",
+      "ue_location_cm": [
+        30.0,
+        770.0,
+        189.0977
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": -15.945888679461405,
+        "roll": 0
+      },
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ]
+    },
+    {
+      "name": "CC_CrystalHeart_061",
+      "asset": "SM_CC_CrystalHeart",
+      "group": "Crystals",
+      "tags": [],
+      "collision": "complex",
+      "ue_location_cm": [
+        430.0,
+        2000,
+        19.002
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 90,
+        "roll": 0
+      },
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "CC_CrystalCyan_062",
+      "asset": "SM_CC_CrystalCyan",
+      "group": "Crystals",
+      "tags": [],
+      "collision": "complex",
+      "ue_location_cm": [
+        380.0,
+        -2000,
+        12.3622
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": -12.75666736022663,
+        "roll": 0
+      },
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "CC_CrystalCyan_063",
+      "asset": "SM_CC_CrystalCyan",
+      "group": "Crystals",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -470.0,
+        -2200,
+        10.1052
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": -77.79292816405318,
+        "roll": 0
+      },
+      "scale": [
+        0.62,
+        0.62,
+        0.62
+      ]
+    },
+    {
+      "name": "CC_CrystalCyan_064",
+      "asset": "SM_CC_CrystalCyan",
+      "group": "Crystals",
+      "tags": [],
+      "collision": "complex",
+      "ue_location_cm": [
+        790.0,
+        -1300,
+        15.6242
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 151.55155044489698,
+        "roll": 0
+      },
+      "scale": [
+        0.75,
+        0.75,
+        0.75
+      ]
+    },
+    {
+      "name": "CC_CrystalCyan_065",
+      "asset": "SM_CC_CrystalCyan",
+      "group": "Crystals",
+      "tags": [],
+      "collision": "complex",
+      "ue_location_cm": [
+        -780.0,
+        -1150.0,
+        9.4622
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 101.25083719368024,
+        "roll": 0
+      },
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ]
+    },
+    {
+      "name": "CC_CrystalCyan_066",
+      "asset": "SM_CC_CrystalCyan",
+      "group": "Crystals",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        790.0,
+        -600,
+        17.6107
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": -23.70319915993622,
+        "roll": 0
+      },
+      "scale": [
+        0.65,
+        0.65,
+        0.65
+      ]
+    },
+    {
+      "name": "CC_CrystalCyan_067",
+      "asset": "SM_CC_CrystalCyan",
+      "group": "Crystals",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -780.0,
+        -430.0,
+        20.8835
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 101.53336255628363,
+        "roll": 0
+      },
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "name": "CC_CrystalCyan_068",
+      "asset": "SM_CC_CrystalCyan",
+      "group": "Crystals",
+      "tags": [],
+      "collision": "complex",
+      "ue_location_cm": [
+        480.0,
+        -90.0,
+        14.7326
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": -149.23383125722114,
+        "roll": 0
+      },
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "name": "CC_CrystalViolet_069",
+      "asset": "SM_CC_CrystalViolet",
+      "group": "Crystals",
+      "tags": [],
+      "collision": "complex",
+      "ue_location_cm": [
+        -570.0,
+        10.0,
+        19.3563
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": -87.61619708656367,
+        "roll": 0
+      },
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    {
+      "name": "CC_CrystalViolet_070",
+      "asset": "SM_CC_CrystalViolet",
+      "group": "Crystals",
+      "tags": [],
+      "collision": "complex",
+      "ue_location_cm": [
+        780.0,
+        500,
+        9.6138
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": -32.53197869397576,
+        "roll": 0
+      },
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ]
+    },
+    {
+      "name": "CC_CrystalViolet_071",
+      "asset": "SM_CC_CrystalViolet",
+      "group": "Crystals",
+      "tags": [],
+      "collision": "complex",
+      "ue_location_cm": [
+        -790.0,
+        550.0,
+        12.7419
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 156.11784169950062,
+        "roll": 0
+      },
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    {
+      "name": "CC_CrystalViolet_072",
+      "asset": "SM_CC_CrystalViolet",
+      "group": "Crystals",
+      "tags": [],
+      "collision": "complex",
+      "ue_location_cm": [
+        760.0,
+        1100,
+        19.7928
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": -45.61636676511807,
+        "roll": 0
+      },
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "name": "CC_CrystalViolet_073",
+      "asset": "SM_CC_CrystalViolet",
+      "group": "Crystals",
+      "tags": [],
+      "collision": "complex",
+      "ue_location_cm": [
+        -780.0,
+        1220.0,
+        13.3268
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 21.47414900652754,
+        "roll": 0
+      },
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "name": "CC_CrystalCyan_074",
+      "asset": "SM_CC_CrystalCyan",
+      "group": "Crystals",
+      "tags": [],
+      "collision": "complex",
+      "ue_location_cm": [
+        -550.0,
+        1800,
+        18.0392
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": -104.8966627783645,
+        "roll": 0
+      },
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "CC_CrystalCyan_075",
+      "asset": "SM_CC_CrystalCyan",
+      "group": "Crystals",
+      "tags": [],
+      "collision": "complex",
+      "ue_location_cm": [
+        100,
+        2300,
+        12.5696
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 44.508668670722756,
+        "roll": 0
+      },
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    {
+      "name": "CC_CrystalCyan_076",
+      "asset": "SM_CC_CrystalCyan",
+      "group": "Crystals",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -700,
+        2200,
+        17.8537
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": -125.05591215494282,
+        "roll": 0
+      },
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_077",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -681.8926,
+        -129.8345,
+        22.3912
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 295.7857024271001,
+        "roll": 0
+      },
+      "scale": [
+        1.0072057495356574,
+        1.0072057495356574,
+        1.0072057495356574
+      ]
+    },
+    {
+      "name": "CC_RockRubble_078",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -716.7711,
+        -1350.9233,
+        6.2809
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 95.00964128534423,
+        "roll": 0
+      },
+      "scale": [
+        0.7167224405626107,
+        0.7167224405626107,
+        0.7167224405626107
+      ]
+    },
+    {
+      "name": "CC_RockRubble_079",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -941.3437,
+        -922.7278,
+        16.9781
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 126.22209613518386,
+        "roll": 0
+      },
+      "scale": [
+        0.6097848437142102,
+        0.6097848437142102,
+        0.6097848437142102
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_080",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        883.1617,
+        855.8617,
+        13.9474
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 315.6199580387598,
+        "roll": 0
+      },
+      "scale": [
+        0.8202917060455269,
+        0.8202917060455269,
+        0.8202917060455269
+      ]
+    },
+    {
+      "name": "CC_RockRubble_081",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        910.4331,
+        -749.148,
+        17.5533
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 10.249543428841283,
+        "roll": 0
+      },
+      "scale": [
+        0.38530749386896773,
+        0.38530749386896773,
+        0.38530749386896773
+      ]
+    },
+    {
+      "name": "CC_RockRubble_082",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        697.1026,
+        -1551.9127,
+        15.974
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 91.18321684051475,
+        "roll": 0
+      },
+      "scale": [
+        0.6503320121986684,
+        0.6503320121986684,
+        0.6503320121986684
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_083",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -692.4385,
+        -1538.6331,
+        5.2104
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 137.11697168807154,
+        "roll": 0
+      },
+      "scale": [
+        1.2997102776168696,
+        1.2997102776168696,
+        1.2997102776168696
+      ]
+    },
+    {
+      "name": "CC_RockRubble_084",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        700.2769,
+        -1462.3967,
+        16.919
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 63.75090826397752,
+        "roll": 0
+      },
+      "scale": [
+        0.5867309789735533,
+        0.5867309789735533,
+        0.5867309789735533
+      ]
+    },
+    {
+      "name": "CC_RockRubble_085",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -718.7303,
+        1534.8567,
+        14.164
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 51.16434404527748,
+        "roll": 0
+      },
+      "scale": [
+        0.7245888280106394,
+        0.7245888280106394,
+        0.7245888280106394
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_086",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -734.0859,
+        1498.2008,
+        14.1343
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 86.58730647605395,
+        "roll": 0
+      },
+      "scale": [
+        1.1652801683235043,
+        1.1652801683235043,
+        1.1652801683235043
+      ]
+    },
+    {
+      "name": "CC_RockRubble_087",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        684.345,
+        88.6617,
+        7.9962
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 102.71357512480017,
+        "roll": 0
+      },
+      "scale": [
+        0.44917518444759064,
+        0.44917518444759064,
+        0.44917518444759064
+      ]
+    },
+    {
+      "name": "CC_RockRubble_088",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        785.9468,
+        1338.7942,
+        22.9537
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 141.2183841731998,
+        "roll": 0
+      },
+      "scale": [
+        0.49952611880628334,
+        0.49952611880628334,
+        0.49952611880628334
+      ]
+    },
+    {
+      "name": "CC_RockRubble_089",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        725.229,
+        -1544.5898,
+        15.6239
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 149.80934301687415,
+        "roll": 0
+      },
+      "scale": [
+        0.37060199923541254,
+        0.37060199923541254,
+        0.37060199923541254
+      ]
+    },
+    {
+      "name": "CC_RockRubble_090",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        831.9661,
+        -769.9167,
+        17.6491
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 262.42723399092984,
+        "roll": 0
+      },
+      "scale": [
+        0.8315957225739781,
+        0.8315957225739781,
+        0.8315957225739781
+      ]
+    },
+    {
+      "name": "CC_RockRubble_091",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        735.8563,
+        -913.0757,
+        19.6248
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 156.93388064419378,
+        "roll": 0
+      },
+      "scale": [
+        0.7562093470254687,
+        0.7562093470254687,
+        0.7562093470254687
+      ]
+    },
+    {
+      "name": "CC_RockRubble_092",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -762.06,
+        -744.478,
+        17.2903
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 271.1716279547483,
+        "roll": 0
+      },
+      "scale": [
+        0.6458454868856045,
+        0.6458454868856045,
+        0.6458454868856045
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_093",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -788.0604,
+        1340.8141,
+        14.6199
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 180.5666461468895,
+        "roll": 0
+      },
+      "scale": [
+        1.167628959776525,
+        1.167628959776525,
+        1.167628959776525
+      ]
+    },
+    {
+      "name": "CC_RockRubble_094",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -840.16,
+        1133.3745,
+        15.0949
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 266.5391989287053,
+        "roll": 0
+      },
+      "scale": [
+        0.8266126520788625,
+        0.8266126520788625,
+        0.8266126520788625
+      ]
+    },
+    {
+      "name": "CC_RockRubble_095",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        726.051,
+        1656.9486,
+        24.1501
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 193.6901869075546,
+        "roll": 0
+      },
+      "scale": [
+        0.3802431405970279,
+        0.3802431405970279,
+        0.3802431405970279
+      ]
+    },
+    {
+      "name": "CC_RockRubble_096",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -691.6632,
+        -30.7184,
+        21.3299
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 142.67259682991107,
+        "roll": 0
+      },
+      "scale": [
+        0.898946801429686,
+        0.898946801429686,
+        0.898946801429686
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_097",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -688.2618,
+        31.0227,
+        20.5501
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 92.89004471073143,
+        "roll": 0
+      },
+      "scale": [
+        0.621902978917751,
+        0.621902978917751,
+        0.621902978917751
+      ]
+    },
+    {
+      "name": "CC_RockRubble_098",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        896.9224,
+        -788.5624,
+        17.1174
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 185.7383659044243,
+        "roll": 0
+      },
+      "scale": [
+        0.3625615657143391,
+        0.3625615657143391,
+        0.3625615657143391
+      ]
+    },
+    {
+      "name": "CC_RockRubble_099",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        866.1522,
+        -776.6609,
+        17.3221
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 109.10250550502488,
+        "roll": 0
+      },
+      "scale": [
+        0.5390501732249859,
+        0.5390501732249859,
+        0.5390501732249859
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_100",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -826.9518,
+        -867.699,
+        15.0157
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 115.74943760239138,
+        "roll": 0
+      },
+      "scale": [
+        1.1456112416561752,
+        1.1456112416561752,
+        1.1456112416561752
+      ]
+    },
+    {
+      "name": "CC_RockRubble_101",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -744.4055,
+        751.3748,
+        10.9797
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 311.7878190290888,
+        "roll": 0
+      },
+      "scale": [
+        0.5298986228739773,
+        0.5298986228739773,
+        0.5298986228739773
+      ]
+    },
+    {
+      "name": "CC_RockRubble_102",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        705.93,
+        -784.7842,
+        19.9729
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 199.02033413671037,
+        "roll": 0
+      },
+      "scale": [
+        0.4936885328290483,
+        0.4936885328290483,
+        0.4936885328290483
+      ]
+    },
+    {
+      "name": "CC_RockRubble_103",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        680.1272,
+        -1768.3927,
+        13.725
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 232.24379409715092,
+        "roll": 0
+      },
+      "scale": [
+        0.6781092824004967,
+        0.6781092824004967,
+        0.6781092824004967
+      ]
+    },
+    {
+      "name": "CC_RockRubble_104",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -759.7358,
+        -1420.2763,
+        6.0186
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 311.23003440439703,
+        "roll": 0
+      },
+      "scale": [
+        0.61661083169421,
+        0.61661083169421,
+        0.61661083169421
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_105",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -894.5457,
+        -1075.2929,
+        13.3838
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 180.20619216416324,
+        "roll": 0
+      },
+      "scale": [
+        0.8020364159050252,
+        0.8020364159050252,
+        0.8020364159050252
+      ]
+    },
+    {
+      "name": "CC_RockRubble_106",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        764.0504,
+        -963.6037,
+        18.7365
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 214.7340303078753,
+        "roll": 0
+      },
+      "scale": [
+        0.775311237777571,
+        0.775311237777571,
+        0.775311237777571
+      ]
+    },
+    {
+      "name": "CC_RockRubble_107",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -744.1965,
+        -1651.3338,
+        6.0683
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 181.42735831102743,
+        "roll": 0
+      },
+      "scale": [
+        0.416804402727935,
+        0.416804402727935,
+        0.416804402727935
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_108",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        753.9657,
+        1980.8797,
+        18.1939
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 176.66032012569582,
+        "roll": 0
+      },
+      "scale": [
+        1.2519495176055073,
+        1.2519495176055073,
+        1.2519495176055073
+      ]
+    },
+    {
+      "name": "CC_RockRubble_109",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -858.4119,
+        770.7445,
+        12.5942
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 133.04997472001207,
+        "roll": 0
+      },
+      "scale": [
+        0.8943171328287468,
+        0.8943171328287468,
+        0.8943171328287468
+      ]
+    },
+    {
+      "name": "CC_RockRubble_110",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -736.3655,
+        1668.1066,
+        15.5824
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 10.947836970156715,
+        "roll": 0
+      },
+      "scale": [
+        0.8031521735552454,
+        0.8031521735552454,
+        0.8031521735552454
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_111",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        746.714,
+        911.8982,
+        15.9223
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 39.275690954598204,
+        "roll": 0
+      },
+      "scale": [
+        1.0878361381819541,
+        1.0878361381819541,
+        1.0878361381819541
+      ]
+    },
+    {
+      "name": "CC_RockRubble_112",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -752.5805,
+        -1850.2075,
+        8.9615
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 193.55517216611852,
+        "roll": 0
+      },
+      "scale": [
+        0.5656817020937448,
+        0.5656817020937448,
+        0.5656817020937448
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_113",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -695.5958,
+        1296.0465,
+        11.235
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 352.46787688790073,
+        "roll": 0
+      },
+      "scale": [
+        0.6798792965168112,
+        0.6798792965168112,
+        0.6798792965168112
+      ]
+    },
+    {
+      "name": "CC_RockRubble_114",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        701.3272,
+        -1398.9484,
+        17.588
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 23.56021861886548,
+        "roll": 0
+      },
+      "scale": [
+        0.8806706924569487,
+        0.8806706924569487,
+        0.8806706924569487
+      ]
+    },
+    {
+      "name": "CC_RockRubble_115",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -737.5308,
+        281.9439,
+        16.3571
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 108.42430958918696,
+        "roll": 0
+      },
+      "scale": [
+        0.8749557461145502,
+        0.8749557461145502,
+        0.8749557461145502
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_116",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -687.1015,
+        1701.8443,
+        15.5857
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 101.35959197792124,
+        "roll": 0
+      },
+      "scale": [
+        1.2992328368771147,
+        1.2992328368771147,
+        1.2992328368771147
+      ]
+    },
+    {
+      "name": "CC_RockRubble_117",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -819.9111,
+        770.0858,
+        12.2037
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 142.30664448623992,
+        "roll": 0
+      },
+      "scale": [
+        0.7082883174623786,
+        0.7082883174623786,
+        0.7082883174623786
+      ]
+    },
+    {
+      "name": "CC_RockRubble_118",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        772.2729,
+        1642.4785,
+        23.4857
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 66.20167051022082,
+        "roll": 0
+      },
+      "scale": [
+        0.8608969603029502,
+        0.8608969603029502,
+        0.8608969603029502
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_119",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        743.795,
+        -335.4808,
+        14.5062
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 169.3101520087054,
+        "roll": 0
+      },
+      "scale": [
+        0.7834642864637092,
+        0.7834642864637092,
+        0.7834642864637092
+      ]
+    },
+    {
+      "name": "CC_RockRubble_120",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        809.7767,
+        2004.8081,
+        16.6449
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 335.3444676170159,
+        "roll": 0
+      },
+      "scale": [
+        0.6983010212430965,
+        0.6983010212430965,
+        0.6983010212430965
+      ]
+    },
+    {
+      "name": "CC_RockRubble_121",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        718.54,
+        -2093.5913,
+        12.6782
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 180.14201734868956,
+        "roll": 0
+      },
+      "scale": [
+        0.7414389293053294,
+        0.7414389293053294,
+        0.7414389293053294
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_122",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        867.6004,
+        607.1999,
+        11.5881
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 233.3504037592504,
+        "roll": 0
+      },
+      "scale": [
+        1.2772944883548607,
+        1.2772944883548607,
+        1.2772944883548607
+      ]
+    },
+    {
+      "name": "CC_RockRubble_123",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -715.1945,
+        -1834.2733,
+        7.9608
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 188.70415987042148,
+        "roll": 0
+      },
+      "scale": [
+        0.49106893209892133,
+        0.49106893209892133,
+        0.49106893209892133
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_124",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -819.0205,
+        -948.404,
+        13.5321
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 181.66296829097126,
+        "roll": 0
+      },
+      "scale": [
+        0.9773146263771496,
+        0.9773146263771496,
+        0.9773146263771496
+      ]
+    },
+    {
+      "name": "CC_RockRubble_125",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -681.1108,
+        1783.8721,
+        16.4173
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 334.1750787554061,
+        "roll": 0
+      },
+      "scale": [
+        0.3655114259930448,
+        0.3655114259930448,
+        0.3655114259930448
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_126",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        706.6395,
+        1602.3063,
+        24.6556
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 151.76508830314296,
+        "roll": 0
+      },
+      "scale": [
+        0.6839049930844291,
+        0.6839049930844291,
+        0.6839049930844291
+      ]
+    },
+    {
+      "name": "CC_RockRubble_127",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        742.4366,
+        -1719.6159,
+        14.0202
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 308.94095154355676,
+        "roll": 0
+      },
+      "scale": [
+        0.6313735348908802,
+        0.6313735348908802,
+        0.6313735348908802
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_128",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -745.7781,
+        -1786.8722,
+        7.725
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 169.11841582749716,
+        "roll": 0
+      },
+      "scale": [
+        1.080365528263663,
+        1.080365528263663,
+        1.080365528263663
+      ]
+    },
+    {
+      "name": "CC_RockRubble_129",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        752.6009,
+        2210.3292,
+        12.3418
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 229.9897951198256,
+        "roll": 0
+      },
+      "scale": [
+        0.8230710033559934,
+        0.8230710033559934,
+        0.8230710033559934
+      ]
+    },
+    {
+      "name": "CC_RockRubble_130",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        732.3645,
+        -1933.6585,
+        13.1447
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 353.9155566332455,
+        "roll": 0
+      },
+      "scale": [
+        0.3892224482565303,
+        0.3892224482565303,
+        0.3892224482565303
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_131",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -685.6404,
+        -1844.5497,
+        7.6798
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 94.4921665898036,
+        "roll": 0
+      },
+      "scale": [
+        0.8478061146928696,
+        0.8478061146928696,
+        0.8478061146928696
+      ]
+    },
+    {
+      "name": "CC_RockRubble_132",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        701.1657,
+        -1084.7623,
+        20.191
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 266.25177875101866,
+        "roll": 0
+      },
+      "scale": [
+        0.7757640634962653,
+        0.7757640634962653,
+        0.7757640634962653
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_133",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        690.5121,
+        -44.8357,
+        9.6524
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 251.02527661004453,
+        "roll": 0
+      },
+      "scale": [
+        0.6098100866771704,
+        0.6098100866771704,
+        0.6098100866771704
+      ]
+    },
+    {
+      "name": "CC_RockRubble_134",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -875.638,
+        808.494,
+        12.9732
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 344.4534854321809,
+        "roll": 0
+      },
+      "scale": [
+        0.5339304133842516,
+        0.5339304133842516,
+        0.5339304133842516
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_135",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -721.4776,
+        -1658.1114,
+        5.8026
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 279.47067972330325,
+        "roll": 0
+      },
+      "scale": [
+        0.9762134643656126,
+        0.9762134643656126,
+        0.9762134643656126
+      ]
+    },
+    {
+      "name": "CC_RockRubble_136",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -727.692,
+        -1853.645,
+        8.5365
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 323.2013545954096,
+        "roll": 0
+      },
+      "scale": [
+        0.873815124177231,
+        0.873815124177231,
+        0.873815124177231
+      ]
+    },
+    {
+      "name": "CC_RockRubble_137",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -779.3933,
+        299.9118,
+        15.5736
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 303.7204677319936,
+        "roll": 0
+      },
+      "scale": [
+        0.7000817157894877,
+        0.7000817157894877,
+        0.7000817157894877
+      ]
+    },
+    {
+      "name": "CC_RockRubble_138",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -854.8713,
+        -831.8426,
+        15.8876
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 160.50609693281672,
+        "roll": 0
+      },
+      "scale": [
+        0.6879242226170201,
+        0.6879242226170201,
+        0.6879242226170201
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_139",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        728.9669,
+        -2102.5065,
+        12.9596
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 193.9113446882004,
+        "roll": 0
+      },
+      "scale": [
+        0.9471372398676215,
+        0.9471372398676215,
+        0.9471372398676215
+      ]
+    },
+    {
+      "name": "CC_RockRubble_140",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        719.3418,
+        -1746.9896,
+        13.9797
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 308.372139089113,
+        "roll": 0
+      },
+      "scale": [
+        0.5602821042136237,
+        0.5602821042136237,
+        0.5602821042136237
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_141",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -765.4,
+        1528.3953,
+        15.2092
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 179.82662053715615,
+        "roll": 0
+      },
+      "scale": [
+        0.8806913305306221,
+        0.8806913305306221,
+        0.8806913305306221
+      ]
+    },
+    {
+      "name": "CC_RockRubble_142",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -692.31,
+        -1875.4486,
+        8.3191
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 282.91719037435433,
+        "roll": 0
+      },
+      "scale": [
+        0.8218177048085697,
+        0.8218177048085697,
+        0.8218177048085697
+      ]
+    },
+    {
+      "name": "CC_RockRubble_143",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        801.6412,
+        987.5516,
+        17.3733
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 24.126517830999703,
+        "roll": 0
+      },
+      "scale": [
+        0.8756400122146416,
+        0.8756400122146416,
+        0.8756400122146416
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_144",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        730.2523,
+        2271.3171,
+        11.2179
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 12.103274471259153,
+        "roll": 0
+      },
+      "scale": [
+        0.9231290146428338,
+        0.9231290146428338,
+        0.9231290146428338
+      ]
+    },
+    {
+      "name": "CC_RockRubble_145",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -681.4431,
+        1663.8371,
+        15.1745
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 114.32253246973313,
+        "roll": 0
+      },
+      "scale": [
+        0.6444722754533778,
+        0.6444722754533778,
+        0.6444722754533778
+      ]
+    },
+    {
+      "name": "CC_RockRubble_146",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        744.4648,
+        2127.7988,
+        14.67
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 27.611512017041754,
+        "roll": 0
+      },
+      "scale": [
+        0.6753474633948219,
+        0.6753474633948219,
+        0.6753474633948219
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_147",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        695.116,
+        -1429.3085,
+        17.3741
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 350.31556150852265,
+        "roll": 0
+      },
+      "scale": [
+        0.7804779610206525,
+        0.7804779610206525,
+        0.7804779610206525
+      ]
+    },
+    {
+      "name": "CC_RockRubble_148",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        710.7216,
+        1477.3496,
+        24.6402
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 14.886468100513191,
+        "roll": 0
+      },
+      "scale": [
+        0.4975175079790122,
+        0.4975175079790122,
+        0.4975175079790122
+      ]
+    },
+    {
+      "name": "CC_RockRubble_149",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -700.7431,
+        -813.0667,
+        16.7561
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 218.40732008433966,
+        "roll": 0
+      },
+      "scale": [
+        0.6287133835514254,
+        0.6287133835514254,
+        0.6287133835514254
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_150",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -707.5634,
+        -1633.705,
+        5.5004
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 271.2440726313204,
+        "roll": 0
+      },
+      "scale": [
+        0.9368800856276247,
+        0.9368800856276247,
+        0.9368800856276247
+      ]
+    },
+    {
+      "name": "CC_RockRubble_151",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        693.753,
+        1642.4298,
+        24.5348
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 287.1164433940221,
+        "roll": 0
+      },
+      "scale": [
+        0.8697241707164911,
+        0.8697241707164911,
+        0.8697241707164911
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_152",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        790.5734,
+        947.1876,
+        16.6894
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 259.9561034428132,
+        "roll": 0
+      },
+      "scale": [
+        1.2747566923884825,
+        1.2747566923884825,
+        1.2747566923884825
+      ]
+    },
+    {
+      "name": "CC_RockRubble_153",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -706.7074,
+        68.6647,
+        19.9113
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 6.210281522284,
+        "roll": 0
+      },
+      "scale": [
+        0.8962960863029188,
+        0.8962960863029188,
+        0.8962960863029188
+      ]
+    },
+    {
+      "name": "CC_RockRubble_154",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        766.5154,
+        283.2345,
+        8.4294
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 117.05483849335909,
+        "roll": 0
+      },
+      "scale": [
+        0.6761995552694495,
+        0.6761995552694495,
+        0.6761995552694495
+      ]
+    },
+    {
+      "name": "CC_RockRubble_155",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -701.1807,
+        -95.0893,
+        21.9315
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 196.67974126409393,
+        "roll": 0
+      },
+      "scale": [
+        0.4067606010499882,
+        0.4067606010499882,
+        0.4067606010499882
+      ]
+    },
+    {
+      "name": "CC_CrystalShards_156",
+      "asset": "SM_CC_CrystalShards",
+      "group": "Details/Shards",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        686.0234,
+        151.6887,
+        7.4668
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 41.276217773950414,
+        "roll": 0
+      },
+      "scale": [
+        0.9913401030819946,
+        0.9913401030819946,
+        0.9913401030819946
+      ]
+    },
+    {
+      "name": "CC_RockRubble_157",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        761.675,
+        -2004.5202,
+        13.5262
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 146.66782626211068,
+        "roll": 0
+      },
+      "scale": [
+        0.5432999067760989,
+        0.5432999067760989,
+        0.5432999067760989
+      ]
+    },
+    {
+      "name": "CC_RockRubble_158",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        -681.7244,
+        145.5362,
+        18.7974
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 299.7386892409237,
+        "roll": 0
+      },
+      "scale": [
+        0.42772743361875254,
+        0.42772743361875254,
+        0.42772743361875254
+      ]
+    },
+    {
+      "name": "CC_RockRubble_159",
+      "asset": "SM_CC_RockRubble",
+      "group": "Details/Rubble",
+      "tags": [],
+      "collision": "none",
+      "ue_location_cm": [
+        810.9533,
+        -447.6401,
+        16.5819
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 359.62307799735544,
+        "roll": 0
+      },
+      "scale": [
+        0.7532392942575556,
+        0.7532392942575556,
+        0.7532392942575556
+      ]
+    }
+  ],
+  "lights": [
+    {
+      "name": "CC_CrystalCyan_058_Light",
+      "ue_location_cm": [
+        30.0,
+        -930.0000000000001,
+        265.20180892944336
+      ],
+      "color": [
+        0.13,
+        0.77,
+        1
+      ],
+      "intensity": 2200,
+      "radius_cm": 740,
+      "source_radius_cm": 59.5
+    },
+    {
+      "name": "CC_CrystalViolet_060_Light",
+      "ue_location_cm": [
+        30.0,
+        770.0,
+        261.3477382659912
+      ],
+      "color": [
+        0.63,
+        0.28,
+        1
+      ],
+      "intensity": 2200,
+      "radius_cm": 740,
+      "source_radius_cm": 59.5
+    },
+    {
+      "name": "CC_CrystalHeart_061_Light",
+      "ue_location_cm": [
+        430.0,
+        2000,
+        139.001966714859
+      ],
+      "color": [
+        0.13,
+        0.77,
+        1
+      ],
+      "intensity": 5000,
+      "radius_cm": 1050,
+      "source_radius_cm": 70
+    },
+    {
+      "name": "CC_CrystalCyan_062_Light",
+      "ue_location_cm": [
+        380.0,
+        -2000,
+        132.36224547028542
+      ],
+      "color": [
+        0.13,
+        0.77,
+        1
+      ],
+      "intensity": 2200,
+      "radius_cm": 650,
+      "source_radius_cm": 70
+    },
+    {
+      "name": "CC_CrystalCyan_063_Light",
+      "ue_location_cm": [
+        -470.0,
+        -2200,
+        84.50517850518227
+      ],
+      "color": [
+        0.13,
+        0.77,
+        1
+      ],
+      "intensity": 900,
+      "radius_cm": 650,
+      "source_radius_cm": 43.4
+    },
+    {
+      "name": "CC_CrystalCyan_064_Light",
+      "ue_location_cm": [
+        790.0,
+        -1300,
+        105.62420129776
+      ],
+      "color": [
+        0.13,
+        0.77,
+        1
+      ],
+      "intensity": 1500,
+      "radius_cm": 650,
+      "source_radius_cm": 52.5
+    },
+    {
+      "name": "CC_CrystalCyan_065_Light",
+      "ue_location_cm": [
+        -780.0,
+        -1150.0,
+        111.46221575140953
+      ],
+      "color": [
+        0.13,
+        0.77,
+        1
+      ],
+      "intensity": 1600,
+      "radius_cm": 650,
+      "source_radius_cm": 59.5
+    },
+    {
+      "name": "CC_CrystalCyan_066_Light",
+      "ue_location_cm": [
+        790.0,
+        -600,
+        95.61071532964706
+      ],
+      "color": [
+        0.13,
+        0.77,
+        1
+      ],
+      "intensity": 1300,
+      "radius_cm": 650,
+      "source_radius_cm": 45.5
+    },
+    {
+      "name": "CC_CrystalCyan_067_Light",
+      "ue_location_cm": [
+        -780.0,
+        -430.0,
+        92.88346928358078
+      ],
+      "color": [
+        0.13,
+        0.77,
+        1
+      ],
+      "intensity": 1300,
+      "radius_cm": 650,
+      "source_radius_cm": 42.0
+    },
+    {
+      "name": "CC_CrystalCyan_068_Light",
+      "ue_location_cm": [
+        480.0,
+        -90.0,
+        122.73256349563599
+      ],
+      "color": [
+        0.13,
+        0.77,
+        1
+      ],
+      "intensity": 1900,
+      "radius_cm": 650,
+      "source_radius_cm": 63.0
+    },
+    {
+      "name": "CC_CrystalViolet_069_Light",
+      "ue_location_cm": [
+        -570.0,
+        10.0,
+        87.35631483793259
+      ],
+      "color": [
+        0.63,
+        0.28,
+        1
+      ],
+      "intensity": 1900,
+      "radius_cm": 620,
+      "source_radius_cm": 56.0
+    },
+    {
+      "name": "CC_CrystalViolet_070_Light",
+      "ue_location_cm": [
+        780.0,
+        500,
+        81.86378514766692
+      ],
+      "color": [
+        0.63,
+        0.28,
+        1
+      ],
+      "intensity": 1800,
+      "radius_cm": 620,
+      "source_radius_cm": 59.5
+    },
+    {
+      "name": "CC_CrystalViolet_071_Light",
+      "ue_location_cm": [
+        -790.0,
+        550.0,
+        80.74185478687286
+      ],
+      "color": [
+        0.63,
+        0.28,
+        1
+      ],
+      "intensity": 1800,
+      "radius_cm": 620,
+      "source_radius_cm": 56.0
+    },
+    {
+      "name": "CC_CrystalViolet_072_Light",
+      "ue_location_cm": [
+        760.0,
+        1100,
+        79.29278922080994
+      ],
+      "color": [
+        0.63,
+        0.28,
+        1
+      ],
+      "intensity": 1500,
+      "radius_cm": 620,
+      "source_radius_cm": 49.0
+    },
+    {
+      "name": "CC_CrystalViolet_073_Light",
+      "ue_location_cm": [
+        -780.0,
+        1220.0,
+        89.82677006721497
+      ],
+      "color": [
+        0.63,
+        0.28,
+        1
+      ],
+      "intensity": 1800,
+      "radius_cm": 620,
+      "source_radius_cm": 63.0
+    },
+    {
+      "name": "CC_CrystalCyan_074_Light",
+      "ue_location_cm": [
+        -550.0,
+        1800,
+        138.03917437791824
+      ],
+      "color": [
+        0.13,
+        0.77,
+        1
+      ],
+      "intensity": 2500,
+      "radius_cm": 650,
+      "source_radius_cm": 70
+    },
+    {
+      "name": "CC_CrystalCyan_075_Light",
+      "ue_location_cm": [
+        100,
+        2300,
+        108.56963461637497
+      ],
+      "color": [
+        0.13,
+        0.77,
+        1
+      ],
+      "intensity": 1900,
+      "radius_cm": 650,
+      "source_radius_cm": 56.0
+    },
+    {
+      "name": "CC_CrystalCyan_076_Light",
+      "ue_location_cm": [
+        -700,
+        2200,
+        83.85365343093872
+      ],
+      "color": [
+        0.13,
+        0.77,
+        1
+      ],
+      "intensity": 900,
+      "radius_cm": 650,
+      "source_radius_cm": 38.5
+    }
+  ],
+  "collision_boxes": [
+    {
+      "name": "CC_IslandInteriorCollision_1",
+      "ue_location_cm": [
+        0,
+        -900,
+        116.20180810628288
+      ],
+      "dimensions_cm": [
+        380,
+        660,
+        210
+      ],
+      "tag": "CaveIsland"
+    },
+    {
+      "name": "CC_IslandInteriorCollision_2",
+      "ue_location_cm": [
+        0,
+        800,
+        142.09773258470153
+      ],
+      "dimensions_cm": [
+        380,
+        660,
+        210
+      ],
+      "tag": "CaveIsland"
+    },
+    {
+      "name": "CC_RockWallLow_000_InteriorCollision",
+      "ue_location_cm": [
+        -816.082,
+        -2150.0,
+        121.8933
+      ],
+      "dimensions_cm": [
+        436.4608497630218,
+        154.10610435471764,
+        210
+      ],
+      "ue_yaw": 80.53295082977334,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_002_InteriorCollision",
+      "ue_location_cm": [
+        -798.3029,
+        -1842.0,
+        114.7446
+      ],
+      "dimensions_cm": [
+        399.686766633718,
+        154.0273062615831,
+        210
+      ],
+      "ue_yaw": 90.946580396799,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_003_InteriorCollision",
+      "ue_location_cm": [
+        -807.6489,
+        -1534.0,
+        111.7952
+      ],
+      "dimensions_cm": [
+        407.6499108754692,
+        145.68271391792308,
+        210
+      ],
+      "ue_yaw": 82.97968101641365,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_005_InteriorCollision",
+      "ue_location_cm": [
+        -917.374,
+        -1226.0,
+        117.3017
+      ],
+      "dimensions_cm": [
+        373.2063748732055,
+        161.30197043464648,
+        210
+      ],
+      "ue_yaw": 86.79046558964441,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_006_InteriorCollision",
+      "ue_location_cm": [
+        -994.7788,
+        -918.0,
+        124.0875
+      ],
+      "dimensions_cm": [
+        421.0163366376226,
+        161.415021574471,
+        210
+      ],
+      "ue_yaw": 88.73712092261505,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_008_InteriorCollision",
+      "ue_location_cm": [
+        -931.5575,
+        -610.0,
+        123.6663
+      ],
+      "dimensions_cm": [
+        362.4355444258627,
+        149.9327458276069,
+        210
+      ],
+      "ue_yaw": 90.14891072308725,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_009_InteriorCollision",
+      "ue_location_cm": [
+        -812.2015,
+        -302.0,
+        125.32900000000001
+      ],
+      "dimensions_cm": [
+        390.83230807192314,
+        153.60177074168547,
+        210
+      ],
+      "ue_yaw": 81.03559164565046,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_011_InteriorCollision",
+      "ue_location_cm": [
+        -770.1847,
+        6.0,
+        124.60300000000001
+      ],
+      "dimensions_cm": [
+        365.62782465461606,
+        161.6366233431702,
+        210
+      ],
+      "ue_yaw": 80.591525591508,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_012_InteriorCollision",
+      "ue_location_cm": [
+        -837.4662,
+        314.0,
+        119.0494
+      ],
+      "dimensions_cm": [
+        392.5000786401657,
+        160.48733626533408,
+        210
+      ],
+      "ue_yaw": 96.5469360153229,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_014_InteriorCollision",
+      "ue_location_cm": [
+        -941.9404,
+        622.0,
+        115.7031
+      ],
+      "dimensions_cm": [
+        436.24270154015267,
+        161.13433556228273,
+        210
+      ],
+      "ue_yaw": 85.84317340347985,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_015_InteriorCollision",
+      "ue_location_cm": [
+        -952.8703,
+        930.0,
+        120.109
+      ],
+      "dimensions_cm": [
+        413.29802229158395,
+        151.48245035797825,
+        210
+      ],
+      "ue_yaw": 97.17741192835972,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_017_InteriorCollision",
+      "ue_location_cm": [
+        -861.6591,
+        1238.0,
+        122.0353
+      ],
+      "dimensions_cm": [
+        439.2638025652629,
+        163.52700460438047,
+        210
+      ],
+      "ue_yaw": 88.75377831028474,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_018_InteriorCollision",
+      "ue_location_cm": [
+        -816.15,
+        1546.0,
+        122.03280000000001
+      ],
+      "dimensions_cm": [
+        419.05575127319577,
+        145.40693720708296,
+        210
+      ],
+      "ue_yaw": 88.13064436084434,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_020_InteriorCollision",
+      "ue_location_cm": [
+        -867.5817,
+        1854.0,
+        122.78020000000001
+      ],
+      "dimensions_cm": [
+        377.51042615486324,
+        156.9583518585056,
+        210
+      ],
+      "ue_yaw": 83.60545101993709,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_021_InteriorCollision",
+      "ue_location_cm": [
+        -855.3833,
+        2162.0,
+        118.7074
+      ],
+      "dimensions_cm": [
+        389.28685808316663,
+        147.11381888688436,
+        210
+      ],
+      "ue_yaw": 88.43373704032541,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_A_023_InteriorCollision",
+      "ue_location_cm": [
+        816.082,
+        -2150.0,
+        149.33135152123754
+      ],
+      "dimensions_cm": [
+        413.4147395162084,
+        204.54016843922395,
+        267.86430304247506
+      ],
+      "ue_yaw": 93.43708592044408,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_B_025_InteriorCollision",
+      "ue_location_cm": [
+        798.3029,
+        -1842.0,
+        167.42312689746663
+      ],
+      "dimensions_cm": [
+        389.23010996627914,
+        215.0629566822534,
+        308.31665379493325
+      ],
+      "ue_yaw": 92.78134898914541,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_C_026_InteriorCollision",
+      "ue_location_cm": [
+        807.6489,
+        -1534.0,
+        182.3436496903002
+      ],
+      "dimensions_cm": [
+        420.3631882970291,
+        192.5911391972757,
+        338.0074993806004
+      ],
+      "ue_yaw": 90.05130150364599,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_A_028_InteriorCollision",
+      "ue_location_cm": [
+        917.374,
+        -1226.0,
+        159.99382380883227
+      ],
+      "dimensions_cm": [
+        415.75056027988904,
+        211.19415241656395,
+        298.5260476176646
+      ],
+      "ue_yaw": 88.37123480106874,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_B_029_InteriorCollision",
+      "ue_location_cm": [
+        994.7788,
+        -918.0,
+        158.37228502708766
+      ],
+      "dimensions_cm": [
+        385.83677672700554,
+        203.9656830533421,
+        286.3387700541753
+      ],
+      "ue_yaw": 90.64024738707593,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_C_031_InteriorCollision",
+      "ue_location_cm": [
+        931.5575,
+        -610.0,
+        148.58130510255108
+      ],
+      "dimensions_cm": [
+        401.58830542561896,
+        214.52700926743407,
+        258.8860102051022
+      ],
+      "ue_yaw": 98.35542570542042,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_A_032_InteriorCollision",
+      "ue_location_cm": [
+        812.2015,
+        -302.0,
+        160.62030700261093
+      ],
+      "dimensions_cm": [
+        403.7496927792832,
+        197.16689276617032,
+        290.9604140052219
+      ],
+      "ue_yaw": 90.07339828469365,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_B_034_InteriorCollision",
+      "ue_location_cm": [
+        770.1847,
+        6.0,
+        178.76775362460063
+      ],
+      "dimensions_cm": [
+        397.99127647019793,
+        218.23202489759606,
+        337.00590724920124
+      ],
+      "ue_yaw": 99.83486732494552,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_C_035_InteriorCollision",
+      "ue_location_cm": [
+        837.4662,
+        314.0,
+        164.9935065614542
+      ],
+      "dimensions_cm": [
+        424.415734961354,
+        199.21541158350715,
+        309.2466131229084
+      ],
+      "ue_yaw": 89.32491628201501,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_A_037_InteriorCollision",
+      "ue_location_cm": [
+        941.9404,
+        622.0,
+        142.00106622741032
+      ],
+      "dimensions_cm": [
+        426.38001389791447,
+        207.70878866854733,
+        261.57153245482067
+      ],
+      "ue_yaw": 91.37594846582016,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_B_038_InteriorCollision",
+      "ue_location_cm": [
+        952.8703,
+        930.0,
+        172.76480445301888
+      ],
+      "dimensions_cm": [
+        431.3659568852076,
+        213.14001320536096,
+        320.18480890603774
+      ],
+      "ue_yaw": 95.6705361462688,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_C_040_InteriorCollision",
+      "ue_location_cm": [
+        861.6591,
+        1238.0,
+        153.96287679102429
+      ],
+      "dimensions_cm": [
+        362.94391930569117,
+        201.2248949435084,
+        268.13755358204855
+      ],
+      "ue_yaw": 89.1624141766863,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_A_041_InteriorCollision",
+      "ue_location_cm": [
+        816.15,
+        1546.0,
+        154.9313399950237
+      ],
+      "dimensions_cm": [
+        379.33601279326604,
+        207.57585774184128,
+        263.9384799900474
+      ],
+      "ue_yaw": 94.18558412330238,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_B_043_InteriorCollision",
+      "ue_location_cm": [
+        867.5817,
+        1854.0,
+        181.98093170057876
+      ],
+      "dimensions_cm": [
+        414.1232913915077,
+        204.33139715335122,
+        326.23246340115753
+      ],
+      "ue_yaw": 89.59196153397798,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_C_044_InteriorCollision",
+      "ue_location_cm": [
+        855.3833,
+        2162.0,
+        183.88476505657627
+      ],
+      "dimensions_cm": [
+        370.9514714409858,
+        198.84105617991216,
+        342.15293011315254
+      ],
+      "ue_yaw": 88.94042279933349,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_A_046_InteriorCollision",
+      "ue_location_cm": [
+        -760.0,
+        -2370.0,
+        126.6663
+      ],
+      "dimensions_cm": [
+        439.58728,
+        199.6939,
+        210
+      ],
+      "ue_yaw": 4.687435698830939,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_B_047_InteriorCollision",
+      "ue_location_cm": [
+        -400,
+        -2370.0,
+        114.0914
+      ],
+      "dimensions_cm": [
+        439.6575700000001,
+        199.7077,
+        210
+      ],
+      "ue_yaw": 7.946591000485796,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_A_048_InteriorCollision",
+      "ue_location_cm": [
+        400,
+        -2370.0,
+        176.707105
+      ],
+      "dimensions_cm": [
+        439.58728,
+        199.6939,
+        329.81861000000004
+      ],
+      "ue_yaw": -8.11841682913973,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_B_049_InteriorCollision",
+      "ue_location_cm": [
+        760.0,
+        -2370.0,
+        180.00911000000002
+      ],
+      "dimensions_cm": [
+        439.6575700000001,
+        199.7077,
+        329.95182000000005
+      ],
+      "ue_yaw": 8.40519410223811,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_A_050_InteriorCollision",
+      "ue_location_cm": [
+        -760.0,
+        2370.0,
+        119.9668
+      ],
+      "dimensions_cm": [
+        439.58728,
+        199.6939,
+        210
+      ],
+      "ue_yaw": 0.5261816187343946,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_B_051_InteriorCollision",
+      "ue_location_cm": [
+        -400,
+        2370.0,
+        123.2022
+      ],
+      "dimensions_cm": [
+        439.6575700000001,
+        199.7077,
+        210
+      ],
+      "ue_yaw": -0.22264206789725804,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_C_052_InteriorCollision",
+      "ue_location_cm": [
+        0,
+        2370.0,
+        176.61883500000002
+      ],
+      "dimensions_cm": [
+        439.37421000000006,
+        199.7858,
+        329.79947000000004
+      ],
+      "ue_yaw": -6.47260717226105,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_A_053_InteriorCollision",
+      "ue_location_cm": [
+        400,
+        2370.0,
+        185.81790500000002
+      ],
+      "dimensions_cm": [
+        439.58728,
+        199.6939,
+        329.81861000000004
+      ],
+      "ue_yaw": 5.340677128627425,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWall_B_054_InteriorCollision",
+      "ue_location_cm": [
+        760.0,
+        2370.0,
+        173.30961000000002
+      ],
+      "dimensions_cm": [
+        439.6575700000001,
+        199.7077,
+        329.95182000000005
+      ],
+      "ue_yaw": 1.7657422666443896,
+      "tag": "CaveBoundary"
+    },
+    {
+      "name": "CC_RockWallLow_056_InteriorCollision",
+      "ue_location_cm": [
+        0,
+        -2420.0,
+        121.46170000000001
+      ],
+      "dimensions_cm": [
+        459.82358999999997,
+        119.82464000000002,
+        210
+      ],
+      "ue_yaw": 0,
+      "tag": "CaveBoundary"
+    }
+  ],
+  "lighting_settings": {
+    "point_intensity_multiplier": 0.32,
+    "fill_intensity": 1.25
+  },
+  "spawn_cm": [
+    0,
+    -2100,
+    134.71330455758778
+  ],
+  "cutaway": "Low foreground perimeter; no roof over traversable interior; only entrance lintel outside entry spawn.",
+  "review_cameras": [
+    {
+      "name": "CaveOverview",
+      "look": [
+        0,
+        0,
+        70
+      ],
+      "width": 6000
+    },
+    {
+      "name": "CaveFork1",
+      "look": [
+        0,
+        -900,
+        100
+      ],
+      "width": 2600
+    },
+    {
+      "name": "CaveFork2",
+      "look": [
+        0,
+        800,
+        100
+      ],
+      "width": 2600
+    },
+    {
+      "name": "CaveHeart",
+      "look": [
+        260,
+        1970,
+        130
+      ],
+      "width": 2000
+    }
+  ]
+}

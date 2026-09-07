@@ -1,0 +1,1137 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "source_mesh_transforms",
+      "passed": true,
+      "detail": {
+        "count": 160,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "real_landscape",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "landscape_two_components",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "landscape_extent_50x30m",
+      "passed": true,
+      "detail": {
+        "origin": [
+          -1500.0,
+          -2500.0,
+          0.0
+        ],
+        "size_cm": [
+          3000.0,
+          5000.0
+        ]
+      }
+    },
+    {
+      "name": "CC_CrystalCyan_058_Light",
+      "passed": true,
+      "detail": {
+        "name": "CC_CrystalCyan_058_Light",
+        "lumens": 704.0,
+        "radius_cm": 740.0,
+        "cast_shadows": true
+      }
+    },
+    {
+      "name": "CC_CrystalViolet_060_Light",
+      "passed": true,
+      "detail": {
+        "name": "CC_CrystalViolet_060_Light",
+        "lumens": 704.0,
+        "radius_cm": 740.0,
+        "cast_shadows": true
+      }
+    },
+    {
+      "name": "CC_CrystalHeart_061_Light",
+      "passed": true,
+      "detail": {
+        "name": "CC_CrystalHeart_061_Light",
+        "lumens": 1600.0,
+        "radius_cm": 1050.0,
+        "cast_shadows": true
+      }
+    },
+    {
+      "name": "CC_CrystalCyan_062_Light",
+      "passed": true,
+      "detail": {
+        "name": "CC_CrystalCyan_062_Light",
+        "lumens": 704.0,
+        "radius_cm": 650.0,
+        "cast_shadows": true
+      }
+    },
+    {
+      "name": "CC_CrystalCyan_063_Light",
+      "passed": true,
+      "detail": {
+        "name": "CC_CrystalCyan_063_Light",
+        "lumens": 288.0,
+        "radius_cm": 650.0,
+        "cast_shadows": true
+      }
+    },
+    {
+      "name": "CC_CrystalCyan_064_Light",
+      "passed": true,
+      "detail": {
+        "name": "CC_CrystalCyan_064_Light",
+        "lumens": 480.0,
+        "radius_cm": 650.0,
+        "cast_shadows": true
+      }
+    },
+    {
+      "name": "CC_CrystalCyan_065_Light",
+      "passed": true,
+      "detail": {
+        "name": "CC_CrystalCyan_065_Light",
+        "lumens": 512.0,
+        "radius_cm": 650.0,
+        "cast_shadows": true
+      }
+    },
+    {
+      "name": "CC_CrystalCyan_066_Light",
+      "passed": true,
+      "detail": {
+        "name": "CC_CrystalCyan_066_Light",
+        "lumens": 416.0,
+        "radius_cm": 650.0,
+        "cast_shadows": true
+      }
+    },
+    {
+      "name": "CC_CrystalCyan_067_Light",
+      "passed": true,
+      "detail": {
+        "name": "CC_CrystalCyan_067_Light",
+        "lumens": 416.0,
+        "radius_cm": 650.0,
+        "cast_shadows": true
+      }
+    },
+    {
+      "name": "CC_CrystalCyan_068_Light",
+      "passed": true,
+      "detail": {
+        "name": "CC_CrystalCyan_068_Light",
+        "lumens": 608.0,
+        "radius_cm": 650.0,
+        "cast_shadows": true
+      }
+    },
+    {
+      "name": "CC_CrystalViolet_069_Light",
+      "passed": true,
+      "detail": {
+        "name": "CC_CrystalViolet_069_Light",
+        "lumens": 608.0,
+        "radius_cm": 620.0,
+        "cast_shadows": true
+      }
+    },
+    {
+      "name": "CC_CrystalViolet_070_Light",
+      "passed": true,
+      "detail": {
+        "name": "CC_CrystalViolet_070_Light",
+        "lumens": 576.0,
+        "radius_cm": 620.0,
+        "cast_shadows": true
+      }
+    },
+    {
+      "name": "CC_CrystalViolet_071_Light",
+      "passed": true,
+      "detail": {
+        "name": "CC_CrystalViolet_071_Light",
+        "lumens": 576.0,
+        "radius_cm": 620.0,
+        "cast_shadows": true
+      }
+    },
+    {
+      "name": "CC_CrystalViolet_072_Light",
+      "passed": true,
+      "detail": {
+        "name": "CC_CrystalViolet_072_Light",
+        "lumens": 480.0,
+        "radius_cm": 620.0,
+        "cast_shadows": true
+      }
+    },
+    {
+      "name": "CC_CrystalViolet_073_Light",
+      "passed": true,
+      "detail": {
+        "name": "CC_CrystalViolet_073_Light",
+        "lumens": 576.0,
+        "radius_cm": 620.0,
+        "cast_shadows": true
+      }
+    },
+    {
+      "name": "CC_CrystalCyan_074_Light",
+      "passed": true,
+      "detail": {
+        "name": "CC_CrystalCyan_074_Light",
+        "lumens": 800.0,
+        "radius_cm": 650.0,
+        "cast_shadows": true
+      }
+    },
+    {
+      "name": "CC_CrystalCyan_075_Light",
+      "passed": true,
+      "detail": {
+        "name": "CC_CrystalCyan_075_Light",
+        "lumens": 608.0,
+        "radius_cm": 650.0,
+        "cast_shadows": true
+      }
+    },
+    {
+      "name": "CC_CrystalCyan_076_Light",
+      "passed": true,
+      "detail": {
+        "name": "CC_CrystalCyan_076_Light",
+        "lumens": 288.0,
+        "radius_cm": 650.0,
+        "cast_shadows": true
+      }
+    },
+    {
+      "name": "CC_IslandInteriorCollision_1",
+      "passed": true,
+      "detail": {
+        "name": "CC_IslandInteriorCollision_1",
+        "ue_location_cm": [
+          0,
+          -900,
+          116.20180810628288
+        ],
+        "dimensions_cm": [
+          380,
+          660,
+          210
+        ],
+        "tag": "CaveIsland"
+      }
+    },
+    {
+      "name": "CC_IslandInteriorCollision_2",
+      "passed": true,
+      "detail": {
+        "name": "CC_IslandInteriorCollision_2",
+        "ue_location_cm": [
+          0,
+          800,
+          142.09773258470153
+        ],
+        "dimensions_cm": [
+          380,
+          660,
+          210
+        ],
+        "tag": "CaveIsland"
+      }
+    },
+    {
+      "name": "CC_RockWallLow_000_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWallLow_000_InteriorCollision",
+        "ue_location_cm": [
+          -816.082,
+          -2150.0,
+          121.8933
+        ],
+        "dimensions_cm": [
+          436.4608497630218,
+          154.10610435471764,
+          210
+        ],
+        "ue_yaw": 80.53295082977334,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWallLow_002_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWallLow_002_InteriorCollision",
+        "ue_location_cm": [
+          -798.3029,
+          -1842.0,
+          114.7446
+        ],
+        "dimensions_cm": [
+          399.686766633718,
+          154.0273062615831,
+          210
+        ],
+        "ue_yaw": 90.946580396799,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWallLow_003_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWallLow_003_InteriorCollision",
+        "ue_location_cm": [
+          -807.6489,
+          -1534.0,
+          111.7952
+        ],
+        "dimensions_cm": [
+          407.6499108754692,
+          145.68271391792308,
+          210
+        ],
+        "ue_yaw": 82.97968101641365,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWallLow_005_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWallLow_005_InteriorCollision",
+        "ue_location_cm": [
+          -917.374,
+          -1226.0,
+          117.3017
+        ],
+        "dimensions_cm": [
+          373.2063748732055,
+          161.30197043464648,
+          210
+        ],
+        "ue_yaw": 86.79046558964441,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWallLow_006_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWallLow_006_InteriorCollision",
+        "ue_location_cm": [
+          -994.7788,
+          -918.0,
+          124.0875
+        ],
+        "dimensions_cm": [
+          421.0163366376226,
+          161.415021574471,
+          210
+        ],
+        "ue_yaw": 88.73712092261505,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWallLow_008_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWallLow_008_InteriorCollision",
+        "ue_location_cm": [
+          -931.5575,
+          -610.0,
+          123.6663
+        ],
+        "dimensions_cm": [
+          362.4355444258627,
+          149.9327458276069,
+          210
+        ],
+        "ue_yaw": 90.14891072308725,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWallLow_009_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWallLow_009_InteriorCollision",
+        "ue_location_cm": [
+          -812.2015,
+          -302.0,
+          125.32900000000001
+        ],
+        "dimensions_cm": [
+          390.83230807192314,
+          153.60177074168547,
+          210
+        ],
+        "ue_yaw": 81.03559164565046,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWallLow_011_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWallLow_011_InteriorCollision",
+        "ue_location_cm": [
+          -770.1847,
+          6.0,
+          124.60300000000001
+        ],
+        "dimensions_cm": [
+          365.62782465461606,
+          161.6366233431702,
+          210
+        ],
+        "ue_yaw": 80.591525591508,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWallLow_012_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWallLow_012_InteriorCollision",
+        "ue_location_cm": [
+          -837.4662,
+          314.0,
+          119.0494
+        ],
+        "dimensions_cm": [
+          392.5000786401657,
+          160.48733626533408,
+          210
+        ],
+        "ue_yaw": 96.5469360153229,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWallLow_014_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWallLow_014_InteriorCollision",
+        "ue_location_cm": [
+          -941.9404,
+          622.0,
+          115.7031
+        ],
+        "dimensions_cm": [
+          436.24270154015267,
+          161.13433556228273,
+          210
+        ],
+        "ue_yaw": 85.84317340347985,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWallLow_015_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWallLow_015_InteriorCollision",
+        "ue_location_cm": [
+          -952.8703,
+          930.0,
+          120.109
+        ],
+        "dimensions_cm": [
+          413.29802229158395,
+          151.48245035797825,
+          210
+        ],
+        "ue_yaw": 97.17741192835972,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWallLow_017_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWallLow_017_InteriorCollision",
+        "ue_location_cm": [
+          -861.6591,
+          1238.0,
+          122.0353
+        ],
+        "dimensions_cm": [
+          439.2638025652629,
+          163.52700460438047,
+          210
+        ],
+        "ue_yaw": 88.75377831028474,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWallLow_018_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWallLow_018_InteriorCollision",
+        "ue_location_cm": [
+          -816.15,
+          1546.0,
+          122.03280000000001
+        ],
+        "dimensions_cm": [
+          419.05575127319577,
+          145.40693720708296,
+          210
+        ],
+        "ue_yaw": 88.13064436084434,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWallLow_020_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWallLow_020_InteriorCollision",
+        "ue_location_cm": [
+          -867.5817,
+          1854.0,
+          122.78020000000001
+        ],
+        "dimensions_cm": [
+          377.51042615486324,
+          156.9583518585056,
+          210
+        ],
+        "ue_yaw": 83.60545101993709,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWallLow_021_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWallLow_021_InteriorCollision",
+        "ue_location_cm": [
+          -855.3833,
+          2162.0,
+          118.7074
+        ],
+        "dimensions_cm": [
+          389.28685808316663,
+          147.11381888688436,
+          210
+        ],
+        "ue_yaw": 88.43373704032541,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_A_023_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_A_023_InteriorCollision",
+        "ue_location_cm": [
+          816.082,
+          -2150.0,
+          149.33135152123754
+        ],
+        "dimensions_cm": [
+          413.4147395162084,
+          204.54016843922395,
+          267.86430304247506
+        ],
+        "ue_yaw": 93.43708592044408,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_B_025_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_B_025_InteriorCollision",
+        "ue_location_cm": [
+          798.3029,
+          -1842.0,
+          167.42312689746663
+        ],
+        "dimensions_cm": [
+          389.23010996627914,
+          215.0629566822534,
+          308.31665379493325
+        ],
+        "ue_yaw": 92.78134898914541,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_C_026_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_C_026_InteriorCollision",
+        "ue_location_cm": [
+          807.6489,
+          -1534.0,
+          182.3436496903002
+        ],
+        "dimensions_cm": [
+          420.3631882970291,
+          192.5911391972757,
+          338.0074993806004
+        ],
+        "ue_yaw": 90.05130150364599,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_A_028_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_A_028_InteriorCollision",
+        "ue_location_cm": [
+          917.374,
+          -1226.0,
+          159.99382380883227
+        ],
+        "dimensions_cm": [
+          415.75056027988904,
+          211.19415241656395,
+          298.5260476176646
+        ],
+        "ue_yaw": 88.37123480106874,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_B_029_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_B_029_InteriorCollision",
+        "ue_location_cm": [
+          994.7788,
+          -918.0,
+          158.37228502708766
+        ],
+        "dimensions_cm": [
+          385.83677672700554,
+          203.9656830533421,
+          286.3387700541753
+        ],
+        "ue_yaw": 90.64024738707593,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_C_031_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_C_031_InteriorCollision",
+        "ue_location_cm": [
+          931.5575,
+          -610.0,
+          148.58130510255108
+        ],
+        "dimensions_cm": [
+          401.58830542561896,
+          214.52700926743407,
+          258.8860102051022
+        ],
+        "ue_yaw": 98.35542570542042,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_A_032_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_A_032_InteriorCollision",
+        "ue_location_cm": [
+          812.2015,
+          -302.0,
+          160.62030700261093
+        ],
+        "dimensions_cm": [
+          403.7496927792832,
+          197.16689276617032,
+          290.9604140052219
+        ],
+        "ue_yaw": 90.07339828469365,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_B_034_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_B_034_InteriorCollision",
+        "ue_location_cm": [
+          770.1847,
+          6.0,
+          178.76775362460063
+        ],
+        "dimensions_cm": [
+          397.99127647019793,
+          218.23202489759606,
+          337.00590724920124
+        ],
+        "ue_yaw": 99.83486732494552,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_C_035_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_C_035_InteriorCollision",
+        "ue_location_cm": [
+          837.4662,
+          314.0,
+          164.9935065614542
+        ],
+        "dimensions_cm": [
+          424.415734961354,
+          199.21541158350715,
+          309.2466131229084
+        ],
+        "ue_yaw": 89.32491628201501,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_A_037_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_A_037_InteriorCollision",
+        "ue_location_cm": [
+          941.9404,
+          622.0,
+          142.00106622741032
+        ],
+        "dimensions_cm": [
+          426.38001389791447,
+          207.70878866854733,
+          261.57153245482067
+        ],
+        "ue_yaw": 91.37594846582016,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_B_038_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_B_038_InteriorCollision",
+        "ue_location_cm": [
+          952.8703,
+          930.0,
+          172.76480445301888
+        ],
+        "dimensions_cm": [
+          431.3659568852076,
+          213.14001320536096,
+          320.18480890603774
+        ],
+        "ue_yaw": 95.6705361462688,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_C_040_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_C_040_InteriorCollision",
+        "ue_location_cm": [
+          861.6591,
+          1238.0,
+          153.96287679102429
+        ],
+        "dimensions_cm": [
+          362.94391930569117,
+          201.2248949435084,
+          268.13755358204855
+        ],
+        "ue_yaw": 89.1624141766863,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_A_041_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_A_041_InteriorCollision",
+        "ue_location_cm": [
+          816.15,
+          1546.0,
+          154.9313399950237
+        ],
+        "dimensions_cm": [
+          379.33601279326604,
+          207.57585774184128,
+          263.9384799900474
+        ],
+        "ue_yaw": 94.18558412330238,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_B_043_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_B_043_InteriorCollision",
+        "ue_location_cm": [
+          867.5817,
+          1854.0,
+          181.98093170057876
+        ],
+        "dimensions_cm": [
+          414.1232913915077,
+          204.33139715335122,
+          326.23246340115753
+        ],
+        "ue_yaw": 89.59196153397798,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_C_044_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_C_044_InteriorCollision",
+        "ue_location_cm": [
+          855.3833,
+          2162.0,
+          183.88476505657627
+        ],
+        "dimensions_cm": [
+          370.9514714409858,
+          198.84105617991216,
+          342.15293011315254
+        ],
+        "ue_yaw": 88.94042279933349,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_A_046_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_A_046_InteriorCollision",
+        "ue_location_cm": [
+          -760.0,
+          -2370.0,
+          126.6663
+        ],
+        "dimensions_cm": [
+          439.58728,
+          199.6939,
+          210
+        ],
+        "ue_yaw": 4.687435698830939,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_B_047_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_B_047_InteriorCollision",
+        "ue_location_cm": [
+          -400,
+          -2370.0,
+          114.0914
+        ],
+        "dimensions_cm": [
+          439.6575700000001,
+          199.7077,
+          210
+        ],
+        "ue_yaw": 7.946591000485796,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_A_048_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_A_048_InteriorCollision",
+        "ue_location_cm": [
+          400,
+          -2370.0,
+          176.707105
+        ],
+        "dimensions_cm": [
+          439.58728,
+          199.6939,
+          329.81861000000004
+        ],
+        "ue_yaw": -8.11841682913973,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_B_049_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_B_049_InteriorCollision",
+        "ue_location_cm": [
+          760.0,
+          -2370.0,
+          180.00911000000002
+        ],
+        "dimensions_cm": [
+          439.6575700000001,
+          199.7077,
+          329.95182000000005
+        ],
+        "ue_yaw": 8.40519410223811,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_A_050_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_A_050_InteriorCollision",
+        "ue_location_cm": [
+          -760.0,
+          2370.0,
+          119.9668
+        ],
+        "dimensions_cm": [
+          439.58728,
+          199.6939,
+          210
+        ],
+        "ue_yaw": 0.5261816187343946,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_B_051_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_B_051_InteriorCollision",
+        "ue_location_cm": [
+          -400,
+          2370.0,
+          123.2022
+        ],
+        "dimensions_cm": [
+          439.6575700000001,
+          199.7077,
+          210
+        ],
+        "ue_yaw": -0.22264206789725804,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_C_052_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_C_052_InteriorCollision",
+        "ue_location_cm": [
+          0,
+          2370.0,
+          176.61883500000002
+        ],
+        "dimensions_cm": [
+          439.37421000000006,
+          199.7858,
+          329.79947000000004
+        ],
+        "ue_yaw": -6.47260717226105,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_A_053_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_A_053_InteriorCollision",
+        "ue_location_cm": [
+          400,
+          2370.0,
+          185.81790500000002
+        ],
+        "dimensions_cm": [
+          439.58728,
+          199.6939,
+          329.81861000000004
+        ],
+        "ue_yaw": 5.340677128627425,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWall_B_054_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWall_B_054_InteriorCollision",
+        "ue_location_cm": [
+          760.0,
+          2370.0,
+          173.30961000000002
+        ],
+        "dimensions_cm": [
+          439.6575700000001,
+          199.7077,
+          329.95182000000005
+        ],
+        "ue_yaw": 1.7657422666443896,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "CC_RockWallLow_056_InteriorCollision",
+      "passed": true,
+      "detail": {
+        "name": "CC_RockWallLow_056_InteriorCollision",
+        "ue_location_cm": [
+          0,
+          -2420.0,
+          121.46170000000001
+        ],
+        "dimensions_cm": [
+          459.82358999999997,
+          119.82464000000002,
+          210
+        ],
+        "ue_yaw": 0,
+        "tag": "CaveBoundary"
+      }
+    },
+    {
+      "name": "two_fork_islands",
+      "passed": true,
+      "detail": "First cyan island and second violet island"
+    },
+    {
+      "name": "cutaway_foreground",
+      "passed": true,
+      "detail": "Near camera perimeter uses low walls; no ceiling over corridors"
+    }
+  ],
+  "actor_count": 229,
+  "mesh_instances": 160,
+  "point_lights": [
+    {
+      "name": "CC_CrystalCyan_058_Light",
+      "lumens": 704.0,
+      "radius_cm": 740.0,
+      "cast_shadows": true
+    },
+    {
+      "name": "CC_CrystalViolet_060_Light",
+      "lumens": 704.0,
+      "radius_cm": 740.0,
+      "cast_shadows": true
+    },
+    {
+      "name": "CC_CrystalHeart_061_Light",
+      "lumens": 1600.0,
+      "radius_cm": 1050.0,
+      "cast_shadows": true
+    },
+    {
+      "name": "CC_CrystalCyan_062_Light",
+      "lumens": 704.0,
+      "radius_cm": 650.0,
+      "cast_shadows": true
+    },
+    {
+      "name": "CC_CrystalCyan_063_Light",
+      "lumens": 288.0,
+      "radius_cm": 650.0,
+      "cast_shadows": true
+    },
+    {
+      "name": "CC_CrystalCyan_064_Light",
+      "lumens": 480.0,
+      "radius_cm": 650.0,
+      "cast_shadows": true
+    },
+    {
+      "name": "CC_CrystalCyan_065_Light",
+      "lumens": 512.0,
+      "radius_cm": 650.0,
+      "cast_shadows": true
+    },
+    {
+      "name": "CC_CrystalCyan_066_Light",
+      "lumens": 416.0,
+      "radius_cm": 650.0,
+      "cast_shadows": true
+    },
+    {
+      "name": "CC_CrystalCyan_067_Light",
+      "lumens": 416.0,
+      "radius_cm": 650.0,
+      "cast_shadows": true
+    },
+    {
+      "name": "CC_CrystalCyan_068_Light",
+      "lumens": 608.0,
+      "radius_cm": 650.0,
+      "cast_shadows": true
+    },
+    {
+      "name": "CC_CrystalViolet_069_Light",
+      "lumens": 608.0,
+      "radius_cm": 620.0,
+      "cast_shadows": true
+    },
+    {
+      "name": "CC_CrystalViolet_070_Light",
+      "lumens": 576.0,
+      "radius_cm": 620.0,
+      "cast_shadows": true
+    },
+    {
+      "name": "CC_CrystalViolet_071_Light",
+      "lumens": 576.0,
+      "radius_cm": 620.0,
+      "cast_shadows": true
+    },
+    {
+      "name": "CC_CrystalViolet_072_Light",
+      "lumens": 480.0,
+      "radius_cm": 620.0,
+      "cast_shadows": true
+    },
+    {
+      "name": "CC_CrystalViolet_073_Light",
+      "lumens": 576.0,
+      "radius_cm": 620.0,
+      "cast_shadows": true
+    },
+    {
+      "name": "CC_CrystalCyan_074_Light",
+      "lumens": 800.0,
+      "radius_cm": 650.0,
+      "cast_shadows": true
+    },
+    {
+      "name": "CC_CrystalCyan_075_Light",
+      "lumens": 608.0,
+      "radius_cm": 650.0,
+      "cast_shadows": true
+    },
+    {
+      "name": "CC_CrystalCyan_076_Light",
+      "lumens": 288.0,
+      "radius_cm": 650.0,
+      "cast_shadows": true
+    }
+  ],
+  "map": "/Game/Astra/Maps/L_AstraCrystalCave"
+}

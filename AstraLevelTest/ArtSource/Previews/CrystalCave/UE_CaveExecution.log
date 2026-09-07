@@ -1,0 +1,44 @@
+[2026.09.07-08.03.20:008][  0]LogAstraGraphics: Display: Requested=Native1080 actual=Native1080 support=NotSupported DLSS=0 output=1600x1000 screenPercentage=100.00 fallback= settingsSaved=1
+[2026.09.07-08.03.23:822][  5]LogTemp: Display: ASTRA CAVE cave_controller_and_camera: PASS Calico, pitch -58 yaw 0, orthographic width 2300cm
+[2026.09.07-08.03.23:822][  5]LogTemp: Display: ASTRA CAVE forest_demo_unbound: PASS P has no binding in the cave controller
+[2026.09.07-08.03.25:376][ 13]LogTemp: Display: ASTRA CAVE input_W: PASS travel_cm=138.35 lateral_cm=0.00 delta=X=138.350 Y=0.000 Z=-1.995 grounded=1 camera_fixed=1
+[2026.09.07-08.03.26:758][ 20]LogTemp: Display: ASTRA CAVE input_A: PASS travel_cm=132.43 lateral_cm=0.00 delta=X=0.000 Y=-132.430 Z=-1.769 grounded=1 camera_fixed=1
+[2026.09.07-08.03.27:989][ 28]LogTemp: Display: ASTRA CAVE input_S: PASS travel_cm=121.64 lateral_cm=0.00 delta=X=-121.638 Y=0.000 Z=0.631 grounded=1 camera_fixed=1
+[2026.09.07-08.03.29:197][ 47]LogTemp: Display: ASTRA CAVE input_D: PASS travel_cm=104.99 lateral_cm=0.00 delta=X=0.000 Y=104.995 Z=2.593 grounded=1 camera_fixed=1
+[2026.09.07-08.03.29:197][ 47]LogTemp: Display: ASTRA CAVE route full_traversal starting (1/9)
+[2026.09.07-08.03.51:566][526]LogTemp: Display: ASTRA CAVE full_traversal: PASS Every waypoint reached by actual WASD with continuous supported movement
+[2026.09.07-08.03.51:566][526]LogTemp: Display: ASTRA CAVE route fork1_left starting (2/9)
+[2026.09.07-08.04.00:499][794]LogTemp: Display: ASTRA CAVE fork1_left: PASS Every waypoint reached by actual WASD with continuous supported movement
+[2026.09.07-08.04.00:500][794]LogTemp: Display: ASTRA CAVE route fork1_right starting (3/9)
+[2026.09.07-08.04.09:379][ 59]LogTemp: Display: ASTRA CAVE fork1_right: PASS Every waypoint reached by actual WASD with continuous supported movement
+[2026.09.07-08.04.09:379][ 59]LogTemp: Display: ASTRA CAVE route fork2_left starting (4/9)
+[2026.09.07-08.04.18:457][331]LogTemp: Display: ASTRA CAVE fork2_left: PASS Every waypoint reached by actual WASD with continuous supported movement
+[2026.09.07-08.04.18:457][331]LogTemp: Display: ASTRA CAVE route fork2_right starting (5/9)
+[2026.09.07-08.04.27:543][603]LogTemp: Display: ASTRA CAVE fork2_right: PASS Every waypoint reached by actual WASD with continuous supported movement
+[2026.09.07-08.04.27:544][603]LogTemp: Display: ASTRA CAVE route island1_collision starting (6/9)
+[2026.09.07-08.04.30:545][693]LogTemp: Display: ASTRA CAVE island1_collision: PASS Held WASD into the tagged barrier for 1.2 seconds; capsule stopped at expected collision surface
+[2026.09.07-08.04.30:545][693]LogTemp: Display: ASTRA CAVE route island2_collision starting (7/9)
+[2026.09.07-08.04.33:614][785]LogTemp: Display: ASTRA CAVE island2_collision: PASS Held WASD into the tagged barrier for 1.2 seconds; capsule stopped at expected collision surface
+[2026.09.07-08.04.33:614][785]LogTemp: Display: ASTRA CAVE route boundary_collision starting (8/9)
+[2026.09.07-08.04.35:915][854]LogTemp: Display: ASTRA CAVE boundary_collision: PASS Held WASD into the tagged barrier for 1.2 seconds; capsule stopped at expected collision surface
+[2026.09.07-08.04.35:915][854]LogTemp: Display: ASTRA CAVE route entrance_collision starting (9/9)
+[2026.09.07-08.04.38:499][931]LogTemp: Display: ASTRA CAVE entrance_collision: PASS Held WASD into the tagged barrier for 1.2 seconds; capsule stopped at expected collision surface
+[2026.09.07-08.04.38:504][931]LogTemp: Display: ASTRA CAVE COMPLETE passed=1 saved=1 completed_routes=9/9 failed_checks=0
+[2026.09.07-08.03.08:135][  2]LogPython: CAVE RELIGHT SAVED: 18 point lights x0.32; dim diffuse fill1.25, no fill shadow
+[2026.09.07-08.03.08:141][  2]LogPython: CAVE SAVED VALIDATION PASS
+[2026.09.07-08.05.05:090][  0]LogAstraGraphics: Display: Requested=Native1080 actual=Native1080 support=NotSupported DLSS=0 output=1600x1000 screenPercentage=100.00 fallback= settingsSaved=1
+[2026.09.07-08.05.24:069][525]LogTemp: Display: ASTRA REVIEW capture CaveOverview at world 18.006s, validation 18.006s
+[2026.09.07-08.05.24:489][525]LogCore: Display: Tracing Screenshot "UE_CaveOverview" taken with size: 1600 x 1000
+[2026.09.07-08.07.51:200][  0]LogAstraGraphics: Display: Requested=Native1080 actual=Native1080 support=NotSupported DLSS=0 output=1600x1000 screenPercentage=100.00 fallback= settingsSaved=1
+[2026.09.07-08.07.51:200][  0]LogTemp: Display: ASTRA CAVE LIGHT A/B: disabled 18 tagged crystal point lights; emissive materials preserved
+[2026.09.07-08.08.09:997][511]LogTemp: Display: ASTRA REVIEW capture CaveFork1 at world 18.018s, validation 18.018s
+[2026.09.07-08.08.10:577][511]LogCore: Display: Tracing Screenshot "UE_CaveFork1" taken with size: 1600 x 1000
+[2026.09.07-08.06.09:517][  0]LogAstraGraphics: Display: Requested=Native1080 actual=Native1080 support=NotSupported DLSS=0 output=1600x1000 screenPercentage=100.00 fallback= settingsSaved=1
+[2026.09.07-08.06.28:470][523]LogTemp: Display: ASTRA REVIEW capture CaveFork2 at world 18.027s, validation 18.026s
+[2026.09.07-08.06.28:890][523]LogCore: Display: Tracing Screenshot "UE_CaveFork2" taken with size: 1600 x 1000
+[2026.09.07-08.06.43:722][  0]LogAstraGraphics: Display: Requested=Native1080 actual=Native1080 support=NotSupported DLSS=0 output=1600x1000 screenPercentage=100.00 fallback= settingsSaved=1
+[2026.09.07-08.07.03:081][496]LogTemp: Display: ASTRA REVIEW capture CaveHeart at world 18.002s, validation 18.001s
+[2026.09.07-08.07.04:321][496]LogCore: Display: Tracing Screenshot "UE_CaveHeart" taken with size: 1600 x 1000
+[2026.09.07-08.07.18:469][  0]LogAstraGraphics: Display: Requested=Native1080 actual=Native1080 support=NotSupported DLSS=0 output=1600x1000 screenPercentage=100.00 fallback= settingsSaved=1
+[2026.09.07-08.07.37:909][525]LogTemp: Display: ASTRA REVIEW capture CaveGameplay at world 18.014s, validation 18.014s
+[2026.09.07-08.07.38:329][525]LogCore: Display: Tracing Screenshot "UE_CaveGameplay" taken with size: 1600 x 1000
