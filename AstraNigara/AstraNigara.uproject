@@ -1,0 +1,11 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.7",
+  "Category": "VFX",
+  "Description": "Simple Niagara fountain showcase",
+  "Plugins": [
+    { "Name": "Niagara", "Enabled": true },
+    { "Name": "PythonScriptPlugin", "Enabled": true },
+    { "Name": "EditorScriptingUtilities", "Enabled": true }
+  ]
+}
