@@ -1,0 +1,2366 @@
+{
+  "status": "success",
+  "map": "/Game/Astra/Maps/L_AstraWoodland",
+  "backup_map": "D:\\github\\ue5astra\\AstraLevelTest\\ArtSource\\Backups\\BeforeLifeProps\\L_AstraWoodland.umap",
+  "new_mesh_count": 15,
+  "new_actor_count": 15,
+  "placements": [
+    {
+      "name": "LifeProps_FishingDock",
+      "ue_location_cm": [
+        400.0,
+        2800.0,
+        -150.0
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      },
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "folder": "LifeProps/Fishing",
+      "actor_collision": true,
+      "hidden_in_game": false,
+      "mesh": "/Game/Astra/Meshes/SM_FishingDock.SM_FishingDock",
+      "collision_profile": "BlockAll",
+      "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "asset_id": "SM_FishingDock",
+      "position_error_cm": 0.0
+    },
+    {
+      "name": "LifeProps_RodStand",
+      "ue_location_cm": [
+        939.9999618530273,
+        2900.0,
+        85.39999723434448
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      },
+      "scale": [
+        0.8600000143051147,
+        0.8600000143051147,
+        0.8600000143051147
+      ],
+      "folder": "LifeProps/Fishing",
+      "actor_collision": false,
+      "hidden_in_game": false,
+      "mesh": "/Game/Astra/Meshes/SM_FishingRodStand.SM_FishingRodStand",
+      "collision_profile": "NoCollision",
+      "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+      "asset_id": "SM_FishingRodStand",
+      "position_error_cm": 0.0
+    },
+    {
+      "name": "LifeProps_Chair",
+      "ue_location_cm": [
+        825.0,
+        2900.0,
+        85.39999723434448
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      },
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "folder": "LifeProps/Fishing",
+      "actor_collision": false,
+      "hidden_in_game": false,
+      "mesh": "/Game/Astra/Meshes/SM_FishingChair.SM_FishingChair",
+      "collision_profile": "NoCollision",
+      "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+      "asset_id": "SM_FishingChair",
+      "position_error_cm": 0.0
+    },
+    {
+      "name": "LifeProps_Bucket",
+      "ue_location_cm": [
+        925.0,
+        2685.0000381469727,
+        85.39999723434448
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      },
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "folder": "LifeProps/Fishing",
+      "actor_collision": false,
+      "hidden_in_game": false,
+      "mesh": "/Game/Astra/Meshes/SM_FishBucket.SM_FishBucket",
+      "collision_profile": "NoCollision",
+      "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+      "asset_id": "SM_FishBucket",
+      "position_error_cm": 0.0
+    },
+    {
+      "name": "LifeProps_TackleBox",
+      "ue_location_cm": [
+        755.0000190734863,
+        2685.0000381469727,
+        85.39999723434448
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0.0,
+        "yaw": -12.0,
+        "roll": 0.0
+      },
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "folder": "LifeProps/Fishing",
+      "actor_collision": false,
+      "hidden_in_game": false,
+      "mesh": "/Game/Astra/Meshes/SM_FishingTackleBox.SM_FishingTackleBox",
+      "collision_profile": "NoCollision",
+      "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+      "asset_id": "SM_FishingTackleBox",
+      "position_error_cm": 0.0
+    },
+    {
+      "name": "LifeProps_Clothesline",
+      "ue_location_cm": [
+        1050.0,
+        4515.000152587891,
+        155.00757694244385
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      },
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "folder": "LifeProps/Home",
+      "actor_collision": true,
+      "hidden_in_game": false,
+      "mesh": "/Game/Astra/Meshes/SM_HomeClothesline.SM_HomeClothesline",
+      "collision_profile": "BlockAll",
+      "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "asset_id": "SM_HomeClothesline",
+      "position_error_cm": 0.0
+    },
+    {
+      "name": "LifeProps_VegetablePatch",
+      "ue_location_cm": [
+        1400.0,
+        4454.999923706055,
+        116.93888902664185
+      ],
+      "ue_rotation_deg": {
+        "pitch": -8.574246406555174,
+        "yaw": 0.7668108344078057,
+        "roll": -10.20211601257324
+      },
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "folder": "LifeProps/Home",
+      "actor_collision": false,
+      "hidden_in_game": false,
+      "mesh": "/Game/Astra/Meshes/SM_VegetablePatch.SM_VegetablePatch",
+      "collision_profile": "NoCollision",
+      "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+      "asset_id": "SM_VegetablePatch",
+      "position_error_cm": 0.0
+    },
+    {
+      "name": "LifeProps_WateringTools",
+      "ue_location_cm": [
+        1219.9999809265137,
+        4465.000152587891,
+        161.56929731369019
+      ],
+      "ue_rotation_deg": {
+        "pitch": -10.626792907714842,
+        "yaw": 1.386648535728453,
+        "roll": -14.827138900756829
+      },
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "folder": "LifeProps/Home",
+      "actor_collision": true,
+      "hidden_in_game": false,
+      "mesh": "/Game/Astra/Meshes/SM_WateringTools.SM_WateringTools",
+      "collision_profile": "BlockAll",
+      "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "asset_id": "SM_WateringTools",
+      "position_error_cm": 0.0
+    },
+    {
+      "name": "LifeProps_BootsAndBroom",
+      "ue_location_cm": [
+        1560.0000381469727,
+        4270.000076293945,
+        97.6003348827362
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      },
+      "scale": [
+        0.8199999928474426,
+        0.8199999928474426,
+        0.8199999928474426
+      ],
+      "folder": "LifeProps/Home",
+      "actor_collision": false,
+      "hidden_in_game": false,
+      "mesh": "/Game/Astra/Meshes/SM_BootsAndBroom.SM_BootsAndBroom",
+      "collision_profile": "NoCollision",
+      "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+      "asset_id": "SM_BootsAndBroom",
+      "position_error_cm": 0.0
+    },
+    {
+      "name": "LifeProps_HerbDryingRack",
+      "ue_location_cm": [
+        1600.0,
+        3700.0,
+        92.85944700241089
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      },
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "folder": "LifeProps/Home",
+      "actor_collision": true,
+      "hidden_in_game": false,
+      "mesh": "/Game/Astra/Meshes/SM_HerbDryingRack.SM_HerbDryingRack",
+      "collision_profile": "BlockAll",
+      "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "asset_id": "SM_HerbDryingRack",
+      "position_error_cm": 0.0
+    },
+    {
+      "name": "LifeProps_Handcart",
+      "ue_location_cm": [
+        919.9999809265137,
+        4100.0,
+        123.86140823364258
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0.5767543911933893,
+        "yaw": 14.959340095520027,
+        "roll": -8.065454483032225
+      },
+      "scale": [
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "folder": "LifeProps/Home",
+      "actor_collision": true,
+      "hidden_in_game": false,
+      "mesh": "/Game/Astra/Meshes/SM_WoodHandcart.SM_WoodHandcart",
+      "collision_profile": "BlockAll",
+      "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "asset_id": "SM_WoodHandcart",
+      "position_error_cm": 0.0
+    },
+    {
+      "name": "LifeProps_ChoppingStump",
+      "ue_location_cm": [
+        3920.0000762939453,
+        345.0000047683716,
+        520.2102661132812
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0.0,
+        "yaw": -18.0,
+        "roll": 0.0
+      },
+      "scale": [
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "folder": "LifeProps/Camp",
+      "actor_collision": true,
+      "hidden_in_game": false,
+      "mesh": "/Game/Astra/Meshes/SM_ChoppingStump.SM_ChoppingStump",
+      "collision_profile": "BlockAll",
+      "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "asset_id": "SM_ChoppingStump",
+      "position_error_cm": 0.0
+    },
+    {
+      "name": "LifeProps_Picnic",
+      "ue_location_cm": [
+        -800.0,
+        -1650.0,
+        51.79176926612854
+      ],
+      "ue_rotation_deg": {
+        "pitch": 1.5250266790390015,
+        "yaw": -12.011927604675295,
+        "roll": -0.89622688293457
+      },
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "folder": "LifeProps/Clearing",
+      "actor_collision": false,
+      "hidden_in_game": false,
+      "mesh": "/Game/Astra/Meshes/SM_PicnicSet.SM_PicnicSet",
+      "collision_profile": "NoCollision",
+      "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+      "asset_id": "SM_PicnicSet",
+      "position_error_cm": 0.0
+    },
+    {
+      "name": "LifeProps_ForagingBasket",
+      "ue_location_cm": [
+        -609.9999904632568,
+        -1700.0,
+        57.914572954177856
+      ],
+      "ue_rotation_deg": {
+        "pitch": 2.23116135597229,
+        "yaw": 19.998327255249038,
+        "roll": -0.08598622679710405
+      },
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "folder": "LifeProps/Clearing",
+      "actor_collision": false,
+      "hidden_in_game": false,
+      "mesh": "/Game/Astra/Meshes/SM_ForagingBasket.SM_ForagingBasket",
+      "collision_profile": "NoCollision",
+      "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+      "asset_id": "SM_ForagingBasket",
+      "position_error_cm": 0.0
+    },
+    {
+      "name": "LifeProps_BridgeRepair",
+      "ue_location_cm": [
+        -2679.9999237060547,
+        -1319.9999809265137,
+        68.41955780982971
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.05300028249621393,
+        "yaw": 15.00041007995606,
+        "roll": -0.883033990859985
+      },
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "folder": "LifeProps/BridgeRepair",
+      "actor_collision": false,
+      "hidden_in_game": false,
+      "mesh": "/Game/Astra/Meshes/SM_BridgeRepairSupplies.SM_BridgeRepairSupplies",
+      "collision_profile": "NoCollision",
+      "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+      "asset_id": "SM_BridgeRepairSupplies",
+      "position_error_cm": 0.0
+    }
+  ],
+  "preserved_originals": [
+    {
+      "name": "MossRock_04_0192",
+      "before": {
+        "name": "MossRock_04_0192",
+        "ue_location_cm": [
+          690.4644012451172,
+          2995.034980773926,
+          -27.607867121696472
+        ],
+        "ue_rotation_deg": {
+          "pitch": -7.379728317260745,
+          "yaw": 92.55487823486328,
+          "roll": 1.0162792205810547
+        },
+        "scale": [
+          0.6366528272628784,
+          0.6366528272628784,
+          0.6366528272628784
+        ],
+        "folder": "Rocks/LakeShore",
+        "actor_collision": true,
+        "hidden_in_game": false,
+        "mesh": "/Game/Astra/Meshes/SM_MossRock_04.SM_MossRock_04",
+        "collision_profile": "BlockAll",
+        "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      },
+      "after": {
+        "name": "MossRock_04_0192",
+        "ue_location_cm": [
+          690.4644012451172,
+          2995.034980773926,
+          -27.607867121696472
+        ],
+        "ue_rotation_deg": {
+          "pitch": -7.379728317260745,
+          "yaw": 92.55487823486328,
+          "roll": 1.0162792205810547
+        },
+        "scale": [
+          0.6366528272628784,
+          0.6366528272628784,
+          0.6366528272628784
+        ],
+        "folder": "PreservedBeforeLifeProps",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_MossRock_04.SM_MossRock_04",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "transform_preserved": true
+    },
+    {
+      "name": "MossRock_02_0193",
+      "before": {
+        "name": "MossRock_02_0193",
+        "ue_location_cm": [
+          536.706018447876,
+          2836.115264892578,
+          -16.62929207086563
+        ],
+        "ue_rotation_deg": {
+          "pitch": 7.716310501098638,
+          "yaw": 105.80201721191409,
+          "roll": -1.367488503456117
+        },
+        "scale": [
+          0.6068884134292603,
+          0.6068884134292603,
+          0.6068884134292603
+        ],
+        "folder": "Rocks/LakeShore",
+        "actor_collision": true,
+        "hidden_in_game": false,
+        "mesh": "/Game/Astra/Meshes/SM_MossRock_02.SM_MossRock_02",
+        "collision_profile": "BlockAll",
+        "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      },
+      "after": {
+        "name": "MossRock_02_0193",
+        "ue_location_cm": [
+          536.706018447876,
+          2836.115264892578,
+          -16.62929207086563
+        ],
+        "ue_rotation_deg": {
+          "pitch": 7.716310501098638,
+          "yaw": 105.80201721191409,
+          "roll": -1.367488503456117
+        },
+        "scale": [
+          0.6068884134292603,
+          0.6068884134292603,
+          0.6068884134292603
+        ],
+        "folder": "PreservedBeforeLifeProps",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_MossRock_02.SM_MossRock_02",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "transform_preserved": true
+    },
+    {
+      "name": "MossRock_02_0194",
+      "before": {
+        "name": "MossRock_02_0194",
+        "ue_location_cm": [
+          413.40136528015137,
+          2660.0818634033203,
+          -6.134798750281334
+        ],
+        "ue_rotation_deg": {
+          "pitch": -1.0789484977722166,
+          "yaw": -165.33006286621094,
+          "roll": 10.559670448303226
+        },
+        "scale": [
+          0.7358361482620239,
+          0.7358361482620239,
+          0.7358361482620239
+        ],
+        "folder": "Rocks/LakeShore",
+        "actor_collision": true,
+        "hidden_in_game": false,
+        "mesh": "/Game/Astra/Meshes/SM_MossRock_02.SM_MossRock_02",
+        "collision_profile": "BlockAll",
+        "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      },
+      "after": {
+        "name": "MossRock_02_0194",
+        "ue_location_cm": [
+          413.40136528015137,
+          2660.0818634033203,
+          -6.134798750281334
+        ],
+        "ue_rotation_deg": {
+          "pitch": -1.0789484977722166,
+          "yaw": -165.33006286621094,
+          "roll": 10.559670448303226
+        },
+        "scale": [
+          0.7358361482620239,
+          0.7358361482620239,
+          0.7358361482620239
+        ],
+        "folder": "PreservedBeforeLifeProps",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_MossRock_02.SM_MossRock_02",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "transform_preserved": true
+    },
+    {
+      "name": "Lotus_0338",
+      "before": {
+        "name": "Lotus_0338",
+        "ue_location_cm": [
+          788.6994361877441,
+          2670.731735229492,
+          11.500000208616257
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -62.8545570373535,
+          "roll": 0.0
+        },
+        "scale": [
+          1.3393665552139282,
+          1.3393665552139282,
+          1.3393665552139282
+        ],
+        "folder": "Plants/Lotus",
+        "actor_collision": false,
+        "hidden_in_game": false,
+        "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "after": {
+        "name": "Lotus_0338",
+        "ue_location_cm": [
+          788.6994361877441,
+          2670.731735229492,
+          11.500000208616257
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -62.8545570373535,
+          "roll": 0.0
+        },
+        "scale": [
+          1.3393665552139282,
+          1.3393665552139282,
+          1.3393665552139282
+        ],
+        "folder": "PreservedBeforeLifeProps",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "transform_preserved": true
+    },
+    {
+      "name": "Lotus_0345",
+      "before": {
+        "name": "Lotus_0345",
+        "ue_location_cm": [
+          1015.4142379760742,
+          2789.4073486328125,
+          11.500000208616257
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -144.8546905517578,
+          "roll": 0.0
+        },
+        "scale": [
+          1.1293346881866455,
+          1.1293346881866455,
+          1.1293346881866455
+        ],
+        "folder": "Plants/Lotus",
+        "actor_collision": false,
+        "hidden_in_game": false,
+        "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "after": {
+        "name": "Lotus_0345",
+        "ue_location_cm": [
+          1015.4142379760742,
+          2789.4073486328125,
+          11.500000208616257
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -144.8546905517578,
+          "roll": 0.0
+        },
+        "scale": [
+          1.1293346881866455,
+          1.1293346881866455,
+          1.1293346881866455
+        ],
+        "folder": "PreservedBeforeLifeProps",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "transform_preserved": true
+    },
+    {
+      "name": "Lotus_0349",
+      "before": {
+        "name": "Lotus_0349",
+        "ue_location_cm": [
+          818.9818382263184,
+          2840.2143478393555,
+          11.500000208616257
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 47.50827407836916,
+          "roll": 0.0
+        },
+        "scale": [
+          0.9083496928215027,
+          0.9083496928215027,
+          0.9083496928215027
+        ],
+        "folder": "Plants/Lotus",
+        "actor_collision": false,
+        "hidden_in_game": false,
+        "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "after": {
+        "name": "Lotus_0349",
+        "ue_location_cm": [
+          818.9818382263184,
+          2840.2143478393555,
+          11.500000208616257
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 47.50827407836916,
+          "roll": 0.0
+        },
+        "scale": [
+          0.9083496928215027,
+          0.9083496928215027,
+          0.9083496928215027
+        ],
+        "folder": "PreservedBeforeLifeProps",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "transform_preserved": true
+    },
+    {
+      "name": "Lotus_0355",
+      "before": {
+        "name": "Lotus_0355",
+        "ue_location_cm": [
+          1041.6436195373535,
+          2927.890968322754,
+          11.500000208616257
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 116.31169891357422,
+          "roll": 0.0
+        },
+        "scale": [
+          1.2289626598358154,
+          1.2289626598358154,
+          1.2289626598358154
+        ],
+        "folder": "Plants/Lotus",
+        "actor_collision": false,
+        "hidden_in_game": false,
+        "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "after": {
+        "name": "Lotus_0355",
+        "ue_location_cm": [
+          1041.6436195373535,
+          2927.890968322754,
+          11.500000208616257
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 116.31169891357422,
+          "roll": 0.0
+        },
+        "scale": [
+          1.2289626598358154,
+          1.2289626598358154,
+          1.2289626598358154
+        ],
+        "folder": "PreservedBeforeLifeProps",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "transform_preserved": true
+    },
+    {
+      "name": "Lotus_0358",
+      "before": {
+        "name": "Lotus_0358",
+        "ue_location_cm": [
+          833.6736679077148,
+          2611.144256591797,
+          11.500000208616257
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -28.292993545532237,
+          "roll": 0.0
+        },
+        "scale": [
+          0.7632354497909546,
+          0.7632354497909546,
+          0.7632354497909546
+        ],
+        "folder": "Plants/Lotus",
+        "actor_collision": false,
+        "hidden_in_game": false,
+        "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "after": {
+        "name": "Lotus_0358",
+        "ue_location_cm": [
+          833.6736679077148,
+          2611.144256591797,
+          11.500000208616257
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -28.292993545532237,
+          "roll": 0.0
+        },
+        "scale": [
+          0.7632354497909546,
+          0.7632354497909546,
+          0.7632354497909546
+        ],
+        "folder": "PreservedBeforeLifeProps",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "transform_preserved": true
+    },
+    {
+      "name": "Lotus_0365",
+      "before": {
+        "name": "Lotus_0365",
+        "ue_location_cm": [
+          764.140510559082,
+          2657.6560974121094,
+          11.500000208616257
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 8.10159015655518,
+          "roll": 0.0
+        },
+        "scale": [
+          1.3277236223220825,
+          1.3277236223220825,
+          1.3277236223220825
+        ],
+        "folder": "Plants/Lotus",
+        "actor_collision": false,
+        "hidden_in_game": false,
+        "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "after": {
+        "name": "Lotus_0365",
+        "ue_location_cm": [
+          764.140510559082,
+          2657.6560974121094,
+          11.500000208616257
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 8.10159015655518,
+          "roll": 0.0
+        },
+        "scale": [
+          1.3277236223220825,
+          1.3277236223220825,
+          1.3277236223220825
+        ],
+        "folder": "PreservedBeforeLifeProps",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "transform_preserved": true
+    },
+    {
+      "name": "Lotus_0374",
+      "before": {
+        "name": "Lotus_0374",
+        "ue_location_cm": [
+          1110.8880996704102,
+          2865.383720397949,
+          11.500000208616257
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -105.88722991943361,
+          "roll": 0.0
+        },
+        "scale": [
+          0.9694715738296509,
+          0.9694715738296509,
+          0.9694715738296509
+        ],
+        "folder": "Plants/Lotus",
+        "actor_collision": false,
+        "hidden_in_game": false,
+        "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "after": {
+        "name": "Lotus_0374",
+        "ue_location_cm": [
+          1110.8880996704102,
+          2865.383720397949,
+          11.500000208616257
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -105.88722991943361,
+          "roll": 0.0
+        },
+        "scale": [
+          0.9694715738296509,
+          0.9694715738296509,
+          0.9694715738296509
+        ],
+        "folder": "PreservedBeforeLifeProps",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "transform_preserved": true
+    },
+    {
+      "name": "Reeds_0399",
+      "before": {
+        "name": "Reeds_0399",
+        "ue_location_cm": [
+          838.1887435913086,
+          3020.152473449707,
+          -51.01348161697388
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 40.654792785644545,
+          "roll": 0.0
+        },
+        "scale": [
+          1.1179105043411255,
+          1.1179105043411255,
+          1.1179105043411255
+        ],
+        "folder": "PreservedBeforeFoliage",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Reeds.SM_Reeds",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "after": {
+        "name": "Reeds_0399",
+        "ue_location_cm": [
+          838.1887435913086,
+          3020.152473449707,
+          -51.01348161697388
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 40.654792785644545,
+          "roll": 0.0
+        },
+        "scale": [
+          1.1179105043411255,
+          1.1179105043411255,
+          1.1179105043411255
+        ],
+        "folder": "PreservedBeforeLifeProps",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Reeds.SM_Reeds",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "transform_preserved": true
+    },
+    {
+      "name": "Reeds_0420",
+      "before": {
+        "name": "Reeds_0420",
+        "ue_location_cm": [
+          820.987606048584,
+          3019.6271896362305,
+          -45.43360769748688
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 115.20568847656251,
+          "roll": 0.0
+        },
+        "scale": [
+          0.7330642342567444,
+          0.7330642342567444,
+          0.7330642342567444
+        ],
+        "folder": "PreservedBeforeFoliage",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Reeds.SM_Reeds",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "after": {
+        "name": "Reeds_0420",
+        "ue_location_cm": [
+          820.987606048584,
+          3019.6271896362305,
+          -45.43360769748688
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 115.20568847656251,
+          "roll": 0.0
+        },
+        "scale": [
+          0.7330642342567444,
+          0.7330642342567444,
+          0.7330642342567444
+        ],
+        "folder": "PreservedBeforeLifeProps",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Reeds.SM_Reeds",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "transform_preserved": true
+    },
+    {
+      "name": "Reeds_0426",
+      "before": {
+        "name": "Reeds_0426",
+        "ue_location_cm": [
+          607.777738571167,
+          2761.7767333984375,
+          -55.59285879135132
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 33.358779907226584,
+          "roll": 0.0
+        },
+        "scale": [
+          1.060003638267517,
+          1.060003638267517,
+          1.060003638267517
+        ],
+        "folder": "PreservedBeforeFoliage",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Reeds.SM_Reeds",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "after": {
+        "name": "Reeds_0426",
+        "ue_location_cm": [
+          607.777738571167,
+          2761.7767333984375,
+          -55.59285879135132
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 33.358779907226584,
+          "roll": 0.0
+        },
+        "scale": [
+          1.060003638267517,
+          1.060003638267517,
+          1.060003638267517
+        ],
+        "folder": "PreservedBeforeLifeProps",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Reeds.SM_Reeds",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "transform_preserved": true
+    },
+    {
+      "name": "Reeds_0444",
+      "before": {
+        "name": "Reeds_0444",
+        "ue_location_cm": [
+          513.6820793151855,
+          2706.204605102539,
+          -26.46038830280304
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 37.772098541259766,
+          "roll": 0.0
+        },
+        "scale": [
+          0.7469513416290283,
+          0.7469513416290283,
+          0.7469513416290283
+        ],
+        "folder": "PreservedBeforeFoliage",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Reeds.SM_Reeds",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "after": {
+        "name": "Reeds_0444",
+        "ue_location_cm": [
+          513.6820793151855,
+          2706.204605102539,
+          -26.46038830280304
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 37.772098541259766,
+          "roll": 0.0
+        },
+        "scale": [
+          0.7469513416290283,
+          0.7469513416290283,
+          0.7469513416290283
+        ],
+        "folder": "PreservedBeforeLifeProps",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Reeds.SM_Reeds",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "transform_preserved": true
+    },
+    {
+      "name": "Fern_0659",
+      "before": {
+        "name": "Fern_0659",
+        "ue_location_cm": [
+          -2693.099784851074,
+          -1417.4261093139648,
+          68.07497143745422
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 33.93403244018556,
+          "roll": 0.0
+        },
+        "scale": [
+          0.8067870140075684,
+          0.8067870140075684,
+          0.8067870140075684
+        ],
+        "folder": "PreservedBeforeFoliage",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Fern.SM_Fern",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "after": {
+        "name": "Fern_0659",
+        "ue_location_cm": [
+          -2693.099784851074,
+          -1417.4261093139648,
+          68.07497143745422
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 33.93403244018556,
+          "roll": 0.0
+        },
+        "scale": [
+          0.8067870140075684,
+          0.8067870140075684,
+          0.8067870140075684
+        ],
+        "folder": "PreservedBeforeLifeProps",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Fern.SM_Fern",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "transform_preserved": true
+    },
+    {
+      "name": "Fern_1370",
+      "before": {
+        "name": "Fern_1370",
+        "ue_location_cm": [
+          1542.5103187561035,
+          4437.397766113281,
+          102.85416841506958
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 120.93199920654301,
+          "roll": 0.0
+        },
+        "scale": [
+          1.0591992139816284,
+          1.0591992139816284,
+          1.0591992139816284
+        ],
+        "folder": "PreservedBeforeFoliage",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Fern.SM_Fern",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "after": {
+        "name": "Fern_1370",
+        "ue_location_cm": [
+          1542.5103187561035,
+          4437.397766113281,
+          102.85416841506958
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 120.93199920654301,
+          "roll": 0.0
+        },
+        "scale": [
+          1.0591992139816284,
+          1.0591992139816284,
+          1.0591992139816284
+        ],
+        "folder": "PreservedBeforeLifeProps",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Fern.SM_Fern",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "transform_preserved": true
+    },
+    {
+      "name": "Flowers_1588",
+      "before": {
+        "name": "Flowers_1588",
+        "ue_location_cm": [
+          1096.2889671325684,
+          4682.289505004883,
+          208.3573818206787
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -104.16616821289067,
+          "roll": 0.0
+        },
+        "scale": [
+          1.3804030418395996,
+          1.3804030418395996,
+          1.3804030418395996
+        ],
+        "folder": "PreservedBeforeFoliage",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Flowers.SM_Flowers",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "after": {
+        "name": "Flowers_1588",
+        "ue_location_cm": [
+          1096.2889671325684,
+          4682.289505004883,
+          208.3573818206787
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -104.16616821289067,
+          "roll": 0.0
+        },
+        "scale": [
+          1.3804030418395996,
+          1.3804030418395996,
+          1.3804030418395996
+        ],
+        "folder": "PreservedBeforeLifeProps",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Flowers.SM_Flowers",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "transform_preserved": true
+    },
+    {
+      "name": "Flowers_1626",
+      "before": {
+        "name": "Flowers_1626",
+        "ue_location_cm": [
+          -820.4858779907227,
+          -1691.2851333618164,
+          52.35900282859802
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 81.34784698486328,
+          "roll": 0.0
+        },
+        "scale": [
+          1.3046828508377075,
+          1.3046828508377075,
+          1.3046828508377075
+        ],
+        "folder": "PreservedBeforeFoliage",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Flowers.SM_Flowers",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "after": {
+        "name": "Flowers_1626",
+        "ue_location_cm": [
+          -820.4858779907227,
+          -1691.2851333618164,
+          52.35900282859802
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": 81.34784698486328,
+          "roll": 0.0
+        },
+        "scale": [
+          1.3046828508377075,
+          1.3046828508377075,
+          1.3046828508377075
+        ],
+        "folder": "PreservedBeforeLifeProps",
+        "actor_collision": false,
+        "hidden_in_game": true,
+        "mesh": "/Game/Astra/Meshes/SM_Flowers.SM_Flowers",
+        "collision_profile": "NoCollision",
+        "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      "transform_preserved": true
+    }
+  ],
+  "foliage": {
+    "before_this_run": {
+      "SM_Grass": 1176,
+      "SM_Fern": 374,
+      "SM_Flowers": 268,
+      "SM_Mushrooms": 68,
+      "SM_Reeds": 90
+    },
+    "baseline_before_life_props": {
+      "SM_Grass": 1176,
+      "SM_Fern": 374,
+      "SM_Flowers": 268,
+      "SM_Mushrooms": 68,
+      "SM_Reeds": 90
+    },
+    "removed": {
+      "SM_Grass": 4,
+      "SM_Fern": 3,
+      "SM_Flowers": 2,
+      "SM_Mushrooms": 0,
+      "SM_Reeds": 4
+    },
+    "expected": {
+      "SM_Grass": 1172,
+      "SM_Fern": 371,
+      "SM_Flowers": 266,
+      "SM_Mushrooms": 68,
+      "SM_Reeds": 86
+    },
+    "actual": {
+      "SM_Grass": 1172,
+      "SM_Fern": 371,
+      "SM_Flowers": 266,
+      "SM_Mushrooms": 68,
+      "SM_Reeds": 86
+    },
+    "total": 1963,
+    "nonblocking": true
+  },
+  "moved_barriers": [
+    {
+      "name": "LakeBoundary_18",
+      "before": {
+        "name": "LakeBoundary_18",
+        "ue_location_cm": [
+          924.1926419625645,
+          2861.9595949289333,
+          65.0
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -134.99999999999997,
+          "roll": 0.0
+        },
+        "scale": [
+          2.1,
+          0.65,
+          2.3
+        ],
+        "folder": "Collision/Water",
+        "actor_collision": true,
+        "hidden_in_game": true,
+        "mesh": "/Engine/BasicShapes/Cube.Cube",
+        "collision_profile": "BlockAll",
+        "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      },
+      "after": {
+        "name": "LakeBoundary_18",
+        "ue_location_cm": [
+          924.1926419625645,
+          2861.9595949289333,
+          -135.0
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -134.99999999999997,
+          "roll": 0.0
+        },
+        "scale": [
+          2.1,
+          0.65,
+          2.3
+        ],
+        "folder": "Collision/Water",
+        "actor_collision": true,
+        "hidden_in_game": true,
+        "mesh": "/Engine/BasicShapes/Cube.Cube",
+        "collision_profile": "BlockAll",
+        "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      },
+      "target_z_cm": -135,
+      "xy_rotation_scale_preserved": true
+    },
+    {
+      "name": "LakeBoundary_19",
+      "before": {
+        "name": "LakeBoundary_19",
+        "ue_location_cm": [
+          805.1723903980956,
+          2751.812800489767,
+          65.0
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -127.50000000000001,
+          "roll": 0.0
+        },
+        "scale": [
+          2.1,
+          0.65,
+          2.3
+        ],
+        "folder": "Collision/Water",
+        "actor_collision": true,
+        "hidden_in_game": true,
+        "mesh": "/Engine/BasicShapes/Cube.Cube",
+        "collision_profile": "BlockAll",
+        "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      },
+      "after": {
+        "name": "LakeBoundary_19",
+        "ue_location_cm": [
+          805.1723903980956,
+          2751.812800489767,
+          -135.0
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -127.50000000000001,
+          "roll": 0.0
+        },
+        "scale": [
+          2.1,
+          0.65,
+          2.3
+        ],
+        "folder": "Collision/Water",
+        "actor_collision": true,
+        "hidden_in_game": true,
+        "mesh": "/Engine/BasicShapes/Cube.Cube",
+        "collision_profile": "BlockAll",
+        "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      },
+      "target_z_cm": -135,
+      "xy_rotation_scale_preserved": true
+    },
+    {
+      "name": "LakeBoundary_20",
+      "before": {
+        "name": "LakeBoundary_20",
+        "ue_location_cm": [
+          704.8849427774746,
+          2630.0,
+          65.0
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -120.00000000000007,
+          "roll": 0.0
+        },
+        "scale": [
+          2.1,
+          0.65,
+          2.3
+        ],
+        "folder": "Collision/Water",
+        "actor_collision": true,
+        "hidden_in_game": true,
+        "mesh": "/Engine/BasicShapes/Cube.Cube",
+        "collision_profile": "BlockAll",
+        "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      },
+      "after": {
+        "name": "LakeBoundary_20",
+        "ue_location_cm": [
+          704.8849427774746,
+          2630.0,
+          -135.0
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0.0,
+          "yaw": -120.00000000000007,
+          "roll": 0.0
+        },
+        "scale": [
+          2.1,
+          0.65,
+          2.3
+        ],
+        "folder": "Collision/Water",
+        "actor_collision": true,
+        "hidden_in_game": true,
+        "mesh": "/Engine/BasicShapes/Cube.Cube",
+        "collision_profile": "BlockAll",
+        "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      },
+      "target_z_cm": -135,
+      "xy_rotation_scale_preserved": true
+    }
+  ],
+  "dock_guards": [
+    {
+      "name": "FishingDock_FrontSafetyGuard",
+      "ue_location_cm": [
+        1030.0,
+        2800.0,
+        145.0
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      },
+      "scale": [
+        0.18,
+        4.6,
+        1.8
+      ],
+      "folder": "Collision/FishingDock",
+      "actor_collision": true,
+      "hidden_in_game": true,
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "collision_profile": "BlockAll",
+      "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+    },
+    {
+      "name": "FishingDock_ShoulderGuard_LowY",
+      "ue_location_cm": [
+        695.0,
+        2655.0,
+        145.0
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      },
+      "scale": [
+        0.18,
+        1.3,
+        1.8
+      ],
+      "folder": "Collision/FishingDock",
+      "actor_collision": true,
+      "hidden_in_game": true,
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "collision_profile": "BlockAll",
+      "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+    },
+    {
+      "name": "FishingDock_ShoulderGuard_HighY",
+      "ue_location_cm": [
+        695.0,
+        2945.0,
+        145.0
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      },
+      "scale": [
+        0.18,
+        1.3,
+        1.8
+      ],
+      "folder": "Collision/FishingDock",
+      "actor_collision": true,
+      "hidden_in_game": true,
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "collision_profile": "BlockAll",
+      "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+    }
+  ],
+  "review_cameras": [
+    {
+      "name": "Camera_Fishing",
+      "look_at_cm": [
+        620,
+        2800,
+        90
+      ],
+      "ortho_width_cm": 1800.0
+    },
+    {
+      "name": "Camera_HomeLife",
+      "look_at_cm": [
+        1540,
+        3840,
+        120
+      ],
+      "ortho_width_cm": 2400.0
+    },
+    {
+      "name": "Camera_Picnic",
+      "look_at_cm": [
+        -800,
+        -1650,
+        80
+      ],
+      "ortho_width_cm": 1000.0
+    },
+    {
+      "name": "Camera_Repair",
+      "look_at_cm": [
+        -2800,
+        -1100,
+        90
+      ],
+      "ortho_width_cm": 1000.0
+    },
+    {
+      "name": "Camera_CampLife",
+      "look_at_cm": [
+        3800,
+        210,
+        570
+      ],
+      "ortho_width_cm": 1200.0
+    }
+  ],
+  "materials": {
+    "created": [
+      "/Game/Astra/Materials/M_DockEnd",
+      "/Game/Astra/Materials/M_DockNail",
+      "/Game/Astra/Materials/M_DockRope",
+      "/Game/Astra/Materials/M_DockWood",
+      "/Game/Astra/Materials/M_DockWoodDark",
+      "/Game/Astra/Materials/M_DockWoodLight",
+      "/Game/Astra/Materials/M_Fishing_Coral",
+      "/Game/Astra/Materials/M_Fishing_Cream",
+      "/Game/Astra/Materials/M_Fishing_Dark",
+      "/Game/Astra/Materials/M_Fishing_FishSilver",
+      "/Game/Astra/Materials/M_Fishing_Metal",
+      "/Game/Astra/Materials/M_Fishing_Sage",
+      "/Game/Astra/Materials/M_Fishing_Teal",
+      "/Game/Astra/Materials/M_Fishing_Water",
+      "/Game/Astra/Materials/M_Fishing_Wood",
+      "/Game/Astra/Materials/M_Fishing_WoodDark",
+      "/Game/Astra/Materials/M_Fishing_WoodLight",
+      "/Game/Astra/Materials/M_HomeLife_Carrot",
+      "/Game/Astra/Materials/M_HomeLife_Cream",
+      "/Game/Astra/Materials/M_HomeLife_Iron",
+      "/Game/Astra/Materials/M_HomeLife_IronDark",
+      "/Game/Astra/Materials/M_HomeLife_Leaf",
+      "/Game/Astra/Materials/M_HomeLife_LeafLight",
+      "/Game/Astra/Materials/M_HomeLife_Mushroom",
+      "/Game/Astra/Materials/M_HomeLife_Ochre",
+      "/Game/Astra/Materials/M_HomeLife_Pumpkin",
+      "/Game/Astra/Materials/M_HomeLife_PumpkinLight",
+      "/Game/Astra/Materials/M_HomeLife_Rope",
+      "/Game/Astra/Materials/M_HomeLife_Sage",
+      "/Game/Astra/Materials/M_HomeLife_SageShade",
+      "/Game/Astra/Materials/M_HomeLife_Soil",
+      "/Game/Astra/Materials/M_HomeLife_SoilLight",
+      "/Game/Astra/Materials/M_HomeLife_Straw",
+      "/Game/Astra/Materials/M_HomeLife_StrawShade",
+      "/Game/Astra/Materials/M_HomeLife_Wood",
+      "/Game/Astra/Materials/M_HomeLife_WoodDark",
+      "/Game/Astra/Materials/M_HomeLife_WoodLight",
+      "/Game/Astra/Materials/M_WoodlandLife_Berry",
+      "/Game/Astra/Materials/M_WoodlandLife_Bread",
+      "/Game/Astra/Materials/M_WoodlandLife_Cream",
+      "/Game/Astra/Materials/M_WoodlandLife_Iron",
+      "/Game/Astra/Materials/M_WoodlandLife_IronEdge",
+      "/Game/Astra/Materials/M_WoodlandLife_Leaf",
+      "/Game/Astra/Materials/M_WoodlandLife_Mushroom",
+      "/Game/Astra/Materials/M_WoodlandLife_Rope",
+      "/Game/Astra/Materials/M_WoodlandLife_Sage",
+      "/Game/Astra/Materials/M_WoodlandLife_SageLight",
+      "/Game/Astra/Materials/M_WoodlandLife_Teal",
+      "/Game/Astra/Materials/M_WoodlandLife_Wood",
+      "/Game/Astra/Materials/M_WoodlandLife_WoodDark",
+      "/Game/Astra/Materials/M_WoodlandLife_WoodEnd",
+      "/Game/Astra/Materials/M_WoodlandLife_WoodLight"
+    ],
+    "reused_unchanged": [],
+    "new_textures": [
+      "/Game/Astra/Textures/T_FishingDockWood"
+    ],
+    "texture_links": {
+      "M_DockWood": {
+        "texture": "/Game/Astra/Textures/T_FishingDockWood.T_FishingDockWood",
+        "tint_linear": [
+          1,
+          1,
+          1
+        ]
+      },
+      "M_DockWoodDark": {
+        "texture": "/Game/Astra/Textures/T_FishingDockWood.T_FishingDockWood",
+        "tint_linear": [
+          0.63,
+          0.64,
+          0.64
+        ]
+      },
+      "M_DockWoodLight": {
+        "texture": "/Game/Astra/Textures/T_FishingDockWood.T_FishingDockWood",
+        "tint_linear": [
+          1.12,
+          1.1,
+          1.04
+        ]
+      }
+    }
+  },
+  "preserved_existing_material_files": {
+    "Content/Astra/Materials/M_Bark.uasset": "61efc82a09dd0a4f716bab4c911945f2c05355a8e6e93a609e1651a9fb69e885",
+    "Content/Astra/Materials/M_BarkLight.uasset": "38fdd1de4cdf35703975641b5e4ee470f790f2d73a0ebeff03af6258378a96d1",
+    "Content/Astra/Materials/M_CampBuckle.uasset": "e35bef82d1c6eaa728f69433c07d14f0a7969ff522c1f8cdf6c704a354ceac3c",
+    "Content/Astra/Materials/M_CampCharcoal.uasset": "7bb95c07917e208db58ed24c40bb44a02b85d5c0f8576f620ae9d3516017194c",
+    "Content/Astra/Materials/M_CampEnamel.uasset": "9754f1b3b835560637ddc7fb24a1a7a8e7c8655da87f9ce03f824dee49eda156",
+    "Content/Astra/Materials/M_CampEnamelLight.uasset": "5db941b4565773f3ce110cd3be74164a00efb0640cc7f86ea4dfed57000c896b",
+    "Content/Astra/Materials/M_CampFlame.uasset": "db0675d7eee362896c0c5a4fc525805f8a5378c8e874b6560c6cb29e50941390",
+    "Content/Astra/Materials/M_CampFlameCore.uasset": "f2b9471512389e3aa521e9f78095f51263a769e49506f6bf046ea059a9228373",
+    "Content/Astra/Materials/M_CampIron.uasset": "b99db3f17eada5ccb3e03af69b91ce3ccbed0e8be1a1c558c364c4425bf6b2bc",
+    "Content/Astra/Materials/M_CampLanternGlow.uasset": "829ea9cd66183bc9400647b7bc939e96a702f603277dde6b5b440611e5bc4404",
+    "Content/Astra/Materials/M_CampLeather.uasset": "1deb199b7be6f1bcdce4587616967f486563aad07d5f169140921a7ba8b6cc6e",
+    "Content/Astra/Materials/M_CampLeatherLight.uasset": "d7e4784b9bbe6318ac58f73f042dded4789220e12cf854e8c1121ed194e047ce",
+    "Content/Astra/Materials/M_CampOchre.uasset": "5f9a1bb6848ea53338143683843af788df8e98b4ae4c9f40cfbbf9391531015a",
+    "Content/Astra/Materials/M_CampRollDark.uasset": "60014b7f95382ebcaa0eb5a6d56e0fa2c71bbafadb75c46b1feef9a55a3a2a61",
+    "Content/Astra/Materials/M_CampRope.uasset": "91acf24163dffabfc5b4b97c9d374547f8fa55b5de800365daa5a96036b700b1",
+    "Content/Astra/Materials/M_CampSoup.uasset": "61b40f65f909714fe1c39708ed863cf61c622bf452c71bd85066fd72a1a53e8d",
+    "Content/Astra/Materials/M_CampStoneBlue.uasset": "94ff5d3a84e69d558d3400703a50246824f1b11beac286b3a61e6dbac1bfa81a",
+    "Content/Astra/Materials/M_CampStoneLight.uasset": "d3a5df42550bffd43f81ac5ccc2b9803d01e474cf420cf501bf0da1273d9faac",
+    "Content/Astra/Materials/M_CampWood.uasset": "f11ade2e312d391479a4bb2c803bd7f478340c3a7527715c8d1b04195751455e",
+    "Content/Astra/Materials/M_CampWoodLight.uasset": "9726d61a8cb993b250752154c926e8d072efaaf0b57dbc4f0ca4bcd5bdeb5e64",
+    "Content/Astra/Materials/M_CatBlack.uasset": "650a1b744aa7ae0d9394c4eaa893334080b8dfa10272c855480d508d5b89b372",
+    "Content/Astra/Materials/M_CatCream.uasset": "f150d672efc50a6c398d7871a5e51b7be100e2bac24661ab47251c0763c38141",
+    "Content/Astra/Materials/M_CatOrange.uasset": "fe527db73824244d3e544e5959c311b93d5ac08eba0d5e865d0fc76eb9a8f430",
+    "Content/Astra/Materials/M_CatPink.uasset": "a187ed4cc4ad65c080502a0ee8675839ffb983aaaf281dcaabf63aafe8fe44f4",
+    "Content/Astra/Materials/M_Cattail.uasset": "1e8342716e4509b860a7160f9e30ffb5649778341f0f519edbe362c7cba70cec",
+    "Content/Astra/Materials/M_CloudSky.uasset": "1534a234e4721f4b4703f4778ca9d90e3e8dd6b2ca958ec29c3027a36a4ef344",
+    "Content/Astra/Materials/M_CottageCream.uasset": "79aba54657127d22586b9b852c86c39d09425f511b8f7704e281bd1bbf77bfac",
+    "Content/Astra/Materials/M_CottageCreamLight.uasset": "d8b67c7dd55e3cd7b1c8fc101ddcfb3b9375ee18afdcdb86f70aa4f85f041106",
+    "Content/Astra/Materials/M_CottageDoor.uasset": "d59753e96b8f7f91e5b444a177c0f15c664efba1c8bc4430cd8e9f14b300da9a",
+    "Content/Astra/Materials/M_CottageGlass.uasset": "f316d4bf9342a3d8606ea5d648afbc14ae9f86722436648abed68b7aa0e813c3",
+    "Content/Astra/Materials/M_CottagePink.uasset": "f4551743d8f635defba0f1bf17e794802f8c606e47bc09465104ba08c7d677bb",
+    "Content/Astra/Materials/M_CottagePinkDark.uasset": "c84c4be1f91726b7d0db45b2690518933954234a52adb00372f9dc481253046e",
+    "Content/Astra/Materials/M_CottagePinkLight.uasset": "553606df384391fc1d3e50dcd121c459ac5fd527d0801d5e546b7fe31d2e6173",
+    "Content/Astra/Materials/M_CottageRope.uasset": "6c9c5dd5c6dd905c53ac87ac900a50f9143de6868bcf5be1eb96a87a3460190b",
+    "Content/Astra/Materials/M_Fir.uasset": "f685b3e8d47d2db0685fec90ec1a9a0a3694b3863691471555421b8ad01fa240",
+    "Content/Astra/Materials/M_FirLight.uasset": "63691702338e0344e11ef967e3f9308e9af73a0d6282fb9bca40911b3811e792",
+    "Content/Astra/Materials/M_FlowerCream.uasset": "bf5efb156b0a4754e3ce17ccb2087746ec06e806dd83d33020ab4d98db125c67",
+    "Content/Astra/Materials/M_FlowerGold.uasset": "8a9819a9d21aaaa2d0c2ea4c7c95719386a588b1aa4eef0cf097030924c87b05",
+    "Content/Astra/Materials/M_ForestCliffCool.uasset": "6fd3cb29463f3ee7d89ef8a3f6ed87107ee70e9234577c2cf1bee2b76c9cca67",
+    "Content/Astra/Materials/M_ForestCliffMoss.uasset": "88faa5b31bdc596a5338f0abfe2eceb60a5bc71e34ec171acf7e46ed6ce36009",
+    "Content/Astra/Materials/M_ForestCliffStone.uasset": "7ddfa37d874f70a5338885dff8a7af14911fe46f0c82220c1c46f79682a29568",
+    "Content/Astra/Materials/M_ForestCliffWarm.uasset": "f61ceecd11e0ae6b2636ab451820badc655d0f14d72caeb0d6c7f82221d88e7e",
+    "Content/Astra/Materials/M_ForestRockPaint.uasset": "056049541ecf0769a994c0ae02af82636960ce291a3f0ff1072085d6a9f6108c",
+    "Content/Astra/Materials/M_ForestSignBlue.uasset": "e2a7b115730f1bdab8cd9f383762261cc91943bcdfdeb60ed9a1d995b69c034d",
+    "Content/Astra/Materials/M_ForestSignCream.uasset": "b21880205d909f927ebcabd9bd8d7499dd418907d06ded0a14b0113253a26b6d",
+    "Content/Astra/Materials/M_ForestSignGreen.uasset": "e2e26d23edf25b6f3e634c1e00986ca4f1a5ff39d6123d0331a0fc184c541b0c",
+    "Content/Astra/Materials/M_ForestSignPink.uasset": "e73a4f5ce9e7e8ca1ca0f6fc101452a786c5c8b8f991a31128f795a70739f568",
+    "Content/Astra/Materials/M_ForestSignRope.uasset": "8135a1316084943af8382a969533766d6130c02e33236267b42787dd0928492b",
+    "Content/Astra/Materials/M_ForestSignSage.uasset": "41b270ba8cb9a716a5d43262c431dbc0760cbb5122f0dc6a3e8724a972e0ab0e",
+    "Content/Astra/Materials/M_ForestWoodEnd.uasset": "8e9c22c44d0ac5427dc31463c07ba9ba8604ed8762c348603452aa330d15dbe4",
+    "Content/Astra/Materials/M_ForestWoodShade.uasset": "23ce3fc7b7f42416aec704f6074b3185354b9837f402f25ebf2ef1be741684c8",
+    "Content/Astra/Materials/M_Grass.uasset": "e102d79be6676d6dc84d2b77cb0de4606ff7964847151c8d62f717c5e6a9f0d6",
+    "Content/Astra/Materials/M_GrassLight.uasset": "1de153ca75b1f116f98abf7e0828b6d43f115639fd57641cb8b7a72eb741096e",
+    "Content/Astra/Materials/M_Ground.uasset": "1b0490847ab28b727f5c0e99a3ffcbdb77e59c574877fc73e860da01d38f7123",
+    "Content/Astra/Materials/M_Landscape.uasset": "f4960eca3f462d9432e09a8930fd29a380566421d9c0274f5cc05c3d5d12da6c",
+    "Content/Astra/Materials/M_LeafLight.uasset": "ca35a591c03d87c2b6bd9bbb54408f828d36944d2ccc192f8819d03ddace29d7",
+    "Content/Astra/Materials/M_LeafOlive.uasset": "456dfe4caaab31d40db04d9b8f4b08700a73fd5d1b5a0b5ec10211fafd656e16",
+    "Content/Astra/Materials/M_LeafSage.uasset": "fe10833cf95f798c66e0288913d5527e4870b90b5da3baff95cb2a9e7d4c6467",
+    "Content/Astra/Materials/M_Lily.uasset": "c032254cfbd083bc2cc6fe1cd9d6d060d6afe51576b424d226a64f6fd25de31d",
+    "Content/Astra/Materials/M_LotusLight.uasset": "43a221201ee39ac218649c8f4fe6c6369ebfecda0563f1ff32f84964f2d1ca3b",
+    "Content/Astra/Materials/M_LotusPink.uasset": "5cbc1db0d6358444634938395a5e98aeb5f1ab94510bcd2f5f2f8e69fe37e6e2",
+    "Content/Astra/Materials/M_Moss.uasset": "52cb24f6031c3038f92b90d1784ec49ef33d9f3e7976126bfbeab53850ab5098",
+    "Content/Astra/Materials/M_Mushroom.uasset": "f65b007a699067251d3ef2e155202e44fad5f29529ac9e73b5995f0bb59d4065",
+    "Content/Astra/Materials/M_Path.uasset": "5be31ac4f9286f39023d2ba9da5cb620a54eb7b60efede2936b700f8dd9c95d1",
+    "Content/Astra/Materials/M_Pollen.uasset": "d0603b29f6aaf3b0c2163e37519aa2aac306e41b6f05145362afea23855af78b",
+    "Content/Astra/Materials/M_PuddleReflection.uasset": "bce0bb9fb6c2966575468ef81b1fd2e3aa6ca906719565da924f06bb47a4cca4",
+    "Content/Astra/Materials/M_Reed.uasset": "fda0a7d77ffdfe042576882f71fc600a2a8fdd23f0492575e690a4ff24f2a078",
+    "Content/Astra/Materials/M_Stone.uasset": "1e5fdf813fd756d75ef0d8ec3b48a6c53c4a0a8403b681d6bf558271b8e66ec9",
+    "Content/Astra/Materials/M_StoneLight.uasset": "642b1ea1a4330c73742d485109c2c0d3c35c1e832001c3b0849183c2a45be676",
+    "Content/Astra/Materials/M_TentCanvas.uasset": "404559b0df83c6a1b4ac39f82cdc75e1dfb914dbc424f0bffa8a728ca915e40e",
+    "Content/Astra/Materials/M_TentCanvasFold.uasset": "63ce6782cdb038d96edd63042e0a2790767b31359f0c4c9c7aaf21597cee2692",
+    "Content/Astra/Materials/M_TentCanvasLight.uasset": "b059abe40c4113377365b2fc376ecaa5632249433d2f2638beb78cbf6213d6f4",
+    "Content/Astra/Materials/M_TentInside.uasset": "663cdc6ae0c90e10054ffbbce27030e87eba05dcd694463ae4d138cac7e52787",
+    "Content/Astra/Materials/M_TentOchre.uasset": "d0e7fee7f695bea0a32877470d6ec706bb4f01818dc727c972008d8f83615afa",
+    "Content/Astra/Materials/M_TentRope.uasset": "35c92f3849f4a911c9c412a6de58e8e0741aab63fc7984d5a8bdeb63b4082e12",
+    "Content/Astra/Materials/M_TentSage.uasset": "26394bccf8fa84ca230ed839745dd7a3c831b40e2ec2ba94acbde742a315e8f6",
+    "Content/Astra/Materials/M_TentSageLight.uasset": "cc975a2577b1360fa4c4fa7a8df63153232808497d5f550bce02adcb95e9e652",
+    "Content/Astra/Materials/M_TentWood.uasset": "7a9d353d4dc394e12358012760cac755af4c3085f8ffecdff39352cc5ab23845",
+    "Content/Astra/Materials/M_TentWoodDark.uasset": "6a69612fa10584795f6032dec556731b8f38d02abcb0881dbdc9d7130274d32c",
+    "Content/Astra/Materials/M_Water.uasset": "065e9402f4c8f63970a5b7916e44c59cbf1cb07c5e83016c10e265ff4d25f4b3",
+    "Content/Astra/Materials/M_WellWater.uasset": "6add2aded711de9315a4d95efdd3ad8f0ce3c2f7ca0d8e3cddb456845f4a8b96",
+    "Content/Astra/Materials/M_Wood.uasset": "fd561fed22b13b8d7f4f37604c40aa3bea6bfa89d85859498a11a7777b3f217b",
+    "Content/Astra/Materials/M_WoodDark.uasset": "58bc909498c64d857ba8d933bb68e46ee28cd54db6d01ab952112808cf2c5d49",
+    "Content/Astra/Materials/M_WoodLight.uasset": "ad2d8782a465e4f0d030b521542dece9d374335db33f0524178ec60f1941171c",
+    "Content/Astra/Materials/ModuleReview/M_CottageCream.uasset": "88fdd7c180775ff21dac3f70b177426441b1a903bea91ba9ee067b09dd76912a",
+    "Content/Astra/Materials/ModuleReview/M_CottageCreamLight.uasset": "1c9f4abdf4e77f4677708e2996536f094eca4b2b5a32eed9673df2d7aea070e7",
+    "Content/Astra/Materials/ModuleReview/M_CottageDoor.uasset": "654873481f763e759566daac71b0154b31a1dab8fe5ba00baacf4c2435fb633b",
+    "Content/Astra/Materials/ModuleReview/M_CottageGlass.uasset": "639da192c129f0b6f03185d8bde677a253656505ef47d28979b068153e08cdf6",
+    "Content/Astra/Materials/ModuleReview/M_CottagePink.uasset": "518147acd5d527449ab0eabfce644b05e5966ebee6ae3e021063b72931ace141",
+    "Content/Astra/Materials/ModuleReview/M_CottagePinkDark.uasset": "3e9e45587da4e7b011581532eb4d095dce078b1fa36a4a6c90f536498a18ab6c",
+    "Content/Astra/Materials/ModuleReview/M_CottagePinkLight.uasset": "165f312320d6609ec9f5062b0dcbe0b5d8d290c02b1278f574b07c66e9e6c3a6",
+    "Content/Astra/Materials/ModuleReview/M_CottageRope.uasset": "e8416a56d39c0f4afdca92a26180057c0479d8141c4ae086a38532ea9bf79e38",
+    "Content/Astra/Materials/ModuleReview/M_PuddleCloudReview.uasset": "a8d9c5632db59940c21f6883c10522a69c3ad2030bfd81bcab2a7f97bb3a1950",
+    "Content/Astra/Materials/ModuleReview/M_PuddleReviewSky.uasset": "8524ead50915922a5c327e6c76cb7728520b0335a8367b2c216235645d6acec5",
+    "Content/Astra/Materials/ModuleReview/M_ShorelineReviewFilm.uasset": "894525822b84bef84492fbdf58f5d205f21e7c3da6a1e9e309fb25b95c969e72",
+    "Content/Astra/Materials/ModuleReview/M_WellWater.uasset": "0fb55bf5034cb4fef0b07ab260e581d44eade96f9251d1c3e55e715413b93db3",
+    "Content/Astra/Materials/Shoreline/M_PuddleSkyReflection.uasset": "65019a668a35850c93f51d514e82759bdc0ab6cf498e4cc8cef698f689f2b200",
+    "Content/Astra/Materials/Shoreline/M_ShoreEarth.uasset": "cde633195363955ea8a88912c1d45cd79aefbbe6cd2166b5902b02c90b457034",
+    "Content/Astra/Materials/Shoreline/M_ShoreEarthDark.uasset": "4ec7a2f8da5503561ab1c16bac6d2514c6b8381fa50bcbe08c57dcc159c846cb",
+    "Content/Astra/Materials/Shoreline/M_ShoreEarthLight.uasset": "5f26d979f0bb94a4ecd94f5821765288f3586942d74d5869611a6ebddab60c30",
+    "Content/Astra/Materials/Shoreline/M_ShoreGrass.uasset": "47912761a8c291a802eaed3de78aed35e0d17e828cf4bc81b86bd5ec188e1f27",
+    "Content/Astra/Materials/Shoreline/M_ShoreGrassLight.uasset": "1b6b1e01fce68eae13d931559c4128905726b7c96de1af3f8e6f4cee74bd2318",
+    "Content/Astra/Materials/Shoreline/M_ShoreMoss.uasset": "5ac425999c577148e2b4c9d7b879319c2b9af8e50591c1c98b3601da4c7e4e29",
+    "Content/Astra/Materials/Shoreline/M_ShoreSand.uasset": "e36c1742690f20cc32da3fb924fa320ace03bf5271954a99e217bae5112cb7b0",
+    "Content/Astra/Materials/Shoreline/M_ShoreSandDark.uasset": "30482c6291745e620fb29ef0df748bd09c87db7b4a75d9da5b935598278914d1",
+    "Content/Astra/Materials/Shoreline/M_ShoreSandLight.uasset": "d616fefc9d326ef88074203aac5e5fd76dd3457fc21f7cbb65336065de14aedd",
+    "Content/Astra/Materials/Shoreline/M_SubmergedStone.uasset": "f05a7de240f9e36a1b71a98720d443be1d31ae892a4a0fbac0bdc1dface74883",
+    "Content/Astra/Materials/Shoreline/M_SubmergedStoneDark.uasset": "d6d65210569fa1427c991be6597a624921f9c8bf1f33b750734c96b21ffe7d62",
+    "Content/Astra/Materials/Shoreline/M_SubmergedStoneLight.uasset": "bf70f7323323f95182218dcc57f2c8ae63543bb5cff3e2418008eb75a33e9e8d",
+    "Content/Astra/Materials/Shoreline/M_WaterFoam.uasset": "6e3aeb1921de111365c8cf4dfa21b016eced1e3255e783ebb787e794b9c0d1e5",
+    "Content/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.uasset": "ee2f10d83d1137a20fe721ae84b01d6a8b0fbe8c58059a7fd767e1496b2dffab",
+    "Content/Astra/Materials/Shoreline/Wet_M_Moss.uasset": "e94caaf1fd8afa295b54fd4a7518807df62046c17e53135982bc428dbfded825",
+    "Content/Astra/Materials/Shoreline/Wet_M_Stone.uasset": "7896720313e951f0012c9e96bff6402091988074e54ca44eb748b53278bd729c",
+    "Content/Astra/Materials/Shoreline/Wet_M_StoneLight.uasset": "a54674f664398661b315347089479d6733e7d33df433637359cdc0848137896f"
+  },
+  "preserved_existing_material_paths": [
+    "/Game/Astra/Materials/M_Bark",
+    "/Game/Astra/Materials/M_BarkLight",
+    "/Game/Astra/Materials/M_CampBuckle",
+    "/Game/Astra/Materials/M_CampCharcoal",
+    "/Game/Astra/Materials/M_CampEnamel",
+    "/Game/Astra/Materials/M_CampEnamelLight",
+    "/Game/Astra/Materials/M_CampFlame",
+    "/Game/Astra/Materials/M_CampFlameCore",
+    "/Game/Astra/Materials/M_CampIron",
+    "/Game/Astra/Materials/M_CampLanternGlow",
+    "/Game/Astra/Materials/M_CampLeather",
+    "/Game/Astra/Materials/M_CampLeatherLight",
+    "/Game/Astra/Materials/M_CampOchre",
+    "/Game/Astra/Materials/M_CampRollDark",
+    "/Game/Astra/Materials/M_CampRope",
+    "/Game/Astra/Materials/M_CampSoup",
+    "/Game/Astra/Materials/M_CampStoneBlue",
+    "/Game/Astra/Materials/M_CampStoneLight",
+    "/Game/Astra/Materials/M_CampWood",
+    "/Game/Astra/Materials/M_CampWoodLight",
+    "/Game/Astra/Materials/M_CatBlack",
+    "/Game/Astra/Materials/M_CatCream",
+    "/Game/Astra/Materials/M_CatOrange",
+    "/Game/Astra/Materials/M_CatPink",
+    "/Game/Astra/Materials/M_Cattail",
+    "/Game/Astra/Materials/M_CloudSky",
+    "/Game/Astra/Materials/M_CottageCream",
+    "/Game/Astra/Materials/M_CottageCreamLight",
+    "/Game/Astra/Materials/M_CottageDoor",
+    "/Game/Astra/Materials/M_CottageGlass",
+    "/Game/Astra/Materials/M_CottagePink",
+    "/Game/Astra/Materials/M_CottagePinkDark",
+    "/Game/Astra/Materials/M_CottagePinkLight",
+    "/Game/Astra/Materials/M_CottageRope",
+    "/Game/Astra/Materials/M_Fir",
+    "/Game/Astra/Materials/M_FirLight",
+    "/Game/Astra/Materials/M_FlowerCream",
+    "/Game/Astra/Materials/M_FlowerGold",
+    "/Game/Astra/Materials/M_ForestCliffCool",
+    "/Game/Astra/Materials/M_ForestCliffMoss",
+    "/Game/Astra/Materials/M_ForestCliffStone",
+    "/Game/Astra/Materials/M_ForestCliffWarm",
+    "/Game/Astra/Materials/M_ForestRockPaint",
+    "/Game/Astra/Materials/M_ForestSignBlue",
+    "/Game/Astra/Materials/M_ForestSignCream",
+    "/Game/Astra/Materials/M_ForestSignGreen",
+    "/Game/Astra/Materials/M_ForestSignPink",
+    "/Game/Astra/Materials/M_ForestSignRope",
+    "/Game/Astra/Materials/M_ForestSignSage",
+    "/Game/Astra/Materials/M_ForestWoodEnd",
+    "/Game/Astra/Materials/M_ForestWoodShade",
+    "/Game/Astra/Materials/M_Grass",
+    "/Game/Astra/Materials/M_GrassLight",
+    "/Game/Astra/Materials/M_Ground",
+    "/Game/Astra/Materials/M_Landscape",
+    "/Game/Astra/Materials/M_LeafLight",
+    "/Game/Astra/Materials/M_LeafOlive",
+    "/Game/Astra/Materials/M_LeafSage",
+    "/Game/Astra/Materials/M_Lily",
+    "/Game/Astra/Materials/M_LotusLight",
+    "/Game/Astra/Materials/M_LotusPink",
+    "/Game/Astra/Materials/M_Moss",
+    "/Game/Astra/Materials/M_Mushroom",
+    "/Game/Astra/Materials/M_Path",
+    "/Game/Astra/Materials/M_Pollen",
+    "/Game/Astra/Materials/M_PuddleReflection",
+    "/Game/Astra/Materials/M_Reed",
+    "/Game/Astra/Materials/M_Stone",
+    "/Game/Astra/Materials/M_StoneLight",
+    "/Game/Astra/Materials/M_TentCanvas",
+    "/Game/Astra/Materials/M_TentCanvasFold",
+    "/Game/Astra/Materials/M_TentCanvasLight",
+    "/Game/Astra/Materials/M_TentInside",
+    "/Game/Astra/Materials/M_TentOchre",
+    "/Game/Astra/Materials/M_TentRope",
+    "/Game/Astra/Materials/M_TentSage",
+    "/Game/Astra/Materials/M_TentSageLight",
+    "/Game/Astra/Materials/M_TentWood",
+    "/Game/Astra/Materials/M_TentWoodDark",
+    "/Game/Astra/Materials/M_Water",
+    "/Game/Astra/Materials/M_WellWater",
+    "/Game/Astra/Materials/M_Wood",
+    "/Game/Astra/Materials/M_WoodDark",
+    "/Game/Astra/Materials/M_WoodLight",
+    "/Game/Astra/Materials/M_CottageCream",
+    "/Game/Astra/Materials/M_CottageCreamLight",
+    "/Game/Astra/Materials/M_CottageDoor",
+    "/Game/Astra/Materials/M_CottageGlass",
+    "/Game/Astra/Materials/M_CottagePink",
+    "/Game/Astra/Materials/M_CottagePinkDark",
+    "/Game/Astra/Materials/M_CottagePinkLight",
+    "/Game/Astra/Materials/M_CottageRope",
+    "/Game/Astra/Materials/M_PuddleCloudReview",
+    "/Game/Astra/Materials/M_PuddleReviewSky",
+    "/Game/Astra/Materials/M_ShorelineReviewFilm",
+    "/Game/Astra/Materials/M_WellWater",
+    "/Game/Astra/Materials/M_PuddleSkyReflection",
+    "/Game/Astra/Materials/M_ShoreEarth",
+    "/Game/Astra/Materials/M_ShoreEarthDark",
+    "/Game/Astra/Materials/M_ShoreEarthLight",
+    "/Game/Astra/Materials/M_ShoreGrass",
+    "/Game/Astra/Materials/M_ShoreGrassLight",
+    "/Game/Astra/Materials/M_ShoreMoss",
+    "/Game/Astra/Materials/M_ShoreSand",
+    "/Game/Astra/Materials/M_ShoreSandDark",
+    "/Game/Astra/Materials/M_ShoreSandLight",
+    "/Game/Astra/Materials/M_SubmergedStone",
+    "/Game/Astra/Materials/M_SubmergedStoneDark",
+    "/Game/Astra/Materials/M_SubmergedStoneLight",
+    "/Game/Astra/Materials/M_WaterFoam",
+    "/Game/Astra/Materials/Wet_M_ForestRockPaint",
+    "/Game/Astra/Materials/Wet_M_Moss",
+    "/Game/Astra/Materials/Wet_M_Stone",
+    "/Game/Astra/Materials/Wet_M_StoneLight"
+  ],
+  "modified_existing_material_files": [],
+  "checks": {
+    "exactly_15_meshes": true,
+    "all_new_actors_placed": true,
+    "placement_positions_match": true,
+    "original_transforms_preserved": true,
+    "native_foliage_counts_match": true,
+    "native_foliage_nonblocking": true,
+    "barrier_xy_rotation_scale_preserved": true,
+    "dock_front_guard_blocks": true,
+    "existing_material_files_unchanged": true
+  },
+  "meshes": [
+    {
+      "asset": "SM_FishingDock",
+      "path": "/Game/Astra/Meshes/SM_FishingDock.SM_FishingDock",
+      "bounds_cm": {
+        "min": [
+          -243.99998474121094,
+          -224.5000457763672,
+          0.0
+        ],
+        "max": [
+          630.5,
+          224.49996948242188,
+          325.2804260253906
+        ]
+      },
+      "material_paths": [
+        "/Game/Astra/Materials/M_DockWoodLight.M_DockWoodLight",
+        "/Game/Astra/Materials/M_DockNail.M_DockNail",
+        "/Game/Astra/Materials/M_DockWood.M_DockWood",
+        "/Game/Astra/Materials/M_DockWoodDark.M_DockWoodDark",
+        "/Game/Astra/Materials/M_DockEnd.M_DockEnd",
+        "/Game/Astra/Materials/M_DockRope.M_DockRope"
+      ]
+    },
+    {
+      "asset": "SM_FishingRodStand",
+      "path": "/Game/Astra/Meshes/SM_FishingRodStand.SM_FishingRodStand",
+      "bounds_cm": {
+        "min": [
+          -48.13175964355469,
+          -55.0,
+          0.0
+        ],
+        "max": [
+          158.3000030517578,
+          55.000003814697266,
+          169.03359985351562
+        ]
+      },
+      "material_paths": [
+        "/Game/Astra/Materials/M_Fishing_Wood.M_Fishing_Wood",
+        "/Game/Astra/Materials/M_Fishing_WoodDark.M_Fishing_WoodDark",
+        "/Game/Astra/Materials/M_Fishing_WoodLight.M_Fishing_WoodLight",
+        "/Game/Astra/Materials/M_Fishing_Teal.M_Fishing_Teal",
+        "/Game/Astra/Materials/M_Fishing_Cream.M_Fishing_Cream",
+        "/Game/Astra/Materials/M_Fishing_Sage.M_Fishing_Sage",
+        "/Game/Astra/Materials/M_Fishing_Dark.M_Fishing_Dark",
+        "/Game/Astra/Materials/M_Fishing_Metal.M_Fishing_Metal",
+        "/Game/Astra/Materials/M_Fishing_Coral.M_Fishing_Coral"
+      ]
+    },
+    {
+      "asset": "SM_FishingChair",
+      "path": "/Game/Astra/Meshes/SM_FishingChair.SM_FishingChair",
+      "bounds_cm": {
+        "min": [
+          -38.0184440612793,
+          -36.5,
+          1.4901161193847656e-06
+        ],
+        "max": [
+          34.136863708496094,
+          36.5,
+          82.76583862304688
+        ]
+      },
+      "material_paths": [
+        "/Game/Astra/Materials/M_Fishing_Wood.M_Fishing_Wood",
+        "/Game/Astra/Materials/M_Fishing_WoodLight.M_Fishing_WoodLight",
+        "/Game/Astra/Materials/M_Fishing_Metal.M_Fishing_Metal",
+        "/Game/Astra/Materials/M_Fishing_Cream.M_Fishing_Cream",
+        "/Game/Astra/Materials/M_Fishing_Sage.M_Fishing_Sage"
+      ]
+    },
+    {
+      "asset": "SM_FishBucket",
+      "path": "/Game/Astra/Meshes/SM_FishBucket.SM_FishBucket",
+      "bounds_cm": {
+        "min": [
+          -31.892263412475586,
+          -31.525833129882812,
+          0.0
+        ],
+        "max": [
+          31.892263412475586,
+          31.525833129882812,
+          70.4000015258789
+        ]
+      },
+      "material_paths": [
+        "/Game/Astra/Materials/M_Fishing_Teal.M_Fishing_Teal",
+        "/Game/Astra/Materials/M_Fishing_Water.M_Fishing_Water",
+        "/Game/Astra/Materials/M_Fishing_Metal.M_Fishing_Metal",
+        "/Game/Astra/Materials/M_Fishing_WoodLight.M_Fishing_WoodLight",
+        "/Game/Astra/Materials/M_Fishing_FishSilver.M_Fishing_FishSilver",
+        "/Game/Astra/Materials/M_Fishing_Dark.M_Fishing_Dark"
+      ]
+    },
+    {
+      "asset": "SM_FishingTackleBox",
+      "path": "/Game/Astra/Meshes/SM_FishingTackleBox.SM_FishingTackleBox",
+      "bounds_cm": {
+        "min": [
+          -38.11842727661133,
+          -33.750003814697266,
+          0.0
+        ],
+        "max": [
+          35.897865295410156,
+          33.750003814697266,
+          75.33058166503906
+        ]
+      },
+      "material_paths": [
+        "/Game/Astra/Materials/M_Fishing_WoodDark.M_Fishing_WoodDark",
+        "/Game/Astra/Materials/M_Fishing_Teal.M_Fishing_Teal",
+        "/Game/Astra/Materials/M_Fishing_Wood.M_Fishing_Wood",
+        "/Game/Astra/Materials/M_Fishing_WoodLight.M_Fishing_WoodLight",
+        "/Game/Astra/Materials/M_Fishing_Metal.M_Fishing_Metal",
+        "/Game/Astra/Materials/M_Fishing_Cream.M_Fishing_Cream",
+        "/Game/Astra/Materials/M_Fishing_Coral.M_Fishing_Coral",
+        "/Game/Astra/Materials/M_Fishing_Sage.M_Fishing_Sage"
+      ]
+    },
+    {
+      "asset": "SM_HomeClothesline",
+      "path": "/Game/Astra/Meshes/SM_HomeClothesline.SM_HomeClothesline",
+      "bounds_cm": {
+        "min": [
+          -10.100010871887207,
+          -157.2952117919922,
+          5.9604644775390625e-06
+        ],
+        "max": [
+          11.000015258789062,
+          157.29522705078125,
+          180.64024353027344
+        ]
+      },
+      "material_paths": [
+        "/Game/Astra/Materials/M_HomeLife_Wood.M_HomeLife_Wood",
+        "/Game/Astra/Materials/M_HomeLife_WoodLight.M_HomeLife_WoodLight",
+        "/Game/Astra/Materials/M_HomeLife_Rope.M_HomeLife_Rope",
+        "/Game/Astra/Materials/M_HomeLife_Cream.M_HomeLife_Cream",
+        "/Game/Astra/Materials/M_HomeLife_Sage.M_HomeLife_Sage"
+      ]
+    },
+    {
+      "asset": "SM_VegetablePatch",
+      "path": "/Game/Astra/Meshes/SM_VegetablePatch.SM_VegetablePatch",
+      "bounds_cm": {
+        "min": [
+          -102.65739440917969,
+          -103.00000762939453,
+          0.0
+        ],
+        "max": [
+          102.65739440917969,
+          103.00000762939453,
+          62.0
+        ]
+      },
+      "material_paths": [
+        "/Game/Astra/Materials/M_HomeLife_Soil.M_HomeLife_Soil",
+        "/Game/Astra/Materials/M_HomeLife_Wood.M_HomeLife_Wood",
+        "/Game/Astra/Materials/M_HomeLife_WoodLight.M_HomeLife_WoodLight",
+        "/Game/Astra/Materials/M_HomeLife_SoilLight.M_HomeLife_SoilLight",
+        "/Game/Astra/Materials/M_HomeLife_Pumpkin.M_HomeLife_Pumpkin",
+        "/Game/Astra/Materials/M_HomeLife_PumpkinLight.M_HomeLife_PumpkinLight",
+        "/Game/Astra/Materials/M_HomeLife_WoodDark.M_HomeLife_WoodDark",
+        "/Game/Astra/Materials/M_HomeLife_LeafLight.M_HomeLife_LeafLight",
+        "/Game/Astra/Materials/M_HomeLife_Leaf.M_HomeLife_Leaf",
+        "/Game/Astra/Materials/M_HomeLife_Carrot.M_HomeLife_Carrot"
+      ]
+    },
+    {
+      "asset": "SM_WateringTools",
+      "path": "/Game/Astra/Meshes/SM_WateringTools.SM_WateringTools",
+      "bounds_cm": {
+        "min": [
+          -25.66675567626953,
+          -55.86069107055664,
+          0.0
+        ],
+        "max": [
+          25.66676139831543,
+          91.37238311767578,
+          125.89017486572266
+        ]
+      },
+      "material_paths": [
+        "/Game/Astra/Materials/M_HomeLife_Sage.M_HomeLife_Sage",
+        "/Game/Astra/Materials/M_HomeLife_SageShade.M_HomeLife_SageShade",
+        "/Game/Astra/Materials/M_HomeLife_Iron.M_HomeLife_Iron",
+        "/Game/Astra/Materials/M_HomeLife_IronDark.M_HomeLife_IronDark",
+        "/Game/Astra/Materials/M_HomeLife_WoodLight.M_HomeLife_WoodLight"
+      ]
+    },
+    {
+      "asset": "SM_BootsAndBroom",
+      "path": "/Game/Astra/Meshes/SM_BootsAndBroom.SM_BootsAndBroom",
+      "bounds_cm": {
+        "min": [
+          -25.536170959472656,
+          -90.7254409790039,
+          0.0
+        ],
+        "max": [
+          22.300003051757812,
+          63.0,
+          133.8720245361328
+        ]
+      },
+      "material_paths": [
+        "/Game/Astra/Materials/M_HomeLife_Ochre.M_HomeLife_Ochre",
+        "/Game/Astra/Materials/M_HomeLife_WoodDark.M_HomeLife_WoodDark",
+        "/Game/Astra/Materials/M_HomeLife_SageShade.M_HomeLife_SageShade",
+        "/Game/Astra/Materials/M_HomeLife_Wood.M_HomeLife_Wood",
+        "/Game/Astra/Materials/M_HomeLife_WoodLight.M_HomeLife_WoodLight",
+        "/Game/Astra/Materials/M_HomeLife_Straw.M_HomeLife_Straw",
+        "/Game/Astra/Materials/M_HomeLife_StrawShade.M_HomeLife_StrawShade",
+        "/Game/Astra/Materials/M_HomeLife_Rope.M_HomeLife_Rope"
+      ]
+    },
+    {
+      "asset": "SM_HerbDryingRack",
+      "path": "/Game/Astra/Meshes/SM_HerbDryingRack.SM_HerbDryingRack",
+      "bounds_cm": {
+        "min": [
+          -24.00000762939453,
+          -76.00000762939453,
+          -5.9604644775390625e-06
+        ],
+        "max": [
+          24.00000762939453,
+          76.0,
+          130.06016540527344
+        ]
+      },
+      "material_paths": [
+        "/Game/Astra/Materials/M_HomeLife_Wood.M_HomeLife_Wood",
+        "/Game/Astra/Materials/M_HomeLife_WoodLight.M_HomeLife_WoodLight",
+        "/Game/Astra/Materials/M_HomeLife_Rope.M_HomeLife_Rope",
+        "/Game/Astra/Materials/M_HomeLife_Leaf.M_HomeLife_Leaf",
+        "/Game/Astra/Materials/M_HomeLife_LeafLight.M_HomeLife_LeafLight",
+        "/Game/Astra/Materials/M_HomeLife_Cream.M_HomeLife_Cream",
+        "/Game/Astra/Materials/M_HomeLife_Mushroom.M_HomeLife_Mushroom"
+      ]
+    },
+    {
+      "asset": "SM_ChoppingStump",
+      "path": "/Game/Astra/Meshes/SM_ChoppingStump.SM_ChoppingStump",
+      "bounds_cm": {
+        "min": [
+          -92.42163848876953,
+          -76.3984603881836,
+          0.0
+        ],
+        "max": [
+          64.97659301757812,
+          74.60136413574219,
+          137.84027099609375
+        ]
+      },
+      "material_paths": [
+        "/Game/Astra/Materials/M_WoodlandLife_WoodDark.M_WoodlandLife_WoodDark",
+        "/Game/Astra/Materials/M_WoodlandLife_WoodEnd.M_WoodlandLife_WoodEnd",
+        "/Game/Astra/Materials/M_WoodlandLife_WoodLight.M_WoodlandLife_WoodLight",
+        "/Game/Astra/Materials/M_WoodlandLife_Wood.M_WoodlandLife_Wood",
+        "/Game/Astra/Materials/M_WoodlandLife_Iron.M_WoodlandLife_Iron"
+      ]
+    },
+    {
+      "asset": "SM_ForagingBasket",
+      "path": "/Game/Astra/Meshes/SM_ForagingBasket.SM_ForagingBasket",
+      "bounds_cm": {
+        "min": [
+          -48.064762115478516,
+          -27.649999618530273,
+          0.0
+        ],
+        "max": [
+          39.80422592163086,
+          67.98568725585938,
+          79.25166320800781
+        ]
+      },
+      "material_paths": [
+        "/Game/Astra/Materials/M_WoodlandLife_WoodDark.M_WoodlandLife_WoodDark",
+        "/Game/Astra/Materials/M_WoodlandLife_WoodLight.M_WoodlandLife_WoodLight",
+        "/Game/Astra/Materials/M_WoodlandLife_Wood.M_WoodlandLife_Wood",
+        "/Game/Astra/Materials/M_WoodlandLife_Rope.M_WoodlandLife_Rope",
+        "/Game/Astra/Materials/M_WoodlandLife_Cream.M_WoodlandLife_Cream",
+        "/Game/Astra/Materials/M_WoodlandLife_Mushroom.M_WoodlandLife_Mushroom",
+        "/Game/Astra/Materials/M_WoodlandLife_Berry.M_WoodlandLife_Berry",
+        "/Game/Astra/Materials/M_WoodlandLife_Sage.M_WoodlandLife_Sage",
+        "/Game/Astra/Materials/M_WoodlandLife_SageLight.M_WoodlandLife_SageLight"
+      ]
+    },
+    {
+      "asset": "SM_PicnicSet",
+      "path": "/Game/Astra/Meshes/SM_PicnicSet.SM_PicnicSet",
+      "bounds_cm": {
+        "min": [
+          -105.69923400878906,
+          -100.00000762939453,
+          0.0
+        ],
+        "max": [
+          105.69923400878906,
+          100.00000762939453,
+          64.83074188232422
+        ]
+      },
+      "material_paths": [
+        "/Game/Astra/Materials/M_WoodlandLife_Cream.M_WoodlandLife_Cream",
+        "/Game/Astra/Materials/M_WoodlandLife_SageLight.M_WoodlandLife_SageLight",
+        "/Game/Astra/Materials/M_WoodlandLife_Sage.M_WoodlandLife_Sage",
+        "/Game/Astra/Materials/M_WoodlandLife_WoodDark.M_WoodlandLife_WoodDark",
+        "/Game/Astra/Materials/M_WoodlandLife_WoodLight.M_WoodlandLife_WoodLight",
+        "/Game/Astra/Materials/M_WoodlandLife_Wood.M_WoodlandLife_Wood",
+        "/Game/Astra/Materials/M_WoodlandLife_Rope.M_WoodlandLife_Rope",
+        "/Game/Astra/Materials/M_WoodlandLife_Bread.M_WoodlandLife_Bread",
+        "/Game/Astra/Materials/M_WoodlandLife_WoodEnd.M_WoodlandLife_WoodEnd",
+        "/Game/Astra/Materials/M_WoodlandLife_Teal.M_WoodlandLife_Teal",
+        "/Game/Astra/Materials/M_WoodlandLife_Berry.M_WoodlandLife_Berry",
+        "/Game/Astra/Materials/M_WoodlandLife_Leaf.M_WoodlandLife_Leaf"
+      ]
+    },
+    {
+      "asset": "SM_BridgeRepairSupplies",
+      "path": "/Game/Astra/Meshes/SM_BridgeRepairSupplies.SM_BridgeRepairSupplies",
+      "bounds_cm": {
+        "min": [
+          -87.50000762939453,
+          -60.111812591552734,
+          0.0
+        ],
+        "max": [
+          110.32001495361328,
+          64.45000457763672,
+          53.250003814697266
+        ]
+      },
+      "material_paths": [
+        "/Game/Astra/Materials/M_WoodlandLife_WoodEnd.M_WoodlandLife_WoodEnd",
+        "/Game/Astra/Materials/M_WoodlandLife_WoodLight.M_WoodlandLife_WoodLight",
+        "/Game/Astra/Materials/M_WoodlandLife_Rope.M_WoodlandLife_Rope",
+        "/Game/Astra/Materials/M_WoodlandLife_WoodDark.M_WoodlandLife_WoodDark",
+        "/Game/Astra/Materials/M_WoodlandLife_Wood.M_WoodlandLife_Wood",
+        "/Game/Astra/Materials/M_WoodlandLife_Iron.M_WoodlandLife_Iron",
+        "/Game/Astra/Materials/M_WoodlandLife_IronEdge.M_WoodlandLife_IronEdge"
+      ]
+    },
+    {
+      "asset": "SM_WoodHandcart",
+      "path": "/Game/Astra/Meshes/SM_WoodHandcart.SM_WoodHandcart",
+      "bounds_cm": {
+        "min": [
+          -145.57522583007812,
+          -75.30000305175781,
+          0.0
+        ],
+        "max": [
+          81.50000762939453,
+          75.30000305175781,
+          124.60000610351562
+        ]
+      },
+      "material_paths": [
+        "/Game/Astra/Materials/M_WoodlandLife_Wood.M_WoodlandLife_Wood",
+        "/Game/Astra/Materials/M_WoodlandLife_WoodLight.M_WoodlandLife_WoodLight",
+        "/Game/Astra/Materials/M_WoodlandLife_Iron.M_WoodlandLife_Iron",
+        "/Game/Astra/Materials/M_WoodlandLife_WoodDark.M_WoodlandLife_WoodDark"
+      ]
+    }
+  ]
+}

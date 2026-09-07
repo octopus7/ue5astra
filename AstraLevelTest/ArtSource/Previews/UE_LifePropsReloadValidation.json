@@ -1,0 +1,233 @@
+{
+  "passed": true,
+  "validation": "Independent full-editor reload; actual saved mesh/actor state",
+  "checks": {
+    "LifeProps_FishingDock": true,
+    "LifeProps_RodStand": true,
+    "LifeProps_Chair": true,
+    "LifeProps_Bucket": true,
+    "LifeProps_TackleBox": true,
+    "LifeProps_Clothesline": true,
+    "LifeProps_VegetablePatch": true,
+    "LifeProps_WateringTools": true,
+    "LifeProps_BootsAndBroom": true,
+    "LifeProps_HerbDryingRack": true,
+    "LifeProps_Handcart": true,
+    "LifeProps_ChoppingStump": true,
+    "LifeProps_Picnic": true,
+    "LifeProps_ForagingBasket": true,
+    "LifeProps_BridgeRepair": true,
+    "preserved_MossRock_04_0192": true,
+    "preserved_MossRock_02_0193": true,
+    "preserved_MossRock_02_0194": true,
+    "preserved_Lotus_0338": true,
+    "preserved_Lotus_0345": true,
+    "preserved_Lotus_0349": true,
+    "preserved_Lotus_0355": true,
+    "preserved_Lotus_0358": true,
+    "preserved_Lotus_0365": true,
+    "preserved_Lotus_0374": true,
+    "preserved_Reeds_0399": true,
+    "preserved_Reeds_0420": true,
+    "preserved_Reeds_0426": true,
+    "preserved_Reeds_0444": true,
+    "preserved_Fern_0659": true,
+    "preserved_Fern_1370": true,
+    "preserved_Flowers_1588": true,
+    "preserved_Flowers_1626": true,
+    "SM_FishingDock_mesh": true,
+    "SM_FishingDock_authored_normals": true,
+    "SM_FishingRodStand_mesh": true,
+    "SM_FishingRodStand_authored_normals": true,
+    "SM_FishingChair_mesh": true,
+    "SM_FishingChair_authored_normals": true,
+    "SM_FishBucket_mesh": true,
+    "SM_FishBucket_authored_normals": true,
+    "SM_FishingTackleBox_mesh": true,
+    "SM_FishingTackleBox_authored_normals": true,
+    "SM_HomeClothesline_mesh": true,
+    "SM_HomeClothesline_authored_normals": true,
+    "SM_VegetablePatch_mesh": true,
+    "SM_VegetablePatch_authored_normals": true,
+    "SM_WateringTools_mesh": true,
+    "SM_WateringTools_authored_normals": true,
+    "SM_BootsAndBroom_mesh": true,
+    "SM_BootsAndBroom_authored_normals": true,
+    "SM_HerbDryingRack_mesh": true,
+    "SM_HerbDryingRack_authored_normals": true,
+    "SM_ChoppingStump_mesh": true,
+    "SM_ChoppingStump_authored_normals": true,
+    "SM_ForagingBasket_mesh": true,
+    "SM_ForagingBasket_authored_normals": true,
+    "SM_PicnicSet_mesh": true,
+    "SM_PicnicSet_authored_normals": true,
+    "SM_BridgeRepairSupplies_mesh": true,
+    "SM_BridgeRepairSupplies_authored_normals": true,
+    "SM_WoodHandcart_mesh": true,
+    "SM_WoodHandcart_authored_normals": true,
+    "wood_texture_srgb": true,
+    "native_landscape_unchanged": true,
+    "review_cameras": true,
+    "filtered_foliage_saved": true
+  },
+  "new_instances": [
+    {
+      "name": "LifeProps_FishingDock",
+      "asset": "SM_FishingDock",
+      "location_cm": [
+        400.0,
+        2800.0,
+        -150.0
+      ],
+      "collision": "BlockAll"
+    },
+    {
+      "name": "LifeProps_RodStand",
+      "asset": "SM_FishingRodStand",
+      "location_cm": [
+        939.9999618530273,
+        2900.0,
+        85.39999723434448
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "name": "LifeProps_Chair",
+      "asset": "SM_FishingChair",
+      "location_cm": [
+        825.0,
+        2900.0,
+        85.39999723434448
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "name": "LifeProps_Bucket",
+      "asset": "SM_FishBucket",
+      "location_cm": [
+        925.0,
+        2685.0000381469727,
+        85.39999723434448
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "name": "LifeProps_TackleBox",
+      "asset": "SM_FishingTackleBox",
+      "location_cm": [
+        755.0000190734863,
+        2685.0000381469727,
+        85.39999723434448
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "name": "LifeProps_Clothesline",
+      "asset": "SM_HomeClothesline",
+      "location_cm": [
+        1050.0,
+        4515.000152587891,
+        155.00757694244385
+      ],
+      "collision": "BlockAll"
+    },
+    {
+      "name": "LifeProps_VegetablePatch",
+      "asset": "SM_VegetablePatch",
+      "location_cm": [
+        1400.0,
+        4454.999923706055,
+        116.93888902664185
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "name": "LifeProps_WateringTools",
+      "asset": "SM_WateringTools",
+      "location_cm": [
+        1219.9999809265137,
+        4465.000152587891,
+        161.56929731369019
+      ],
+      "collision": "BlockAll"
+    },
+    {
+      "name": "LifeProps_BootsAndBroom",
+      "asset": "SM_BootsAndBroom",
+      "location_cm": [
+        1560.0000381469727,
+        4270.000076293945,
+        97.6003348827362
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "name": "LifeProps_HerbDryingRack",
+      "asset": "SM_HerbDryingRack",
+      "location_cm": [
+        1600.0,
+        3700.0,
+        92.85944700241089
+      ],
+      "collision": "BlockAll"
+    },
+    {
+      "name": "LifeProps_Handcart",
+      "asset": "SM_WoodHandcart",
+      "location_cm": [
+        919.9999809265137,
+        4100.0,
+        123.86140823364258
+      ],
+      "collision": "BlockAll"
+    },
+    {
+      "name": "LifeProps_ChoppingStump",
+      "asset": "SM_ChoppingStump",
+      "location_cm": [
+        3920.0000762939453,
+        345.0000047683716,
+        520.2102661132812
+      ],
+      "collision": "BlockAll"
+    },
+    {
+      "name": "LifeProps_Picnic",
+      "asset": "SM_PicnicSet",
+      "location_cm": [
+        -800.0,
+        -1650.0,
+        51.79176926612854
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "name": "LifeProps_ForagingBasket",
+      "asset": "SM_ForagingBasket",
+      "location_cm": [
+        -609.9999904632568,
+        -1700.0,
+        57.914572954177856
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "name": "LifeProps_BridgeRepair",
+      "asset": "SM_BridgeRepairSupplies",
+      "location_cm": [
+        -2679.9999237060547,
+        -1319.9999809265137,
+        68.41955780982971
+      ],
+      "collision": "NoCollision"
+    }
+  ],
+  "foliage_counts": {
+    "SM_Grass": 1172,
+    "SM_Fern": 371,
+    "SM_Flowers": 266,
+    "SM_Mushrooms": 68,
+    "SM_Reeds": 86
+  },
+  "actor_count": 2108
+}

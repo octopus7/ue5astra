@@ -7,6 +7,7 @@ foreach ($astraView in $Views) {
     if ($astraView -eq 'Gameplay') { $astraArgs += '-AstraSmokeTest' }
     if ($astraView -eq 'Bridge') { $astraArgs += '-AstraBridgeTest' }
     if ($astraView -eq 'Camp') { $astraArgs += '-AstraCampTest' }
+    if ($astraView -eq 'Fishing') { $astraArgs += '-AstraDockTest' }
     $astraProcess = Start-Process -FilePath $astraExe -ArgumentList $astraArgs -WindowStyle Hidden -PassThru
     $astraProcess.WaitForExit()
     Write-Output "$astraView review finished (exit $($astraProcess.ExitCode))"

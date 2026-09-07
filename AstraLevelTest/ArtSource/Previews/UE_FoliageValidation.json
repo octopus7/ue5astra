@@ -9,23 +9,71 @@
     "/Game/Astra/Foliage/FT_Astra_Mushrooms",
     "/Game/Astra/Foliage/FT_Astra_Reeds"
   ],
-  "converted_original_actors": 1198,
-  "additional_instances": 778,
+  "converted_original_actors": 1189,
+  "additional_instances": 774,
   "additional_habitats": {
-    "woodland": 763,
-    "forest_edge": 15,
-    "open_ground": 0
+    "woodland": 761,
+    "forest_edge": 13
   },
   "counts": {
+    "SM_Grass": 1172,
+    "SM_Fern": 371,
+    "SM_Flowers": 266,
+    "SM_Mushrooms": 68,
+    "SM_Reeds": 86
+  },
+  "actor_count": 2108,
+  "path_exclusion_margin_m": 0.7,
+  "plant_collision": "NoCollision",
+  "source_actors_preserved_hidden": true,
+  "placement_layer": "ArtSource/Layout/foliage_placement.json",
+  "life_props_footprint_removed": 13,
+  "actual_type_settings": [
+    {
+      "path": "/Game/Astra/Foliage/FT_Astra_Grass",
+      "mesh": "/Game/Astra/Meshes/SM_Grass.SM_Grass",
+      "density": 40.0,
+      "enable_density_scaling": true
+    },
+    {
+      "path": "/Game/Astra/Foliage/FT_Astra_Fern",
+      "mesh": "/Game/Astra/Meshes/SM_Fern.SM_Fern",
+      "density": 40.0,
+      "enable_density_scaling": true
+    },
+    {
+      "path": "/Game/Astra/Foliage/FT_Astra_Flowers",
+      "mesh": "/Game/Astra/Meshes/SM_Flowers.SM_Flowers",
+      "density": 40.0,
+      "enable_density_scaling": true
+    },
+    {
+      "path": "/Game/Astra/Foliage/FT_Astra_Mushrooms",
+      "mesh": "/Game/Astra/Meshes/SM_Mushrooms.SM_Mushrooms",
+      "density": 40.0,
+      "enable_density_scaling": true
+    },
+    {
+      "path": "/Game/Astra/Foliage/FT_Astra_Reeds",
+      "mesh": "/Game/Astra/Meshes/SM_Reeds.SM_Reeds",
+      "density": 40.0,
+      "enable_density_scaling": true
+    }
+  ],
+  "counts_before_life_props": {
     "SM_Grass": 1176,
     "SM_Fern": 374,
     "SM_Flowers": 268,
     "SM_Mushrooms": 68,
     "SM_Reeds": 90
   },
-  "actor_count": 2083,
-  "path_exclusion_margin_m": 0.7,
-  "plant_collision": "NoCollision",
-  "source_actors_preserved_hidden": true,
-  "placement_layer": "ArtSource/Layout/foliage_placement.json"
+  "life_props_removed_counts": {
+    "SM_Grass": 4,
+    "SM_Fern": 3,
+    "SM_Flowers": 2,
+    "SM_Mushrooms": 0,
+    "SM_Reeds": 4
+  },
+  "life_props_removed_instances": 13,
+  "actual_collision_check": true
 }

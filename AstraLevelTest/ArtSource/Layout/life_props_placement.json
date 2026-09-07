@@ -1,0 +1,1659 @@
+{
+  "version": 1,
+  "asset_ids": [
+    "SM_FishingDock",
+    "SM_FishingRodStand",
+    "SM_FishingChair",
+    "SM_FishBucket",
+    "SM_FishingTackleBox",
+    "SM_HomeClothesline",
+    "SM_VegetablePatch",
+    "SM_WateringTools",
+    "SM_BootsAndBroom",
+    "SM_HerbDryingRack",
+    "SM_ChoppingStump",
+    "SM_ForagingBasket",
+    "SM_PicnicSet",
+    "SM_BridgeRepairSupplies",
+    "SM_WoodHandcart"
+  ],
+  "new_instances": [
+    {
+      "name": "LifeProps_FishingDock",
+      "asset": "SM_FishingDock",
+      "group": "LifeProps/Fishing",
+      "collision": "complex",
+      "blender_location_m": [
+        4.0,
+        -28.0,
+        -1.5
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        400.0,
+        2800.0,
+        -150.0
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "LifeProps_RodStand",
+      "asset": "SM_FishingRodStand",
+      "group": "LifeProps/Fishing",
+      "collision": "none",
+      "blender_location_m": [
+        9.399999618530273,
+        -29.0,
+        0.8539999723434448
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "scale": [
+        0.8600000143051147,
+        0.8600000143051147,
+        0.8600000143051147
+      ],
+      "ue_location_cm": [
+        939.9999618530273,
+        2900.0,
+        85.39999723434448
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "LifeProps_Chair",
+      "asset": "SM_FishingChair",
+      "group": "LifeProps/Fishing",
+      "collision": "none",
+      "blender_location_m": [
+        8.25,
+        -29.0,
+        0.8539999723434448
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        825.0,
+        2900.0,
+        85.39999723434448
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "LifeProps_Bucket",
+      "asset": "SM_FishBucket",
+      "group": "LifeProps/Fishing",
+      "collision": "none",
+      "blender_location_m": [
+        9.25,
+        -26.850000381469727,
+        0.8539999723434448
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        925.0,
+        2685.0000381469727,
+        85.39999723434448
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "LifeProps_TackleBox",
+      "asset": "SM_FishingTackleBox",
+      "group": "LifeProps/Fishing",
+      "collision": "none",
+      "blender_location_m": [
+        7.550000190734863,
+        -26.850000381469727,
+        0.8539999723434448
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.20943951606750488
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        755.0000190734863,
+        2685.0000381469727,
+        85.39999723434448
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -12.000000333930423,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "LifeProps_Clothesline",
+      "asset": "SM_HomeClothesline",
+      "group": "LifeProps/Home",
+      "collision": "complex",
+      "blender_location_m": [
+        10.5,
+        -45.150001525878906,
+        1.5500757694244385
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        1050.0,
+        4515.000152587891,
+        155.00757694244385
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "LifeProps_VegetablePatch",
+      "asset": "SM_VegetablePatch",
+      "group": "LifeProps/Home",
+      "collision": "none",
+      "blender_location_m": [
+        14.0,
+        -44.54999923706055,
+        1.1693888902664185
+      ],
+      "blender_rotation_euler_rad": [
+        -0.17806051671504974,
+        0.14964883029460907,
+        -0.013383373618125916
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        1400.0,
+        4454.999923706055,
+        116.93888902664185
+      ],
+      "ue_rotation_deg": {
+        "pitch": -8.574246384950596,
+        "yaw": 0.7668108239653453,
+        "roll": -10.202116105691
+      }
+    },
+    {
+      "name": "LifeProps_WateringTools",
+      "asset": "SM_WateringTools",
+      "group": "LifeProps/Home",
+      "collision": "complex",
+      "blender_location_m": [
+        12.199999809265137,
+        -44.650001525878906,
+        1.6156929731369019
+      ],
+      "blender_rotation_euler_rad": [
+        -0.25878238677978516,
+        0.1854725182056427,
+        -0.024201583117246628
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        1219.9999809265137,
+        4465.000152587891,
+        161.56929731369019
+      ],
+      "ue_rotation_deg": {
+        "pitch": -10.626792508846652,
+        "yaw": 1.3866485701532985,
+        "roll": -14.82713857480376
+      }
+    },
+    {
+      "name": "LifeProps_BootsAndBroom",
+      "asset": "SM_BootsAndBroom",
+      "group": "LifeProps/Home",
+      "collision": "none",
+      "blender_location_m": [
+        15.600000381469727,
+        -42.70000076293945,
+        0.9760033488273621
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "scale": [
+        0.8199999928474426,
+        0.8199999928474426,
+        0.8199999928474426
+      ],
+      "ue_location_cm": [
+        1560.0000381469727,
+        4270.000076293945,
+        97.6003348827362
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "LifeProps_HerbDryingRack",
+      "asset": "SM_HerbDryingRack",
+      "group": "LifeProps/Home",
+      "collision": "complex",
+      "blender_location_m": [
+        16.0,
+        -37.0,
+        0.9285944700241089
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        1600.0,
+        3700.0,
+        92.85944700241089
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 0.0,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "LifeProps_Handcart",
+      "asset": "SM_WoodHandcart",
+      "group": "LifeProps/Home",
+      "collision": "complex",
+      "blender_location_m": [
+        9.199999809265137,
+        -41.0,
+        1.2386140823364258
+      ],
+      "blender_rotation_euler_rad": [
+        -0.14076873660087585,
+        -0.010066263377666473,
+        -0.2610897421836853
+      ],
+      "scale": [
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "ue_location_cm": [
+        919.9999809265137,
+        4100.0,
+        123.86140823364258
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0.5767544070073936,
+        "yaw": 14.959340301283943,
+        "roll": -8.065454494618944
+      }
+    },
+    {
+      "name": "LifeProps_ChoppingStump",
+      "asset": "SM_ChoppingStump",
+      "group": "LifeProps/Camp",
+      "collision": "complex",
+      "blender_location_m": [
+        39.20000076293945,
+        -3.450000047683716,
+        5.2021026611328125
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.3141592741012573
+      ],
+      "scale": [
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "ue_location_cm": [
+        3920.0000762939453,
+        345.0000047683716,
+        520.2102661132812
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -18.000000500895634,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "LifeProps_Picnic",
+      "asset": "SM_PicnicSet",
+      "group": "LifeProps/Clearing",
+      "collision": "none",
+      "blender_location_m": [
+        -8.0,
+        16.5,
+        0.5179176926612854
+      ],
+      "blender_rotation_euler_rad": [
+        -0.015642110258340836,
+        -0.026616737246513367,
+        0.20964768528938293
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        -800.0,
+        -1650.0,
+        51.79176926612854
+      ],
+      "ue_rotation_deg": {
+        "pitch": 1.5250267086338758,
+        "yaw": -12.011927551768556,
+        "roll": -0.8962269004812197
+      }
+    },
+    {
+      "name": "LifeProps_ForagingBasket",
+      "asset": "SM_ForagingBasket",
+      "group": "LifeProps/Clearing",
+      "collision": "none",
+      "blender_location_m": [
+        -6.099999904632568,
+        17.0,
+        0.5791457295417786
+      ],
+      "blender_rotation_euler_rad": [
+        -0.0015007427427917719,
+        -0.03894111141562462,
+        -0.34903666377067566
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        -609.9999904632568,
+        -1700.0,
+        57.914572954177856
+      ],
+      "ue_rotation_deg": {
+        "pitch": 2.231161333664001,
+        "yaw": 19.99832772938648,
+        "roll": -0.08598622529685578
+      }
+    },
+    {
+      "name": "LifeProps_BridgeRepair",
+      "asset": "SM_BridgeRepairSupplies",
+      "group": "LifeProps/BridgeRepair",
+      "collision": "none",
+      "blender_location_m": [
+        -26.799999237060547,
+        13.199999809265137,
+        0.6841955780982971
+      ],
+      "blender_rotation_euler_rad": [
+        -0.015411850064992905,
+        0.000925029453355819,
+        -0.26180654764175415
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ue_location_cm": [
+        -2679.9999237060547,
+        -1319.9999809265137,
+        68.41955780982971
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.05300028360258208,
+        "yaw": 15.00041022876323,
+        "roll": -0.8830339632125169
+      }
+    }
+  ],
+  "hidden_original_instances": [
+    {
+      "name": "MossRock_04_0192",
+      "asset": "SM_MossRock_04",
+      "group": "Rocks/LakeShore",
+      "collision": "solid",
+      "blender_location_m": [
+        6.904644012451172,
+        -29.950349807739258,
+        -0.2760786712169647
+      ],
+      "blender_rotation_euler_rad": [
+        0.01773741841316223,
+        0.12880055606365204,
+        -1.6153873205184937
+      ],
+      "scale": [
+        0.6366528272628784,
+        0.6366528272628784,
+        0.6366528272628784
+      ],
+      "ue_location_cm": [
+        690.4644012451172,
+        2995.034980773926,
+        -27.607867121696472
+      ],
+      "ue_rotation_deg": {
+        "pitch": -7.379728261385406,
+        "yaw": 92.55487574465646,
+        "roll": 1.0162792145318298
+      }
+    },
+    {
+      "name": "MossRock_02_0193",
+      "asset": "SM_MossRock_02",
+      "group": "Rocks/LakeShore",
+      "collision": "solid",
+      "blender_location_m": [
+        5.36706018447876,
+        -28.36115264892578,
+        -0.1662929207086563
+      ],
+      "blender_rotation_euler_rad": [
+        -0.023867176845669746,
+        -0.1346750259399414,
+        -1.8465934991836548
+      ],
+      "scale": [
+        0.6068884134292603,
+        0.6068884134292603,
+        0.6068884134292603
+      ],
+      "ue_location_cm": [
+        536.706018447876,
+        2836.115264892578,
+        -16.62929207086563
+      ],
+      "ue_rotation_deg": {
+        "pitch": 7.716310592173525,
+        "yaw": 105.80201397951785,
+        "roll": -1.3674885021492373
+      }
+    },
+    {
+      "name": "MossRock_02_0194",
+      "asset": "SM_MossRock_02",
+      "group": "Rocks/LakeShore",
+      "collision": "solid",
+      "blender_location_m": [
+        4.134013652801514,
+        -26.600818634033203,
+        -0.06134798750281334
+      ],
+      "blender_rotation_euler_rad": [
+        0.18430101871490479,
+        0.018831202760338783,
+        2.885554075241089
+      ],
+      "scale": [
+        0.7358361482620239,
+        0.7358361482620239,
+        0.7358361482620239
+      ],
+      "ue_location_cm": [
+        413.40136528015137,
+        2660.0818634033203,
+        -6.134798750281334
+      ],
+      "ue_rotation_deg": {
+        "pitch": -1.078948441322518,
+        "yaw": -165.33007006808958,
+        "roll": 10.559670532325644
+      }
+    },
+    {
+      "name": "Lotus_0338",
+      "asset": "SM_Lotus",
+      "group": "Plants/Lotus",
+      "collision": "none",
+      "blender_location_m": [
+        7.886994361877441,
+        -26.707317352294922,
+        0.11500000208616257
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        1.0970189571380615
+      ],
+      "scale": [
+        1.3393665552139282,
+        1.3393665552139282,
+        1.3393665552139282
+      ],
+      "ue_location_cm": [
+        788.6994361877441,
+        2670.731735229492,
+        11.500000208616257
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -62.85455628985388,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Lotus_0345",
+      "asset": "SM_Lotus",
+      "group": "Plants/Lotus",
+      "collision": "none",
+      "blender_location_m": [
+        10.154142379760742,
+        -27.894073486328125,
+        0.11500000208616257
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        2.528191328048706
+      ],
+      "scale": [
+        1.1293346881866455,
+        1.1293346881866455,
+        1.1293346881866455
+      ],
+      "ue_location_cm": [
+        1015.4142379760742,
+        2789.4073486328125,
+        11.500000208616257
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -144.85469289876545,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Lotus_0349",
+      "asset": "SM_Lotus",
+      "group": "Plants/Lotus",
+      "collision": "none",
+      "blender_location_m": [
+        8.189818382263184,
+        -28.402143478393555,
+        0.11500000208616257
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.8291758298873901
+      ],
+      "scale": [
+        0.9083496928215027,
+        0.9083496928215027,
+        0.9083496928215027
+      ],
+      "ue_location_cm": [
+        818.9818382263184,
+        2840.2143478393555,
+        11.500000208616257
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 47.50827552680496,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Lotus_0355",
+      "asset": "SM_Lotus",
+      "group": "Plants/Lotus",
+      "collision": "none",
+      "blender_location_m": [
+        10.416436195373535,
+        -29.27890968322754,
+        0.11500000208616257
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -2.030022144317627
+      ],
+      "scale": [
+        1.2289626598358154,
+        1.2289626598358154,
+        1.2289626598358154
+      ],
+      "ue_location_cm": [
+        1041.6436195373535,
+        2927.890968322754,
+        11.500000208616257
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 116.31170118749733,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Lotus_0358",
+      "asset": "SM_Lotus",
+      "group": "Plants/Lotus",
+      "collision": "none",
+      "blender_location_m": [
+        8.336736679077148,
+        -26.11144256591797,
+        0.11500000208616257
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        0.4938058853149414
+      ],
+      "scale": [
+        0.7632354497909546,
+        0.7632354497909546,
+        0.7632354497909546
+      ],
+      "ue_location_cm": [
+        833.6736679077148,
+        2611.144256591797,
+        11.500000208616257
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -28.292993127267298,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Lotus_0365",
+      "asset": "SM_Lotus",
+      "group": "Plants/Lotus",
+      "collision": "none",
+      "blender_location_m": [
+        7.64140510559082,
+        -26.576560974121094,
+        0.11500000208616257
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.14139942824840546
+      ],
+      "scale": [
+        1.3277236223220825,
+        1.3277236223220825,
+        1.3277236223220825
+      ],
+      "ue_location_cm": [
+        764.140510559082,
+        2657.6560974121094,
+        11.500000208616257
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 8.101590464196542,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Lotus_0374",
+      "asset": "SM_Lotus",
+      "group": "Plants/Lotus",
+      "collision": "none",
+      "blender_location_m": [
+        11.108880996704102,
+        -28.653837203979492,
+        0.11500000208616257
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        1.8480807542800903
+      ],
+      "scale": [
+        0.9694715738296509,
+        0.9694715738296509,
+        0.9694715738296509
+      ],
+      "ue_location_cm": [
+        1110.8880996704102,
+        2865.383720397949,
+        11.500000208616257
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -105.88722741960292,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Reeds_0399",
+      "asset": "SM_Reeds",
+      "group": "Plants/Reeds",
+      "collision": "none",
+      "blender_location_m": [
+        8.381887435913086,
+        -30.20152473449707,
+        -0.5101348161697388
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.709559977054596
+      ],
+      "scale": [
+        1.1179105043411255,
+        1.1179105043411255,
+        1.1179105043411255
+      ],
+      "ue_location_cm": [
+        838.1887435913086,
+        3020.152473449707,
+        -51.01348161697388
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 40.65479199662788,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Reeds_0420",
+      "asset": "SM_Reeds",
+      "group": "Plants/Reeds",
+      "collision": "none",
+      "blender_location_m": [
+        8.20987606048584,
+        -30.196271896362305,
+        -0.4543360769748688
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -2.010718584060669
+      ],
+      "scale": [
+        0.7330642342567444,
+        0.7330642342567444,
+        0.7330642342567444
+      ],
+      "ue_location_cm": [
+        820.987606048584,
+        3019.6271896362305,
+        -45.43360769748688
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 115.20568865519718,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Reeds_0426",
+      "asset": "SM_Reeds",
+      "group": "Plants/Reeds",
+      "collision": "none",
+      "blender_location_m": [
+        6.07777738571167,
+        -27.617767333984375,
+        -0.5559285879135132
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.5822205543518066
+      ],
+      "scale": [
+        1.060003638267517,
+        1.060003638267517,
+        1.060003638267517
+      ],
+      "ue_location_cm": [
+        607.777738571167,
+        2761.7767333984375,
+        -55.59285879135132
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 33.358780510125676,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Reeds_0444",
+      "asset": "SM_Reeds",
+      "group": "Plants/Reeds",
+      "collision": "none",
+      "blender_location_m": [
+        5.1368207931518555,
+        -27.06204605102539,
+        -0.2646038830280304
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.6592474579811096
+      ],
+      "scale": [
+        0.7469513416290283,
+        0.7469513416290283,
+        0.7469513416290283
+      ],
+      "ue_location_cm": [
+        513.6820793151855,
+        2706.204605102539,
+        -26.46038830280304
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 37.77209699704566,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Fern_0659",
+      "asset": "SM_Fern",
+      "group": "Plants/Fern",
+      "collision": "none",
+      "blender_location_m": [
+        -26.930997848510742,
+        14.174261093139648,
+        0.6807497143745422
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -0.5922605991363525
+      ],
+      "scale": [
+        0.8067870140075684,
+        0.8067870140075684,
+        0.8067870140075684
+      ],
+      "ue_location_cm": [
+        -2693.099784851074,
+        -1417.4261093139648,
+        68.07497143745422
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 33.93403270240249,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Fern_1370",
+      "asset": "SM_Fern",
+      "group": "Plants/Fern",
+      "collision": "none",
+      "blender_location_m": [
+        15.425103187561035,
+        -44.37397766113281,
+        1.0285416841506958
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -2.110661506652832
+      ],
+      "scale": [
+        1.0591992139816284,
+        1.0591992139816284,
+        1.0591992139816284
+      ],
+      "ue_location_cm": [
+        1542.5103187561035,
+        4437.397766113281,
+        102.85416841506958
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 120.9319963119308,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Flowers_1588",
+      "asset": "SM_Flowers",
+      "group": "Plants/Flowers",
+      "collision": "none",
+      "blender_location_m": [
+        10.962889671325684,
+        -46.82289505004883,
+        2.083573818206787
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        1.8180426359176636
+      ],
+      "scale": [
+        1.3804030418395996,
+        1.3804030418395996,
+        1.3804030418395996
+      ],
+      "ue_location_cm": [
+        1096.2889671325684,
+        4682.289505004883,
+        208.3573818206787
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -104.16617001292146,
+        "roll": 0.0
+      }
+    },
+    {
+      "name": "Flowers_1626",
+      "asset": "SM_Flowers",
+      "group": "Plants/Flowers",
+      "collision": "none",
+      "blender_location_m": [
+        -8.204858779907227,
+        16.912851333618164,
+        0.5235900282859802
+      ],
+      "blender_rotation_euler_rad": [
+        0.0,
+        0.0,
+        -1.4197877645492554
+      ],
+      "scale": [
+        1.3046828508377075,
+        1.3046828508377075,
+        1.3046828508377075
+      ],
+      "ue_location_cm": [
+        -820.4858779907227,
+        -1691.2851333618164,
+        52.35900282859802
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 81.34784671298617,
+        "roll": 0.0
+      }
+    }
+  ],
+  "foliage_removed_instances": [
+    {
+      "source_actor": "Reeds_0399",
+      "asset": "SM_Reeds",
+      "ue_location_cm": [
+        838.1887435913086,
+        3020.152473449707,
+        -51.01348161697388
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 40.65479199662788,
+        "roll": 0.0
+      },
+      "scale": [
+        1.1179105043411255,
+        1.1179105043411255,
+        1.1179105043411255
+      ],
+      "kind": "converted"
+    },
+    {
+      "source_actor": "Reeds_0420",
+      "asset": "SM_Reeds",
+      "ue_location_cm": [
+        820.987606048584,
+        3019.6271896362305,
+        -45.43360769748688
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 115.20568865519718,
+        "roll": 0.0
+      },
+      "scale": [
+        0.7330642342567444,
+        0.7330642342567444,
+        0.7330642342567444
+      ],
+      "kind": "converted"
+    },
+    {
+      "source_actor": "Reeds_0426",
+      "asset": "SM_Reeds",
+      "ue_location_cm": [
+        607.777738571167,
+        2761.7767333984375,
+        -55.59285879135132
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 33.358780510125676,
+        "roll": 0.0
+      },
+      "scale": [
+        1.060003638267517,
+        1.060003638267517,
+        1.060003638267517
+      ],
+      "kind": "converted"
+    },
+    {
+      "source_actor": "Reeds_0444",
+      "asset": "SM_Reeds",
+      "ue_location_cm": [
+        513.6820793151855,
+        2706.204605102539,
+        -26.46038830280304
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 37.77209699704566,
+        "roll": 0.0
+      },
+      "scale": [
+        0.7469513416290283,
+        0.7469513416290283,
+        0.7469513416290283
+      ],
+      "kind": "converted"
+    },
+    {
+      "source_actor": "Fern_0659",
+      "asset": "SM_Fern",
+      "ue_location_cm": [
+        -2693.099784851074,
+        -1417.4261093139648,
+        68.07497143745422
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 33.93403270240249,
+        "roll": 0.0
+      },
+      "scale": [
+        0.8067870140075684,
+        0.8067870140075684,
+        0.8067870140075684
+      ],
+      "kind": "converted"
+    },
+    {
+      "source_actor": "Grass_0830",
+      "asset": "SM_Grass",
+      "ue_location_cm": [
+        1549.4109153747559,
+        4545.884323120117,
+        139.53137397766113
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 165.72292888877038,
+        "roll": 0.0
+      },
+      "scale": [
+        1.2988847494125366,
+        1.2988847494125366,
+        1.2988847494125366
+      ],
+      "kind": "converted"
+    },
+    {
+      "source_actor": "Fern_1370",
+      "asset": "SM_Fern",
+      "ue_location_cm": [
+        1542.5103187561035,
+        4437.397766113281,
+        102.85416841506958
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 120.9319963119308,
+        "roll": 0.0
+      },
+      "scale": [
+        1.0591992139816284,
+        1.0591992139816284,
+        1.0591992139816284
+      ],
+      "kind": "converted"
+    },
+    {
+      "source_actor": "Flowers_1588",
+      "asset": "SM_Flowers",
+      "ue_location_cm": [
+        1096.2889671325684,
+        4682.289505004883,
+        208.3573818206787
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": -104.16617001292146,
+        "roll": 0.0
+      },
+      "scale": [
+        1.3804030418395996,
+        1.3804030418395996,
+        1.3804030418395996
+      ],
+      "kind": "converted"
+    },
+    {
+      "source_actor": "Flowers_1626",
+      "asset": "SM_Flowers",
+      "ue_location_cm": [
+        -820.4858779907227,
+        -1691.2851333618164,
+        52.35900282859802
+      ],
+      "ue_rotation_deg": {
+        "pitch": -0.0,
+        "yaw": 81.34784671298617,
+        "roll": 0.0
+      },
+      "scale": [
+        1.3046828508377075,
+        1.3046828508377075,
+        1.3046828508377075
+      ],
+      "kind": "converted"
+    },
+    {
+      "asset": "SM_Grass",
+      "ue_location_cm": [
+        -744.0659356459445,
+        -1776.0956977855476,
+        52.37254365834906
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": -144.70980287380874,
+        "roll": 0
+      },
+      "scale": [
+        0.5056438643794949,
+        0.5056438643794949,
+        0.5056438643794949
+      ],
+      "kind": "additional",
+      "habitat": "woodland"
+    },
+    {
+      "asset": "SM_Fern",
+      "ue_location_cm": [
+        786.6612479317981,
+        3965.145482066042,
+        102.03819782081928
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": -40.328600354163825,
+        "roll": 0
+      },
+      "scale": [
+        0.43999461378552834,
+        0.43999461378552834,
+        0.43999461378552834
+      ],
+      "kind": "additional",
+      "habitat": "forest_edge"
+    },
+    {
+      "asset": "SM_Grass",
+      "ue_location_cm": [
+        961.2188230657798,
+        4113.840391252871,
+        123.54381362593904
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": 93.24073328276341,
+        "roll": 0
+      },
+      "scale": [
+        0.8724514182654866,
+        0.8724514182654866,
+        0.8724514182654866
+      ],
+      "kind": "additional",
+      "habitat": "forest_edge"
+    },
+    {
+      "asset": "SM_Grass",
+      "ue_location_cm": [
+        1423.750202258574,
+        4539.056618073859,
+        138.000437134825
+      ],
+      "ue_rotation_deg": {
+        "pitch": 0,
+        "yaw": -37.80792681715059,
+        "roll": 0
+      },
+      "scale": [
+        0.6748118705604792,
+        0.6748118705604792,
+        0.6748118705604792
+      ],
+      "kind": "additional",
+      "habitat": "woodland"
+    }
+  ],
+  "footprints": [
+    {
+      "label": "LifeProps_RodStand",
+      "center": [
+        9.4,
+        29.0
+      ],
+      "yaw_deg": 0,
+      "local_bounds": [
+        -0.41393348,
+        1.36138,
+        -0.47300000000000003,
+        0.47300000000000003
+      ],
+      "margin": 0.28
+    },
+    {
+      "label": "LifeProps_Chair",
+      "center": [
+        8.25,
+        29.0
+      ],
+      "yaw_deg": 0,
+      "local_bounds": [
+        -0.380184,
+        0.341369,
+        -0.365,
+        0.365
+      ],
+      "margin": 0.28
+    },
+    {
+      "label": "LifeProps_Bucket",
+      "center": [
+        9.25,
+        26.85
+      ],
+      "yaw_deg": 0,
+      "local_bounds": [
+        -0.318923,
+        0.318923,
+        -0.315258,
+        0.315258
+      ],
+      "margin": 0.28
+    },
+    {
+      "label": "LifeProps_TackleBox",
+      "center": [
+        7.55,
+        26.85
+      ],
+      "yaw_deg": -12,
+      "local_bounds": [
+        -0.381184,
+        0.358979,
+        -0.3375,
+        0.3375
+      ],
+      "margin": 0.28
+    },
+    {
+      "label": "LifeProps_Clothesline",
+      "center": [
+        10.5,
+        45.15
+      ],
+      "yaw_deg": 0,
+      "local_bounds": [
+        -0.101,
+        0.11,
+        -1.572952,
+        1.572952
+      ],
+      "margin": 0.28
+    },
+    {
+      "label": "LifeProps_VegetablePatch",
+      "center": [
+        14.0,
+        44.55
+      ],
+      "yaw_deg": 0,
+      "local_bounds": [
+        -1.026574,
+        1.026574,
+        -1.03,
+        1.03
+      ],
+      "margin": 0.28
+    },
+    {
+      "label": "LifeProps_WateringTools",
+      "center": [
+        12.2,
+        44.65
+      ],
+      "yaw_deg": 0,
+      "local_bounds": [
+        -0.256668,
+        0.256668,
+        -0.558607,
+        0.913724
+      ],
+      "margin": 0.28
+    },
+    {
+      "label": "LifeProps_BootsAndBroom",
+      "center": [
+        15.6,
+        42.7
+      ],
+      "yaw_deg": 0,
+      "local_bounds": [
+        -0.20939683999999997,
+        0.18286,
+        -0.7439482799999999,
+        0.5166
+      ],
+      "margin": 0.28
+    },
+    {
+      "label": "LifeProps_HerbDryingRack",
+      "center": [
+        16.0,
+        37.0
+      ],
+      "yaw_deg": 0,
+      "local_bounds": [
+        -0.24,
+        0.24,
+        -0.76,
+        0.76
+      ],
+      "margin": 0.28
+    },
+    {
+      "label": "LifeProps_Handcart",
+      "center": [
+        9.2,
+        41.0
+      ],
+      "yaw_deg": 15,
+      "local_bounds": [
+        -1.3101768,
+        0.7334999999999999,
+        -0.6777,
+        0.6777
+      ],
+      "margin": 0.28
+    },
+    {
+      "label": "LifeProps_ChoppingStump",
+      "center": [
+        39.2,
+        3.45
+      ],
+      "yaw_deg": -18,
+      "local_bounds": [
+        -0.8317944,
+        0.5847894,
+        -0.6875865,
+        0.6714126
+      ],
+      "margin": 0.28
+    },
+    {
+      "label": "LifeProps_Picnic",
+      "center": [
+        -8.0,
+        -16.5
+      ],
+      "yaw_deg": -12,
+      "local_bounds": [
+        -1.056992,
+        1.056992,
+        -1.0,
+        1.0
+      ],
+      "margin": 0.28
+    },
+    {
+      "label": "LifeProps_ForagingBasket",
+      "center": [
+        -6.1,
+        -17.0
+      ],
+      "yaw_deg": 20,
+      "local_bounds": [
+        -0.480648,
+        0.398042,
+        -0.2765,
+        0.679857
+      ],
+      "margin": 0.28
+    },
+    {
+      "label": "LifeProps_BridgeRepair",
+      "center": [
+        -26.8,
+        -13.2
+      ],
+      "yaw_deg": 15,
+      "local_bounds": [
+        -0.875,
+        1.1032,
+        -0.601118,
+        0.6445
+      ],
+      "margin": 0.28
+    },
+    {
+      "label": "DockApproach",
+      "center": [
+        4,
+        28
+      ],
+      "yaw_deg": 0,
+      "local_bounds": [
+        -2.65,
+        3.05,
+        -1.15,
+        1.15
+      ],
+      "margin": 0.3
+    },
+    {
+      "label": "DockPlatform",
+      "center": [
+        4,
+        28
+      ],
+      "yaw_deg": 0,
+      "local_bounds": [
+        2.9,
+        6.45,
+        -2.25,
+        2.25
+      ],
+      "margin": 0.3
+    }
+  ],
+  "grounding": [
+    {
+      "name": "LifeProps_Clothesline",
+      "height_m": 1.5500757694244385,
+      "terrain_center_m": 1.84039306640625
+    },
+    {
+      "name": "LifeProps_VegetablePatch",
+      "height_m": 1.1693888902664185,
+      "terrain_center_m": 1.115478515625
+    },
+    {
+      "name": "LifeProps_WateringTools",
+      "height_m": 1.6156929731369019,
+      "terrain_center_m": 1.6373291015625
+    },
+    {
+      "name": "LifeProps_BootsAndBroom",
+      "height_m": 0.9760033488273621,
+      "terrain_center_m": 0.984375
+    },
+    {
+      "name": "LifeProps_HerbDryingRack",
+      "height_m": 0.9285944700241089,
+      "terrain_center_m": 0.984375
+    },
+    {
+      "name": "LifeProps_Handcart",
+      "height_m": 1.2386140823364258,
+      "terrain_center_m": 1.2470703125
+    },
+    {
+      "name": "LifeProps_ChoppingStump",
+      "height_m": 5.2021026611328125,
+      "terrain_center_m": 5.203125000000057
+    },
+    {
+      "name": "LifeProps_Picnic",
+      "height_m": 0.5179176926612854,
+      "terrain_center_m": 0.5341796875
+    },
+    {
+      "name": "LifeProps_ForagingBasket",
+      "height_m": 0.5791457295417786,
+      "terrain_center_m": 0.587158203125
+    },
+    {
+      "name": "LifeProps_BridgeRepair",
+      "height_m": 0.6841955780982971,
+      "terrain_center_m": 0.701171875
+    }
+  ],
+  "native_landscape_unchanged": true,
+  "landscape_sha256": "5c47fe1915e6af57efab698537397c83dce60512b800d16c7c0b546d61e054b0",
+  "foliage_survivors": 1963,
+  "deck": {
+    "origin_ue_cm": [
+      400,
+      2800,
+      -150
+    ],
+    "surface_world_z_cm": 85,
+    "approach_world_ue_cm": [
+      160,
+      2800,
+      64
+    ],
+    "forward_axis": "+X",
+    "clear_walk_lane_y_cm": 2800,
+    "guards": [
+      {
+        "name": "FishingDock_ShoulderGuard_LowY",
+        "ue_location_cm": [
+          695,
+          2655,
+          145
+        ],
+        "scale": [
+          0.18,
+          1.3,
+          1.8
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        }
+      },
+      {
+        "name": "FishingDock_ShoulderGuard_HighY",
+        "ue_location_cm": [
+          695,
+          2945,
+          145
+        ],
+        "scale": [
+          0.18,
+          1.3,
+          1.8
+        ],
+        "ue_rotation_deg": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        }
+      }
+    ]
+  }
+}

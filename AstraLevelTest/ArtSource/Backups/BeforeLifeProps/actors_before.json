@@ -1,0 +1,506 @@
+[
+  {
+    "name": "Fern_0659",
+    "ue_location_cm": [
+      -2693.099784851074,
+      -1417.4261093139648,
+      68.07497143745422
+    ],
+    "ue_rotation_deg": {
+      "pitch": 0.0,
+      "yaw": 33.93403244018556,
+      "roll": 0.0
+    },
+    "scale": [
+      0.8067870140075684,
+      0.8067870140075684,
+      0.8067870140075684
+    ],
+    "folder": "PreservedBeforeFoliage",
+    "actor_collision": false,
+    "hidden_in_game": true,
+    "mesh": "/Game/Astra/Meshes/SM_Fern.SM_Fern",
+    "collision_profile": "NoCollision",
+    "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "Fern_1370",
+    "ue_location_cm": [
+      1542.5103187561035,
+      4437.397766113281,
+      102.85416841506958
+    ],
+    "ue_rotation_deg": {
+      "pitch": 0.0,
+      "yaw": 120.93199920654301,
+      "roll": 0.0
+    },
+    "scale": [
+      1.0591992139816284,
+      1.0591992139816284,
+      1.0591992139816284
+    ],
+    "folder": "PreservedBeforeFoliage",
+    "actor_collision": false,
+    "hidden_in_game": true,
+    "mesh": "/Game/Astra/Meshes/SM_Fern.SM_Fern",
+    "collision_profile": "NoCollision",
+    "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "Flowers_1588",
+    "ue_location_cm": [
+      1096.2889671325684,
+      4682.289505004883,
+      208.3573818206787
+    ],
+    "ue_rotation_deg": {
+      "pitch": 0.0,
+      "yaw": -104.16616821289067,
+      "roll": 0.0
+    },
+    "scale": [
+      1.3804030418395996,
+      1.3804030418395996,
+      1.3804030418395996
+    ],
+    "folder": "PreservedBeforeFoliage",
+    "actor_collision": false,
+    "hidden_in_game": true,
+    "mesh": "/Game/Astra/Meshes/SM_Flowers.SM_Flowers",
+    "collision_profile": "NoCollision",
+    "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "Flowers_1626",
+    "ue_location_cm": [
+      -820.4858779907227,
+      -1691.2851333618164,
+      52.35900282859802
+    ],
+    "ue_rotation_deg": {
+      "pitch": 0.0,
+      "yaw": 81.34784698486328,
+      "roll": 0.0
+    },
+    "scale": [
+      1.3046828508377075,
+      1.3046828508377075,
+      1.3046828508377075
+    ],
+    "folder": "PreservedBeforeFoliage",
+    "actor_collision": false,
+    "hidden_in_game": true,
+    "mesh": "/Game/Astra/Meshes/SM_Flowers.SM_Flowers",
+    "collision_profile": "NoCollision",
+    "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "LakeBoundary_18",
+    "ue_location_cm": [
+      924.1926419625645,
+      2861.9595949289333,
+      65.0
+    ],
+    "ue_rotation_deg": {
+      "pitch": 0.0,
+      "yaw": -134.99999999999997,
+      "roll": 0.0
+    },
+    "scale": [
+      2.1,
+      0.65,
+      2.3
+    ],
+    "folder": "Collision/Water",
+    "actor_collision": true,
+    "hidden_in_game": true,
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "collision_profile": "BlockAll",
+    "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "LakeBoundary_19",
+    "ue_location_cm": [
+      805.1723903980956,
+      2751.812800489767,
+      65.0
+    ],
+    "ue_rotation_deg": {
+      "pitch": 0.0,
+      "yaw": -127.50000000000001,
+      "roll": 0.0
+    },
+    "scale": [
+      2.1,
+      0.65,
+      2.3
+    ],
+    "folder": "Collision/Water",
+    "actor_collision": true,
+    "hidden_in_game": true,
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "collision_profile": "BlockAll",
+    "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "LakeBoundary_20",
+    "ue_location_cm": [
+      704.8849427774746,
+      2630.0,
+      65.0
+    ],
+    "ue_rotation_deg": {
+      "pitch": 0.0,
+      "yaw": -120.00000000000007,
+      "roll": 0.0
+    },
+    "scale": [
+      2.1,
+      0.65,
+      2.3
+    ],
+    "folder": "Collision/Water",
+    "actor_collision": true,
+    "hidden_in_game": true,
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "collision_profile": "BlockAll",
+    "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "Lotus_0338",
+    "ue_location_cm": [
+      788.6994361877441,
+      2670.731735229492,
+      11.500000208616257
+    ],
+    "ue_rotation_deg": {
+      "pitch": 0.0,
+      "yaw": -62.8545570373535,
+      "roll": 0.0
+    },
+    "scale": [
+      1.3393665552139282,
+      1.3393665552139282,
+      1.3393665552139282
+    ],
+    "folder": "Plants/Lotus",
+    "actor_collision": false,
+    "hidden_in_game": false,
+    "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+    "collision_profile": "NoCollision",
+    "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "Lotus_0345",
+    "ue_location_cm": [
+      1015.4142379760742,
+      2789.4073486328125,
+      11.500000208616257
+    ],
+    "ue_rotation_deg": {
+      "pitch": 0.0,
+      "yaw": -144.8546905517578,
+      "roll": 0.0
+    },
+    "scale": [
+      1.1293346881866455,
+      1.1293346881866455,
+      1.1293346881866455
+    ],
+    "folder": "Plants/Lotus",
+    "actor_collision": false,
+    "hidden_in_game": false,
+    "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+    "collision_profile": "NoCollision",
+    "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "Lotus_0349",
+    "ue_location_cm": [
+      818.9818382263184,
+      2840.2143478393555,
+      11.500000208616257
+    ],
+    "ue_rotation_deg": {
+      "pitch": 0.0,
+      "yaw": 47.50827407836916,
+      "roll": 0.0
+    },
+    "scale": [
+      0.9083496928215027,
+      0.9083496928215027,
+      0.9083496928215027
+    ],
+    "folder": "Plants/Lotus",
+    "actor_collision": false,
+    "hidden_in_game": false,
+    "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+    "collision_profile": "NoCollision",
+    "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "Lotus_0355",
+    "ue_location_cm": [
+      1041.6436195373535,
+      2927.890968322754,
+      11.500000208616257
+    ],
+    "ue_rotation_deg": {
+      "pitch": 0.0,
+      "yaw": 116.31169891357422,
+      "roll": 0.0
+    },
+    "scale": [
+      1.2289626598358154,
+      1.2289626598358154,
+      1.2289626598358154
+    ],
+    "folder": "Plants/Lotus",
+    "actor_collision": false,
+    "hidden_in_game": false,
+    "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+    "collision_profile": "NoCollision",
+    "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "Lotus_0358",
+    "ue_location_cm": [
+      833.6736679077148,
+      2611.144256591797,
+      11.500000208616257
+    ],
+    "ue_rotation_deg": {
+      "pitch": 0.0,
+      "yaw": -28.292993545532237,
+      "roll": 0.0
+    },
+    "scale": [
+      0.7632354497909546,
+      0.7632354497909546,
+      0.7632354497909546
+    ],
+    "folder": "Plants/Lotus",
+    "actor_collision": false,
+    "hidden_in_game": false,
+    "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+    "collision_profile": "NoCollision",
+    "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "Lotus_0365",
+    "ue_location_cm": [
+      764.140510559082,
+      2657.6560974121094,
+      11.500000208616257
+    ],
+    "ue_rotation_deg": {
+      "pitch": 0.0,
+      "yaw": 8.10159015655518,
+      "roll": 0.0
+    },
+    "scale": [
+      1.3277236223220825,
+      1.3277236223220825,
+      1.3277236223220825
+    ],
+    "folder": "Plants/Lotus",
+    "actor_collision": false,
+    "hidden_in_game": false,
+    "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+    "collision_profile": "NoCollision",
+    "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "Lotus_0374",
+    "ue_location_cm": [
+      1110.8880996704102,
+      2865.383720397949,
+      11.500000208616257
+    ],
+    "ue_rotation_deg": {
+      "pitch": 0.0,
+      "yaw": -105.88722991943361,
+      "roll": 0.0
+    },
+    "scale": [
+      0.9694715738296509,
+      0.9694715738296509,
+      0.9694715738296509
+    ],
+    "folder": "Plants/Lotus",
+    "actor_collision": false,
+    "hidden_in_game": false,
+    "mesh": "/Game/Astra/Meshes/SM_Lotus.SM_Lotus",
+    "collision_profile": "NoCollision",
+    "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "MossRock_02_0193",
+    "ue_location_cm": [
+      536.706018447876,
+      2836.115264892578,
+      -16.62929207086563
+    ],
+    "ue_rotation_deg": {
+      "pitch": 7.716310501098638,
+      "yaw": 105.80201721191409,
+      "roll": -1.367488503456117
+    },
+    "scale": [
+      0.6068884134292603,
+      0.6068884134292603,
+      0.6068884134292603
+    ],
+    "folder": "Rocks/LakeShore",
+    "actor_collision": true,
+    "hidden_in_game": false,
+    "mesh": "/Game/Astra/Meshes/SM_MossRock_02.SM_MossRock_02",
+    "collision_profile": "BlockAll",
+    "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "MossRock_02_0194",
+    "ue_location_cm": [
+      413.40136528015137,
+      2660.0818634033203,
+      -6.134798750281334
+    ],
+    "ue_rotation_deg": {
+      "pitch": -1.0789484977722166,
+      "yaw": -165.33006286621094,
+      "roll": 10.559670448303226
+    },
+    "scale": [
+      0.7358361482620239,
+      0.7358361482620239,
+      0.7358361482620239
+    ],
+    "folder": "Rocks/LakeShore",
+    "actor_collision": true,
+    "hidden_in_game": false,
+    "mesh": "/Game/Astra/Meshes/SM_MossRock_02.SM_MossRock_02",
+    "collision_profile": "BlockAll",
+    "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "MossRock_04_0192",
+    "ue_location_cm": [
+      690.4644012451172,
+      2995.034980773926,
+      -27.607867121696472
+    ],
+    "ue_rotation_deg": {
+      "pitch": -7.379728317260745,
+      "yaw": 92.55487823486328,
+      "roll": 1.0162792205810547
+    },
+    "scale": [
+      0.6366528272628784,
+      0.6366528272628784,
+      0.6366528272628784
+    ],
+    "folder": "Rocks/LakeShore",
+    "actor_collision": true,
+    "hidden_in_game": false,
+    "mesh": "/Game/Astra/Meshes/SM_MossRock_04.SM_MossRock_04",
+    "collision_profile": "BlockAll",
+    "collision_enabled": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "Reeds_0399",
+    "ue_location_cm": [
+      838.1887435913086,
+      3020.152473449707,
+      -51.01348161697388
+    ],
+    "ue_rotation_deg": {
+      "pitch": 0.0,
+      "yaw": 40.654792785644545,
+      "roll": 0.0
+    },
+    "scale": [
+      1.1179105043411255,
+      1.1179105043411255,
+      1.1179105043411255
+    ],
+    "folder": "PreservedBeforeFoliage",
+    "actor_collision": false,
+    "hidden_in_game": true,
+    "mesh": "/Game/Astra/Meshes/SM_Reeds.SM_Reeds",
+    "collision_profile": "NoCollision",
+    "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "Reeds_0420",
+    "ue_location_cm": [
+      820.987606048584,
+      3019.6271896362305,
+      -45.43360769748688
+    ],
+    "ue_rotation_deg": {
+      "pitch": 0.0,
+      "yaw": 115.20568847656251,
+      "roll": 0.0
+    },
+    "scale": [
+      0.7330642342567444,
+      0.7330642342567444,
+      0.7330642342567444
+    ],
+    "folder": "PreservedBeforeFoliage",
+    "actor_collision": false,
+    "hidden_in_game": true,
+    "mesh": "/Game/Astra/Meshes/SM_Reeds.SM_Reeds",
+    "collision_profile": "NoCollision",
+    "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "Reeds_0426",
+    "ue_location_cm": [
+      607.777738571167,
+      2761.7767333984375,
+      -55.59285879135132
+    ],
+    "ue_rotation_deg": {
+      "pitch": 0.0,
+      "yaw": 33.358779907226584,
+      "roll": 0.0
+    },
+    "scale": [
+      1.060003638267517,
+      1.060003638267517,
+      1.060003638267517
+    ],
+    "folder": "PreservedBeforeFoliage",
+    "actor_collision": false,
+    "hidden_in_game": true,
+    "mesh": "/Game/Astra/Meshes/SM_Reeds.SM_Reeds",
+    "collision_profile": "NoCollision",
+    "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "Reeds_0444",
+    "ue_location_cm": [
+      513.6820793151855,
+      2706.204605102539,
+      -26.46038830280304
+    ],
+    "ue_rotation_deg": {
+      "pitch": 0.0,
+      "yaw": 37.772098541259766,
+      "roll": 0.0
+    },
+    "scale": [
+      0.7469513416290283,
+      0.7469513416290283,
+      0.7469513416290283
+    ],
+    "folder": "PreservedBeforeFoliage",
+    "actor_collision": false,
+    "hidden_in_game": true,
+    "mesh": "/Game/Astra/Meshes/SM_Reeds.SM_Reeds",
+    "collision_profile": "NoCollision",
+    "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+  }
+]

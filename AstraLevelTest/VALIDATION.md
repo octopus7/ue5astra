@@ -5,7 +5,7 @@
 ## 구현 상태
 
 - 실제 Unreal Landscape: 127×127 높이 샘플, 80cm 간격, 100.8×100.8m.
-- 블렌더 원본에서 41개 사용 모델과 1,805개 배치 레코드를 추출했다. 별도 해안 키트·현장 메시 13개도 통합했다. 언리얼 맵에는 충돌 보조 액터와 조명·카메라, 보존한 식생을 포함해 2,085개 액터가 있다. 작은 식물 1,198개는 숨기고 Foliage 인스턴스로 옮겼다.
+- 블렌더 원본에서 56개 사용 모델과 1,820개 배치 레코드를 추출했다. 별도 해안 키트·현장 메시 13개도 통합했다. 언리얼 맵에는 충돌 보조 액터와 조명·카메라, 보존한 식생을 포함해 2,108개 액터가 있다. 작은 식물 원본 1,198개는 숨겨 보존한다.
 - 숲·공터·호수·개울·정상 다리·무너진 다리·목조 폐허, 연꽃·수초·풀·고사리·꽃·버섯·바위·쓰러진 통나무를 배치했다.
 - Directional Light의 실제 저장값: Source Angle 50°, Intensity 6. 부드러운 그림자를 위해 Virtual Shadow Maps를 사용한다.
 - 호수·개울은 하나의 연결 수면으로 통합해 반투명 메시가 겹치는 자국을 제거했다. 버텍스 마스크와 DepthFade로 가장자리를 부드럽게 한다. 최신 지시대로 구름 반사를 제외한 Unlit 청록색 수면이며 수심 차이와 작은 움직이는 반짝임을 표현한다.
@@ -20,7 +20,10 @@
 - 숲 바위 5종을 각 1,920삼각형의 smooth normals와 단일 생성 텍스처 재질로 교체했다. FBX custom normals를 가져왔으며 155개 기존 배치의 변환·자산 참조를 유지했다.
 - 수중 바위·자갈 4종은 형상·UV·재질 슬롯을 유지하면서 smooth normals로 바꿨다. 독립 FBX 재가져오기에서 노멀 최대 오차 0.030도 이내를 확인했다.
 - 해안 1~7번 마감을 메인 맵에 적용했다. 실제 접촉선 57점을 따라 흰 포말·잔물결을 만들고 모래 바닥의 부드러운 노멀·외곽 색 연결·해안 형태 변화를 반영했다. 해안 바위 39개에는 현재 회청색 생성 텍스처를 보존한 젖은 재질을 덧씌웠고, 수중 돌 3개 재질의 기준색을 통일해 면별 색 차이도 제거했다.
-- 네이티브 InstancedFoliageActor 1개와 FoliageType 5개로 작은 식물 1,976개를 배치했다. 기존 1,198개 전환 + 추가 778개이며 추가분은 숲 내부 763개, 숲 가장자리 15개다. 추가 식물은 길·공터·집터·캠프 동선과 급경사를 피한다.
+- 네이티브 InstancedFoliageActor 1개와 FoliageType 5개로 작은 식물 1,963개를 유지한다. 최초 1,976개 중 생활 소품과 겹치는 13개(풀 4, 고사리 3, 꽃 2, 수초 4)만 제외했다. 남은 원본 전환분 1,189개와 추가분 774개의 위치·회전·크기를 유지하며 이전 전체 배치는 백업했다.
+- 낚시 데크 1종, 낚시 소품 4종, 집 주변 소품 5종, 숲 생활 소품 5종을 독립 Blender 키트에서 제작하고 실제 맵에 15개 배치했다. 데크는 수면 위 75cm 높이이며 낮은 경사로로 산책길과 연결된다. 낚싯대·의자·양동이·태클 상자는 중앙 보행 통로를 피한다.
+- 빨래·텃밭·물뿌리개·삽·장화·빗자루·허브 건조대·손수레는 집 주변, 피크닉과 채집 바구니는 공터 가장자리, 도끼 그루터기는 캠프 장작 옆, 수리 판자·공구·밧줄은 무너진 다리 옆에 배치했다. 기존 오브젝트 18개는 숨겨 보관하고 Landscape 높이는 변경하지 않았다.
+- 새 재질 52개와 생성 목재 텍스처를 가져왔다. 기존 모든 재질 파일은 적용 전후 SHA256이 동일하다. 호수 안전 경계 3개만 데크 아래로 낮추고 앞끝과 두 어깨 구간에 보이지 않는 충돌 가드 3개를 추가했다.
 
 ## 실행 검증
 
@@ -31,30 +34,37 @@
 | W/A/S/D 입력 이벤트 각각 주입 | 네 방향 모두 예상 방향으로 2m 이상 이동, 접지 유지 |
 | 이동 중 카메라 회전 | Pitch −58°, Yaw 0° 유지, 직교 너비 3,000cm |
 | 정상 나무다리 횡단 | 약 12.2m 이동, 개울 위에서 다리 충돌면에 지지됨 |
-| 현재 블렌더 장면의 수동 배치 내보내기 | 1,805개 위치·자산·그룹·충돌 속성 유지, JSON과 높이맵 바이트 동일 |
+| 현재 블렌더 장면의 수동 배치 내보내기 | 1,820개 위치·자산·그룹·충돌 속성 유지, JSON과 높이맵 바이트 동일 |
 | 집터 Landscape 저장·다시 열기 | 집·우물·계단 앞 충돌 높이 98.432cm 유지 |
 | 야영지 경사로 보행 | 약 15.3m 이동, 약 4.04m 상승, 접지 유지 |
 | 부드러운 바위 가져오기 | 5종 각 1,920삼각형, 원본 바운드·155개 배치 변환 유지, custom normals 가져오기 |
-| Foliage 변환·추가 | 5개 타입, 1,976개 인스턴스 실측, 원본 1,198개 식물 보관 |
+| Foliage와 생활 공간 조정 | 5개 타입, 1,963개 인스턴스 실측, 제외한 13개와 이전 전체 배치 보관 |
 | 저장된 메인 맵 다시 열기 | 숲 소품·바위·Foliage 수와 NoCollision·스카이 sRGB 색상 설정 재검증 통과 |
 | 해안 마감 메인 맵 통합 | 포말 그래프 21개 검사 통과, 캠프 18개 변환·Foliage 1,976개·Landscape 유지 |
+| 낚시·생활 소품 FBX 재가져오기 | 15종 모두 크기·UV·노멀·재질 슬롯 확인, 데크 9,880삼각형·치수 오차 0m |
+| 낚시 데크 W 보행 | 890.90cm 이동, 통로·플랫폼 지지 유지, 끝에서 2초간 정지, 카메라 회전 고정 |
+| 생활 소품 저장 후 다시 열기 | 실제 맵에서 신규 배치·FBX 삼각형 수·재질 슬롯·노멀·숨긴 원본·Foliage 등 67개 검사 통과 |
 
 기계 판독 결과: [WASD와 카메라](ArtSource/Previews/UE_MovementValidation.json), [다리 횡단](ArtSource/Previews/UE_BridgeValidation.json), [블렌더 배치 추출](ArtSource/Previews/Blender_ExportValidation.json).
 
 숲 확장 검증: [야영지 오르막](ArtSource/Previews/UE_CampMovementValidation.json), [저장 후 다시 열기](ArtSource/Previews/UE_ForestReloadValidation.json), [부드러운 바위](ArtSource/Previews/UE_SmoothRocksValidation.json), [실제 Foliage 수](ArtSource/Previews/UE_FoliageValidation.json). Foliage 재질은 인스턴스 메시용 셰이더 사용 플래그를 명시적으로 저장한다.
 
+낚시·생활 소품 검증: [UE 적용과 기존 재질 해시 비교](ArtSource/Previews/UE_LifePropsValidation.json), [독립 저장 맵 검증](ArtSource/Previews/UE_LifePropsReloadValidation.json), [실제 데크 보행](ArtSource/Previews/UE_DockMovementValidation.json), [데크 FBX 재가져오기](ArtSource/Previews/FishingDock_FBXValidation.json). `BeforeLifeProps`에는 원본 맵·Blender·지형·전체 식물 배치와 바뀐 액터의 이전 상태를 보관했다.
+
 해안 마감의 [메인 맵 적용 실측](ArtSource/Previews/UE_ShorelinePolishMainValidation.json)과 [독립 모듈의 13초·18초 실제 물결 이동 검증](ArtSource/Previews/UE_ShorelinePolishValidation.json)을 구분해 저장한다. 정확한 접촉선은 집 앞 해안 구간에 작성했으며 다른 물가는 얕은 수심 기준을 사용한다. 수심 표현은 고정 58도 게임 카메라에 맞췄다.
 
-[최종 렌더 기록](ArtSource/Previews/UE_FinalReviewValidation.json)은 실제 UE 화면 17장의 PNG 해시·해상도, 게임 렌더 로그의 재질 컴파일/인스턴싱 사용 오류 여부, 이동 및 저장 후 검증 결과를 함께 보관한다. 생성 참고 이미지는 여기에 포함하지 않는다. 웅덩이는 메인 맵의 탑다운·낮은 시점 두 방향으로 촬영한다.
+[최종 렌더 기록](ArtSource/Previews/UE_FinalReviewValidation.json)은 실제 UE 화면 22장의 PNG 해시·해상도, 게임 렌더 로그의 재질 컴파일/인스턴싱 사용 오류 여부, 이동 및 저장 후 검증 결과를 함께 보관한다. 생성 참고 이미지는 여기에 포함하지 않는다. 웅덩이는 메인 맵의 탑다운·낮은 시점 두 방향으로 촬영한다.
 
 다리 입구의 초기 단차 문제는 블렌더 원본 경사로를 늘린 뒤 FBX를 다시 가져와 해결했다. 이 검증은 에디터 및 에디터의 게임 실행 모드에서 수행했다. 배포용 패키지는 이번 작업 범위에 포함하지 않았다.
 
 ## 보관 자료
 
-생성 이미지 21장(전체 참고 2장, 개별 모델 참고 14장, 텍스처 5장)을 원본 PNG로 보관했다. [레퍼런스 목록](ArtSource/Reference/README.md)과 각 생성 프롬프트를 함께 저장했다.
+생성 이미지 26장(전체 참고 2장, 개별 모델 참고 18장, 텍스처 6장)을 원본 PNG로 보관했다. [레퍼런스 목록](ArtSource/Reference/README.md)과 각 생성 프롬프트를 함께 저장했다.
 
 아래 이미지는 생성 참고 이미지가 아닌 실제 언리얼 엔진 렌더다.
 
+![나무 낚시 데크와 고양이](ArtSource/Previews/UE_Fishing.png)
+![집 앞의 생활 소품](ArtSource/Previews/UE_HomeLife.png)
 ![전체 배치](ArtSource/Previews/UE_Overview.png)
 ![플레이 화면](ArtSource/Previews/UE_Gameplay.png)
 ![호수와 연꽃](ArtSource/Previews/UE_Lake.png)

@@ -46,6 +46,10 @@ private:
     bool bSmokeTest = false;
     bool bBridgeTest = false;
     bool bCampTest = false;
+    bool bDockTest = false;
+    bool bDockWalkwaySupported = false;
+    bool bDockPlatformSupported = false;
+    bool bDockStayedSupported = true;
     bool bBridgeMidpointSupported = false;
     bool bReviewSelected = false;
     bool bCaptured = false;
@@ -54,7 +58,13 @@ private:
     int32 TestStage = 0;
     float ValidationTime = 0;
     float ReviewCaptureTime = 13.f;
+    float DockStopTime = 0.f;
+    float DockStandingSince = 0.f;
+    float DockMinimumFootZ = 100000.f;
+    float DockMaximumX = 100.f;
+    float DockMaximumLateralError = 0.f;
     FVector TestStart;
+    FVector DockStandingStart;
     FRotator TestCameraRotation;
     FString ReviewCamera;
     TArray<FString> TestResults;

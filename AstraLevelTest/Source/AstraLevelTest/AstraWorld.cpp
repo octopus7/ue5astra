@@ -146,6 +146,9 @@ void AAstraController::BeginPlay()
     bSmokeTest = FParse::Param(FCommandLine::Get(),TEXT("AstraSmokeTest"));
     bBridgeTest = FParse::Param(FCommandLine::Get(),TEXT("AstraBridgeTest"));
     bCampTest = FParse::Param(FCommandLine::Get(),TEXT("AstraCampTest"));
+    bDockTest = FParse::Param(FCommandLine::Get(),TEXT("AstraDockTest"));
+    // A dock run cannot report success unless it reaches the final standing check.
+    if (bDockTest) bTestsPassed = false;
     FParse::Value(FCommandLine::Get(),TEXT("AstraReview="),ReviewCamera);
     if (!ReviewCamera.IsEmpty())
     {
@@ -156,7 +159,7 @@ void AAstraController::BeginPlay()
 void AAstraController::PlayerTick(float Dt)
 {
     Super::PlayerTick(Dt);
-    if (bSmokeTest || bBridgeTest || bCampTest || !ReviewCamera.IsEmpty()) TickValidation(Dt);
+    if (bSmokeTest || bBridgeTest || bCampTest || bDockTest || !ReviewCamera.IsEmpty()) TickValidation(Dt);
     if (APawn* P = GetPawn())
     {
         FVector Direction((IsInputKeyDown(EKeys::W)?1.f:0.f)-(IsInputKeyDown(EKeys::S)?1.f:0.f),
@@ -256,6 +259,78 @@ void AAstraController::TickValidation(float Dt)
             const FString Result=FString::Printf(TEXT("{\"passed\":%s,\"travel_cm\":%.2f,\"climb_cm\":%.2f,\"grounded\":%s,\"final_z\":%.2f}"),bTestsPassed?TEXT("true"):TEXT("false"),Delta.Y,Delta.Z,Cat->GetCharacterMovement()->IsMovingOnGround()?TEXT("true"):TEXT("false"),Cat->GetActorLocation().Z);
             FFileHelper::SaveStringToFile(Result,*(FPaths::ProjectDir()/TEXT("ArtSource/Previews/UE_CampMovementValidation.json")));
             UE_LOG(LogTemp,Display,TEXT("ASTRA CAMP %s"),*Result);TestStage=3;
+        }
+    }
+    if(bDockTest)
+    {
+        if(TestStage==0 && ValidationTime>1.f)
+        {
+            FVector Start(100.f,2800.f,170.f);
+            for(TActorIterator<ALandscape> It(GetWorld());It;++It)
+                Start.Z=UAstraSceneLibrary::LandscapeHeightAt(*It,Start)+110.f;
+            Cat->SetActorLocation(Start);
+            Cat->GetCharacterMovement()->StopMovementImmediately();
+            TestStage=1;
+        }
+        if(TestStage==1 && ValidationTime>2.f)
+        {
+            TestStart=Cat->GetActorLocation();
+            InputKey(FInputKeyEventArgs::CreateSimulated(EKeys::W,IE_Pressed,1.f));
+            TestStage=2;
+        }
+        if(TestStage>=2 && TestStage<=4)
+        {
+            const FVector Position=Cat->GetActorLocation();
+            const float FootZ=static_cast<float>(Position.Z)-Cat->GetCapsuleComponent()->GetScaledCapsuleHalfHeight();
+            const bool Grounded=Cat->GetCharacterMovement()->IsMovingOnGround();
+            const bool OnDeck=Grounded && FMath::Abs(FootZ-85.f)<20.f;
+            DockMaximumX=FMath::Max(DockMaximumX,static_cast<float>(Position.X));
+            DockMaximumLateralError=FMath::Max(DockMaximumLateralError,FMath::Abs(static_cast<float>(Position.Y)-2800.f));
+            // Beyond the ramp, floor support must remain at the 85 cm deck height.
+            if(Position.X>=430.f)
+            {
+                DockMinimumFootZ=FMath::Min(DockMinimumFootZ,FootZ);
+                bDockStayedSupported &= OnDeck && Position.X<=1040.f;
+            }
+            if(Position.X>=430.f && Position.X<=700.f) bDockWalkwaySupported |= OnDeck;
+            if(Position.X>=760.f && Position.X<=1010.f) bDockPlatformSupported |= OnDeck;
+        }
+        if(TestStage==2 && ValidationTime>6.2f)
+        {
+            // Hold W long enough to reach the planned guard at X=1030, then release.
+            InputKey(FInputKeyEventArgs::CreateSimulated(EKeys::W,IE_Released,0.f));
+            DockStopTime=ValidationTime;
+            TestStage=3;
+        }
+        if(TestStage==3 && ValidationTime>DockStopTime+.4f)
+        {
+            DockStandingStart=Cat->GetActorLocation();
+            DockStandingSince=ValidationTime;
+            TestStage=4;
+        }
+        if(TestStage==4 && ValidationTime>DockStandingSince+2.f)
+        {
+            const FVector Position=Cat->GetActorLocation();
+            const FVector Delta=Position-TestStart;
+            const float FootZ=static_cast<float>(Position.Z)-Cat->GetCapsuleComponent()->GetScaledCapsuleHalfHeight();
+            const bool Grounded=Cat->GetCharacterMovement()->IsMovingOnGround();
+            const bool NearEnd=Position.X>=930.f && Position.X<=1010.f;
+            const bool StandingStill=FVector::Dist(Position,DockStandingStart)<3.f && Cat->GetVelocity().Size()<3.f;
+            const bool FixedCamera=Cat->TopDownCamera->GetComponentRotation().Equals(TestCameraRotation,.05f);
+            bTestsPassed=Delta.X>800.f && NearEnd && Grounded && StandingStill && FixedCamera
+                && bDockWalkwaySupported && bDockPlatformSupported && bDockStayedSupported
+                && DockMaximumLateralError<35.f && FMath::Abs(FootZ-85.f)<20.f;
+            const FString Result=FString::Printf(TEXT("{\"passed\":%s,\"input_key\":\"W\",\"travel_cm\":%.2f,\"walkway_supported\":%s,\"platform_supported\":%s,\"stayed_supported\":%s,\"grounded\":%s,\"standing_still\":%s,\"standing_seconds\":%.2f,\"fixed_camera\":%s,\"near_end_guard\":%s,\"max_x\":%.2f,\"max_lateral_error_cm\":%.2f,\"minimum_deck_foot_z\":%.2f,\"final_x\":%.2f,\"final_y\":%.2f,\"final_z\":%.2f,\"final_foot_z\":%.2f}"),
+                bTestsPassed?TEXT("true"):TEXT("false"),Delta.X,
+                bDockWalkwaySupported?TEXT("true"):TEXT("false"),bDockPlatformSupported?TEXT("true"):TEXT("false"),
+                bDockStayedSupported?TEXT("true"):TEXT("false"),Grounded?TEXT("true"):TEXT("false"),
+                StandingStill?TEXT("true"):TEXT("false"),ValidationTime-DockStandingSince,
+                FixedCamera?TEXT("true"):TEXT("false"),NearEnd?TEXT("true"):TEXT("false"),
+                DockMaximumX,DockMaximumLateralError,DockMinimumFootZ,Position.X,Position.Y,Position.Z,FootZ);
+            const bool Saved=FFileHelper::SaveStringToFile(Result,*(FPaths::ProjectDir()/TEXT("ArtSource/Previews/UE_DockMovementValidation.json")));
+            bTestsPassed &= Saved;
+            UE_LOG(LogTemp,Display,TEXT("ASTRA DOCK %s saved=%d"),*Result,Saved);
+            TestStage=5;
         }
     }
     if(!bCaptured && ValidationTime>ReviewCaptureTime)

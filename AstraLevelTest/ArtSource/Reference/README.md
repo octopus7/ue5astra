@@ -11,7 +11,7 @@ Large readable shapes and restrained painted textures take precedence over close
 
 Individual modeling references are saved as `Ref_Oak`, `Ref_Fir`, `Ref_MossRock`, `Ref_Lotus`, `Ref_Reeds`, `Ref_BridgeIntact`, `Ref_BridgeBroken`, `Ref_CabinRuin`, and `Ref_CalicoCat` PNG files. The generation prompt set is recorded in `GENERATION_PROMPTS.md`.
 
-Generated production textures are saved in `../Textures`: `T_ForestFloor.png`, `T_AnimeSkyReflection.png`, `T_ForestCliffPaint.png`, and `T_AnimeSkyPanorama.png`. The panorama is used on the actual sky dome; the earlier cloud illustration is used only by the dedicated puddle illusion. The latest direction excludes sky/cloud reflections from the lake and creek.
+Generated production textures are saved in `../Textures`: `T_ForestFloor.png`, `T_AnimeSkyReflection.png`, `T_ForestCliffPaint.png`, `T_AnimeSkyPanorama.png`, `T_AnimeForestRockPaint.png`, and `T_FishingDockWood.png`. The panorama is used on the actual sky dome. The earlier cloud illustration and puddle illusion are preserved as historical work; the current puddle material reflects the actual sky and environment. The latest direction excludes sky/cloud reflections from the lake and creek.
 
 `Ref_PinkRoofLakesideHouse.png` is the separate modeling reference for a pink-roof house on the right/eastern side of the lake, with its front door facing the game camera and a well in the front yard. The sheet includes front, side, and top views. Its prompt is saved in `PINK_HOUSE_PROMPT.md`. The Blender models have been imported and placed in Unreal; `../Previews/UE_House.png` shows the actual engine result.
 
@@ -20,3 +20,18 @@ Generated production textures are saved in `../Textures`: `T_ForestFloor.png`, `
 `SKY_PANORAMA_PROMPT.md` records the full built-in image generation prompt and the spherical mapping/compositing method for the replacement sky.
 
 `../Textures/T_AnimeForestRockPaint.png` is the generated albedo for the smooth forest boulders. `FOREST_SMOOTH_ROCK_TEXTURE_PROMPT.md` preserves the prompt and quality notes. The native output is 1254×1254 and is saved without artificial upscaling; UE generates mipmaps through its power-of-two texture setting.
+
+## Fishing and daily-life references
+
+Four additional built-in ImageGen reference sheets guide the 15 new assets. Each original PNG is saved in this directory; these images describe the modeling target rather than the implemented Unreal scene.
+
+| Reference image | Contents | Saved prompt |
+| --- | --- | --- |
+| `Ref_FishingDock.png` | Timber pier, sloping approach, deep piles, broad platform and open fishing edge | `FISHING_DOCK_PROMPT.md` |
+| `Ref_FishingProps.png` | Rod stand, fishing chair, fish bucket and open tackle box | `FISHING_PROPS_PROMPT.md` |
+| `Ref_HomeLifeProps.png` | Clothesline, vegetable patch, watering tools, boots and broom, herb drying rack | `HOME_LIFE_PROPS_PROMPT.md` |
+| `Ref_WoodlandLifeProps.png` | Axe and chopping stump, foraging basket, picnic blanket and meal, bridge repair supplies, wooden handcart | `WOODLAND_LIFE_PROPS_PROMPT.md` |
+
+`../Textures/T_FishingDockWood.png` is the separately generated painted honey-oak albedo for the dock planks. `FISHING_DOCK_WOOD_PROMPT.md` records the full prompt: continuous vertical grain, restrained knots and warm variation, with no plank borders, nails or baked directional lighting. UVs align the grain with individual timbers.
+
+The four source files are `../Blender/FishingDock.blend`, `FishingProps.blend`, `HomeLifeProps.blend` and `WoodlandLifeProps.blend`. Their matching metadata files live in `../Layout`. Actual Blender model previews use the `../Previews/Blender_FishingDock.png`, `Blender_FishingProps.png`, `Blender_HomeLifeProps.png` and `Blender_WoodlandLifeProps.png` names. In-engine presentation images are recorded separately as `UE_Fishing.png`, `UE_HomeLife.png`, `UE_Picnic.png` and `UE_Repair.png`; engine validation status is documented in the project `VALIDATION.md`.

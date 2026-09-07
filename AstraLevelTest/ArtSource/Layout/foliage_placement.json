@@ -10,25 +10,25 @@
       "/Game/Astra/Foliage/FT_Astra_Mushrooms",
       "/Game/Astra/Foliage/FT_Astra_Reeds"
     ],
-    "converted_original_actors": 1198,
-    "additional_instances": 778,
+    "converted_original_actors": 1189,
+    "additional_instances": 774,
     "additional_habitats": {
-      "woodland": 763,
-      "forest_edge": 15,
+      "woodland": 761,
+      "forest_edge": 13,
       "open_ground": 0
     },
     "counts": {
-      "SM_Grass": 1176,
-      "SM_Fern": 374,
-      "SM_Flowers": 268,
+      "SM_Grass": 1172,
+      "SM_Fern": 371,
+      "SM_Flowers": 266,
       "SM_Mushrooms": 68,
-      "SM_Reeds": 90
+      "SM_Reeds": 86
     },
-    "actor_count": 2083,
     "path_exclusion_margin_m": 0.7,
     "plant_collision": "NoCollision",
     "source_actors_preserved_hidden": true,
-    "placement_layer": "ArtSource/Layout/foliage_placement.json"
+    "placement_layer": "ArtSource/Layout/foliage_placement.json",
+    "life_props_footprint_removed": 13
   },
   "instances": [
     {
@@ -188,26 +188,6 @@
         0.7612618207931519,
         0.7612618207931519,
         0.7612618207931519
-      ],
-      "kind": "converted"
-    },
-    {
-      "source_actor": "Reeds_0399",
-      "asset": "SM_Reeds",
-      "ue_location_cm": [
-        838.1887435913086,
-        3020.152473449707,
-        -51.01348161697388
-      ],
-      "ue_rotation_deg": {
-        "pitch": -0.0,
-        "yaw": 40.65479199662788,
-        "roll": 0.0
-      },
-      "scale": [
-        1.1179105043411255,
-        1.1179105043411255,
-        1.1179105043411255
       ],
       "kind": "converted"
     },
@@ -612,26 +592,6 @@
       "kind": "converted"
     },
     {
-      "source_actor": "Reeds_0420",
-      "asset": "SM_Reeds",
-      "ue_location_cm": [
-        820.987606048584,
-        3019.6271896362305,
-        -45.43360769748688
-      ],
-      "ue_rotation_deg": {
-        "pitch": -0.0,
-        "yaw": 115.20568865519718,
-        "roll": 0.0
-      },
-      "scale": [
-        0.7330642342567444,
-        0.7330642342567444,
-        0.7330642342567444
-      ],
-      "kind": "converted"
-    },
-    {
       "source_actor": "Reeds_0421",
       "asset": "SM_Reeds",
       "ue_location_cm": [
@@ -728,26 +688,6 @@
         1.0108428001403809,
         1.0108428001403809,
         1.0108428001403809
-      ],
-      "kind": "converted"
-    },
-    {
-      "source_actor": "Reeds_0426",
-      "asset": "SM_Reeds",
-      "ue_location_cm": [
-        607.777738571167,
-        2761.7767333984375,
-        -55.59285879135132
-      ],
-      "ue_rotation_deg": {
-        "pitch": -0.0,
-        "yaw": 33.358780510125676,
-        "roll": 0.0
-      },
-      "scale": [
-        1.060003638267517,
-        1.060003638267517,
-        1.060003638267517
       ],
       "kind": "converted"
     },
@@ -1088,26 +1028,6 @@
         0.7559864521026611,
         0.7559864521026611,
         0.7559864521026611
-      ],
-      "kind": "converted"
-    },
-    {
-      "source_actor": "Reeds_0444",
-      "asset": "SM_Reeds",
-      "ue_location_cm": [
-        513.6820793151855,
-        2706.204605102539,
-        -26.46038830280304
-      ],
-      "ue_rotation_deg": {
-        "pitch": -0.0,
-        "yaw": 37.77209699704566,
-        "roll": 0.0
-      },
-      "scale": [
-        0.7469513416290283,
-        0.7469513416290283,
-        0.7469513416290283
       ],
       "kind": "converted"
     },
@@ -4672,26 +4592,6 @@
       "kind": "converted"
     },
     {
-      "source_actor": "Fern_0659",
-      "asset": "SM_Fern",
-      "ue_location_cm": [
-        -2693.099784851074,
-        -1417.4261093139648,
-        68.07497143745422
-      ],
-      "ue_rotation_deg": {
-        "pitch": -0.0,
-        "yaw": 33.93403270240249,
-        "roll": 0.0
-      },
-      "scale": [
-        0.8067870140075684,
-        0.8067870140075684,
-        0.8067870140075684
-      ],
-      "kind": "converted"
-    },
-    {
       "source_actor": "Fern_0660",
       "asset": "SM_Fern",
       "ue_location_cm": [
@@ -7588,26 +7488,6 @@
         1.13384211063385,
         1.13384211063385,
         1.13384211063385
-      ],
-      "kind": "converted"
-    },
-    {
-      "source_actor": "Grass_0830",
-      "asset": "SM_Grass",
-      "ue_location_cm": [
-        1549.4109153747559,
-        4545.884323120117,
-        139.53137397766113
-      ],
-      "ue_rotation_deg": {
-        "pitch": -0.0,
-        "yaw": 165.72292888877038,
-        "roll": 0.0
-      },
-      "scale": [
-        1.2988847494125366,
-        1.2988847494125366,
-        1.2988847494125366
       ],
       "kind": "converted"
     },
@@ -16732,26 +16612,6 @@
       "kind": "converted"
     },
     {
-      "source_actor": "Fern_1370",
-      "asset": "SM_Fern",
-      "ue_location_cm": [
-        1542.5103187561035,
-        4437.397766113281,
-        102.85416841506958
-      ],
-      "ue_rotation_deg": {
-        "pitch": -0.0,
-        "yaw": 120.9319963119308,
-        "roll": 0.0
-      },
-      "scale": [
-        1.0591992139816284,
-        1.0591992139816284,
-        1.0591992139816284
-      ],
-      "kind": "converted"
-    },
-    {
       "source_actor": "Grass_1371",
       "asset": "SM_Grass",
       "ue_location_cm": [
@@ -20372,26 +20232,6 @@
       "kind": "converted"
     },
     {
-      "source_actor": "Flowers_1588",
-      "asset": "SM_Flowers",
-      "ue_location_cm": [
-        1096.2889671325684,
-        4682.289505004883,
-        208.3573818206787
-      ],
-      "ue_rotation_deg": {
-        "pitch": -0.0,
-        "yaw": -104.16617001292146,
-        "roll": 0.0
-      },
-      "scale": [
-        1.3804030418395996,
-        1.3804030418395996,
-        1.3804030418395996
-      ],
-      "kind": "converted"
-    },
-    {
       "source_actor": "Fern_1589",
       "asset": "SM_Fern",
       "ue_location_cm": [
@@ -20988,26 +20828,6 @@
         1.0818092823028564,
         1.0818092823028564,
         1.0818092823028564
-      ],
-      "kind": "converted"
-    },
-    {
-      "source_actor": "Flowers_1626",
-      "asset": "SM_Flowers",
-      "ue_location_cm": [
-        -820.4858779907227,
-        -1691.2851333618164,
-        52.35900282859802
-      ],
-      "ue_rotation_deg": {
-        "pitch": -0.0,
-        "yaw": 81.34784671298617,
-        "roll": 0.0
-      },
-      "scale": [
-        1.3046828508377075,
-        1.3046828508377075,
-        1.3046828508377075
       ],
       "kind": "converted"
     },
@@ -31694,26 +31514,6 @@
     {
       "asset": "SM_Grass",
       "ue_location_cm": [
-        -744.0659356459445,
-        -1776.0956977855476,
-        52.37254365834906
-      ],
-      "ue_rotation_deg": {
-        "pitch": 0,
-        "yaw": -144.70980287380874,
-        "roll": 0
-      },
-      "scale": [
-        0.5056438643794949,
-        0.5056438643794949,
-        0.5056438643794949
-      ],
-      "kind": "additional",
-      "habitat": "woodland"
-    },
-    {
-      "asset": "SM_Grass",
-      "ue_location_cm": [
         -831.9755968513622,
         1411.2474322920732,
         66.57619734536843
@@ -33912,26 +33712,6 @@
       "habitat": "woodland"
     },
     {
-      "asset": "SM_Fern",
-      "ue_location_cm": [
-        786.6612479317981,
-        3965.145482066042,
-        102.03819782081928
-      ],
-      "ue_rotation_deg": {
-        "pitch": 0,
-        "yaw": -40.328600354163825,
-        "roll": 0
-      },
-      "scale": [
-        0.43999461378552834,
-        0.43999461378552834,
-        0.43999461378552834
-      ],
-      "kind": "additional",
-      "habitat": "forest_edge"
-    },
-    {
       "asset": "SM_Grass",
       "ue_location_cm": [
         785.9561415704203,
@@ -34150,26 +33930,6 @@
       ],
       "kind": "additional",
       "habitat": "woodland"
-    },
-    {
-      "asset": "SM_Grass",
-      "ue_location_cm": [
-        961.2188230657798,
-        4113.840391252871,
-        123.54381362593904
-      ],
-      "ue_rotation_deg": {
-        "pitch": 0,
-        "yaw": 93.24073328276341,
-        "roll": 0
-      },
-      "scale": [
-        0.8724514182654866,
-        0.8724514182654866,
-        0.8724514182654866
-      ],
-      "kind": "additional",
-      "habitat": "forest_edge"
     },
     {
       "asset": "SM_Grass",
@@ -34787,26 +34547,6 @@
         0.5561428919466725,
         0.5561428919466725,
         0.5561428919466725
-      ],
-      "kind": "additional",
-      "habitat": "woodland"
-    },
-    {
-      "asset": "SM_Grass",
-      "ue_location_cm": [
-        1423.750202258574,
-        4539.056618073859,
-        138.000437134825
-      ],
-      "ue_rotation_deg": {
-        "pitch": 0,
-        "yaw": -37.80792681715059,
-        "roll": 0
-      },
-      "scale": [
-        0.6748118705604792,
-        0.6748118705604792,
-        0.6748118705604792
       ],
       "kind": "additional",
       "habitat": "woodland"

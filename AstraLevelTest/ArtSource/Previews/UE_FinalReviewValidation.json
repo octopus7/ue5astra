@@ -4,9 +4,12 @@
     "UE_MovementValidation.json": true,
     "UE_BridgeValidation.json": true,
     "UE_CampMovementValidation.json": true,
+    "UE_DockMovementValidation.json": true,
     "UE_ForestReloadValidation.json": true,
+    "UE_LifePropsReloadValidation.json": true,
     "Blender_ExportValidation.json": true,
-    "UE_ShorelinePolishMainValidation.json": true
+    "UE_ShorelinePolishMainValidation.json": true,
+    "FishingDock_FBXValidation.json": true
   },
   "renders": [
     {
@@ -45,7 +48,7 @@
         1600,
         1000
       ],
-      "sha256": "ccd7d1d191a6d3afc919ded9381efebc4d6765e3bfd93f7be6ce96989423e7be",
+      "sha256": "d51521f1a99af168c5ff151df7e51a1b0a9cd5a37c69bf82f6d329a5f68b1f1c",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -135,7 +138,7 @@
         1600,
         1000
       ],
-      "sha256": "85844e29f3fc938b4e7cbff1f2ac4a41310669bb540adcc2e36dbde9fd15c5a1",
+      "sha256": "ff8b7de176c7f3d0620abeb39432dcb16f933b1621d7aff7b223d698c1c935bd",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -145,7 +148,7 @@
         1600,
         1000
       ],
-      "sha256": "21f6b5898f3d91835b0fe6d57c3e1fa09bf62ddae0d42d856f660004da57f879",
+      "sha256": "f50c2eddf2d5ce7da15a459aecf98527d94d0c88b3e05ba662f679294489cef4",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -155,7 +158,7 @@
         1600,
         1000
       ],
-      "sha256": "675d3938e403072ed3e96d1d3c5191a32e27fe019d531084b5feedbd6fb2cb81",
+      "sha256": "67b11c4a4932207048a6a9cd3b19e313d18baa519cb7efdcc4161776e8798317",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -165,7 +168,7 @@
         1600,
         1000
       ],
-      "sha256": "e0aac0d96c9bcf673c6abb7e62cbec88147dae0051d75cafacceb387d6420c3d",
+      "sha256": "a098d799cf68d41e76aba61d725ecbcaa833e9cd474d5636eea3b579a09a3399",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -175,7 +178,57 @@
         1600,
         1000
       ],
-      "sha256": "d2efcaabf87a69933c5fd8b146f6d7b453ce0d9aa685288a183af61da6c615e4",
+      "sha256": "fb7b51b1811bacd826d6ef3ff5575fafc9740030990b65453af243b55ad9fcfd",
+      "shader_errors": [],
+      "engine_exited": true
+    },
+    {
+      "view": "Fishing",
+      "size_px": [
+        1600,
+        1000
+      ],
+      "sha256": "e0f8ffa2d4132c1af8a458b7e363f333a72f1e168bbab0bdee8dbb9c5aa45b52",
+      "shader_errors": [],
+      "engine_exited": true
+    },
+    {
+      "view": "HomeLife",
+      "size_px": [
+        1600,
+        1000
+      ],
+      "sha256": "49699ed678b1c151b431d57e7925ca0e5e070a9ce4f263b345c30a562ade6303",
+      "shader_errors": [],
+      "engine_exited": true
+    },
+    {
+      "view": "Picnic",
+      "size_px": [
+        1600,
+        1000
+      ],
+      "sha256": "0c51f67d3b555f1a34a6e16927deb1ab053916fd757bc89afe9fd9903a7031c4",
+      "shader_errors": [],
+      "engine_exited": true
+    },
+    {
+      "view": "Repair",
+      "size_px": [
+        1600,
+        1000
+      ],
+      "sha256": "287cf58039dbd593a186bcdd07920786b2d7951217ff898be2efe641080530db",
+      "shader_errors": [],
+      "engine_exited": true
+    },
+    {
+      "view": "CampLife",
+      "size_px": [
+        1600,
+        1000
+      ],
+      "sha256": "a58e9b20f361127c746cf89ac9128f780bb10be9d95319dd9f61153dc38c3ffd",
       "shader_errors": [],
       "engine_exited": true
     }

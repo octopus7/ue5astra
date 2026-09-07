@@ -6,6 +6,16 @@ Unreal Engine 5.7.4 프로젝트. 약 100m 숲을 탐색하는 직립 보행 삼
 
 ![숲·공터·호수·다리·목조 폐허의 전체 배치](ArtSource/Previews/UE_Overview.png)
 
+낚시터와 집 주변에는 잠시 사람이 자리를 비운 듯한 생활 소품을 더했다. 나무 데크 위의 낚시 자리, 작은 텃밭과 빨랫줄, 공터의 피크닉, 무너진 다리 옆의 수리 도구가 각 장소의 용도를 보여준다.
+
+| 호수의 나무 낚시터 | 핑크 집 앞의 생활 공간 |
+| --- | --- |
+| ![나무 낚시 데크와 낚싯대·의자·양동이](ArtSource/Previews/UE_Fishing.png) | ![빨랫줄·텃밭·장화와 손수레](ArtSource/Previews/UE_HomeLife.png) |
+
+| 나무 그늘의 피크닉 | 무너진 다리의 수리 자리 |
+| --- | --- |
+| ![체크 담요와 먹거리·채집 바구니](ArtSource/Previews/UE_Picnic.png) | ![새 판자·공구 상자·밧줄](ArtSource/Previews/UE_Repair.png) |
+
 | 삼색 고양이와 나무다리 | 호수의 연꽃과 수초 |
 | --- | --- |
 | ![나무다리를 건넌 삼색 고양이](ArtSource/Previews/UE_Bridge.png) | ![연꽃과 수초가 있는 호수](ArtSource/Previews/UE_Lake.png) |
@@ -28,20 +38,24 @@ Unreal Engine 5.7.4 프로젝트. 약 100m 숲을 탐색하는 직립 보행 삼
 
 - `WORK_INSTRUCTIONS.md`: 사용자의 전체 작업 지시
 - `ArtSource/Reference`: 전체 및 개별 모델링 참고 이미지, 생성 프롬프트
-- `ArtSource/Textures`: 생성한 지면·암벽·하늘 파노라마·물웅덩이 구름 텍스처
+- `ArtSource/Textures`: 생성한 지면·암벽·하늘 파노라마·낚시터 목재 텍스처와 과거 물웅덩이 구름 이미지
 - `ArtSource/Blender/AstraWoodland.blend`: 모델과 전체 배치의 블렌더 원본
 - `ArtSource/Meshes`: 블렌더에서 내보낸 FBX 모델
 - `ArtSource/Layout/woodland_layout.json`: 블렌더에서 추출한 배치·재질·축변환 데이터
 - `ArtSource/Layout/landscape_height.r16`: 실제 Landscape로 가져올 127×127 높이맵
 - `ArtSource/Previews`: 블렌더 배치 렌더와 언리얼 검증 이미지
 
+현재 Blender 배치 원본은 메시 정의 **56종**, 배치 기록 **1,820개**이며, `foliage_placement.json`에는 작은 식물 **1,963개**의 변환이 있다. 배치 기록에는 숨겨 보존한 기존 오브젝트도 포함된다. 실제 엔진 적용과 검증 범위는 [VALIDATION.md](VALIDATION.md)에 기록한다.
+
 ## 재생성
 
 1. Blender 4.5 이상에서 `Scripts/build_blender_scene.py` 실행. 원본 `.blend`, FBX, JSON, 높이맵을 생성한다.
-2. 숲 확장 원본은 `build_forest_cliffs.py`, `build_forest_tent.py`, `build_forest_signs.py`, `build_forest_cooking.py`로 각각 생성한다. 이어 `place_forest_expansion.py`를 Blender에서 실행해 절벽·야영지와 진입로 높이를 전체 배치에 합친다. 바위는 `build_smooth_forest_rocks.py`와 `apply_smooth_rocks_blender.py` 순서로 적용한다.
+2. 숲 확장 원본은 `build_forest_cliffs.py`, `build_forest_tent.py`, `build_forest_signs.py`, `build_forest_cooking.py`로 각각 생성한다. 이어 `place_forest_expansion.py`를 Blender에서 실행해 절벽·야영지와 진입로 높이를 전체 배치에 합친다. 바위는 `build_smooth_forest_rocks.py`와 `apply_smooth_rocks_blender.py` 순서로 적용한다. 낚시터·생활 소품은 `build_fishing_dock.py`, `build_fishing_props.py`, `build_home_life_props.py`, `build_woodland_life_props.py`로 생성하고 `place_life_props.py`로 전체 배치에 합친다. Blender CLI는 `--factory-startup -b --python 스크립트경로`로 실행한다.
 3. UE 5.7용 `AstraLevelTestEditor` 빌드.
 4. **전체 언리얼 에디터**에서 `Scripts/import_unreal_scene.py` 실행. `-ExecutePythonScript=...`로도 실행할 수 있다. Content Browser를 사용하므로 UI 없는 Python commandlet로 텍스처 가져오기를 실행하지 않는다.
-5. `Scripts/import_forest_expansion.py`로 숲 확장·해안 모듈·파노라마 하늘을 적용한다. 이 스크립트는 기존 Landscape와 맵을 보존하면서 갱신한다. 이후 `import_smooth_rocks.py`, `apply_forest_foliage.py`, `apply_shoreline_finish.py`, `apply_native_puddles.py` 순서로 바위·작은 식물·해안 마감·실제 반사 웅덩이를 적용하고 `/Game/Astra/Maps/L_AstraWoodland`를 열어 Play한다.
+5. `Scripts/import_forest_expansion.py`로 숲 확장·해안 모듈·파노라마 하늘을 적용한다. 이 스크립트는 기존 Landscape와 맵을 보존하면서 갱신한다. 이어 UE에서 `import_smooth_rocks.py`, `apply_forest_foliage.py` 순서로 바위와 작은 식물을 적용한다.
+6. **Blender에서 `Scripts/place_life_props.py`를 다시 실행한다.** 앞 단계의 `apply_forest_foliage.py`가 `foliage_placement.json`을 새로 작성하므로, 보관한 기준 배치에서 생활 소품 영역을 다시 제외해 1,963개의 Foliage 데이터를 복원해야 한다. 모델 생성 단계에서 이미 배치했더라도 이 재필터 단계를 생략하지 않는다.
+7. 전체 UE 에디터에서 `import_life_props.py`, `apply_shoreline_finish.py`, `apply_native_puddles.py` 순서로 생활 소품·해안 마감·실제 반사 웅덩이를 적용하고 `/Game/Astra/Maps/L_AstraWoodland`를 열어 Play한다.
 
 최신 해안 개선과 물웅덩이를 포함하려면 원본 집·지형·물·하늘 갱신이 모두 끝난 다음, 의도한 맵의 UE Python에서 `apply_shoreline_polish.apply_polish(save=True)`를 실행하고 이어서 `puddle_sky_reflection.apply_puddles(save=True)`를 실행한다. 이 두 호출을 **생성 파이프라인의 마지막**에 둔다. 이후 원본 맵·재질·액터를 다시 생성하면 같은 순서를 다시 적용한다. [전체 실행 예제와 검증 범위](Docs/ShorelineIntegration.md)를 참고한다.
 
@@ -77,6 +91,33 @@ Directional Light Source Angle은 사용자 지정값인 50도이며 Exponential
 
 `ArtSource/Layout/forest_expansion.json`은 배치 명세, `ForestCliffs.blend`, `ForestTent.blend`, `ForestSigns.blend`, `ForestCooking.blend`는 개별 모델 원본이다. `-AstraCampTest -AstraReview=Camp`는 캐릭터가 경사로를 오르는지 검사한다.
 
+## 낚시터와 생활 소품
+
+새 메시 15종을 4개 독립 키트로 제작했다. 각 Blender 원본과 FBX, 재질 팔레트, 충돌 설정, 생성 레퍼런스를 보관한다.
+
+| 키트 | 메시 구성 | Blender 원본 / 메타데이터 |
+| --- | --- | --- |
+| 나무 낚시터 1종 | `SM_FishingDock`: 경사 진입로, 말뚝, 넓은 작업 데크와 측면 난간 | `ArtSource/Blender/FishingDock.blend` / `ArtSource/Layout/fishing_dock.json` |
+| 낚시 소품 4종 | `SM_FishingRodStand`, `SM_FishingChair`, `SM_FishBucket`, `SM_FishingTackleBox` | `ArtSource/Blender/FishingProps.blend` / `ArtSource/Layout/fishing_props.json` |
+| 집 주변 소품 5종 | `SM_HomeClothesline`, `SM_VegetablePatch`, `SM_WateringTools`, `SM_BootsAndBroom`, `SM_HerbDryingRack` | `ArtSource/Blender/HomeLifeProps.blend` / `ArtSource/Layout/home_life_props.json` |
+| 숲 생활 소품 5종 | `SM_ChoppingStump`, `SM_ForagingBasket`, `SM_PicnicSet`, `SM_BridgeRepairSupplies`, `SM_WoodHandcart` | `ArtSource/Blender/WoodlandLifeProps.blend` / `ArtSource/Layout/woodland_life_props.json` |
+
+낚시 데크는 호숫가에서 UE +X 방향으로 뻗고, 1.8m 폭의 접근로가 약 4m 폭의 플랫폼으로 연결된다. 말뚝 바닥이 원점이며 로컬 상판 높이는 2.35m다. 배치 명세에서는 액터를 Z −1.50m에 놓아 상판이 월드 Z 0.85m에 오도록 했다. 낚싯대·의자·양동이·열린 도구 상자는 가운데 이동 공간을 비우고 양옆에 모았다. 목재에는 별도 ImageGen 텍스처 `ArtSource/Textures/T_FishingDockWood.png`를 적용한다.
+
+핑크 집 옆에는 빨랫줄·작은 텃밭·물뿌리개와 삽·장화와 빗자루·허브 건조대·손수레를 배치했다. 야영지의 장작더미 옆에는 도끼가 꽂힌 그루터기, 중앙 공터에는 피크닉 담요와 채집 바구니, 무너진 다리 옆에는 새 판자·공구 상자·밧줄을 놓았다. 세부 위치·회전·크기와 식생 제외 영역은 `ArtSource/Layout/life_props_placement.json`에 저장한다.
+
+`Scripts/place_life_props.py`는 기존 배치를 다시 흩뿌리지 않고 새 소품을 합친다. Landscape 높이맵은 유지하고, 소품과 겹치는 원래 오브젝트는 숨겨 보존하며 해당 영역의 Foliage 13개만 제외한다. 작업 전 Blender·배치·높이맵·Foliage 데이터는 `ArtSource/Backups/BeforeLifeProps`에 보관한다. `Scripts/import_life_props.py`는 이 배치 명세를 UE 맵에 적용하는 단계다.
+
+현재 완성된 프로젝트에서 낚시터·생활 소품만 다시 적용할 때는 다음 3단계를 사용한다.
+
+1. Blender에서 `build_fishing_dock.py`, `build_fishing_props.py`, `build_home_life_props.py`, `build_woodland_life_props.py`를 실행해 4개 키트를 생성한다.
+2. Blender에서 `place_life_props.py`를 실행해 새 소품 배치와 해당 영역을 제외한 Foliage 데이터를 저장한다.
+3. 전체 UE 에디터에서 `import_life_props.py`를 실행해 이 명세를 현재 맵에 적용한다.
+
+이 증분 적용의 2~3단계 사이에 `apply_forest_foliage.py`를 실행하면 필터된 JSON이 덮어써진다. Foliage 전체 재생성이 필요했다면 반드시 `place_life_props.py`를 한 번 더 실행한 뒤 `import_life_props.py`를 실행한다.
+
+각 제작 스크립트는 FBX를 `ArtSource/Meshes`에 내보내고 실제 Blender 프리뷰를 `ArtSource/Previews/Blender_FishingDock.png`, `Blender_FishingProps.png`, `Blender_HomeLifeProps.png`, `Blender_WoodlandLifeProps.png`에 저장한다. `Scripts/validate_fishing_dock.py`는 데크 FBX를 새로 가져와 원본과 경계·UV·노멀·재질·표면 높이를 비교한다. 이 검사는 에셋 검증이며, 최종 UE 렌더와 캐릭터 이동 결과는 [VALIDATION.md](VALIDATION.md)를 확인한다.
+
 ## 하늘
 
 `T_AnimeSkyPanorama.png`는 별도 생성한 2:1 하늘 전용 파노라마다. `M_CloudSky`는 월드 방향을 경도·위도 UV로 변환하고 이음새와 극점을 부드럽게 합성한다. 호수·개울은 구름 반사 없이 유지한다.
@@ -93,6 +134,6 @@ Directional Light Source Angle은 사용자 지정값인 50도이며 Exponential
 
 해안 키트의 수중 돌·자갈 4종도 smooth normals로 바꿨다. 형상·UV·재질 슬롯을 유지하며 FBX를 다시 가져와 노멀 일치를 확인했다.
 
-작은 풀·고사리·꽃·버섯·갈대는 **실제 Unreal Foliage**로 묶었다. 기존 1,198개를 전환하고 숲 안쪽에 778개를 보강해 총 1,976개다. 길 가장자리 70cm, 공터, 집 앞, 야영지 동선과 급경사는 추가 배치에서 제외한다. 원래 개별 식물은 `PreservedBeforeFoliage`에 숨겨 보관한다.
+작은 풀·고사리·꽃·버섯·갈대는 **실제 Unreal Foliage**로 묶었다. 첫 적용에서는 기존 1,198개를 전환하고 숲 안쪽에 778개를 보강해 1,976개를 만들었다. 낚시터·생활 소품 공간과 겹치는 13개를 제외한 현재 배치 데이터는 **1,963개**이며, 남은 식물의 위치·회전·크기는 유지한다. 길 가장자리 70cm, 공터, 집 앞, 야영지 동선과 급경사는 추가 배치에서 제외한다. 원래 개별 식물은 `PreservedBeforeFoliage`에 숨겨 보관한다.
 
 `/Game/Astra/Foliage/FT_Astra_*`는 에디터 Foliage 모드에서도 편집할 수 있는 5개 FoliageType이다. [배치 규칙·재생성 방법](Docs/FoliagePlacement.md)과 `ArtSource/Layout/foliage_placement.json`에 설정과 전체 변환을 저장했다.
