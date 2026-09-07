@@ -1,0 +1,344 @@
+{
+  "source": "ArtSource/Blender/CrystalCaveRocks.blend",
+  "script": "Scripts/build_cave_rocks.py",
+  "units": "metres",
+  "axis_conversion": "FBX axis_forward=-Y axis_up=Z, FBX_SCALE_UNITS",
+  "references": [
+    "ArtSource/Reference/CrystalCave/Ref_CC_Rocks.png",
+    "ArtSource/Reference/CrystalCave/Ref_CC_Overview.png"
+  ],
+  "assets": {
+    "SM_CC_RockWall_A": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_RockWall_A.fbx",
+      "materials": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        3.996248,
+        1.996939,
+        2.998351
+      ],
+      "nominal_dimensions_m": [
+        4.0,
+        2.0,
+        3.0
+      ],
+      "origin": "bottom centre",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "custom_normals": true,
+        "triangles": 13950
+      }
+    },
+    "SM_CC_RockWall_B": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_RockWall_B.fbx",
+      "materials": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        3.996887,
+        1.997077,
+        2.999562
+      ],
+      "nominal_dimensions_m": [
+        4.0,
+        2.0,
+        3.0
+      ],
+      "origin": "bottom centre",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "custom_normals": true,
+        "triangles": 14022
+      }
+    },
+    "SM_CC_RockWall_C": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_RockWall_C.fbx",
+      "materials": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        3.994311,
+        1.997858,
+        2.998177
+      ],
+      "nominal_dimensions_m": [
+        4.0,
+        2.0,
+        3.0
+      ],
+      "origin": "bottom centre",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "custom_normals": true,
+        "triangles": 10584
+      }
+    },
+    "SM_CC_RockWallLow": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_RockWallLow.fbx",
+      "materials": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        3.998466,
+        1.497808,
+        0.99961
+      ],
+      "nominal_dimensions_m": [
+        4.0,
+        1.5,
+        1.0
+      ],
+      "origin": "bottom centre",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "custom_normals": true,
+        "triangles": 6476
+      }
+    },
+    "SM_CC_RockIsland_A": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_RockIsland_A.fbx",
+      "materials": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        3.998234,
+        6.986483,
+        1.597928
+      ],
+      "nominal_dimensions_m": [
+        4.0,
+        7.0,
+        1.6
+      ],
+      "origin": "bottom centre",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "custom_normals": true,
+        "triangles": 12294
+      }
+    },
+    "SM_CC_RockIsland_B": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_RockIsland_B.fbx",
+      "materials": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        3.998273,
+        6.988468,
+        1.598499
+      ],
+      "nominal_dimensions_m": [
+        4.0,
+        7.0,
+        1.6
+      ],
+      "origin": "bottom centre",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "custom_normals": true,
+        "triangles": 12010
+      }
+    },
+    "SM_CC_RockRubble": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_RockRubble.fbx",
+      "materials": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        0.999578,
+        0.998258,
+        0.499797
+      ],
+      "nominal_dimensions_m": [
+        1.0,
+        1.0,
+        0.5
+      ],
+      "origin": "bottom centre",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "custom_normals": true,
+        "triangles": 6508
+      }
+    },
+    "SM_CC_Portal": {
+      "file": "ArtSource/Meshes/CrystalCave/SM_CC_Portal.fbx",
+      "materials": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        5.99683,
+        1.193688,
+        3.498884
+      ],
+      "nominal_dimensions_m": [
+        6.0,
+        1.2,
+        3.5
+      ],
+      "origin": "bottom centre",
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "custom_normals": true,
+        "triangles": 8740
+      },
+      "clear_opening_minimum_m": [
+        3.12144,
+        2.57842
+      ],
+      "clear_opening_x_bounds_m": [
+        -1.58147,
+        1.53997
+      ],
+      "clearance_validation": "Conservative bounds of all seven disconnected solid rock components, after bevel and triangulation"
+    }
+  },
+  "materials": {
+    "M_CC_Rock": {
+      "base_color": "#646985",
+      "texture": "ArtSource/Textures/CrystalCave/T_CC_Rock.png",
+      "texture_multiplier": 1.0,
+      "roughness": 0.88,
+      "specular": 0.24
+    },
+    "M_CC_RockDark": {
+      "base_color": "#3F475F",
+      "texture": "ArtSource/Textures/CrystalCave/T_CC_Rock.png",
+      "texture_multiplier": 0.67,
+      "roughness": 0.88,
+      "specular": 0.24
+    }
+  },
+  "fbx_roundtrip_validation": [
+    {
+      "asset": "SM_CC_RockWall_A",
+      "bounds_error_m": 3.7973022459780736e-07,
+      "single_mesh": true,
+      "custom_normals": true,
+      "uv0": true,
+      "material_slots": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ]
+    },
+    {
+      "asset": "SM_CC_RockWall_B",
+      "bounds_error_m": 3.262405394721668e-07,
+      "single_mesh": true,
+      "custom_normals": true,
+      "uv0": true,
+      "material_slots": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ]
+    },
+    {
+      "asset": "SM_CC_RockWall_C",
+      "bounds_error_m": 3.4550857552773095e-07,
+      "single_mesh": true,
+      "custom_normals": true,
+      "uv0": true,
+      "material_slots": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ]
+    },
+    {
+      "asset": "SM_CC_RockWallLow",
+      "bounds_error_m": 3.7248992912353174e-07,
+      "single_mesh": true,
+      "custom_normals": true,
+      "uv0": true,
+      "material_slots": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ]
+    },
+    {
+      "asset": "SM_CC_RockIsland_A",
+      "bounds_error_m": 4.432525635422735e-07,
+      "single_mesh": true,
+      "custom_normals": true,
+      "uv0": true,
+      "material_slots": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ]
+    },
+    {
+      "asset": "SM_CC_RockIsland_B",
+      "bounds_error_m": 3.726501462963938e-07,
+      "single_mesh": true,
+      "custom_normals": true,
+      "uv0": true,
+      "material_slots": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ]
+    },
+    {
+      "asset": "SM_CC_RockRubble",
+      "bounds_error_m": 4.4614982608326414e-07,
+      "single_mesh": true,
+      "custom_normals": true,
+      "uv0": true,
+      "material_slots": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ]
+    },
+    {
+      "asset": "SM_CC_Portal",
+      "bounds_error_m": 4.39468383905961e-07,
+      "single_mesh": true,
+      "custom_normals": true,
+      "uv0": true,
+      "material_slots": [
+        "M_CC_RockDark",
+        "M_CC_Rock"
+      ]
+    }
+  ],
+  "placement_notes": "Wall length is local X. Portal opening along X; use for far-side entrance. Island footprints are exactly 4 x 7 m and never exceed 4.6 x 7.6 m. Low cutaway wall is 1 m high. Complex collision preserves layered silhouettes and portal opening."
+}
