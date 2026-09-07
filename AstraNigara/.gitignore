@@ -1,4 +1,6 @@
 /Binaries/
+/Plugins/*/Binaries/
+/Plugins/*/Intermediate/
 /Intermediate/
 /DerivedDataCache/
 /Saved/

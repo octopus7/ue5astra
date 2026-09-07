@@ -1,0 +1,206 @@
+{
+  "engine_version": "5.7.4-51494982+++UE5+Release-5.7",
+  "validated_utc": "2026-09-07T16:48:11.082524+09:00",
+  "map": "/Game/Maps/L_SmallDestructionShowcase",
+  "structural_validation_passed": true,
+  "systems": [
+    {
+      "asset": "/Game/VFX/SmallDestruction/NS_SmallDestruction.NS_SmallDestruction",
+      "valid": true,
+      "ready_to_run": true,
+      "emitters": [
+        {
+          "name": "Debris",
+          "loop_behavior": "Once",
+          "loop_duration_seconds": 2,
+          "spawns": [
+            {
+              "type": "Burst",
+              "enabled": true,
+              "time": 0,
+              "count_min": 14,
+              "count_max": 14
+            }
+          ],
+          "renderers": [
+            {
+              "class": "NiagaraMeshRendererProperties",
+              "enabled": true,
+              "mesh": "/Engine/BasicShapes/Cube.Cube",
+              "material": "/Game/VFX/SmallDestruction/Materials/M_Debris.M_Debris"
+            }
+          ]
+        },
+        {
+          "name": "Flame",
+          "loop_behavior": "Once",
+          "loop_duration_seconds": 2,
+          "spawns": [
+            {
+              "type": "Burst",
+              "enabled": true,
+              "time": 0,
+              "count_min": 9,
+              "count_max": 9
+            }
+          ],
+          "renderers": [
+            {
+              "class": "NiagaraSpriteRendererProperties",
+              "enabled": true,
+              "material": "/Game/VFX/SmallDestruction/Materials/M_Flame.M_Flame"
+            }
+          ]
+        },
+        {
+          "name": "Smoke",
+          "loop_behavior": "Once",
+          "loop_duration_seconds": 2,
+          "spawns": [
+            {
+              "type": "Burst",
+              "enabled": true,
+              "time": 0.04500000178813934,
+              "count_min": 11,
+              "count_max": 11
+            }
+          ],
+          "renderers": [
+            {
+              "class": "NiagaraSpriteRendererProperties",
+              "enabled": true,
+              "material": "/Game/VFX/SmallDestruction/Materials/M_Smoke.M_Smoke"
+            }
+          ]
+        },
+        {
+          "name": "Distortion",
+          "loop_behavior": "Once",
+          "loop_duration_seconds": 2,
+          "spawns": [
+            {
+              "type": "Burst",
+              "enabled": true,
+              "time": 0,
+              "count_min": 2,
+              "count_max": 2
+            }
+          ],
+          "renderers": [
+            {
+              "class": "NiagaraSpriteRendererProperties",
+              "enabled": true,
+              "material": "/Game/VFX/SmallDestruction/Materials/M_HeatDistortion.M_HeatDistortion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "/Game/VFX/SmallDestruction/NS_SmallDestruction_Showcase.NS_SmallDestruction_Showcase",
+      "valid": true,
+      "ready_to_run": true,
+      "emitters": [
+        {
+          "name": "Debris",
+          "loop_behavior": "Infinite",
+          "loop_duration_seconds": 2,
+          "spawns": [
+            {
+              "type": "Burst",
+              "enabled": true,
+              "time": 0,
+              "count_min": 14,
+              "count_max": 14
+            }
+          ],
+          "renderers": [
+            {
+              "class": "NiagaraMeshRendererProperties",
+              "enabled": true,
+              "mesh": "/Engine/BasicShapes/Cube.Cube",
+              "material": "/Game/VFX/SmallDestruction/Materials/M_Debris.M_Debris"
+            }
+          ]
+        },
+        {
+          "name": "Flame",
+          "loop_behavior": "Infinite",
+          "loop_duration_seconds": 2,
+          "spawns": [
+            {
+              "type": "Burst",
+              "enabled": true,
+              "time": 0,
+              "count_min": 9,
+              "count_max": 9
+            }
+          ],
+          "renderers": [
+            {
+              "class": "NiagaraSpriteRendererProperties",
+              "enabled": true,
+              "material": "/Game/VFX/SmallDestruction/Materials/M_Flame.M_Flame"
+            }
+          ]
+        },
+        {
+          "name": "Smoke",
+          "loop_behavior": "Infinite",
+          "loop_duration_seconds": 2,
+          "spawns": [
+            {
+              "type": "Burst",
+              "enabled": true,
+              "time": 0.04500000178813934,
+              "count_min": 11,
+              "count_max": 11
+            }
+          ],
+          "renderers": [
+            {
+              "class": "NiagaraSpriteRendererProperties",
+              "enabled": true,
+              "material": "/Game/VFX/SmallDestruction/Materials/M_Smoke.M_Smoke"
+            }
+          ]
+        },
+        {
+          "name": "Distortion",
+          "loop_behavior": "Infinite",
+          "loop_duration_seconds": 2,
+          "spawns": [
+            {
+              "type": "Burst",
+              "enabled": true,
+              "time": 0,
+              "count_min": 2,
+              "count_max": 2
+            }
+          ],
+          "renderers": [
+            {
+              "class": "NiagaraSpriteRendererProperties",
+              "enabled": true,
+              "material": "/Game/VFX/SmallDestruction/Materials/M_HeatDistortion.M_HeatDistortion"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "captures": [
+    {
+      "file": "SmallDestruction_Burst.png",
+      "requested_age_seconds": 0.15,
+      "completed": true,
+      "restore_errors": []
+    },
+    {
+      "file": "SmallDestruction_Smoke.png",
+      "requested_age_seconds": 0.6,
+      "completed": true,
+      "restore_errors": []
+    }
+  ]
+}
