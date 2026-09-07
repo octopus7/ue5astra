@@ -1,4 +1,6 @@
 #include "AstraWorld.h"
+#include "AstraDemoPlayback.h"
+#include "Components/InputComponent.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/StaticMeshComponent.h"
@@ -135,6 +137,7 @@ void AAstraCat::Tick(float Dt)
 
 AAstraController::AAstraController()
 {
+    DemoPlayback = CreateDefaultSubobject<UAstraDemoPlayback>(TEXT("DemoPlayback"));
     bShowMouseCursor = false;
     bEnableClickEvents = false;
     bEnableMouseOverEvents = false;
@@ -159,6 +162,8 @@ void AAstraController::BeginPlay()
 void AAstraController::PlayerTick(float Dt)
 {
     Super::PlayerTick(Dt);
+    DemoPlayback->Update(Dt);
+    if (DemoPlayback->IsDemoActive()) return;
     if (bSmokeTest || bBridgeTest || bCampTest || bDockTest || !ReviewCamera.IsEmpty()) TickValidation(Dt);
     if (APawn* P = GetPawn())
     {
@@ -166,6 +171,17 @@ void AAstraController::PlayerTick(float Dt)
                           (IsInputKeyDown(EKeys::D)?1.f:0.f)-(IsInputKeyDown(EKeys::A)?1.f:0.f),0);
         if (!Direction.IsNearlyZero()) P->AddMovementInput(Direction.GetSafeNormal());
     }
+}
+
+void AAstraController::SetupInputComponent()
+{
+    Super::SetupInputComponent();
+    InputComponent->BindKey(EKeys::P, IE_Pressed, this, &AAstraController::ToggleDemoMode);
+}
+
+void AAstraController::ToggleDemoMode()
+{
+    DemoPlayback->Toggle();
 }
 
 void AAstraController::TickValidation(float Dt)

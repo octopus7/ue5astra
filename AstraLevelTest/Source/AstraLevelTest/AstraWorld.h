@@ -10,6 +10,7 @@ class UStaticMeshComponent;
 class USpringArmComponent;
 class UCameraComponent;
 class UMaterialInterface;
+class UAstraDemoPlayback;
 
 UCLASS()
 class ASTRALEVELTEST_API AAstraCat : public ACharacter
@@ -23,6 +24,7 @@ public:
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly) TObjectPtr<USpringArmComponent> CameraBoom;
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly) TObjectPtr<UCameraComponent> TopDownCamera;
 private:
+    friend class UAstraDemoPlayback;
     UStaticMeshComponent* Box(const TCHAR* Name, FVector Position, FVector Dimensions, const TCHAR* MaterialName, USceneComponent* Parent = nullptr);
     UPROPERTY() TObjectPtr<USceneComponent> LeftLeg;
     UPROPERTY() TObjectPtr<USceneComponent> RightLeg;
@@ -40,8 +42,11 @@ class ASTRALEVELTEST_API AAstraController : public APlayerController
 public:
     AAstraController();
     virtual void BeginPlay() override;
+    virtual void SetupInputComponent() override;
     virtual void PlayerTick(float DeltaTime) override;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly) TObjectPtr<UAstraDemoPlayback> DemoPlayback;
 private:
+    void ToggleDemoMode();
     void TickValidation(float DeltaTime);
     bool bSmokeTest = false;
     bool bBridgeTest = false;
