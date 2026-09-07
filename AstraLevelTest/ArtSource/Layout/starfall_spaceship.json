@@ -1,0 +1,94 @@
+{
+  "source": "ArtSource/Blender/StarfallSpaceship.blend",
+  "script": "Scripts/build_starfall_spaceship.py",
+  "reference": "ArtSource/Reference/Starfall/Ref_StarfallSpaceship.png",
+  "units": "metres",
+  "coordinate_conversion": "(Blender X, -Blender Y, Blender Z) * 100",
+  "materials": {
+    "M_SF_Ship_Hull": {
+      "base_color": "DCE4E1",
+      "roughness": 0.44,
+      "metallic": 0.3,
+      "base_color_texture": "ArtSource/Textures/Starfall/T_SF_ShipPaint.png"
+    },
+    "M_SF_Ship_Silver": {
+      "base_color": "C0CFD0",
+      "roughness": 0.32,
+      "metallic": 0.65
+    },
+    "M_SF_Ship_Nose": {
+      "base_color": "6A7B83",
+      "roughness": 0.39,
+      "metallic": 0.62
+    },
+    "M_SF_Ship_Teal": {
+      "base_color": "438F98",
+      "roughness": 0.34,
+      "metallic": 0.28
+    },
+    "M_SF_Ship_Glass": {
+      "base_color": "80D3D5",
+      "roughness": 0.19,
+      "metallic": 0.45
+    },
+    "M_SF_Ship_Seam": {
+      "base_color": "43555D",
+      "roughness": 0.59,
+      "metallic": 0.32
+    },
+    "M_SF_Ship_Engine": {
+      "base_color": "35444D",
+      "roughness": 0.51,
+      "metallic": 0.58
+    },
+    "M_SF_Ship_Brass": {
+      "base_color": "C2A36C",
+      "roughness": 0.46,
+      "metallic": 0.5
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "SM_SF_LandedSpaceship",
+      "file": "ArtSource/Meshes/Starfall/SM_SF_LandedSpaceship.fbx",
+      "materials": [
+        "M_SF_Ship_Hull",
+        "M_SF_Ship_Glass",
+        "M_SF_Ship_Nose",
+        "M_SF_Ship_Teal",
+        "M_SF_Ship_Seam",
+        "M_SF_Ship_Silver",
+        "M_SF_Ship_Engine",
+        "M_SF_Ship_Brass"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        7.29516,
+        7.069903,
+        13.872148
+      ],
+      "triangles": 36092,
+      "normal_import_method": "import_normals_and_tangents",
+      "front_axis": "-X",
+      "hull_lean_degrees": 16,
+      "landing_pad_centres_m": [
+        [
+          0.0,
+          2.84881,
+          0.24
+        ],
+        [
+          -2.72798,
+          -1.693151,
+          0.24
+        ],
+        [
+          2.72798,
+          -1.693151,
+          0.24
+        ]
+      ]
+    }
+  ],
+  "placement_notes": "Ground origin z=0. Hull lean toward Blender +Y baked into geometry. Hatch faces -X. Three landing pads are horizontal; do not add a second tilt when placing."
+}

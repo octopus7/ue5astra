@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "placement_count": 4544,
+  "by_group": {
+    "Water": 3,
+    "Spring": 2,
+    "LandingClearing": 1,
+    "FreshlyBrokenTrees": 2,
+    "OldMossLogs": 3,
+    "PinkSpringGrove": 7,
+    "MushroomMeadow15m": 56,
+    "GlowGrove5m": 13,
+    "ForestCanopy": 329,
+    "LandingRubble": 27,
+    "PuddleBanks": 49,
+    "ForestUnderstory": 4052
+  },
+  "new_assets": 17,
+  "reused_assets": 16,
+  "habitat_bounds_m": {
+    "MushroomMeadow15m": [
+      0.5,
+      -35.5,
+      15.5,
+      -20.5
+    ],
+    "GlowGrove5m": [
+      -26.5,
+      -31.5,
+      -21.5,
+      -26.5
+    ]
+  },
+  "native_foliage_count": 4152,
+  "landscape_samples": 16129,
+  "landscape_extent_m": [
+    100.8,
+    100.8
+  ],
+  "water_perimeter_mask_zero": true,
+  "ship_tilt_is_baked_degrees": 16,
+  "water_and_sky_materials_reused": true
+}

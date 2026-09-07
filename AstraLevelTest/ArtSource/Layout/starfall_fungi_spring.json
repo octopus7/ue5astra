@@ -1,0 +1,359 @@
+{
+  "source": "ArtSource/Blender/StarfallFungiSpring.blend",
+  "script": "Scripts/build_starfall_fungi_spring.py",
+  "reference": "ArtSource/Reference/Starfall/Ref_StarfallFungiSpring.png",
+  "units": "metres",
+  "materials": {
+    "M_SF_Fungi_RedCap": {
+      "base_color": "C95445",
+      "roughness": 0.72,
+      "metallic": 0
+    },
+    "M_SF_Fungi_OchreCap": {
+      "base_color": "D29643",
+      "roughness": 0.76,
+      "metallic": 0
+    },
+    "M_SF_Fungi_CreamCap": {
+      "base_color": "E3BD81",
+      "roughness": 0.76,
+      "metallic": 0
+    },
+    "M_SF_Fungi_StemIvory": {
+      "base_color": "E9DDAD",
+      "roughness": 0.83,
+      "metallic": 0
+    },
+    "M_SF_Fungi_CreamSpots": {
+      "base_color": "FFF0C2",
+      "roughness": 0.85,
+      "metallic": 0
+    },
+    "M_SF_Fungi_OchreSpeckles": {
+      "base_color": "E2B778",
+      "roughness": 0.82,
+      "metallic": 0
+    },
+    "M_SF_Fungi_CreamFreckles": {
+      "base_color": "AA7D4A",
+      "roughness": 0.83,
+      "metallic": 0
+    },
+    "M_SF_Fungi_WarmGills": {
+      "base_color": "BA9972",
+      "roughness": 0.85,
+      "metallic": 0
+    },
+    "M_SF_Fungi_TealCap": {
+      "base_color": "297C87",
+      "roughness": 0.52,
+      "metallic": 0
+    },
+    "M_SF_Fungi_LilacCap": {
+      "base_color": "7973AA",
+      "roughness": 0.55,
+      "metallic": 0
+    },
+    "M_SF_Fungi_GlowStem": {
+      "base_color": "91BFB9",
+      "roughness": 0.75,
+      "metallic": 0
+    },
+    "M_SF_Fungi_TurquoiseGlow": {
+      "base_color": "95EEE0",
+      "roughness": 0.55,
+      "metallic": 0,
+      "emissive_color": "62EED6",
+      "emissive_strength": 1.7
+    },
+    "M_SF_Fungi_LavenderGlow": {
+      "base_color": "D5BDFA",
+      "roughness": 0.55,
+      "metallic": 0,
+      "emissive_color": "BFA1F3",
+      "emissive_strength": 1.55
+    },
+    "M_SF_Spring_PaintedStone": {
+      "base_color": "BBC9D6",
+      "roughness": 0.88,
+      "metallic": 0,
+      "base_color_texture": "ArtSource/Textures/T_AnimeForestRockPaint.png"
+    },
+    "M_SF_Spring_Moss": {
+      "base_color": "829A59",
+      "roughness": 0.94,
+      "metallic": 0
+    },
+    "M_SF_Spring_Fern": {
+      "base_color": "699356",
+      "roughness": 0.87,
+      "metallic": 0
+    },
+    "M_SF_Spring_FernLight": {
+      "base_color": "A4B779",
+      "roughness": 0.87,
+      "metallic": 0
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "SM_SF_MushroomCluster_01",
+      "file": "ArtSource/Meshes/Starfall/SM_SF_MushroomCluster_01.fbx",
+      "materials": [
+        "M_SF_Fungi_StemIvory",
+        "M_SF_Fungi_RedCap",
+        "M_SF_Fungi_WarmGills",
+        "M_SF_Fungi_CreamSpots"
+      ],
+      "collision": "none",
+      "dimensions_m": [
+        1.6016895174980164,
+        1.3446354866027832,
+        1.1293647289276123
+      ],
+      "bounds_min_m": [
+        -0.8574721217155457,
+        -0.6535125374794006,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.7442173957824707,
+        0.6911229491233826,
+        1.1293647289276123
+      ],
+      "triangles": 12768,
+      "vertices": 6672,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "ground-centered at Z=0",
+      "uv_channel": 0
+    },
+    {
+      "asset_id": "SM_SF_MushroomCluster_02",
+      "file": "ArtSource/Meshes/Starfall/SM_SF_MushroomCluster_02.fbx",
+      "materials": [
+        "M_SF_Fungi_StemIvory",
+        "M_SF_Fungi_OchreCap",
+        "M_SF_Fungi_WarmGills",
+        "M_SF_Fungi_OchreSpeckles"
+      ],
+      "collision": "none",
+      "dimensions_m": [
+        1.6406350135803223,
+        1.3793076276779175,
+        0.9899380207061768
+      ],
+      "bounds_min_m": [
+        -0.8206388354301453,
+        -0.6717791557312012,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.819996178150177,
+        0.7075284719467163,
+        0.9899380207061768
+      ],
+      "triangles": 8736,
+      "vertices": 4500,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "ground-centered at Z=0",
+      "uv_channel": 0
+    },
+    {
+      "asset_id": "SM_SF_MushroomCluster_03",
+      "file": "ArtSource/Meshes/Starfall/SM_SF_MushroomCluster_03.fbx",
+      "materials": [
+        "M_SF_Fungi_StemIvory",
+        "M_SF_Fungi_CreamCap",
+        "M_SF_Fungi_WarmGills",
+        "M_SF_Fungi_CreamFreckles"
+      ],
+      "collision": "none",
+      "dimensions_m": [
+        1.5578508377075195,
+        1.366776168346405,
+        1.2089825868606567
+      ],
+      "bounds_min_m": [
+        -0.8099806308746338,
+        -0.6611990332603455,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.7478702068328857,
+        0.7055771350860596,
+        1.2089825868606567
+      ],
+      "triangles": 15960,
+      "vertices": 8340,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "ground-centered at Z=0",
+      "uv_channel": 0
+    },
+    {
+      "asset_id": "SM_SF_GlowMushroomCluster_01",
+      "file": "ArtSource/Meshes/Starfall/SM_SF_GlowMushroomCluster_01.fbx",
+      "materials": [
+        "M_SF_Fungi_GlowStem",
+        "M_SF_Fungi_TealCap",
+        "M_SF_Fungi_TurquoiseGlow"
+      ],
+      "collision": "none",
+      "dimensions_m": [
+        1.4788603782653809,
+        1.2643187046051025,
+        1.2688504457473755
+      ],
+      "bounds_min_m": [
+        -0.7741481065750122,
+        -0.6465373039245605,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.7047122716903687,
+        0.617781400680542,
+        1.2688504457473755
+      ],
+      "triangles": 13440,
+      "vertices": 7208,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "ground-centered at Z=0",
+      "uv_channel": 0
+    },
+    {
+      "asset_id": "SM_SF_GlowMushroomCluster_02",
+      "file": "ArtSource/Meshes/Starfall/SM_SF_GlowMushroomCluster_02.fbx",
+      "materials": [
+        "M_SF_Fungi_GlowStem",
+        "M_SF_Fungi_LilacCap",
+        "M_SF_Fungi_LavenderGlow"
+      ],
+      "collision": "none",
+      "dimensions_m": [
+        1.484053909778595,
+        1.3215031623840332,
+        1.0790431499481201
+      ],
+      "bounds_min_m": [
+        -0.7360639572143555,
+        -0.662007749080658,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.7479899525642395,
+        0.6594954133033752,
+        1.0790431499481201
+      ],
+      "triangles": 10080,
+      "vertices": 5406,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "ground-centered at Z=0",
+      "uv_channel": 0
+    },
+    {
+      "asset_id": "SM_SF_SpringRockRing",
+      "file": "ArtSource/Meshes/Starfall/SM_SF_SpringRockRing.fbx",
+      "materials": [
+        "M_SF_Spring_PaintedStone",
+        "M_SF_Spring_Moss",
+        "M_SF_Spring_Fern",
+        "M_SF_Spring_FernLight"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        6.48971152305603,
+        6.521662712097168,
+        0.6839344501495361
+      ],
+      "bounds_min_m": [
+        -3.2891900539398193,
+        -3.32901930809021,
+        0.0
+      ],
+      "bounds_max_m": [
+        3.200521469116211,
+        3.192643404006958,
+        0.6839344501495361
+      ],
+      "triangles": 21010,
+      "vertices": 11115,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "pivot": "ground-centered at Z=0",
+      "uv_channel": 0
+    }
+  ],
+  "placement_notes": "Use clusters as foliage in 15x15 m ordinary and 5x5 m luminous habitats. Spring rocks have a clear approximately 3.8 m interior and no water surface; reuse existing water material.",
+  "fbx_roundtrip_validation": [
+    {
+      "asset_id": "SM_SF_MushroomCluster_01",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangles": 12768,
+      "triangle_count_preserved": true,
+      "material_count": 4,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true,
+      "ground_pivot_preserved": true
+    },
+    {
+      "asset_id": "SM_SF_MushroomCluster_02",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangles": 8736,
+      "triangle_count_preserved": true,
+      "material_count": 4,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true,
+      "ground_pivot_preserved": true
+    },
+    {
+      "asset_id": "SM_SF_MushroomCluster_03",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangles": 15960,
+      "triangle_count_preserved": true,
+      "material_count": 4,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true,
+      "ground_pivot_preserved": true
+    },
+    {
+      "asset_id": "SM_SF_GlowMushroomCluster_01",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangles": 13440,
+      "triangle_count_preserved": true,
+      "material_count": 3,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true,
+      "ground_pivot_preserved": true
+    },
+    {
+      "asset_id": "SM_SF_GlowMushroomCluster_02",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangles": 10080,
+      "triangle_count_preserved": true,
+      "material_count": 3,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true,
+      "ground_pivot_preserved": true
+    },
+    {
+      "asset_id": "SM_SF_SpringRockRing",
+      "passed": true,
+      "bounds_error_m": 0.0,
+      "triangles": 21010,
+      "triangle_count_preserved": true,
+      "material_count": 4,
+      "authored_normals_preserved": true,
+      "all_faces_smooth": true,
+      "finite_uv": true,
+      "ground_pivot_preserved": true
+    }
+  ]
+}

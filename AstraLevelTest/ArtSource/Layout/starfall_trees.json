@@ -1,0 +1,526 @@
+{
+  "source": "ArtSource/Blender/StarfallTrees.blend",
+  "script": "Scripts/build_starfall_trees.py",
+  "reference": "ArtSource/Reference/Starfall/Ref_StarfallTrees.png",
+  "units": "metres",
+  "unreal_conversion": "(Blender X, -Blender Y, Blender Z) * 100; yaw negated",
+  "materials": {
+    "M_SF_Tree_Bark": {
+      "base_color": "8F654D",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_BarkWarm": {
+      "base_color": "AC7D5B",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_BarkShadow": {
+      "base_color": "68585B",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_BarkGroove": {
+      "base_color": "594B49",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_FreshWood": {
+      "base_color": "F5D79B",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_FreshWoodRing": {
+      "base_color": "CB9C64",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_OldWood": {
+      "base_color": "8B8474",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_OldWoodLight": {
+      "base_color": "ACA18A",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_RottenInterior": {
+      "base_color": "514F49",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_Moss": {
+      "base_color": "738B4B",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_MossLight": {
+      "base_color": "A8BA66",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_Fungus": {
+      "base_color": "C79675",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_FungusEdge": {
+      "base_color": "EDCFAD",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_LeafGreen": {
+      "base_color": "62945B",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_LeafGreenLight": {
+      "base_color": "90B766",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_LeafGreenDark": {
+      "base_color": "416C58",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_LeafPink": {
+      "base_color": "F0A0AE",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_LeafPinkLight": {
+      "base_color": "F7B7C0",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_LeafPinkRose": {
+      "base_color": "DE86A2",
+      "roughness": 0.84,
+      "metallic": 0.0
+    },
+    "M_SF_Tree_LeafPinkShade": {
+      "base_color": "B96891",
+      "roughness": 0.84,
+      "metallic": 0.0
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "SM_SF_FreshBrokenStump",
+      "file": "ArtSource/Meshes/Starfall/SM_SF_FreshBrokenStump.fbx",
+      "materials": [
+        "M_SF_Tree_Bark",
+        "M_SF_Tree_FreshWood",
+        "M_SF_Tree_BarkShadow",
+        "M_SF_Tree_BarkGroove"
+      ],
+      "material_slots": [
+        "M_SF_Tree_Bark",
+        "M_SF_Tree_FreshWood",
+        "M_SF_Tree_BarkShadow",
+        "M_SF_Tree_BarkGroove"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        2.111456,
+        2.162853,
+        3.0
+      ],
+      "bounds_min_m": [
+        -1.055728,
+        -1.081426,
+        0.0
+      ],
+      "bounds_max_m": [
+        1.055728,
+        1.081426,
+        3.0
+      ],
+      "triangles": 960,
+      "vertices": 526,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "origin": "XY footprint centre, ground Z=0",
+      "front_axis_blender": "+X",
+      "description": "Newly broken standing trunk; pale ragged heartwood, long sharp wood fibres, radiating roots.",
+      "actual_leaf_count": 0,
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_triangles": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "minimum_uv_triangle_area": 8.905218980004292e-07,
+        "all_faces_smooth": true,
+        "ground_z_zero": true,
+        "fbx_roundtrip": {
+          "asset_id": "SM_SF_FreshBrokenStump",
+          "passed": true,
+          "bounds_max_error_m": 0.0,
+          "origin_zero": true,
+          "triangle_count_preserved": true,
+          "material_slots_match": true,
+          "smooth_normals_preserved": true,
+          "non_manifold_edges": 0,
+          "uv0_present": true
+        }
+      }
+    },
+    {
+      "asset_id": "SM_SF_FreshFallenTree",
+      "file": "ArtSource/Meshes/Starfall/SM_SF_FreshFallenTree.fbx",
+      "materials": [
+        "M_SF_Tree_Bark",
+        "M_SF_Tree_LeafGreenDark",
+        "M_SF_Tree_BarkWarm",
+        "M_SF_Tree_BarkShadow",
+        "M_SF_Tree_FreshWood",
+        "M_SF_Tree_LeafGreen",
+        "M_SF_Tree_LeafGreenLight"
+      ],
+      "material_slots": [
+        "M_SF_Tree_Bark",
+        "M_SF_Tree_LeafGreenDark",
+        "M_SF_Tree_BarkWarm",
+        "M_SF_Tree_BarkShadow",
+        "M_SF_Tree_FreshWood",
+        "M_SF_Tree_LeafGreen",
+        "M_SF_Tree_LeafGreenLight"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        7.222604,
+        3.813007,
+        2.686253
+      ],
+      "bounds_min_m": [
+        -3.611302,
+        -1.906504,
+        0.0
+      ],
+      "bounds_max_m": [
+        3.611302,
+        1.906504,
+        2.686253
+      ],
+      "triangles": 7344,
+      "vertices": 4212,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "origin": "XY footprint centre, ground Z=0",
+      "front_axis_blender": "+X",
+      "description": "Fresh matching fallen trunk along +X; pale splintered break at -X, intact layered green crown at +X.",
+      "actual_leaf_count": 246,
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_triangles": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "minimum_uv_triangle_area": 2.6260940089173346e-08,
+        "all_faces_smooth": true,
+        "ground_z_zero": true,
+        "fbx_roundtrip": {
+          "asset_id": "SM_SF_FreshFallenTree",
+          "passed": true,
+          "bounds_max_error_m": 0.0,
+          "origin_zero": true,
+          "triangle_count_preserved": true,
+          "material_slots_match": true,
+          "smooth_normals_preserved": true,
+          "non_manifold_edges": 0,
+          "uv0_present": true
+        }
+      }
+    },
+    {
+      "asset_id": "SM_SF_OldMossLog",
+      "file": "ArtSource/Meshes/Starfall/SM_SF_OldMossLog.fbx",
+      "materials": [
+        "M_SF_Tree_OldWood",
+        "M_SF_Tree_RottenInterior",
+        "M_SF_Tree_OldWoodLight",
+        "M_SF_Tree_MossLight",
+        "M_SF_Tree_Moss",
+        "M_SF_Tree_FungusEdge",
+        "M_SF_Tree_Fungus"
+      ],
+      "material_slots": [
+        "M_SF_Tree_OldWood",
+        "M_SF_Tree_RottenInterior",
+        "M_SF_Tree_OldWoodLight",
+        "M_SF_Tree_MossLight",
+        "M_SF_Tree_Moss",
+        "M_SF_Tree_FungusEdge",
+        "M_SF_Tree_Fungus"
+      ],
+      "collision": "complex",
+      "dimensions_m": [
+        5.295783,
+        1.493749,
+        1.445099
+      ],
+      "bounds_min_m": [
+        -2.647892,
+        -0.746875,
+        0.0
+      ],
+      "bounds_max_m": [
+        2.647892,
+        0.746875,
+        1.445099
+      ],
+      "triangles": 5740,
+      "vertices": 2958,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "origin": "XY footprint centre, ground Z=0",
+      "front_axis_blender": "+X",
+      "description": "Old hollow fallen log along +X; open dark passage, eroded thick rims, fissures, moss cushions and shelf fungi.",
+      "actual_leaf_count": 0,
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_triangles": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "minimum_uv_triangle_area": 2.9937635037668997e-07,
+        "all_faces_smooth": true,
+        "ground_z_zero": true,
+        "fbx_roundtrip": {
+          "asset_id": "SM_SF_OldMossLog",
+          "passed": true,
+          "bounds_max_error_m": 0.0,
+          "origin_zero": true,
+          "triangle_count_preserved": true,
+          "material_slots_match": true,
+          "smooth_normals_preserved": true,
+          "non_manifold_edges": 0,
+          "uv0_present": true
+        }
+      }
+    },
+    {
+      "asset_id": "SM_SF_PinkTree_01",
+      "file": "ArtSource/Meshes/Starfall/SM_SF_PinkTree_01.fbx",
+      "materials": [
+        "M_SF_Tree_Bark",
+        "M_SF_Tree_LeafPinkShade",
+        "M_SF_Tree_BarkWarm",
+        "M_SF_Tree_BarkShadow",
+        "M_SF_Tree_LeafPink",
+        "M_SF_Tree_LeafPinkLight",
+        "M_SF_Tree_LeafPinkRose"
+      ],
+      "material_slots": [
+        "M_SF_Tree_Bark",
+        "M_SF_Tree_LeafPinkShade",
+        "M_SF_Tree_BarkWarm",
+        "M_SF_Tree_BarkShadow",
+        "M_SF_Tree_LeafPink",
+        "M_SF_Tree_LeafPinkLight",
+        "M_SF_Tree_LeafPinkRose"
+      ],
+      "collision": "trunk",
+      "dimensions_m": [
+        5.319944,
+        3.215682,
+        6.1
+      ],
+      "bounds_min_m": [
+        -2.659972,
+        -1.607841,
+        0.0
+      ],
+      "bounds_max_m": [
+        2.659972,
+        1.607841,
+        6.1
+      ],
+      "triangles": 11704,
+      "vertices": 6830,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "origin": "XY footprint centre, ground Z=0",
+      "front_axis_blender": "+X",
+      "description": "Three overlapping round canopy lobes wrapped in staggered broad pointed closed leaves; pink and blush layers with cool rose undersides.",
+      "actual_leaf_count": 468,
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_triangles": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "minimum_uv_triangle_area": 1.6123191670658343e-08,
+        "all_faces_smooth": true,
+        "ground_z_zero": true,
+        "fbx_roundtrip": {
+          "asset_id": "SM_SF_PinkTree_01",
+          "passed": true,
+          "bounds_max_error_m": 0.0,
+          "origin_zero": true,
+          "triangle_count_preserved": true,
+          "material_slots_match": true,
+          "smooth_normals_preserved": true,
+          "non_manifold_edges": 0,
+          "uv0_present": true
+        }
+      },
+      "trunk_collision": {
+        "radius_m": 0.33,
+        "height_m": 2.8,
+        "centre_xy_m": [
+          0.03981,
+          -0.050629
+        ],
+        "roots_no_collision": true,
+        "canopy_no_collision": true
+      }
+    },
+    {
+      "asset_id": "SM_SF_PinkTree_02",
+      "file": "ArtSource/Meshes/Starfall/SM_SF_PinkTree_02.fbx",
+      "materials": [
+        "M_SF_Tree_Bark",
+        "M_SF_Tree_LeafPinkShade",
+        "M_SF_Tree_BarkWarm",
+        "M_SF_Tree_BarkShadow",
+        "M_SF_Tree_LeafPink",
+        "M_SF_Tree_LeafPinkLight",
+        "M_SF_Tree_LeafPinkRose"
+      ],
+      "material_slots": [
+        "M_SF_Tree_Bark",
+        "M_SF_Tree_LeafPinkShade",
+        "M_SF_Tree_BarkWarm",
+        "M_SF_Tree_BarkShadow",
+        "M_SF_Tree_LeafPink",
+        "M_SF_Tree_LeafPinkLight",
+        "M_SF_Tree_LeafPinkRose"
+      ],
+      "collision": "trunk",
+      "dimensions_m": [
+        4.858424,
+        3.331552,
+        5.75
+      ],
+      "bounds_min_m": [
+        -2.429212,
+        -1.665776,
+        0.0
+      ],
+      "bounds_max_m": [
+        2.429212,
+        1.665776,
+        5.75
+      ],
+      "triangles": 11704,
+      "vertices": 6830,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "origin": "XY footprint centre, ground Z=0",
+      "front_axis_blender": "+X",
+      "description": "Three overlapping round canopy lobes wrapped in staggered broad pointed closed leaves; pink and blush layers with cool rose undersides.",
+      "actual_leaf_count": 468,
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_triangles": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "minimum_uv_triangle_area": 1.5874134007276552e-08,
+        "all_faces_smooth": true,
+        "ground_z_zero": true,
+        "fbx_roundtrip": {
+          "asset_id": "SM_SF_PinkTree_02",
+          "passed": true,
+          "bounds_max_error_m": 0.0,
+          "origin_zero": true,
+          "triangle_count_preserved": true,
+          "material_slots_match": true,
+          "smooth_normals_preserved": true,
+          "non_manifold_edges": 0,
+          "uv0_present": true
+        }
+      },
+      "trunk_collision": {
+        "radius_m": 0.33,
+        "height_m": 2.8,
+        "centre_xy_m": [
+          -0.050094,
+          -0.065775
+        ],
+        "roots_no_collision": true,
+        "canopy_no_collision": true
+      }
+    },
+    {
+      "asset_id": "SM_SF_PinkTree_03",
+      "file": "ArtSource/Meshes/Starfall/SM_SF_PinkTree_03.fbx",
+      "materials": [
+        "M_SF_Tree_Bark",
+        "M_SF_Tree_LeafPinkShade",
+        "M_SF_Tree_BarkWarm",
+        "M_SF_Tree_BarkShadow",
+        "M_SF_Tree_LeafPink",
+        "M_SF_Tree_LeafPinkLight",
+        "M_SF_Tree_LeafPinkRose"
+      ],
+      "material_slots": [
+        "M_SF_Tree_Bark",
+        "M_SF_Tree_LeafPinkShade",
+        "M_SF_Tree_BarkWarm",
+        "M_SF_Tree_BarkShadow",
+        "M_SF_Tree_LeafPink",
+        "M_SF_Tree_LeafPinkLight",
+        "M_SF_Tree_LeafPinkRose"
+      ],
+      "collision": "trunk",
+      "dimensions_m": [
+        5.179485,
+        3.253341,
+        6.75
+      ],
+      "bounds_min_m": [
+        -2.589743,
+        -1.626671,
+        0.0
+      ],
+      "bounds_max_m": [
+        2.589743,
+        1.626671,
+        6.75
+      ],
+      "triangles": 11704,
+      "vertices": 6830,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "origin": "XY footprint centre, ground Z=0",
+      "front_axis_blender": "+X",
+      "description": "Three overlapping round canopy lobes wrapped in staggered broad pointed closed leaves; pink and blush layers with cool rose undersides.",
+      "actual_leaf_count": 468,
+      "validation": {
+        "non_manifold_edges": 0,
+        "degenerate_triangles": 0,
+        "finite_vertices": true,
+        "finite_uv": true,
+        "minimum_uv_triangle_area": 1.421480710916967e-08,
+        "all_faces_smooth": true,
+        "ground_z_zero": true,
+        "fbx_roundtrip": {
+          "asset_id": "SM_SF_PinkTree_03",
+          "passed": true,
+          "bounds_max_error_m": 0.0,
+          "origin_zero": true,
+          "triangle_count_preserved": true,
+          "material_slots_match": true,
+          "smooth_normals_preserved": true,
+          "non_manifold_edges": 0,
+          "uv0_present": true
+        }
+      },
+      "trunk_collision": {
+        "radius_m": 0.33,
+        "height_m": 2.8,
+        "centre_xy_m": [
+          0.080216,
+          -0.063959
+        ],
+        "roots_no_collision": true,
+        "canopy_no_collision": true
+      }
+    }
+  ],
+  "placement_notes": "Fallen tree and log long axis is +X. Stump and living trees ground at local Z=0. Living tree collision must use the metadata trunk cylinder and exclude the leaf canopy. Fresh fallen tree matches the stump species; arrange its -X broken end toward the standing stump, leaving a visible fresh gap."
+}

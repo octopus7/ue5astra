@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "asset_id": "SM_SF_LandedSpaceship",
+  "fbx_sha256": "cf534722e3b8c6ffa27f540d58bc6eff8f8fa1953a5afde00335ed06f4c08ef3",
+  "triangles": 36092,
+  "dimensions_m": [
+    7.29516,
+    7.069903,
+    13.872148
+  ],
+  "bounds_roundtrip_error_m": 0.0,
+  "ground_origin_zero": true,
+  "hull_lean_degrees": 16,
+  "three_horizontal_landing_pads": true,
+  "minimum_z_m": -8.940696716308594e-08,
+  "ground_contact_vertices_per_pad": [
+    8,
+    8,
+    8
+  ],
+  "material_slots_match": true,
+  "finite_vertices": true,
+  "uv_finite": true,
+  "non_manifold_edges": 0,
+  "degenerate_faces": 0,
+  "authored_normals": true
+}
