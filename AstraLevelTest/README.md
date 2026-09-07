@@ -37,6 +37,16 @@ Unreal Engine 5.7.4 프로젝트. 약 100m 숲을 탐색하는 직립 보행 삼
 
 `AstraLevelTest.uproject`를 UE 5.7로 열고 기본 맵에서 Play를 누른다. 에디터가 키보드 입력을 받도록 플레이 뷰포커스가 필요하다. P 데모 모드는 장소별로 순간이동한 뒤 자동으로 걸으며 약 72초의 7개 컷을 반복한다. P를 다시 누르면 원래 위치와 카메라로 복귀한다. [촬영 모드 사용법·컷 구성](Docs/DemoPlayback.md)을 참고한다.
 
+## Windows x64 실행
+
+패키지는 저장소의 `Builds/AstraLevelTest_Win64/Windows`, 배포 ZIP은 `Builds/AstraLevelTest_Win64_DLSS.zip`에 생성한다. 압축을 모두 풀고 `AstraLevelTest.exe`를 실행하면 3840×2160 출력과 DLSS Performance(내부 1920×1080)를 사용한다.
+
+- `Play_1080p_Native.cmd`: 1920×1080 네이티브.
+- `Play_4K_Native.cmd`: 3840×2160 네이티브.
+- `Play_4K_DLSS.cmd`: 기본 4K DLSS 모드.
+
+P 데모 진입·복귀와 WASD를 사용할 수 있다. [빌드 환경·실행 설정](Docs/WindowsPackage.md)과 [패키지 검증 결과](VALIDATION.md#windows-x64-패키지와-dlss--2026-09-07)를 참고한다.
+
 ## 작업 자료
 
 - `WORK_INSTRUCTIONS.md`: 사용자의 전체 작업 지시

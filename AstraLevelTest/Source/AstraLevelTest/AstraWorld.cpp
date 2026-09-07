@@ -1,5 +1,6 @@
 #include "AstraWorld.h"
 #include "AstraDemoPlayback.h"
+#include "AstraGraphics.h"
 #include "Components/InputComponent.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -145,6 +146,7 @@ AAstraController::AAstraController()
 void AAstraController::BeginPlay()
 {
     Super::BeginPlay();
+    FAstraGraphics::Apply(GetWorld());
     SetInputMode(FInputModeGameOnly());
     bSmokeTest = FParse::Param(FCommandLine::Get(),TEXT("AstraSmokeTest"));
     bBridgeTest = FParse::Param(FCommandLine::Get(),TEXT("AstraBridgeTest"));

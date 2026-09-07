@@ -5,6 +5,7 @@
   "Description": "A 100m woodland, lake and ruins explored by a block calico cat.",
   "Modules": [{"Name": "AstraLevelTest", "Type": "Runtime", "LoadingPhase": "Default"}],
   "Plugins": [
+    {"Name": "DLSS", "Enabled": true, "PlatformAllowList": ["Win64"]},
     {"Name": "PythonScriptPlugin", "Enabled": true, "TargetAllowList": ["Editor"]},
     {"Name": "EditorScriptingUtilities", "Enabled": true, "TargetAllowList": ["Editor"]},
     {"Name": "AndroidFileServer", "Enabled": false}

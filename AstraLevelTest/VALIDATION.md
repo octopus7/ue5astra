@@ -55,7 +55,7 @@
 
 [최종 렌더 기록](ArtSource/Previews/UE_FinalReviewValidation.json)은 실제 UE 게임 화면 22장의 PNG 해시·해상도, 게임 렌더 로그의 재질 컴파일/인스턴싱 사용 오류 여부, 이동 및 저장 후 검증 결과를 함께 보관한다. 바위 상세는 별도 에디터 GPU 화면 1장으로 촬영하고 해시·해상도·맵 보존 여부를 추가 검사한다. 생성 참고 이미지는 여기에 포함하지 않는다. 웅덩이는 메인 맵의 탑다운·낮은 시점 두 방향으로 촬영한다.
 
-다리 입구의 초기 단차 문제는 블렌더 원본 경사로를 늘린 뒤 FBX를 다시 가져와 해결했다. 이 검증은 에디터 및 에디터의 게임 실행 모드에서 수행했다. 배포용 패키지는 이번 작업 범위에 포함하지 않았다.
+다리 입구의 초기 단차 문제는 블렌더 원본 경사로를 늘린 뒤 FBX를 다시 가져와 해결했다. 위 검증은 에디터 및 에디터의 게임 실행 모드에서 수행했다. 배포용 패키지 검증은 아래에 별도로 기록한다.
 
 ## 바위 모델링 개선 — 2026-09-07
 
@@ -80,11 +80,33 @@ UE 기존 자산 5개만 재임포트했다. 재질 슬롯 3개를 보존하고 
 | 복귀 후 W/A/S/D 실제 입력 | 각 방향 3.23~3.38m 이동, 접지 유지 |
 | 실제 컷별 렌더 | 7장 저장·시각 확인, 재질 컴파일 오류 없음 |
 
-기계 판독 결과: [UE_DemoValidation.json](ArtSource/Previews/UE_DemoValidation.json). 재실행: `Scripts/validate_demo_playback.ps1`. [사용법·컷 구성·편집 위치](Docs/DemoPlayback.md). 에디터의 게임 실행으로 검증했으며 배포 패키지는 만들지 않았다.
+기계 판독 결과: [UE_DemoValidation.json](ArtSource/Previews/UE_DemoValidation.json). 재실행: `Scripts/validate_demo_playback.ps1`. [사용법·컷 구성·편집 위치](Docs/DemoPlayback.md). 이 결과는 에디터의 게임 실행으로 검증했으며 이후 배포 패키지에서도 아래와 같이 재검증했다.
 
 | 다리 횡단 컷 | 낚시 데크 컷 |
 | --- | --- |
 | ![고양이가 나무다리를 건너는 실제 데모 프레임](ArtSource/Previews/UE_Demo_Bridge.png) | ![고양이가 데크를 걷는 실제 데모 프레임](ArtSource/Previews/UE_Demo_FishingDock.png) |
+
+## Windows x64 패키지와 DLSS — 2026-09-07
+
+UE 5.7.4의 Win64 x64 Shipping 빌드·쿠킹·스테이징·패키징에 성공했다. BuildCookRun 173.45초, 쿠킹 691개 패키지, 프로세스 종료 코드 0. 실행 파일의 PE Machine 값은 `0x8664`이며 NVIDIA DLSS 배포 DLL과 x64 VC 런타임 설치 파일을 포함한다.
+
+배포 폴더는 592,189,141바이트, ZIP은 419,167,708바이트다. 압축 파일 안의 33개 파일을 모두 읽어 원본과 SHA256이 일치함을 확인했고 ZIP 해시를 검증 JSON과 `.zip.sha256`에 기록했다.
+
+RTX 4060 / NVIDIA 드라이버 596.36에서 패키지 실행 파일의 실제 렌더링 크기와 업스케일러를 읽었다. 세 프로필 모두 PNG 저장·화면 내용·종료 코드 검사를 통과했다.
+
+| 모드 | 실제 출력 | 실제 내부 렌더링 | 실제 업스케일러 | 결과 |
+| --- | --- | --- | --- | --- |
+| DLSS Performance | 3840×2160 | 1920×1080 | FDLSSSceneViewFamilyUpscaler | 통과 |
+| 1080p 네이티브 | 1920×1080 | 1920×1080 | EngineTemporalUpscaler | 통과 |
+| 4K 네이티브 | 3840×2160 | 3840×2160 | EngineTemporalUpscaler | 통과 |
+
+해상도 강제 인수 없이 최상위 `AstraLevelTest.exe`도 실행했다. 기본 전체 화면 설정에서 4K 출력·1080p 내부·DLSS 활성화를 확인했다. 비 RTX GPU의 자동 1080p 대체 경로는 구현했으며 해당 하드웨어에서의 실행은 검증하지 않았다.
+
+패키지의 `-AstraDemoTest`는 월드 시간 79.716초에 완료했다. 7개 컷 보행·접지, 루프, P 진입/복귀/즉시 취소, 위치·회전·카메라·이동 상태 복원과 복귀 후 WASD를 모두 통과했다. 위치·회전 복원 오차는 0cm / 0도다.
+
+[전체 패키지 검증 JSON](ArtSource/Previews/UE_WindowsPackageValidation.json). 재실행은 `Scripts/validate_windows_package.ps1`을 사용한다. 원본 해상도의 PNG와 개별 JSON은 Git에서 제외한 `Builds/Validation`에 보관하며 아래 화면은 실제 4K 캡처를 문서용 1600×900 JPEG로 축소한 것이다.
+
+![패키지의 4K DLSS 실제 렌더](ArtSource/Previews/UE_Packaged_DLSS4K.jpg)
 
 ## 보관 자료
 

@@ -1,0 +1,559 @@
+{
+  "passed": true,
+  "startedUtc": "2026-09-07T04:02:33.1555756Z",
+  "completedUtc": "2026-09-07T04:05:33.3671767Z",
+  "packageRoot": "D:\\github\\ue5astra\\Builds\\AstraLevelTest_Win64\\Windows",
+  "executable": "D:\\github\\ue5astra\\Builds\\AstraLevelTest_Win64\\Windows\\AstraLevelTest\\Binaries\\Win64\\AstraLevelTest-Win64-Shipping.exe",
+  "profiles": [
+    {
+      "requestedProfile": "DLSS4K",
+      "passed": true,
+      "process": {
+        "startedUtc": "2026-09-07T04:02:33.1916092Z",
+        "completedUtc": "2026-09-07T04:02:57.8602399Z",
+        "exitCode": 0,
+        "processId": 24424
+      },
+      "report": "D:\\github\\ue5astra\\Builds\\Validation\\DLSS4K\\Saved\\GraphicsValidation.json",
+      "screenshot": "D:\\github\\ue5astra\\Builds\\Validation\\DLSS4K\\Saved\\GraphicsValidation.png",
+      "result": {
+        "requestedProfile": "DLSS4K",
+        "actualProfile": "DLSS4K",
+        "dlssSupport": "Supported",
+        "fallbackReason": "",
+        "dlssSupported": true,
+        "performanceModeSupported": true,
+        "dlssEnabled": true,
+        "commandLineResolutionOverride": true,
+        "validRequestedProfile": true,
+        "outputWidth": 3840,
+        "outputHeight": 2160,
+        "screenPercentage": 50,
+        "expectedInternalWidth": 1920,
+        "expectedInternalHeight": 1080,
+        "passed": true,
+        "failure": "",
+        "elapsedSeconds": 8.020684000104666,
+        "observedFrames": 145,
+        "actualTemporalUpscaler": "FDLSSSceneViewFamilyUpscaler",
+        "actualDLSSEnabled": true,
+        "resolutionPass": true,
+        "upscalerPass": true,
+        "actualOutputWidth": 3840,
+        "actualOutputHeight": 2160,
+        "actualInternalWidth": 1920,
+        "actualInternalHeight": 1080,
+        "screenshotSaved": true,
+        "screenshotHasDetail": true,
+        "screenshotWidth": 3840,
+        "screenshotHeight": 2160
+      },
+      "failure": null
+    },
+    {
+      "requestedProfile": "Native1080",
+      "passed": true,
+      "process": {
+        "startedUtc": "2026-09-07T04:02:57.9145517Z",
+        "completedUtc": "2026-09-07T04:03:23.4642117Z",
+        "exitCode": 0,
+        "processId": 19076
+      },
+      "report": "D:\\github\\ue5astra\\Builds\\Validation\\Native1080\\Saved\\GraphicsValidation.json",
+      "screenshot": "D:\\github\\ue5astra\\Builds\\Validation\\Native1080\\Saved\\GraphicsValidation.png",
+      "result": {
+        "requestedProfile": "Native1080",
+        "actualProfile": "Native1080",
+        "dlssSupport": "Supported",
+        "fallbackReason": "",
+        "dlssSupported": true,
+        "performanceModeSupported": true,
+        "dlssEnabled": false,
+        "commandLineResolutionOverride": true,
+        "validRequestedProfile": true,
+        "outputWidth": 1920,
+        "outputHeight": 1080,
+        "screenPercentage": 100,
+        "expectedInternalWidth": 1920,
+        "expectedInternalHeight": 1080,
+        "passed": true,
+        "failure": "",
+        "elapsedSeconds": 8.002979103475809,
+        "observedFrames": 296,
+        "actualTemporalUpscaler": "EngineTemporalUpscaler",
+        "actualDLSSEnabled": false,
+        "resolutionPass": true,
+        "upscalerPass": true,
+        "actualOutputWidth": 1920,
+        "actualOutputHeight": 1080,
+        "actualInternalWidth": 1920,
+        "actualInternalHeight": 1080,
+        "screenshotSaved": true,
+        "screenshotHasDetail": true,
+        "screenshotWidth": 1920,
+        "screenshotHeight": 1080
+      },
+      "failure": null
+    },
+    {
+      "requestedProfile": "Native4K",
+      "passed": true,
+      "process": {
+        "startedUtc": "2026-09-07T04:03:23.475494Z",
+        "completedUtc": "2026-09-07T04:03:41.3797947Z",
+        "exitCode": 0,
+        "processId": 44292
+      },
+      "report": "D:\\github\\ue5astra\\Builds\\Validation\\Native4K\\Saved\\GraphicsValidation.json",
+      "screenshot": "D:\\github\\ue5astra\\Builds\\Validation\\Native4K\\Saved\\GraphicsValidation.png",
+      "result": {
+        "requestedProfile": "Native4K",
+        "actualProfile": "Native4K",
+        "dlssSupport": "Supported",
+        "fallbackReason": "",
+        "dlssSupported": true,
+        "performanceModeSupported": true,
+        "dlssEnabled": false,
+        "commandLineResolutionOverride": true,
+        "validRequestedProfile": true,
+        "outputWidth": 3840,
+        "outputHeight": 2160,
+        "screenPercentage": 100,
+        "expectedInternalWidth": 3840,
+        "expectedInternalHeight": 2160,
+        "passed": true,
+        "failure": "",
+        "elapsedSeconds": 8.36465959995985,
+        "observedFrames": 67,
+        "actualTemporalUpscaler": "EngineTemporalUpscaler",
+        "actualDLSSEnabled": false,
+        "resolutionPass": true,
+        "upscalerPass": true,
+        "actualOutputWidth": 3840,
+        "actualOutputHeight": 2160,
+        "actualInternalWidth": 3840,
+        "actualInternalHeight": 2160,
+        "screenshotSaved": true,
+        "screenshotHasDetail": true,
+        "screenshotWidth": 3840,
+        "screenshotHeight": 2160
+      },
+      "failure": null
+    }
+  ],
+  "demo": {
+    "passed": true,
+    "process": {
+      "startedUtc": "2026-09-07T04:03:41.3856505Z",
+      "completedUtc": "2026-09-07T04:05:33.2276862Z",
+      "exitCode": 0,
+      "processId": 21260
+    },
+    "sourceReport": "D:\\github\\ue5astra\\Builds\\AstraLevelTest_Win64\\Windows\\AstraLevelTest\\ArtSource\\Previews\\UE_DemoValidation.json",
+    "report": "D:\\github\\ue5astra\\Builds\\Validation\\Demo\\Artifacts\\UE_DemoValidation.json",
+    "screenshots": [
+      "D:\\github\\ue5astra\\Builds\\Validation\\Demo\\Artifacts\\UE_Demo_Clearing.png",
+      "D:\\github\\ue5astra\\Builds\\Validation\\Demo\\Artifacts\\UE_Demo_Bridge.png",
+      "D:\\github\\ue5astra\\Builds\\Validation\\Demo\\Artifacts\\UE_Demo_PinkHouse.png",
+      "D:\\github\\ue5astra\\Builds\\Validation\\Demo\\Artifacts\\UE_Demo_Camp.png",
+      "D:\\github\\ue5astra\\Builds\\Validation\\Demo\\Artifacts\\UE_Demo_Ruins.png",
+      "D:\\github\\ue5astra\\Builds\\Validation\\Demo\\Artifacts\\UE_Demo_FishingDock.png",
+      "D:\\github\\ue5astra\\Builds\\Validation\\Demo\\Artifacts\\UE_Demo_BrokenBridge.png"
+    ],
+    "result": {
+      "test": "AstraDemoTest",
+      "passed": true,
+      "elapsed_world_seconds": 79.716,
+      "timeout_world_seconds": 180,
+      "failed_checks": 0,
+      "shots": [
+        {
+          "name": "Clearing",
+          "completed": true,
+          "travel_cm": 1140.056,
+          "unsupported_seconds": 0.0,
+          "grounded_at_end": true,
+          "supported": true,
+          "pass": true
+        },
+        {
+          "name": "Bridge",
+          "completed": true,
+          "travel_cm": 1168.951,
+          "unsupported_seconds": 0.0,
+          "grounded_at_end": true,
+          "supported": true,
+          "pass": true
+        },
+        {
+          "name": "PinkHouse",
+          "completed": true,
+          "travel_cm": 877.959,
+          "unsupported_seconds": 0.0,
+          "grounded_at_end": true,
+          "supported": true,
+          "pass": true
+        },
+        {
+          "name": "Camp",
+          "completed": true,
+          "travel_cm": 1579.025,
+          "unsupported_seconds": 0.0,
+          "grounded_at_end": true,
+          "supported": true,
+          "pass": true
+        },
+        {
+          "name": "Ruins",
+          "completed": true,
+          "travel_cm": 594.636,
+          "unsupported_seconds": 0.0,
+          "grounded_at_end": true,
+          "supported": true,
+          "pass": true
+        },
+        {
+          "name": "FishingDock",
+          "completed": true,
+          "travel_cm": 818.899,
+          "unsupported_seconds": 0.0,
+          "grounded_at_end": true,
+          "supported": true,
+          "pass": true
+        },
+        {
+          "name": "BrokenBridge",
+          "completed": true,
+          "travel_cm": 736.274,
+          "unsupported_seconds": 0.0,
+          "grounded_at_end": true,
+          "supported": true,
+          "pass": true
+        }
+      ],
+      "checks": [
+        {
+          "name": "seven_shots_configured",
+          "pass": true,
+          "detail": "7"
+        },
+        {
+          "name": "distinct_restore_view_target",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "p_enters_demo",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "entry_uses_cat_camera",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "held_p_does_not_toggle_repeatedly",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "shot_Clearing",
+          "pass": true,
+          "detail": "completed=1 travel_cm=1140.06 unsupported_seconds=0.0000 grounded_at_end=1 unique=1"
+        },
+        {
+          "name": "shot_Bridge",
+          "pass": true,
+          "detail": "completed=1 travel_cm=1168.95 unsupported_seconds=0.0000 grounded_at_end=1 unique=1"
+        },
+        {
+          "name": "shot_PinkHouse",
+          "pass": true,
+          "detail": "completed=1 travel_cm=877.96 unsupported_seconds=0.0000 grounded_at_end=1 unique=1"
+        },
+        {
+          "name": "shot_Camp",
+          "pass": true,
+          "detail": "completed=1 travel_cm=1579.02 unsupported_seconds=0.0000 grounded_at_end=1 unique=1"
+        },
+        {
+          "name": "shot_Ruins",
+          "pass": true,
+          "detail": "completed=1 travel_cm=594.64 unsupported_seconds=0.0000 grounded_at_end=1 unique=1"
+        },
+        {
+          "name": "shot_FishingDock",
+          "pass": true,
+          "detail": "completed=1 travel_cm=818.90 unsupported_seconds=0.0000 grounded_at_end=1 unique=1"
+        },
+        {
+          "name": "shot_BrokenBridge",
+          "pass": true,
+          "detail": "completed=1 travel_cm=736.27 unsupported_seconds=0.0000 grounded_at_end=1 unique=1"
+        },
+        {
+          "name": "all_seven_shots_recorded",
+          "pass": true,
+          "detail": "completed_records=7 unique_names=7"
+        },
+        {
+          "name": "loop_restarts_at_first_shot",
+          "pass": true,
+          "detail": "loops=1 shot_index=0 shot_seconds=0.208"
+        },
+        {
+          "name": "p_exits_demo",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "full_loop_restore_transform",
+          "pass": true,
+          "detail": "position_error_cm=0.0000 rotation_error_degrees=0.0000"
+        },
+        {
+          "name": "full_loop_restore_walk_speed",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "full_loop_restore_camera_offset",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "full_loop_restore_camera_ortho",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "full_loop_restore_camera_lag",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "full_loop_restore_camera_rotation_and_arm",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "full_loop_restore_movement_mode",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "full_loop_restore_velocity",
+          "pass": true,
+          "detail": "expected=X=0.000 Y=0.000 Z=0.000 actual=X=0.000 Y=0.000 Z=0.000"
+        },
+        {
+          "name": "full_loop_restore_view_target",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "full_loop_restore_movement_input_state",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "p_reenters_at_first_shot",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "early_cancel_within_first_second",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "p_cancels_immediately_after_reentry",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "early_cancel_restore_transform",
+          "pass": true,
+          "detail": "position_error_cm=0.0000 rotation_error_degrees=0.0000"
+        },
+        {
+          "name": "early_cancel_restore_walk_speed",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "early_cancel_restore_camera_offset",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "early_cancel_restore_camera_ortho",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "early_cancel_restore_camera_lag",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "early_cancel_restore_camera_rotation_and_arm",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "early_cancel_restore_movement_mode",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "early_cancel_restore_velocity",
+          "pass": true,
+          "detail": "expected=X=0.000 Y=0.000 Z=0.000 actual=X=0.000 Y=0.000 Z=0.000"
+        },
+        {
+          "name": "early_cancel_restore_view_target",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "early_cancel_restore_movement_input_state",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "post_demo_input_W",
+          "pass": true,
+          "detail": "forward_travel_cm=331.670 grounded=1 demo_active=0"
+        },
+        {
+          "name": "post_demo_input_A",
+          "pass": true,
+          "detail": "forward_travel_cm=323.710 grounded=1 demo_active=0"
+        },
+        {
+          "name": "post_demo_input_S",
+          "pass": true,
+          "detail": "forward_travel_cm=337.641 grounded=1 demo_active=0"
+        },
+        {
+          "name": "post_demo_input_D",
+          "pass": true,
+          "detail": "forward_travel_cm=331.654 grounded=1 demo_active=0"
+        }
+      ],
+      "post_demo_movement": [
+        {
+          "key": "W",
+          "pass": true,
+          "dx": 331.67,
+          "dy": 0.0,
+          "dz": -3.271,
+          "expected_direction_travel_cm": 331.67,
+          "grounded": true
+        },
+        {
+          "key": "A",
+          "pass": true,
+          "dx": -20.845,
+          "dy": -323.71,
+          "dz": 11.43,
+          "expected_direction_travel_cm": 323.71,
+          "grounded": true
+        },
+        {
+          "key": "S",
+          "pass": true,
+          "dx": -337.641,
+          "dy": 0.0,
+          "dz": -4.661,
+          "expected_direction_travel_cm": 337.641,
+          "grounded": true
+        },
+        {
+          "key": "D",
+          "pass": true,
+          "dx": 0.0,
+          "dy": 331.654,
+          "dz": -3.092,
+          "expected_direction_travel_cm": 331.654,
+          "grounded": true
+        }
+      ]
+    },
+    "graphicsSettings": {
+      "requestedProfile": "DLSS4K",
+      "actualProfile": "DLSS4K",
+      "dlssSupport": "Supported",
+      "fallbackReason": "",
+      "dlssSupported": true,
+      "performanceModeSupported": true,
+      "dlssEnabled": true,
+      "commandLineResolutionOverride": true,
+      "validRequestedProfile": true,
+      "outputWidth": 3840,
+      "outputHeight": 2160,
+      "screenPercentage": 50,
+      "expectedInternalWidth": 1920,
+      "expectedInternalHeight": 1080
+    },
+    "failure": null
+  },
+  "failure": null,
+  "defaultLauncher": {
+    "executable": "AstraLevelTest.exe",
+    "exitCode": 0,
+    "result": {
+      "requestedProfile": "DLSS4K",
+      "actualProfile": "DLSS4K",
+      "dlssSupport": "Supported",
+      "fallbackReason": "",
+      "dlssSupported": true,
+      "performanceModeSupported": true,
+      "dlssEnabled": true,
+      "commandLineResolutionOverride": false,
+      "validRequestedProfile": true,
+      "outputWidth": 3840,
+      "outputHeight": 2160,
+      "screenPercentage": 50,
+      "expectedInternalWidth": 1920,
+      "expectedInternalHeight": 1080,
+      "passed": true,
+      "failure": "",
+      "elapsedSeconds": 8.025033496320248,
+      "observedFrames": 144,
+      "actualTemporalUpscaler": "FDLSSSceneViewFamilyUpscaler",
+      "actualDLSSEnabled": true,
+      "resolutionPass": true,
+      "upscalerPass": true,
+      "actualOutputWidth": 3840,
+      "actualOutputHeight": 2160,
+      "actualInternalWidth": 1920,
+      "actualInternalHeight": 1080,
+      "screenshotSaved": true,
+      "screenshotHasDetail": true,
+      "screenshotWidth": 3840,
+      "screenshotHeight": 2160
+    }
+  },
+  "build": {
+    "configuration": "Shipping",
+    "architecture": "x64",
+    "peMachine": "0x8664",
+    "engine": "5.7.4",
+    "gpu": "NVIDIA GeForce RTX 4060",
+    "driver": "596.36",
+    "uatExitCode": 0,
+    "buildCookRunSeconds": 173.45,
+    "cookedPackages": 691,
+    "packageBytes": 592189141
+  },
+  "distribution": {
+    "zip": "D:\\github\\ue5astra\\Builds\\AstraLevelTest_Win64_DLSS.zip",
+    "bytes": 419167708,
+    "sha256": "2F00B36F745EFC04EC8F01D160FE76196B28CF8A00AB9CFD297C109EFD5726E4",
+    "allEntriesMatchSource": true,
+    "verifiedFiles": 33
+  }
+}

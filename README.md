@@ -2,6 +2,8 @@
 
 UE 5.7.4에서 실행하는 약 100×100m 숲 탐색 프로젝트. 박스 형태의 삼색 고양이를 WASD로 움직이고 고정 탑다운 카메라가 따라간다.
 
+Windows x64 Shipping 패키지를 제공한다. 기본 실행은 **4K 출력 + DLSS Performance(내부 1920×1080)**이며 1080p·4K 네이티브 실행 옵션도 포함한다. [패키지 실행·빌드 방법](AstraLevelTest/Docs/WindowsPackage.md).
+
 실제 언리얼 실행 화면. 숲과 공터를 중심으로 호수, 개울, 나무다리와 목조 폐허가 이어진다.
 
 ![숲·공터·호수·다리·목조 폐허의 전체 배치](AstraLevelTest/ArtSource/Previews/UE_Overview.png)

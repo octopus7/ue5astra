@@ -2,6 +2,8 @@ AstraLevelTest/Binaries/
 AstraLevelTest/Intermediate/
 AstraLevelTest/DerivedDataCache/
 AstraLevelTest/Saved/
+Builds/
+AstraLevelTest/Build/Windows/FileOpenOrder/
 AstraLevelTest/.vs/
 *.sln
 *.VC.db
