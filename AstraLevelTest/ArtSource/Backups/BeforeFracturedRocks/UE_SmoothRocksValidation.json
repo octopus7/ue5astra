@@ -1,0 +1,102 @@
+{
+  "status": "success",
+  "meshes": [
+    {
+      "asset": "SM_MossRock_01",
+      "source_fbx": "ArtSource/Meshes/SM_SmoothForestRock_01.fbx",
+      "source_triangles": 1920,
+      "imported_vertices": 1042,
+      "bounds_cm": {
+        "min": [
+          -137.5532684326172,
+          -111.96432495117188,
+          8.115974426269531
+        ],
+        "max": [
+          138.6111602783203,
+          115.0541763305664,
+          156.2030792236328
+        ]
+      },
+      "normal_import": "<FBXNormalImportMethod.FBXNIM_IMPORT_NORMALS_AND_TANGENTS: 2>"
+    },
+    {
+      "asset": "SM_MossRock_02",
+      "source_fbx": "ArtSource/Meshes/SM_SmoothForestRock_02.fbx",
+      "source_triangles": 1920,
+      "imported_vertices": 1042,
+      "bounds_cm": {
+        "min": [
+          -145.25303649902344,
+          -120.50243377685547,
+          8.296525955200195
+        ],
+        "max": [
+          146.1787872314453,
+          122.99089050292969,
+          159.09378051757812
+        ]
+      },
+      "normal_import": "<FBXNormalImportMethod.FBXNIM_IMPORT_NORMALS_AND_TANGENTS: 2>"
+    },
+    {
+      "asset": "SM_MossRock_03",
+      "source_fbx": "ArtSource/Meshes/SM_SmoothForestRock_03.fbx",
+      "source_triangles": 1920,
+      "imported_vertices": 1042,
+      "bounds_cm": {
+        "min": [
+          -151.07713317871094,
+          -116.59342956542969,
+          8.119183540344238
+        ],
+        "max": [
+          164.97341918945312,
+          121.67362976074219,
+          167.58193969726562
+        ]
+      },
+      "normal_import": "<FBXNormalImportMethod.FBXNIM_IMPORT_NORMALS_AND_TANGENTS: 2>"
+    },
+    {
+      "asset": "SM_MossRock_04",
+      "source_fbx": "ArtSource/Meshes/SM_SmoothForestRock_04.fbx",
+      "source_triangles": 1920,
+      "imported_vertices": 1042,
+      "bounds_cm": {
+        "min": [
+          -168.17977905273438,
+          -105.52330017089844,
+          8.427318572998047
+        ],
+        "max": [
+          154.01089477539062,
+          109.7394027709961,
+          157.47662353515625
+        ]
+      },
+      "normal_import": "<FBXNormalImportMethod.FBXNIM_IMPORT_NORMALS_AND_TANGENTS: 2>"
+    },
+    {
+      "asset": "SM_MossRock_05",
+      "source_fbx": "ArtSource/Meshes/SM_SmoothForestRock_05.fbx",
+      "source_triangles": 1920,
+      "imported_vertices": 1043,
+      "bounds_cm": {
+        "min": [
+          -180.2298126220703,
+          -108.79071044921875,
+          8.061474800109863
+        ],
+        "max": [
+          165.41986083984375,
+          117.01749420166016,
+          161.47451782226562
+        ]
+      },
+      "normal_import": "<FBXNormalImportMethod.FBXNIM_IMPORT_NORMALS_AND_TANGENTS: 2>"
+    }
+  ],
+  "existing_actor_references_updated": 155,
+  "transforms_preserved": true
+}

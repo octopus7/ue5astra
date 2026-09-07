@@ -24,7 +24,11 @@ UE 5.7.4에서 실행하는 약 100×100m 숲 탐색 프로젝트. 박스 형태
 
 ![돌 절벽 위의 천막과 화톳불 야영지](AstraLevelTest/ArtSource/Previews/UE_Camp.png)
 
-![부드러운 바위와 장소별 밀도를 적용한 Foliage](AstraLevelTest/ArtSource/Previews/UE_Foliage.png)
+![절리와 넓은 암면을 살린 바위, 장소별 Foliage](AstraLevelTest/ArtSource/Previews/UE_Foliage.png)
+
+둥근 조약돌 인상을 줄이도록 바위 5종을 넓은 암면·절리·층진 형태로 다듬었다. 부드러운 모서리와 회청색 애니 배경풍 텍스처를 유지했다. [모델 원본과 적용 방법](AstraLevelTest/Docs/RockModeling.md)
+
+![새 바위 형태의 실제 언리얼 화면](AstraLevelTest/ArtSource/Previews/UE_RockShapes.png)
 
 Blender 배치 원본에는 메시 정의 56종과 배치 기록 1,820개가 있다. 작은 식물은 생활 소품과 겹치는 자리만 비워 Foliage 배치 데이터 1,963개를 유지한다. 새 낚시터·생활 소품 15종의 원본과 재생성 방법은 [프로젝트 안내](AstraLevelTest/README.md#낚시터와-생활-소품)에 정리했다. 엔진 적용·이동 검증 상태는 검증 문서를 기준으로 확인한다.
 

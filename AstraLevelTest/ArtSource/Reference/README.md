@@ -21,6 +21,8 @@ Generated production textures are saved in `../Textures`: `T_ForestFloor.png`, `
 
 `../Textures/T_AnimeForestRockPaint.png` is the generated albedo for the smooth forest boulders. `FOREST_SMOOTH_ROCK_TEXTURE_PROMPT.md` preserves the prompt and quality notes. The native output is 1254×1254 and is saved without artificial upscaling; UE generates mipmaps through its power-of-two texture setting.
 
+`Ref_FracturedForestRocks.png` is the later shape revision: five broad-faced, split or layered forest boulders with softly beveled edges instead of rounded pebbles. `FRACTURED_FOREST_ROCKS_PROMPT.md` preserves its full ImageGen prompt. The original painted albedo remains in use. Actual models and UE results are separate files: `../Previews/Blender_FracturedForestRocks.png` and `../Previews/UE_Rocks.png`.
+
 ## Fishing and daily-life references
 
 Four additional built-in ImageGen reference sheets guide the 15 new assets. Each original PNG is saved in this directory; these images describe the modeling target rather than the implemented Unreal scene.

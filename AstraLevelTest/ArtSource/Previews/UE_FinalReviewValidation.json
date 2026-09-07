@@ -9,7 +9,10 @@
     "UE_LifePropsReloadValidation.json": true,
     "Blender_ExportValidation.json": true,
     "UE_ShorelinePolishMainValidation.json": true,
-    "FishingDock_FBXValidation.json": true
+    "FishingDock_FBXValidation.json": true,
+    "UE_FracturedRocksValidation.json": true,
+    "Blender_FracturedRockPlacementValidation.json": true,
+    "UE_RockShapesCapture.json": true
   },
   "renders": [
     {
@@ -48,7 +51,7 @@
         1600,
         1000
       ],
-      "sha256": "d51521f1a99af168c5ff151df7e51a1b0a9cd5a37c69bf82f6d329a5f68b1f1c",
+      "sha256": "b35d77bc567e3a078bc1d76ddead932407fedbec45d189d184983a2b912c26d7",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -78,7 +81,7 @@
         1600,
         1000
       ],
-      "sha256": "9dbc66fab8c6cbe38b5db0f372874d97e6ca33133bdcddfd27350522188a086e",
+      "sha256": "b56f74cda1f27676f97bfa47579a1acbd6b9545bb0f0d22a0ce5139c80f48574",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -88,7 +91,7 @@
         1600,
         1000
       ],
-      "sha256": "50a8dd5d1e24fd19747568be298b78250f3935f1d96d207b26f2b74cfa100b34",
+      "sha256": "1a7db5b161b229645c2f349a11d1b3d7a891856ed236509c92def5eec7c992fc",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -138,7 +141,7 @@
         1600,
         1000
       ],
-      "sha256": "ff8b7de176c7f3d0620abeb39432dcb16f933b1621d7aff7b223d698c1c935bd",
+      "sha256": "259e7eb0d120b8014c63bc1c4570fc657933d6df434be016cce63d65d3819082",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -148,7 +151,7 @@
         1600,
         1000
       ],
-      "sha256": "f50c2eddf2d5ce7da15a459aecf98527d94d0c88b3e05ba662f679294489cef4",
+      "sha256": "bfd381a5e09642dd8a5697176e31ca7bb03710ea568dedde1bf5b140cfb7fb40",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -158,7 +161,7 @@
         1600,
         1000
       ],
-      "sha256": "67b11c4a4932207048a6a9cd3b19e313d18baa519cb7efdcc4161776e8798317",
+      "sha256": "30c4c63ddf6f86f10411cae3dbde4aa1608383ca6e9ca27cde835c5113c29373",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -168,7 +171,7 @@
         1600,
         1000
       ],
-      "sha256": "a098d799cf68d41e76aba61d725ecbcaa833e9cd474d5636eea3b579a09a3399",
+      "sha256": "86a660959eef925df034b2ebcb87f7ac5e3526b455097aa268a96f86f26c5a64",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -178,7 +181,7 @@
         1600,
         1000
       ],
-      "sha256": "fb7b51b1811bacd826d6ef3ff5575fafc9740030990b65453af243b55ad9fcfd",
+      "sha256": "c5695e18d78594b10dc7c890bf60a881f0e515bdc4f2665dc325ea42ea07bbcf",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -188,7 +191,7 @@
         1600,
         1000
       ],
-      "sha256": "e0f8ffa2d4132c1af8a458b7e363f333a72f1e168bbab0bdee8dbb9c5aa45b52",
+      "sha256": "8612a83ffeaf1493c4885c040fadfce88c40f00bfc017bcae17be26e451e83f9",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -198,7 +201,7 @@
         1600,
         1000
       ],
-      "sha256": "49699ed678b1c151b431d57e7925ca0e5e070a9ce4f263b345c30a562ade6303",
+      "sha256": "138e3d3de2298b033907ad61cb7a788307f1c1f1b695a4aac680ca1060fc027e",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -218,7 +221,7 @@
         1600,
         1000
       ],
-      "sha256": "287cf58039dbd593a186bcdd07920786b2d7951217ff898be2efe641080530db",
+      "sha256": "446ae82805d0674c2faac5871d8f382ebf42e775351666de5f6cf98a460cc5ca",
       "shader_errors": [],
       "engine_exited": true
     },
@@ -232,5 +235,24 @@
       "shader_errors": [],
       "engine_exited": true
     }
-  ]
+  ],
+  "detail_render": {
+    "passed": true,
+    "capture": "Unreal editor GPU screenshot; temporary camera; main map not saved",
+    "look_at_cm": [
+      2530,
+      3350,
+      80
+    ],
+    "pitch": -58,
+    "ortho_width_cm": 1050,
+    "main_map_sha256": "aa7239575bf24cb38603f18c7f23bda32e3da36f8474639d5e57ea1c3a3ccd78",
+    "size_px": [
+      1600,
+      1000
+    ],
+    "sha256": "caed1edf9338e58826f57d6472150d92b87933f88233bc798d61cefbc3cf576a",
+    "engine_exited": true,
+    "engine_errors": []
+  }
 }

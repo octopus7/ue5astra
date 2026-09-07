@@ -1,0 +1,520 @@
+{
+  "source": "ArtSource/Blender/ForestFracturedRocks.blend",
+  "original_source": "ArtSource/Blender/ForestSmoothRocks.blend",
+  "rebuild_baseline": "SOURCE_CAGE_SM_MossRock_01..05 preserved original 42-vertex cages",
+  "script": "Scripts/build_fractured_forest_rocks.py",
+  "reference": "ArtSource/Reference/Ref_FracturedForestRocks.png",
+  "units": "metres",
+  "unreal_conversion": "(Blender X, -Blender Y, Blender Z) * 100; existing actor transforms unchanged",
+  "replacement_map": {
+    "SM_MossRock_01": "SM_FracturedForestRock_01",
+    "SM_MossRock_02": "SM_FracturedForestRock_02",
+    "SM_MossRock_03": "SM_FracturedForestRock_03",
+    "SM_MossRock_04": "SM_FracturedForestRock_04",
+    "SM_MossRock_05": "SM_FracturedForestRock_05"
+  },
+  "material_properties": {
+    "M_ForestRockPaint": {
+      "base_color_texture": "ArtSource/Textures/T_AnimeForestRockPaint.png",
+      "base_color_formula": "sRGB-decoded TextureSample(UV0).rgb",
+      "texture_srgb": true,
+      "roughness": 0.88,
+      "metallic": 0,
+      "specular": 0.2,
+      "uv_channel": 0,
+      "normal_texture": null,
+      "emissive": 0,
+      "random_facet_colors": false
+    }
+  },
+  "assets": [
+    {
+      "original_asset_id": "SM_MossRock_01",
+      "asset_id": "SM_FracturedForestRock_01",
+      "new_asset_id": "SM_FracturedForestRock_01",
+      "file": "ArtSource/Meshes/SM_FracturedForestRock_01.fbx",
+      "collision": "complex",
+      "original_ue_path": "/Game/Astra/Meshes/SM_MossRock_01",
+      "unreal_asset_path": "/Game/Astra/Meshes/SM_MossRock_01",
+      "unreal_import_target_asset_id": "SM_MossRock_01",
+      "independent_source_asset_id": "SM_FracturedForestRock_01",
+      "origin": "Original local origin and +0.08 m lower-bound offset preserved exactly",
+      "blender_location": [
+        0,
+        0,
+        0
+      ],
+      "blender_rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "blender_scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds_min_m": [
+        -1.3755327463150024,
+        -1.1505417823791504,
+        0.08115974068641663
+      ],
+      "bounds_max_m": [
+        1.3861116170883179,
+        1.119643211364746,
+        1.5620307922363281
+      ],
+      "original_bounds_min_m": [
+        -1.3755327463150024,
+        -1.1505417823791504,
+        0.08115974068641663
+      ],
+      "original_bounds_max_m": [
+        1.3861116170883179,
+        1.119643211364746,
+        1.5620307922363281
+      ],
+      "dimensions_m": [
+        2.7616443634033203,
+        2.2701849937438965,
+        1.4808710515499115
+      ],
+      "vertices": 240,
+      "triangles": 476,
+      "base_shape_polygons": 12,
+      "shape_style": "blunt block",
+      "material_slots": [
+        "M_ForestRockPaint"
+      ],
+      "uv_channel": 0,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "validation": {
+        "finite_vertices": true,
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "microscopic_bevel_vertices_welded": 0,
+        "ue_coincident_vertex_triangles": 0,
+        "ue_comparison_threshold_cm": 2e-05,
+        "minimum_triangle_edge_m": 0.005749224094720661,
+        "minimum_triangle_area_m2": 0.00010097240010509267,
+        "signed_volume_m3": 5.942799538545125,
+        "all_faces_smooth": true,
+        "custom_weighted_normals": true,
+        "bounds_error_m": 0.0,
+        "origin_transform_preserved": true,
+        "finite_uv": true,
+        "minimum_uv_face_area": 2.4940942879858596e-06,
+        "vertex_color_attributes": 0,
+        "random_facet_colors": false,
+        "subdivision_surface_used": false
+      }
+    },
+    {
+      "original_asset_id": "SM_MossRock_02",
+      "asset_id": "SM_FracturedForestRock_02",
+      "new_asset_id": "SM_FracturedForestRock_02",
+      "file": "ArtSource/Meshes/SM_FracturedForestRock_02.fbx",
+      "collision": "complex",
+      "original_ue_path": "/Game/Astra/Meshes/SM_MossRock_02",
+      "unreal_asset_path": "/Game/Astra/Meshes/SM_MossRock_02",
+      "unreal_import_target_asset_id": "SM_MossRock_02",
+      "independent_source_asset_id": "SM_FracturedForestRock_02",
+      "origin": "Original local origin and +0.08 m lower-bound offset preserved exactly",
+      "blender_location": [
+        0,
+        0,
+        0
+      ],
+      "blender_rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "blender_scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds_min_m": [
+        -1.4525303840637207,
+        -1.2299089431762695,
+        0.08296525478363037
+      ],
+      "bounds_max_m": [
+        1.4617878198623657,
+        1.2050243616104126,
+        1.590937852859497
+      ],
+      "original_bounds_min_m": [
+        -1.4525303840637207,
+        -1.2299089431762695,
+        0.08296525478363037
+      ],
+      "original_bounds_max_m": [
+        1.4617878198623657,
+        1.2050243616104126,
+        1.590937852859497
+      ],
+      "dimensions_m": [
+        2.9143182039260864,
+        2.434933304786682,
+        1.5079725980758667
+      ],
+      "vertices": 336,
+      "triangles": 668,
+      "base_shape_polygons": 16,
+      "shape_style": "broad wedge",
+      "material_slots": [
+        "M_ForestRockPaint"
+      ],
+      "uv_channel": 0,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "validation": {
+        "finite_vertices": true,
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "microscopic_bevel_vertices_welded": 0,
+        "ue_coincident_vertex_triangles": 0,
+        "ue_comparison_threshold_cm": 2e-05,
+        "minimum_triangle_edge_m": 0.0016511310166568913,
+        "minimum_triangle_area_m2": 3.3017670375556918e-06,
+        "signed_volume_m3": 4.922127527570969,
+        "all_faces_smooth": true,
+        "custom_weighted_normals": true,
+        "bounds_error_m": 0.0,
+        "origin_transform_preserved": true,
+        "finite_uv": true,
+        "minimum_uv_face_area": 5.578396411465292e-08,
+        "vertex_color_attributes": 0,
+        "random_facet_colors": false,
+        "subdivision_surface_used": false
+      }
+    },
+    {
+      "original_asset_id": "SM_MossRock_03",
+      "asset_id": "SM_FracturedForestRock_03",
+      "new_asset_id": "SM_FracturedForestRock_03",
+      "file": "ArtSource/Meshes/SM_FracturedForestRock_03.fbx",
+      "collision": "complex",
+      "original_ue_path": "/Game/Astra/Meshes/SM_MossRock_03",
+      "unreal_asset_path": "/Game/Astra/Meshes/SM_MossRock_03",
+      "unreal_import_target_asset_id": "SM_MossRock_03",
+      "independent_source_asset_id": "SM_FracturedForestRock_03",
+      "origin": "Original local origin and +0.08 m lower-bound offset preserved exactly",
+      "blender_location": [
+        0,
+        0,
+        0
+      ],
+      "blender_rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "blender_scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds_min_m": [
+        -1.5107712745666504,
+        -1.2167363166809082,
+        0.08119183778762817
+      ],
+      "bounds_max_m": [
+        1.6497342586517334,
+        1.1659343242645264,
+        1.6758193969726562
+      ],
+      "original_bounds_min_m": [
+        -1.5107712745666504,
+        -1.2167363166809082,
+        0.08119183778762817
+      ],
+      "original_bounds_max_m": [
+        1.6497342586517334,
+        1.1659343242645264,
+        1.6758193969726562
+      ],
+      "dimensions_m": [
+        3.160505533218384,
+        2.3826706409454346,
+        1.594627559185028
+      ],
+      "vertices": 812,
+      "triangles": 1620,
+      "base_shape_polygons": 50,
+      "shape_style": "layered slab",
+      "material_slots": [
+        "M_ForestRockPaint"
+      ],
+      "uv_channel": 0,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "validation": {
+        "finite_vertices": true,
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "microscopic_bevel_vertices_welded": 0,
+        "ue_coincident_vertex_triangles": 0,
+        "ue_comparison_threshold_cm": 2e-05,
+        "minimum_triangle_edge_m": 0.0002109225287687644,
+        "minimum_triangle_area_m2": 2.9398820515780244e-06,
+        "signed_volume_m3": 7.667707163825027,
+        "all_faces_smooth": true,
+        "custom_weighted_normals": true,
+        "bounds_error_m": 0.0,
+        "origin_transform_preserved": true,
+        "finite_uv": true,
+        "minimum_uv_face_area": 1.3975790125186904e-07,
+        "vertex_color_attributes": 0,
+        "random_facet_colors": false,
+        "subdivision_surface_used": false
+      }
+    },
+    {
+      "original_asset_id": "SM_MossRock_04",
+      "asset_id": "SM_FracturedForestRock_04",
+      "new_asset_id": "SM_FracturedForestRock_04",
+      "file": "ArtSource/Meshes/SM_FracturedForestRock_04.fbx",
+      "collision": "complex",
+      "original_ue_path": "/Game/Astra/Meshes/SM_MossRock_04",
+      "unreal_asset_path": "/Game/Astra/Meshes/SM_MossRock_04",
+      "unreal_import_target_asset_id": "SM_MossRock_04",
+      "independent_source_asset_id": "SM_FracturedForestRock_04",
+      "origin": "Original local origin and +0.08 m lower-bound offset preserved exactly",
+      "blender_location": [
+        0,
+        0,
+        0
+      ],
+      "blender_rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "blender_scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds_min_m": [
+        -1.6817978620529175,
+        -1.0973939895629883,
+        0.08427318930625916
+      ],
+      "bounds_max_m": [
+        1.5401089191436768,
+        1.0552330017089844,
+        1.5747661590576172
+      ],
+      "original_bounds_min_m": [
+        -1.6817978620529175,
+        -1.0973939895629883,
+        0.08427318930625916
+      ],
+      "original_bounds_max_m": [
+        1.5401089191436768,
+        1.0552330017089844,
+        1.5747661590576172
+      ],
+      "dimensions_m": [
+        3.2219067811965942,
+        2.1526269912719727,
+        1.490492969751358
+      ],
+      "vertices": 334,
+      "triangles": 664,
+      "base_shape_polygons": 16,
+      "shape_style": "leaning split",
+      "material_slots": [
+        "M_ForestRockPaint"
+      ],
+      "uv_channel": 0,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "validation": {
+        "finite_vertices": true,
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "microscopic_bevel_vertices_welded": 2,
+        "ue_coincident_vertex_triangles": 0,
+        "ue_comparison_threshold_cm": 2e-05,
+        "minimum_triangle_edge_m": 0.0055005859420511425,
+        "minimum_triangle_area_m2": 2.1965528503642417e-05,
+        "signed_volume_m3": 4.754331647748612,
+        "all_faces_smooth": true,
+        "custom_weighted_normals": true,
+        "bounds_error_m": 0.0,
+        "origin_transform_preserved": true,
+        "finite_uv": true,
+        "minimum_uv_face_area": 5.641339202444584e-07,
+        "vertex_color_attributes": 0,
+        "random_facet_colors": false,
+        "subdivision_surface_used": false
+      }
+    },
+    {
+      "original_asset_id": "SM_MossRock_05",
+      "asset_id": "SM_FracturedForestRock_05",
+      "new_asset_id": "SM_FracturedForestRock_05",
+      "file": "ArtSource/Meshes/SM_FracturedForestRock_05.fbx",
+      "collision": "complex",
+      "original_ue_path": "/Game/Astra/Meshes/SM_MossRock_05",
+      "unreal_asset_path": "/Game/Astra/Meshes/SM_MossRock_05",
+      "unreal_import_target_asset_id": "SM_MossRock_05",
+      "independent_source_asset_id": "SM_FracturedForestRock_05",
+      "origin": "Original local origin and +0.08 m lower-bound offset preserved exactly",
+      "blender_location": [
+        0,
+        0,
+        0
+      ],
+      "blender_rotation_radians": [
+        0,
+        0,
+        0
+      ],
+      "blender_scale": [
+        1,
+        1,
+        1
+      ],
+      "bounds_min_m": [
+        -1.8022981882095337,
+        -1.1701749563217163,
+        0.08061474561691284
+      ],
+      "bounds_max_m": [
+        1.6541986465454102,
+        1.087907075881958,
+        1.6147451400756836
+      ],
+      "original_bounds_min_m": [
+        -1.8022981882095337,
+        -1.1701749563217163,
+        0.08061474561691284
+      ],
+      "original_bounds_max_m": [
+        1.6541986465454102,
+        1.087907075881958,
+        1.6147451400756836
+      ],
+      "dimensions_m": [
+        3.456496834754944,
+        2.2580820322036743,
+        1.5341303944587708
+      ],
+      "vertices": 637,
+      "triangles": 1270,
+      "base_shape_polygons": 42,
+      "shape_style": "shoulder boulder",
+      "material_slots": [
+        "M_ForestRockPaint"
+      ],
+      "uv_channel": 0,
+      "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS",
+      "validation": {
+        "finite_vertices": true,
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "microscopic_bevel_vertices_welded": 0,
+        "ue_coincident_vertex_triangles": 0,
+        "ue_comparison_threshold_cm": 2e-05,
+        "minimum_triangle_edge_m": 0.000373467270909412,
+        "minimum_triangle_area_m2": 5.561796569963917e-06,
+        "signed_volume_m3": 6.976915688443476,
+        "all_faces_smooth": true,
+        "custom_weighted_normals": true,
+        "bounds_error_m": 0.0,
+        "origin_transform_preserved": true,
+        "finite_uv": true,
+        "minimum_uv_face_area": 7.867657103588499e-08,
+        "vertex_color_attributes": 0,
+        "random_facet_colors": false,
+        "subdivision_surface_used": false
+      }
+    }
+  ],
+  "fbx_roundtrip_validation": [
+    {
+      "asset_id": "SM_FracturedForestRock_01",
+      "bounds_error_m": 0.0,
+      "custom_normals_imported": true,
+      "triangles": 476,
+      "triangle_count_preserved": true,
+      "ue_coincident_vertex_triangles": 0,
+      "ue_comparison_threshold_cm": 2e-05,
+      "minimum_triangle_edge_m": 0.005749224094720661,
+      "minimum_triangle_area_m2": 0.00010097240010509267,
+      "all_faces_smooth": true,
+      "material_slots": 1,
+      "finite_uv": true,
+      "uv_loops": 1428,
+      "welded_non_manifold_edges": 0
+    },
+    {
+      "asset_id": "SM_FracturedForestRock_02",
+      "bounds_error_m": 0.0,
+      "custom_normals_imported": true,
+      "triangles": 668,
+      "triangle_count_preserved": true,
+      "ue_coincident_vertex_triangles": 0,
+      "ue_comparison_threshold_cm": 2e-05,
+      "minimum_triangle_edge_m": 0.0016511310166568913,
+      "minimum_triangle_area_m2": 3.3017670375556918e-06,
+      "all_faces_smooth": true,
+      "material_slots": 1,
+      "finite_uv": true,
+      "uv_loops": 2004,
+      "welded_non_manifold_edges": 0
+    },
+    {
+      "asset_id": "SM_FracturedForestRock_03",
+      "bounds_error_m": 0.0,
+      "custom_normals_imported": true,
+      "triangles": 1620,
+      "triangle_count_preserved": true,
+      "ue_coincident_vertex_triangles": 0,
+      "ue_comparison_threshold_cm": 2e-05,
+      "minimum_triangle_edge_m": 0.0002109225287687644,
+      "minimum_triangle_area_m2": 2.9398820515780244e-06,
+      "all_faces_smooth": true,
+      "material_slots": 1,
+      "finite_uv": true,
+      "uv_loops": 4860,
+      "welded_non_manifold_edges": 0
+    },
+    {
+      "asset_id": "SM_FracturedForestRock_04",
+      "bounds_error_m": 0.0,
+      "custom_normals_imported": true,
+      "triangles": 664,
+      "triangle_count_preserved": true,
+      "ue_coincident_vertex_triangles": 0,
+      "ue_comparison_threshold_cm": 2e-05,
+      "minimum_triangle_edge_m": 0.0055005859420511425,
+      "minimum_triangle_area_m2": 2.1965528503642417e-05,
+      "all_faces_smooth": true,
+      "material_slots": 1,
+      "finite_uv": true,
+      "uv_loops": 1992,
+      "welded_non_manifold_edges": 0
+    },
+    {
+      "asset_id": "SM_FracturedForestRock_05",
+      "bounds_error_m": 0.0,
+      "custom_normals_imported": true,
+      "triangles": 1270,
+      "triangle_count_preserved": true,
+      "ue_coincident_vertex_triangles": 0,
+      "ue_comparison_threshold_cm": 2e-05,
+      "minimum_triangle_edge_m": 0.000373467270909412,
+      "minimum_triangle_area_m2": 5.561796569963917e-06,
+      "all_faces_smooth": true,
+      "material_slots": 1,
+      "finite_uv": true,
+      "uv_loops": 3810,
+      "welded_non_manifold_edges": 0
+    }
+  ],
+  "placement_notes": "Reimport the independent new FBX into its original SM_MossRock UE asset. Keep all existing actor and Blender object transforms, labels, asset IDs and collision references. Only mesh geometry, UV and authored normals change; exact original bounding boxes and pivots are preserved."
+}

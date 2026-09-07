@@ -1,0 +1,1100 @@
+{
+  "passed": true,
+  "checks": {
+    "SM_MossRock_01_bounds": true,
+    "SM_MossRock_01_triangles": true,
+    "SM_MossRock_01_authored_normals": true,
+    "SM_MossRock_01_single_painted_section": true,
+    "SM_MossRock_01_material": true,
+    "SM_MossRock_02_bounds": true,
+    "SM_MossRock_02_triangles": true,
+    "SM_MossRock_02_authored_normals": true,
+    "SM_MossRock_02_single_painted_section": true,
+    "SM_MossRock_02_material": true,
+    "SM_MossRock_03_bounds": true,
+    "SM_MossRock_03_triangles": true,
+    "SM_MossRock_03_authored_normals": true,
+    "SM_MossRock_03_single_painted_section": true,
+    "SM_MossRock_03_material": true,
+    "SM_MossRock_04_bounds": true,
+    "SM_MossRock_04_triangles": true,
+    "SM_MossRock_04_authored_normals": true,
+    "SM_MossRock_04_single_painted_section": true,
+    "SM_MossRock_04_material": true,
+    "SM_MossRock_05_bounds": true,
+    "SM_MossRock_05_triangles": true,
+    "SM_MossRock_05_authored_normals": true,
+    "SM_MossRock_05_single_painted_section": true,
+    "SM_MossRock_05_material": true,
+    "all_actor_states_unchanged": true,
+    "saved_main_map_unchanged": true,
+    "existing_material_texture_foliage_files_unchanged": true
+  },
+  "meshes": [
+    {
+      "asset": "SM_MossRock_01",
+      "source_fbx": "ArtSource/Meshes/SM_FracturedForestRock_01.fbx",
+      "triangles": 476,
+      "bounds_error_cm": 0.0,
+      "material": "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "preserved_material_slot_count": 3,
+      "imported_vertices": 332,
+      "bounds_cm": [
+        [
+          -137.5532684326172,
+          -111.96431732177734,
+          8.115974426269531
+        ],
+        [
+          138.6111602783203,
+          115.0541763305664,
+          156.2030792236328
+        ]
+      ]
+    },
+    {
+      "asset": "SM_MossRock_02",
+      "source_fbx": "ArtSource/Meshes/SM_FracturedForestRock_02.fbx",
+      "triangles": 668,
+      "bounds_error_cm": 0.0,
+      "material": "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "preserved_material_slot_count": 3,
+      "imported_vertices": 452,
+      "bounds_cm": [
+        [
+          -145.25303649902344,
+          -120.50243377685547,
+          8.296525955200195
+        ],
+        [
+          146.1787872314453,
+          122.99089050292969,
+          159.09378051757812
+        ]
+      ]
+    },
+    {
+      "asset": "SM_MossRock_03",
+      "source_fbx": "ArtSource/Meshes/SM_FracturedForestRock_03.fbx",
+      "triangles": 1620,
+      "bounds_error_cm": 0.0,
+      "material": "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "preserved_material_slot_count": 3,
+      "imported_vertices": 1056,
+      "bounds_cm": [
+        [
+          -151.07713317871094,
+          -116.59342956542969,
+          8.119183540344238
+        ],
+        [
+          164.97341918945312,
+          121.67362976074219,
+          167.58193969726562
+        ]
+      ]
+    },
+    {
+      "asset": "SM_MossRock_04",
+      "source_fbx": "ArtSource/Meshes/SM_FracturedForestRock_04.fbx",
+      "triangles": 664,
+      "bounds_error_cm": 0.0,
+      "material": "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "preserved_material_slot_count": 3,
+      "imported_vertices": 446,
+      "bounds_cm": [
+        [
+          -168.17979431152344,
+          -105.5232925415039,
+          8.427318572998047
+        ],
+        [
+          154.01089477539062,
+          109.73939514160156,
+          157.47662353515625
+        ]
+      ]
+    },
+    {
+      "asset": "SM_MossRock_05",
+      "source_fbx": "ArtSource/Meshes/SM_FracturedForestRock_05.fbx",
+      "triangles": 1270,
+      "bounds_error_cm": 0.0,
+      "material": "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "preserved_material_slot_count": 3,
+      "imported_vertices": 837,
+      "bounds_cm": [
+        [
+          -180.22982788085938,
+          -108.79070281982422,
+          8.061474800109863
+        ],
+        [
+          165.41986083984375,
+          117.01749420166016,
+          161.47451782226562
+        ]
+      ]
+    }
+  ],
+  "existing_rock_actor_references": 155,
+  "visible_rock_actors": 147,
+  "preserved_actor_material_overrides": {
+    "MossRock_04_0176": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_02_0177": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_01_0178": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_04_0179": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_03_0180": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_04_0181": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_01_0182": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_05_0183": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_05_0184": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_01_0185": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_04_0186": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_02_0187": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_03_0188": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_03_0189": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_02_0190": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_03_0191": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_04_0192": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_02_0193": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_02_0194": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_03_0195": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_05_0196": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_05_0197": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_03_0198": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_01_0199": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_02_0200": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_02_0201": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_02_0202": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_05_0203": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_02_0204": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_03_0205": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_04_0206": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_05_0207": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_01_0208": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_01_0209": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_05_0210": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_04_0211": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_01_0212": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_03_0213": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_01_0214": [
+      "/Game/Astra/Materials/Shoreline/Wet_M_ForestRockPaint.Wet_M_ForestRockPaint",
+      "/Game/Astra/Materials/Shoreline/Wet_M_StoneLight.Wet_M_StoneLight",
+      "/Game/Astra/Materials/Shoreline/Wet_M_Moss.Wet_M_Moss"
+    ],
+    "MossRock_01_0215": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0216": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0217": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0218": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0219": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0220": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_04_0221": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0222": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0223": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0224": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0225": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0226": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0227": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0228": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0229": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0230": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0231": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0232": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_04_0233": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0234": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0235": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0236": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0237": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0238": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_04_0239": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_04_0240": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0241": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_04_0242": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0243": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0244": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0245": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0246": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_04_0247": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0248": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0249": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0250": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0251": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0252": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0253": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0254": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_04_0255": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0256": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0257": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0258": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0259": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0260": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0261": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0262": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0263": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0264": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_04_0265": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0266": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_04_0267": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0268": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0269": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0270": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_04_0271": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0272": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0273": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0274": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0275": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0276": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0277": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_04_0278": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0279": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0280": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0281": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0282": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0283": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0284": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0285": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0286": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0287": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0288": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0289": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0290": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0291": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0292": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0293": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_04_0294": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0295": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0296": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0297": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0298": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0299": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0300": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0301": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0302": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0303": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_04_0304": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0305": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0306": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0307": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0308": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0309": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0310": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0311": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0312": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0313": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0314": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0315": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0316": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0317": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0318": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_04_0319": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0320": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0321": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_04_0322": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_03_0323": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_04_0324": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0325": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_02_0326": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_04_0327": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_05_0328": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0329": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ],
+    "MossRock_01_0330": [
+      "/Game/Astra/Materials/M_ForestRockPaint.M_ForestRockPaint",
+      "/Game/Astra/Materials/M_StoneLight.M_StoneLight",
+      "/Game/Astra/Materials/M_Moss.M_Moss"
+    ]
+  },
+  "all_level_actor_count": 2108,
+  "main_map_sha256": "aa7239575bf24cb38603f18c7f23bda32e3da36f8474639d5e57ea1c3a3ccd78",
+  "protected_asset_sha256": {
+    "Content\\Astra\\Materials\\M_Bark.uasset": "61efc82a09dd0a4f716bab4c911945f2c05355a8e6e93a609e1651a9fb69e885",
+    "Content\\Astra\\Materials\\M_BarkLight.uasset": "38fdd1de4cdf35703975641b5e4ee470f790f2d73a0ebeff03af6258378a96d1",
+    "Content\\Astra\\Materials\\M_CampBuckle.uasset": "e35bef82d1c6eaa728f69433c07d14f0a7969ff522c1f8cdf6c704a354ceac3c",
+    "Content\\Astra\\Materials\\M_CampCharcoal.uasset": "7bb95c07917e208db58ed24c40bb44a02b85d5c0f8576f620ae9d3516017194c",
+    "Content\\Astra\\Materials\\M_CampEnamel.uasset": "9754f1b3b835560637ddc7fb24a1a7a8e7c8655da87f9ce03f824dee49eda156",
+    "Content\\Astra\\Materials\\M_CampEnamelLight.uasset": "5db941b4565773f3ce110cd3be74164a00efb0640cc7f86ea4dfed57000c896b",
+    "Content\\Astra\\Materials\\M_CampFlame.uasset": "db0675d7eee362896c0c5a4fc525805f8a5378c8e874b6560c6cb29e50941390",
+    "Content\\Astra\\Materials\\M_CampFlameCore.uasset": "f2b9471512389e3aa521e9f78095f51263a769e49506f6bf046ea059a9228373",
+    "Content\\Astra\\Materials\\M_CampIron.uasset": "b99db3f17eada5ccb3e03af69b91ce3ccbed0e8be1a1c558c364c4425bf6b2bc",
+    "Content\\Astra\\Materials\\M_CampLanternGlow.uasset": "829ea9cd66183bc9400647b7bc939e96a702f603277dde6b5b440611e5bc4404",
+    "Content\\Astra\\Materials\\M_CampLeather.uasset": "1deb199b7be6f1bcdce4587616967f486563aad07d5f169140921a7ba8b6cc6e",
+    "Content\\Astra\\Materials\\M_CampLeatherLight.uasset": "d7e4784b9bbe6318ac58f73f042dded4789220e12cf854e8c1121ed194e047ce",
+    "Content\\Astra\\Materials\\M_CampOchre.uasset": "5f9a1bb6848ea53338143683843af788df8e98b4ae4c9f40cfbbf9391531015a",
+    "Content\\Astra\\Materials\\M_CampRollDark.uasset": "60014b7f95382ebcaa0eb5a6d56e0fa2c71bbafadb75c46b1feef9a55a3a2a61",
+    "Content\\Astra\\Materials\\M_CampRope.uasset": "91acf24163dffabfc5b4b97c9d374547f8fa55b5de800365daa5a96036b700b1",
+    "Content\\Astra\\Materials\\M_CampSoup.uasset": "61b40f65f909714fe1c39708ed863cf61c622bf452c71bd85066fd72a1a53e8d",
+    "Content\\Astra\\Materials\\M_CampStoneBlue.uasset": "94ff5d3a84e69d558d3400703a50246824f1b11beac286b3a61e6dbac1bfa81a",
+    "Content\\Astra\\Materials\\M_CampStoneLight.uasset": "d3a5df42550bffd43f81ac5ccc2b9803d01e474cf420cf501bf0da1273d9faac",
+    "Content\\Astra\\Materials\\M_CampWood.uasset": "f11ade2e312d391479a4bb2c803bd7f478340c3a7527715c8d1b04195751455e",
+    "Content\\Astra\\Materials\\M_CampWoodLight.uasset": "9726d61a8cb993b250752154c926e8d072efaaf0b57dbc4f0ca4bcd5bdeb5e64",
+    "Content\\Astra\\Materials\\M_CatBlack.uasset": "650a1b744aa7ae0d9394c4eaa893334080b8dfa10272c855480d508d5b89b372",
+    "Content\\Astra\\Materials\\M_CatCream.uasset": "f150d672efc50a6c398d7871a5e51b7be100e2bac24661ab47251c0763c38141",
+    "Content\\Astra\\Materials\\M_CatOrange.uasset": "fe527db73824244d3e544e5959c311b93d5ac08eba0d5e865d0fc76eb9a8f430",
+    "Content\\Astra\\Materials\\M_CatPink.uasset": "a187ed4cc4ad65c080502a0ee8675839ffb983aaaf281dcaabf63aafe8fe44f4",
+    "Content\\Astra\\Materials\\M_Cattail.uasset": "1e8342716e4509b860a7160f9e30ffb5649778341f0f519edbe362c7cba70cec",
+    "Content\\Astra\\Materials\\M_CloudSky.uasset": "1534a234e4721f4b4703f4778ca9d90e3e8dd6b2ca958ec29c3027a36a4ef344",
+    "Content\\Astra\\Materials\\M_CottageCream.uasset": "79aba54657127d22586b9b852c86c39d09425f511b8f7704e281bd1bbf77bfac",
+    "Content\\Astra\\Materials\\M_CottageCreamLight.uasset": "d8b67c7dd55e3cd7b1c8fc101ddcfb3b9375ee18afdcdb86f70aa4f85f041106",
+    "Content\\Astra\\Materials\\M_CottageDoor.uasset": "d59753e96b8f7f91e5b444a177c0f15c664efba1c8bc4430cd8e9f14b300da9a",
+    "Content\\Astra\\Materials\\M_CottageGlass.uasset": "f316d4bf9342a3d8606ea5d648afbc14ae9f86722436648abed68b7aa0e813c3",
+    "Content\\Astra\\Materials\\M_CottagePink.uasset": "f4551743d8f635defba0f1bf17e794802f8c606e47bc09465104ba08c7d677bb",
+    "Content\\Astra\\Materials\\M_CottagePinkDark.uasset": "c84c4be1f91726b7d0db45b2690518933954234a52adb00372f9dc481253046e",
+    "Content\\Astra\\Materials\\M_CottagePinkLight.uasset": "553606df384391fc1d3e50dcd121c459ac5fd527d0801d5e546b7fe31d2e6173",
+    "Content\\Astra\\Materials\\M_CottageRope.uasset": "6c9c5dd5c6dd905c53ac87ac900a50f9143de6868bcf5be1eb96a87a3460190b",
+    "Content\\Astra\\Materials\\M_DockEnd.uasset": "a2ec30268b9cb0bb76f63bd70c89c3416e315bf22c1c4a42d00b6427277a876c",
+    "Content\\Astra\\Materials\\M_DockNail.uasset": "912710af460da60c898aac8363742db527c416c07ecff55e87c4eea0c9d65bd4",
+    "Content\\Astra\\Materials\\M_DockRope.uasset": "d8a897881c08ac67de1e17c7be4b2989abad99f1a1c08f9b73593fe528e89ee9",
+    "Content\\Astra\\Materials\\M_DockWood.uasset": "fc1ad037597523a8c1366d366c4291e8f493188e1eb4a76a780fdefafad4cad6",
+    "Content\\Astra\\Materials\\M_DockWoodDark.uasset": "b370f778a0719e06fdfd796204625980ded456f03f0cd788f5de66222d6fa87d",
+    "Content\\Astra\\Materials\\M_DockWoodLight.uasset": "c31c6a99874270e536757013d13d8683e76e8c076af9d6512472b94545df4f16",
+    "Content\\Astra\\Materials\\M_Fir.uasset": "f685b3e8d47d2db0685fec90ec1a9a0a3694b3863691471555421b8ad01fa240",
+    "Content\\Astra\\Materials\\M_FirLight.uasset": "63691702338e0344e11ef967e3f9308e9af73a0d6282fb9bca40911b3811e792",
+    "Content\\Astra\\Materials\\M_Fishing_Coral.uasset": "f59be628cf4e7e931791d32e9128f47c2215a5a55da1e0deab8436f2e711fdfd",
+    "Content\\Astra\\Materials\\M_Fishing_Cream.uasset": "1282d938c445d009fa7820247af0b2fd7fed9ae94c4a063620accd960dcf82d1",
+    "Content\\Astra\\Materials\\M_Fishing_Dark.uasset": "967d28d64613cdf0ce75a73f08d407b1779cb7c7f121f3fc698e22be7747ac43",
+    "Content\\Astra\\Materials\\M_Fishing_FishSilver.uasset": "b376a5b74d9cdd626401fd9ab3bdb12b43d26596f58229c024c6bfc12f71bdcd",
+    "Content\\Astra\\Materials\\M_Fishing_Metal.uasset": "0481c8f2f7563b324b99c0dfa53c6573b8508981cc190a2488adae0c3260f375",
+    "Content\\Astra\\Materials\\M_Fishing_Sage.uasset": "1e61bcc2190148743115ed0b3515fc4dca153843ee03d005312d5f693e170d10",
+    "Content\\Astra\\Materials\\M_Fishing_Teal.uasset": "40a33a2f5708ffb8c11005a155fd46883d04225f982f08f2be8a583f20f4f6f2",
+    "Content\\Astra\\Materials\\M_Fishing_Water.uasset": "22aae8b8c484bc5bbba2980ba70fb3f9d299f0a2552687673835133b29f9bbe9",
+    "Content\\Astra\\Materials\\M_Fishing_Wood.uasset": "96b9d662275a239b94bfa34ba27f0df56e950259337a18175c5ebbe0f75c04a1",
+    "Content\\Astra\\Materials\\M_Fishing_WoodDark.uasset": "06f4751821c13c81fc83020593c0c5af88c9c3ef628b781cb002876eb00c9975",
+    "Content\\Astra\\Materials\\M_Fishing_WoodLight.uasset": "ecb898712d961d8b82477c57621e00a5aa2cbef179089d978858bbb8eb086c5e",
+    "Content\\Astra\\Materials\\M_FlowerCream.uasset": "bf5efb156b0a4754e3ce17ccb2087746ec06e806dd83d33020ab4d98db125c67",
+    "Content\\Astra\\Materials\\M_FlowerGold.uasset": "8a9819a9d21aaaa2d0c2ea4c7c95719386a588b1aa4eef0cf097030924c87b05",
+    "Content\\Astra\\Materials\\M_ForestCliffCool.uasset": "6fd3cb29463f3ee7d89ef8a3f6ed87107ee70e9234577c2cf1bee2b76c9cca67",
+    "Content\\Astra\\Materials\\M_ForestCliffMoss.uasset": "88faa5b31bdc596a5338f0abfe2eceb60a5bc71e34ec171acf7e46ed6ce36009",
+    "Content\\Astra\\Materials\\M_ForestCliffStone.uasset": "7ddfa37d874f70a5338885dff8a7af14911fe46f0c82220c1c46f79682a29568",
+    "Content\\Astra\\Materials\\M_ForestCliffWarm.uasset": "f61ceecd11e0ae6b2636ab451820badc655d0f14d72caeb0d6c7f82221d88e7e",
+    "Content\\Astra\\Materials\\M_ForestRockPaint.uasset": "056049541ecf0769a994c0ae02af82636960ce291a3f0ff1072085d6a9f6108c",
+    "Content\\Astra\\Materials\\M_ForestSignBlue.uasset": "e2a7b115730f1bdab8cd9f383762261cc91943bcdfdeb60ed9a1d995b69c034d",
+    "Content\\Astra\\Materials\\M_ForestSignCream.uasset": "b21880205d909f927ebcabd9bd8d7499dd418907d06ded0a14b0113253a26b6d",
+    "Content\\Astra\\Materials\\M_ForestSignGreen.uasset": "e2e26d23edf25b6f3e634c1e00986ca4f1a5ff39d6123d0331a0fc184c541b0c",
+    "Content\\Astra\\Materials\\M_ForestSignPink.uasset": "e73a4f5ce9e7e8ca1ca0f6fc101452a786c5c8b8f991a31128f795a70739f568",
+    "Content\\Astra\\Materials\\M_ForestSignRope.uasset": "8135a1316084943af8382a969533766d6130c02e33236267b42787dd0928492b",
+    "Content\\Astra\\Materials\\M_ForestSignSage.uasset": "41b270ba8cb9a716a5d43262c431dbc0760cbb5122f0dc6a3e8724a972e0ab0e",
+    "Content\\Astra\\Materials\\M_ForestWoodEnd.uasset": "8e9c22c44d0ac5427dc31463c07ba9ba8604ed8762c348603452aa330d15dbe4",
+    "Content\\Astra\\Materials\\M_ForestWoodShade.uasset": "23ce3fc7b7f42416aec704f6074b3185354b9837f402f25ebf2ef1be741684c8",
+    "Content\\Astra\\Materials\\M_Grass.uasset": "e102d79be6676d6dc84d2b77cb0de4606ff7964847151c8d62f717c5e6a9f0d6",
+    "Content\\Astra\\Materials\\M_GrassLight.uasset": "1de153ca75b1f116f98abf7e0828b6d43f115639fd57641cb8b7a72eb741096e",
+    "Content\\Astra\\Materials\\M_Ground.uasset": "1b0490847ab28b727f5c0e99a3ffcbdb77e59c574877fc73e860da01d38f7123",
+    "Content\\Astra\\Materials\\M_HomeLife_Carrot.uasset": "d951d3dbc2b36d8727ca16fa903ca04b1882d4974dd888ad70a421fda3d1ba58",
+    "Content\\Astra\\Materials\\M_HomeLife_Cream.uasset": "4005f9211d91e9aad52d63efcbf4bc66f30b6f317cb15644f10db875b7aa0f23",
+    "Content\\Astra\\Materials\\M_HomeLife_Iron.uasset": "e2ba9a849e0bb16b4c5e1764485a606e05c903828818ea1771d1eb659682891a",
+    "Content\\Astra\\Materials\\M_HomeLife_IronDark.uasset": "faf2db7965257fea5e4c5ead62775311c28015af4a5241958f0c36c3b90f8d5d",
+    "Content\\Astra\\Materials\\M_HomeLife_Leaf.uasset": "0a432fb943ae355d642fa6acd0f8601cab2c66cb174bdb710fc0b91b010c8b03",
+    "Content\\Astra\\Materials\\M_HomeLife_LeafLight.uasset": "86a10942234241c2d16d0ee7af76c4081eded6de39208051b78f659fb88d98f7",
+    "Content\\Astra\\Materials\\M_HomeLife_Mushroom.uasset": "33d06b6ef09c7aaa4e8d4258abf19a855d13f45d62d47d4e64848092db790dda",
+    "Content\\Astra\\Materials\\M_HomeLife_Ochre.uasset": "6ee6e65dbfcaaea516a1116afdc8468ed447c9263ef320d715078b1d8856ad30",
+    "Content\\Astra\\Materials\\M_HomeLife_Pumpkin.uasset": "40e2d893f5e0630bb239072a495c7e5e00d332b575aa5cde52f1dda89e0871f2",
+    "Content\\Astra\\Materials\\M_HomeLife_PumpkinLight.uasset": "034a10a64837ebc14b88e588ceb40bb06bc99a5eecf019dc857c04bf339e4974",
+    "Content\\Astra\\Materials\\M_HomeLife_Rope.uasset": "57c1e7d76740cf6dba26f50d5d3b7c5e4a8ee0e9b7daa2f83662d74c97d273d6",
+    "Content\\Astra\\Materials\\M_HomeLife_Sage.uasset": "177e9a4af408f901ba73f2f1a647fed7dc9d88240670cf30628f344345219eb1",
+    "Content\\Astra\\Materials\\M_HomeLife_SageShade.uasset": "d508e225468de43db53cc7ec7faa35ddd2dcf15ffe645ede5332f0fa5338f574",
+    "Content\\Astra\\Materials\\M_HomeLife_Soil.uasset": "e7c369a5878b9b090e7099e920531dfcf68025bc9cf278c1a99de045b0341817",
+    "Content\\Astra\\Materials\\M_HomeLife_SoilLight.uasset": "f3b5615ed580558b2a7446201d175de6dee0e3f0692096aa2b78578eb0fb3066",
+    "Content\\Astra\\Materials\\M_HomeLife_Straw.uasset": "9abe2906ad5d6cf1f5a093e24702632b5ab283be9b507cfb6c6a31bee4d7ace5",
+    "Content\\Astra\\Materials\\M_HomeLife_StrawShade.uasset": "c0acd6b174eaf925cff5e130fe07395151f7defd31a458921bb4855b35083ae2",
+    "Content\\Astra\\Materials\\M_HomeLife_Wood.uasset": "80dc717c281eeddf91b5914a74c1c9ae3c3de0a37e010abaa9797d28776fa2be",
+    "Content\\Astra\\Materials\\M_HomeLife_WoodDark.uasset": "9c3e7607a482243b2b6508e8ebc41c0a06cbc150175a83655a5d709106a16e8c",
+    "Content\\Astra\\Materials\\M_HomeLife_WoodLight.uasset": "78379b677364ae2731b01aa9e12cfd4aabcbb5c5502bf1720421ee376f054881",
+    "Content\\Astra\\Materials\\M_Landscape.uasset": "f4960eca3f462d9432e09a8930fd29a380566421d9c0274f5cc05c3d5d12da6c",
+    "Content\\Astra\\Materials\\M_LeafLight.uasset": "ca35a591c03d87c2b6bd9bbb54408f828d36944d2ccc192f8819d03ddace29d7",
+    "Content\\Astra\\Materials\\M_LeafOlive.uasset": "456dfe4caaab31d40db04d9b8f4b08700a73fd5d1b5a0b5ec10211fafd656e16",
+    "Content\\Astra\\Materials\\M_LeafSage.uasset": "fe10833cf95f798c66e0288913d5527e4870b90b5da3baff95cb2a9e7d4c6467",
+    "Content\\Astra\\Materials\\M_Lily.uasset": "c032254cfbd083bc2cc6fe1cd9d6d060d6afe51576b424d226a64f6fd25de31d",
+    "Content\\Astra\\Materials\\M_LotusLight.uasset": "43a221201ee39ac218649c8f4fe6c6369ebfecda0563f1ff32f84964f2d1ca3b",
+    "Content\\Astra\\Materials\\M_LotusPink.uasset": "5cbc1db0d6358444634938395a5e98aeb5f1ab94510bcd2f5f2f8e69fe37e6e2",
+    "Content\\Astra\\Materials\\M_Moss.uasset": "52cb24f6031c3038f92b90d1784ec49ef33d9f3e7976126bfbeab53850ab5098",
+    "Content\\Astra\\Materials\\M_Mushroom.uasset": "f65b007a699067251d3ef2e155202e44fad5f29529ac9e73b5995f0bb59d4065",
+    "Content\\Astra\\Materials\\M_Path.uasset": "5be31ac4f9286f39023d2ba9da5cb620a54eb7b60efede2936b700f8dd9c95d1",
+    "Content\\Astra\\Materials\\M_Pollen.uasset": "d0603b29f6aaf3b0c2163e37519aa2aac306e41b6f05145362afea23855af78b",
+    "Content\\Astra\\Materials\\M_PuddleReflection.uasset": "bce0bb9fb6c2966575468ef81b1fd2e3aa6ca906719565da924f06bb47a4cca4",
+    "Content\\Astra\\Materials\\M_Reed.uasset": "fda0a7d77ffdfe042576882f71fc600a2a8fdd23f0492575e690a4ff24f2a078",
+    "Content\\Astra\\Materials\\M_Stone.uasset": "1e5fdf813fd756d75ef0d8ec3b48a6c53c4a0a8403b681d6bf558271b8e66ec9",
+    "Content\\Astra\\Materials\\M_StoneLight.uasset": "642b1ea1a4330c73742d485109c2c0d3c35c1e832001c3b0849183c2a45be676",
+    "Content\\Astra\\Materials\\M_TentCanvas.uasset": "404559b0df83c6a1b4ac39f82cdc75e1dfb914dbc424f0bffa8a728ca915e40e",
+    "Content\\Astra\\Materials\\M_TentCanvasFold.uasset": "63ce6782cdb038d96edd63042e0a2790767b31359f0c4c9c7aaf21597cee2692",
+    "Content\\Astra\\Materials\\M_TentCanvasLight.uasset": "b059abe40c4113377365b2fc376ecaa5632249433d2f2638beb78cbf6213d6f4",
+    "Content\\Astra\\Materials\\M_TentInside.uasset": "663cdc6ae0c90e10054ffbbce27030e87eba05dcd694463ae4d138cac7e52787",
+    "Content\\Astra\\Materials\\M_TentOchre.uasset": "d0e7fee7f695bea0a32877470d6ec706bb4f01818dc727c972008d8f83615afa",
+    "Content\\Astra\\Materials\\M_TentRope.uasset": "35c92f3849f4a911c9c412a6de58e8e0741aab63fc7984d5a8bdeb63b4082e12",
+    "Content\\Astra\\Materials\\M_TentSage.uasset": "26394bccf8fa84ca230ed839745dd7a3c831b40e2ec2ba94acbde742a315e8f6",
+    "Content\\Astra\\Materials\\M_TentSageLight.uasset": "cc975a2577b1360fa4c4fa7a8df63153232808497d5f550bce02adcb95e9e652",
+    "Content\\Astra\\Materials\\M_TentWood.uasset": "7a9d353d4dc394e12358012760cac755af4c3085f8ffecdff39352cc5ab23845",
+    "Content\\Astra\\Materials\\M_TentWoodDark.uasset": "6a69612fa10584795f6032dec556731b8f38d02abcb0881dbdc9d7130274d32c",
+    "Content\\Astra\\Materials\\M_Water.uasset": "065e9402f4c8f63970a5b7916e44c59cbf1cb07c5e83016c10e265ff4d25f4b3",
+    "Content\\Astra\\Materials\\M_WellWater.uasset": "6add2aded711de9315a4d95efdd3ad8f0ce3c2f7ca0d8e3cddb456845f4a8b96",
+    "Content\\Astra\\Materials\\M_Wood.uasset": "fd561fed22b13b8d7f4f37604c40aa3bea6bfa89d85859498a11a7777b3f217b",
+    "Content\\Astra\\Materials\\M_WoodDark.uasset": "58bc909498c64d857ba8d933bb68e46ee28cd54db6d01ab952112808cf2c5d49",
+    "Content\\Astra\\Materials\\M_WoodlandLife_Berry.uasset": "9b18279aad9c08f5ad8e1e969d0d860b83d6bb085c32d7c727b33cbdca085dd3",
+    "Content\\Astra\\Materials\\M_WoodlandLife_Bread.uasset": "09046592303cb0a9e052391f348623251a92fd4c7e0f5b5e4891255006cfdae4",
+    "Content\\Astra\\Materials\\M_WoodlandLife_Cream.uasset": "fccc3f3da1bbdec35f88d1915e106f76756441822458f2485fe11272eecce936",
+    "Content\\Astra\\Materials\\M_WoodlandLife_Iron.uasset": "7ea50291309b055748b0f9bbe84d0ea9183d6d8caf92cba331c917f9a2aa8d92",
+    "Content\\Astra\\Materials\\M_WoodlandLife_IronEdge.uasset": "7792e4bbe81e07dae5079069165650340d355d88ea6f3f27803253fb62303b7b",
+    "Content\\Astra\\Materials\\M_WoodlandLife_Leaf.uasset": "ca7a935dfd17478e2de0bac266502e19213fff596900fdfc6acb81e47c8fd8a3",
+    "Content\\Astra\\Materials\\M_WoodlandLife_Mushroom.uasset": "8500f1d634508904ead4af9d898b51ae6eaf60e092d776ff7eb4e68eee0a6c2e",
+    "Content\\Astra\\Materials\\M_WoodlandLife_Rope.uasset": "b23ad6e50affa16d6c21551e721b939a3039d257b6746e39717f96dda0a909c4",
+    "Content\\Astra\\Materials\\M_WoodlandLife_Sage.uasset": "ec9647ea0b64595ea12de98f2ab9d135b856c4e3c391d53e5d2445d40ec7f22f",
+    "Content\\Astra\\Materials\\M_WoodlandLife_SageLight.uasset": "ab408ba766e7d880816cfb36f583b5f0a2228738e6cb8b9e8b6afd42f66c2a7f",
+    "Content\\Astra\\Materials\\M_WoodlandLife_Teal.uasset": "ddc1efccd342aaf6e27bf624640e0eedce0e354d6d7b31f435081295dd5aa4b2",
+    "Content\\Astra\\Materials\\M_WoodlandLife_Wood.uasset": "5a7ef39ab84e3896ef68b42bb3f76e92c3fa491c64486e7a96b1e56bb4ad90a1",
+    "Content\\Astra\\Materials\\M_WoodlandLife_WoodDark.uasset": "2034e854dcf27a0ed6e0136e72646d3055b788c6ecf8342397e3caf824e44fe5",
+    "Content\\Astra\\Materials\\M_WoodlandLife_WoodEnd.uasset": "5ca486f12a13d597a22b38dd9a19c65667ab453b5abf8161906ce2e7a25841d5",
+    "Content\\Astra\\Materials\\M_WoodlandLife_WoodLight.uasset": "4aa44dd28c04e8b84efe7655df0e005489744a835aad9bbbc519d5f516d626d2",
+    "Content\\Astra\\Materials\\M_WoodLight.uasset": "ad2d8782a465e4f0d030b521542dece9d374335db33f0524178ec60f1941171c",
+    "Content\\Astra\\Materials\\ModuleReview\\M_CottageCream.uasset": "88fdd7c180775ff21dac3f70b177426441b1a903bea91ba9ee067b09dd76912a",
+    "Content\\Astra\\Materials\\ModuleReview\\M_CottageCreamLight.uasset": "1c9f4abdf4e77f4677708e2996536f094eca4b2b5a32eed9673df2d7aea070e7",
+    "Content\\Astra\\Materials\\ModuleReview\\M_CottageDoor.uasset": "654873481f763e759566daac71b0154b31a1dab8fe5ba00baacf4c2435fb633b",
+    "Content\\Astra\\Materials\\ModuleReview\\M_CottageGlass.uasset": "639da192c129f0b6f03185d8bde677a253656505ef47d28979b068153e08cdf6",
+    "Content\\Astra\\Materials\\ModuleReview\\M_CottagePink.uasset": "518147acd5d527449ab0eabfce644b05e5966ebee6ae3e021063b72931ace141",
+    "Content\\Astra\\Materials\\ModuleReview\\M_CottagePinkDark.uasset": "3e9e45587da4e7b011581532eb4d095dce078b1fa36a4a6c90f536498a18ab6c",
+    "Content\\Astra\\Materials\\ModuleReview\\M_CottagePinkLight.uasset": "165f312320d6609ec9f5062b0dcbe0b5d8d290c02b1278f574b07c66e9e6c3a6",
+    "Content\\Astra\\Materials\\ModuleReview\\M_CottageRope.uasset": "e8416a56d39c0f4afdca92a26180057c0479d8141c4ae086a38532ea9bf79e38",
+    "Content\\Astra\\Materials\\ModuleReview\\M_PuddleCloudReview.uasset": "a8d9c5632db59940c21f6883c10522a69c3ad2030bfd81bcab2a7f97bb3a1950",
+    "Content\\Astra\\Materials\\ModuleReview\\M_PuddleReviewSky.uasset": "8524ead50915922a5c327e6c76cb7728520b0335a8367b2c216235645d6acec5",
+    "Content\\Astra\\Materials\\ModuleReview\\M_ShorelineReviewFilm.uasset": "894525822b84bef84492fbdf58f5d205f21e7c3da6a1e9e309fb25b95c969e72",
+    "Content\\Astra\\Materials\\ModuleReview\\M_WellWater.uasset": "0fb55bf5034cb4fef0b07ab260e581d44eade96f9251d1c3e55e715413b93db3",
+    "Content\\Astra\\Materials\\Shoreline\\M_PuddleSkyReflection.uasset": "65019a668a35850c93f51d514e82759bdc0ab6cf498e4cc8cef698f689f2b200",
+    "Content\\Astra\\Materials\\Shoreline\\M_ShoreEarth.uasset": "cde633195363955ea8a88912c1d45cd79aefbbe6cd2166b5902b02c90b457034",
+    "Content\\Astra\\Materials\\Shoreline\\M_ShoreEarthDark.uasset": "4ec7a2f8da5503561ab1c16bac6d2514c6b8381fa50bcbe08c57dcc159c846cb",
+    "Content\\Astra\\Materials\\Shoreline\\M_ShoreEarthLight.uasset": "5f26d979f0bb94a4ecd94f5821765288f3586942d74d5869611a6ebddab60c30",
+    "Content\\Astra\\Materials\\Shoreline\\M_ShoreGrass.uasset": "47912761a8c291a802eaed3de78aed35e0d17e828cf4bc81b86bd5ec188e1f27",
+    "Content\\Astra\\Materials\\Shoreline\\M_ShoreGrassLight.uasset": "1b6b1e01fce68eae13d931559c4128905726b7c96de1af3f8e6f4cee74bd2318",
+    "Content\\Astra\\Materials\\Shoreline\\M_ShoreMoss.uasset": "5ac425999c577148e2b4c9d7b879319c2b9af8e50591c1c98b3601da4c7e4e29",
+    "Content\\Astra\\Materials\\Shoreline\\M_ShoreSand.uasset": "e36c1742690f20cc32da3fb924fa320ace03bf5271954a99e217bae5112cb7b0",
+    "Content\\Astra\\Materials\\Shoreline\\M_ShoreSandDark.uasset": "30482c6291745e620fb29ef0df748bd09c87db7b4a75d9da5b935598278914d1",
+    "Content\\Astra\\Materials\\Shoreline\\M_ShoreSandLight.uasset": "d616fefc9d326ef88074203aac5e5fd76dd3457fc21f7cbb65336065de14aedd",
+    "Content\\Astra\\Materials\\Shoreline\\M_SubmergedStone.uasset": "f05a7de240f9e36a1b71a98720d443be1d31ae892a4a0fbac0bdc1dface74883",
+    "Content\\Astra\\Materials\\Shoreline\\M_SubmergedStoneDark.uasset": "d6d65210569fa1427c991be6597a624921f9c8bf1f33b750734c96b21ffe7d62",
+    "Content\\Astra\\Materials\\Shoreline\\M_SubmergedStoneLight.uasset": "bf70f7323323f95182218dcc57f2c8ae63543bb5cff3e2418008eb75a33e9e8d",
+    "Content\\Astra\\Materials\\Shoreline\\M_WaterFoam.uasset": "6e3aeb1921de111365c8cf4dfa21b016eced1e3255e783ebb787e794b9c0d1e5",
+    "Content\\Astra\\Materials\\Shoreline\\Wet_M_ForestRockPaint.uasset": "ee2f10d83d1137a20fe721ae84b01d6a8b0fbe8c58059a7fd767e1496b2dffab",
+    "Content\\Astra\\Materials\\Shoreline\\Wet_M_Moss.uasset": "e94caaf1fd8afa295b54fd4a7518807df62046c17e53135982bc428dbfded825",
+    "Content\\Astra\\Materials\\Shoreline\\Wet_M_Stone.uasset": "7896720313e951f0012c9e96bff6402091988074e54ca44eb748b53278bd729c",
+    "Content\\Astra\\Materials\\Shoreline\\Wet_M_StoneLight.uasset": "a54674f664398661b315347089479d6733e7d33df433637359cdc0848137896f",
+    "Content\\Astra\\Textures\\T_AnimeForestRockPaint.uasset": "6ccd512bac6d35a496d9bdf5f10116178e16b8b60b0391d898e9b309b98ba260",
+    "Content\\Astra\\Textures\\T_AnimeSkyPanorama.uasset": "e2e83623513532f81e30e8c6ff7af4dabff79d6603c3fa408575fc49528289d6",
+    "Content\\Astra\\Textures\\T_AnimeSkyReflection.uasset": "6fba4426c686203da94fadfcee4dc07e9c4e84c19ab7fba134f1fff2f66d3062",
+    "Content\\Astra\\Textures\\T_FishingDockWood.uasset": "a18d33e35c48281c306689cb7a193e71597bf2f9dbabe6ee345a5ba5d71ac5e6",
+    "Content\\Astra\\Textures\\T_ForestCliffPaint.uasset": "eac949b49935d14d70bcc9b48a90b36cf736a4bcf5b0d3aceea9e036f65bdc17",
+    "Content\\Astra\\Textures\\T_ForestFloor.uasset": "d8e4a62784207f319c1dc611f5433ab1abe0aad30a7ca309b272c3e022bd6ceb",
+    "Content\\Astra\\Foliage\\FT_Astra_Fern.uasset": "6ed58ffc2e5c382d7a1e04703b75addc2f0da1580d1d7a4393fcaec229a916df",
+    "Content\\Astra\\Foliage\\FT_Astra_Flowers.uasset": "e086401c360193374327d8d6d69825bc1fc57c10549e161180a797e3b7e3ab2e",
+    "Content\\Astra\\Foliage\\FT_Astra_Grass.uasset": "689a1329b6a32040f42f03b58d850b027cba4a39d072bd417a5cb3ed78dc69ed",
+    "Content\\Astra\\Foliage\\FT_Astra_Mushrooms.uasset": "fa64e7949a88380624057dd1d853d599f20f87eaa2dfa1dff02384f8703acea1",
+    "Content\\Astra\\Foliage\\FT_Astra_Reeds.uasset": "8e003f13abb08b627cd55b137b3b2a7584f74953dab0ce43ab8e38ef7671af66"
+  }
+}

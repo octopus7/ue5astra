@@ -46,7 +46,9 @@ if unreal.EditorAssetLibrary.does_asset_exist(polish_asset):
     checks['lake_stream_finished_material']=bool(water_actors) and all(a.static_mesh_component.get_material(0).get_path_name().startswith(polish_asset+'.') for a in water_actors)
     bed=unreal.EditorAssetLibrary.load_asset('/Game/Astra/Meshes/ShorelineSite/SM_ShorelineSite_CurvedBed')
     checks['shoreline_authored_bed_normals']=not unreal.get_editor_subsystem(unreal.StaticMeshEditorSubsystem).get_lod_build_settings(bed,0).get_editor_property('recompute_normals')
-rock_meta=json.loads((ROOT/'ArtSource/Layout/forest_smooth_rocks.json').read_text(encoding='utf-8'))
+layout=json.loads((ROOT/'ArtSource/Layout/woodland_layout.json').read_text(encoding='utf-8'))
+rock_meta_path=layout.get('rock_model_revision',{}).get('metadata','Layout/forest_smooth_rocks.json')
+rock_meta=json.loads((ROOT/'ArtSource'/rock_meta_path).read_text(encoding='utf-8'))
 for item in rock_meta['assets']:
     mesh=unreal.EditorAssetLibrary.load_asset('/Game/Astra/Meshes/'+item['original_asset_id'])
     checks[item['original_asset_id']+'_smooth_import']=mesh.get_num_triangles(0)==item['triangles'] and mesh.get_material(0).get_name()=='M_ForestRockPaint'

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "capture": "Unreal editor GPU screenshot; temporary camera; main map not saved",
+  "look_at_cm": [
+    2530,
+    3350,
+    80
+  ],
+  "pitch": -58,
+  "ortho_width_cm": 1050,
+  "main_map_sha256": "aa7239575bf24cb38603f18c7f23bda32e3da36f8474639d5e57ea1c3a3ccd78",
+  "size_px": [
+    1600,
+    1000
+  ],
+  "sha256": "caed1edf9338e58826f57d6472150d92b87933f88233bc798d61cefbc3cf576a"
+}

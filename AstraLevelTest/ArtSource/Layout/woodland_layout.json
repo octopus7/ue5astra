@@ -447,7 +447,7 @@
       ]
     },
     "SM_MossRock_01": {
-      "file": "Meshes/SM_SmoothForestRock_01.fbx",
+      "file": "Meshes/SM_FracturedForestRock_01.fbx",
       "collision": "complex",
       "materials": [
         "M_ForestRockPaint"
@@ -460,7 +460,7 @@
       "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS"
     },
     "SM_MossRock_02": {
-      "file": "Meshes/SM_SmoothForestRock_02.fbx",
+      "file": "Meshes/SM_FracturedForestRock_02.fbx",
       "collision": "complex",
       "materials": [
         "M_ForestRockPaint"
@@ -473,7 +473,7 @@
       "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS"
     },
     "SM_MossRock_03": {
-      "file": "Meshes/SM_SmoothForestRock_03.fbx",
+      "file": "Meshes/SM_FracturedForestRock_03.fbx",
       "collision": "complex",
       "materials": [
         "M_ForestRockPaint"
@@ -486,7 +486,7 @@
       "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS"
     },
     "SM_MossRock_04": {
-      "file": "Meshes/SM_SmoothForestRock_04.fbx",
+      "file": "Meshes/SM_FracturedForestRock_04.fbx",
       "collision": "complex",
       "materials": [
         "M_ForestRockPaint"
@@ -499,7 +499,7 @@
       "normal_import_method": "IMPORT_NORMALS_AND_TANGENTS"
     },
     "SM_MossRock_05": {
-      "file": "Meshes/SM_SmoothForestRock_05.fbx",
+      "file": "Meshes/SM_FracturedForestRock_05.fbx",
       "collision": "complex",
       "materials": [
         "M_ForestRockPaint"
@@ -58249,5 +58249,9 @@
         7.3
       ]
     }
-  ]
+  ],
+  "rock_model_revision": {
+    "style": "fractured broad faces with softened edges",
+    "metadata": "Layout/forest_fractured_rocks.json"
+  }
 }

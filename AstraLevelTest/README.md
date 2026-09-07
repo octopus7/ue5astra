@@ -24,7 +24,9 @@ Unreal Engine 5.7.4 프로젝트. 약 100m 숲을 탐색하는 직립 보행 삼
 
 ![돌 절벽 위의 천막과 화톳불 야영지](ArtSource/Previews/UE_Camp.png)
 
-![부드러운 바위와 장소별 밀도를 적용한 Foliage](ArtSource/Previews/UE_Foliage.png)
+![절리와 넓은 암면을 살린 바위, 장소별 Foliage](ArtSource/Previews/UE_Foliage.png)
+
+![모서리는 부드럽고 넓게 깨진 면과 절리가 드러나는 숲 바위](ArtSource/Previews/UE_RockShapes.png)
 
 ## 조작
 
@@ -51,12 +53,13 @@ Unreal Engine 5.7.4 프로젝트. 약 100m 숲을 탐색하는 직립 보행 삼
 ## 재생성
 
 1. Blender 4.5 이상에서 `Scripts/build_blender_scene.py` 실행. 원본 `.blend`, FBX, JSON, 높이맵을 생성한다.
-2. 숲 확장 원본은 `build_forest_cliffs.py`, `build_forest_tent.py`, `build_forest_signs.py`, `build_forest_cooking.py`로 각각 생성한다. 이어 `place_forest_expansion.py`를 Blender에서 실행해 절벽·야영지와 진입로 높이를 전체 배치에 합친다. 바위는 `build_smooth_forest_rocks.py`와 `apply_smooth_rocks_blender.py` 순서로 적용한다. 낚시터·생활 소품은 `build_fishing_dock.py`, `build_fishing_props.py`, `build_home_life_props.py`, `build_woodland_life_props.py`로 생성하고 `place_life_props.py`로 전체 배치에 합친다. Blender CLI는 `--factory-startup -b --python 스크립트경로`로 실행한다.
+2. 숲 확장 원본은 `build_forest_cliffs.py`, `build_forest_tent.py`, `build_forest_signs.py`, `build_forest_cooking.py`로 각각 생성한다. 이어 `place_forest_expansion.py`를 Blender에서 실행해 절벽·야영지와 진입로 높이를 전체 배치에 합친다. 바위는 `build_smooth_forest_rocks.py`와 `apply_smooth_rocks_blender.py`로 기준 원본을 준비한 뒤 `build_fractured_forest_rocks.py`, `apply_fractured_rocks_blender.py` 순서로 최신 형태를 적용한다. 낚시터·생활 소품은 `build_fishing_dock.py`, `build_fishing_props.py`, `build_home_life_props.py`, `build_woodland_life_props.py`로 생성하고 `place_life_props.py`로 전체 배치에 합친다. Blender CLI는 `--factory-startup -b --python 스크립트경로`로 실행한다.
 3. UE 5.7용 `AstraLevelTestEditor` 빌드.
 4. **전체 언리얼 에디터**에서 `Scripts/import_unreal_scene.py` 실행. `-ExecutePythonScript=...`로도 실행할 수 있다. Content Browser를 사용하므로 UI 없는 Python commandlet로 텍스처 가져오기를 실행하지 않는다.
 5. `Scripts/import_forest_expansion.py`로 숲 확장·해안 모듈·파노라마 하늘을 적용한다. 이 스크립트는 기존 Landscape와 맵을 보존하면서 갱신한다. 이어 UE에서 `import_smooth_rocks.py`, `apply_forest_foliage.py` 순서로 바위와 작은 식물을 적용한다.
 6. **Blender에서 `Scripts/place_life_props.py`를 다시 실행한다.** 앞 단계의 `apply_forest_foliage.py`가 `foliage_placement.json`을 새로 작성하므로, 보관한 기준 배치에서 생활 소품 영역을 다시 제외해 1,963개의 Foliage 데이터를 복원해야 한다. 모델 생성 단계에서 이미 배치했더라도 이 재필터 단계를 생략하지 않는다.
 7. 전체 UE 에디터에서 `import_life_props.py`, `apply_shoreline_finish.py`, `apply_native_puddles.py` 순서로 생활 소품·해안 마감·실제 반사 웅덩이를 적용하고 `/Game/Astra/Maps/L_AstraWoodland`를 열어 Play한다.
+8. `import_fractured_rocks.py`로 바위 5종의 최신 형상을 적용한다. 기존 자산 경로·배치·재질 오버라이드를 유지하며 메시만 저장한다. `validate_forest_scene.py`로 저장된 자산을 다시 확인한다.
 
 최신 해안 개선과 물웅덩이를 포함하려면 원본 집·지형·물·하늘 갱신이 모두 끝난 다음, 의도한 맵의 UE Python에서 `apply_shoreline_polish.apply_polish(save=True)`를 실행하고 이어서 `puddle_sky_reflection.apply_puddles(save=True)`를 실행한다. 이 두 호출을 **생성 파이프라인의 마지막**에 둔다. 이후 원본 맵·재질·액터를 다시 생성하면 같은 순서를 다시 적용한다. [전체 실행 예제와 검증 범위](Docs/ShorelineIntegration.md)를 참고한다.
 
@@ -129,9 +132,9 @@ Directional Light Source Angle은 사용자 지정값인 50도이며 Exponential
 
 ![메인 맵의 실제 하늘과 주변 나무를 반사하는 웅덩이](ArtSource/Previews/UE_PuddleSkyLow.png)
 
-## 부드러운 바위와 Foliage
+## 바위 형태와 Foliage
 
-기존 숲 바위 5종은 각 1,920삼각형의 부드러운 노멀로 바꿨다. 삼각면마다 갈라진 색을 제거하고 ImageGen으로 생성한 `T_AnimeForestRockPaint.png`의 회청색 돌·푸른 균열·세이지 이끼를 적용했다. 기존 바위 155개의 위치·회전·크기와 UE 자산 참조는 유지한다.
+숲 바위 5종은 넓게 깨진 면, 갈라진 쐐기, 층리 판석, 기울어진 절리, 돌출 어깨 형태로 구분했다. 전체 Subdivision으로 둥글어지던 형상을 없애고 모서리만 완만하게 다듬어 부드러운 셰이딩을 유지한다. 삼각형 수는 순서대로 476 / 668 / 1,620 / 664 / 1,270개다. ImageGen 텍스처 `T_AnimeForestRockPaint.png`의 회청색 돌·푸른 균열·세이지 이끼와 해안의 젖은 재질을 유지했다. 기존 바위 155개의 위치·회전·크기, 바운드와 UE 자산 참조도 보존한다. [모델링 원본·증분 적용·검증](Docs/RockModeling.md)
 
 해안 키트의 수중 돌·자갈 4종도 smooth normals로 바꿨다. 형상·UV·재질 슬롯을 유지하며 FBX를 다시 가져와 노멀 일치를 확인했다.
 
