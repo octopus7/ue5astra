@@ -1,0 +1,34 @@
+{
+  "level": "/Game/Maps/L_Main",
+  "assets": [
+    {
+      "name": "SM_IslandTerrain",
+      "size_cm": [
+        9005.00830078125,
+        7339.999755859375,
+        748.0
+      ],
+      "material_slots": 14
+    },
+    {
+      "name": "SM_IslandVillage",
+      "size_cm": [
+        4719.000244140625,
+        7302.364013671875,
+        1374.4999694824219
+      ],
+      "material_slots": 27
+    },
+    {
+      "name": "SM_IslandNature",
+      "size_cm": [
+        8630.53466796875,
+        6724.144287109375,
+        1574.208106994629
+      ],
+      "material_slots": 20
+    }
+  ],
+  "actor_count": 10,
+  "status": "passed"
+}
