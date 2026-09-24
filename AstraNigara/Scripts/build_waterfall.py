@@ -165,40 +165,6 @@ return shape*lerp(.23,.70,holes)*A;''')]:
         result[name.removeprefix('M_')]=finish(m)
     result['WF_SurfaceFoam']=result['WF_Foam']
     result['WF_Foam']=result['WF_Ripple']
-    result.update(build_impact_materials())
-    return result
-
-
-def build_impact_materials():
-    """Torn vertical water tongues and dense, wet upwash along the impact rim."""
-    result={}
-    specs=[('Splash',(.75,.97,.94),'''float2 p=(UV-.5)*2;float phase=C.r*6.2831853;
-p.x+=.12*sin(p.y*7+phase)+.065*sin(p.y*16-phase);
-float edge=.78+.11*sin(p.y*13+phase)+.06*sin(p.y*25-phase*2);
-float body=1-smoothstep(edge-.22,edge,length(p*float2(1.2+.18*p.y,1)));
-float cuts=smoothstep(-.65,-.10,sin(p.y*12+phase)+.65*sin(p.x*13+p.y*7-phase));
-return body*lerp(.55,1,cuts)*A*.97;'''),
-           ('Upwash',(.64,.90,.84),'''float2 p=(UV-.5)*2;float phase=C.r*6.2831853;
-float a=atan2(p.y,p.x);float radius=length(p*float2(1.05,.92));
-float edge=.74+.13*sin(a*5+phase)+.08*sin(a*9-phase*1.7);
-float outline=1-smoothstep(edge-.21,edge,radius);
-float grain=sin(p.x*10+sin(p.y*8+phase)*1.4)+.55*sin(p.y*15+p.x*6-phase+T*.7);
-float wet=smoothstep(-.6,.45,grain);
-return outline*lerp(.66,1,wet)*A*.92;''')]
-    for name,rgb,code in specs:
-        m=material('M_WF_'+name,unreal.BlendMode.BLEND_TRANSLUCENT)
-        m.set_editor_property('used_with_niagara_sprites',True)
-        uv=node(m,unreal.MaterialExpressionTextureCoordinate)
-        p=node(m,unreal.MaterialExpressionParticleColor);t=node(m,unreal.MaterialExpressionTime)
-        if name=='Upwash':
-            shade='''float phase=C.r*6.2831853;
-float shade=saturate(.20+.58*C.g+.22*sin(UV.y*11+UV.x*8+phase));
-return lerp(float3(.20,.52,.55),float3(.72,.94,.87),shade);'''
-        else:
-            shade='return lerp(float3(.40,.73,.74),float3(.78,.97,.94),.35+.65*C.g);'
-        connect(m,custom(m,shade,{'UV':uv,'C':(p,'RGB')}),'EMISSIVE_COLOR')
-        connect(m,custom(m,code,{'UV':uv,'C':(p,'RGB'),'A':(p,'A'),'T':t},unreal.CustomMaterialOutputType.CMOT_FLOAT1),'OPACITY')
-        result['WF_'+name]=finish(m)
     return result
 
 
@@ -253,32 +219,20 @@ def position_range(obj,low,high):
     set_struct(obj,'InitialPositionDistribution',f'(Mode=NonUniformRange,LookupValueMode=255,Values=({values}),ChannelConstantsAndRanges=({channels}),ChannelCurves=())')
 
 
-def impact_ring(shape,init):
-    # Native enum is not Python-exported; the public UObject reflection API
-    # invokes the engine setter, which explicitly supports FEnumProperty.
-    shape.modify()
-    unreal.get_default_object(unreal.SystemLibrary).call_method('SetBytePropertyByName',args=(shape,'ShapePrimitive',3))
-    distribution(shape,'RingRadius',60)
-    distribution(shape,'DiscCoverage',.12)
-    distribution(shape,'RingUDistribution',0)  # 0 = the complete circumference.
-    distribution(shape,'ShapeScale',(1,.17,1),dimensions=3,uniform=False)
-    position_range(init,(0,5,0),(0,5,0))
-
-
 def build_niagara(meshes,materials):
     path=DEST+'/NS_AnimeWaterfall'
     system=EAL.load_asset(path) if EAL.does_asset_exist(path) else EAL.duplicate_asset(helpers['SOURCE'],path)
     assert system
     specs=[('Debris',3.2,(1.15,2.10),1.4,2.0,0,((-4,7,0),(4,15,0))),
-           ('Flame',180,(.58,.94),4,9,0,((-8,-4,240),(8,8,330))),
-           ('Smoke',96,(.48,.80),14,24,0,((-4,-2,135),(4,6,205))),
+           ('Flame',92,(.32,.62),2.5,6,0,((-25,6,48),(25,40,100))),
+           ('Smoke',16,(.75,1.35),20,36,0,((-10,8,12),(10,20,28))),
            ('Distortion',30,(.85,1.55),18,32,0,((-8,14,0),(8,29,0)))]
     footprints=[((-40,8,-1.7),(40,24,-1.2)),((-65,-3,-1),(65,13,4)),
                 ((-61,2,1),(61,20,6)),((-69,5,-1.4),(69,26,-.8))]
     for index,(name,rate,life,lo,hi,radius,vel) in enumerate(specs):
         emitter=emitter_objects(system)[name]
         mods={m.get_class().get_name().removeprefix('NiagaraStatelessModule_'):m for m in emitter.get_editor_property('Modules')}
-        required=[['ScaleMeshSize','InitialMeshOrientation'],['GravityForce'],['GravityForce'],['SpriteFacingAndAlignment']][index]
+        required=[['ScaleMeshSize','InitialMeshOrientation'],['GravityForce'],[],['SpriteFacingAndAlignment']][index]
         for key in required:
             if key not in mods:
                 mods[key]=unreal.new_object(unreal.load_class(None,'/Script/Niagara.NiagaraStatelessModule_'+key),outer=emitter)
@@ -290,7 +244,8 @@ def build_niagara(meshes,materials):
         active={'InitializeParticle','SolveVelocitiesAndForces','ScaleColor'}
         active.add('AddVelocity')
         active.update({'ScaleMeshSize','InitialMeshOrientation'} if index==0 else {'ScaleSpriteSize'})
-        if index in (1,2): active.update({'GravityForce','ShapeLocation'})
+        if index==1: active.add('GravityForce')
+        if index==2: active.add('Drag')
         if index==3: active.add('SpriteFacingAndAlignment')
         for key,m in mods.items(): m.set_editor_property('bModuleEnabled',key in active)
         init=mods['InitializeParticle']
@@ -302,7 +257,9 @@ def build_niagara(meshes,materials):
         distribution(mods['AddVelocity'],'LinearVelocityDistribution',*vel,dimensions=3,uniform=False)
         distribution(mods['ShapeLocation'],'SphereRadius',radius)
         distribution(mods['ShapeLocation'],'ShapeScale',(1,1,0),dimensions=3,uniform=False)
-        if index in (1,2): impact_ring(mods['ShapeLocation'],init)
+        # Reset the old ring choice while keeping shape spawning disabled.
+        if index in (1,2):
+            unreal.get_default_object(unreal.SystemLibrary).call_method('SetBytePropertyByName',args=(mods['ShapeLocation'],'ShapePrimitive',4))
         alpha_curve(mods['ScaleColor'],[(0,0),(.11,.9),(.45,.7),(1,0)])
         if index==0:
             distribution(init,'MeshScaleDistribution',(1.4,1.0,1),(2.0,1.55,1),dimensions=3,uniform=False)
@@ -312,15 +269,8 @@ def build_niagara(meshes,materials):
         else:
             vector_curve(mods['ScaleSpriteSize'],'ScaleDistribution',[(0,.55),(.25,1),(1,1.8 if index in (2,3) else .4)],2)
         if index==1:
-            distribution(init,'SpriteSizeDistribution',(4,14),(9,28),dimensions=2,uniform=False)
-            distribution(mods['GravityForce'],'GravityDistribution',(0,0,-640),dimensions=3,uniform=False)
-            vector_curve(mods['ScaleSpriteSize'],'ScaleDistribution',[(0,.35),(.12,1),(.62,.8),(1,.15)],2)
-            alpha_curve(mods['ScaleColor'],[(0,0),(.045,1),(.50,.95),(1,0)])
-        if index==2:
-            distribution(init,'SpriteSizeDistribution',(14,24),(24,42),dimensions=2,uniform=False)
-            distribution(mods['GravityForce'],'GravityDistribution',(0,0,-470),dimensions=3,uniform=False)
-            vector_curve(mods['ScaleSpriteSize'],'ScaleDistribution',[(0,.55),(.14,1),(.70,1.15),(1,.4)],2)
-            alpha_curve(mods['ScaleColor'],[(0,0),(.06,.95),(.62,.95),(1,0)])
+            distribution(init,'SpriteSizeDistribution',(2.2,5),(5.2,11),dimensions=2,uniform=False)
+            distribution(mods['GravityForce'],'GravityDistribution',(0,0,-240),dimensions=3,uniform=False)
         if index==3: distribution(init,'SpriteRotationDistribution',0,360)
         if index==2: distribution(mods['Drag'],'DragDistribution',.8)
         renderer=emitter.get_editor_property('RendererProperties')[0]
@@ -333,7 +283,7 @@ def build_niagara(meshes,materials):
             override.set_editor_property('ExplicitMat',materials['WF_Ripple'])
             renderer.set_editor_property('OverrideMaterials',[override]);renderer.set_editor_property('bOverrideMaterials',True)
         else:
-            renderer.set_editor_property('Material',materials[['','WF_Splash','WF_Upwash','WF_SurfaceFoam'][index]])
+            renderer.set_editor_property('Material',materials[['','WF_Splash','WF_Mist','WF_SurfaceFoam'][index]])
             if index==3:
                 facing=mods['SpriteFacingAndAlignment']
                 facing.set_editor_property('bSpriteFacingEnabled',True)
@@ -408,6 +358,8 @@ def main():
     meshes,report=import_meshes(materials)
     system=build_niagara(meshes,materials)
     scene=build_level(meshes,system)
+    if EAL.does_asset_exist(DEST+'/Blueprints/BP_AnimeWaterfall'):
+        runpy.run_path(str(ROOT/'Scripts'/'build_waterfall_blueprint.py'))['main']()
     scene.update(meshes=report,niagara=json.loads(unreal.AstraNiagaraLibrary.describe_system(system)))
     (ROOT/'Saved'/'waterfall_build_report.json').write_text(json.dumps(scene,indent=2),encoding='utf-8')
     unreal.log('ANIME_WATERFALL_BUILD_COMPLETE')

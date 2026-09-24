@@ -42,6 +42,30 @@ Nanite나 자동 LOD에 의존하지 않는 낮은 폴리곤 수로 제작했다
 
 ## 조절과 재사용
 
+### 재사용 Blueprint 에셋
+
+`/Game/VFX/Waterfall/Blueprints/BP_AnimeWaterfall`은 콘텐츠 브라우저에 저장된 Actor Blueprint다.
+레벨에는 기존 폭포 액터 4개 대신 `WF_AnimeWaterfall` 인스턴스 하나가 배치된다.
+기본 Scene Root 아래 `UpperStream`, `WaterCurtain`, `ImpactApron` Static Mesh Component와
+`ImpactNiagara` Niagara Component를 포함한다. BP를 이동·회전하면 네 요소가 함께 이동한다.
+현재의 낮은 물보라와 기존 상대 배치를 유지하며, 물웅덩이·바위·풀·카메라는 포함하지 않는다.
+
+다른 프로젝트로 옮길 때:
+
+1. 콘텐츠 브라우저에서 `BP_AnimeWaterfall`을 우클릭 → **Asset Actions → Migrate**.
+2. 의존성 목록의 체크를 유지하고 대상 프로젝트의 **Content** 폴더를 선택한다.
+3. UE 5.7 호환 프로젝트에서 Niagara 플러그인을 활성화하고 BP를 레벨에 드래그한다.
+
+프로젝트 콘텐츠 의존성은 BP 1개, 메시 4개(파문 링 포함), 머티리얼 6개, Niagara System 1개다.
+엔진 Niagara 콘텐츠도 참조한다. 대상 프로젝트에 `AstraNigaraTools`, Python 생성 스크립트,
+Blender 원본은 필요하지 않다. BP 파일 하나만 탐색기로 복사하면 의존성이 누락되므로 Migrate를 사용한다.
+수면은 대상 레벨에 별도로 배치한다. 기존 키트 원점 기준 수면 높이는 Z=5cm다.
+입자 움직임은 기존 Niagara 공간 설정을 유지하므로 이동 중인 폭포를 위한 추적 효과로 검증한 것은 아니다.
+
+생성 스크립트는 `Scripts/build_waterfall_blueprint.py`, 검증 보고서는
+`Saved/waterfall_blueprint_report.json`이다. 변환 전 맵 사본은 `Saved/WaterfallBlueprintBackup/`에 보관한다.
+이미 BP가 있는 경우 `build_waterfall.py` 전체 재생성 후에도 다시 BP로 묶는다.
+
 `M_WF_Waterfall_UV`에서 Material Instance를 만들고 `FlowSpeed`를 조절한다(기본 0.85).
 양수는 아래로 흐른다. Blender UV의 V는 위0→아래1이며 UE FBX 임포터가 V를 뒤집으므로
 머티리얼에서 `(1 - UV.y) - Time * FlowSpeed`로 보정한다.
@@ -55,9 +79,9 @@ Random 모드는 모든 축을 회전하므로 수평 파문에 사용하지 않
 입자 색의 RGB는 머티리얼 무늬의 고정 난수 위상으로 사용하고, A는 소멸을 제어한다.
 파문은 실제 수평 메시이며 카메라를 따라 회전하지 않는다.
 
-Blender에서 내보낸 배경 메시들은 모두 같은 원점을 사용한다. 다른 레벨로 옮길 때
-`WF_WaterCurtain`, `WF_UpperStream`, `WF_Pool`, `WF_Rockwork`, `WF_Moss`, `WF_Ground`,
-`WF_Foliage`, `WF_ImpactApron`, `WF_Impact_Niagara`를 함께 선택해서 이동한다.
+Blender에서 내보낸 배경 메시들은 모두 같은 원점을 사용한다. 장면 전체를 다른 레벨로 옮길 때
+`WF_AnimeWaterfall`, `WF_Pool`, `WF_Rockwork`, `WF_Moss`, `WF_Ground`,
+`WF_Foliage`와 추가 풀을 관리하는 `InstancedFoliageActor`를 함께 고려한다.
 Niagara 위치는 현재 원점 기준 `(0,-33,9)`cm이다.
 배경·카메라·노출 액터는 쇼케이스용이다.
 
