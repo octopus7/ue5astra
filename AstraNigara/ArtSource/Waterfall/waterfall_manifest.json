@@ -6,7 +6,7 @@
     {
       "name": "SM_WF_WaterCurtain",
       "fbx": "FBX/SM_WF_WaterCurtain.fbx",
-      "triangles": 720,
+      "triangles": 888,
       "uv_channels": 1,
       "materials": [
         "WF_Water"
@@ -48,15 +48,15 @@
     {
       "name": "SM_WF_UpperStream",
       "fbx": "FBX/SM_WF_UpperStream.fbx",
-      "triangles": 2,
+      "triangles": 192,
       "uv_channels": 1,
       "materials": [
         "WF_Water"
       ],
       "dimensions_cm": [
         94.0,
-        102.0,
-        6.0
+        54.28691101074219,
+        7.20001220703125
       ]
     },
     {
@@ -174,5 +174,11 @@
         0.100006103515625
       ]
     }
-  ]
+  ],
+  "continuous_crest": {
+    "shared_edge_vertices": 13,
+    "position_error_cm": 0,
+    "uv_error": 0,
+    "uv_mapping": "arc length; upper V negative, shared seam V=0, curtain bottom V=1"
+  }
 }

@@ -2,7 +2,7 @@
 Run with --background --factory-startup --python this_file.
 All model coordinates are centimetres; export objects share a scene origin.
 """
-import bpy, math, random, json
+import bpy, math, random, json, runpy
 from pathlib import Path
 from mathutils import Vector
 
@@ -101,34 +101,11 @@ def ellipsoid_disc(name, rx, ry, center, material, group, segments=64, rings=5, 
     return mesh(name,verts,faces,material,group,uv)
 
 
-# An intentionally bent, ribbon-shaped waterfall, including the top lip.
-# U is cross-stream; V monotonically increases downstream from 0 to 1.
-rows,cols=30,12
-vertices=[];uvs=[]
-path=[]
-for j in range(rows+1):
-    t=j/rows
-    if t < .18:
-        u=t/.18
-        y,z=130-55*u,224-12*u*u
-    else:
-        u=(t-.18)/.82
-        # Continue below the pond instead of leaving a visible cut edge above it.
-        y,z=75-42*u+7*math.sin(u*math.pi),212-214*u
-    path.append((y,z))
-    width=47 + 9*t + 12*t**7
-    for i in range(cols+1):
-        u=i/cols
-        x=(u*2-1)*width
-        vertices.append((x, y+2.3*math.sin(u*math.pi*5+t*10), z+1.1*math.cos(u*math.pi*4)))
-        uvs.append((u,t))
-faces=[]
-for j in range(rows):
-    for i in range(cols):
-        a=j*(cols+1)+i
-        faces.append((a,a+1,a+cols+2,a+cols+1))
-curtain=mesh('Waterfall curtain / V downward',vertices,faces,water,'SM_WF_WaterCurtain',uvs)
-for p in curtain.data.polygons: p.use_smooth=True
+# Split one continuous surface into two reusable components with matching UVs.
+flow_geometry=runpy.run_path(str(ROOT/'Scripts'/'waterfall_flow_geometry.py'))['build_flow_surfaces']()
+for name,(vertices,faces,uvs) in flow_geometry.items():
+    surface=mesh(name,vertices,faces,water,name,uvs)
+    for p in surface.data.polygons:p.use_smooth=True
 ellipsoid_disc('Quiet emerald pool',180,145,(0,-50,5),poolmat,'SM_WF_Pool',rings=5)
 
 # Curved impact sheet: a low lifted collar joins the curtain to an outgoing
@@ -150,8 +127,7 @@ for j in range(10):
 apron=mesh('Breaking impact foam fan',verts,faces,impactfoam,'SM_WF_ImpactApron',uv)
 for p in apron.data.polygons:p.use_smooth=True
 
-# Small upper stream, visible between the banks on the crest.
-mesh('Upper stream', [(-47,78,223),(47,78,223),(42,180,229),(-42,180,229)],[(0,1,2,3)],water,'SM_WF_UpperStream',[(0,1),(1,1),(1,0),(0,0)])
+# Upper stream was built together with the curtain above.
 
 # Rock escarpment: interlocked faceted boulders around the falling water.
 for side in [-1,1]:

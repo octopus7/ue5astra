@@ -99,7 +99,8 @@ float white=saturate(streak*breaks*.74+fine+edge);
 float shade=.5+.5*sin(u*16+v*2);
 float3 blue=lerp(float3(0.035,0.39,0.49),float3(0.17,0.70,0.73),shade);
 float churn=(1-smoothstep(.015,.14,UV.y))*(.32+.20*sin(u*35+v*9));
-return lerp(blue,float3(0.78,0.98,0.93),saturate(white+churn));''',{'UV':uv,'T':t,'Speed':speed})
+float crest=exp(-pow(((1-UV.y)-.18)/.013,2))*.10*smoothstep(-.3,.6,sin(u*37+v*5));
+return lerp(blue,float3(0.78,0.98,0.93),saturate(white+churn+crest));''',{'UV':uv,'T':t,'Speed':speed})
     connect(m,flow,'EMISSIVE_COLOR');result['WF_Water']=finish(m)
 
     m=material('M_WF_ImpactFoam',unreal.BlendMode.BLEND_TRANSLUCENT)

@@ -12,7 +12,8 @@
 | 에셋 | 역할 |
 |---|---|
 | `VFX/Waterfall/NS_AnimeWaterfall` | 낙수 지점의 계속 방출되는 Niagara Lightweight 시스템 |
-| `Meshes/SM_WF_WaterCurtain` | Blender 원본, 720삼각형, 수직 흐름용 UV0 |
+| `Meshes/SM_WF_WaterCurtain` | Blender 원본, 888삼각형, 곡면 크레스트와 수직 흐름용 UV0 |
+| `Meshes/SM_WF_UpperStream` | 192삼각형, 커튼과 같은 경계 정점·UV를 공유하는 윗물길 |
 | `Meshes/SM_WF_Pool` | 576삼각형, 평면 UV0 수면 |
 | `Meshes/SM_WF_RippleRing` | 128삼각형의 굴곡진 수평 링, Niagara에서 얇고 끊어진 호로 표현 |
 | `Meshes/SM_WF_ImpactApron` | 640삼각형의 낮은 곡면, 낙수 끝에서 수면 앞으로 퍼지는 포말 받침 |
@@ -21,7 +22,7 @@
 | `Materials/M_WF_Pool` | 움직이는 수면 무늬, 잔광, 얕은 가장자리 색 |
 
 위 표의 Meshes/Materials 경로는 `/Game/VFX/Waterfall/` 아래다.
-8종 배경·수면 메시의 원본 합계는 8,756삼각형이며, Niagara 파문 링은 입자마다 별도다.
+8종 배경·수면 메시의 원본 합계는 9,114삼각형이며, Niagara 파문 링은 입자마다 별도다.
 Nanite나 자동 LOD에 의존하지 않는 낮은 폴리곤 수로 제작했다.
 
 | 이미터 | 방출량/초 | 수명 | 동작 |
@@ -67,7 +68,10 @@ Blender 원본은 필요하지 않다. BP 파일 하나만 탐색기로 복사�
 이미 BP가 있는 경우 `build_waterfall.py` 전체 재생성 후에도 다시 BP로 묶는다.
 
 `M_WF_Waterfall_UV`에서 Material Instance를 만들고 `FlowSpeed`를 조절한다(기본 0.85).
-양수는 아래로 흐른다. Blender UV의 V는 위0→아래1이며 UE FBX 임포터가 V를 뒤집으므로
+양수는 아래로 흐른다. Blender UV의 V는 접합부0→아래1이며 윗물길은 음수 V로 이어진다.
+UV는 중심선을 따라 흐르는 거리로 계산하고, 두 메시의 경계 정점 13개는 위치와 UV가 같다.
+윗물길과 낙수 사이에는 부드러운 곡면을 사용하며, 꺾이는 부분에만 약한 포말 띠를 더한다.
+UE FBX 임포터가 V를 뒤집으므로
 머티리얼에서 `(1 - UV.y) - Time * FlowSpeed`로 보정한다.
 수직 메시와 윗물길은 같은 머티리얼을 공유한다.
 
@@ -95,6 +99,9 @@ Niagara 위치는 현재 원점 기준 `(0,-33,9)`cm이다.
 - Blender 생성 스크립트: `Scripts/build_waterfall_blender.py`
 - UE 생성 스크립트: `Scripts/build_waterfall.py`
 - UE 통합 검증: `Scripts/validate_waterfall.py`
+- 두 물길의 공통 형상: `Scripts/waterfall_flow_geometry.py`
+- 기존 Blender에서 물길만 갱신: `Scripts/update_waterfall_crest_blender.py`
+- UE 물길 메시·머티리얼만 갱신: `Scripts/update_waterfall_crest.py`
 
 Blender 4.5에서 `--background --factory-startup --python`으로 모델링 스크립트를 실행한다.
 UE 에디터 콘솔에서는 `py "D:/github/ue5astra/AstraNigara/Scripts/build_waterfall.py"`를 실행한다.
