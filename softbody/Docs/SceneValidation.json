@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "map": "/Game/Softbody/Maps/L_SoftbodyLab",
+  "checks": {
+    "map_saved": true,
+    "materials_saved": true,
+    "three_balls": true,
+    "player_start": true,
+    "native_game_mode": true,
+    "normal_gravity": true,
+    "camera_overview": true,
+    "camera_closeup": true,
+    "ambient_cubemap": true,
+    "no_duplicate_generated_labels": true,
+    "Tennis_position": true,
+    "Tennis_radius": true,
+    "Tennis_interaction": true,
+    "Tennis_tabletop_96_cm": true,
+    "Tennis_stand_ignores_pawn": true,
+    "Double_position": true,
+    "Double_radius": true,
+    "Double_interaction": true,
+    "Double_tabletop_96_cm": true,
+    "Double_stand_ignores_pawn": true,
+    "Body_position": true,
+    "Body_radius": true,
+    "Body_interaction": true
+  },
+  "balls": [
+    {
+      "label": "SB_Ball_Tennis",
+      "center_cm": [
+        0,
+        -80,
+        99.35
+      ],
+      "radius_cm": 3.35,
+      "diameter_cm": 6.7,
+      "hand_interactable": true,
+      "support_z_cm": 96
+    },
+    {
+      "label": "SB_Ball_Double",
+      "center_cm": [
+        0,
+        65,
+        102.7
+      ],
+      "radius_cm": 6.7,
+      "diameter_cm": 13.4,
+      "hand_interactable": true,
+      "support_z_cm": 96
+    },
+    {
+      "label": "SB_Ball_Body",
+      "center_cm": [
+        210,
+        130,
+        50
+      ],
+      "radius_cm": 50.0,
+      "diameter_cm": 100.0,
+      "hand_interactable": false,
+      "support_z_cm": 0
+    }
+  ]
+}

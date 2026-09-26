@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "material": "/Game/Softbody/Materials/M_Ball.M_Ball",
+  "tennis_tint": [
+    0.33,
+    0.48,
+    0.4
+  ],
+  "tennis_albedo_before": [
+    0.59,
+    0.83,
+    0.045
+  ],
+  "tennis_albedo_after": [
+    0.1947,
+    0.3984,
+    0.018
+  ],
+  "roughness": 0.78,
+  "specular": 0.18,
+  "preserved": [
+    "teal base color",
+    "ivory seam color",
+    "saved level",
+    "exposure -2.8 EV"
+  ]
+}

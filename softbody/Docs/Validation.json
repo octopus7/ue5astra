@@ -1,0 +1,28 @@
+{
+  "engine": "5.7.4",
+  "editor_build": "Succeeded",
+  "automation_passed": 4,
+  "automation_failed": 0,
+  "runtime": {
+    "passed": true,
+    "tennis_peak_cm": 1.6393,
+    "tennis_released_cm": 0.1025,
+    "double_peak_cm": 2.8773,
+    "double_released_cm": 0.205,
+    "peak_hand_contacts": 32,
+    "body_deformation_cm": 8.2604,
+    "body_travel_cm": 250.3816,
+    "volume_min": 0.9997,
+    "volume_max": 1.0,
+    "tennis_thumb_and_fingers": true,
+    "double_thumb_and_fingers": true,
+    "body_baseline_cm": 5.0,
+    "body_released_cm": 5.0,
+    "body_contact_deformation_cm": 8.1888,
+    "body_recovery_error_cm": 0.0,
+    "body_contact_frames": 60,
+    "wrist_error_cm": 0.0,
+    "palm_down_dot": 1.0
+  },
+  "captured_at": "2026-09-26T22:42:50.2909268+09:00"
+}
