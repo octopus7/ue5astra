@@ -8,6 +8,7 @@ class ASoftBodyBall;
 class UCameraComponent;
 class UPoseableMeshComponent;
 class USpringArmComponent;
+struct FSoftBodyContact;
 
 /** The template mannequin, with a bone-driven overhead soft-ball interaction. */
 UCLASS()
@@ -22,6 +23,12 @@ public:
 
     UPROPERTY(BlueprintReadOnly, Category="Grip")
     float GripAmount = 0.f;
+
+    UPROPERTY(BlueprintReadOnly, Category="Grip")
+    float PressureAmount = 0.f;
+
+    UPROPERTY(BlueprintReadOnly, Category="Grip")
+    float HandOffsetAmount = 0.f;
 
     UPROPERTY(BlueprintReadOnly, Category="Grip")
     bool bInteracting = false;
@@ -75,23 +82,34 @@ private:
     FVector ReferencePalmCenter = FVector::ZeroVector;
     FVector ReferencePalmNormal = FVector::UpVector;
     FVector DesiredWrist = FVector::ZeroVector;
+    FVector HandSlideDirection = FVector::ZeroVector;
     float GripInput = 0.f;
+    float PressureInput = 0.f;
+    float HandOffsetInput = 0.f;
     float DemoTime = 0.f;
     float HandContactError = 0.f;
     float PalmDownAlignment = 0.f;
     int32 HandContactCount = 0;
     bool bCloseCamera = true;
     bool bReferenceReady = false;
+    bool bGripOverride = false;
 
     void SelectNearestBall();
     void CacheReferencePose();
-    void UpdateHandPose();
+    void UpdateHandPose(float SupportLift = 0.f);
     void UpdateHandContacts();
+    TArray<FSoftBodyContact> GatherHandContacts(float& LowestPoint) const;
+    void ResetHandControls();
+    void TakeOverManualControl();
+    float HandMouseDelta(float Value) const;
     void ToggleInteraction();
     void ToggleCamera();
     void ToggleAutoDemo();
     void GripPressed();
     void GripReleased();
+    void GripWheelUp();
+    void GripWheelDown();
+    void AdjustGrip(float Delta);
     void ResetSelectedBall();
     void MoveForward(float Value);
     void MoveRight(float Value);

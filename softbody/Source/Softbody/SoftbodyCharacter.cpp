@@ -5,6 +5,7 @@
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Camera/CameraTypes.h"
+#include "Camera/PlayerCameraManager.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
 #include "Components/PoseableMeshComponent.h"
@@ -13,6 +14,7 @@
 #include "EngineUtils.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/PlayerController.h"
+#include "GameFramework/InputSettings.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "InputCoreTypes.h"
 #include "UObject/ConstructorHelpers.h"
@@ -187,9 +189,10 @@ void ASoftbodyCharacter::BeginInteraction()
     GetCharacterMovement()->DisableMovement();
     SetActorLocationAndRotation(Station, FRotator::ZeroRotator, false, nullptr, ETeleportType::TeleportPhysics);
     bInteracting = true;
-    GripInput = 0.f;
-    GripAmount = 0.f;
-    DemoTime = 0.f;
+    ResetHandControls();
+    FMinimalViewInfo InteractionView;
+    CalcCamera(0.f, InteractionView);
+    HandSlideDirection = FRotationMatrix(InteractionView.Rotation).GetUnitAxis(EAxis::Y).GetSafeNormal2D();
     GetMesh()->SetVisibility(false);
     InteractionMesh->SetVisibility(true);
     UpdateHandPose();
@@ -199,9 +202,7 @@ void ASoftbodyCharacter::BeginInteraction()
 void ASoftbodyCharacter::EndInteraction()
 {
     bInteracting = false;
-    bAutoDemo = false;
-    GripInput = 0.f;
-    GripAmount = 0.f;
+    ResetHandControls();
     HandContactCount = 0;
     if (Ball)
     {
@@ -218,18 +219,57 @@ void ASoftbodyCharacter::SetAutoDemo(bool bEnabled)
     {
         BeginInteraction();
     }
+    GripInput = GripAmount;
+    bGripOverride = false;
     bAutoDemo = bEnabled && bInteracting;
     DemoTime = 0.f;
-    if (!bAutoDemo)
+    if (bAutoDemo)
     {
-        GripInput = 0.f;
+        PressureInput = 0.f;
+        HandOffsetInput = 0.f;
     }
 }
 
 void ASoftbodyCharacter::SetGripInput(float Amount)
 {
     bAutoDemo = false;
+    bGripOverride = false;
     GripInput = FMath::Clamp(Amount, 0.f, 1.f);
+}
+
+void ASoftbodyCharacter::ResetHandControls()
+{
+    bAutoDemo = false;
+    bGripOverride = false;
+    GripInput = GripAmount = 0.f;
+    PressureInput = PressureAmount = 0.f;
+    HandOffsetInput = HandOffsetAmount = 0.f;
+    DemoTime = 0.f;
+}
+
+void ASoftbodyCharacter::TakeOverManualControl()
+{
+    if (bAutoDemo)
+    {
+        // Continue from the displayed pose instead of jumping to the demo target.
+        GripInput = GripAmount;
+        PressureInput = PressureAmount;
+        HandOffsetInput = HandOffsetAmount;
+        bAutoDemo = false;
+    }
+}
+
+float ASoftbodyCharacter::HandMouseDelta(float Value) const
+{
+    // Legacy mouse axes include camera FOV scaling. Hand travel should stay the
+    // same when C changes inspection distance; retain the user's axis sensitivity.
+    const UInputSettings* Settings = GetDefault<UInputSettings>();
+    const APlayerController* PC = Cast<APlayerController>(GetController());
+    if (Settings->bEnableFOVScaling && PC && PC->PlayerCameraManager)
+    {
+        Value /= FMath::Max(.01f, Settings->FOVScale * PC->PlayerCameraManager->GetFOVAngle());
+    }
+    return Value * .075f;
 }
 
 void ASoftbodyCharacter::Tick(float DeltaSeconds)
@@ -255,7 +295,9 @@ void ASoftbodyCharacter::Tick(float DeltaSeconds)
         else GripInput = 0.f;
     }
     const float PreviousGrip = GripAmount;
-    GripAmount = FMath::FInterpTo(GripAmount, GripInput, DeltaSeconds, 5.f);
+    GripAmount = FMath::FInterpTo(GripAmount, bGripOverride ? 1.f : GripInput, DeltaSeconds, 5.f);
+    PressureAmount = FMath::FInterpTo(PressureAmount, PressureInput, DeltaSeconds, 12.f);
+    HandOffsetAmount = FMath::FInterpTo(HandOffsetAmount, HandOffsetInput, DeltaSeconds, 12.f);
     UpdateHandPose();
     UpdateHandContacts();
     if (PreviousGrip < 0.97f && GripAmount >= 0.97f)
@@ -286,7 +328,7 @@ void ASoftbodyCharacter::PointBoneAt(FName BoneName, FName ChildName, const FVec
     SetWorldBoneRotation(BoneName, Delta * Bone.GetRotation());
 }
 
-void ASoftbodyCharacter::UpdateHandPose()
+void ASoftbodyCharacter::UpdateHandPose(float SupportLift)
 {
     if (!Ball || !bReferenceReady)
     {
@@ -300,8 +342,9 @@ void ASoftbodyCharacter::UpdateHandPose()
     const FQuat HandRotation = HandDelta * ReferenceBone(HandBone).GetRotation();
     const float SizeBlend = FMath::Clamp((Ball->BallRadius - 3.35f) / 3.35f, 0.f, 1.f);
     const float PalmX = FMath::Lerp(-2.8f, -2.5f, SizeBlend);
-    const float PalmHeight = Ball->BallRadius + FMath::Lerp(9.f, 2.f, GripAmount);
-    const FVector PalmTarget = Ball->GetActorLocation() + FVector(PalmX, 0.f, PalmHeight);
+    const FVector ContactCenter = Ball->GetActorLocation() + HandSlideDirection * (HandOffsetAmount * Ball->BallRadius * .45f);
+    const float PalmHeight = Ball->BallRadius + 2.f - PressureAmount * Ball->BallRadius * .3f + SupportLift;
+    const FVector PalmTarget = ContactCenter + FVector(PalmX, 0.f, PalmHeight);
     DesiredWrist = PalmTarget - HandDelta.RotateVector(ReferencePalmCenter - ReferenceBone(HandBone).GetLocation());
 
     const FVector Shoulder = InteractionMesh->GetBoneLocationByName(TEXT("upperarm_r"), EBoneSpaces::WorldSpace);
@@ -342,7 +385,7 @@ void ASoftbodyCharacter::UpdateHandPose()
         }
         else
         {
-            const float Inward = -(Base.Y - Ball->GetActorLocation().Y) * FMath::Lerp(0.14f, 0.05f, SizeBlend) * GripAmount;
+            const float Inward = -(Base.Y - ContactCenter.Y) * FMath::Lerp(0.14f, 0.05f, SizeBlend) * GripAmount;
             Horizontal = FVector(1.f, Inward, 0.f).GetSafeNormal();
         }
         for (int32 Joint = 1; Joint <= 3; ++Joint)
@@ -400,15 +443,34 @@ void ASoftbodyCharacter::UpdateHandContacts()
     {
         return;
     }
+    float LowestPoint = 0.f;
+    TArray<FSoftBodyContact> Contacts = GatherHandContacts(LowestPoint);
+    const float TableTop = Ball->GetActorLocation().Z - Ball->BallRadius;
+    const float SupportLift = FMath::Max(0.f, TableTop + .05f - LowestPoint);
+    if (SupportLift > 0.f)
+    {
+        // The table limits actual travel without changing the user's three inputs.
+        // Repose the visible hand before rebuilding its matching contact spheres.
+        UpdateHandPose(SupportLift);
+        Contacts = GatherHandContacts(LowestPoint);
+    }
+    HandContactCount = Contacts.Num();
+    Ball->SetHandContacts(Contacts);
+}
+
+TArray<FSoftBodyContact> ASoftbodyCharacter::GatherHandContacts(float& LowestPoint) const
+{
     TArray<FSoftBodyContact> Contacts;
     Contacts.Reserve(50);
+    LowestPoint = TNumericLimits<float>::Max();
     const FTransform BallWorld = Ball->GetActorTransform();
-    auto AddContact = [&Contacts, &BallWorld](const FVector& WorldCenter, float Radius)
+    auto AddContact = [&Contacts, &BallWorld, &LowestPoint](const FVector& WorldCenter, float Radius)
     {
         FSoftBodyContact Contact;
         Contact.Center = BallWorld.InverseTransformPosition(WorldCenter);
         Contact.Radius = Radius;
         Contacts.Add(Contact);
+        LowestPoint = FMath::Min(LowestPoint, static_cast<float>(WorldCenter.Z) - Radius);
     };
     const FTransform HandWorld = InteractionMesh->GetBoneTransformByName(HandBone, EBoneSpaces::WorldSpace);
     const FVector PalmLocal = ReferenceBone(HandBone).InverseTransformPosition(ReferencePalmCenter);
@@ -442,14 +504,15 @@ void ASoftbodyCharacter::UpdateHandContacts()
                 End = Segment.TransformPosition(Reference.InverseTransformPosition(ReferenceTip));
             }
             const float Radius = Finger == 4 ? 1.15f : (Finger == 3 ? 0.85f : 1.0f);
+            // Include the actual segment endpoints, not only the inner samples.
+            LowestPoint = FMath::Min(LowestPoint, static_cast<float>(FMath::Min(Start.Z, End.Z)) - Radius);
             for (int32 Sample = 0; Sample < 3; ++Sample)
             {
                 AddContact(FMath::Lerp(Start, End, (Sample + 0.5f) / 3.f), Radius);
             }
         }
     }
-    HandContactCount = Contacts.Num();
-    Ball->SetHandContacts(Contacts);
+    return Contacts;
 }
 
 void ASoftbodyCharacter::CalcCamera(float DeltaTime, FMinimalViewInfo& OutResult)
@@ -479,6 +542,8 @@ void ASoftbodyCharacter::SetupPlayerInputComponent(UInputComponent* Input)
     Input->BindKey(EKeys::E, IE_Pressed, this, &ASoftbodyCharacter::ToggleInteraction);
     Input->BindKey(EKeys::LeftMouseButton, IE_Pressed, this, &ASoftbodyCharacter::GripPressed);
     Input->BindKey(EKeys::LeftMouseButton, IE_Released, this, &ASoftbodyCharacter::GripReleased);
+    Input->BindKey(EKeys::MouseScrollUp, IE_Pressed, this, &ASoftbodyCharacter::GripWheelUp);
+    Input->BindKey(EKeys::MouseScrollDown, IE_Pressed, this, &ASoftbodyCharacter::GripWheelDown);
     Input->BindKey(EKeys::R, IE_Pressed, this, &ASoftbodyCharacter::ResetSelectedBall);
     Input->BindKey(EKeys::C, IE_Pressed, this, &ASoftbodyCharacter::ToggleCamera);
     Input->BindKey(EKeys::Tab, IE_Pressed, this, &ASoftbodyCharacter::ToggleAutoDemo);
@@ -487,12 +552,24 @@ void ASoftbodyCharacter::SetupPlayerInputComponent(UInputComponent* Input)
 void ASoftbodyCharacter::ToggleInteraction() { if (bInteracting) EndInteraction(); else BeginInteraction(); }
 void ASoftbodyCharacter::ToggleCamera() { bCloseCamera = !bCloseCamera; }
 void ASoftbodyCharacter::ToggleAutoDemo() { SetAutoDemo(!bAutoDemo); }
-void ASoftbodyCharacter::GripPressed() { SetGripInput(1.f); }
-void ASoftbodyCharacter::GripReleased() { SetGripInput(0.f); }
+void ASoftbodyCharacter::GripPressed()
+{
+    if (!bInteracting) return;
+    TakeOverManualControl();
+    bGripOverride = true;
+}
+void ASoftbodyCharacter::GripReleased() { bGripOverride = false; }
+void ASoftbodyCharacter::GripWheelUp() { AdjustGrip(.1f); }
+void ASoftbodyCharacter::GripWheelDown() { AdjustGrip(-.1f); }
+void ASoftbodyCharacter::AdjustGrip(float Delta)
+{
+    if (!bInteracting) return;
+    TakeOverManualControl();
+    GripInput = FMath::Clamp(GripInput + Delta, 0.f, 1.f);
+}
 void ASoftbodyCharacter::ResetSelectedBall()
 {
-    SetGripInput(0.f);
-    GripAmount = 0.f;
+    ResetHandControls();
     if (bInteracting)
     {
         UpdateHandPose();
@@ -525,5 +602,19 @@ void ASoftbodyCharacter::MoveRight(float Value)
     }
 }
 
-void ASoftbodyCharacter::Turn(float Value) { if (!bInteracting) AddControllerYawInput(Value); }
-void ASoftbodyCharacter::LookUp(float Value) { if (!bInteracting) AddControllerPitchInput(Value); }
+void ASoftbodyCharacter::Turn(float Value)
+{
+    if (!bInteracting) { AddControllerYawInput(Value); return; }
+    if (!FMath::IsFinite(Value) || FMath::IsNearlyZero(Value)) return;
+    TakeOverManualControl();
+    HandOffsetInput = FMath::Clamp(HandOffsetInput + HandMouseDelta(Value), -1.f, 1.f);
+}
+
+void ASoftbodyCharacter::LookUp(float Value)
+{
+    if (!bInteracting) { AddControllerPitchInput(Value); return; }
+    if (!FMath::IsFinite(Value) || FMath::IsNearlyZero(Value)) return;
+    TakeOverManualControl();
+    // LookUp is mapped to -MouseY, so positive Value already means mouse down.
+    PressureInput = FMath::Clamp(PressureInput + HandMouseDelta(Value), 0.f, 1.f);
+}
